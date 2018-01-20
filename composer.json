@@ -19,6 +19,7 @@
     "drupal/console": "^1.0.0-rc8",
     "drupal/core": "^8",
     "drupal/ctools": "^3.0",
+    "drupal/entityqueue": "^1.0@alpha",
     "drupal/inline_entity_form": "^1.0@beta",
     "drupal/pathauto": "^1.0",
     "drupal/simple_block": "^1.0@beta",
