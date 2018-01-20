@@ -1,0 +1,58 @@
+/// @group Colors
+/// @type color
+$c-link: #0091EA;
+
+/// Darkest Grey.
+/// @group Colors
+/// @type color
+$c-black: #1A272E;
+
+/// @group Colors
+/// @type color
+$c-default: #4A4A4A;
+
+// Z-indices
+/// @group Z-Index
+/// @type z-index
+$z-core: -100;
+
+/// @group Z-Index
+/// @type z-index
+$z-crust: 0;
+
+/// @group Z-Index
+/// @type z-index
+$z-atmosphere: 100;
+
+/// @group Z-Index
+/// @type z-index
+$z-stratosphere: 200;
+
+/// @group Z-Index
+/// @type z-index
+$z-solar-system: 300;
+
+/// @group Z-Index
+/// @type z-index
+$z-galaxy: 400;
+
+
+/// Font-Families
+/// @group Font Family
+$ff-sans: "Open Sans", Helvetica, sans-serif;
+
+/// @group Font Family
+$ff-serif: "PT Serif", Times, serif;
+
+/// Font-Weights
+/// @group Font Weight
+$fw-light: 300;
+
+/// @group Font Weight
+$fw-regular: 400;
+
+/// @group Font Weight
+$fw-semibold: 600;
+
+/// @group Font Weight
+$fw-bold: 700;

@@ -1,0 +1,29 @@
+{
+  "name": "temp",
+  "description": "",
+  "autoprefixerVersions": [
+    "last 2 versions",
+    "> 10%",
+    "iOS 8"
+  ],
+  "css": {
+    "file" : "temp.style.scss",
+    "src": [
+      "sass/**/*.scss"
+    ],
+    "dest": "css",
+    "sourceMapDest": "./"
+  },
+  "js": {
+    "finalfile": "global.js",
+    "src": [
+      "js/all/**/*.js"
+    ],
+    "watch": "js/**/*.js",
+    "dest": "js",
+    "sourceMapDest": "./"
+  },
+  "bs": {
+    "proxy": "https://nah-marketing.local"
+  }
+}

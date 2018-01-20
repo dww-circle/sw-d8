@@ -1,0 +1,29 @@
+name: Revolution
+type: theme
+base theme: classy
+description: 'Theme for Socialist Worker. Based on Classy.'
+core: 8.x
+
+libraries:
+  - revolution/global
+
+stylesheets-remove:
+  - '@classy/css/components/menu.css'
+  - '@classy/css/components/pager.css'
+  - '@stable/css/filter/filter.caption.css'
+  - core/assets/vendor/jquery.ui/themes/base/accordion.css
+  - core/assets/vendor/jquery.ui/themes/base/theme.css
+
+regions:
+  utility_menu: "Utility Menu"
+  header: "Header - Logo, Persona Menu"
+  primary_menu: "Primary Menu"
+  content: "Content"
+  content_bottom: "Content Bottom"
+  sidebar_first: "Sidebar First"
+  sidebar_second: "Sidebar Second"
+  footer: "Footer"
+  footer_second: "Footer Second"
+
+  highlighted: "Highlighted"
+  help: "Help"

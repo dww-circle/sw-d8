@@ -1,0 +1,202 @@
+.page-title {
+  border-bottom: 1spx solid;
+  color: red;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.top-stories {
+  border-bottom: 5px solid black;
+  margin-bottom: 70px;
+  padding: 0 10px;
+
+  @include breakpoint($tablet) {
+    padding: 0;
+  }
+
+  > .field--name-title {
+    color: red;
+    font-size: 28px;
+    line-height: 40px;
+    padding-bottom: 34px;
+    text-transform: uppercase;
+  }
+}
+
+// Node teaser 1
+.node--view-mode-teaser-1 {
+  margin-bottom: 50px;
+
+  h2 a {
+    font-size: 54px;
+    line-height: 60px;
+  }
+
+  .left {
+    @include breakpoint($tablet) {
+      @include span(2 of 6);
+    }
+  }
+
+  .right {
+    @include breakpoint($tablet) {
+      @include span(3 of 6 last);
+    }
+  }
+
+  .field--name-field-teaser {
+    font-size: 15px;
+  }
+}
+
+// Node teaser 2
+.node--view-mode-teaser-2 {
+  margin-bottom: 40px;
+
+  @include breakpoint($tablet) {
+    @include span(7 of 12);
+  }
+
+  h2 {
+    font-size: 28px;
+    line-height: 30px;
+  }
+
+  .left {
+    @include breakpoint($tablet) {
+      @include span(6 of 12);
+    }
+  }
+
+  .right {
+    @include breakpoint($tablet) {
+      @include span(6 of 12 last);
+    }
+  }
+
+  .field--name-field-teaser {
+    font-size: 14px;
+  }
+}
+
+// Node teaser 3
+.node--view-mode-teaser-3 {
+  margin-bottom: 30px;
+
+  @include breakpoint($tablet) {
+    @include span(7 of 12);
+  }
+
+  .field--name-field-label {
+    font-size: 13px;
+    padding-bottom: 8px;
+  }
+
+  h2 {
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 8px;
+  }
+
+  .field--name-field-teaser {
+    font-size: 14px;
+  }
+}
+
+// Label field style
+.field--name-field-label {
+  color: #808080;
+  font-size: 16px;
+  line-height: 18px;
+  padding-bottom: 14px;
+  text-transform: uppercase;
+}
+
+// Teaser field style
+.field--name-field-teaser {
+  color: #666666;
+  line-height: 18px;
+}
+
+// Node title
+.node {
+  img {
+    max-width: 100%;
+  }
+
+  h2 a {
+    @include link-colors(black, #804444);
+    font-weight: normal;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.field--name-field-block,
+.field--name-field-block-2 {
+  @include breakpoint($tablet) {
+    @include span(5 of 12 last);
+  }
+}
+
+
+// Article Bundle.
+.article-bundle {
+  > .field--name-title {
+    border-top: 1px solid;
+    color: red;
+    font-size: 28px;
+    line-height: 40px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  .node--view-mode-teaser-2 {
+    margin-right: 0;
+    width: auto;
+  }
+
+  .field--name-field-article-second {
+    @include span(8 of 12);
+  }
+
+  .field--name-field-article-list {
+    @include span(4 of 12 last);
+  }
+}
+
+.node--type-story.node--view-mode-teaser {
+  .field--name-field-label {
+    font-size: 13px;
+    padding-bottom: 0;
+  }
+
+  h4 {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 18px;
+    text-transform: none;
+
+    a {
+      @include link-colors(black, #804444);
+    }
+  }
+}
+
+.entity-slice.simple-list {
+  border-top: 5px solid black;
+}
+
+.field--name-field-story-list {
+  padding-top: 30px;
+
+  .field__item {
+    @include span(4 of 12);
+    
+    &:last-child {
+      @include span(4 of 12 last);
+    }
+  }
+}

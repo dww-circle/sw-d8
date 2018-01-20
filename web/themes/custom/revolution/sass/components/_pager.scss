@@ -1,0 +1,67 @@
+.pager {
+  @include clearfix-before;
+  padding-bottom: 25px;
+  padding-left: 0;
+}
+
+.pager__items {
+  display: table;
+  float: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.pager__item {
+  display: block;
+  float: left;
+  padding: 0;
+
+  &.is-active {
+    a {
+      color: #4A4A4A;
+      font-weight: $fw-regular;
+
+      &:hover {
+        background: none;
+      }
+    }
+  }
+
+  &:first-child {
+    a {
+      border-left-width: 1px;
+    }
+  }
+
+  &.pager__item--ellipsis {
+    display: none;
+  }
+
+  &.pager__item--first,
+  &.pager__item--previous,
+  &.pager__item--next,
+  &.pager__item--last {
+    color: #4A90E2;
+  }
+
+  a {
+    display: block;
+    float: left;
+    font-size: 15px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    width: 39px;
+
+    @include breakpoint($tablet) {
+      border-color: #DDDDDD;
+      border-style: solid;
+      border-width: 1px 1px 1px 0;
+    }
+
+    &:hover {
+      background: #EAEBEC;
+      text-decoration: none;
+    }
+  }
+}

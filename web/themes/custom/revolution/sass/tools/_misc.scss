@@ -1,0 +1,13 @@
+// This is a shame file.
+// @todo Add Game of Thrones reference here.
+
+// Login form
+.user-login-form {
+  input {
+    max-width: 100%;
+
+    @include breakpoint($tablet) {
+      width: 50%;
+    }
+  }
+}

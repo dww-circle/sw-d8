@@ -1,0 +1,63 @@
+.header {
+  background: black;
+  color: white;
+  text-align: left;
+
+  @include breakpoint($desktop) {
+    padding: 24px 40px 23px 38px;
+  }
+}
+
+.site-logo {
+
+  @include breakpoint($desktop) {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  img {
+    height: auto;
+    margin-bottom: 14px;
+    margin-left: 19px;
+    margin-top: 12px;
+    max-width: calc(100% - 100px);
+    width: 200px;
+
+    @include breakpoint($desktop) {
+      margin: 0;
+      max-width: none;
+      width: 300px;
+    }
+  }
+}
+
+.region-header {
+  display: none;
+  text-align: right;
+  vertical-align: middle;
+  width: calc(100% - 198px);
+
+  @include breakpoint($desktop) {
+    display: inline-block;
+  }
+}
+
+.menu-trigger {
+  background: none;
+  border: 0;
+  color: #858694;
+  float: right;
+  font-family: fontawesome;
+  font-size: 30px;
+
+  @include breakpoint($desktop) {
+    display: none;
+  }
+}
+
+.menu-text {
+  display: block;
+  font-family: $ff-sans;
+  font-size: 12px;
+  text-transform: uppercase;
+}

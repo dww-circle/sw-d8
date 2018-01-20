@@ -1,0 +1,7 @@
+{
+  "name": "temp",
+  "description": "",
+  "bs": {
+    "proxy": "https://nah-marketing.local"
+  }
+}

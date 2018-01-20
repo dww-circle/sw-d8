@@ -1,0 +1,161 @@
+// Default Styles - Global
+// --------------------------------------------------------
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  line-height: 30px;
+  margin: 0;
+}
+
+// h1-h6
+h1  {
+  font-size: 45px;
+  line-height: 55px;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 48px;
+}
+
+h3 {
+  font-size: 36px;
+  font-weight: $fw-light;
+  line-height: 50px;
+}
+
+h4 {
+  font-size: 21px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-size: 14px;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+// links
+a {
+  @include a-text;
+}
+
+// Image Styles
+img {
+  display: block;
+
+  @include breakpoint($tablet) {
+    &.align-left,
+    .align-left & {
+      padding-right: 20px;
+    }
+
+    &.align-right,
+    .align-right & {
+      padding-left: 20px;
+    }
+
+    &.align-center,
+    .align-center & {
+      margin: 0 auto;
+    }
+  }
+}
+
+// Images in WYSIWYG
+.text-formatted {
+
+  img {
+    max-width: 100%;
+    padding-bottom: 20px;
+  }
+
+  // Image with Caption
+  figure {
+    margin: 0 0 1em;
+    position: relative;
+
+    img {
+      padding-bottom: 0px;
+    }
+
+    figcaption {
+      font-size: 14px;
+      line-height: 25px;
+
+      @include breakpoint($desktop-large) {
+        left: -193px;
+        padding-top: 15px;
+        position: absolute;
+        text-align: right;
+        top: 0;
+        width: 170px;
+
+        &:before {
+          content:'';
+          height: 5px;
+          left: 0;
+          position: absolute;
+          top: -5px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+blockquote {
+  font-size: 90%;
+}
+
+.marker {
+  background: black;
+  color: white;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 2px 2px 3px 4px;
+}
+
+// List Styles
+.item-list {
+  ul,
+  ol {
+    li {
+      margin-bottom: .5em;
+    }
+  }
+}
+
+// Global Content Styles
+// --------------------------------------------------------
+
+.submitted {
+  color: grey;
+  font-size: 13px;
+}
+
+.clearfix {
+  @include clearfix;
+}
+
+main {
+  margin-top: 52px;
+}

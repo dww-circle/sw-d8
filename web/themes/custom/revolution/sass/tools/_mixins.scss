@@ -1,0 +1,203 @@
+/// Link mixin
+/// @param {color} $normal - normal color
+/// @param {color} $hover  - hover
+/// @param {color} $active - active
+/// @param {color} $focus - focus
+@mixin link-colors($normal, $hover: false, $active: false, $visited: false, $focus: false) {
+  &:link {
+    color: $normal;
+  }
+
+  @if $visited {
+    &:visited,
+    &:link:visited {
+      color: $visited;
+    }
+  } @else {
+    &:visited,
+    &:link:visited {
+      color: $normal;
+    }
+  }
+
+  @if $focus {
+    &:focus {
+      color: $focus;
+    }
+  } @else {
+    &:focus {
+      color: $normal;
+    }
+  }
+
+  @if $hover {
+    &.active:hover,
+    &.active-trail:hover,
+    &.visited:hover,
+    &:hover {
+      color: $hover;
+    }
+  } @else {
+    &.active:hover,
+    &.active-trail:hover,
+    &.visited:hover,
+    &:hover {
+      color: $normal;
+    }
+  }
+
+  @if $active {
+    &.is-active,
+    &:active,
+    &.active-trail {
+      color: $active;
+    }
+  } @else {
+    &.is-active,
+    &:active,
+    &.active-trail {
+      color: $normal;
+    }
+  }
+}
+
+/// H1-6 loop
+@function headings($from:1, $to:6) {
+  @if $from == $to {
+    @return 'h#{$from}';
+  } @else {
+    @return 'h#{$from},' + headings($from+1, $to);
+  }
+}
+
+/// Apply to <ul> tag.
+@mixin ul-menu {
+  &.menu {
+    list-style: none;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-top: 0;
+    padding-left: 0;
+
+    li {
+      list-style: none;
+    }
+  }
+}
+
+@mixin button-base {
+  @include link-colors(white);
+  -webkit-appearance: none;
+  border: 0;
+  border-radius: 100px;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: .64px;
+  margin: 10px 0;
+  padding: 12px 43px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+@mixin clearfix {
+  &:after {
+    clear: both;
+    content: " ";
+    display: table;
+  }
+}
+
+@mixin clearfix-before {
+  &:before {
+    clear: both;
+    content: " ";
+    display: table;
+  }
+}
+
+@mixin resetclear {
+  &:after {
+    clear: none;
+    content: none;
+    display: inherit;
+  }
+}
+
+@mixin a-text {
+  @include link-colors($c-link);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+@mixin f-serif {
+  font-family: $ff-serif;
+  font-weight: bold;
+}
+
+@mixin f-sans-light {
+  font-family: $ff-sans;
+  font-weight: $fw-light;
+}
+
+@mixin f-sans-regular {
+  font-family: $ff-sans;
+  font-weight: normal;
+}
+
+@mixin f-sans-bold {
+  font-family: $ff-sans;
+  font-weight: bold;
+}
+
+@mixin dropdown { // Apply to .menu-item--expanded
+  position: relative;
+
+  ul {
+    border-color: #DDDDDD;
+    border-style: solid;
+    border-width: 1px;
+    display: none;
+    left: 0;
+    position: absolute;
+    text-align: left;
+    width: 238px;
+    z-index: $z-solar-system;
+  }
+
+  &:hover ul {
+    display: block;
+  }
+
+  // Level Two - Links
+  li {
+    display: block;
+    margin: 0;
+  }
+
+  li a {
+    background: white;
+    color: #4A4A4A;
+    display: block;
+    font-size: 15px;
+    margin: 0;
+    text-transform: none;
+
+    &:hover {
+      color: white;
+      text-decoration: none;
+    }
+  }
+
+  ul ul {
+    left: 236px;
+    top: 0;
+  }
+}

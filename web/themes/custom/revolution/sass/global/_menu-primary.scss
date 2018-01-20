@@ -1,0 +1,102 @@
+.region-primary-menu {
+  background: black;
+  display: none;
+  font-size: 16px;
+  letter-spacing: 1.07px;
+  text-transform: uppercase;
+  width: 100%;
+  z-index: $z-atmosphere;
+
+  @include breakpoint($tablet) {
+    display: block;
+  }
+
+  .has-hero-slice & {
+    position: absolute;
+  }
+
+  ul {
+    @include ul-menu;
+    top: 50px;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  // Level One  Links
+  nav > ul > li {
+    > a {
+      @include link-colors(white, $c-default);
+      border-bottom: 5px solid transparent;
+      display: block;
+      margin-left: 30px;
+      padding: 10px 10px 5px 10px;
+
+      @include breakpoint($desktop) {
+        margin-left: 30px;
+      }
+    }
+
+    // hover/active state
+    &.menu-item--active-trail > a,
+    > a.is-active,
+    > a:hover {
+      border-bottom: 5px solid $c-link;
+      text-decoration: none;
+    }
+  }
+
+  // Level Two - Dropdowns
+  .menu-item--expanded {
+    @include dropdown;
+  }
+
+  a {
+    padding: 13px 23px 11px;
+  }
+
+  // Level Two Active
+  // When second level is active
+  .primary-level-two-active {
+    display: none;
+
+    @include breakpoint($desktop-large) {
+      background: rgba(250, 250, 250, .4);
+      display: block;
+      left: 0;
+      text-transform: none;
+
+      li {
+        display: inline-block;
+
+        &:hover a,
+        &.menu-item--active-trail a {
+          background: white;
+          border-color: transparent;
+        }
+      }
+    }
+
+    a {
+      margin-left: 0;
+    }
+  }
+
+  // Level Three - Flyouts
+  ul > .menu-item--expanded {
+
+    li > a:after {
+      color: $c-link;
+      transform: rotate(270deg);
+      right: 14px;
+      top: 10px;
+    }
+
+    li:hover {
+      > a:after {
+        color: white;
+      }
+    }
+  }
+}
