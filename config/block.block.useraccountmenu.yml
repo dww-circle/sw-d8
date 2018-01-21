@@ -1,0 +1,24 @@
+uuid: 32b105d5-7382-41cb-8a3b-0baaea1174e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - revolution
+id: useraccountmenu
+theme: revolution
+region: utility_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }
