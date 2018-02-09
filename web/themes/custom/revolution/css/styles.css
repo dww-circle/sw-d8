@@ -314,6 +314,25 @@ main {
   .region-primary-menu ul > .menu-item--expanded li:hover > a:after {
     color: white; }
 
+.region-utility-menu {
+  background: black;
+  opacity: .8;
+  text-align: right; }
+  .region-utility-menu ul {
+    margin: 0; }
+    .region-utility-menu ul li {
+      display: block;
+      float: left;
+      margin: 0;
+      padding: 0; }
+      .region-utility-menu ul li:last-child a {
+        border-right: 0; }
+    .region-utility-menu ul a {
+      border-right: 1px solid #EEEEEE;
+      color: #dcdcdc;
+      font-size: 10px;
+      padding: 0 5px; }
+
 .region-content {
   margin: 0 auto;
   max-width: 1170px; }
