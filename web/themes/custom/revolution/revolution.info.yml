@@ -15,15 +15,10 @@ stylesheets-remove:
   - core/assets/vendor/jquery.ui/themes/base/theme.css
 
 regions:
-  utility_menu: "Utility Menu"
-  header: "Header - Logo, Persona Menu"
-  primary_menu: "Primary Menu"
+  utility_menu: "Utility Menu - User Account Menu"
+  header: "Header - Logo, Main Menu, Search"
   content: "Content"
   content_bottom: "Content Bottom"
-  sidebar_first: "Sidebar First"
-  sidebar_second: "Sidebar Second"
   footer: "Footer"
-  footer_second: "Footer Second"
-
   highlighted: "Highlighted"
   help: "Help"
