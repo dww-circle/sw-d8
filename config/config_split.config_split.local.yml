@@ -1,0 +1,17 @@
+uuid: 71345009-6fc7-4a3d-805d-323f8ba0a3ab
+langcode: en
+status: false
+dependencies: {  }
+id: local
+label: Local
+folder: ../config-local
+module:
+  devel: 0
+theme: {  }
+blacklist:
+  - devel.settings
+  - devel.toolbar.settings
+graylist: {  }
+graylist_dependents: false
+graylist_skip_equal: true
+weight: 0
