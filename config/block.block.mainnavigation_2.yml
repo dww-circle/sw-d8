@@ -1,4 +1,4 @@
-uuid: f9a635c5-e114-4301-af86-3436ba18c545
+uuid: a61d71e8-9496-4a43-a553-d1503acca334
 langcode: en
 status: true
 dependencies:
@@ -8,10 +8,10 @@ dependencies:
     - system
   theme:
     - revolution
-id: mainnavigation
+id: mainnavigation_2
 theme: revolution
-region: header
-weight: -2
+region: main_menu
+weight: -1
 provider: null
 plugin: 'system_menu_block:main'
 settings:

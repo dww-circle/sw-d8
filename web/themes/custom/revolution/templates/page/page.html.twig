@@ -51,16 +51,20 @@
   {{ page.help }}
 
   <header role="banner" class="clearfix header">
+    {{ page.header }}
 
     <a href="/" title="{{ 'Home'|t }}" rel="home" class="site-logo">
       <img src="/{{ directory }}/images/logos/logo.svg" alt="{{ 'Socialist Worker Home'|t }}" />
+     <div class="sublogo">
+       <div>Publication of the </div>
+       <div>
+      International Socialist Organization</div>
+    </div>
     </a>
 
-    {{ page.header }}
 
   </header>
-
-  {{ page.primary_menu }}
+  {{ page.main_menu }}
 
   <main role="main" {{ attributes }}>
 

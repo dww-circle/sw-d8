@@ -16,7 +16,8 @@ stylesheets-remove:
 
 regions:
   utility_menu: "Utility Menu - User Account Menu"
-  header: "Header - Logo, Main Menu, Search"
+  header: "Header - Logo, Mobile Menu"
+  main_menu: "Main Menu & Search"
   content: "Content"
   content_bottom: "Content Bottom"
   footer: "Footer"

@@ -1,4 +1,8 @@
-.region-primary-menu {
+.region-header nav {
+  display: none;
+}
+
+.region-main-menu {
   background: black;
   display: none;
   font-size: 16px;
@@ -28,11 +32,7 @@
   nav > ul > li {
     > a {
       @include link-colors(white, $c-default);
-      border-bottom: 5px solid transparent;
       display: block;
-      margin-left: 30px;
-      padding: 10px 10px 5px 10px;
-
       @include breakpoint($desktop) {
         margin-left: 30px;
       }
@@ -42,7 +42,6 @@
     &.menu-item--active-trail > a,
     > a.is-active,
     > a:hover {
-      border-bottom: 5px solid $c-link;
       text-decoration: none;
     }
   }

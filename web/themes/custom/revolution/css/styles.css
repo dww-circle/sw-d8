@@ -42,15 +42,15 @@ p {
 a {
   text-decoration: none; }
   a:link {
-    color: #0091EA; }
+    color: #EA3223; }
   a:visited, a:link:visited {
-    color: #0091EA; }
+    color: #EA3223; }
   a:focus {
-    color: #0091EA; }
+    color: #EA3223; }
   a.active:hover, a.active-trail:hover, a.visited:hover, a:hover {
-    color: #0091EA; }
+    color: #EA3223; }
   a.is-active, a:active, a.active-trail {
-    color: #0091EA; }
+    color: #EA3223; }
   a:hover {
     text-decoration: underline; }
 
@@ -209,7 +209,10 @@ main {
       .region-header .search-block-form .form-wrapper .form-submit:hover {
         background: none; }
 
-.region-primary-menu {
+.region-header nav {
+  display: none; }
+
+.region-main-menu {
   background: black;
   display: none;
   font-size: 16px;
@@ -218,48 +221,44 @@ main {
   width: 100%;
   z-index: 100; }
   @media (min-width: 821px) {
-    .region-primary-menu {
+    .region-main-menu {
       display: block; } }
-  .has-hero-slice .region-primary-menu {
+  .has-hero-slice .region-main-menu {
     position: absolute; }
-  .region-primary-menu ul {
+  .region-main-menu ul {
     top: 50px; }
-    .region-primary-menu ul.menu {
+    .region-main-menu ul.menu {
       list-style: none;
       margin-bottom: 0;
       margin-left: 0;
       margin-top: 0;
       padding-left: 0; }
-      .region-primary-menu ul.menu li {
+      .region-main-menu ul.menu li {
         list-style: none; }
-  .region-primary-menu li {
+  .region-main-menu li {
     display: inline-block; }
-  .region-primary-menu nav > ul > li > a {
-    border-bottom: 5px solid transparent;
-    display: block;
-    margin-left: 30px;
-    padding: 10px 10px 5px 10px; }
-    .region-primary-menu nav > ul > li > a:link {
+  .region-main-menu nav > ul > li > a {
+    display: block; }
+    .region-main-menu nav > ul > li > a:link {
       color: white; }
-    .region-primary-menu nav > ul > li > a:visited, .region-primary-menu nav > ul > li > a:link:visited {
+    .region-main-menu nav > ul > li > a:visited, .region-main-menu nav > ul > li > a:link:visited {
       color: white; }
-    .region-primary-menu nav > ul > li > a:focus {
+    .region-main-menu nav > ul > li > a:focus {
       color: white; }
-    .region-primary-menu nav > ul > li > a.active:hover, .region-primary-menu nav > ul > li > a.active-trail:hover, .region-primary-menu nav > ul > li > a.visited:hover, .region-primary-menu nav > ul > li > a:hover {
+    .region-main-menu nav > ul > li > a.active:hover, .region-main-menu nav > ul > li > a.active-trail:hover, .region-main-menu nav > ul > li > a.visited:hover, .region-main-menu nav > ul > li > a:hover {
       color: #4A4A4A; }
-    .region-primary-menu nav > ul > li > a.is-active, .region-primary-menu nav > ul > li > a:active, .region-primary-menu nav > ul > li > a.active-trail {
+    .region-main-menu nav > ul > li > a.is-active, .region-main-menu nav > ul > li > a:active, .region-main-menu nav > ul > li > a.active-trail {
       color: white; }
     @media (min-width: 961px) {
-      .region-primary-menu nav > ul > li > a {
+      .region-main-menu nav > ul > li > a {
         margin-left: 30px; } }
-  .region-primary-menu nav > ul > li.menu-item--active-trail > a,
-  .region-primary-menu nav > ul > li > a.is-active,
-  .region-primary-menu nav > ul > li > a:hover {
-    border-bottom: 5px solid #0091EA;
+  .region-main-menu nav > ul > li.menu-item--active-trail > a,
+  .region-main-menu nav > ul > li > a.is-active,
+  .region-main-menu nav > ul > li > a:hover {
     text-decoration: none; }
-  .region-primary-menu .menu-item--expanded {
+  .region-main-menu .menu-item--expanded {
     position: relative; }
-    .region-primary-menu .menu-item--expanded ul {
+    .region-main-menu .menu-item--expanded ul {
       border-color: #DDDDDD;
       border-style: solid;
       border-width: 1px;
@@ -269,49 +268,49 @@ main {
       text-align: left;
       width: 238px;
       z-index: 300; }
-    .region-primary-menu .menu-item--expanded:hover ul {
+    .region-main-menu .menu-item--expanded:hover ul {
       display: block; }
-    .region-primary-menu .menu-item--expanded li {
+    .region-main-menu .menu-item--expanded li {
       display: block;
       margin: 0; }
-    .region-primary-menu .menu-item--expanded li a {
+    .region-main-menu .menu-item--expanded li a {
       background: white;
       color: #4A4A4A;
       display: block;
       font-size: 15px;
       margin: 0;
       text-transform: none; }
-      .region-primary-menu .menu-item--expanded li a:hover {
+      .region-main-menu .menu-item--expanded li a:hover {
         color: white;
         text-decoration: none; }
-    .region-primary-menu .menu-item--expanded ul ul {
+    .region-main-menu .menu-item--expanded ul ul {
       left: 236px;
       top: 0; }
-  .region-primary-menu a {
+  .region-main-menu a {
     padding: 13px 23px 11px; }
-  .region-primary-menu .primary-level-two-active {
+  .region-main-menu .primary-level-two-active {
     display: none; }
     @media (min-width: 1201px) {
-      .region-primary-menu .primary-level-two-active {
+      .region-main-menu .primary-level-two-active {
         background: rgba(250, 250, 250, 0.4);
         display: block;
         left: 0;
         text-transform: none; }
-        .region-primary-menu .primary-level-two-active li {
+        .region-main-menu .primary-level-two-active li {
           display: inline-block; }
-          .region-primary-menu .primary-level-two-active li:hover a,
-          .region-primary-menu .primary-level-two-active li.menu-item--active-trail a {
+          .region-main-menu .primary-level-two-active li:hover a,
+          .region-main-menu .primary-level-two-active li.menu-item--active-trail a {
             background: white;
             border-color: transparent; } }
-    .region-primary-menu .primary-level-two-active a {
+    .region-main-menu .primary-level-two-active a {
       margin-left: 0; }
-  .region-primary-menu ul > .menu-item--expanded li > a:after {
-    color: #0091EA;
+  .region-main-menu ul > .menu-item--expanded li > a:after {
+    color: #EA3223;
     -webkit-transform: rotate(270deg);
             transform: rotate(270deg);
     right: 14px;
     top: 10px; }
-  .region-primary-menu ul > .menu-item--expanded li:hover > a:after {
+  .region-main-menu ul > .menu-item--expanded li:hover > a:after {
     color: white; }
 
 .region-utility-menu {
