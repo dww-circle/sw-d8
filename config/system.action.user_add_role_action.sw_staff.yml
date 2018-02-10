@@ -1,0 +1,14 @@
+uuid: 58716aa8-dfda-4e0b-983b-5f8b017a95e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.sw_staff
+  module:
+    - user
+id: user_add_role_action.sw_staff
+label: 'Add the SW Staff role to the selected users'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: sw_staff

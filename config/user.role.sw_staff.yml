@@ -1,0 +1,38 @@
+uuid: 6a6ef32c-8a22-457a-8799-53083e471b50
+langcode: en
+status: true
+dependencies: {  }
+id: sw_staff
+label: 'SW Staff'
+weight: -8
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access files overview'
+  - 'access in-place editing'
+  - 'access site in maintenance mode'
+  - 'access site reports'
+  - 'access toolbar'
+  - 'access user profiles'
+  - 'administer contact forms'
+  - 'administer image styles'
+  - 'administer menu'
+  - 'administer nodes'
+  - 'administer site configuration'
+  - 'administer url aliases'
+  - 'administer users'
+  - 'bypass node access'
+  - 'change own username'
+  - 'delete all revisions'
+  - 'link to any page'
+  - 'manipulate all entityqueues'
+  - 'manipulate entityqueues'
+  - 'revert all revisions'
+  - 'select account cancellation method'
+  - 'use text format full_html'
+  - 'use text format restricted_html'
+  - 'view all revisions'
+  - 'view own unpublished content'
+  - 'view the administration theme'

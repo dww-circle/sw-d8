@@ -1,0 +1,14 @@
+uuid: 275f648c-67ad-4a0e-840e-d2aa5275b49e
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.sw_staff
+  module:
+    - user
+id: user_remove_role_action.sw_staff
+label: 'Remove the SW Staff role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: sw_staff
