@@ -1,0 +1,22 @@
+uuid: 55003f6c-4550-4b1b-9759-df58b4f92d10
+langcode: en
+status: true
+dependencies:
+  config:
+    - simple_block.simple_block.footer_social
+  module:
+    - simple_block
+  theme:
+    - revolution
+id: footertext
+theme: revolution
+region: footer
+weight: 0
+provider: null
+plugin: 'simple_block:footer_social'
+settings:
+  id: 'simple_block:footer_social'
+  label: 'Footer Text'
+  provider: simple_block
+  label_display: '0'
+visibility: {  }

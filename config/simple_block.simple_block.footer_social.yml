@@ -1,0 +1,11 @@
+uuid: 969921e2-4da5-4164-ab7e-27ba48e0151a
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+id: footer_social
+title: 'Footer Text'
+content:
+  value: "<p>Published by the International Socialist Organization.</p>\r\n\r\n<p>Material on the website is ...&nbsp;Nulla porta dolor. Cras risus ipsum, faucibus ut, ullamcorper id, varius ac, leo. Suspendisse eu ligula.</p>\r\n"
+  format: full_html

@@ -123,6 +123,20 @@ blockquote {
 main {
   margin-top: 52px; }
 
+.footer-wrapper {
+  background: black;
+  color: white;
+  font-size: 10px; }
+  .footer-wrapper .block {
+    max-width: 1170px;
+    margin: 10px auto;
+    padding: 10px; }
+  .footer-wrapper p {
+    margin: 0; }
+  .footer-wrapper p:first-of-type {
+    color: #EA3223;
+    text-align: center; }
+
 .header {
   background: black;
   color: white;

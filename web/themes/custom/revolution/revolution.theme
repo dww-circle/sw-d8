@@ -13,3 +13,4 @@ function revolution_preprocess_eck_entity(&$vars) {
   $classes[] = 'clearfix';
 
 }
+
