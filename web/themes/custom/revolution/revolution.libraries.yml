@@ -3,7 +3,7 @@ global:
     base:
       css/styles.css: {}
     theme:
-     //fonts.googleapis.com/css?family=Open+Sans:400,300,600,700|PT+Serif:700: { type: external }
+     //fonts.googleapis.com/css?family=Oswald:400,500|Libre+Baskerville:400|Barlow+Condensed:100: { type: external }
   js:
     js/global.min.js: {}
   dependencies:

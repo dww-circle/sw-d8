@@ -6,6 +6,7 @@
 }
 
 body {
+  font-family: $ff-sans;
   font-size: 18px;
   line-height: 30px;
   margin: 0;
@@ -25,7 +26,6 @@ h2 {
 
 h3 {
   font-size: 36px;
-  font-weight: $fw-light;
   line-height: 50px;
 }
 

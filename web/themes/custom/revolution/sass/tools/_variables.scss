@@ -39,12 +39,18 @@ $z-galaxy: 400;
 
 /// Font-Families
 /// @group Font Family
-$ff-sans: "Open Sans", Helvetica, sans-serif;
+$ff-header: "Oswald", Helvetica, sans-serif;
 
 /// @group Font Family
-$ff-serif: "PT Serif", Times, serif;
+$ff-serif: "Libre Baskerville", Times, serif;
+
+/// @group Font Family
+$ff-sans: "Barlow Condensed", Helvetica, sans-serif;
 
 /// Font-Weights
+/// @group Font Weight
+$fw-thin: 100;
+
 /// @group Font Weight
 $fw-light: 300;
 
@@ -52,7 +58,4 @@ $fw-light: 300;
 $fw-regular: 400;
 
 /// @group Font Weight
-$fw-semibold: 600;
-
-/// @group Font Weight
-$fw-bold: 700;
+$fw-bold: 500;
