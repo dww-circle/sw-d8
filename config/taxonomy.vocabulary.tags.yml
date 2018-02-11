@@ -1,0 +1,9 @@
+uuid: 3f040617-e767-4039-8603-b1263916f96e
+langcode: en
+status: true
+dependencies: {  }
+name: 'Tags (Deprecated)'
+vid: tags
+description: 'Deprecated. Do not use. '
+hierarchy: 0
+weight: 0
