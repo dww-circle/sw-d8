@@ -51,19 +51,22 @@
   {{ page.help }}
 
   <header role="banner" class="clearfix header">
-    {{ page.header }}
-
-    <a href="/" title="{{ 'Home'|t }}" rel="home" class="site-logo">
-      <img src="/{{ directory }}/images/logos/logo.svg" alt="{{ 'Socialist Worker Home'|t }}" />
-     <div class="sublogo">
-       <div>Publication of the </div>
-       <div>
-      International Socialist Organization</div>
+    <div class="header-desktop-menu-expandable">
+      <i class="fas fa-bars"></i>{{ "MENU"|t }}
+      {{ page.header }}
     </div>
-    </a>
-
-
+    <div class="heaeder-logo">
+      <a href="/" title="{{ 'Home'|t }}" rel="home" class="site-logo">
+        <img src="/{{ directory }}/images/logos/logo.svg" alt="{{ 'Socialist Worker Home'|t }}" />
+      </a>
+    </div>
+    <div class="header-sublogo">
+      <div>{{ 'Publication of the'|t }}</div>
+      <div>{{ 'International Socialist Organization'|t }}</div>
+    </div>
   </header>
+
+  {# Main menu and search on desktop.#}
   {{ page.main_menu }}
 
   <main role="main" {{ attributes }}>
@@ -91,5 +94,5 @@
   <div class="footer-wrapper">
     {{ page.footer }}
   </div>
-  
+
 </div>

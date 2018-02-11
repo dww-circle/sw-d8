@@ -1,40 +1,20 @@
-.region-header .search-block-form {
+.region-main-menu .search-block-form {
   display: inline-block;
   vertical-align: middle;
-  width: 38px;
-
-  .form-item {
-    display: none;
-  }
 
   .form-wrapper {
     display: inline-block;
-    height: 25px;
     margin: 0;
     position: relative;
-    width: 23px;
-
-    &:before {
-      font-size: 20px;
-      height: 25px;
-      left: 0;
-      position: absolute;
-      top: 4px;
-      width: 23px;
-    }
 
     .form-submit {
       background: none;
       border: 0;
       border-radius: 0;
-      font-size: 0;
-      height: 25px;
-      left: 0;
+      color: white;
       margin: 0;
       padding: 0;
-      position: absolute;
-      top: 4px;
-      width: 23px;
+      text-transform: uppercase;
 
       &:hover {
         background: none;

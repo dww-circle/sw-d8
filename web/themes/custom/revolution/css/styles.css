@@ -189,38 +189,22 @@ main {
   font-size: 12px;
   text-transform: uppercase; }
 
-.region-header .search-block-form {
+.region-main-menu .search-block-form {
   display: inline-block;
-  vertical-align: middle;
-  width: 38px; }
-  .region-header .search-block-form .form-item {
-    display: none; }
-  .region-header .search-block-form .form-wrapper {
+  vertical-align: middle; }
+  .region-main-menu .search-block-form .form-wrapper {
     display: inline-block;
-    height: 25px;
     margin: 0;
-    position: relative;
-    width: 23px; }
-    .region-header .search-block-form .form-wrapper:before {
-      font-size: 20px;
-      height: 25px;
-      left: 0;
-      position: absolute;
-      top: 4px;
-      width: 23px; }
-    .region-header .search-block-form .form-wrapper .form-submit {
+    position: relative; }
+    .region-main-menu .search-block-form .form-wrapper .form-submit {
       background: none;
       border: 0;
       border-radius: 0;
-      font-size: 0;
-      height: 25px;
-      left: 0;
+      color: white;
       margin: 0;
       padding: 0;
-      position: absolute;
-      top: 4px;
-      width: 23px; }
-      .region-header .search-block-form .form-wrapper .form-submit:hover {
+      text-transform: uppercase; }
+      .region-main-menu .search-block-form .form-wrapper .form-submit:hover {
         background: none; }
 
 .region-header nav {
@@ -228,6 +212,7 @@ main {
 
 .region-main-menu {
   background: black;
+  border-top: 1px solid #747474;
   display: none;
   font-size: 16px;
   font-family: "Barlow Condensed", Helvetica, sans-serif;
@@ -238,9 +223,10 @@ main {
   z-index: 100; }
   @media (min-width: 821px) {
     .region-main-menu {
-      display: block; } }
-  .has-hero-slice .region-main-menu {
-    position: absolute; }
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: auto 200px;
+          grid-template-columns: auto 200px; } }
   .region-main-menu ul {
     top: 50px; }
     .region-main-menu ul.menu {
@@ -265,9 +251,6 @@ main {
       color: #4A4A4A; }
     .region-main-menu nav > ul > li > a.is-active, .region-main-menu nav > ul > li > a:active, .region-main-menu nav > ul > li > a.active-trail {
       color: white; }
-    @media (min-width: 961px) {
-      .region-main-menu nav > ul > li > a {
-        margin-left: 30px; } }
   .region-main-menu nav > ul > li.menu-item--active-trail > a,
   .region-main-menu nav > ul > li > a.is-active,
   .region-main-menu nav > ul > li > a:hover {

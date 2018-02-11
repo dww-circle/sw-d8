@@ -6,6 +6,8 @@ global:
      //fonts.googleapis.com/css?family=Oswald:400,500|Libre+Baskerville:400|Barlow+Condensed:100: { type: external }
   js:
     js/global.min.js: {}
+    //use.fontawesome.com/releases/v5.0.6/js/all.js: { type: external, attributes: { defer: true } }
+
   dependencies:
     - core/jquery
     - core/drupal

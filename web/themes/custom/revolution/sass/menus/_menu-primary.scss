@@ -4,6 +4,7 @@
 
 .region-main-menu {
   background: black;
+  border-top: 1px solid #747474;
   display: none;
   font-size: 16px;
   font-family: $ff-sans;
@@ -14,11 +15,8 @@
   z-index: $z-atmosphere;
 
   @include breakpoint($tablet) {
-    display: block;
-  }
-
-  .has-hero-slice & {
-    position: absolute;
+    display: grid;
+    grid-template-columns: auto 200px;
   }
 
   ul {
@@ -35,9 +33,6 @@
     > a {
       @include link-colors(white, $c-default);
       display: block;
-      @include breakpoint($desktop) {
-        margin-left: 30px;
-      }
     }
 
     // hover/active state
