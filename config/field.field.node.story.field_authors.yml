@@ -1,0 +1,28 @@
+uuid: 824a5924-4166-4b2a-bab6-ed3e84dbec42
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_authors
+    - node.type.person
+    - node.type.story
+id: node.story.field_authors
+field_name: field_authors
+entity_type: node
+bundle: story
+label: Authors
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      person: person
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

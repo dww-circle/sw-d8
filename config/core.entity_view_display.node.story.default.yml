@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.story.field_authors
     - field.field.node.story.field_body
     - field.field.node.story.field_body_introduction
     - field.field.node.story.field_introduction
@@ -19,29 +20,37 @@ targetEntityType: node
 bundle: story
 mode: default
 content:
+  field_authors:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
   field_body:
-    weight: 3
+    weight: 4
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_body_introduction:
-    weight: 2
+    weight: 3
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_introduction:
-    weight: 1
+    weight: 2
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_kicker:
-    weight: 0
+    weight: 1
     label: hidden
     settings:
       link_to_entity: false
@@ -49,7 +58,7 @@ content:
     type: string
     region: content
   links:
-    weight: 4
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }

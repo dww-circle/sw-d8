@@ -4,8 +4,13 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.story.field_authors
     - field.field.node.story.field_body
+    - field.field.node.story.field_body_introduction
+    - field.field.node.story.field_introduction
     - field.field.node.story.field_kicker
+    - field.field.node.story.field_location
+    - field.field.node.story.field_story_weight
     - field.field.node.story.field_teaser
     - node.type.story
   module:
@@ -16,18 +21,30 @@ targetEntityType: node
 bundle: story
 mode: teaser
 content:
+  field_authors:
+    type: entity_reference_label
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
   field_teaser:
     type: text_default
-    weight: 0
+    weight: 1
     region: content
     label: hidden
     settings: {  }
     third_party_settings: {  }
   links:
-    weight: 1
+    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
   field_body: true
+  field_body_introduction: true
+  field_introduction: true
   field_kicker: true
+  field_location: true
+  field_story_weight: true
