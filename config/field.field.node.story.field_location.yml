@@ -1,0 +1,46 @@
+uuid: b8647170-1be8-4c50-9557-8dc53b21d30f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_location
+    - node.type.story
+  module:
+    - address
+id: node.story.field_location
+field_name: field_location
+entity_type: node
+bundle: story
+label: Location
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  available_countries: {  }
+  field_settings:
+    administrativeArea:
+      behavior: optional
+    locality:
+      behavior: optional
+    dependentLocality:
+      behavior: hidden
+    postalCode:
+      behavior: hidden
+    sortingCode:
+      behavior: hidden
+    addressLine1:
+      behavior: hidden
+    addressLine2:
+      behavior: hidden
+    organization:
+      behavior: hidden
+    givenName:
+      behavior: hidden
+    additionalName:
+      behavior: hidden
+    familyName:
+      behavior: hidden
+  langcode_override: ''
+field_type: address

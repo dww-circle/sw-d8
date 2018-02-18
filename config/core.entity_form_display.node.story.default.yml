@@ -5,10 +5,12 @@ dependencies:
   config:
     - field.field.node.story.field_body
     - field.field.node.story.field_kicker
+    - field.field.node.story.field_location
     - field.field.node.story.field_story_weight
     - field.field.node.story.field_teaser
     - node.type.story
   module:
+    - address
     - path
     - text
 id: node.story.default
@@ -37,6 +39,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_location:
+    weight: 26
+    settings:
+      default_country: US
+    third_party_settings: {  }
+    type: address_default
     region: content
   field_story_weight:
     weight: 3
