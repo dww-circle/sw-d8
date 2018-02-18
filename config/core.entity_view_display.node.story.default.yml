@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.story.body
+    - field.field.node.story.field_body
     - field.field.node.story.field_kicker
     - node.type.story
   module:
@@ -14,12 +14,12 @@ targetEntityType: node
 bundle: story
 mode: default
 content:
-  body:
-    label: hidden
-    type: text_default
-    weight: 101
+  field_body:
+    weight: 103
+    label: above
     settings: {  }
     third_party_settings: {  }
+    type: text_default
     region: content
   field_kicker:
     weight: 102
