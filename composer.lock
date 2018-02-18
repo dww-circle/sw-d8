@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "f78903221503048392f7a5616753eaf6",
+    "content-hash": "575e28b885c4e1b434c1ade5c0775c94",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1207,6 +1207,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "[#2514126-102] Add field settings for global overrides of required/optional behavior": "https://www.drupal.org/files/issues/2514126-102.field-behavior-settings.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
