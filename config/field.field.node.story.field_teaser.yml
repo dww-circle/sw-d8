@@ -1,0 +1,21 @@
+uuid: 3cb5672c-a228-48ac-b8da-e89be6aaa6ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_teaser
+    - node.type.story
+  module:
+    - text
+id: node.story.field_teaser
+field_name: field_teaser
+entity_type: node
+bundle: story
+label: Teaser
+description: 'This is the short blurb about the story that would appear in story lists, and possibly on the front page.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

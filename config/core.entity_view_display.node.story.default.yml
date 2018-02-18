@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.story.field_body
     - field.field.node.story.field_kicker
+    - field.field.node.story.field_teaser
     - node.type.story
   module:
     - text
@@ -15,21 +16,24 @@ bundle: story
 mode: default
 content:
   field_body:
-    weight: 103
-    label: above
+    weight: 1
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_kicker:
-    weight: 102
-    label: above
+    weight: 0
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
   links:
-    weight: 100
+    weight: 2
     region: content
-hidden: {  }
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_teaser: true

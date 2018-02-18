@@ -4,17 +4,30 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.story.field_body
     - field.field.node.story.field_kicker
+    - field.field.node.story.field_teaser
     - node.type.story
   module:
+    - text
     - user
 id: node.story.teaser
 targetEntityType: node
 bundle: story
 mode: teaser
 content:
-  links:
-    weight: 100
+  field_teaser:
+    type: text_default
+    weight: 0
     region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
+  field_body: true
   field_kicker: true
