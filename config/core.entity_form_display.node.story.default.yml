@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.story.field_authors
     - field.field.node.story.field_body
     - field.field.node.story.field_body_introduction
+    - field.field.node.story.field_contributors
     - field.field.node.story.field_introduction
     - field.field.node.story.field_kicker
     - field.field.node.story.field_location
@@ -34,8 +35,8 @@ content:
     settings:
       form_mode: simple
       override_labels: true
-      label_singular: Author
-      label_plural: Authors
+      label_singular: Person
+      label_plural: People
       allow_new: true
       allow_existing: true
       match_operator: CONTAINS
@@ -57,6 +58,19 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea
+    region: content
+  field_contributors:
+    weight: 121
+    settings:
+      form_mode: simple
+      override_labels: true
+      label_singular: Person
+      label_plural: People
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+    third_party_settings: {  }
+    type: inline_entity_form_complex
     region: content
   field_introduction:
     weight: 12
