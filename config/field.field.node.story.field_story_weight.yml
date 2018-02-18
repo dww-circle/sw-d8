@@ -1,0 +1,23 @@
+uuid: 26c60705-8c47-47b2-b841-07d2d6e8028d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_story_weight
+    - node.type.story
+id: node.story.field_story_weight
+field_name: field_story_weight
+entity_type: node
+bundle: story
+label: 'Story weight'
+description: "Used for ordering story lists. Mostly used to specify how important this story is within its <em>Department</em>. Smaller numbers float to the top, larger ones sink to the bottom.\r\n"
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: -10
+  max: 10
+  prefix: ''
+  suffix: ''
+field_type: integer
