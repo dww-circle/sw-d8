@@ -1,0 +1,18 @@
+uuid: 98b2de7f-9a25-478f-8d03-952aae2a5ae9
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Person
+type: person
+description: 'Used to represent the people who author or are interviewed for SW stories.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false
