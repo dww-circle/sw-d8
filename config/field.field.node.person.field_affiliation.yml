@@ -1,0 +1,19 @@
+uuid: d550c426-846a-4614-8ca3-9bca4beeae98
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_affiliation
+    - node.type.person
+id: node.person.field_affiliation
+field_name: field_affiliation
+entity_type: node
+bundle: person
+label: Affiliation
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

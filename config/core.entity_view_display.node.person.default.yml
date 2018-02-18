@@ -3,16 +3,34 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.person.field_affiliation
+    - field.field.node.person.field_biography
     - field.field.node.person.field_first_name
     - field.field.node.person.field_last_name
     - node.type.person
   module:
+    - text
     - user
 id: node.person.default
 targetEntityType: node
 bundle: person
 mode: default
 content:
+  field_affiliation:
+    weight: 1
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_biography:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
   links:
     weight: 0
     region: content
