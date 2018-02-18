@@ -3,6 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.person.field_first_name
+    - field.field.node.person.field_last_name
     - node.type.person
   module:
     - path
@@ -17,6 +19,22 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_first_name:
+    weight: 31
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_last_name:
+    weight: 32
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   path:
     type: path
     weight: 30
