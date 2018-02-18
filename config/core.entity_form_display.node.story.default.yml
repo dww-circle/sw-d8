@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.story.body
+    - field.field.node.story.field_kicker
     - node.type.story
   module:
     - path
@@ -28,6 +29,14 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_kicker:
+    weight: 32
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   path:
     type: path
     weight: 30
