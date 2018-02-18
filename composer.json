@@ -102,7 +102,6 @@
         ".editorconfig",
         ".eslintignore",
         ".eslintrc.json",
-        ".htaccess",
         "web.config"
       ]
     }
