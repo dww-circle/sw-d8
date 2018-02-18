@@ -1,0 +1,21 @@
+uuid: 3156d486-6089-4baf-809d-7f0acc39dd0f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_introduction
+    - node.type.story
+  module:
+    - text
+id: node.story.field_introduction
+field_name: field_introduction
+entity_type: node
+bundle: story
+label: Introduction
+description: 'Introductory text that accompanies the story, often to introduce the author. If you define an author, you can just insert "%author" into this text and it will be automatically replaced with the author''s name.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
