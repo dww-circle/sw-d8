@@ -13,7 +13,9 @@ label: 'Story weight'
 description: "Used for ordering story lists. Mostly used to specify how important this story is within its <em>Department</em>. Smaller numbers float to the top, larger ones sink to the bottom.\r\n"
 required: true
 translatable: false
-default_value: {  }
+default_value:
+  -
+    value: 0
 default_value_callback: ''
 settings:
   min: -10
