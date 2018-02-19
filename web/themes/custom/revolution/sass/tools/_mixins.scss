@@ -1,3 +1,18 @@
+@mixin page-container {
+  max-width: 1060px;
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+
+  @include breakpoint($desktop) {
+    padding: 0 60px;
+  }
+
+  @include breakpoint($desktop) {
+    padding: 0 120px;
+  }
+}
+
 /// Link mixin
 /// @param {color} $normal - normal color
 /// @param {color} $hover  - hover

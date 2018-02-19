@@ -159,3 +159,7 @@ blockquote {
 main {
   margin-top: 52px;
 }
+
+.page-container {
+  @include page-container;
+}

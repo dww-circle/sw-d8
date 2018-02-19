@@ -2,33 +2,55 @@
   background: black;
   color: white;
   text-align: left;
+}
+.header-logo-group {
+  float: left;
+
+  width: calc(100% - 70px);
 
   @include breakpoint($desktop) {
-    padding: 24px 40px 23px 38px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
   }
+
+
 }
 
-.site-logo {
+.header-logo {
 
   @include breakpoint($desktop) {
+    align-self: flex-end;
     display: inline-block;
-    vertical-align: middle;
+    width: calc(100% - 275px);
   }
 
   img {
     height: auto;
-    margin-bottom: 14px;
-    margin-left: 19px;
-    margin-top: 12px;
-    max-width: calc(100% - 100px);
-    width: 200px;
+    width: 100%;
 
     @include breakpoint($desktop) {
       margin: 0;
-      max-width: none;
-      width: 300px;
+      max-width: 575px;
     }
   }
+}
+
+.header-sublogo {
+  font-size: 12px;
+  line-height: 1;
+  text-transform: uppercase;
+
+  @include breakpoint($desktop) {
+    align-self: flex-end;
+    display: inline-block;
+    text-align: right;
+    width: 275px;
+  }
+}
+
+.sublogo-mod {
+  color: #757575;
 }
 
 .region-header {
@@ -42,22 +64,11 @@
   }
 }
 
-.menu-trigger {
-  background: none;
-  border: 0;
-  color: #858694;
+.header-menu-expandable-mobile {
   float: right;
-  font-family: fontawesome;
-  font-size: 30px;
+  width: 70px;
 
   @include breakpoint($desktop) {
     display: none;
   }
-}
-
-.menu-text {
-  display: block;
-  font-family: $ff-sans;
-  font-size: 12px;
-  text-transform: uppercase;
 }
