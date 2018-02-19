@@ -15,7 +15,9 @@
 @import 'global/footer';
 @import 'global/header';
 @import 'global/header-search-block-form';
-@import 'menus/menu-primary';
+
+@import 'menus/menu-expandable';
+@import 'menus/menu-main';
 @import 'menus/menu-utility';
 
 @import 'pages/page-layout-standard';
