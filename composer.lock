@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "8d9dcf48c8a743907c83dfb8830ec47f",
+    "content-hash": "27218203b5eb31257d10855e8096ea8b",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1603,6 +1603,9 @@
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
                     }
+                },
+                "patches_applied": {
+                    "[#2905230-6] Alter inline_entity_form table to display auto-computed entity labels": "https://www.drupal.org/files/issues/Title_displayed_as_AutoEntityLabel_after_saving_via_Inline_Entity_Form-2905230-6.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
