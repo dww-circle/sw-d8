@@ -16,7 +16,7 @@ stylesheets-remove:
 
 regions:
   utility_menu: "Utility Menu - User Account Menu"
-  header: "Header - Logo, Mobile Menu"
+  expanded_menu: "Expanded Menu - Area that appears when menu icon is clicked."
   main_menu: "Main Menu & Search"
   content: "Content"
   content_bottom: "Content Bottom"

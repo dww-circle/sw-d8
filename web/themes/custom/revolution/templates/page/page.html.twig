@@ -50,19 +50,35 @@
 
   {{ page.help }}
 
+  <div class="menu-expandable">
+    <div class="menu-trigger menu-trigger-desktop">
+      <i class="fas fa-bars"></i><br>
+      <div class="menu-trigger-text">{{ "MENU"|t }}</div>
+    </div>
+    {{ page.expanded_menu }}
+  </div>
   <header role="banner" class="clearfix header">
-    <div class="header-desktop-menu-expandable">
-      <i class="fas fa-bars"></i>{{ "MENU"|t }}
-      {{ page.header }}
-    </div>
-    <div class="heaeder-logo">
-      <a href="/" title="{{ 'Home'|t }}" rel="home" class="site-logo">
-        <img src="/{{ directory }}/images/logos/logo.svg" alt="{{ 'Socialist Worker Home'|t }}" />
-      </a>
-    </div>
-    <div class="header-sublogo">
-      <div>{{ 'Publication of the'|t }}</div>
-      <div>{{ 'International Socialist Organization'|t }}</div>
+    <div class="page-container">
+      <div class="heaeder-logo-group">
+
+        <div class="heaeder-logo">
+          <a href="/" title="{{ 'Home'|t }}" rel="home" class="site-logo">
+            <img src="/{{ directory }}/images/logos/logo.svg" alt="{{ 'Socialist Worker Home'|t }}" />
+          </a>
+        </div>
+        <div class="header-sublogo">
+          <div class="sublogo-mod">
+            <div>{{ 'Publication of the'|t }}</div>
+            <div>{{ 'International Socialist Organization'|t }}</div>
+          </div>
+        </div>
+      </div>
+      <div class="header-menu-expandable-mobile">
+        <div class="menu-trigger menu-trigger-mobile">
+          <i class="fas fa-bars"></i><br>
+          <div class="menu-trigger-text">{{ "MENU"|t }}</div>
+        </div>
+      </div>
     </div>
   </header>
 
