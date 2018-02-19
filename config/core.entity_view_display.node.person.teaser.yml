@@ -15,4 +15,8 @@ content:
   links:
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_affiliation: true
+  field_biography: true
+  field_first_name: true
+  field_last_name: true
