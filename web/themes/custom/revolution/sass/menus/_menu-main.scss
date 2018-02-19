@@ -23,7 +23,7 @@
 
   ul {
     @include ul-menu;
-    top: 50px;
+    top: 54px;
   }
 
   li {
@@ -31,7 +31,7 @@
   }
 
   // Make first link flush with logo.
-  > ul > li:first-child a {
+  nav > ul > li:first-child > a {
     padding-left: 0;
   }
 
@@ -40,6 +40,7 @@
     > a {
       @include link-colors(white, red);
       display: block;
+      padding: 13px 23px 11px;
     }
 
     // hover/active state
@@ -53,10 +54,23 @@
   // Level Two - Dropdowns
   .menu-item--expanded {
     @include dropdown;
+
+    // Triangle
+    ul:before {
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid rgba(255, 255, 255, 0.95);
+      color:  rgba(255, 255, 255, 0.95);
+      content: '.';
+      height: 0;
+      position: absolute;
+      top: -10px;
+      width: 0;
+    }
   }
 
   a {
-    padding: 13px 23px 11px;
+    padding: 2px 20px 2px;
   }
 
   // Level Two Active

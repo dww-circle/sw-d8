@@ -1,24 +1,26 @@
 .region-main-menu .search-block-form {
-  display: inline-block;
-  vertical-align: middle;
+  padding-top: 6px;
+  text-align: right;
 
-  .form-wrapper {
-    display: inline-block;
-    margin: 0;
-    position: relative;
+  .form-search {
+    display: none;
+  }
 
-    .form-submit {
-      background: none;
-      border: 0;
-      border-radius: 0;
-      color: white;
-      margin: 0;
-      padding: 0;
-      text-transform: uppercase;
+  svg {
+    color: white;
+    font-size: 18px;
+    padding-right: 7px;
+    padding-top: 3px;
+  }
 
-      &:hover {
-        background: none;
-      }
-    }
+  .button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 13px 0;
+    text-transform: uppercase;
   }
 }

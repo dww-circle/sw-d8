@@ -16,6 +16,7 @@
 
   @include breakpoint($desktop) {
     display: flex;
+    width: 100%;
   }
 }
 

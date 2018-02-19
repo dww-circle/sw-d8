@@ -46,6 +46,7 @@
   }
 
   @if $hover {
+    &.is-active:hover,
     &.active:hover,
     &.active-trail:hover,
     &.visited:hover,
@@ -177,10 +178,9 @@
 
   ul {
     border-color: #DDDDDD;
-    border-style: solid;
-    border-width: 1px;
     display: none;
     left: 0;
+    padding: 16px 0;
     position: absolute;
     text-align: left;
     width: 238px;
@@ -198,15 +198,15 @@
   }
 
   li a {
-    background: white;
-    color: #4A4A4A;
+    background: rgba( 255, 255, 255, .95);
+    color: black;
     display: block;
-    font-size: 15px;
+    font-size: 16px;
     margin: 0;
     text-transform: none;
 
     &:hover {
-      color: white;
+      color: red;
       text-decoration: none;
     }
   }
