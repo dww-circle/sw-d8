@@ -10,8 +10,8 @@ dependencies:
     - revolution
 id: mainnavigation
 theme: revolution
-region: header
-weight: -2
+region: expanded_menu
+weight: -1
 provider: null
 plugin: 'system_menu_block:main'
 settings:
