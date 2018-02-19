@@ -123,6 +123,18 @@ blockquote {
 main {
   margin-top: 52px; }
 
+.page-container {
+  max-width: 1060px;
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%; }
+  @media (min-width: 961px) {
+    .page-container {
+      padding: 0 60px; } }
+  @media (min-width: 961px) {
+    .page-container {
+      padding: 0 120px; } }
+
 .footer-wrapper {
   background: black;
   color: white;
@@ -140,28 +152,53 @@ main {
 .header {
   background: black;
   color: white;
+  padding: 15px 0 5px;
   text-align: left; }
   @media (min-width: 961px) {
     .header {
-      padding: 24px 40px 23px 38px; } }
+      padding: 30px 0 20px;
+      vertical-align: bottom; } }
+
+.header-logo-group {
+  float: left;
+  width: calc(100% - 70px); }
+  @media (min-width: 961px) {
+    .header-logo-group {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; } }
 
 @media (min-width: 961px) {
-  .site-logo {
+  .header-logo {
+    -webkit-align-self: flex-end;
+        -ms-flex-item-align: end;
+            align-self: flex-end;
     display: inline-block;
-    vertical-align: middle; } }
+    width: calc(100% - 275px); } }
 
-.site-logo img {
+.header-logo img {
   height: auto;
-  margin-bottom: 14px;
-  margin-left: 19px;
-  margin-top: 12px;
-  max-width: calc(100% - 100px);
-  width: 200px; }
+  width: 100%; }
   @media (min-width: 961px) {
-    .site-logo img {
+    .header-logo img {
       margin: 0;
-      max-width: none;
-      width: 300px; } }
+      max-width: 575px; } }
+
+.header-sublogo {
+  font-size: 12px;
+  line-height: 1;
+  text-transform: uppercase; }
+  @media (min-width: 961px) {
+    .header-sublogo {
+      -webkit-align-self: flex-end;
+          -ms-flex-item-align: end;
+              align-self: flex-end;
+      display: inline-block;
+      text-align: right;
+      width: 275px; } }
+
+.sublogo-mod {
+  color: #757575; }
 
 .region-header {
   display: none;
@@ -172,22 +209,12 @@ main {
     .region-header {
       display: inline-block; } }
 
-.menu-trigger {
-  background: none;
-  border: 0;
-  color: #858694;
+.header-menu-expandable-mobile {
   float: right;
-  font-family: fontawesome;
-  font-size: 30px; }
+  width: 70px; }
   @media (min-width: 961px) {
-    .menu-trigger {
+    .header-menu-expandable-mobile {
       display: none; } }
-
-.menu-text {
-  display: block;
-  font-family: "Barlow Condensed", Helvetica, sans-serif;
-  font-size: 12px;
-  text-transform: uppercase; }
 
 .region-main-menu .search-block-form {
   display: inline-block;
@@ -207,8 +234,98 @@ main {
       .region-main-menu .search-block-form .form-wrapper .form-submit:hover {
         background: none; }
 
-.region-header nav {
+.menu-trigger {
+  font-size: 30px;
+  text-align: center;
+  margin: 0 0 0 40px;
+  width: 30px; }
+  .menu-trigger svg {
+    color: red; }
+
+.menu-trigger-text {
+  font-size: 11.4px; }
+
+.menu-trigger-desktop {
   display: none; }
+  @media (min-width: 961px) {
+    .menu-trigger-desktop {
+      display: block;
+      left: 20px;
+      position: absolute;
+      top: 40px;
+      z-index: 200; } }
+
+.menu-expanded-close {
+  margin-bottom: 10px;
+  text-align: right;
+  text-transform: uppercase; }
+  .menu-expanded-close .menu-expanded-close-text {
+    border: 1px solid #757575;
+    display: inline-block;
+    padding: 3px 10px; }
+
+.region-expanded-menu {
+  background: black;
+  color: white;
+  display: none;
+  font-size: 16px;
+  height: 100%;
+  line-height: 22px;
+  padding: 0 30px 30px;
+  position: absolute;
+  width: 100%;
+  top: 80px; }
+  @media (min-width: 961px) {
+    .region-expanded-menu {
+      top: 150px;
+      width: 220px; } }
+  .region-expanded-menu ul {
+    margin: 0 0 10px;
+    padding: 0;
+    list-style: none; }
+    .region-expanded-menu ul li {
+      margin: 0;
+      padding: 0;
+      list-style: none; }
+      .region-expanded-menu ul li a {
+        padding: 5px 0; }
+  .region-expanded-menu nav > ul > li > a {
+    color: white;
+    text-transform: uppercase; }
+
+.region-expanded-menu .block-search {
+  width: 100%; }
+  .region-expanded-menu .block-search h2 {
+    font-size: 16px;
+    margin-bottom: 0;
+    text-transform: uppercase; }
+  .region-expanded-menu .block-search form {
+    position: relative; }
+  .region-expanded-menu .block-search .form-search {
+    color: black;
+    font-size: 18px;
+    height: 40px;
+    margin-bottom: 20px;
+    width: 100%; }
+  .region-expanded-menu .block-search svg {
+    color: #B3B5B8;
+    font-size: 30px;
+    position: absolute;
+    right: 5px;
+    top: 7px; }
+  .region-expanded-menu .block-search .button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: transparent;
+    border: none;
+    color: transparent;
+    font-size: 0px;
+    position: absolute;
+    height: 40px;
+    right: 5px;
+    top: 0;
+    width: 40px;
+    z-index: 400; }
 
 .region-main-menu {
   background: black;
@@ -221,8 +338,11 @@ main {
   text-transform: uppercase;
   width: 100%;
   z-index: 100; }
-  @media (min-width: 821px) {
+  @media (min-width: 961px) {
     .region-main-menu {
+      display: block; } }
+  @media (min-width: 961px) {
+    .region-main-menu .page-container {
       display: -ms-grid;
       display: grid;
       -ms-grid-columns: auto 200px;
@@ -239,6 +359,8 @@ main {
         list-style: none; }
   .region-main-menu li {
     display: inline-block; }
+  .region-main-menu > ul > li:first-child a {
+    padding-left: 0; }
   .region-main-menu nav > ul > li > a {
     display: block; }
     .region-main-menu nav > ul > li > a:link {
@@ -248,7 +370,7 @@ main {
     .region-main-menu nav > ul > li > a:focus {
       color: white; }
     .region-main-menu nav > ul > li > a.active:hover, .region-main-menu nav > ul > li > a.active-trail:hover, .region-main-menu nav > ul > li > a.visited:hover, .region-main-menu nav > ul > li > a:hover {
-      color: #4A4A4A; }
+      color: red; }
     .region-main-menu nav > ul > li > a.is-active, .region-main-menu nav > ul > li > a:active, .region-main-menu nav > ul > li > a.active-trail {
       color: white; }
   .region-main-menu nav > ul > li.menu-item--active-trail > a,

@@ -1,0 +1,6 @@
+name: sw-d8
+recipe: pantheon
+config:
+  framework: drupal8
+  site: sw-d8
+  id: 579c5c16-5927-41be-aad5-b84e1adaede9

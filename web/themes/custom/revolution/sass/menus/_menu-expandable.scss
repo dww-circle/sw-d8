@@ -1,10 +1,7 @@
 .menu-trigger {
   font-size: 30px;
-
   text-align: center;
-
   margin: 0 0 0 40px;
-
   width: 30px;
 
   svg {
@@ -21,13 +18,9 @@
 
   @include breakpoint($desktop) {
     display: block;
-
     left: 20px;
-
     position: absolute;
-
     top: 40px;
-
     z-index: 200;
   }
 }
@@ -40,29 +33,26 @@
 
   .menu-expanded-close-text {
     border: 1px solid #757575;
-
     display: inline-block;
-
     padding: 3px 10px;
   }
 }
 
 //54
 .region-expanded-menu {
-
   background: black;
   color: white;
   display: none;
   font-size: 16px;
   height: 100%;
   line-height: 22px;
-  padding: 30px;
+  padding: 0 30px 30px;
   position: absolute;
   width: 100%;
   top: 80px;
 
   @include breakpoint($desktop) {
-    top: 165px;
+    top: 150px;
     width: 220px;
   }
 
@@ -97,15 +87,12 @@
 }
 
 // 95
-region-expanded-menu .block-search {
-
+.region-expanded-menu .block-search {
   width: 100%;
 
   h2 {
     font-size: 16px;
-
     margin-bottom: 0;
-
     text-transform: uppercase;
   }
 
@@ -114,26 +101,22 @@ region-expanded-menu .block-search {
   }
 
   .form-search {
-
     color: black;
     font-size: 18px;
     height: 40px;
     margin-bottom: 20px;
     width: 100%;
+  }
 
-    svg {
-
-      color: #B3B5B8;
-      font-size: 30px;
-      position: absolute;
-      right: 5px;
-      top: 7px;
-    }
-
+  svg {
+    color: #B3B5B8;
+    font-size: 30px;
+    position: absolute;
+    right: 5px;
+    top: 7px;
   }
 
   .button {
-
     -moz-appearance: none;
     -webkit-appearance: none;
     background: transparent;
@@ -146,7 +129,5 @@ region-expanded-menu .block-search {
     top: 0;
     width: 40px;
     z-index: 400;
-
   }
-
 }
