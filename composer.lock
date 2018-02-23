@@ -1481,7 +1481,7 @@
                     }
                 },
                 "patches_applied": {
-                    "[#2514126-102] Add field settings for global overrides of required/optional behavior": "https://www.drupal.org/files/issues/2514126-102.field-behavior-settings.patch"
+                    "[#2514126-146] Add field settings for global overrides of required/optional behavior": "https://www.drupal.org/files/issues/2514126-146.field-behavior-settings.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
