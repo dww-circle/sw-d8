@@ -1,0 +1,26 @@
+uuid: 571b44e7-54e8-45bf-86f8-5fb411cf4863
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.slices.field_slices
+    - node.type.slices
+  module:
+    - entity_reference_revisions
+    - user
+id: node.slices.default
+targetEntityType: node
+bundle: slices
+mode: default
+content:
+  field_slices:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  links: true

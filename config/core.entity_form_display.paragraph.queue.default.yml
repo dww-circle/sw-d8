@@ -1,0 +1,38 @@
+uuid: cde9900f-e474-4f73-a93d-7b3f025a21c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.queue.field_display_title
+    - field.field.paragraph.queue.field_num
+    - field.field.paragraph.queue.field_queue
+    - paragraphs.paragraphs_type.queue
+id: paragraph.queue.default
+targetEntityType: paragraph
+bundle: queue
+mode: default
+content:
+  field_display_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_num:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_queue:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

@@ -1,0 +1,23 @@
+uuid: 82681bcc-a40b-438a-8d4c-17f7b22b3d1b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_num
+    - paragraphs.paragraphs_type.queue
+  module:
+    - options
+id: paragraph.queue.field_num
+field_name: field_num
+entity_type: paragraph
+bundle: queue
+label: 'Number of Articles'
+description: 'Choose the number of articles that should be displayed in this slice.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 5
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

@@ -1,0 +1,40 @@
+uuid: f0f96b9a-f0ec-470b-b8d6-3c58e76c06cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.queue.field_display_title
+    - field.field.paragraph.queue.field_num
+    - field.field.paragraph.queue.field_queue
+    - paragraphs.paragraphs_type.queue
+  module:
+    - options
+id: paragraph.queue.default
+targetEntityType: paragraph
+bundle: queue
+mode: default
+content:
+  field_display_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_num:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
+  field_queue:
+    weight: 1
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden: {  }

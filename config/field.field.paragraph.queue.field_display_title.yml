@@ -1,0 +1,19 @@
+uuid: c5bdd970-39f0-4810-af85-a920900cd779
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_display_title
+    - paragraphs.paragraphs_type.queue
+id: paragraph.queue.field_display_title
+field_name: field_display_title
+entity_type: paragraph
+bundle: queue
+label: 'Display Title'
+description: 'Title as shown to end users.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

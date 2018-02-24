@@ -1,0 +1,18 @@
+uuid: 310d62c0-6730-44c5-89cc-23e606a30f08
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.slices
+  module:
+    - user
+id: node.slices.teaser
+targetEntityType: node
+bundle: slices
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden: {  }

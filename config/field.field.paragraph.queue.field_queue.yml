@@ -1,0 +1,23 @@
+uuid: 6d641ffd-b738-4812-a95e-20e6199109d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_queue
+    - paragraphs.paragraphs_type.queue
+id: paragraph.queue.field_queue
+field_name: field_queue
+entity_type: paragraph
+bundle: queue
+label: Queue
+description: 'Choose from the list of Entity Queues'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:entity_queue'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

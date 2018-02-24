@@ -1,0 +1,21 @@
+uuid: 5343a487-9b5d-4163-843b-329a94009d47
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.the_russian_revolution
+id: entity_subqueue.the_russian_revolution.default
+targetEntityType: entity_subqueue
+bundle: the_russian_revolution
+mode: default
+content:
+  items:
+    label: hidden
+    type: entity_reference_entity_view
+    weight: 0
+    region: content
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+hidden: {  }

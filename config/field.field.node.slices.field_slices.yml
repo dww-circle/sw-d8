@@ -1,0 +1,31 @@
+uuid: 60e3cb16-62a1-4838-99ef-b06e484f05ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_slices
+    - node.type.slices
+    - paragraphs.paragraphs_type.queue
+  module:
+    - entity_reference_revisions
+id: node.slices.field_slices
+field_name: field_slices
+entity_type: node
+bundle: slices
+label: Slices
+description: 'Grouped article collections.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      queue: queue
+    target_bundles_drag_drop:
+      queue:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions

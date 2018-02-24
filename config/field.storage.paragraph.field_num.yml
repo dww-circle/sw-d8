@@ -1,0 +1,30 @@
+uuid: f697844e-7cf2-4c92-8f4d-ec643d950a4b
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_num
+field_name: field_num
+entity_type: paragraph
+type: list_integer
+settings:
+  allowed_values:
+    -
+      value: 5
+      label: '5'
+    -
+      value: 6
+      label: '6'
+    -
+      value: 7
+      label: '7'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
