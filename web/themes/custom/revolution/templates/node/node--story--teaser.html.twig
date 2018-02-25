@@ -85,16 +85,19 @@
 <article{{ attributes.addClass(classes) }}>
 
   <div class="left">
-    {{ content.field_image }}
+
+    {% block image %}
+      {{ content.field_image }}
+    {% endblock image %}
   </div>
 
   <div class="right">
-    {{ content.field_label }}
+    {{ content.field_kicker }}
 
     {{ title_prefix }}
-    <h2{{ title_attributes }}>
+    <h3{{ title_attributes }}>
       <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-    </h2>
+    </h3>
     {{ title_suffix }}
 
     <div{{ content_attributes.addClass('node__content') }}>
