@@ -31,6 +31,7 @@ module:
   history: 0
   image: 0
   inline_entity_form: 0
+  kint: 0
   link: 0
   menu_ui: 0
   node: 0
@@ -40,6 +41,7 @@ module:
   quickedit: 0
   rdf: 0
   search: 0
+  search_kint: 0
   shortcut: 0
   simple_block: 0
   system: 0
