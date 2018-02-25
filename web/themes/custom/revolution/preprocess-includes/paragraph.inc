@@ -23,44 +23,45 @@ function revolution_preprocess_paragraph(&$variables) {
 function revolution_preprocess_paragraph__queue(&$variables) {
 
   // Get field values.
-  $mid_img_num = $variables['paragraph']->field_num->value;
+  $med_img_num = $variables['paragraph']->field_num->value;
   $results = $variables['paragraph']->field_results->value;
   $queue_id = $variables['elements']['field_queue'][0]['#plain_text'];
 
-  // Get queue values.
+  // Get queue list.
   $entity_subqueue = \Drupal::entityManager()->getStorage('entity_subqueue')->load($queue_id);
-  $queue_nids = $entity_subqueue->get('items')->getValue();
+  $queue_list = $entity_subqueue->get('items')->getValue();
 
   $i = 0;
   $output = '';
+  foreach($queue_list as $item) {
 
-  foreach($queue_nids as $nid) {
-
-    if($i != $results) {
+    // Loop through until field_results value.
+    if($i <= $results - 1) {
 
       // Choose View Mode.
       if ($i == 0) {
         $view_mode = 'teaser_image_large';
       }
-
-      else {
+      elseif ($i <= $med_img_num) {
+        $view_mode = 'teaser_image_medium';
+      } else {
         $view_mode = 'teaser';
       }
+
+      //Render Node.
+      $nid = $item['target_id'];
+      $entity_type = 'node';
+      $view_builder = \Drupal::entityTypeManager()->getViewBuilder($entity_type);
+      $storage = \Drupal::entityTypeManager()->getStorage($entity_type);
+      $node = $storage->load($nid);
+      $build = $view_builder->view($node, $view_mode);
+      $output .= render($build);
+
+      $i++;
     }
-
-    $nid = $nid['target_id'];
-
-    //Render Node.
-    $entity_type = 'node';
-    $view_builder = \Drupal::entityTypeManager()->getViewBuilder($entity_type);
-    $storage = \Drupal::entityTypeManager()->getStorage($entity_type);
-    $node = $storage->load($nid);
-    $build = $view_builder->view($node, $view_mode);
-    $output .= render($build);
-
-    $i++;
   }
 
+  // Send markup to template.
   $variables['rendered_queue'] = $output;
-  
+
 }
