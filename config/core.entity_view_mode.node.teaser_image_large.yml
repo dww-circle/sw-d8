@@ -1,0 +1,10 @@
+uuid: 785d94b6-b4c6-424d-8f85-ee50bff9b9f1
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.teaser_image_large
+label: 'Teaser Image Large'
+targetEntityType: node
+cache: true

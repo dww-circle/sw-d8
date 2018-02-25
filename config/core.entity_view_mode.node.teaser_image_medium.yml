@@ -1,0 +1,10 @@
+uuid: 31c9d578-70a1-4240-ad53-c90b0f93e2b3
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.teaser_image_medium
+label: 'Teaser Image Medium'
+targetEntityType: node
+cache: true

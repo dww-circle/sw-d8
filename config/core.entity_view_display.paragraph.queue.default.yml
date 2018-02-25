@@ -6,6 +6,7 @@ dependencies:
     - field.field.paragraph.queue.field_display_title
     - field.field.paragraph.queue.field_num
     - field.field.paragraph.queue.field_queue
+    - field.field.paragraph.queue.field_results
     - paragraphs.paragraphs_type.queue
   module:
     - options
@@ -35,5 +36,12 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: entity_reference_entity_id
+    region: content
+  field_results:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
     region: content
 hidden: {  }

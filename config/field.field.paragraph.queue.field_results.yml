@@ -1,23 +1,23 @@
-uuid: 82681bcc-a40b-438a-8d4c-17f7b22b3d1b
+uuid: 6d3832ec-1830-4c26-afa7-407db42df906
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_num
+    - field.storage.paragraph.field_results
     - paragraphs.paragraphs_type.queue
   module:
     - options
-id: paragraph.queue.field_num
-field_name: field_num
+id: paragraph.queue.field_results
+field_name: field_results
 entity_type: paragraph
 bundle: queue
-label: 'Number of Medium Sized Images'
-description: 'Choose the number of buffer images in the slice.'
+label: 'Number of Articles to Display'
+description: 'Total number of Articles to Display in this slice.'
 required: true
 translatable: false
 default_value:
   -
-    value: 1
+    value: 5
 default_value_callback: ''
 settings: {  }
 field_type: list_integer
