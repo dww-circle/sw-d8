@@ -1,0 +1,80 @@
+uuid: a15ea74d-df64-4e6b-965b-320edec3c2bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.today.field_articles
+    - field.field.paragraph.today.field_block_bottom
+    - field.field.paragraph.today.field_block_right
+    - field.field.paragraph.today.field_block_top
+    - field.field.paragraph.today.field_date
+    - field.field.paragraph.today.field_display_title
+    - field.field.paragraph.today.field_layout
+    - paragraphs.paragraphs_type.today
+  module:
+    - datetime
+id: paragraph.today.default
+targetEntityType: paragraph
+bundle: today
+mode: default
+content:
+  field_articles:
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_block_bottom:
+    weight: 4
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_block_right:
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_block_top:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_date:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_display_title:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_layout:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

@@ -1,0 +1,23 @@
+uuid: b12ecdc8-dcf3-4ee4-a55e-ac1d58d83669
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_block_bottom
+    - paragraphs.paragraphs_type.today
+id: paragraph.today.field_block_bottom
+field_name: field_block_bottom
+entity_type: paragraph
+bundle: today
+label: 'Block Bottom'
+description: 'Optional block for lower left section of slice.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

@@ -1,0 +1,23 @@
+uuid: 7486c19e-f616-41a1-bae5-304f8b38e9d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_layout
+    - paragraphs.paragraphs_type.today
+  module:
+    - options
+id: paragraph.today.field_layout
+field_name: field_layout
+entity_type: paragraph
+bundle: today
+label: 'Number of Medium Sized Images'
+description: 'Choose the number of buffer images in the slice.'
+required: true
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

@@ -6,6 +6,7 @@ dependencies:
     - field.storage.node.field_slices
     - node.type.slices
     - paragraphs.paragraphs_type.queue
+    - paragraphs.paragraphs_type.today
   module:
     - entity_reference_revisions
 id: node.slices.field_slices
@@ -24,8 +25,12 @@ settings:
     negate: 0
     target_bundles:
       queue: queue
+      today: today
     target_bundles_drag_drop:
       queue:
         enabled: true
         weight: 2
+      today:
+        enabled: true
+        weight: 4
 field_type: entity_reference_revisions

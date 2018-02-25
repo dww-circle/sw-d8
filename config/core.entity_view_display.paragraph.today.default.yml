@@ -1,0 +1,77 @@
+uuid: 7b71a536-125e-42b1-8364-0a3efbee9cfa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.today.field_articles
+    - field.field.paragraph.today.field_block_bottom
+    - field.field.paragraph.today.field_block_right
+    - field.field.paragraph.today.field_block_top
+    - field.field.paragraph.today.field_date
+    - field.field.paragraph.today.field_display_title
+    - field.field.paragraph.today.field_layout
+    - paragraphs.paragraphs_type.today
+  module:
+    - datetime
+    - options
+id: paragraph.today.default
+targetEntityType: paragraph
+bundle: today
+mode: default
+content:
+  field_articles:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: entity_reference_entity_id
+    region: content
+  field_block_bottom:
+    weight: 4
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_block_right:
+    weight: 5
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_block_top:
+    weight: 3
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_date:
+    weight: 1
+    label: hidden
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_display_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_layout:
+    weight: 6
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+hidden: {  }

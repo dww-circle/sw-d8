@@ -1,0 +1,9 @@
+uuid: 19a10433-8ba4-467e-a18b-c0b16d2e140d
+langcode: en
+status: true
+dependencies: {  }
+id: today
+label: 'Today''s Stories'
+icon_uuid: null
+description: 'Slice to make Today''s Stories Section'
+behavior_plugins: {  }

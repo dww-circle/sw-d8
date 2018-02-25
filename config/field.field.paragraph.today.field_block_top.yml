@@ -1,0 +1,23 @@
+uuid: a2362b7b-0846-4b3b-88af-9e266ec4bdbd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_block_top
+    - paragraphs.paragraphs_type.today
+id: paragraph.today.field_block_top
+field_name: field_block_top
+entity_type: paragraph
+bundle: today
+label: 'Block Top'
+description: 'Optional spot for an ad'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

@@ -1,0 +1,19 @@
+uuid: 10a0cf07-bc3c-4e50-b443-dcb855d61ca2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_display_title
+    - paragraphs.paragraphs_type.today
+id: paragraph.today.field_display_title
+field_name: field_display_title
+entity_type: paragraph
+bundle: today
+label: 'Display Title'
+description: 'Title as shown to end users.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
