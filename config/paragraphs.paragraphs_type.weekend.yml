@@ -1,0 +1,9 @@
+uuid: e1551d77-abc6-4496-8282-101e1d5ebed4
+langcode: en
+status: true
+dependencies: {  }
+id: weekend
+label: 'Weekend Edition'
+icon_uuid: null
+description: 'Weekend Edition Slice'
+behavior_plugins: {  }

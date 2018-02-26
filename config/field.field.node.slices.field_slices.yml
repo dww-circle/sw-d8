@@ -7,6 +7,7 @@ dependencies:
     - node.type.slices
     - paragraphs.paragraphs_type.queue
     - paragraphs.paragraphs_type.today
+    - paragraphs.paragraphs_type.weekend
   module:
     - entity_reference_revisions
 id: node.slices.field_slices
@@ -26,6 +27,7 @@ settings:
     target_bundles:
       queue: queue
       today: today
+      weekend: weekend
     target_bundles_drag_drop:
       queue:
         enabled: true
@@ -33,4 +35,7 @@ settings:
       today:
         enabled: true
         weight: 4
+      weekend:
+        enabled: true
+        weight: 6
 field_type: entity_reference_revisions

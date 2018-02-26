@@ -1,0 +1,33 @@
+uuid: 70a504e1-8267-4aea-856d-e6e8449362a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.weekend.field_date
+    - field.field.paragraph.weekend.field_display_title
+    - paragraphs.paragraphs_type.weekend
+  module:
+    - datetime
+id: paragraph.weekend.default
+targetEntityType: paragraph
+bundle: weekend
+mode: default
+content:
+  field_date:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_display_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

@@ -1,0 +1,19 @@
+uuid: cc57bbfc-e4b9-4562-9bd5-bb48225e62e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_display_title
+    - paragraphs.paragraphs_type.weekend
+id: paragraph.weekend.field_display_title
+field_name: field_display_title
+entity_type: paragraph
+bundle: weekend
+label: 'Display Title'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

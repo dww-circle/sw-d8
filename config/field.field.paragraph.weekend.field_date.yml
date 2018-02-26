@@ -1,0 +1,21 @@
+uuid: 313626ac-a580-4e90-8825-59b2331e83f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_date
+    - paragraphs.paragraphs_type.weekend
+  module:
+    - datetime
+id: paragraph.weekend.field_date
+field_name: field_date
+entity_type: paragraph
+bundle: weekend
+label: Date
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime
