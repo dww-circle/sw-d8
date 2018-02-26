@@ -105,3 +105,4 @@ Thumbs.db
 # Ignore node.js files
 web/themes/custom/revolution/node_modules
 config-local
+config.local.json
