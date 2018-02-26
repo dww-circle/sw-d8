@@ -47,7 +47,7 @@ function revolution_preprocess_paragraph__queue(&$variables) {
   }
 
   // Send markup to template.
-  $variables['rendered_queue'] = $output;
+  $variables['rendered_articles'] = $output;
 
 }
 

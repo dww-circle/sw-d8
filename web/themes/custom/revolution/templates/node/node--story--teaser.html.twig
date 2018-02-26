@@ -72,36 +72,29 @@
 #}
 {%
   set classes = [
-    'node',
     'node--type-' ~ node.bundle|clean_class,
-    node.isPromoted() ? 'node--promoted',
-    node.isSticky() ? 'node--sticky',
     not node.isPublished() ? 'node--unpublished',
-    view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
-    'clearfix',
+    view_mode ? 'story--' ~ view_mode|clean_class,
   ]
 %}
 
 <article{{ attributes.addClass(classes) }}>
 
-  <div class="left">
+  {% block image %}
 
-    {% block image %}
-      {{ content.field_image }}
-    {% endblock image %}
-  </div>
+  {% endblock image %}
 
-  <div class="right">
+  <div class="content">
     {{ content.field_kicker }}
 
     {{ title_prefix }}
-    <h3{{ title_attributes }}>
+    <h4{{ title_attributes }}>
       <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-    </h3>
+    </h4>
     {{ title_suffix }}
 
     <div{{ content_attributes.addClass('node__content') }}>
-      {{ content|without('field_image', 'field_label') }}
+      {{ content|without('field_image', 'field_kicker') }}
     </div>
   </div>
 

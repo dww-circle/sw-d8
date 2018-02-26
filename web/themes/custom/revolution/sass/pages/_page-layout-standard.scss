@@ -1,4 +1,3 @@
 .region-content {
-  margin: 0 auto;
-  max-width: 1170px;
+  @include page-container;
 }

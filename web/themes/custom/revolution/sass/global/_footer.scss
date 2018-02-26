@@ -4,9 +4,7 @@
   font-size: 10px;
 
   .block {
-    max-width: 1170px;
-    margin: 10px auto;
-    padding: 10px;
+    @include page-container;
   }
 
   p {

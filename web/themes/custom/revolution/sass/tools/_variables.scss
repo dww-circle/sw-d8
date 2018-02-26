@@ -40,12 +40,14 @@ $z-galaxy: 400;
 /// Font-Families
 /// @group Font Family
 $ff-header: "Oswald", Helvetica, sans-serif;
+$ff-nitti: $ff-header;
 
 /// @group Font Family
 $ff-serif: "Libre Baskerville", Times, serif;
 
 /// @group Font Family
 $ff-sans: "Barlow Condensed", Helvetica, sans-serif;
+$ff-din: $ff-sans;
 
 /// Font-Weights
 /// @group Font Weight
@@ -58,4 +60,10 @@ $fw-light: 300;
 $fw-regular: 400;
 
 /// @group Font Weight
+$fw-medium: 400;
+
+/// @group Font Weight
 $fw-bold: 500;
+
+/// @group Font Weight
+$fw-black: 800;

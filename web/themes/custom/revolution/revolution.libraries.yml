@@ -3,7 +3,7 @@ global:
     base:
       css/styles.css: {}
     theme:
-     //fonts.googleapis.com/css?family=Oswald:400,500|Libre+Baskerville:400|Barlow+Condensed:100: { type: external }
+     //fonts.googleapis.com/css?family=Oswald:300,400,500|Libre+Baskerville:400|Barlow+Condensed:100,500,700: { type: external }
   js:
     js/global.min.js: {}
     //use.fontawesome.com/releases/v5.0.6/js/all.js: { type: external, attributes: { defer: true } }
