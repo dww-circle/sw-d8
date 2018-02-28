@@ -1,49 +1,27 @@
-.paragraph-stories.med-image-2 {
-  display: grid;
-  grid-template-columns: 660px 50px 320px;
-
-  .story--teaser-image-large {
-    grid-column-start: 1;
-    grid-column-end: end;
-  }
-
-  .story--teaser-image-medium {
-    grid-column-start: 1;
-    grid-column-end: 1;
-  }
-
-  .story--teaser-image-medium:nth-child(2) {
-    grid-row: 2;
-  }
-
-  .story--teaser-image-medium:nth-child(3) {
-    grid-column-start: 1;
-    grid-row: 3;
-  }
-
-  .story--teaser {
-    grid-column-start: 3;
-    grid-column-end: 3;
-  }
-
-  .story--teaser:nth-child(4) {
-    grid-row: 2;
-  }
-
-  .story--teaser:nth-child(5) {
-    grid-row: 3;
-  }
-}
-
 .slice-title {
-  grid-column-start: 1;
-  grid-column-end: end;
   border-top: 1px solid red;
   color: red;
   font-size: 28px;
   font-weight: $fw-black;
   line-height: 32px;
   text-transform: uppercase;
+}
+
+.story-group--teaser_image_medium {
+
+  @include breakpoint($desktop) {
+    float: left;
+    max-width: 630px;
+    width: calc(66% - 50px);
+  }
+}
+
+.story-group--teaser {
+  @include breakpoint($desktop) {
+    float: right;
+    max-width: 340px;
+    width: 34%;
+  }
 }
 
 .story--teaser-image-medium,

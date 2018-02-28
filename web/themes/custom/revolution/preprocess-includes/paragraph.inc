@@ -32,7 +32,8 @@ function revolution_preprocess_paragraph__queue(&$variables) {
   $queue_list = $entity_subqueue->get('items')->getValue();
 
   $i = 0;
-  $output = '';
+  $nodes = array();
+
   foreach($queue_list as $item) {
 
     // Loop through until field_results value.
@@ -40,11 +41,13 @@ function revolution_preprocess_paragraph__queue(&$variables) {
 
       $nid = $item['target_id'];
       $view_mode = _revolution_view_mode_image_chooser($i, $med_img_num);
-      $output .= _revolution_render_node($nid, $view_mode);
+      $nodes[$view_mode][] =  $nid;
 
       $i++;
     }
   }
+
+  $output = _revolution_story_groups_render($nodes);
 
   // Send markup to template.
   $variables['rendered_articles'] = $output;
@@ -61,16 +64,17 @@ function revolution_preprocess_paragraph__today(&$variables) {
   $count = $variables['content']['field_articles']['#items']->count();
 
   $i = 0;
-  $output = '';
+  $nodes = array();
+
   while($i < $count) {
 
     $nid = $variables['content']['field_articles'][$i]['#plain_text'];
     $view_mode = _revolution_view_mode_image_chooser($i, $med_img_num);
-    $output .= _revolution_render_node($nid, $view_mode);
-
+    $nodes[$view_mode][] =  $nid;
     $i++;
-
   }
+
+  $output = _revolution_story_groups_render($nodes);
 
   // Send markup to template.
   $variables['rendered_articles'] = $output;
@@ -103,6 +107,25 @@ function _revolution_render_node($nid, $view_mode) {
   $node = $storage->load($nid);
   $build = $view_builder->view($node, $view_mode);
   $output = render($build);
+
+  return $output;
+}
+
+
+/*
+ * Custom function to render the grouped stories.
+ */
+function _revolution_story_groups_render($nodes) {
+
+  $output = '';
+
+  foreach ($nodes as $view_mode => $nids) {
+    $output .= '<div class="story-group--' . $view_mode . '">';
+    foreach($nids as $nid) {
+      $output .= _revolution_render_node($nid, $view_mode);
+    }
+    $output .= '</div>';
+  }
 
   return $output;
 }
