@@ -1,15 +1,126 @@
-@mixin page-container {
-  max-width: 1260px;
-  margin: 0 auto;
-  padding: 0 15px;
-  width: 100%;
+@mixin a-text {
+  @include link-colors($c-link);
+  text-decoration: none;
 
-  @include breakpoint($desktop) {
-    padding: 0 60px;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+@mixin button-base {
+  @include link-colors(white);
+  -webkit-appearance: none;
+  border: 0;
+  border-radius: 100px;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: .64px;
+  margin: 10px 0;
+  padding: 12px 43px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+
+@mixin clearfix {
+  &:after {
+    clear: both;
+    content: " ";
+    display: table;
+  }
+}
+
+@mixin clearfix-before {
+  &:before {
+    clear: both;
+    content: " ";
+    display: table;
+  }
+}
+
+@mixin clear-reset {
+  &:after {
+    clear: none;
+    content: none;
+    display: inherit;
+  }
+}
+
+@mixin dropdown { // Apply to .menu-item--expanded
+  position: relative;
+
+  ul {
+    border-color: #DDDDDD;
+    display: none;
+    left: 0;
+    padding: 16px 0;
+    position: absolute;
+    text-align: left;
+    width: 238px;
+    z-index: $z-solar-system;
   }
 
-  @include breakpoint($desktop) {
-    padding: 0 120px;
+  &:hover ul {
+    display: block;
+  }
+
+  // Level Two - Links
+  li {
+    display: block;
+    margin: 0;
+  }
+
+  li a {
+    background: rgba( 255, 255, 255, .95);
+    color: black;
+    display: block;
+    font-size: 16px;
+    margin: 0;
+    text-transform: none;
+
+    &:hover {
+      color: red;
+      text-decoration: none;
+    }
+  }
+
+  ul ul {
+    left: 236px;
+    top: 0;
+  }
+}
+
+@mixin f-serif {
+  font-family: $ff-serif;
+  font-weight: bold;
+}
+
+@mixin f-sans-light {
+  font-family: $ff-sans;
+  font-weight: $fw-light;
+}
+
+@mixin f-sans-regular {
+  font-family: $ff-sans;
+  font-weight: normal;
+}
+
+@mixin f-sans-bold {
+  font-family: $ff-sans;
+  font-weight: bold;
+}
+
+/// H1-6 loop
+@function headings($from:1, $to:6) {
+  @if $from == $to {
+    @return 'h#{$from}';
+  } @else {
+    @return 'h#{$from},' + headings($from+1, $to);
   }
 }
 
@@ -77,12 +188,18 @@
   }
 }
 
-/// H1-6 loop
-@function headings($from:1, $to:6) {
-  @if $from == $to {
-    @return 'h#{$from}';
-  } @else {
-    @return 'h#{$from},' + headings($from+1, $to);
+@mixin page-container {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+
+  @include breakpoint($desktop) {
+    padding: 0 60px;
+  }
+
+  @include breakpoint($desktop) {
+    padding: 0 120px;
   }
 }
 
@@ -98,121 +215,5 @@
     li {
       list-style: none;
     }
-  }
-}
-
-@mixin button-base {
-  @include link-colors(white);
-  -webkit-appearance: none;
-  border: 0;
-  border-radius: 100px;
-  font-size: 15px;
-  font-weight: bold;
-  letter-spacing: .64px;
-  margin: 10px 0;
-  padding: 12px 43px;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-
-  &:hover {
-    text-decoration: none;
-  }
-}
-
-@mixin clearfix {
-  &:after {
-    clear: both;
-    content: " ";
-    display: table;
-  }
-}
-
-@mixin clearfix-before {
-  &:before {
-    clear: both;
-    content: " ";
-    display: table;
-  }
-}
-
-@mixin resetclear {
-  &:after {
-    clear: none;
-    content: none;
-    display: inherit;
-  }
-}
-
-@mixin a-text {
-  @include link-colors($c-link);
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
-@mixin f-serif {
-  font-family: $ff-serif;
-  font-weight: bold;
-}
-
-@mixin f-sans-light {
-  font-family: $ff-sans;
-  font-weight: $fw-light;
-}
-
-@mixin f-sans-regular {
-  font-family: $ff-sans;
-  font-weight: normal;
-}
-
-@mixin f-sans-bold {
-  font-family: $ff-sans;
-  font-weight: bold;
-}
-
-@mixin dropdown { // Apply to .menu-item--expanded
-  position: relative;
-
-  ul {
-    border-color: #DDDDDD;
-    display: none;
-    left: 0;
-    padding: 16px 0;
-    position: absolute;
-    text-align: left;
-    width: 238px;
-    z-index: $z-solar-system;
-  }
-
-  &:hover ul {
-    display: block;
-  }
-
-  // Level Two - Links
-  li {
-    display: block;
-    margin: 0;
-  }
-
-  li a {
-    background: rgba( 255, 255, 255, .95);
-    color: black;
-    display: block;
-    font-size: 16px;
-    margin: 0;
-    text-transform: none;
-
-    &:hover {
-      color: red;
-      text-decoration: none;
-    }
-  }
-
-  ul ul {
-    left: 236px;
-    top: 0;
   }
 }
