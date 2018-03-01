@@ -106,3 +106,4 @@ Thumbs.db
 web/themes/custom/revolution/node_modules
 config-local
 config.local.json
+.ht.router.php
