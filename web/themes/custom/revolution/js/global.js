@@ -1,1 +1,11 @@
-!function(e,n){n.behaviors.menuExpander={attach:function(){e(".menu-trigger, .menu-expanded-close").click(function(){e(".region-expanded-menu").fadeToggle()})}}}(jQuery,Drupal);;
+(function($) {
+  Drupal.behaviors.menuExpander = {
+    attach: function (context, settings) {
+      
+      $(".menu-trigger, .menu-expanded-close").click(function() {
+        $(".region-expanded-menu").fadeToggle();
+      });
+      
+    }
+  };
+})(jQuery);
