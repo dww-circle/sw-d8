@@ -29,7 +29,10 @@ function revolution_preprocess_paragraph__queue(&$variables) {
 
   // Get queue list.
   $entity_subqueue = \Drupal::entityManager()->getStorage('entity_subqueue')->load($queue_id);
-  $queue_list = $entity_subqueue->get('items')->getValue();
+
+  if ($queue_id != NULL) {
+    $queue_list = $entity_subqueue->get('items')->getValue();
+  }
 
   $i = 0;
   $nodes = array();
