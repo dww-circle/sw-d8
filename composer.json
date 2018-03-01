@@ -92,7 +92,7 @@
     "patches": {
       "drupal/auto_entitylabel": {
         "[#2905230-6] Alter inline_entity_form table to display auto-computed entity labels" : "https://www.drupal.org/files/issues/Title_displayed_as_AutoEntityLabel_after_saving_via_Inline_Entity_Form-2905230-6.patch"
-      }	
+      }
     },
     "installer-paths": {
       "web/core": ["type:drupal-core"],
