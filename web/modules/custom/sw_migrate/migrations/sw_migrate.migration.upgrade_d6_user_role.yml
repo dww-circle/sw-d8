@@ -47,6 +47,7 @@ process:
       plugin: flatten
     -
       plugin: filter_format_permission
+      migration: upgrade_6_filter_format
 destination:
   plugin: 'entity:user_role'
 migration_dependencies:
