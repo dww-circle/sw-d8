@@ -6,8 +6,6 @@
 drush mim upgrade_d6_filter_format
 drush mim upgrade_d6_date_formats
 drush mim upgrade_d6_dblog_settings
-drush mim upgrade_contact_category
-drush mim upgrade_d6_contact_settings
 drush mim upgrade_d6_search_settings
 drush mim upgrade_d6_system_cron
 drush mim upgrade_d6_system_date
