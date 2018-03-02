@@ -9,7 +9,6 @@ dependencies:
     - field.field.node.story.field_contributors
     - field.field.node.story.field_introduction
     - field.field.node.story.field_kicker
-    - field.field.node.story.field_location
     - field.field.node.story.field_story_weight
     - field.field.node.story.field_teaser
     - node.type.story
@@ -72,6 +71,5 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
-  field_location: true
   field_story_weight: true
   field_teaser: true

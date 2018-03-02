@@ -10,12 +10,10 @@ dependencies:
     - field.field.node.story.field_contributors
     - field.field.node.story.field_introduction
     - field.field.node.story.field_kicker
-    - field.field.node.story.field_location
     - field.field.node.story.field_story_weight
     - field.field.node.story.field_teaser
     - node.type.story
   module:
-    - address
     - inline_entity_form
     - path
     - text
@@ -87,13 +85,6 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
-    region: content
-  field_location:
-    weight: 9
-    settings:
-      default_country: US
-    third_party_settings: {  }
-    type: address_default
     region: content
   field_story_weight:
     weight: 3
