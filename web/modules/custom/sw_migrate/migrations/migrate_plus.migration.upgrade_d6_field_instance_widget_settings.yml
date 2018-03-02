@@ -1,0 +1,76 @@
+uuid: fa43fa4d-1976-477f-b02d-32c1b457cee6
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d6_field_instance_widget_settings
+class: Drupal\migrate_drupal\Plugin\migrate\FieldMigration
+field_plugin_method: processFieldWidget
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 6'
+  - Configuration
+migration_group: migrate_drupal_6
+label: 'Field instance widget configuration'
+source:
+  plugin: d6_field_instance_per_form_display
+  constants:
+    entity_type: node
+    form_mode: default
+    third_party_settings: {  }
+process:
+  field_type_exists:
+    -
+      plugin: migration_lookup
+      migration: upgrade_d6_field
+      source:
+        - field_name
+    -
+      plugin: extract
+      index:
+        - 1
+    -
+      plugin: skip_on_empty
+      method: row
+  bundle:
+    -
+      plugin: migration_lookup
+      migration: upgrade_d6_node_type
+      source: type_name
+    -
+      plugin: skip_on_empty
+      method: row
+  form_mode: constants/form_mode
+  field_name: field_name
+  entity_type: constants/entity_type
+  options/weight: weight
+  options/type:
+    type:
+      plugin: static_map
+      bypass: true
+      source: widget_type
+      map:
+        number: number
+        email_textfield: email_default
+        date_select: datetime_default
+        date_text: datetime_default
+        date_popup: datetime_default
+        imagefield_widget: image_image
+        phone_textfield: telephone_default
+        optionwidgets_onoff: boolean_checkbox
+        optionwidgets_buttons: options_buttons
+        optionwidgets_select: options_select
+        nodereference_select: options_select
+        userreference_select: options_select
+  options/settings:
+    -
+      plugin: field_instance_widget_settings
+      source:
+        - widget_type
+        - widget_settings
+  options/third_party_settings: constants/third_party_settings
+destination:
+  plugin: component_entity_form_display
+migration_dependencies:
+  required:
+    - upgrade_d6_field_instance
+  optional: {  }

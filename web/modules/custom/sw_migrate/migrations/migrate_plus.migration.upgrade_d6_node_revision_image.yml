@@ -1,0 +1,116 @@
+uuid: aae1b5ba-e9d7-4d54-9baa-7a92b6c9016c
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d6_node_revision_image
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 6'
+  - Content
+migration_group: migrate_drupal_6
+label: 'Node revisions (image)'
+source:
+  plugin: d6_node_revision
+  node_type: image
+process:
+  nid: nid
+  vid: vid
+  langcode:
+    plugin: default_value
+    source: language
+    default_value: und
+  title: title
+  uid: node_uid
+  status: status
+  created: created
+  changed: changed
+  promote: promote
+  sticky: sticky
+  body/format:
+    plugin: migration_lookup
+    migration: upgrade_d6_filter_format
+    source: format
+  body/value: body
+  body/summary: teaser
+  revision_uid: revision_uid
+  revision_log: log
+  revision_timestamp: timestamp
+  field_image:
+    plugin: d6_field_file
+    source: field_image
+  field_default_caption:
+    plugin: sub_process
+    source: field_default_caption
+    process:
+      value: value
+      format:
+        -
+          plugin: static_map
+          bypass: true
+          source: format
+          map:
+            - null
+        -
+          plugin: skip_on_empty
+          method: process
+        -
+          plugin: migration
+          migration:
+            - upgrade_d6_filter_format
+            - upgrade_d7_filter_format
+          source: format
+  field_original_url:
+    plugin: sub_process
+    source: field_original_url
+    process:
+      value: value
+      format:
+        -
+          plugin: static_map
+          bypass: true
+          source: format
+          map:
+            - null
+        -
+          plugin: skip_on_empty
+          method: process
+        -
+          plugin: migration
+          migration:
+            - upgrade_d6_filter_format
+            - upgrade_d7_filter_format
+          source: format
+  field_image_crop_type: field_image_crop_type
+  field_original_image_nid: field_original_image_nid
+  field_image_url:
+    plugin: sub_process
+    source: field_image_url
+    process:
+      value: value
+      format:
+        -
+          plugin: static_map
+          bypass: true
+          source: format
+          map:
+            - null
+        -
+          plugin: skip_on_empty
+          method: process
+        -
+          plugin: migration
+          migration:
+            - upgrade_d6_filter_format
+            - upgrade_d7_filter_format
+          source: format
+destination:
+  plugin: 'entity_revision:node'
+  default_bundle: image
+migration_dependencies:
+  required:
+    - upgrade_d6_node_image
+  optional:
+    - upgrade_d6_filter_format
+    - upgrade_d7_filter_format

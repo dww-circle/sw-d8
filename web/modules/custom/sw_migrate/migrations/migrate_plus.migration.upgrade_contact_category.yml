@@ -1,0 +1,35 @@
+uuid: 389e8de1-04ef-418a-92fa-030c51aaa891
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_contact_category
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 6'
+  - 'Drupal 7'
+  - Configuration
+migration_group: migrate_drupal_6
+label: 'Contact category configuration'
+source:
+  plugin: contact_category
+process:
+  id:
+    -
+      plugin: machine_name
+      source: category
+    -
+      plugin: make_unique_entity_field
+      entity_type: contact_form
+      field: id
+      length: 32
+  label: category
+  recipients: recipients
+  reply: reply
+  weight: weight
+destination:
+  plugin: 'entity:contact_form'
+migration_dependencies:
+  required: {  }
+  optional: {  }
