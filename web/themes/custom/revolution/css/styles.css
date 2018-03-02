@@ -583,6 +583,19 @@ select {
     top: 0;
     width: 60px; }
 
+.field--name-field-date {
+  color: red;
+  font-size: 10px;
+  text-transform: uppercase; }
+  @media (min-width: 961px) {
+    .field--name-field-date {
+      font-size: 16px; } }
+
+.story-group--teaser_image_large:after {
+  clear: both;
+  content: " ";
+  display: table; }
+
 @media (min-width: 961px) {
   .story-group--teaser_image_medium {
     float: left;
@@ -590,7 +603,19 @@ select {
     width: calc(66% - 50px); } }
 
 @media (min-width: 961px) {
-  .story-group--teaser {
+  .paragraph--type--today .story-group--teaser {
+    float: left;
+    max-width: 630px;
+    width: calc(66% - 50px); } }
+
+@media (min-width: 961px) {
+  .paragraph--type--queue .story-group--teaser {
+    float: right;
+    max-width: 340px;
+    width: 34%; } }
+
+@media (min-width: 961px) {
+  .tmps-recent-articles {
     float: right;
     max-width: 340px;
     width: 34%; } }

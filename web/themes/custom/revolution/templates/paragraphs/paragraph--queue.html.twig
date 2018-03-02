@@ -40,6 +40,14 @@
 #}
 
 <div class="paragraph-stories med-image-{{ content.field_layout|field_value }} paragraph--type--{{ paragraph.bundle|clean_class }} clearfix">
+  {% block date %}
+
+  {% endblock date %}
   <h3 class="slice-title">{{ content.field_display_title }}</h3>
-  {{ rendered_articles | raw }}
+  {{ groups.teaser_image_large | raw }}
+  {% block columns %}
+    {{ groups.teaser_image_medium | raw }}
+    {{ groups.teaser | raw }}
+  {% endblock columns %}
+
 </div>

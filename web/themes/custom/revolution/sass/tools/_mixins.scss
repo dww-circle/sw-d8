@@ -203,6 +203,21 @@
   }
 }
 
+@mixin page-left {
+  @include breakpoint($desktop) {
+    float: left;
+    max-width: 630px;
+    width: calc(66% - 50px);
+  }
+}
+
+@mixin page-right {
+  @include breakpoint($desktop) {
+    float: right;
+    max-width: 340px;
+    width: 34%;
+  }
+}
 /// Apply to <ul> tag.
 @mixin ul-menu {
   &.menu {

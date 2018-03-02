@@ -19,23 +19,40 @@
   }
 }
 
-// Groups.
-.story-group--teaser_image_medium {
+// Slice Date.
+.field--name-field-date {
+  color: red;
+  font-size: 10px;
+  text-transform: uppercase;
 
   @include breakpoint($desktop) {
-    float: left;
-    max-width: 630px;
-    width: calc(66% - 50px);
+    font-size: 16px;
   }
+}
+
+// Groups.
+.story-group--teaser_image_large {
+  @include clearfix;
+}
+
+.story-group--teaser_image_medium {
+  @include page-left;
 }
 
 .story-group--teaser {
 
-  @include breakpoint($desktop) {
-    float: right;
-    max-width: 340px;
-    width: 34%;
+  .paragraph--type--today & {
+    @include page-left;
+
   }
+
+  .paragraph--type--queue & {
+    @include page-right;
+  }
+}
+
+.tmps-recent-articles {
+  @include page-right;
 }
 
 // Article Node.

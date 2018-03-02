@@ -1,1 +1,13 @@
 {% extends 'paragraph--queue.html.twig' %}
+
+{% block date %}
+  {{ content.field_date }}
+{% endblock date %}
+
+{% block columns %}
+  <div class="tmps-recent-articles" style="width: 320px; height: 534px; background: grey; opacity: .6;">
+    Placeholder for Recent Articles
+  </div>
+  {{ groups.teaser_image_medium | raw }}
+  {{ groups.teaser | raw }}
+{% endblock columns %}

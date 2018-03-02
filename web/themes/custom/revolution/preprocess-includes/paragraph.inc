@@ -50,10 +50,11 @@ function revolution_preprocess_paragraph__queue(&$variables) {
     }
   }
 
-  $output = _revolution_story_groups_render($nodes);
+  $group = _revolution_story_groups_render($nodes);
 
   // Send markup to template.
-  $variables['rendered_articles'] = $output;
+
+  $variables['groups'] = $group;
 
 }
 
@@ -77,10 +78,10 @@ function revolution_preprocess_paragraph__today(&$variables) {
     $i++;
   }
 
-  $output = _revolution_story_groups_render($nodes);
+  $group = _revolution_story_groups_render($nodes);
 
   // Send markup to template.
-  $variables['rendered_articles'] = $output;
+  $variables['groups'] = $group;
 }
 
 /*
@@ -120,15 +121,17 @@ function _revolution_render_node($nid, $view_mode) {
  */
 function _revolution_story_groups_render($nodes) {
 
-  $output = '';
+  $group = array();
 
   foreach ($nodes as $view_mode => $nids) {
-    $output .= '<div class="story-group--' . $view_mode . '">';
+    $group_markup = '<div class="story-group--' . $view_mode . '">';
     foreach($nids as $nid) {
-      $output .= _revolution_render_node($nid, $view_mode);
+      $group_markup .= _revolution_render_node($nid, $view_mode);
     }
-    $output .= '</div>';
+    $group_markup .= '</div>';
+
+    $group[$view_mode] = $group_markup;
   }
 
-  return $output;
+  return $group;
 }
