@@ -566,6 +566,9 @@ select {
       background: #EAEBEC;
       text-decoration: none; }
 
+.paragraph-stories {
+  margin-bottom: 50px; }
+
 .slice-title {
   border-top: 1px solid red;
   color: red;
@@ -597,13 +600,7 @@ select {
   display: table; }
 
 @media (min-width: 961px) {
-  .story-group--teaser_image_medium {
-    float: left;
-    max-width: 630px;
-    width: calc(66% - 50px); } }
-
-@media (min-width: 961px) {
-  .paragraph--type--today .story-group--teaser {
+  .paragraph--type--queue .story-group--teaser_image_medium {
     float: left;
     max-width: 630px;
     width: calc(66% - 50px); } }
@@ -614,11 +611,26 @@ select {
     max-width: 340px;
     width: 34%; } }
 
-@media (min-width: 961px) {
-  .tmps-recent-articles {
-    float: right;
-    max-width: 340px;
-    width: 34%; } }
+.column-left {
+  margin-bottom: 20px; }
+  @media (min-width: 961px) {
+    .column-left {
+      float: left;
+      max-width: 630px;
+      width: calc(66% - 50px); } }
+
+.column-right {
+  margin-bottom: 20px; }
+  @media (min-width: 961px) {
+    .column-right {
+      float: right;
+      max-width: 340px;
+      width: 34%; } }
+
+.field--name-field-ad-right img,
+.field--name-field-ad-left img {
+  height: auto;
+  width: 100%; }
 
 .story--teaser-image-medium,
 .story--teaser-image-large {

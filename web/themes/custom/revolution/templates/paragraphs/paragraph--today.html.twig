@@ -5,9 +5,17 @@
 {% endblock date %}
 
 {% block columns %}
-  <div class="tmps-recent-articles" style="width: 320px; height: 534px; background: grey; opacity: .6;">
-    Placeholder for Recent Articles
+  <div class="column-right">
+    <div class="tmps-recent-articles" style="padding: 10px; width: 100%; height: 534px; background: grey; margin-bottom: 80px; opacity: .6;">
+      Placeholder for Recent Articles
+    </div>
+    {{ content.field_ad_right }}
   </div>
-  {{ groups.teaser_image_medium | raw }}
-  {{ groups.teaser | raw }}
+  <div class="column-left">
+    {{ groups.teaser_image_medium | raw }}
+    {{ groups.teaser | raw }}
+    {{ content.field_ad_left }}
+  </div>
+
 {% endblock columns %}
+

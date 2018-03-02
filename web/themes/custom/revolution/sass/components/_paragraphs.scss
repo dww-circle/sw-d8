@@ -1,3 +1,7 @@
+.paragraph-stories {
+  margin-bottom: 50px;
+}
+
 // Slice Title
 .slice-title {
   border-top: 1px solid red;
@@ -35,24 +39,33 @@
   @include clearfix;
 }
 
-.story-group--teaser_image_medium {
-  @include page-left;
-}
-
-.story-group--teaser {
-
-  .paragraph--type--today & {
+.paragraph--type--queue {
+  .story-group--teaser_image_medium {
     @include page-left;
-
   }
 
-  .paragraph--type--queue & {
+  .story-group--teaser {
     @include page-right;
   }
 }
 
-.tmps-recent-articles {
+.column-left {
+  @include page-left;
+  margin-bottom: 20px;
+}
+
+.column-right{
   @include page-right;
+  margin-bottom: 20px;
+}
+
+// Ads.
+.field--name-field-ad-right,
+.field--name-field-ad-left {
+  img {
+    height: auto;
+    width: 100%;
+  }
 }
 
 // Article Node.
