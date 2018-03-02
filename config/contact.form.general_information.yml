@@ -1,0 +1,12 @@
+uuid: 7cbad247-0fb3-453b-a31b-f7bf61a0aebf
+langcode: en
+status: true
+dependencies: {  }
+id: general_information
+label: 'General Information'
+recipients:
+  - info@socialistworker.org
+reply: ''
+weight: 5
+message: null
+redirect: null

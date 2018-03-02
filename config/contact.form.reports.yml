@@ -1,0 +1,12 @@
+uuid: e68358dc-a200-4336-93c7-48ac74aaf58b
+langcode: en
+status: true
+dependencies: {  }
+id: reports
+label: Reports
+recipients:
+  - reports@socialistworker.org
+reply: ''
+weight: -5
+message: null
+redirect: null

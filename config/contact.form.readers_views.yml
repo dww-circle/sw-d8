@@ -1,0 +1,12 @@
+uuid: 2122aab1-f711-4437-a12d-3a340c405ab7
+langcode: en
+status: true
+dependencies: {  }
+id: readers_views
+label: 'Readers'' Views'
+recipients:
+  - views@socialistworker.org
+reply: ''
+weight: -2
+message: null
+redirect: null

@@ -1,0 +1,12 @@
+uuid: 9df0dccd-b131-474e-9426-57ec67190828
+langcode: en
+status: true
+dependencies: {  }
+id: web_department
+label: 'Web Department'
+recipients:
+  - webdept@socialistworker.org
+reply: ''
+weight: 0
+message: ''
+redirect: ''
