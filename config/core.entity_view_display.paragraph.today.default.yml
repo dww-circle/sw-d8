@@ -3,6 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.today.field_ad_left
+    - field.field.paragraph.today.field_ad_right
     - field.field.paragraph.today.field_articles
     - field.field.paragraph.today.field_date
     - field.field.paragraph.today.field_display_title
@@ -16,6 +18,24 @@ targetEntityType: paragraph
 bundle: today
 mode: default
 content:
+  field_ad_left:
+    type: entity_reference_entity_view
+    weight: 7
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_ad_right:
+    type: entity_reference_entity_view
+    weight: 8
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
   field_articles:
     weight: 2
     label: hidden
