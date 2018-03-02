@@ -10,7 +10,7 @@ migration_tags:
   - 'Drupal 6'
   - 'Drupal 7'
   - Configuration
-migration_group: migrate_drupal_6
+migration_group: sw_d6
 label: 'Maintenance page configuration'
 source:
   plugin: variable
