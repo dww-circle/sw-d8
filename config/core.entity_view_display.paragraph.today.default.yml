@@ -4,9 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.today.field_articles
-    - field.field.paragraph.today.field_block_bottom
-    - field.field.paragraph.today.field_block_right
-    - field.field.paragraph.today.field_block_top
     - field.field.paragraph.today.field_date
     - field.field.paragraph.today.field_display_title
     - field.field.paragraph.today.field_layout
@@ -25,30 +22,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: entity_reference_entity_id
-    region: content
-  field_block_bottom:
-    weight: 4
-    label: hidden
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
-  field_block_right:
-    weight: 5
-    label: hidden
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
-  field_block_top:
-    weight: 3
-    label: hidden
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
     region: content
   field_date:
     weight: 1

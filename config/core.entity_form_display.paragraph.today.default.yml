@@ -4,9 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.today.field_articles
-    - field.field.paragraph.today.field_block_bottom
-    - field.field.paragraph.today.field_block_right
-    - field.field.paragraph.today.field_block_top
     - field.field.paragraph.today.field_date
     - field.field.paragraph.today.field_display_title
     - field.field.paragraph.today.field_layout
@@ -20,33 +17,6 @@ mode: default
 content:
   field_articles:
     weight: 3
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
-  field_block_bottom:
-    weight: 4
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
-  field_block_right:
-    weight: 5
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
-  field_block_top:
-    weight: 1
     settings:
       match_operator: CONTAINS
       size: 60

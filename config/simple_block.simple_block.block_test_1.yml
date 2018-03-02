@@ -1,0 +1,11 @@
+uuid: 29eefb09-291b-4f7d-86e0-b60a4ad3020d
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+id: block_test_1
+title: 'test block'
+content:
+  value: 'Block content'
+  format: full_html
