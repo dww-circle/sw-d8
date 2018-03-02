@@ -13,7 +13,6 @@
     "composer/installers": "^1.0.20",
     "cweagans/composer-patches": "^1.0",
     "drupal-composer/drupal-scaffold": "^2.0.1",
-    "drupal/address": "^1.2",
     "drupal/admin_toolbar": "^1.22",
     "drupal/auto_entitylabel": "2.x-dev",
     "drupal/chosen": "^2.4",
@@ -85,9 +84,6 @@
   },
   "extra": {
     "patches": {
-      "drupal/address": {
-        "[#2514126-146] Add field settings for global overrides of required/optional behavior" : "https://www.drupal.org/files/issues/2514126-146.field-behavior-settings.patch"
-      },
       "drupal/auto_entitylabel": {
         "[#2905230-6] Alter inline_entity_form table to display auto-computed entity labels" : "https://www.drupal.org/files/issues/Title_displayed_as_AutoEntityLabel_after_saving_via_Inline_Entity_Form-2905230-6.patch"
       }	
