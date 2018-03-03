@@ -11,7 +11,8 @@ theme: {  }
 blacklist:
   - devel.settings
   - devel.toolbar.settings
-graylist: {  }
+graylist:
+  - system.site
 graylist_dependents: false
 graylist_skip_equal: true
 weight: 0
