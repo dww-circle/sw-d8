@@ -27,6 +27,7 @@ permissions:
   - 'administer users'
   - 'bypass node access'
   - 'change own username'
+  - 'clone node entity'
   - 'delete all revisions'
   - 'delete terms in section'
   - 'delete terms in tags'
