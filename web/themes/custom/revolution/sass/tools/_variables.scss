@@ -9,7 +9,7 @@ $c-black: #1A272E;
 
 /// @group Colors
 /// @type color
-$c-default: #4A4A4A;
+$c-gr7d: #7d7d7d;
 
 // Z-indices
 /// @group Z-Index
@@ -38,16 +38,15 @@ $z-galaxy: 400;
 
 
 /// Font-Families
-/// @group Font Family
 $ff-header: "Oswald", Helvetica, sans-serif;
 $ff-nitti: $ff-header;
 
-/// @group Font Family
 $ff-serif: "Libre Baskerville", Times, serif;
 
-/// @group Font Family
 $ff-sans: "Barlow Condensed", Helvetica, sans-serif;
 $ff-din: $ff-sans;
+
+$ff-helv: Helvetica, sans-serif;
 
 /// Font-Weights
 /// @group Font Weight

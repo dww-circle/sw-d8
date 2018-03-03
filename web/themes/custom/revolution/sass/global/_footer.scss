@@ -2,6 +2,8 @@
   background: black;
   color: white;
   font-size: 10px;
+  padding-bottom: 30px;
+  padding-top: 30px;
 
   .block {
     @include page-container;
@@ -9,10 +11,14 @@
 
   p {
     margin: 0;
+    font-family: $ff-helv;
+    font-size: 12px;
+    font-weight: $fw-light;
+    line-height: 16px;
+    text-align: center;
   }
 
   p:first-of-type {
     color: $c-link;
-    text-align: center;
   }
 }

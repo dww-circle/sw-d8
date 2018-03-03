@@ -92,7 +92,7 @@
 
   .content {
     @include breakpoint($desktop) {
-      border-bottom: 1px solid;
+      border-bottom: 1px solid $c-gr7d;
     }
   }
 }
@@ -112,7 +112,7 @@
   }
 
   .content {
-    border-bottom: 1px solid;
+    border-bottom: 1px $c-gr7d;
   }
 
   .node__content {
