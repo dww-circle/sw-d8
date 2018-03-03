@@ -13,7 +13,9 @@ label: 'Display Title'
 description: 'Title as shown to end users.'
 required: true
 translatable: true
-default_value: {  }
+default_value:
+  -
+    value: 'Today''s Stories'
 default_value_callback: ''
 settings: {  }
 field_type: string
