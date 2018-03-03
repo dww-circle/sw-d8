@@ -22,6 +22,7 @@
     "drupal/console": "^1.0.0-rc8",
     "drupal/core": "^8.5",
     "drupal/ctools": "^3.0",
+    "drupal/entity_clone": "^1.0@alpha",
     "drupal/entityqueue": "^1.0@alpha",
     "drupal/inline_entity_form": "^1.0@beta",
     "drupal/paragraphs": "^1.2",
