@@ -122,7 +122,10 @@ process:
             - upgrade_d7_filter_format
           source: format
   field_show_related: field_show_related
-  field_story_weight: field_story_weight
+  field_story_weight:
+    plugin: callback
+    source: field_story_weight
+    callable: sw_migrate_story_weight_map
   field_body_introduction:
     plugin: sub_process
     source: field_body_introduction

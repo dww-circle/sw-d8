@@ -1,0 +1,43 @@
+<?php
+
+
+/**
+ * @file
+ * Contains custom code necessary for SW migrations.
+ */
+
+/**
+ * Migrate callback function to map story weights into the new values.
+ *
+ * @param array $story_weight
+ *   Nested array keyed by 'value' and 'delta'. We only care about the value.
+ *
+ * @return integer
+ *   The story weight in D8 (-10 to 10) based on the D6 values (-5 to 5).
+ */
+function sw_migrate_story_weight_map(array $story_weight) {
+  switch ($story_weight['value']) {
+    case -5:
+      return -9;
+    case -4:
+      return -6;
+    case -3:
+      return -3;
+    case -2:
+      return -1;
+    case -1:
+      return 1;
+    case 0:
+      return 3;
+    case 1:
+      return 5;
+    case 2:
+      return 7;
+    case 3:
+      return 8;
+    case 4:
+      return 9;
+    case 5:
+      return 10;
+  }
+}
