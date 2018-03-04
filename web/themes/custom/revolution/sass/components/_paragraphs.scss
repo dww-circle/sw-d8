@@ -1,7 +1,3 @@
-.paragraph-stories {
-  margin-bottom: 50px;
-}
-
 // Slice Title
 .slice-title {
   border-top: 1px solid red;
@@ -59,16 +55,23 @@
   margin-bottom: 20px;
 }
 
-// Ads.
-.field--name-field-ad-right,
-.field--name-field-ad-left {
-  img {
-    height: auto;
-    width: 100%;
+// Article Node.
+.story-link {
+  display: block;
+  margin-bottom: 50px;
+
+  &:hover {
+    opacity: .8;
+    text-decoration: none;
+
+    .field--name-field-kicker,
+    h4,
+    .field--name-field-body-introduction {
+      color: #9a4d4d;
+    }
   }
 }
 
-// Article Node.
 .story--teaser-image-medium,
 .story--teaser-image-large {
   margin-bottom: 35px;
@@ -82,7 +85,6 @@
 
 .story--teaser-image-large {
   img {
-    padding-bottom: 5px;
     width: 100%;
 
     @include breakpoint($desktop) {
@@ -101,7 +103,6 @@
   img {
     float: left;
     margin-right: 30px;
-    padding-bottom: 15px;
     width: 192px;
 
     @include breakpoint($desktop) {
@@ -112,7 +113,7 @@
   }
 
   .content {
-    border-bottom: 1px $c-gr7d;
+    border-bottom: 1px solid $c-gr7d;
   }
 
   .node__content {
@@ -126,8 +127,7 @@
 }
 
 // Node Title.
-h4 a {
-  @include link-colors(black, red);
+h4 {
   color: black;
   font-size: 30px;
   font-weight: $fw-medium;
@@ -153,7 +153,16 @@ h4 a {
 // Teaser/Image.
 .field--name-field-body-introduction {
   color: #666666;
-  font-family: "Helvetica", Sans-Serif;
+  font-family: "Helvetica", sans-serif;
   font-size: 15px;
   line-height: 18px;
+}
+
+// Ads.
+.field--name-field-ad-right,
+.field--name-field-ad-left {
+  img {
+    height: auto;
+    width: 100%;
+  }
 }

@@ -78,24 +78,27 @@
   ]
 %}
 
-<article{{ attributes.addClass(classes) }}>
+<a href="{{ url }}" rel="bookmark" class="story-link">
 
-  {% block image %}
+  <article{{ attributes.addClass(classes) }}>
 
-  {% endblock image %}
+    {% block image %}
 
-  <div class="content">
-    {{ content.field_kicker }}
+    {% endblock image %}
 
-    {{ title_prefix }}
-    <h4{{ title_attributes }}>
-      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-    </h4>
-    {{ title_suffix }}
+    <div class="content">
+      {{ content.field_kicker }}
 
-    <div{{ content_attributes.addClass('node__content') }}>
-      {{ content|without('field_image', 'field_kicker') }}
+      {{ title_prefix }}
+      <h4{{ title_attributes }}>
+        {{ label }}
+      </h4>
+      {{ title_suffix }}
+
+      <div{{ content_attributes.addClass('node__content') }}>
+        {{ content|without('field_image', 'field_kicker') }}
+      </div>
     </div>
-  </div>
 
-</article>
+  </article>
+</a>

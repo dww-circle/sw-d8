@@ -1,5 +1,6 @@
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  transition: all .2s ease-in-out; }
 
 body {
   font-family: "Barlow Condensed", Helvetica, sans-serif;
@@ -572,9 +573,6 @@ select {
       background: #EAEBEC;
       text-decoration: none; }
 
-.paragraph-stories {
-  margin-bottom: 50px; }
-
 .slice-title {
   border-top: 1px solid red;
   color: red;
@@ -633,10 +631,16 @@ select {
       max-width: 340px;
       width: 34%; } }
 
-.field--name-field-ad-right img,
-.field--name-field-ad-left img {
-  height: auto;
-  width: 100%; }
+.story-link {
+  display: block;
+  margin-bottom: 50px; }
+  .story-link:hover {
+    opacity: .8;
+    text-decoration: none; }
+    .story-link:hover .field--name-field-kicker,
+    .story-link:hover h4,
+    .story-link:hover .field--name-field-body-introduction {
+      color: #9a4d4d; }
 
 .story--teaser-image-medium,
 .story--teaser-image-large {
@@ -651,7 +655,6 @@ select {
       margin-bottom: 50px; } }
 
 .story--teaser-image-large img {
-  padding-bottom: 5px;
   width: 100%; }
   @media (min-width: 961px) {
     .story--teaser-image-large img {
@@ -664,7 +667,6 @@ select {
 .story--teaser-image-medium img {
   float: left;
   margin-right: 30px;
-  padding-bottom: 15px;
   width: 192px; }
   @media (min-width: 961px) {
     .story--teaser-image-medium img {
@@ -673,7 +675,7 @@ select {
       width: 290px; } }
 
 .story--teaser-image-medium .content {
-  border-bottom: 1px #7d7d7d; }
+  border-bottom: 1px solid #7d7d7d; }
 
 .story--teaser-image-medium .node__content {
   margin-bottom: 25px; }
@@ -685,22 +687,12 @@ select {
     .story--teaser-image-medium .node__content {
       margin-bottom: 40px; } }
 
-h4 a {
+h4 {
   color: black;
   font-size: 30px;
   font-weight: 400;
   line-height: 30px; }
-  h4 a:link {
-    color: black; }
-  h4 a:visited, h4 a:link:visited {
-    color: black; }
-  h4 a:focus {
-    color: black; }
-  h4 a.is-active:hover, h4 a.active:hover, h4 a.active-trail:hover, h4 a.visited:hover, h4 a:hover {
-    color: red; }
-  h4 a.is-active, h4 a:active, h4 a.active-trail {
-    color: black; }
-  .node--view-mode-teaser-image-large h4 a {
+  .node--view-mode-teaser-image-large h4 {
     font-size: 42px;
     font-weight: 500;
     line-height: 40px;
@@ -715,9 +707,14 @@ h4 a {
 
 .field--name-field-body-introduction {
   color: #666666;
-  font-family: "Helvetica", Sans-Serif;
+  font-family: "Helvetica", sans-serif;
   font-size: 15px;
   line-height: 18px; }
+
+.field--name-field-ad-right img,
+.field--name-field-ad-left img {
+  height: auto;
+  width: 100%; }
 
 .user-login-form input {
   max-width: 100%; }
