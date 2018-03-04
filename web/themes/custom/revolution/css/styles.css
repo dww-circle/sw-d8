@@ -660,6 +660,7 @@ select {
   width: 100%; }
   @media (min-width: 961px) {
     .story--teaser-image-large img {
+      max-width: 95%;
       width: 480px; } }
 
 @media (min-width: 961px) {
