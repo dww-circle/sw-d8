@@ -49,8 +49,10 @@
   line-height: 22px;
   padding: 0 30px 30px;
   position: absolute;
+  transition: none;
   width: 100%;
   top: 80px;
+  z-index: 200;
 
   @include breakpoint($desktop) {
     top: 150px;

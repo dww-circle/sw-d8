@@ -291,8 +291,10 @@ main {
   line-height: 22px;
   padding: 0 30px 30px;
   position: absolute;
+  transition: none;
   width: 100%;
-  top: 80px; }
+  top: 80px;
+  z-index: 200; }
   @media (min-width: 961px) {
     .region-expanded-menu {
       top: 150px;
