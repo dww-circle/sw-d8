@@ -70,6 +70,14 @@
       color: #9a4d4d;
     }
   }
+
+  &:visited {
+    .field--name-field-kicker,
+    h4,
+    .field--name-field-body-introduction {
+      color: #a51b00;
+    }
+  }
 }
 
 .story--teaser-image-medium,

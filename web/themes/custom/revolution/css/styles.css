@@ -643,6 +643,10 @@ select {
     .story-link:hover h4,
     .story-link:hover .field--name-field-body-introduction {
       color: #9a4d4d; }
+  .story-link:visited .field--name-field-kicker,
+  .story-link:visited h4,
+  .story-link:visited .field--name-field-body-introduction {
+    color: #a51b00; }
 
 .story--teaser-image-medium,
 .story--teaser-image-large {
