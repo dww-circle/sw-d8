@@ -16,11 +16,14 @@ module:
   config_split: 0
   contact: 0
   contextual: 0
+  ctools: 0
   datetime: 0
   dblog: 0
   devel_generate: 0
   dynamic_page_cache: 0
   editor: 0
+  entity_browser: 0
+  entity_browser_entity_form: 0
   entity_clone: 0
   entity_reference_revisions: 0
   entityqueue: 0
@@ -55,6 +58,7 @@ module:
   twig_tweak: 0
   update: 0
   user: 0
+  views_autocomplete_filters: 0
   views_ui: 0
   menu_link_content: 1
   views: 10

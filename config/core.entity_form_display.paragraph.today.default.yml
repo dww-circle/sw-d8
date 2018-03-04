@@ -12,6 +12,8 @@ dependencies:
     - paragraphs.paragraphs_type.today
   module:
     - datetime
+    - entity_browser_entity_form
+    - inline_entity_form
 id: paragraph.today.default
 targetEntityType: paragraph
 bundle: today
@@ -23,7 +25,9 @@ content:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
-    third_party_settings: {  }
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: articles
     type: entity_reference_autocomplete
     region: content
   field_ad_right:
@@ -38,11 +42,17 @@ content:
   field_articles:
     weight: 3
     settings:
+      form_mode: default
+      override_labels: true
+      label_singular: Story
+      label_plural: Stories
+      allow_existing: true
       match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: entity_reference_autocomplete
+      allow_new: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: stories
+    type: inline_entity_form_complex
     region: content
   field_date:
     weight: 0
