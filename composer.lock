@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "72fef237aa27df9f36edf292ae17e800",
+    "content-hash": "947b92bb4a8979295cdbbc575442b579",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2850,6 +2850,62 @@
                 "source": "http://cgit.drupalcode.org/twig_tweak",
                 "issues": "https://www.drupal.org/project/issues/twig_tweak"
             }
+        },
+        {
+            "name": "drupal/video_embed_field",
+            "version": "dev-2.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/video_embed_field",
+                "reference": "6084137ce99787b48e46caeb67c80b55c9f7b77d"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "require-dev": {
+                "drupal/colorbox": "*",
+                "drupal/media_entity": "*",
+                "drupal/media_entity_embeddable_video": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.x",
+                    "datestamp": "1512694688",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    },
+                    "package": "Field types"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Sam152",
+                    "homepage": "https://www.drupal.org/user/1485048"
+                },
+                {
+                    "name": "jec006",
+                    "homepage": "https://www.drupal.org/user/855980"
+                },
+                {
+                    "name": "plopesc",
+                    "homepage": "https://www.drupal.org/user/282415"
+                }
+            ],
+            "description": "A pluggable field type for storing videos from external video hosts such as Vimeo and YouTube.",
+            "homepage": "https://www.drupal.org/project/video_embed_field",
+            "support": {
+                "source": "http://cgit.drupalcode.org/video_embed_field"
+            },
+            "time": "2017-12-08T00:53:54+00:00"
         },
         {
             "name": "drupal/views_autocomplete_filters",
@@ -8324,7 +8380,8 @@
         "drupal/entity_clone": 15,
         "drupal/entityqueue": 15,
         "drupal/inline_entity_form": 10,
-        "drupal/simple_block": 10
+        "drupal/simple_block": 10,
+        "drupal/video_embed_field": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
