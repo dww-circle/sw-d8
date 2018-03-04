@@ -12,6 +12,7 @@ dependencies:
     - paragraphs.paragraphs_type.today
   module:
     - datetime
+    - entity_browser
     - entity_browser_entity_form
     - inline_entity_form
 id: paragraph.today.default
@@ -22,22 +23,28 @@ content:
   field_ad_left:
     weight: 7
     settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-    third_party_settings:
-      entity_browser_entity_form:
-        entity_browser_id: articles
-    type: entity_reference_autocomplete
+      entity_browser: stories
+      field_widget_display: label
+      field_widget_edit: true
+      field_widget_remove: true
+      selection_mode: selection_append
+      open: false
+      field_widget_display_settings: {  }
+    third_party_settings: {  }
+    type: entity_browser_entity_reference
     region: content
   field_ad_right:
     weight: 8
     settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+      entity_browser: null
+      open: false
+      field_widget_display: label
+      field_widget_edit: true
+      field_widget_remove: true
+      field_widget_display_settings: {  }
+      selection_mode: selection_append
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: entity_browser_entity_reference
     region: content
   field_articles:
     weight: 3
