@@ -1,12 +1,12 @@
-uuid: 0ab70970-d217-4f61-ba28-8e0f88969171
+uuid: 05039c62-3d91-4a03-9a5a-6c0e5395cd92
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: the_russian_revolution
-label: 'The Russian Revolution'
-handler: simple
+id: story_queues
+label: 'Story Queues'
+handler: multiple
 handler_configuration: {  }
 entity_settings:
   target_type: node
@@ -15,8 +15,7 @@ entity_settings:
     target_bundles:
       story: story
     sort:
-      field: title
-      direction: ASC
+      field: _none
     auto_create: false
     auto_create_bundle: ''
 queue_settings:

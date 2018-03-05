@@ -1,0 +1,28 @@
+uuid: 8bc7d345-373e-4b44-b513-d7d126205ebc
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.story_queues
+    - field.storage.paragraph.field_subqueue
+    - paragraphs.paragraphs_type.queue
+id: paragraph.queue.field_subqueue
+field_name: field_subqueue
+entity_type: paragraph
+bundle: queue
+label: Queue
+description: 'Choose from the Story Queue <a href="/admin/structure/entityqueue/story_queues/list">list</a> '
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:entity_subqueue'
+  handler_settings:
+    target_bundles:
+      story_queues: story_queues
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,16 +1,16 @@
-uuid: 721ce5a8-e442-42ef-9982-71315caf73bc
+uuid: 58a23829-aa26-409b-a0df-1f008b1838e0
 langcode: en
 status: true
 dependencies:
   module:
     - entityqueue
     - paragraphs
-id: paragraph.field_queue
-field_name: field_queue
+id: paragraph.field_subqueue
+field_name: field_subqueue
 entity_type: paragraph
 type: entity_reference
 settings:
-  target_type: entity_queue
+  target_type: entity_subqueue
 module: core
 locked: false
 cardinality: 1

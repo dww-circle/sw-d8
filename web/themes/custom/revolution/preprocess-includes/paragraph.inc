@@ -25,12 +25,12 @@ function revolution_preprocess_paragraph__queue(&$variables) {
   // Get field values.
   $med_img_num = $variables['paragraph']->field_num->value;
   $results = $variables['paragraph']->field_results->value;
-  $queue_id = $variables['elements']['field_queue'][0]['#plain_text'];
+  $queue_id = $variables['elements']['field_subqueue'][0]['#plain_text'];
 
   // Get queue list.
   $entity_subqueue = \Drupal::entityManager()->getStorage('entity_subqueue')->load($queue_id);
 
-  if ($queue_id != NULL) {
+  if ($queue_id != null) {
     $queue_list = $entity_subqueue->get('items')->getValue();
   }
 
