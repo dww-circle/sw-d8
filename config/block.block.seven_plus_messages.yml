@@ -1,0 +1,20 @@
+uuid: 7dbeff30-526c-4e46-959a-309e6019444a
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - sevenplus
+id: seven_plus_messages
+theme: sevenplus
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

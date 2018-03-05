@@ -1,0 +1,20 @@
+uuid: 98b71d8d-c4bc-4ca7-940a-9773567cd15f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - sevenplus
+id: seven_plus_content
+theme: sevenplus
+region: content
+weight: -3
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,20 @@
+uuid: 2688a5a5-a961-4078-b333-48b1e84f2bb7
+langcode: en
+status: true
+dependencies:
+  theme:
+    - sevenplus
+id: seven_plus_primary_local_tasks
+theme: sevenplus
+region: header
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: false
+visibility: {  }

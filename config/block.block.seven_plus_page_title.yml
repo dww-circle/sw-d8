@@ -1,0 +1,18 @@
+uuid: 38efc266-32e4-4b11-bc6b-30ff85fa3865
+langcode: en
+status: true
+dependencies:
+  theme:
+    - sevenplus
+id: seven_plus_page_title
+theme: sevenplus
+region: header
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }
