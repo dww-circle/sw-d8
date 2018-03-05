@@ -1,0 +1,24 @@
+uuid: ad3ffba6-2030-4dc4-903a-c5f62f4f81e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - sevenplus
+id: sevenplus_mainnavigation
+theme: sevenplus
+region: sidebar_first
+weight: -1
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

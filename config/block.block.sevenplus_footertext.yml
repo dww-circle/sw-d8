@@ -1,0 +1,22 @@
+uuid: f2fcf1bb-fd2c-4a0c-bd3e-fbb104261741
+langcode: en
+status: true
+dependencies:
+  config:
+    - simple_block.simple_block.footer_social
+  module:
+    - simple_block
+  theme:
+    - sevenplus
+id: sevenplus_footertext
+theme: sevenplus
+region: footer
+weight: 0
+provider: null
+plugin: 'simple_block:footer_social'
+settings:
+  id: 'simple_block:footer_social'
+  label: 'Footer Text'
+  provider: simple_block
+  label_display: '0'
+visibility: {  }
