@@ -12,4 +12,7 @@ path: node
 weight: -10
 plugin: node_search
 configuration:
-  rankings: {  }
+  rankings:
+    comments: 0
+    recent: 5
+    relevance: 5
