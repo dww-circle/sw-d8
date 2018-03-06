@@ -42,18 +42,9 @@ process:
     plugin: migration_lookup
     migration: upgrade_d6_user_role
     source: roles
-  user_picture:
-    plugin: migration_lookup
-    migration: upgrade_d6_user_picture_file
-    source: uid
-    no_stub: true
 destination:
   plugin: 'entity:user'
   md5_passwords: true
 migration_dependencies:
   required:
     - upgrade_d6_user_role
-  optional:
-    - upgrade_d6_user_picture_file
-    - upgrade_user_picture_entity_display
-    - upgrade_user_picture_entity_form_display
