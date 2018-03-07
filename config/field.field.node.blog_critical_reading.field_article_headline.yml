@@ -1,0 +1,19 @@
+uuid: 32912cdb-697e-4a4d-a702-0f208d7ffafe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_article_headline
+    - node.type.blog_critical_reading
+id: node.blog_critical_reading.field_article_headline
+field_name: field_article_headline
+entity_type: node
+bundle: blog_critical_reading
+label: 'Article headline'
+description: 'The headline of the original article.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

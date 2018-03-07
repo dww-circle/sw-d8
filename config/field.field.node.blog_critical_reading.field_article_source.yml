@@ -1,0 +1,19 @@
+uuid: 06af60e5-607e-4688-88ec-bc94e6bfa2fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_article_source
+    - node.type.blog_critical_reading
+id: node.blog_critical_reading.field_article_source
+field_name: field_article_source
+entity_type: node
+bundle: blog_critical_reading
+label: Source
+description: 'Human-readable label for where this article was posted (e.g. "Salon.com", "NY Times", etc.).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

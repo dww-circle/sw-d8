@@ -1,0 +1,11 @@
+uuid: 59ec2961-d19c-4cb9-a88c-efb4943bcad1
+langcode: en
+status: true
+dependencies: {  }
+name: 'Critical reading blog'
+type: blog_critical_reading
+description: 'An entry in the "Critical reading" blog.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,21 @@
+uuid: 42d2d64a-c3bd-4c89-abc2-9a734f8edfd2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_blog_comment
+    - node.type.blog_critical_reading
+  module:
+    - text
+id: node.blog_critical_reading.field_blog_comment
+field_name: field_blog_comment
+entity_type: node
+bundle: blog_critical_reading
+label: Comment
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
