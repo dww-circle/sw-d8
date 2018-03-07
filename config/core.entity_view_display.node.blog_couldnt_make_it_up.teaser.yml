@@ -1,0 +1,30 @@
+uuid: baef6c24-dd2d-4bc0-9ac8-f52e179e09bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.blog_couldnt_make_it_up.body
+    - node.type.blog_couldnt_make_it_up
+  module:
+    - text
+    - user
+id: node.blog_couldnt_make_it_up.teaser
+targetEntityType: node
+bundle: blog_couldnt_make_it_up
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 0
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }
