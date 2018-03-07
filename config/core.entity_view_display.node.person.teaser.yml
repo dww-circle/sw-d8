@@ -4,6 +4,10 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.person.field_affiliation
+    - field.field.node.person.field_biography
+    - field.field.node.person.field_first_name
+    - field.field.node.person.field_last_name
     - node.type.person
   module:
     - user
@@ -15,6 +19,8 @@ content:
   links:
     weight: 100
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   field_affiliation: true
   field_biography: true

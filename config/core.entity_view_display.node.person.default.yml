@@ -17,22 +17,22 @@ bundle: person
 mode: default
 content:
   field_affiliation:
-    weight: 1
-    label: inline
+    weight: 0
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
   field_biography:
-    weight: 2
-    label: above
+    weight: 1
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   links:
-    weight: 0
+    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
