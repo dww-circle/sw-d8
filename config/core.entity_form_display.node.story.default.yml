@@ -8,7 +8,6 @@ dependencies:
     - field.field.node.story.field_body
     - field.field.node.story.field_body_introduction
     - field.field.node.story.field_byline_has_affiliation
-    - field.field.node.story.field_contributors
     - field.field.node.story.field_dateline_behavior
     - field.field.node.story.field_footer
     - field.field.node.story.field_frontpage
@@ -74,19 +73,6 @@ content:
     settings:
       display_label: false
     third_party_settings: {  }
-    region: content
-  field_contributors:
-    weight: 6
-    settings:
-      form_mode: simple
-      override_labels: true
-      label_singular: Person
-      label_plural: People
-      allow_new: true
-      allow_existing: true
-      match_operator: CONTAINS
-    third_party_settings: {  }
-    type: inline_entity_form_complex
     region: content
   field_dateline_behavior:
     weight: 0

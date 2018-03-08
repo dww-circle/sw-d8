@@ -8,7 +8,6 @@ dependencies:
     - field.field.node.story.field_body
     - field.field.node.story.field_body_introduction
     - field.field.node.story.field_byline_has_affiliation
-    - field.field.node.story.field_contributors
     - field.field.node.story.field_dateline_behavior
     - field.field.node.story.field_footer
     - field.field.node.story.field_frontpage
@@ -21,6 +20,7 @@ dependencies:
     - field.field.node.story.field_story_weight
     - field.field.node.story.field_subtitle
     - field.field.node.story.field_teaser
+    - field.field.node.story.upload
     - node.type.story
   module:
     - text
@@ -157,5 +157,5 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
-  field_contributors: true
   links: true
+  upload: true
