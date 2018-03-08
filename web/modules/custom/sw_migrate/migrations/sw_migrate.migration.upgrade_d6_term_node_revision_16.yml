@@ -21,7 +21,6 @@ process:
       migration:
         - upgrade_d6_node_revision_blog_couldnt_make_it_up
         - upgrade_d6_node_revision_blog_critical_reading
-        - upgrade_d6_node_revision_image
         - upgrade_d6_node_revision_insert_box
         - upgrade_d6_node_revision_page
         - upgrade_d6_node_revision_person
@@ -31,7 +30,6 @@ process:
       plugin: skip_on_empty
       method: row
   type: type
-  field_image_provider: tid
 destination:
   plugin: 'entity_revision:node'
 migration_dependencies:
@@ -54,7 +52,6 @@ migration_dependencies:
     123: upgrade_d6_term_node_17
     40: upgrade_d6_node_revision_blog_couldnt_make_it_up
     41: upgrade_d6_node_revision_blog_critical_reading
-    43: upgrade_d6_node_revision_image
     44: upgrade_d6_node_revision_insert_box
     45: upgrade_d6_node_revision_page
     46: upgrade_d6_node_revision_person
