@@ -37,7 +37,7 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 11
+    weight: 22
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -55,7 +55,7 @@ content:
     type: inline_entity_form_complex
     region: content
   field_body:
-    weight: 4
+    weight: 18
     type: text_textarea
     settings:
       rows: 20
@@ -63,7 +63,7 @@ content:
     third_party_settings: {  }
     region: content
   field_body_introduction:
-    weight: 0
+    weight: 17
     type: text_textarea
     settings:
       rows: 6
@@ -72,7 +72,7 @@ content:
     region: content
   field_city:
     type: entity_reference_autocomplete_tags
-    weight: 20
+    weight: 14
     settings:
       match_operator: CONTAINS
       size: 60
@@ -81,7 +81,7 @@ content:
     region: content
   field_contributors:
     type: entity_reference_autocomplete_tags
-    weight: 20
+    weight: 6
     settings:
       match_operator: CONTAINS
       size: 60
@@ -90,7 +90,7 @@ content:
     region: content
   field_country:
     type: entity_reference_autocomplete_tags
-    weight: 20
+    weight: 16
     settings:
       match_operator: CONTAINS
       size: 60
@@ -99,12 +99,21 @@ content:
     region: content
   field_department:
     type: options_select
-    weight: 20
+    weight: 8
     settings: {  }
     third_party_settings: {  }
     region: content
+  field_interviewees:
+    type: entity_reference_autocomplete
+    weight: 10
+    region: content
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   field_introduction:
-    weight: -2
+    weight: 5
     type: text_textarea
     settings:
       rows: 3
@@ -113,7 +122,7 @@ content:
     region: content
   field_issue_number:
     type: entity_reference_autocomplete_tags
-    weight: 20
+    weight: 12
     settings:
       match_operator: CONTAINS
       size: 60
@@ -122,7 +131,7 @@ content:
     region: content
   field_keywords:
     type: entity_reference_autocomplete_tags
-    weight: 20
+    weight: 13
     settings:
       match_operator: CONTAINS
       size: 60
@@ -139,20 +148,20 @@ content:
     region: content
   field_series:
     type: options_select
-    weight: 20
+    weight: 11
     settings: {  }
     third_party_settings: {  }
     region: content
   field_show_related:
-    weight: -6
+    weight: 20
     type: boolean_checkbox
     settings:
-      display_label: false
+      display_label: true
     third_party_settings: {  }
     region: content
   field_state:
     type: entity_reference_autocomplete_tags
-    weight: 20
+    weight: 15
     settings:
       match_operator: CONTAINS
       size: 60
@@ -161,7 +170,7 @@ content:
     region: content
   field_story_type:
     type: options_select
-    weight: 20
+    weight: 9
     settings: {  }
     third_party_settings: {  }
     region: content
@@ -173,7 +182,7 @@ content:
     type: number
     region: content
   field_teaser:
-    weight: -7
+    weight: 2
     type: text_textarea
     settings:
       rows: 2
@@ -182,35 +191,21 @@ content:
     region: content
   field_topic:
     type: options_select
-    weight: 20
+    weight: 7
     settings: {  }
     third_party_settings: {  }
     region: content
   path:
     type: path
-    weight: 14
+    weight: 23
     region: content
     settings: {  }
-    third_party_settings: {  }
-  promote:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 12
-    region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 15
-    region: content
-    third_party_settings: {  }
-  sticky:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 13
+    weight: 24
     region: content
     third_party_settings: {  }
   title:
@@ -223,7 +218,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 10
+    weight: 21
     settings:
       match_operator: CONTAINS
       size: 60
@@ -234,8 +229,9 @@ content:
     settings:
       progress_indicator: throbber
     type: file_generic
-    weight: 26
+    weight: 19
     third_party_settings: {  }
     region: content
 hidden:
-  field_interviewees: true
+  promote: true
+  sticky: true
