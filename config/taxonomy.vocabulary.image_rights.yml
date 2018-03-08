@@ -1,0 +1,9 @@
+uuid: ed203084-373b-4e1f-81ea-84d3e672f5b8
+langcode: en
+status: true
+dependencies: {  }
+name: 'Image rights'
+vid: image_rights
+description: ''
+hierarchy: 0
+weight: -1

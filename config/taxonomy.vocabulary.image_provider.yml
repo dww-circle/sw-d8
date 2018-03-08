@@ -1,0 +1,9 @@
+uuid: 980fd072-0b77-45a0-802f-5b204c77227a
+langcode: en
+status: true
+dependencies: {  }
+name: 'Image provider'
+vid: image_provider
+description: ''
+hierarchy: 0
+weight: -2
