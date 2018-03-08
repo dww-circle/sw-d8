@@ -23,22 +23,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_insert_type:
-    label: hidden
-    type: entity_reference_label
-    weight: 20
-    settings:
-      link: true
-    third_party_settings: {  }
-    region: content
-  field_topic:
-    label: hidden
-    type: entity_reference_label
-    weight: 20
-    settings:
-      link: true
-    third_party_settings: {  }
-    region: content
   links:
     weight: 1
     region: content
@@ -46,3 +30,5 @@ content:
     third_party_settings: {  }
 hidden:
   field_header_text: true
+  field_insert_type: true
+  field_topic: true
