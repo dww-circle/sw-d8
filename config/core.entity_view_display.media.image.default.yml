@@ -3,19 +3,21 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.media.image.field_credit
     - field.field.media.image.field_default_caption
     - field.field.media.image.field_image_crop_type
+    - field.field.media.image.field_image_gallery
+    - field.field.media.image.field_image_provider
+    - field.field.media.image.field_image_rights
     - field.field.media.image.field_image_url
     - field.field.media.image.field_media_image
     - field.field.media.image.field_original_image
     - field.field.media.image.field_original_url
-    - image.style.medium
+    - field.field.media.image.field_server_folder
+    - image.style.large
     - media.type.image
   module:
     - image
-    - link
-    - media
-    - options
 _core:
   default_config_hash: jOwnt_yq6AKAfqU6f0xKnxEkFQ2eTPJWxrk3WMLbL68
 id: media.image.default
@@ -23,71 +25,27 @@ targetEntityType: media
 bundle: image
 mode: default
 content:
-  field_default_caption:
-    type: basic_string
-    weight: 2
-    region: content
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-  field_image_crop_type:
-    type: list_default
-    weight: 3
-    region: content
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-  field_image_url:
-    weight: 6
-    label: above
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-    type: link
-    region: content
   field_media_image:
     label: visually_hidden
     settings:
-      image_style: ''
-      image_link: file
+      image_style: large
+      image_link: ''
     third_party_settings: {  }
     type: image
-    weight: 1
-    region: content
-  field_original_image:
-    type: media_thumbnail
-    weight: 4
-    label: above
-    settings:
-      image_style: medium
-      image_link: media
-    third_party_settings: {  }
-    region: content
-  field_original_url:
-    weight: 5
-    label: above
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-    type: link
-    region: content
-  name:
-    type: string
     weight: 0
     region: content
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
 hidden:
   created: true
+  field_credit: true
+  field_default_caption: true
+  field_image_crop_type: true
+  field_image_gallery: true
+  field_image_provider: true
+  field_image_rights: true
+  field_image_url: true
+  field_original_image: true
+  field_original_url: true
+  field_server_folder: true
+  name: true
   thumbnail: true
   uid: true
