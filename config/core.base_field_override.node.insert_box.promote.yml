@@ -1,0 +1,22 @@
+uuid: 0cc3815c-db82-4e4b-a21f-7d71a6456801
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.insert_box
+id: node.insert_box.promote
+field_name: promote
+entity_type: node
+bundle: insert_box
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
