@@ -5,6 +5,8 @@ dependencies:
   config:
     - field.field.node.insert_box.body
     - field.field.node.insert_box.field_header_text
+    - field.field.node.insert_box.field_insert_type
+    - field.field.node.insert_box.field_topic
     - node.type.insert_box
   module:
     - text
@@ -15,7 +17,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 2
+    weight: 4
     settings:
       rows: 9
       summary_rows: 3
@@ -24,23 +26,35 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 4
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
   field_header_text:
-    weight: 1
+    weight: 3
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
     region: content
+  field_insert_type:
+    type: options_select
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_topic:
+    type: options_select
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 5
+    weight: 7
     region: content
     third_party_settings: {  }
   title:
@@ -53,7 +67,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 3
+    weight: 5
     settings:
       match_operator: CONTAINS
       size: 60

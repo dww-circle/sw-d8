@@ -5,6 +5,8 @@ dependencies:
   config:
     - field.field.node.insert_box.body
     - field.field.node.insert_box.field_header_text
+    - field.field.node.insert_box.field_insert_type
+    - field.field.node.insert_box.field_topic
     - node.type.insert_box
   module:
     - text
@@ -19,6 +21,22 @@ content:
     type: text_default
     weight: 0
     settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_insert_type:
+    label: hidden
+    type: entity_reference_label
+    weight: 20
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_topic:
+    label: hidden
+    type: entity_reference_label
+    weight: 20
+    settings:
+      link: true
     third_party_settings: {  }
     region: content
   links:
