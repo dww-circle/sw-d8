@@ -1,0 +1,19 @@
+uuid: 2ae7db44-f164-4eb5-b4bc-5a5f2d39720b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_insert_body
+field_name: field_insert_body
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

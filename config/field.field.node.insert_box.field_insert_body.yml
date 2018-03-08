@@ -1,0 +1,21 @@
+uuid: 8dbd76d1-d76a-4de4-84d5-dddbda61f615
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_insert_body
+    - node.type.insert_box
+  module:
+    - text
+id: node.insert_box.field_insert_body
+field_name: field_insert_body
+entity_type: node
+bundle: insert_box
+label: Body
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

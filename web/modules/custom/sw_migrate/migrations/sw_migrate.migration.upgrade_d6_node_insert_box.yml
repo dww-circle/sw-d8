@@ -28,12 +28,11 @@ process:
   changed: changed
   promote: promote
   sticky: sticky
-  body/format:
+  field_insert_body/value: body
+  field_insert_body/format:
     plugin: migration_lookup
     migration: upgrade_d6_filter_format
     source: format
-  body/value: body
-  body/summary: teaser
   revision_uid: revision_uid
   revision_log: log
   revision_timestamp: timestamp
