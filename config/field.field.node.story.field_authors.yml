@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_authors
+    - node.type.person
     - node.type.story
 id: node.story.field_authors
 field_name: field_authors
@@ -17,5 +18,11 @@ default_value: {  }
 default_value_callback: ''
 settings:
   handler: 'default:node'
-  handler_settings: {  }
+  handler_settings:
+    target_bundles:
+      person: person
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
 field_type: entity_reference
