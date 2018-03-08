@@ -6,18 +6,11 @@ dependencies:
     - field.field.node.story.field_authors
     - field.field.node.story.field_body
     - field.field.node.story.field_body_introduction
-    - field.field.node.story.field_byline_has_affiliation
-    - field.field.node.story.field_dateline_behavior
-    - field.field.node.story.field_footer
-    - field.field.node.story.field_frontpage
     - field.field.node.story.field_interviewees
     - field.field.node.story.field_introduction
     - field.field.node.story.field_kicker
-    - field.field.node.story.field_related_nids
     - field.field.node.story.field_show_related
-    - field.field.node.story.field_story_label_has_names
     - field.field.node.story.field_story_weight
-    - field.field.node.story.field_subtitle
     - field.field.node.story.field_teaser
     - field.field.node.story.upload
     - node.type.story
@@ -52,40 +45,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_byline_has_affiliation:
-    label: above
-    weight: 2
-    type: number_integer
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    region: content
-  field_dateline_behavior:
-    label: above
-    weight: 0
-    type: number_integer
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    region: content
-  field_footer:
-    label: above
-    weight: 5
-    type: text_default
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-  field_frontpage:
-    label: above
-    weight: 2
-    type: number_integer
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    region: content
   field_interviewees:
     label: above
     weight: -1
@@ -108,25 +67,9 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_related_nids:
-    label: above
-    weight: 0
-    type: text_default
-    settings: {  }
-    third_party_settings: {  }
-    region: content
   field_show_related:
     label: above
     weight: -6
-    type: number_integer
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    region: content
-  field_story_label_has_names:
-    label: above
-    weight: -2
     type: number_integer
     settings:
       thousand_separator: ''
@@ -140,13 +83,6 @@ content:
     settings:
       thousand_separator: ''
       prefix_suffix: true
-    third_party_settings: {  }
-    region: content
-  field_subtitle:
-    label: above
-    weight: -8
-    type: text_default
-    settings: {  }
     third_party_settings: {  }
     region: content
   field_teaser:

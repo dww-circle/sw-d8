@@ -7,18 +7,11 @@ dependencies:
     - field.field.node.story.field_authors
     - field.field.node.story.field_body
     - field.field.node.story.field_body_introduction
-    - field.field.node.story.field_byline_has_affiliation
-    - field.field.node.story.field_dateline_behavior
-    - field.field.node.story.field_footer
-    - field.field.node.story.field_frontpage
     - field.field.node.story.field_interviewees
     - field.field.node.story.field_introduction
     - field.field.node.story.field_kicker
-    - field.field.node.story.field_related_nids
     - field.field.node.story.field_show_related
-    - field.field.node.story.field_story_label_has_names
     - field.field.node.story.field_story_weight
-    - field.field.node.story.field_subtitle
     - field.field.node.story.field_teaser
     - field.field.node.story.upload
     - node.type.story
@@ -67,35 +60,6 @@ content:
       placeholder: ''
     third_party_settings: {  }
     region: content
-  field_byline_has_affiliation:
-    weight: 2
-    type: boolean_checkbox
-    settings:
-      display_label: false
-    third_party_settings: {  }
-    region: content
-  field_dateline_behavior:
-    weight: 0
-    type: boolean_checkbox
-    settings:
-      display_label: false
-    third_party_settings: {  }
-    region: content
-  field_footer:
-    weight: 5
-    type: text_textarea
-    settings:
-      rows: 2
-      placeholder: ''
-    third_party_settings: {  }
-    region: content
-  field_frontpage:
-    weight: 2
-    type: boolean_checkbox
-    settings:
-      display_label: false
-    third_party_settings: {  }
-    region: content
   field_introduction:
     weight: -2
     type: text_textarea
@@ -112,23 +76,8 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
-  field_related_nids:
-    weight: 0
-    type: text_textfield
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    region: content
   field_show_related:
     weight: -6
-    type: boolean_checkbox
-    settings:
-      display_label: false
-    third_party_settings: {  }
-    region: content
-  field_story_label_has_names:
-    weight: -2
     type: boolean_checkbox
     settings:
       display_label: false
@@ -140,14 +89,6 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: number
-    region: content
-  field_subtitle:
-    weight: -8
-    type: text_textfield
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
     region: content
   field_teaser:
     weight: -7
