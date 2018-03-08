@@ -3,12 +3,20 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.image.field_city
+    - field.field.node.image.field_country
+    - field.field.node.image.field_credit
     - field.field.node.image.field_default_caption
     - field.field.node.image.field_image
     - field.field.node.image.field_image_crop_type
+    - field.field.node.image.field_image_gallery
+    - field.field.node.image.field_image_provider
+    - field.field.node.image.field_image_rights
     - field.field.node.image.field_image_url
     - field.field.node.image.field_original_image_nid
     - field.field.node.image.field_original_url
+    - field.field.node.image.field_server_folder
+    - field.field.node.image.field_state
     - image.style.thumbnail
     - node.type.image
   module:
@@ -26,6 +34,33 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_city:
+    type: entity_reference_autocomplete_tags
+    weight: 20
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_country:
+    type: entity_reference_autocomplete_tags
+    weight: 20
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_credit:
+    type: entity_reference_autocomplete_tags
+    weight: 20
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
   field_default_caption:
     weight: -8
     type: text_textfield
@@ -48,6 +83,27 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  field_image_gallery:
+    type: options_select
+    weight: 20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_image_provider:
+    type: entity_reference_autocomplete_tags
+    weight: 20
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_image_rights:
+    type: options_select
+    weight: 20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   field_image_url:
     weight: -3
     type: text_textfield
@@ -67,6 +123,24 @@ content:
     weight: -5
     type: text_textfield
     settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_server_folder:
+    type: entity_reference_autocomplete_tags
+    weight: 20
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_state:
+    type: entity_reference_autocomplete_tags
+    weight: 20
+    settings:
+      match_operator: CONTAINS
       size: 60
       placeholder: ''
     third_party_settings: {  }

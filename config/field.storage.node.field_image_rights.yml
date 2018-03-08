@@ -1,0 +1,20 @@
+uuid: 12fbe9bc-9e1b-426d-b690-c19da78bd78a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_image_rights
+field_name: field_image_rights
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
