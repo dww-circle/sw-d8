@@ -10,7 +10,7 @@ third_party_settings:
     parent: ''
 name: Story
 type: story
-description: 'An SW article.'
+description: 'An SW article'
 help: ''
 new_revision: true
 preview_mode: 1

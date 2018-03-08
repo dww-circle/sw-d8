@@ -1,0 +1,21 @@
+uuid: 077799a9-0bf9-4668-962c-daadb96c185e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_story_label_has_names
+    - node.type.story
+id: node.story.field_story_label_has_names
+field_name: field_story_label_has_names
+entity_type: node
+bundle: story
+label: 'Include names in the story label'
+description: 'If this story has a special type with a story label (e.g. "Interview", "Comment", etc), should the story label include the author/interviewee names?'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

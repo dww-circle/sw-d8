@@ -6,13 +6,24 @@ dependencies:
     - field.field.node.story.field_authors
     - field.field.node.story.field_body
     - field.field.node.story.field_body_introduction
+    - field.field.node.story.field_byline_has_affiliation
     - field.field.node.story.field_contributors
+    - field.field.node.story.field_dateline_behavior
+    - field.field.node.story.field_footer
+    - field.field.node.story.field_frontpage
+    - field.field.node.story.field_interviewees
     - field.field.node.story.field_introduction
     - field.field.node.story.field_kicker
+    - field.field.node.story.field_related_nids
+    - field.field.node.story.field_show_related
+    - field.field.node.story.field_story_label_has_names
     - field.field.node.story.field_story_weight
+    - field.field.node.story.field_subtitle
     - field.field.node.story.field_teaser
+    - field.field.node.story.upload
     - node.type.story
   module:
+    - file
     - text
     - user
 id: node.story.default
@@ -21,26 +32,35 @@ bundle: story
 mode: default
 content:
   field_authors:
-    weight: 0
-    label: hidden
+    label: above
+    weight: -6
+    type: entity_reference_label
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
     region: content
   field_body:
+    label: above
     weight: 4
-    label: hidden
+    type: text_default
     settings: {  }
     third_party_settings: {  }
-    type: text_default
     region: content
   field_body_introduction:
-    weight: 3
-    label: hidden
+    label: above
+    weight: 0
+    type: text_default
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    region: content
+  field_byline_has_affiliation:
+    label: above
+    weight: 2
+    type: number_integer
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
     region: content
   field_contributors:
     weight: 6
@@ -50,26 +70,112 @@ content:
     third_party_settings: {  }
     type: entity_reference_label
     region: content
-  field_introduction:
-    weight: 2
-    label: hidden
+  field_dateline_behavior:
+    label: above
+    weight: 0
+    type: number_integer
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    region: content
+  field_footer:
+    label: above
+    weight: 5
+    type: text_default
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_frontpage:
+    label: above
+    weight: 2
+    type: number_integer
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    region: content
+  field_interviewees:
+    label: above
+    weight: -1
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_introduction:
+    label: above
+    weight: -2
     type: text_default
+    settings: {  }
+    third_party_settings: {  }
     region: content
   field_kicker:
-    weight: 1
-    label: hidden
-    settings:
-      link_to_entity: false
+    label: above
+    weight: -10
+    type: text_default
+    settings: {  }
     third_party_settings: {  }
-    type: string
+    region: content
+  field_related_nids:
+    label: above
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_show_related:
+    label: above
+    weight: -6
+    type: number_integer
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    region: content
+  field_story_label_has_names:
+    label: above
+    weight: -2
+    type: number_integer
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    region: content
+  field_story_weight:
+    label: above
+    weight: 1
+    type: number_integer
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    region: content
+  field_subtitle:
+    label: above
+    weight: -8
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_teaser:
+    label: above
+    weight: -7
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
     region: content
   links:
     weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden:
-  field_story_weight: true
-  field_teaser: true
+  upload:
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    type: file_default
+    weight: 7
+    third_party_settings: {  }
+    region: content
+hidden: {  }

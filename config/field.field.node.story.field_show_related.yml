@@ -1,20 +1,19 @@
-uuid: 46bf5d1c-fa40-4d0f-be9c-465f80dec86b
+uuid: d1d07546-029c-4a6e-bfa7-4712b7a525cc
 langcode: en
 status: true
 dependencies:
   config:
+    - field.storage.node.field_show_related
     - node.type.story
-id: node.story.promote
-field_name: promote
+id: node.story.field_show_related
+field_name: field_show_related
 entity_type: node
 bundle: story
-label: 'Promoted to front page'
+label: 'Show related articles'
 description: ''
 required: false
 translatable: true
-default_value:
-  -
-    value: 1
+default_value: {  }
 default_value_callback: ''
 settings:
   on_label: 'On'
