@@ -1,0 +1,23 @@
+uuid: 71408d14-1f8d-4f43-b511-c4d099e5f923
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_image_url
+    - media.type.image
+  module:
+    - link
+id: media.image.field_image_url
+field_name: field_image_url
+entity_type: media
+bundle: image
+label: 'Image link'
+description: 'If you want this image to work as a link, enter just the URL here, e.g. <em>https://www.isreview.org</em>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

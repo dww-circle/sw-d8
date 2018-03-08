@@ -1,0 +1,23 @@
+uuid: 436006d4-dc60-4aab-b298-76d3d3570e3f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_original_url
+    - media.type.image
+  module:
+    - link
+id: media.image.field_original_url
+field_name: field_original_url
+entity_type: media
+bundle: image
+label: 'Original url'
+description: 'If we found this image on the Web, where can we get the original high-res version?'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

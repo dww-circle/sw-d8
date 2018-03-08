@@ -1,12 +1,21 @@
-uuid: eef79c87-3985-4df0-9ec4-8050cee9c7e3
+uuid: da8b286f-5fb4-4873-8813-cc101ac41441
 langcode: en
 status: true
 dependencies:
   config:
+    - field.field.media.image.field_default_caption
+    - field.field.media.image.field_image_crop_type
+    - field.field.media.image.field_image_url
     - field.field.media.image.field_media_image
+    - field.field.media.image.field_original_image
+    - field.field.media.image.field_original_url
+    - image.style.medium
     - media.type.image
   module:
     - image
+    - link
+    - media
+    - options
 _core:
   default_config_hash: jOwnt_yq6AKAfqU6f0xKnxEkFQ2eTPJWxrk3WMLbL68
 id: media.image.default
@@ -14,6 +23,32 @@ targetEntityType: media
 bundle: image
 mode: default
 content:
+  field_default_caption:
+    type: basic_string
+    weight: 2
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_image_crop_type:
+    type: list_default
+    weight: 3
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_image_url:
+    weight: 6
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
   field_media_image:
     label: visually_hidden
     settings:
@@ -23,8 +58,36 @@ content:
     type: image
     weight: 1
     region: content
+  field_original_image:
+    type: media_thumbnail
+    weight: 4
+    label: above
+    settings:
+      image_style: medium
+      image_link: media
+    third_party_settings: {  }
+    region: content
+  field_original_url:
+    weight: 5
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  name:
+    type: string
+    weight: 0
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
 hidden:
   created: true
-  name: true
   thumbnail: true
   uid: true

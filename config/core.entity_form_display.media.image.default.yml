@@ -1,14 +1,20 @@
-uuid: 781f1243-7c92-4d29-8942-200115bd0cfb
+uuid: 77c689b5-d112-42e8-80d8-5241fa4e7382
 langcode: en
 status: true
 dependencies:
   config:
+    - field.field.media.image.field_default_caption
+    - field.field.media.image.field_image_crop_type
+    - field.field.media.image.field_image_url
     - field.field.media.image.field_media_image
+    - field.field.media.image.field_original_image
+    - field.field.media.image.field_original_url
     - image.style.thumbnail
     - media.type.image
   module:
+    - entity_reference_number_widget
     - image
-    - path
+    - link
 _core:
   default_config_hash: nZlttO4YMwMCpkhYMz7bQ1ZMjABGc59YY1us3eSfvTY
 id: media.image.default
@@ -16,12 +22,28 @@ targetEntityType: media
 bundle: image
 mode: default
 content:
-  created:
-    type: datetime_timestamp
-    weight: 10
+  field_default_caption:
+    type: string_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_image_crop_type:
+    type: options_select
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_image_url:
+    weight: 6
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
   field_media_image:
     settings:
       progress_indicator: throbber
@@ -30,34 +52,36 @@ content:
     type: image_image
     weight: 0
     region: content
+  field_original_image:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: entity_reference_number
+    region: content
+  field_original_url:
+    weight: 5
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
   name:
     type: string_textfield
-    weight: -5
+    weight: 1
     region: content
     settings:
       size: 60
       placeholder: ''
-    third_party_settings: {  }
-  path:
-    type: path
-    weight: 30
-    region: content
-    settings: {  }
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 100
+    weight: 7
     region: content
     third_party_settings: {  }
-  uid:
-    type: entity_reference_autocomplete
-    weight: 5
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-    region: content
-    third_party_settings: {  }
-hidden: {  }
+hidden:
+  created: true
+  path: true
+  uid: true
