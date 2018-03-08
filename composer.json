@@ -24,6 +24,7 @@
     "drupal/ctools": "^3.0",
     "drupal/entity_browser": "^1.4",
     "drupal/entity_clone": "^1.0@alpha",
+    "drupal/entity_reference_number_widget": "^1.0",
     "drupal/entityqueue": "^1.0@alpha",
     "drupal/inline_entity_form": "^1.0@beta",
     "drupal/migrate_upgrade": "^3.0",
