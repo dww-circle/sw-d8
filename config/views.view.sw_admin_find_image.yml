@@ -12,6 +12,8 @@ dependencies:
     - media.type.image
     - taxonomy.vocabulary.image_gallery
     - taxonomy.vocabulary.image_rights
+    - user.role.administrator
+    - user.role.sw_staff
   module:
     - image
     - media
@@ -35,9 +37,11 @@ display:
     position: 0
     display_options:
       access:
-        type: perm
+        type: role
         options:
-          perm: 'view media'
+          role:
+            sw_staff: sw_staff
+            administrator: administrator
       cache:
         type: tag
         options: {  }
@@ -1039,19 +1043,17 @@ display:
       sorts: {  }
       title: 'Find image'
       header:
-        area:
-          id: area
+        area_text_custom:
+          id: area_text_custom
           table: views
-          field: area
+          field: area_text_custom
           relationship: none
           group_type: group
           admin_label: ''
           empty: true
           tokenize: false
-          content:
-            value: '<ul class="action-links"><li><a href="[site:url]media/add/image" class="button button-action button--primary">Add new image</a></li></ul>'
-            format: full_html
-          plugin_id: text
+          content: '<ul class="action-links"><li><a href="[site:url]media/add/image" class="button button-action button--primary">Add new image</a></li></ul>'
+          plugin_id: text_custom
       footer: {  }
       empty:
         area:
@@ -1092,7 +1094,7 @@ display:
         - url
         - url.query_args
         - user
-        - user.permissions
+        - user.roles
       tags:
         - 'config:field.storage.media.field_image_gallery'
         - 'config:field.storage.media.field_image_provider'
@@ -1124,7 +1126,7 @@ display:
         - url
         - url.query_args
         - user
-        - user.permissions
+        - user.roles
       tags:
         - 'config:field.storage.media.field_image_gallery'
         - 'config:field.storage.media.field_image_provider'
