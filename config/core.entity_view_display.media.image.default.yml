@@ -3,6 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.media.image.field_city
+    - field.field.media.image.field_country
     - field.field.media.image.field_credit
     - field.field.media.image.field_default_caption
     - field.field.media.image.field_image_crop_type
@@ -14,6 +16,7 @@ dependencies:
     - field.field.media.image.field_original_image
     - field.field.media.image.field_original_url
     - field.field.media.image.field_server_folder
+    - field.field.media.image.field_state
     - image.style.large
     - media.type.image
   module:
@@ -36,6 +39,8 @@ content:
     region: content
 hidden:
   created: true
+  field_city: true
+  field_country: true
   field_credit: true
   field_default_caption: true
   field_image_crop_type: true
@@ -46,6 +51,7 @@ hidden:
   field_original_image: true
   field_original_url: true
   field_server_folder: true
+  field_state: true
   name: true
   thumbnail: true
   uid: true
