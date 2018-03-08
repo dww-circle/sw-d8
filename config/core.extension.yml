@@ -50,6 +50,7 @@ module:
   search_kint: 0
   shortcut: 0
   simple_block: 0
+  sw: 0
   system: 0
   taxonomy: 0
   text: 0
