@@ -6,12 +6,22 @@ dependencies:
     - field.field.node.story.field_authors
     - field.field.node.story.field_body
     - field.field.node.story.field_body_introduction
+    - field.field.node.story.field_city
+    - field.field.node.story.field_contributors
+    - field.field.node.story.field_country
+    - field.field.node.story.field_department
     - field.field.node.story.field_interviewees
     - field.field.node.story.field_introduction
+    - field.field.node.story.field_issue_number
+    - field.field.node.story.field_keywords
     - field.field.node.story.field_kicker
+    - field.field.node.story.field_series
     - field.field.node.story.field_show_related
+    - field.field.node.story.field_state
+    - field.field.node.story.field_story_type
     - field.field.node.story.field_story_weight
     - field.field.node.story.field_teaser
+    - field.field.node.story.field_topic
     - field.field.node.story.upload
     - node.type.story
   module:
@@ -45,6 +55,38 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  field_city:
+    label: hidden
+    type: entity_reference_label
+    weight: 20
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_contributors:
+    label: hidden
+    type: entity_reference_label
+    weight: 20
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_country:
+    label: hidden
+    type: entity_reference_label
+    weight: 20
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_department:
+    label: hidden
+    type: entity_reference_label
+    weight: 20
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
   field_interviewees:
     label: above
     weight: -1
@@ -60,11 +102,35 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  field_issue_number:
+    label: hidden
+    type: entity_reference_label
+    weight: 20
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_keywords:
+    label: hidden
+    type: entity_reference_label
+    weight: 20
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
   field_kicker:
     label: above
     weight: -10
     type: text_default
     settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_series:
+    label: hidden
+    type: entity_reference_label
+    weight: 20
+    settings:
+      link: true
     third_party_settings: {  }
     region: content
   field_show_related:
@@ -74,6 +140,22 @@ content:
     settings:
       thousand_separator: ''
       prefix_suffix: true
+    third_party_settings: {  }
+    region: content
+  field_state:
+    label: hidden
+    type: entity_reference_label
+    weight: 20
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_story_type:
+    label: hidden
+    type: entity_reference_label
+    weight: 20
+    settings:
+      link: true
     third_party_settings: {  }
     region: content
   field_story_weight:
@@ -90,6 +172,14 @@ content:
     weight: -7
     type: text_default
     settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_topic:
+    label: hidden
+    type: entity_reference_label
+    weight: 20
+    settings:
+      link: true
     third_party_settings: {  }
     region: content
   links:
