@@ -1052,7 +1052,7 @@ display:
           admin_label: ''
           empty: true
           tokenize: false
-          content: '<ul class="action-links"><li><a href="[site:url]media/add/image" class="button button-action button--primary">Add new image</a></li></ul>'
+          content: '<ul class="action-links"><li><a href="[site:url]media/add/image" class="button button-action button--primary button--small">Add new image</a></li></ul>'
           plugin_id: text_custom
       footer: {  }
       empty:

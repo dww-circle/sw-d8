@@ -867,7 +867,7 @@ display:
           admin_label: ''
           empty: true
           tokenize: false
-          content: '<ul class="action-links"><li><a href="[site:url]node/add/story" class="button button-action button--primary">Add new story</a></li></ul>'
+          content: '<ul class="action-links"><li><a href="[site:url]node/add/story" class="button button-action button--primary button--small">Add new story</a></li></ul>'
           plugin_id: text_custom
       footer: {  }
       empty:
