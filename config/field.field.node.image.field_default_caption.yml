@@ -1,0 +1,19 @@
+uuid: 0c38188d-272b-4a28-ae16-f0bcb9f208e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_default_caption
+    - node.type.image
+id: node.image.field_default_caption
+field_name: field_default_caption
+entity_type: node
+bundle: image
+label: 'Default caption'
+description: 'A default caption to use if not overridden when the image is inserted.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

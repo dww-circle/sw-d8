@@ -1,0 +1,23 @@
+uuid: 7264d878-6b28-4040-aa07-59ff9a20d641
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_original_image_nid
+    - node.type.image
+id: node.image.field_original_image_nid
+field_name: field_original_image_nid
+entity_type: node
+bundle: image
+label: 'Original image NID'
+description: 'If this image is a crop of an existing image on the site, enter the node ID (NID) of the original image here.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer
