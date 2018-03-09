@@ -1,0 +1,28 @@
+uuid: 1653fae8-b5da-4a12-adec-8b7843fd4eed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_wide_image
+    - media.type.image
+    - node.type.story
+id: node.story.field_wide_image
+field_name: field_wide_image
+entity_type: node
+bundle: story
+label: 'Wide image'
+description: 'If this is a lead story that will appear in the top of a homepage slice, you can specify the wide crop image to use. If defined, this will also be used when sharing on social media.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

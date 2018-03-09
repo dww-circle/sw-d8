@@ -16,6 +16,7 @@ dependencies:
     - field.field.node.story.field_issue_number
     - field.field.node.story.field_keywords
     - field.field.node.story.field_kicker
+    - field.field.node.story.field_main_image
     - field.field.node.story.field_series
     - field.field.node.story.field_show_related
     - field.field.node.story.field_state
@@ -23,9 +24,12 @@ dependencies:
     - field.field.node.story.field_story_weight
     - field.field.node.story.field_teaser
     - field.field.node.story.field_topic
+    - field.field.node.story.field_wide_image
     - field.field.node.story.upload
+    - image.style.large
     - node.type.story
   module:
+    - media
     - text
     - user
 id: node.story.teaser_image_large
@@ -35,10 +39,19 @@ mode: teaser_image_large
 content:
   field_teaser:
     type: text_default
-    weight: 0
+    weight: 1
     region: content
     label: hidden
     settings: {  }
+    third_party_settings: {  }
+  field_wide_image:
+    type: media_thumbnail
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: large
+      image_link: ''
     third_party_settings: {  }
 hidden:
   field_authors: true
@@ -53,6 +66,7 @@ hidden:
   field_issue_number: true
   field_keywords: true
   field_kicker: true
+  field_main_image: true
   field_series: true
   field_show_related: true
   field_state: true
