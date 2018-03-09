@@ -17,6 +17,7 @@ dependencies:
     - field.field.node.story.field_keywords
     - field.field.node.story.field_kicker
     - field.field.node.story.field_main_image
+    - field.field.node.story.field_secondary_topic
     - field.field.node.story.field_series
     - field.field.node.story.field_show_related
     - field.field.node.story.field_state
@@ -70,6 +71,7 @@ third_party_settings:
     group_categories:
       children:
         - field_topic
+        - field_secondary_topic
         - field_keywords
       parent_name: ''
       weight: 7
@@ -100,7 +102,7 @@ third_party_settings:
       children:
         - field_body_introduction
       parent_name: ''
-      weight: 10
+      weight: 11
       format_type: details
       format_settings:
         id: ''
@@ -162,7 +164,7 @@ content:
     type: inline_entity_form_complex
     region: content
   field_body:
-    weight: 11
+    weight: 12
     type: text_textarea
     settings:
       rows: 20
@@ -242,7 +244,7 @@ content:
     region: content
   field_keywords:
     type: entity_reference_autocomplete_tags
-    weight: 8
+    weight: 9
     settings:
       match_operator: CONTAINS
       size: 60
@@ -263,6 +265,12 @@ content:
     third_party_settings: {  }
     type: entity_reference_number
     region: content
+  field_secondary_topic:
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
   field_series:
     type: options_select
     weight: 11
@@ -270,7 +278,7 @@ content:
     third_party_settings: {  }
     region: content
   field_show_related:
-    weight: 13
+    weight: 14
     type: boolean_checkbox
     settings:
       display_label: true
@@ -320,7 +328,7 @@ content:
     region: content
   path:
     type: path
-    weight: 14
+    weight: 15
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -328,7 +336,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 15
+    weight: 16
     region: content
     third_party_settings: {  }
   title:
@@ -343,7 +351,7 @@ content:
     settings:
       progress_indicator: throbber
     type: file_generic
-    weight: 12
+    weight: 13
     third_party_settings: {  }
     region: content
 hidden:
