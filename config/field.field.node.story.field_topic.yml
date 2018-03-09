@@ -10,7 +10,7 @@ id: node.story.field_topic
 field_name: field_topic
 entity_type: node
 bundle: story
-label: Topic
+label: 'Main topic'
 description: ''
 required: true
 translatable: true
@@ -20,6 +20,10 @@ settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      - topic
+      topic: topic
+    sort:
+      field: name
+      direction: asc
     auto_create: true
+    auto_create_bundle: ''
 field_type: entity_reference
