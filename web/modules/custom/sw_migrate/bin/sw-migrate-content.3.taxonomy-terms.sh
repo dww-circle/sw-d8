@@ -1,5 +1,5 @@
 #!/bin/zsh
 
 # Terms
-rm -f 4.mim.taxonomy-terms.out;
-/usr/bin/time drush mim upgrade_d6_taxonomy_term > 4.mim.taxonomy-terms.out 2>&1
+rm -f d6_taxonomy_term.out;
+time drush mim upgrade_d6_taxonomy_term > d6_taxonomy_term.out 2>&1
