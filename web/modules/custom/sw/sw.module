@@ -1,0 +1,52 @@
+<?php
+
+use \Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_form_FORM_ID_alter() for 'media_image_add_form'.
+ */
+function sw_form_media_image_add_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  _sw_form_media_image_form_alter($form, $form_state, $form_id);
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter() for 'media_image_edit_form'.
+ */
+function sw_form_media_image_edit_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  _sw_form_media_image_form_alter($form, $form_state, $form_id);
+}
+
+/**
+ * Helper function for shared altering for media image forms (add and edit).
+ */
+function _sw_form_media_image_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  $form['field_original_image']['#states'] = [
+    'visible' => [
+      ':input[name="field_image_crop_type"]' => ['value' => 1],
+    ],
+  ];
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter() for 'node_form'.
+ *
+ * Improves the UI for story node forms via #states.
+ */
+function sw_form_node_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  $node = $form_state->getFormObject()->getEntity();
+  if ($node->bundle() == 'story') {
+    $form['field_kicker']['#states'] = [
+      'visible' => [
+        ':input[name="field_kicker[0][value]"]' => ['filled' => TRUE],
+      ],
+    ];
+    $form['field_interviewees']['#states'] = [
+      'visible' => [
+        ':input[name="field_story_type"]' => [
+          ['value' => 393], // Interview
+          ['value' => 4556], // Obituary
+        ],
+      ],
+    ];
+  }
+}

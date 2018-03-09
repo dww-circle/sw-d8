@@ -1,0 +1,17 @@
+uuid: 0d101675-cae3-4b83-aea2-c288e72c3df6
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Couldn''t make it up blog'
+type: blog_couldnt_make_it_up
+description: 'An entry in the "Couldn''t make it up" blog.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

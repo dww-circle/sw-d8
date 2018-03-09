@@ -1,9 +1,23 @@
-uuid: eef79c87-3985-4df0-9ec4-8050cee9c7e3
+uuid: da8b286f-5fb4-4873-8813-cc101ac41441
 langcode: en
 status: true
 dependencies:
   config:
+    - field.field.media.image.field_city
+    - field.field.media.image.field_country
+    - field.field.media.image.field_credit
+    - field.field.media.image.field_default_caption
+    - field.field.media.image.field_image_crop_type
+    - field.field.media.image.field_image_gallery
+    - field.field.media.image.field_image_provider
+    - field.field.media.image.field_image_rights
+    - field.field.media.image.field_image_url
     - field.field.media.image.field_media_image
+    - field.field.media.image.field_original_image
+    - field.field.media.image.field_original_url
+    - field.field.media.image.field_server_folder
+    - field.field.media.image.field_state
+    - image.style.large
     - media.type.image
   module:
     - image
@@ -17,14 +31,27 @@ content:
   field_media_image:
     label: visually_hidden
     settings:
-      image_style: ''
-      image_link: file
+      image_style: large
+      image_link: ''
     third_party_settings: {  }
     type: image
-    weight: 1
+    weight: 0
     region: content
 hidden:
   created: true
+  field_city: true
+  field_country: true
+  field_credit: true
+  field_default_caption: true
+  field_image_crop_type: true
+  field_image_gallery: true
+  field_image_provider: true
+  field_image_rights: true
+  field_image_url: true
+  field_original_image: true
+  field_original_url: true
+  field_server_folder: true
+  field_state: true
   name: true
   thumbnail: true
   uid: true

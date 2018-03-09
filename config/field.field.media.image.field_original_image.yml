@@ -1,0 +1,27 @@
+uuid: 1a428710-13c5-435e-9f85-65638d7529b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_original_image
+    - media.type.image
+id: media.image.field_original_image
+field_name: field_original_image
+entity_type: media
+bundle: image
+label: 'Original image'
+description: 'If this is a crop of another image, what''s the image ID of the original?'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

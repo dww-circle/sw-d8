@@ -1,0 +1,41 @@
+uuid: 62794663-d287-4127-a5e2-be5126f7e5c0
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d6_term_media_18
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 6'
+  - Content
+  - 'Media terms'
+migration_group: sw_d6
+label: 'Term/media relationships'
+
+source:
+  plugin: d6_term_node
+  vid: '18'
+
+process:
+  field_server_folder: tid
+  mid:
+    -
+      plugin: migration_lookup
+      migration: upgrade_d6_node_image
+      source: nid
+      no_stub: true
+    -
+      plugin: skip_on_empty
+      method: row
+
+destination:
+  plugin: 'entity:media'
+  default_bundle: image
+
+migration_dependencies:
+  required:
+    0: upgrade_d6_vocabulary_entity_display
+    1: upgrade_d6_vocabulary_entity_form_display
+    2: upgrade_d6_node_image
+    3: upgrade_d6_taxonomy_term

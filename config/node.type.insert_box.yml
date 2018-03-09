@@ -1,0 +1,17 @@
+uuid: f6c68c34-3978-44fe-8c8f-c4e4c9e8724e
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Insert box'
+type: insert_box
+description: 'A box of text to insert inside a story, for example, a "What you can do" insert.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

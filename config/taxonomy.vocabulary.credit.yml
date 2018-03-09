@@ -1,0 +1,9 @@
+uuid: fedbb1e8-b580-47b6-9f13-0768040d11cb
+langcode: en
+status: true
+dependencies: {  }
+name: Credit
+vid: credit
+description: ''
+hierarchy: 0
+weight: -3

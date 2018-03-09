@@ -1,0 +1,28 @@
+uuid: 8e474bb7-a4c8-48e8-8334-28d2dfa1b990
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_interviewees
+    - node.type.person
+    - node.type.story
+id: node.story.field_interviewees
+field_name: field_interviewees
+entity_type: node
+bundle: story
+label: Interviewees
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      person: person
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

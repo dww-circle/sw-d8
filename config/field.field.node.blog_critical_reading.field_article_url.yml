@@ -1,0 +1,23 @@
+uuid: ee5932fb-9e6c-4c3a-a81a-00dfe025ab7f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_article_url
+    - node.type.blog_critical_reading
+  module:
+    - link
+id: node.blog_critical_reading.field_article_url
+field_name: field_article_url
+entity_type: node
+bundle: blog_critical_reading
+label: 'Article URL'
+description: 'The URL where the original article is posted.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

@@ -1,0 +1,9 @@
+uuid: 9ac1b2b9-55c1-49ba-a3b8-8b6b3e9edef3
+langcode: en
+status: true
+dependencies: {  }
+name: 'Server folder'
+vid: server_folder
+description: ''
+hierarchy: 0
+weight: 8

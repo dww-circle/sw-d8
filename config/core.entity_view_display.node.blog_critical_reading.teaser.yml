@@ -1,0 +1,38 @@
+uuid: e5ca34d7-5bb6-43cd-a485-9607fd9f29f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.blog_critical_reading.body
+    - field.field.node.blog_critical_reading.field_article_headline
+    - field.field.node.blog_critical_reading.field_article_source
+    - field.field.node.blog_critical_reading.field_article_url
+    - field.field.node.blog_critical_reading.field_blog_comment
+    - node.type.blog_critical_reading
+  module:
+    - text
+    - user
+id: node.blog_critical_reading.teaser
+targetEntityType: node
+bundle: blog_critical_reading
+mode: teaser
+content:
+  field_blog_comment:
+    type: text_trimmed
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  links:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_article_headline: true
+  field_article_source: true
+  field_article_url: true

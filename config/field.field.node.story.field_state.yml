@@ -1,0 +1,25 @@
+uuid: db326c45-fc2e-478a-9b01-602cd4dafb9c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_state
+    - node.type.story
+    - taxonomy.vocabulary.state
+id: node.story.field_state
+field_name: field_state
+entity_type: node
+bundle: story
+label: State
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      - state
+    auto_create: true
+field_type: entity_reference

@@ -1,0 +1,9 @@
+uuid: 52c92577-2515-42d3-886d-8684b67082dd
+langcode: en
+status: true
+dependencies: {  }
+name: Series
+vid: series
+description: ''
+hierarchy: 1
+weight: 7

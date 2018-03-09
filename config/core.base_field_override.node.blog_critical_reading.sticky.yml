@@ -1,0 +1,22 @@
+uuid: 013011ad-5795-44a7-9bcb-4e38986aa584
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.blog_critical_reading
+id: node.blog_critical_reading.sticky
+field_name: sticky
+entity_type: node
+bundle: blog_critical_reading
+label: 'Sticky at the top of lists'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

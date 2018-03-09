@@ -1,0 +1,19 @@
+uuid: d61f56f8-b195-43a6-8aad-800020c16cd7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_header_text
+    - node.type.insert_box
+id: node.insert_box.field_header_text
+field_name: field_header_text
+entity_type: node
+bundle: insert_box
+label: 'Header text'
+description: 'For <em>Review</em>, <em>Columnist</em> and <em>Series</em> insert boxes, this controls the rest of the text used for the header. For example, if you want to see "Columnist: Sharon Smith", you''d enter "Sharon Smith" here and select "Columnist" in for the <em>Insert type</em> field.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

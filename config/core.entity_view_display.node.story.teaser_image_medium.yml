@@ -7,13 +7,29 @@ dependencies:
     - field.field.node.story.field_authors
     - field.field.node.story.field_body
     - field.field.node.story.field_body_introduction
+    - field.field.node.story.field_city
     - field.field.node.story.field_contributors
+    - field.field.node.story.field_country
+    - field.field.node.story.field_department
+    - field.field.node.story.field_interviewees
     - field.field.node.story.field_introduction
+    - field.field.node.story.field_issue_number
+    - field.field.node.story.field_keywords
     - field.field.node.story.field_kicker
+    - field.field.node.story.field_main_image
+    - field.field.node.story.field_series
+    - field.field.node.story.field_show_related
+    - field.field.node.story.field_state
+    - field.field.node.story.field_story_type
     - field.field.node.story.field_story_weight
     - field.field.node.story.field_teaser
+    - field.field.node.story.field_topic
+    - field.field.node.story.field_wide_image
+    - field.field.node.story.upload
+    - image.style.medium
     - node.type.story
   module:
+    - media
     - text
     - user
 id: node.story.teaser_image_medium
@@ -21,26 +37,41 @@ targetEntityType: node
 bundle: story
 mode: teaser_image_medium
 content:
-  field_body_introduction:
+  field_main_image:
+    type: media_thumbnail
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: ''
+    third_party_settings: {  }
+  field_teaser:
+    type: text_default
     weight: 1
+    region: content
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
-    region: content
-  field_kicker:
-    weight: 0
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: content
 hidden:
   field_authors: true
   field_body: true
+  field_body_introduction: true
+  field_city: true
   field_contributors: true
+  field_country: true
+  field_department: true
+  field_interviewees: true
   field_introduction: true
+  field_issue_number: true
+  field_keywords: true
+  field_kicker: true
+  field_series: true
+  field_show_related: true
+  field_state: true
+  field_story_type: true
   field_story_weight: true
-  field_teaser: true
+  field_topic: true
+  field_wide_image: true
   links: true
+  upload: true

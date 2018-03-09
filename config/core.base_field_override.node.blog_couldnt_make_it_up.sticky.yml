@@ -1,0 +1,22 @@
+uuid: 4d6c4a66-42eb-485b-9877-e203727e9484
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.blog_couldnt_make_it_up
+id: node.blog_couldnt_make_it_up.sticky
+field_name: sticky
+entity_type: node
+bundle: blog_couldnt_make_it_up
+label: 'Sticky at the top of lists'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

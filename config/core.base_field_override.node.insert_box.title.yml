@@ -1,0 +1,18 @@
+uuid: 19f3b18a-411b-41dd-a4e9-c3e0aba5cb3c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.insert_box
+id: node.insert_box.title
+field_name: title
+entity_type: node
+bundle: insert_box
+label: 'Administrative title'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

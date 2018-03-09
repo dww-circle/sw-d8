@@ -1,0 +1,29 @@
+uuid: 8c767477-ba25-497e-9858-829c93ffebe7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_image_provider
+    - media.type.image
+    - taxonomy.vocabulary.image_provider
+id: media.image.field_image_provider
+field_name: field_image_provider
+entity_type: media
+bundle: image
+label: 'Image provider'
+description: 'Where did we get this image from?'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      image_provider: image_provider
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

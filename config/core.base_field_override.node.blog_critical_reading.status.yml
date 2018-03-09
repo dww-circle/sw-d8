@@ -1,0 +1,22 @@
+uuid: 9a2cc3fa-e0c8-444d-9071-f5eb413a2a74
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.blog_critical_reading
+id: node.blog_critical_reading.status
+field_name: status
+entity_type: node
+bundle: blog_critical_reading
+label: 'Publishing status'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

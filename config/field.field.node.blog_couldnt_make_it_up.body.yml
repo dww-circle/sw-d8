@@ -1,0 +1,22 @@
+uuid: 3e790607-273b-4bb8-91a7-48f294570d7e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.blog_couldnt_make_it_up
+  module:
+    - text
+id: node.blog_couldnt_make_it_up.body
+field_name: body
+entity_type: node
+bundle: blog_couldnt_make_it_up
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

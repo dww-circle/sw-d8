@@ -1,0 +1,28 @@
+uuid: 9de36b37-de90-4374-a6fe-cec934721f07
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.blog_couldnt_make_it_up.body
+    - node.type.blog_couldnt_make_it_up
+  module:
+    - text
+    - user
+id: node.blog_couldnt_make_it_up.default
+targetEntityType: node
+bundle: blog_couldnt_make_it_up
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

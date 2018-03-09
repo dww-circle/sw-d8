@@ -1,0 +1,29 @@
+uuid: 1a42b860-01bd-4ce3-a381-f67d463afbf3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_image_rights
+    - media.type.image
+    - taxonomy.vocabulary.image_rights
+id: media.image.field_image_rights
+field_name: field_image_rights
+entity_type: media
+bundle: image
+label: 'Image rights'
+description: 'What are our rights for using this image?'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      image_rights: image_rights
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

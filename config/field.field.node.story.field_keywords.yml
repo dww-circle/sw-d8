@@ -1,0 +1,25 @@
+uuid: a217e3f0-4c25-4ac8-bc55-99dd05fb323f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_keywords
+    - node.type.story
+    - taxonomy.vocabulary.keywords
+id: node.story.field_keywords
+field_name: field_keywords
+entity_type: node
+bundle: story
+label: Keywords
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      - keywords
+    auto_create: true
+field_type: entity_reference

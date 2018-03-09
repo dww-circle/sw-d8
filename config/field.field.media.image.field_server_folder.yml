@@ -1,0 +1,29 @@
+uuid: 1a7ac04c-d2b7-4ee5-8bdc-2ffe0fad5217
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_server_folder
+    - media.type.image
+    - taxonomy.vocabulary.server_folder
+id: media.image.field_server_folder
+field_name: field_server_folder
+entity_type: media
+bundle: image
+label: 'Server folder'
+description: 'If we have a high-res version of this image on the server at the center, enter the folder name here.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      server_folder: server_folder
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

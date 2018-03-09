@@ -1,0 +1,22 @@
+uuid: 8daf6b10-cc83-4b36-a010-52897fdf37e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.blog_critical_reading
+  module:
+    - text
+id: node.blog_critical_reading.body
+field_name: body
+entity_type: node
+bundle: blog_critical_reading
+label: 'Article body'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

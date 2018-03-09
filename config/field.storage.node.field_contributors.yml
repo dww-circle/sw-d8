@@ -1,15 +1,16 @@
-uuid: 74a6423c-513a-463c-98ea-5fa9d247bd9d
+uuid: f5ecfcec-09c2-4c1a-a84b-66693be1cddb
 langcode: en
 status: true
 dependencies:
   module:
     - node
+    - taxonomy
 id: node.field_contributors
 field_name: field_contributors
 entity_type: node
 type: entity_reference
 settings:
-  target_type: node
+  target_type: taxonomy_term
 module: core
 locked: false
 cardinality: -1

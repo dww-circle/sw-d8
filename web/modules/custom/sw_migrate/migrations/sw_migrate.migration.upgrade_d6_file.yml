@@ -14,7 +14,7 @@ label: 'Public files'
 source:
   plugin: d6_file
   constants:
-    source_base_path: 'http://localhost/sw-live/'
+    source_base_path: '/Applications/MAMP/htdocs/sw-live'
 process:
   filename: filename
   source_full_path:

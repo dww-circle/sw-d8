@@ -1,0 +1,34 @@
+uuid: 015c0b6e-ff0b-407b-a892-1d29025c9d78
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.insert_box.field_header_text
+    - field.field.node.insert_box.field_insert_body
+    - field.field.node.insert_box.field_insert_type
+    - field.field.node.insert_box.field_topic
+    - node.type.insert_box
+  module:
+    - text
+    - user
+id: node.insert_box.default
+targetEntityType: node
+bundle: insert_box
+mode: default
+content:
+  field_insert_body:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_header_text: true
+  field_insert_type: true
+  field_topic: true
