@@ -40,5 +40,13 @@ function sw_form_node_form_alter(&$form, FormStateInterface $form_state, $form_i
         ':input[name="field_kicker[0][value]"]' => ['filled' => TRUE],
       ],
     ];
+    $form['field_interviewees']['#states'] = [
+      'visible' => [
+        ':input[name="field_story_type"]' => [
+          ['value' => 393], // Interview
+          ['value' => 4556], // Obituary
+        ],
+      ],
+    ];
   }
 }
