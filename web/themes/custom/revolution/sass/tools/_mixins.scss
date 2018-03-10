@@ -95,26 +95,6 @@
   }
 }
 
-@mixin f-serif {
-  font-family: $ff-serif;
-  font-weight: bold;
-}
-
-@mixin f-sans-light {
-  font-family: $ff-sans;
-  font-weight: $fw-light;
-}
-
-@mixin f-sans-regular {
-  font-family: $ff-sans;
-  font-weight: normal;
-}
-
-@mixin f-sans-bold {
-  font-family: $ff-sans;
-  font-weight: bold;
-}
-
 /// H1-6 loop
 @function headings($from:1, $to:6) {
   @if $from == $to {

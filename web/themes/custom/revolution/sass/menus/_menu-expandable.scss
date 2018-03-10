@@ -11,6 +11,7 @@
 
 .menu-trigger-text {
   color: white;
+  font-family: $ff-din-bold;
   font-size: 11.4px;
 }
 
@@ -44,8 +45,10 @@
   background: black;
   color: white;
   display: none;
+  font-family: $ff-din-regular;
   font-size: 16px;
   height: 100%;
+  min-height: calc(100vh - 80px);
   line-height: 22px;
   padding: 0 30px 30px;
   position: absolute;
@@ -56,6 +59,7 @@
 
   @include breakpoint($desktop) {
     top: 150px;
+    min-height: calc(100vh - 150px);
     width: 220px;
   }
 

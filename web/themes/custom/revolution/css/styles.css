@@ -1,9 +1,10 @@
 * {
   box-sizing: border-box;
-  transition: all .2s ease-in-out; }
+  transition: all .2s ease-in-out;
+  position: relative; }
 
 body {
-  font-family: "Barlow Condensed", Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
   font-size: 18px;
   line-height: 30px;
   margin: 0; }
@@ -139,6 +140,7 @@ main {
 .footer-wrapper {
   background: black;
   color: white;
+  font-family: "FF DIN Pro Regular", sans-serif;
   font-size: 10px;
   padding-bottom: 30px;
   padding-top: 30px; }
@@ -200,6 +202,7 @@ main {
       max-width: 575px; } }
 
 .header-sublogo {
+  font-family: "FF DIN Pro Medium", sans-serif;
   font-size: 12px;
   line-height: 1;
   text-transform: uppercase; }
@@ -261,6 +264,7 @@ main {
 
 .menu-trigger-text {
   color: white;
+  font-family: "FF DIN Pro Bold", sans-serif;
   font-size: 11.4px; }
 
 .menu-trigger-desktop {
@@ -286,8 +290,10 @@ main {
   background: black;
   color: white;
   display: none;
+  font-family: "FF DIN Pro Regular", sans-serif;
   font-size: 16px;
   height: 100%;
+  min-height: calc(100vh - 80px);
   line-height: 22px;
   padding: 0 30px 30px;
   position: absolute;
@@ -298,6 +304,7 @@ main {
   @media (min-width: 961px) {
     .region-expanded-menu {
       top: 150px;
+      min-height: calc(100vh - 150px);
       width: 220px; } }
   .region-expanded-menu ul {
     margin: 0 0 10px;
@@ -352,9 +359,7 @@ main {
   border-top: 1px solid #747474;
   display: none;
   font-size: 16px;
-  font-family: "Barlow Condensed", Helvetica, sans-serif;
-  font-weight: 100;
-  letter-spacing: 1.07px;
+  font-family: "FF DIN Pro Regular", sans-serif;
   text-transform: uppercase;
   width: 100%;
   z-index: 100; }
@@ -579,7 +584,7 @@ select {
   border-top: 1px solid red;
   color: red;
   font-size: 28px;
-  font-weight: 800;
+  font-family: "FF DIN Pro Bold", sans-serif;
   line-height: 32px;
   position: relative;
   text-transform: uppercase; }
@@ -594,6 +599,7 @@ select {
 
 .field--name-field-date {
   color: red;
+  font-family: "FF DIN Pro Regular", sans-serif;
   font-size: 10px;
   text-transform: uppercase; }
   @media (min-width: 961px) {
@@ -636,17 +642,19 @@ select {
 .story-link {
   display: block;
   margin-bottom: 50px; }
-  .story-link:hover {
+  .story-link:hover, .story-link:visited:hover {
     opacity: .8;
     text-decoration: none; }
     .story-link:hover .field--name-field-kicker,
     .story-link:hover h4,
-    .story-link:hover .field--name-field-body-introduction {
-      color: #9a4d4d; }
+    .story-link:hover .field--name-field-teaser, .story-link:visited:hover .field--name-field-kicker,
+    .story-link:visited:hover h4,
+    .story-link:visited:hover .field--name-field-teaser {
+      color: #72726c; }
   .story-link:visited .field--name-field-kicker,
   .story-link:visited h4,
-  .story-link:visited .field--name-field-body-introduction {
-    color: #a51b00; }
+  .story-link:visited .field--name-field-teaser {
+    color: #725c5f; }
 
 .story--teaser-image-medium,
 .story--teaser-image-large {
@@ -697,7 +705,7 @@ select {
 h4 {
   color: black;
   font-size: 30px;
-  font-weight: 400;
+  font-family: "FF DIN Pro Bold", sans-serif;
   line-height: 30px; }
   .node--view-mode-teaser-image-large h4 {
     font-size: 42px;
@@ -707,12 +715,12 @@ h4 {
 
 .field--name-field-kicker {
   color: #808080;
-  font-family: "Oswald", Helvetica, sans-serif;
+  font-family: "Source Code Pro", monospace;
   font-size: 16px;
   font-weight: 300;
   text-transform: uppercase; }
 
-.field--name-field-body-introduction {
+.field--name-field-teaser {
   color: #666666;
   font-family: "Helvetica", sans-serif;
   font-size: 15px;

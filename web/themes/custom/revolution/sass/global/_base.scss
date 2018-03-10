@@ -4,10 +4,11 @@
 * {
   box-sizing: border-box;
   transition: all .2s ease-in-out;
+  position: relative;
 }
 
 body {
-  font-family: $ff-sans;
+  font-family: $ff-helv;
   font-size: 18px;
   line-height: 30px;
   margin: 0;

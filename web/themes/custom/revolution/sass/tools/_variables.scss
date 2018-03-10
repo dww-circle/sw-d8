@@ -29,17 +29,14 @@ $z-solar-system: 300;
 /// @type z-index
 $z-galaxy: 400;
 
-
 /// Font-Families
-$ff-header: "Oswald", Helvetica, sans-serif;
-$ff-nitti: $ff-header;
-
-$ff-serif: "Libre Baskerville", Times, serif;
-
-$ff-sans: "Barlow Condensed", Helvetica, sans-serif;
-$ff-din: $ff-sans;
-
+$ff-din-medium: 'FF DIN Pro Medium', sans-serif;
+$ff-din-regular: 'FF DIN Pro Regular', sans-serif;
+$ff-din-bold: 'FF DIN Pro Bold', sans-serif;
+$ff-din-extra-light: 'FF DIN Pro Extra Light', sans-serif;
 $ff-helv: Helvetica, sans-serif;
+$ff-nitti: "Source Code Pro", monospace;
+$ff-serif: "Times New Roman", Times, serif;
 
 /// Font-Weights
 /// @group Font Weight
