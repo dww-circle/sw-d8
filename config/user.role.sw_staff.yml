@@ -36,6 +36,8 @@ permissions:
   - 'manipulate entityqueues'
   - 'revert all revisions'
   - 'select account cancellation method'
+  - 'use text format basic_html'
+  - 'use text format filtered_html'
   - 'use text format full_html'
   - 'view all revisions'
   - 'view own unpublished content'
