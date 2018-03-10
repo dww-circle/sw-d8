@@ -58,6 +58,7 @@
     "mikey179/vfsstream": "^1.2",
     "pantheon-systems/quicksilver-pushback": "~1",
     "phpunit/phpunit": "^4.8",
+    "rvtraveller/qs-composer-installer": "^1.1",
     "symfony/css-selector": "^2.8"
   },
   "conflict": {
@@ -75,7 +76,9 @@
       "@prepare-for-pantheon",
       "composer install --optimize-autoloader"
     ],
-    "drupal-unit-tests": "cd web/core && ../../vendor/bin/phpunit --testsuite=unit --exclude-group Composer,DependencyInjection,PageCache",
+    "lint": "find web/modules/custom web/themes/custom -name '*.php' -exec php -l {} \\;",
+    "code-sniff": "echo 'No code sniff step defined.'",
+    "unit-test": "echo 'No unit test step defined.'",
     "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
     "prepare-for-pantheon": "DrupalProject\\composer\\ScriptHandler::prepareForPantheon",
     "post-install-cmd": [
@@ -128,6 +131,7 @@
         ".editorconfig",
         ".eslintignore",
         ".eslintrc.json",
+        ".htaccess",
         "web.config"
       ]
     }
