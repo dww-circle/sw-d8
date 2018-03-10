@@ -48,5 +48,10 @@ function sw_form_node_form_alter(&$form, FormStateInterface $form_state, $form_i
         ],
       ],
     ];
+    $form['field_story_label']['#states'] = [
+      'visible' => [
+        ':input[name="field_story_type"]' => ['value' => 31720], // Custom @todo
+      ],
+    ];
   }
 }
