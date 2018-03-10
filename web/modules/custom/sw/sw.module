@@ -1,6 +1,18 @@
 <?php
 
+use \Drupal\Core\Entity\EntityInterface;
 use \Drupal\Core\Form\FormStateInterface;
+use \Drupal\node\Entity\Node;
+use \Drupal\node\NodeInterface;
+
+define('SW_DEPARTMENT_EDITORIALS_TID', 11);
+define('SW_DEPARTMENT_READERS_VIEWS_TID', 9);
+define('SW_DEPARTMENT_OBRERO_SOCIALISTA_TID', 17255);
+
+define('SW_STORY_TYPE_INTERVIEW_TID', 393);
+define('SW_STORY_TYPE_ROUNDTABLE_TID', 2922);
+define('SW_STORY_TYPE_OBITUARY_TID', 4556);
+define('SW_STORY_TYPE_CUSTOM_TID', 31720); // @todo
 
 /**
  * Implements hook_form_FORM_ID_alter() for 'media_image_add_form'.
@@ -43,15 +55,146 @@ function sw_form_node_form_alter(&$form, FormStateInterface $form_state, $form_i
     $form['field_interviewees']['#states'] = [
       'visible' => [
         ':input[name="field_story_type"]' => [
-          ['value' => 393], // Interview
-          ['value' => 4556], // Obituary
+          ['value' => SW_STORY_TYPE_INTERVIEW_TID], // Interview
+          ['value' => SW_STORY_TYPE_OBITUARY_TID], // Obituary
         ],
       ],
     ];
     $form['field_story_label']['#states'] = [
       'visible' => [
-        ':input[name="field_story_type"]' => ['value' => 31720], // Custom @todo
+        ':input[name="field_story_type"]' => ['value' => SW_STORY_TYPE_CUSTOM_TID],
       ],
     ];
   }
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for nodes.
+ *
+ * Inject the correct story_label based on the complex logic.
+ */
+function sw_preprocess_node(&$variables) {
+  if ($variables['node']->getType() == 'story') {
+    $variables['story_label'] = sw_get_story_label($variables['node'], $variables['view_mode']);
+  }
+}
+
+/**
+ * Generate the appropriate story label for a given story.
+ *
+ *  Pseudocode for the logic is as follows:
+ *  if (section exists && section != ‘Movement News’) {
+ *    $story_label = $section_name;
+ *  }
+ *  elseif (story type is interview || obituary ) {
+ *    Story label = “$story_type: $interviewees” // (not the $authors)
+ *  }
+ *  elseif (story type is roundtable or custom) {
+ *    Story label = the story type
+ *  }
+ *  else {
+ *    Story label = $author(s)
+ *  }
+ *
+ * @param \Drupal\node\NodeInterface $node
+ *   A story node entity to generate the story label for.
+ *
+ * @param string $view_mode
+ *   The view mode we're displaying the story with.
+ *
+ * @return string
+ *   The story label (basically, the "by line") for the story.
+ */
+function sw_get_story_label(NodeInterface $node, $view_mode) {
+  $story_label = '';
+  // @todo: Handle link behavior. First we need views for the pages we'd link to.
+  $use_links = $view_mode === 'full';
+
+  $department = $node->get('field_department')->getValue();
+  $story_type = $node->get('field_story_type')->getValue();
+
+  if (!empty($department[0]['target_id'])) {
+    switch ($department[0]['target_id']) {
+      case SW_DEPARTMENT_EDITORIALS_TID:
+        $story_label = t('Editorials');
+        break;
+
+      case SW_DEPARTMENT_READERS_VIEWS_TID:
+        $story_label = t("Readers' Views");
+        break;
+
+      case SW_DEPARTMENT_OBRERO_SOCIALISTA_TID:
+        $story_label = t('Obrero Socialista');
+        break;
+    }
+  }
+
+  if (empty($story_label) && !empty($story_type[0]['target_id'])) {
+    switch ($story_type[0]['target_id']) {
+      case SW_STORY_TYPE_INTERVIEW_TID:
+        $story_label = t('Interview: ');
+        $target_field = 'field_interviewees';
+        break;
+
+      case SW_STORY_TYPE_OBITUARY_TID:
+        $story_label = t('Obituary: ');
+        $target_field = 'field_interviewees';
+        break;
+
+      case SW_STORY_TYPE_ROUNDTABLE_TID:
+        $story_label = t('Roundtable');
+        break;
+
+      case SW_STORY_TYPE_CUSTOM_TID:
+        $story_label = $node->get('field_story_label')->value;
+        break;
+    }
+  }
+
+  if (empty($story_label)) {
+    $target_field = 'field_authors';
+  }
+
+  if (!empty($target_field)) {
+    $targets = $node->get($target_field)->getValue();
+    if (!empty($targets)) {
+      foreach ($targets as $target) {
+        $target_ids[] = $target['target_id'];
+      }
+      $target_nodes = Node::loadMultiple($target_ids);
+      $story_label .= sw_get_entity_label_multiple($target_nodes);
+    }
+  }
+
+  return $story_label;
+}
+
+/**
+ * Returns an appropriate label given an array of entities.
+ *
+ * If there's only 1 entity, return the label.
+ * If 2, use "LabelA and LabelB".
+ * If 3 or more "Label1, ... LabelN-1 and LabelN".
+ *
+ * @param array $entities
+ *   An array of objects that implement \Drupal\Core\Entity\EntityInterface.
+ *
+ * @return string
+ *   Label for the entities with appropriate delimiter(s) depending on number.
+ */
+function sw_get_entity_label_multiple(array $entities) {
+  $text = '';
+  $last = array_pop($entities);
+  $last_label = $last->label();
+  $entity_label = function (EntityInterface $entity) {
+    return $entity->label();
+  };
+  $text = implode(', ', array_map($entity_label, $entities));
+  if (!empty($text)) {
+    $text .= " and $last_label";
+  }
+  else {
+    $text = $last_label;
+  }
+  return $text;
 }
