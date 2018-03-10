@@ -3,6 +3,8 @@
  * Implements hook_preprocess_HOOK().
  */
 
+use Drupal\node\Entity\Node;
+
 function revolution_preprocess_paragraph(&$variables) {
 
   $paragraph_type = $variables['paragraph']->bundle;
@@ -106,9 +108,8 @@ function _revolution_view_mode_image_chooser($i, $med_img_num) {
  */
 function _revolution_render_node($nid, $view_mode) {
   $entity_type = 'node';
+  $node = Node::load($nid);
   $view_builder = \Drupal::entityTypeManager()->getViewBuilder($entity_type);
-  $storage = \Drupal::entityTypeManager()->getStorage($entity_type);
-  $node = $storage->load($nid);
   $build = $view_builder->view($node, $view_mode);
   $output = render($build);
 
