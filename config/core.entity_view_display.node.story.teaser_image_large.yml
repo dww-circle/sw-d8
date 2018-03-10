@@ -17,9 +17,11 @@ dependencies:
     - field.field.node.story.field_keywords
     - field.field.node.story.field_kicker
     - field.field.node.story.field_main_image
+    - field.field.node.story.field_secondary_topic
     - field.field.node.story.field_series
     - field.field.node.story.field_show_related
     - field.field.node.story.field_state
+    - field.field.node.story.field_story_label
     - field.field.node.story.field_story_type
     - field.field.node.story.field_story_weight
     - field.field.node.story.field_teaser
@@ -67,9 +69,11 @@ hidden:
   field_keywords: true
   field_kicker: true
   field_main_image: true
+  field_secondary_topic: true
   field_series: true
   field_show_related: true
   field_state: true
+  field_story_label: true
   field_story_type: true
   field_story_weight: true
   field_topic: true

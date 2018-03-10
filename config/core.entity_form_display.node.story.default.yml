@@ -21,6 +21,7 @@ dependencies:
     - field.field.node.story.field_series
     - field.field.node.story.field_show_related
     - field.field.node.story.field_state
+    - field.field.node.story.field_story_label
     - field.field.node.story.field_story_type
     - field.field.node.story.field_story_weight
     - field.field.node.story.field_teaser
@@ -55,9 +56,10 @@ third_party_settings:
     group_story_type:
       children:
         - field_department
-        - field_story_type
-        - field_interviewees
         - field_series
+        - field_story_type
+        - field_story_label
+        - field_interviewees
       parent_name: ''
       weight: 6
       format_type: details
@@ -214,7 +216,7 @@ content:
     region: content
   field_interviewees:
     type: inline_entity_form_complex
-    weight: 10
+    weight: 12
     region: content
     settings:
       form_mode: simple
@@ -273,7 +275,7 @@ content:
     region: content
   field_series:
     type: options_select
-    weight: 11
+    weight: 9
     settings: {  }
     third_party_settings: {  }
     region: content
@@ -293,9 +295,17 @@ content:
       placeholder: ''
     third_party_settings: {  }
     region: content
+  field_story_label:
+    weight: 11
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   field_story_type:
     type: options_select
-    weight: 9
+    weight: 10
     settings: {  }
     third_party_settings: {  }
     region: content
@@ -321,7 +331,7 @@ content:
     third_party_settings: {  }
     region: content
   field_wide_image:
-    weight: 11
+    weight: 12
     settings: {  }
     third_party_settings: {  }
     type: entity_reference_number

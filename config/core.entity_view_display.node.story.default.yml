@@ -20,6 +20,7 @@ dependencies:
     - field.field.node.story.field_series
     - field.field.node.story.field_show_related
     - field.field.node.story.field_state
+    - field.field.node.story.field_story_label
     - field.field.node.story.field_story_type
     - field.field.node.story.field_story_weight
     - field.field.node.story.field_teaser
@@ -92,6 +93,7 @@ hidden:
   field_series: true
   field_show_related: true
   field_state: true
+  field_story_label: true
   field_story_type: true
   field_story_weight: true
   field_teaser: true
