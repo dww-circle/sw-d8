@@ -257,8 +257,11 @@ function sw_subject_label(EntityInterface $entity) {
  *  elseif (story type is roundtable or custom) {
  *    Story label = the story type
  *  }
- *  else {
+ *  elseif (story has authors ) {
  *    Story label = $author(s)
+ *  }
+ *  else {
+ *    // no story label
  *  }
  *
  * @param \Drupal\node\NodeInterface $node
@@ -318,7 +321,7 @@ function sw_get_story_label(NodeInterface $node, $view_mode) {
     }
   }
 
-  if (empty($story_label)) {
+  if (empty($story_label) && !empty($node->sw_authors)) {
     $target_field = 'sw_authors';
     $label_func = $use_markup ? 'sw_author_label' : 'sw_plain_label';
   }
