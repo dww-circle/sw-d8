@@ -14,12 +14,37 @@ label: 'Taxonomy terms'
 source:
   plugin: d6_taxonomy_term
 process:
-  tid: tid
+  # Work-around limitation in callback process plugins that you can only pass a single value.
+  tid_vid_duple:
+    plugin: concat
+    delimiter: \
+    source:
+      - tid
+      - vid
+  # Work-around limitation in callback process plugins that you can only pass a single value.
+  tid_name_duple:
+    plugin: concat
+    delimiter: \
+    source:
+      - tid
+      - name
+  new_tid:
+    plugin: callback
+    callable: sw_migrate_term_id_map
+    source: '@tid_vid_duple'
+  tid:
+    plugin: skip_on_empty
+    method: row
+    source: '@new_tid'
+    message: 'Term is no longer needed in SW 3.0'
   vid:
     plugin: migration_lookup
     migration: upgrade_d6_taxonomy_vocabulary
     source: vid
-  name: name
+  name:
+    plugin: callback
+    callable: sw_migrate_term_name_map
+    source: '@tid_name_duple'
   description: description
   weight: weight
   parent_id:

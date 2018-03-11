@@ -65,3 +65,78 @@ function sw_migrate_migrate_upgrade_d6_file_prepare_row(Row $row, MigrateSourceI
   }
   $row->setSourceProperty('img_timestamp', $img_timestamp);
 }
+
+/**
+ * Migrate callback function to deal with taxonomy term IDs.
+ *
+ * This prunes terms from the Department and Story type vocabularies that we
+ * no longer need in SW 3.0.
+ *
+ * @param string $tid_vid_duple
+ *   A string containing the D6 term ID (TID) and vocabulary ID (VID)
+ *   delimited by '\'.  This gets around a limitation that the 'callback'
+ *   process can only pass a single argument.
+ *
+ * @return integer
+ *   The term ID we want to use, or 0 to drop this term.
+ */
+function sw_migrate_term_id_map($tid_vid_duple) {
+  list ($tid, $vid) = explode('\\', $tid_vid_duple);
+  switch ($vid) {
+    case 1: // Department
+      switch ($tid) {
+        case 7:     // Labor (will be renamed 'Movement News')
+        case 9:     // Readers' Views
+        case 11:    // Editorials
+        case 17255: // Obrero Socialista
+          return $tid;
+        // Otherwise, drop the term.
+        default:
+          return 0;
+      }
+      break;
+
+    case 10: // Story type
+      switch ($tid) {
+        case 391:   // Analysis: will be re-purposed into 'Custom'
+        case 393:   // Interview
+        case 4556:  // Obituary
+        case 2922:  // Roundtable
+          return $tid;
+        // Otherwise, drop the term.
+        default:
+          return 0;
+      }
+      break;
+
+      // All other vocabularies, we want to create all terms.
+      // @todo Is that actually true? Should we be more smart?
+    default:
+      return $tid;
+  }
+}
+
+/**
+ * Migrate callback function to (potentially) rename taxonomy terms.
+ *
+ * @param string $tid_name_duple
+ *   A string containing the D6 term ID (TID) and term name delimited by '\'.
+ *   This gets around a limitation that the 'callback' process can only pass a
+ *   single argument.
+ *
+ * @return string
+ *   The name we want to use for this term.
+ */
+function sw_migrate_term_name_map($tid_name_duple) {
+  list ($tid, $name) = explode('\\', $tid_name_duple);
+  switch ($tid) {
+    case 7:
+      return 'Movement News';
+
+    case 391:
+      return 'Custom';
+
+    default:
+      return $name;
+  }
+}
