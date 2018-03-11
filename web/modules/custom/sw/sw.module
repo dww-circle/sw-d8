@@ -129,13 +129,83 @@ function sw_insert_box_node_form_alter(&$form, FormStateInterface $form_state, $
 /**
  * Implements hook_preprocess_HOOK() for nodes.
  *
- * Inject the correct story_label based on the complex logic.
+ * For now, we're only processing stories, but that'll change. Instead of
+ * stuffing everything into a giant function, call bundle-specific functions.
  */
 function sw_preprocess_node(&$variables) {
   if ($variables['node']->getType() == 'story') {
-    $variables['story_label'] = sw_get_story_label($variables['node'], $variables['view_mode']);
+    sw_preprocess_node_story($variables);
   }
 }
+
+/**
+ * Preprocess function for story nodes.
+ *
+ * Inject the correct story_label based on the complex logic.
+ *
+ * On full view mode, also rewrites introduction and body_introduction to
+ * replace %author and %interviewee
+ */
+function sw_preprocess_node_story(&$variables) {
+  // For any view mode, we're going to need to load the authors (and
+  // interviewee) if any. For teasers, we'll need them for the story label.
+  // For full view, we'll also need them to rewrite '%author' (and perhaps
+  // %interviewee) in the introduction. So, we load all these target entities
+  // once, and stash them into the $node object for re-use.
+  foreach (['authors', 'interviewees'] as $person_target) {
+    $targets = $variables['node']->get('field_' . $person_target)->getValue();
+    $target_ids = [];
+    if (!empty($targets)) {
+      foreach ($targets as $target) {
+        $target_ids[] = $target['target_id'];
+      }
+      $variables['node']->{'sw_' . $person_target} = Node::loadMultiple($target_ids);
+    }
+  }
+
+  $variables['story_label'] = sw_get_story_label($variables['node'], $variables['view_mode']);
+
+  if ($variables['view_mode'] == 'full') {
+    if (!empty($variables['node']->sw_authors)) {
+      $placeholders['%author'] = sw_get_entity_label_multiple($variables['node']->sw_authors, 'sw_author_label');
+    }
+    if (!empty($variables['node']->sw_interviewees)) {
+      $placeholders['%interviewee'] = sw_get_entity_label_multiple($variables['node']->sw_interviewees, 'sw_subject_label');
+    }
+    foreach (['field_introduction', 'field_body_introduction'] as $intro_field) {
+      if (!empty($variables['content'][$intro_field][0]['#text'])) {
+        $variables['content'][$intro_field][0]['#text'] = strtr($variables['content'][$intro_field][0]['#text'], $placeholders);
+      }
+    }
+  }
+}
+
+/**
+ * Label callback to return the plain entity label.
+ */
+function sw_plain_label(EntityInterface $entity) {
+  return $entity->label();
+};
+
+/**
+ * Label callback that wraps the entity label with author-specific markup.
+ *
+ * @todo This should return a link once we have something to link to.
+ */
+function sw_author_label(EntityInterface $entity) {
+  return '<span class="sw-author">' . $entity->label() . '</span>';
+};
+
+/**
+ * Label callback that wraps the entity label with subject-specific markup.
+ *
+ * Used for interviewee, obituary, etc.
+ *
+ * @todo This should return a link once we have something to link to.
+ */
+function sw_subject_label(EntityInterface $entity) {
+  return '<span class="sw-subject">' . $entity->label() . '</span>';
+};
 
 /**
  * Generate the appropriate story label for a given story.
@@ -161,12 +231,12 @@ function sw_preprocess_node(&$variables) {
  *   The view mode we're displaying the story with.
  *
  * @return string
- *   The story label (basically, the "by line") for the story.
+ *   The story label (basically, the "byline") for the story.
  */
 function sw_get_story_label(NodeInterface $node, $view_mode) {
   $story_label = '';
-  // @todo: Handle link behavior. First we need views for the pages we'd link to.
-  $use_links = $view_mode === 'full';
+
+  $use_markup = $view_mode === 'full';
 
   $department = $node->get('field_department')->getValue();
   $story_type = $node->get('field_story_type')->getValue();
@@ -191,12 +261,14 @@ function sw_get_story_label(NodeInterface $node, $view_mode) {
     switch ($story_type[0]['target_id']) {
       case SW_STORY_TYPE_INTERVIEW_TID:
         $story_label = t('Interview: ');
-        $target_field = 'field_interviewees';
+        $target_field = 'sw_interviewees';
+        $label_func = $use_markup ? 'sw_subject_label' : 'sw_plain_label';
         break;
 
       case SW_STORY_TYPE_OBITUARY_TID:
         $story_label = t('Obituary: ');
-        $target_field = 'field_interviewees';
+        $target_field = 'sw_interviewees';
+        $label_func = $use_markup ? 'sw_subject_label' : 'sw_plain_label';
         break;
 
       case SW_STORY_TYPE_ROUNDTABLE_TID:
@@ -210,18 +282,12 @@ function sw_get_story_label(NodeInterface $node, $view_mode) {
   }
 
   if (empty($story_label)) {
-    $target_field = 'field_authors';
+    $target_field = 'sw_authors';
+    $label_func = $use_markup ? 'sw_author_label' : 'sw_plain_label';
   }
 
   if (!empty($target_field)) {
-    $targets = $node->get($target_field)->getValue();
-    if (!empty($targets)) {
-      foreach ($targets as $target) {
-        $target_ids[] = $target['target_id'];
-      }
-      $target_nodes = Node::loadMultiple($target_ids);
-      $story_label .= sw_get_entity_label_multiple($target_nodes);
-    }
+    $story_label .= sw_get_entity_label_multiple($node->{$target_field}, $label_func);
   }
 
   return $story_label;
@@ -236,18 +302,18 @@ function sw_get_story_label(NodeInterface $node, $view_mode) {
  *
  * @param array $entities
  *   An array of objects that implement \Drupal\Core\Entity\EntityInterface.
+ * @param callable $label_callback
+ *   A function that takes an object that implements EntityInterface and
+ *   returns the appropriate text or markup for the label for that Entity.
  *
  * @return string
- *   Label for the entities with appropriate delimiter(s) depending on number.
+ *   Label for all the entities with appropriate delimiter(s) depending on number.
  */
-function sw_get_entity_label_multiple(array $entities) {
+function sw_get_entity_label_multiple(array $entities, $label_callback) {
   $text = '';
   $last = array_pop($entities);
-  $last_label = $last->label();
-  $entity_label = function (EntityInterface $entity) {
-    return $entity->label();
-  };
-  $text = implode(', ', array_map($entity_label, $entities));
+  $last_label = $label_callback($last);
+  $text = implode(', ', array_map($label_callback, $entities));
   if (!empty($text)) {
     $text .= " and $last_label";
   }
