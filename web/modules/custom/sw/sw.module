@@ -89,11 +89,9 @@ function sw_story_node_form_alter(&$form, FormStateInterface $form_state, $form_
   ];
 
   // Set #pre_render to hide filter format guidelines on all text areas.
-  foreach (['field_teaser', 'field_body'] as $field) {
+  foreach (['field_teaser', 'field_body', 'field_introduction', 'field_body_introduction'] as $field) {
     $form[$field]['#pre_render'][] = 'sw_hide_format_guidelines_form_pre_render';
   }
-  $form['group_author_information']['field_introduction']['#pre_render'][] = 'sw_hide_format_guidelines_form_pre_render';
-  $form['group_body_introduction']['field_body_introduction']['#pre_render'][] = 'sw_hide_format_guidelines_form_pre_render';
 }
 
 /**
