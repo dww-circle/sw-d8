@@ -182,13 +182,32 @@ function sw_preprocess_node_story(&$variables) {
   }
 }
 
-function sw_load_referenced_entities(NodeInterface $node, $field_id, $load_multiple_function) {
-  $targets = $node->get('field_' . $field_id)->getValue();
+/**
+ * Load entities pointed to via an entity_reference field into the host entity.
+ *
+ * The array of loaded entities is stuffed into the host entity at the 'sw_'
+ * namespace, and will be keyed by entity IDs (as returned by whatever version
+ * of Entity::loadMultiple() is passed in).
+ *
+ * @param EntityInterface $entity
+ *   The host entity with an entity_reference field that points to the
+ *   entities to load.
+ * @param string $field_id
+ *   Identifier for the entity_reference field to use (without the 'field_' prefix).
+ * @param callable $load_multiple_function
+ *   A callable static method that will load multiple entities given an array of IDs.
+ *   For example, "['Drupal\taxonomy\Entity\Term', 'loadMultiple']" to load terms or
+ *   "['Drupal\node\Entity\Node', 'loadMultiple']" to load nodes.
+ *
+ * @see \Drupal\Core\Entity\Entity::loadMultiple()
+ */
+function sw_load_referenced_entities(EntityInterface $entity, $field_id, $load_multiple_function) {
+  $targets = $entity->get('field_' . $field_id)->getValue();
   if (!empty($targets)) {
     foreach ($targets as $target) {
       $target_ids[] = $target['target_id'];
     }
-    $node->{'sw_' . $field_id} = $load_multiple_function($target_ids);
+    $entity->{'sw_' . $field_id} = $load_multiple_function($target_ids);
   }
 }
 
