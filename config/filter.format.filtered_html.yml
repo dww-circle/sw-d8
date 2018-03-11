@@ -12,7 +12,7 @@ filters:
     status: true
     weight: -10
     settings:
-      allowed_html: '<a href hreflang> <b> <i> <em> <strong> <cite> <blockquote cite> <ul type> <ol start type> <li> <dl> <dt> <dd> <h1> <h2 id> <h3 id> <h4 id> <h5 id> <pre> <hr> <center> <span> <div> <p>'
+      allowed_html: '<a href hreflang> <b> <i> <em> <strong> <cite> <blockquote cite> <ul type> <ol start type> <li> <dl> <dt> <dd> <h1> <h2 id> <h3 id> <h4 id> <h5 id> <pre> <hr class> <center> <span class> <div class> <p class>'
       filter_html_help: true
       filter_html_nofollow: false
   filter_autop:
