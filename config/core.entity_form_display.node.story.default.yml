@@ -177,7 +177,7 @@ content:
     weight: 19
     type: text_textarea
     settings:
-      rows: 6
+      rows: 12
       placeholder: ''
     third_party_settings: {  }
     region: content
@@ -186,7 +186,7 @@ content:
     weight: 15
     settings:
       match_operator: CONTAINS
-      size: 60
+      size: 40
       placeholder: ''
     third_party_settings: {  }
     region: content
@@ -195,7 +195,7 @@ content:
     weight: 7
     settings:
       match_operator: CONTAINS
-      size: 60
+      size: 90
       placeholder: ''
     third_party_settings: {  }
     region: content
@@ -204,7 +204,7 @@ content:
     weight: 17
     settings:
       match_operator: CONTAINS
-      size: 60
+      size: 40
       placeholder: ''
     third_party_settings: {  }
     region: content
@@ -231,7 +231,7 @@ content:
     weight: 6
     type: text_textarea
     settings:
-      rows: 3
+      rows: 6
       placeholder: ''
     third_party_settings: {  }
     region: content
@@ -240,7 +240,7 @@ content:
     weight: 9
     settings:
       match_operator: CONTAINS
-      size: 60
+      size: 9
       placeholder: ''
     third_party_settings: {  }
     region: content
@@ -249,7 +249,7 @@ content:
     weight: 9
     settings:
       match_operator: CONTAINS
-      size: 60
+      size: 90
       placeholder: ''
     third_party_settings: {  }
     region: content
@@ -291,7 +291,7 @@ content:
     weight: 16
     settings:
       match_operator: CONTAINS
-      size: 60
+      size: 40
       placeholder: ''
     third_party_settings: {  }
     region: content
