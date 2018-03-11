@@ -1,9 +1,10 @@
 <?php
 
-use \Drupal\Core\Entity\EntityInterface;
-use \Drupal\Core\Form\FormStateInterface;
-use \Drupal\node\Entity\Node;
-use \Drupal\node\NodeInterface;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\node\Entity\Node;
+use Drupal\node\NodeInterface;
+use Drupal\taxonomy\Entity\Term;
 
 const SW_DEPARTMENT_EDITORIALS_TID = 11;
 const SW_DEPARTMENT_READERS_VIEWS_TID = 9;
@@ -150,15 +151,8 @@ function sw_preprocess_node_story(&$variables) {
   // For full view, we'll also need them to rewrite '%author' (and perhaps
   // %interviewee) in the introduction. So, we load all these target entities
   // once, and stash them into the $node object for re-use.
-  foreach (['authors', 'interviewees'] as $person_target) {
-    $targets = $variables['node']->get('field_' . $person_target)->getValue();
-    $target_ids = [];
-    if (!empty($targets)) {
-      foreach ($targets as $target) {
-        $target_ids[] = $target['target_id'];
-      }
-      $variables['node']->{'sw_' . $person_target} = Node::loadMultiple($target_ids);
-    }
+  foreach (['authors', 'interviewees'] as $field_id) {
+    sw_load_referenced_entities($variables['node'], $field_id, ['Drupal\node\Entity\Node', 'loadMultiple']);
   }
 
   $variables['story_label'] = sw_get_story_label($variables['node'], $variables['view_mode']);
@@ -175,7 +169,33 @@ function sw_preprocess_node_story(&$variables) {
         $variables['content'][$intro_field][0]['#text'] = strtr($variables['content'][$intro_field][0]['#text'], $placeholders);
       }
     }
+    sw_load_referenced_entities($variables['node'], 'contributors', ['Drupal\taxonomy\Entity\Term', 'loadMultiple']);
+    if (!empty($variables['node']->sw_contributors)) {
+      uasort($variables['node']->sw_contributors, 'sw_contributor_sort');
+      $variables['content']['contributors'] = [
+        '#prefix' => '<div class="contributors">',
+        '#markup' => sw_get_entity_label_multiple($variables['node']->sw_contributors, 'sw_plain_label') . t(' contributed to this article.'),
+        '#suffix' => '</div>',
+        '#weight' => '100',
+      ];
+    }
   }
+}
+
+function sw_load_referenced_entities(NodeInterface $node, $field_id, $load_multiple_function) {
+  $targets = $node->get('field_' . $field_id)->getValue();
+  if (!empty($targets)) {
+    foreach ($targets as $target) {
+      $target_ids[] = $target['target_id'];
+    }
+    $node->{'sw_' . $field_id} = $load_multiple_function($target_ids);
+  }
+}
+
+function sw_contributor_sort($a, $b) {
+  $a_name_parts = explode(' ', $a->label());
+  $b_name_parts = explode(' ', $b->label());
+  return strcmp(array_pop($a_name_parts), array_pop($b_name_parts));
 }
 
 /**
