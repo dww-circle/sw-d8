@@ -140,3 +140,34 @@ function sw_migrate_term_name_map($tid_name_duple) {
       return $name;
   }
 }
+
+/**
+ * Migrate callback function to (potentially) remap node/taxonomy term associations.
+ *
+ * @param integer $tid
+ *   The term ID we're about to associate with a node.
+ *
+ * @return integer
+ *   The term ID we actually want to use, or 0 to drop this term/node association.
+ */
+function sw_migrate_term_node_map($tid) {
+  switch ($tid) {
+    // 'Activist News' Department. This is being merged with 'Labor' in 3.0
+    // into the renamed 'Movement News' department. So, any node pointing to
+    // this term should use tid 7, instead.
+    case 8:
+      return 7;
+
+    // 'Analysis' story type. This is being ditched in SW 3.0.  However, we're
+    // converting this tid into the 'Custom' story type (so all the custom
+    // code can already know what the ID will be). So, any story that is
+    // classified with this should ignore it and have no story type.
+    case 391:
+      return 0;
+  }
+
+  // Otherwise, leave it alone and use whatever we were given. The migration
+  // will check against the successfully imported terms, so other departments
+  // and story types that were purged will be ignored.
+  return $tid;
+}
