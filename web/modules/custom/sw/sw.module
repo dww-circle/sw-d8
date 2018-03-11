@@ -5,14 +5,14 @@ use \Drupal\Core\Form\FormStateInterface;
 use \Drupal\node\Entity\Node;
 use \Drupal\node\NodeInterface;
 
-define('SW_DEPARTMENT_EDITORIALS_TID', 11);
-define('SW_DEPARTMENT_READERS_VIEWS_TID', 9);
-define('SW_DEPARTMENT_OBRERO_SOCIALISTA_TID', 17255);
+const SW_DEPARTMENT_EDITORIALS_TID = 11;
+const SW_DEPARTMENT_READERS_VIEWS_TID = 9;
+const SW_DEPARTMENT_OBRERO_SOCIALISTA_TID = 17255;
 
-define('SW_STORY_TYPE_CUSTOM_TID', 391);
-define('SW_STORY_TYPE_INTERVIEW_TID', 393);
-define('SW_STORY_TYPE_OBITUARY_TID', 4556);
-define('SW_STORY_TYPE_ROUNDTABLE_TID', 2922);
+const SW_STORY_TYPE_CUSTOM_TID = 391;
+const SW_STORY_TYPE_INTERVIEW_TID = 393;
+const SW_STORY_TYPE_OBITUARY_TID = 4556;
+const SW_STORY_TYPE_ROUNDTABLE_TID = 2922;
 
 /**
  * Implements hook_form_FORM_ID_alter() for 'media_image_add_form'.
