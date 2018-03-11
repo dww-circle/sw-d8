@@ -65,7 +65,22 @@ function sw_form_node_form_alter(&$form, FormStateInterface $form_state, $form_i
         ':input[name="field_story_type"]' => ['value' => SW_STORY_TYPE_CUSTOM_TID],
       ],
     ];
+    $form['#pre_render'][] = 'sw_story_form_pre_render';
   }
+}
+
+/**
+ * #pre_render callback to clean-up the story node form.
+ *
+ * Hides all the text area filter format guidelines.
+ */
+function sw_story_form_pre_render(array $form) {
+  foreach (['field_teaser', 'field_body'] as $field) {
+    $form[$field]['widget'][0]['format']['guidelines']['#access'] = FALSE;
+  }
+  $form['group_author_information']['field_introduction']['widget'][0]['format']['guidelines']['#access'] = FALSE;
+  $form['group_body_introduction']['field_body_introduction']['widget'][0]['format']['guidelines']['#access'] = FALSE;
+  return $form;
 }
 
 /**
