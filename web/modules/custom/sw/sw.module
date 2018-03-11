@@ -9,6 +9,10 @@ const SW_DEPARTMENT_EDITORIALS_TID = 11;
 const SW_DEPARTMENT_READERS_VIEWS_TID = 9;
 const SW_DEPARTMENT_OBRERO_SOCIALISTA_TID = 17255;
 
+const SW_INSERT_BOX_TYPE_COLUMNIST_TID = 262;
+const SW_INSERT_BOX_TYPE_REVIEW_TID = 265;
+const SW_INSERT_BOX_TYPE_SERIES_TID = 267;
+
 const SW_STORY_TYPE_CUSTOM_TID = 391;
 const SW_STORY_TYPE_INTERVIEW_TID = 393;
 const SW_STORY_TYPE_OBITUARY_TID = 4556;
@@ -46,41 +50,80 @@ function _sw_form_media_image_form_alter(&$form, FormStateInterface $form_state,
  */
 function sw_form_node_form_alter(&$form, FormStateInterface $form_state, $form_id) {
   $node = $form_state->getFormObject()->getEntity();
-  if ($node->bundle() == 'story') {
-    $form['field_kicker']['#states'] = [
-      'visible' => [
-        ':input[name="field_kicker[0][value]"]' => ['filled' => TRUE],
-      ],
-    ];
-    $form['field_interviewees']['#states'] = [
-      'visible' => [
-        ':input[name="field_story_type"]' => [
-          ['value' => SW_STORY_TYPE_INTERVIEW_TID], // Interview
-          ['value' => SW_STORY_TYPE_OBITUARY_TID], // Obituary
-        ],
-      ],
-    ];
-    $form['field_story_label']['#states'] = [
-      'visible' => [
-        ':input[name="field_story_type"]' => ['value' => SW_STORY_TYPE_CUSTOM_TID],
-      ],
-    ];
-    $form['#pre_render'][] = 'sw_story_form_pre_render';
+  switch ($node->bundle()) {
+    case 'story':
+      sw_story_node_form_alter($form, $form_state, $form_id);
+      break;
+
+    case 'insert_box':
+      sw_insert_box_node_form_alter($form, $form_state, $form_id);
+      break;
+
   }
 }
 
 /**
- * #pre_render callback to clean-up the story node form.
+ * Helper for hook_form_FORM_ID_alter() for story nodes.
  *
- * Hides all the text area filter format guidelines.
+ * Improves the UI by only conditionally showing relevant fields based on the
+ * values of other fields via #states.
  */
-function sw_story_form_pre_render(array $form) {
+function sw_story_node_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  $form['field_kicker']['#states'] = [
+    'visible' => [
+      ':input[name="field_kicker[0][value]"]' => ['filled' => TRUE],
+    ],
+  ];
+  $form['field_interviewees']['#states'] = [
+    'visible' => [
+      ':input[name="field_story_type"]' => [
+        ['value' => SW_STORY_TYPE_INTERVIEW_TID],
+        ['value' => SW_STORY_TYPE_OBITUARY_TID],
+      ],
+    ],
+  ];
+  $form['field_story_label']['#states'] = [
+    'visible' => [
+      ':input[name="field_story_type"]' => ['value' => SW_STORY_TYPE_CUSTOM_TID],
+    ],
+  ];
+
+  // Set #pre_render to hide filter format guidelines on all text areas.
   foreach (['field_teaser', 'field_body'] as $field) {
-    $form[$field]['widget'][0]['format']['guidelines']['#access'] = FALSE;
+    $form[$field]['#pre_render'][] = 'sw_hide_format_guidelines_form_pre_render';
   }
-  $form['group_author_information']['field_introduction']['widget'][0]['format']['guidelines']['#access'] = FALSE;
-  $form['group_body_introduction']['field_body_introduction']['widget'][0]['format']['guidelines']['#access'] = FALSE;
-  return $form;
+  $form['group_author_information']['field_introduction']['#pre_render'][] = 'sw_hide_format_guidelines_form_pre_render';
+  $form['group_body_introduction']['field_body_introduction']['#pre_render'][] = 'sw_hide_format_guidelines_form_pre_render';
+}
+
+/**
+ * #pre_render callback to hide all the text area filter format guidelines.
+ */
+function sw_hide_format_guidelines_form_pre_render(array $element) {
+  if (!empty($element['widget'][0]['format']['guidelines'])) {
+    $element['widget'][0]['format']['guidelines']['#access'] = FALSE;
+  }
+  return $element;
+}
+
+/**
+ * Helper for hook_form_FORM_ID_alter() for insert_box nodes.
+ *
+ * Improves the UI by only conditionally showing relevant fields based on the
+ * values of other fields via #states.
+ */
+function sw_insert_box_node_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  $form['title']['widget'][0]['value']['#description'] = t('This field is just for administrators to give insert boxes more meaningful names. For example, this is useful when browsing for the box to insert in a given story.');
+  $form['field_header_text']['#states'] = [
+    'visible' => [
+      ':input[name="field_insert_type"]' => [
+        ['value' => SW_INSERT_BOX_TYPE_COLUMNIST_TID],
+        ['value' => SW_INSERT_BOX_TYPE_REVIEW_TID],
+        ['value' => SW_INSERT_BOX_TYPE_SERIES_TID],
+      ],
+    ],
+  ];
+  $form['field_insert_body']['#pre_render'][] = 'sw_hide_format_guidelines_form_pre_render';
 }
 
 /**
