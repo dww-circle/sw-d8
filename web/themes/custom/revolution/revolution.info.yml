@@ -19,6 +19,7 @@ regions:
   expanded_menu: "Expanded Menu - Area that appears when menu icon is clicked."
   main_menu: "Main Menu & Search"
   content: "Content"
+  sidebar: 'Sidebar'
   content_bottom: "Content Bottom"
   footer: "Footer"
   highlighted: "Highlighted"

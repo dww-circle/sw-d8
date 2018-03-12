@@ -1,0 +1,20 @@
+uuid: 1ab1991f-9b4b-467a-9ed6-ba335b048832
+langcode: en
+status: true
+dependencies:
+  theme:
+    - revolution
+id: tabs
+theme: revolution
+region: content
+weight: -5
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

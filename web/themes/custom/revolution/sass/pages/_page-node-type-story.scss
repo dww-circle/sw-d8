@@ -1,0 +1,52 @@
+.page-node-type-story {
+
+  .region-content {
+    @include breakpoint($desktop) {
+      float: left;
+      width: calc(100% - 350px);
+    }
+  }
+
+  .region-sidebar {
+    @include breakpoint($desktop) {
+      float: right;
+      padding-left: 30px;
+      width: 350px;
+    }
+  }
+
+  .node--type-story {
+    font-family: $ff-serif;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .field--name-field-body-introduction,
+  .field--name-field-introduction {
+    font-style: italic;
+  }
+
+  .field--name-field-body {
+    margin-bottom: 50px;
+
+    > p:first-child {
+      color: #808080;
+      font-style: italic;
+      font-weight: bold;
+
+      &:before {
+        background: $c-red;
+        color: $c-red;
+        content: ' ';
+        display: block;
+        float: left;
+        height: 40px;
+        left: 0;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        margin-top: 10px;
+        width: 40px;
+      }
+    }
+  }
+}
