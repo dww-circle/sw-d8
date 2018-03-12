@@ -13,6 +13,7 @@ var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
 var rename = require('gulp-rename');
 var sourcemaps = require('gulp-sourcemaps');
+var svgsprite = require('gulp-svg-sprite');
 
 // Get default config.
 var config = require('./config.json');
@@ -25,6 +26,32 @@ try {
 catch (e) {
   // Do nothing.
 }
+
+// SVG.
+gulp.task('svg', function() {
+  return gulp.src(config.svg.src)
+    .pipe(plumber({
+      errorHandler: function (error) {
+        notify.onError({
+          title:    "Gulp",
+          subtitle: "Failure!",
+          message:  "Error: <%= error.message %>",
+          sound:    "Beep"
+        }) (error);
+        this.emit('end');
+      }}))
+    .pipe(svgsprite({
+      mode: {
+        symbol: {
+          bust: false,
+          render: {
+            css: true
+          }
+        }
+      }
+    }))
+    .pipe(gulp.dest(config.svg.dest));
+});
 
 // CSS.
 gulp.task('css', function() {
@@ -50,7 +77,7 @@ gulp.task('css', function() {
     .pipe(sourcemaps.write(config.css.sourceMapDest))
     .pipe(gulp.dest(config.css.dest))
     .pipe(browserSync.stream());
-
+  
 });
 
 gulp.task('js', function(){
@@ -69,11 +96,11 @@ gulp.task('js', function(){
 });
 
 // Static Server + Watch
-gulp.task('serve', ['css', 'js'], function() {
+gulp.task('serve', ['css', 'js', 'svg'], function() {
   browserSync.init({
     proxy: config.bs.proxy,
   });
-
+  
   gulp.watch(config.js.src, ['js']);
   gulp.watch(config.css.src, ['css']);
   gulp.watch(config.css.dest, ['css']).on('change', browserSync.reload);

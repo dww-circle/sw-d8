@@ -25,5 +25,9 @@
   },
   "bs": {
     "proxy": "https://nah-marketing.local"
+  },
+  "svg": {
+    "src": "images/*.svg",
+    "dest": "images/svgsprites/"
   }
 }
