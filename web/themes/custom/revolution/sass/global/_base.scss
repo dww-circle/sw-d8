@@ -162,11 +162,6 @@ blockquote {
   @include clearfix;
 }
 
-.region-content,
-.region-sidebar {
-  margin-top: 52px;
-}
-
 .page-container,
 main {
   @include page-container;
@@ -176,4 +171,27 @@ main {
   font-family: $ff-din-bold;
   font-size: 60px;
   text-transform: uppercase;
+}
+
+.region-content,
+.region-sidebar {
+  margin-top: 52px;
+}
+
+.layout-sidebar {
+  .region-content {
+    @include breakpoint($desktop) {
+      float: left;
+      width: calc(100% - 350px);
+    }
+  }
+
+  .region-sidebar {
+    @include breakpoint($desktop) {
+      float: right;
+      padding-left: 30px;
+      width: 350px;
+    }
+  }
+
 }

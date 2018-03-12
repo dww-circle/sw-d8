@@ -78,27 +78,21 @@
   ]
 %}
 
-<a href="{{ url }}" rel="bookmark" class="story-link">
+<article{{ attributes.addClass(classes) }}>
 
-  <article{{ attributes.addClass(classes) }}>
+  <div class="content">
+    <div class="story-label">{{ story_label|raw }}</div>
 
-    {% block image %}
-
-    {% endblock image %}
-
-    <div class="content">
-      <div class="story-label">{{ story_label }}</div>
-
-      {{ title_prefix }}
-      <h4{{ title_attributes }}>
+    {{ title_prefix }}
+      <h1 class="page-title">
         {{ label }}
-      </h4>
-      {{ title_suffix }}
+      </h1>
+    {{ title_suffix }}
 
-      <div{{ content_attributes.addClass('node__content') }}>
-        {{ content|without('field_image') }}
-      </div>
+    <div{{ content_attributes.addClass('node__content') }}>
+      {{ date }}
+      {{ content }}
     </div>
+  </div>
 
-  </article>
-</a>
+</article>

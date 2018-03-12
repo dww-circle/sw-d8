@@ -26,7 +26,6 @@ visibility:
       insert_box: insert_box
       page: page
       person: person
-      story: story
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'

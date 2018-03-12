@@ -43,7 +43,15 @@
  * @see html.html.twig
  */
 #}
-<div class="page">
+
+{%
+  set classes = [
+  'page',
+  page.sidebar|render|striptags ? 'layout-sidebar',
+]
+%}
+
+<div {{ attributes.addClass(classes) }}>
   {{ page.utility_menu }}
 
   {{ page.highlighted }}
@@ -85,9 +93,7 @@
   <main role="main" class="clearfix">
 
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
-
     {{ page.content }}
-
     {{ page.sidebar }}
 
   </main>

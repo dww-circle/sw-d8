@@ -1,29 +1,36 @@
 .page-node-type-story {
 
-  .region-content {
-    @include breakpoint($desktop) {
-      float: left;
-      width: calc(100% - 350px);
-    }
-  }
-
-  .region-sidebar {
-    @include breakpoint($desktop) {
-      float: right;
-      padding-left: 30px;
-      width: 350px;
-    }
-  }
-
   .node--type-story {
     font-family: $ff-serif;
     font-size: 18px;
     line-height: 27px;
   }
 
+  .story-label {
+    margin-bottom: 6px;
+  }
+
+  .page-title {
+    margin-bottom: 26px;
+  }
+
   .field--name-field-body-introduction,
   .field--name-field-introduction {
     font-style: italic;
+  }
+
+  .sw-subject,
+  .sw-author {
+    font-weight: bold;
+  }
+
+  .field--name-created {
+    border-bottom: 1px solid #808080;
+    color: #808080;
+    display: block;
+    font-family: $ff-din-regular;
+    font-size: 14px;
+    margin-bottom: 24px;
   }
 
   .field--name-field-body {
@@ -48,5 +55,9 @@
         width: 40px;
       }
     }
+  }
+
+  .contributors {
+    font-style: italic;
   }
 }
