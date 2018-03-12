@@ -37,10 +37,6 @@
     margin-bottom: 50px;
 
     > p:first-child {
-      color: #808080;
-      font-style: italic;
-      font-weight: bold;
-
       &:before {
         background: $c-red;
         color: $c-red;
@@ -54,6 +50,12 @@
         margin-top: 10px;
         width: 40px;
       }
+    }
+
+    .question {
+      color: #808080;
+      font-style: italic;
+      font-weight: bold;
     }
   }
 
