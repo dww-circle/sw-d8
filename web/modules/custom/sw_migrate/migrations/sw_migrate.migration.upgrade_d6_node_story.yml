@@ -95,6 +95,19 @@ process:
         plugin: migration_lookup
         migration: upgrade_d6_node_person
         source: nid
+  field_main_image:
+    plugin: sub_process
+    source: field_body
+    process:
+      target_id:
+        -
+          plugin: callback
+          callable: sw_migrate_find_first_dme_img
+          source: value
+        -
+          plugin: skip_on_empty
+          method: process
+
 destination:
   plugin: 'entity:node'
   default_bundle: story

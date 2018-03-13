@@ -171,3 +171,19 @@ function sw_migrate_term_node_map($tid) {
   // and story types that were purged will be ignored.
   return $tid;
 }
+
+/**
+ * Migrate callback function to try to find the first <dme:img> tag.
+ *
+ * This is used to populate field_main_image.
+ *
+ * @param string $body
+ *   The D6 value of field_body.
+ *
+ * @return integer
+ *   The media ID of the main image for this story (or 0 if there is none).
+ */
+function sw_migrate_find_first_dme_img($body) {
+  $matches = [];
+  return preg_match('@<dme:img nid=(\d+)@', $body, $matches) ? $matches[1] : 0;
+}
