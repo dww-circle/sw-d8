@@ -41,7 +41,10 @@ process:
     plugin: sub_process
     source: field_body
     process:
-      value: value
+      value:
+        source: value
+        plugin: callback
+        callable: sw_migrate_rewrite_story_body
       format:
         plugin: default_value
         default_value: 'filtered_html'

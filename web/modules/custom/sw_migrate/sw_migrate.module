@@ -187,3 +187,20 @@ function sw_migrate_find_first_dme_img($body) {
   $matches = [];
   return preg_match('@<dme:img nid=(\d+)@', $body, $matches) ? $matches[1] : 0;
 }
+
+/**
+ * Migrate callback function to rewrite the D6 body field on story nodes.
+ *
+ * Currently, this only rewrites long chains of '- - -'... into <hr /> tags.
+ * @todo: Rewrite and move <dme:*> tags into something else.
+ *
+ * @param string $d6_body
+ *   The D6 value of field_body.
+ *
+ * @return string
+ *   The appropriate value for field_body in SW 3.0 (D8).
+ */
+function sw_migrate_rewrite_story_body($d6_body) {
+  // 1 or more instances of '- ' and an optional trailing '-' with '<hr />':
+  return preg_replace('#(- )+(-)?#', '<hr />', $d6_body);
+}
