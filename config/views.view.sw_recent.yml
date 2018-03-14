@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.rss
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.teaser_conditional_image
     - node.type.story
     - system.menu.main
   module:
@@ -272,7 +272,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          view_mode: teaser
+          view_mode: teaser_conditional_image
           entity_type: node
           plugin_id: rendered_entity
       arguments: {  }
@@ -307,6 +307,7 @@ display:
         - 'config:core.entity_view_display.node.slices.teaser'
         - 'config:core.entity_view_display.node.story.default'
         - 'config:core.entity_view_display.node.story.teaser'
+        - 'config:core.entity_view_display.node.story.teaser_conditional_image'
         - 'config:core.entity_view_display.node.story.teaser_image_large'
         - 'config:core.entity_view_display.node.story.teaser_image_medium'
   feed_1:
@@ -358,6 +359,7 @@ display:
         - 'config:core.entity_view_display.node.slices.teaser'
         - 'config:core.entity_view_display.node.story.default'
         - 'config:core.entity_view_display.node.story.teaser'
+        - 'config:core.entity_view_display.node.story.teaser_conditional_image'
         - 'config:core.entity_view_display.node.story.teaser_image_large'
         - 'config:core.entity_view_display.node.story.teaser_image_medium'
   page_1:
@@ -399,5 +401,6 @@ display:
         - 'config:core.entity_view_display.node.slices.teaser'
         - 'config:core.entity_view_display.node.story.default'
         - 'config:core.entity_view_display.node.story.teaser'
+        - 'config:core.entity_view_display.node.story.teaser_conditional_image'
         - 'config:core.entity_view_display.node.story.teaser_image_large'
         - 'config:core.entity_view_display.node.story.teaser_image_medium'
