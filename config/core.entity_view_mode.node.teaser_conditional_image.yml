@@ -1,0 +1,10 @@
+uuid: 0f2470af-a881-46fe-8e62-11452ee49e6c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.teaser_conditional_image
+label: 'Teaser conditional image'
+targetEntityType: node
+cache: true

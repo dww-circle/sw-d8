@@ -180,6 +180,17 @@ function sw_preprocess_node_story(&$variables) {
       ];
     }
   }
+
+  // For teasers with conditional images, hide main_image based on story_weight.
+  if ($variables['view_mode'] == 'teaser_conditional_image') {
+    $weight = $variables['node']->get('field_story_weight')->getValue();
+    // -7 and heavier is "greater than" in the math world. This logic seems
+    // backwards, but it's right given the inverted meaning of weights.
+    if ($weight[0]['value'] >= -8) {
+      unset($variables['content']['field_main_image']);
+    }
+  }
+
 }
 
 /**
