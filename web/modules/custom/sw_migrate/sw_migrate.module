@@ -84,6 +84,7 @@ function sw_migrate_term_id_map($tid_vid_duple) {
   switch ($vid) {
     case 1: // 2.0 Department ("Section" in 3.0)
       switch ($tid) {
+        case 6:     // History and Traditions
         case 7:     // Labor
         case 8:     // Activist News
         case 9:     // Readers' Views
@@ -149,6 +150,11 @@ function sw_migrate_term_name_map($tid_name_duple) {
  */
 function sw_migrate_term_node_map($tid) {
   switch ($tid) {
+    // Subterms of 'History and Traditions' are merging into their parent term.
+    case 14:     // History/Paul D'Amato
+    case 11172:  // History/Todd Chretien
+      return 6;
+      
     // 'Analysis' story type. This is being ditched in SW 3.0.  However, we're
     // converting this tid into the 'Custom' story type (so all the custom
     // code can already know what the ID will be). So, any story that is
