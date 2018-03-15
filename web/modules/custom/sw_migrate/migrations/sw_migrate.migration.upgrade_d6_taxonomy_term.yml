@@ -14,6 +14,12 @@ label: 'Taxonomy terms'
 source:
   plugin: d6_taxonomy_term
 process:
+  # Bail early if this term is invalid (no nodes, except for Topic + Image Gallery).
+  valid_term:
+    source: valid_term
+    plugin: skip_on_empty
+    method: row
+    message: 'Term had no nodes in SW 2.0'
   # Work-around limitation in callback process plugins that you can only pass a single value.
   tid_vid_duple:
     plugin: concat
