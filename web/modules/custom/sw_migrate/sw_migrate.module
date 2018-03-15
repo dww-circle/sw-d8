@@ -84,7 +84,8 @@ function sw_migrate_term_id_map($tid_vid_duple) {
   switch ($vid) {
     case 1: // 2.0 Department ("Section" in 3.0)
       switch ($tid) {
-        case 7:     // Labor (will be renamed 'Movement News')
+        case 7:     // Labor
+        case 8:     // Activist News
         case 9:     // Readers' Views
         case 11:    // Editorials
         case 17255: // Obrero Socialista
@@ -129,9 +130,6 @@ function sw_migrate_term_id_map($tid_vid_duple) {
 function sw_migrate_term_name_map($tid_name_duple) {
   list ($tid, $name) = explode('\\', $tid_name_duple);
   switch ($tid) {
-    case 7:
-      return 'Movement News';
-
     case 391:
       return 'Custom';
 
@@ -151,12 +149,6 @@ function sw_migrate_term_name_map($tid_name_duple) {
  */
 function sw_migrate_term_node_map($tid) {
   switch ($tid) {
-    // 'Activist News' Section. This is being merged with 'Labor' in 3.0
-    // into the renamed 'Movement News' section. So, any node pointing to
-    // this term should use tid 7, instead.
-    case 8:
-      return 7;
-
     // 'Analysis' story type. This is being ditched in SW 3.0.  However, we're
     // converting this tid into the 'Custom' story type (so all the custom
     // code can already know what the ID will be). So, any story that is
