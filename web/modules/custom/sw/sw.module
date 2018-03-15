@@ -6,9 +6,9 @@ use Drupal\node\Entity\Node;
 use Drupal\node\NodeInterface;
 use Drupal\taxonomy\Entity\Term;
 
-const SW_DEPARTMENT_EDITORIALS_TID = 11;
-const SW_DEPARTMENT_READERS_VIEWS_TID = 9;
-const SW_DEPARTMENT_OBRERO_SOCIALISTA_TID = 17255;
+const SW_SECTION_EDITORIALS_TID = 11;
+const SW_SECTION_READERS_VIEWS_TID = 9;
+const SW_SECTION_OBRERO_SOCIALISTA_TID = 17255;
 
 const SW_INSERT_BOX_TYPE_COLUMNIST_TID = 262;
 const SW_INSERT_BOX_TYPE_REVIEW_TID = 265;
@@ -289,20 +289,20 @@ function sw_get_story_label(NodeInterface $node, $view_mode) {
 
   $use_markup = $view_mode === 'full';
 
-  $department = $node->get('field_department')->getValue();
+  $section = $node->get('field_section')->getValue();
   $story_type = $node->get('field_story_type')->getValue();
 
-  if (!empty($department[0]['target_id'])) {
-    switch ($department[0]['target_id']) {
-      case SW_DEPARTMENT_EDITORIALS_TID:
+  if (!empty($section[0]['target_id'])) {
+    switch ($section[0]['target_id']) {
+      case SW_SECTION_EDITORIALS_TID:
         $story_label = t('Editorials');
         break;
 
-      case SW_DEPARTMENT_READERS_VIEWS_TID:
+      case SW_SECTION_READERS_VIEWS_TID:
         $story_label = t("Readers' Views");
         break;
 
-      case SW_DEPARTMENT_OBRERO_SOCIALISTA_TID:
+      case SW_SECTION_OBRERO_SOCIALISTA_TID:
         $story_label = t('Obrero Socialista');
         break;
     }

@@ -2,8 +2,8 @@ uuid: cf2c9b7d-d434-428c-89b4-27ca02520b1e
 langcode: en
 status: true
 dependencies: {  }
-name: Department
-vid: department
+name: Section
+vid: section
 description: ''
 hierarchy: 1
 weight: -6

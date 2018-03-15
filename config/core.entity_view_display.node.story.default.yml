@@ -9,7 +9,6 @@ dependencies:
     - field.field.node.story.field_city
     - field.field.node.story.field_contributors
     - field.field.node.story.field_country
-    - field.field.node.story.field_department
     - field.field.node.story.field_interviewees
     - field.field.node.story.field_introduction
     - field.field.node.story.field_issue_number
@@ -17,6 +16,7 @@ dependencies:
     - field.field.node.story.field_kicker
     - field.field.node.story.field_main_image
     - field.field.node.story.field_secondary_topic
+    - field.field.node.story.field_section
     - field.field.node.story.field_series
     - field.field.node.story.field_show_related
     - field.field.node.story.field_state
@@ -84,12 +84,12 @@ hidden:
   field_city: true
   field_contributors: true
   field_country: true
-  field_department: true
   field_interviewees: true
   field_issue_number: true
   field_keywords: true
   field_main_image: true
   field_secondary_topic: true
+  field_section: true
   field_series: true
   field_show_related: true
   field_state: true

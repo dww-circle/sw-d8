@@ -10,7 +10,7 @@ migration_tags:
   - 'Drupal 6'
   - Content
 migration_group: sw_d6
-label: 'Term/node relationships for Department vocabulary'
+label: 'Term/node relationships for Section vocabulary'
 source:
   plugin: d6_term_node
   vid: '1'
@@ -25,8 +25,8 @@ process:
     -
       plugin: skip_on_empty
       method: row
-      message: 'Skipping department for node that no longer exists.'
-  field_department:
+      message: 'Skipping section for node that no longer exists.'
+  field_section:
     -
       plugin: callback
       callable: sw_migrate_term_node_map
@@ -37,7 +37,7 @@ process:
     -
       plugin: skip_on_empty
       method: row
-      message: 'Skipping node for department that no longer exists.'
+      message: 'Skipping node for section that no longer exists.'
 
 destination:
   plugin: 'entity:node'

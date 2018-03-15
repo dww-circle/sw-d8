@@ -1,6 +1,5 @@
 <?php
 
-
 /**
  * @file
  * Contains custom code necessary for SW migrations.
@@ -69,8 +68,8 @@ function sw_migrate_migrate_upgrade_d6_file_prepare_row(Row $row, MigrateSourceI
 /**
  * Migrate callback function to deal with taxonomy term IDs.
  *
- * This prunes terms from the Department and Story type vocabularies that we
- * no longer need in SW 3.0.
+ * This prunes terms from the Department/Section and Story type vocabularies
+ * that we no longer need in SW 3.0.
  *
  * @param string $tid_vid_duple
  *   A string containing the D6 term ID (TID) and vocabulary ID (VID)
@@ -83,7 +82,7 @@ function sw_migrate_migrate_upgrade_d6_file_prepare_row(Row $row, MigrateSourceI
 function sw_migrate_term_id_map($tid_vid_duple) {
   list ($tid, $vid) = explode('\\', $tid_vid_duple);
   switch ($vid) {
-    case 1: // Department
+    case 1: // 2.0 Department ("Section" in 3.0)
       switch ($tid) {
         case 7:     // Labor (will be renamed 'Movement News')
         case 9:     // Readers' Views
@@ -152,8 +151,8 @@ function sw_migrate_term_name_map($tid_name_duple) {
  */
 function sw_migrate_term_node_map($tid) {
   switch ($tid) {
-    // 'Activist News' Department. This is being merged with 'Labor' in 3.0
-    // into the renamed 'Movement News' department. So, any node pointing to
+    // 'Activist News' Section. This is being merged with 'Labor' in 3.0
+    // into the renamed 'Movement News' section. So, any node pointing to
     // this term should use tid 7, instead.
     case 8:
       return 7;
@@ -167,7 +166,7 @@ function sw_migrate_term_node_map($tid) {
   }
 
   // Otherwise, leave it alone and use whatever we were given. The migration
-  // will check against the successfully imported terms, so other departments
+  // will check against the successfully imported terms, so other sections
   // and story types that were purged will be ignored.
   return $tid;
 }

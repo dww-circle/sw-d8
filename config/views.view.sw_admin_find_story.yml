@@ -4,11 +4,11 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_authors
-    - field.storage.node.field_department
+    - field.storage.node.field_section
     - field.storage.node.field_story_weight
     - field.storage.node.field_topic
     - node.type.story
-    - taxonomy.vocabulary.department
+    - taxonomy.vocabulary.section
     - taxonomy.vocabulary.topic
     - user.role.administrator
     - user.role.sw_staff
@@ -94,7 +94,7 @@ display:
             edit_node: edit_node
             field_story_weight: field_story_weight
             created: created
-            field_department: field_department
+            field_section: field_section
             field_topic: field_topic
             field_authors: field_authors
           info:
@@ -133,7 +133,7 @@ display:
               separator: ''
               empty_column: false
               responsive: ''
-            field_department:
+            field_section:
               sortable: false
               default_sort_order: asc
               align: ''
@@ -454,14 +454,14 @@ display:
           entity_type: node
           entity_field: created
           plugin_id: field
-        field_department:
-          id: field_department
-          table: node__field_department
-          field: field_department
+        field_section:
+          id: field_section
+          table: node__field_section
+          field: field_section
           relationship: none
           group_type: group
           admin_label: ''
-          label: Department
+          label: Section
           exclude: false
           alter:
             alter_text: false
@@ -703,10 +703,10 @@ display:
           entity_type: node
           entity_field: title
           plugin_id: views_autocomplete_filters_string
-        field_department_target_id:
-          id: field_department_target_id
-          table: node__field_department
-          field: field_department_target_id
+        field_section_target_id:
+          id: field_section_target_id
+          table: node__field_section
+          field: field_section_target_id
           relationship: none
           group_type: group
           admin_label: ''
@@ -715,12 +715,12 @@ display:
           group: 1
           exposed: true
           expose:
-            operator_id: field_department_target_id_op
-            label: Department
+            operator_id: field_section_target_id_op
+            label: Section
             description: ''
             use_operator: false
-            operator: field_department_target_id_op
-            identifier: department
+            operator: field_section_target_id_op
+            identifier: section
             required: false
             remember: false
             multiple: false
@@ -745,7 +745,7 @@ display:
           reduce_duplicates: false
           type: select
           limit: true
-          vid: department
+          vid: section
           hierarchy: true
           error_message: true
           plugin_id: taxonomy_index_tid
@@ -903,7 +903,7 @@ display:
         - user.roles
       tags:
         - 'config:field.storage.node.field_authors'
-        - 'config:field.storage.node.field_department'
+        - 'config:field.storage.node.field_section'
         - 'config:field.storage.node.field_story_weight'
         - 'config:field.storage.node.field_topic'
   page_1:
@@ -935,6 +935,6 @@ display:
         - user.roles
       tags:
         - 'config:field.storage.node.field_authors'
-        - 'config:field.storage.node.field_department'
+        - 'config:field.storage.node.field_section'
         - 'config:field.storage.node.field_story_weight'
         - 'config:field.storage.node.field_topic'
