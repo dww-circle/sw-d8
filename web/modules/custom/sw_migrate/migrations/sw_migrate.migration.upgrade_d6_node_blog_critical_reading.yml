@@ -15,7 +15,7 @@ source:
   plugin: d6_node
   node_type: blog_critical_reading
 process:
-  nid: tnid
+  nid: nid
   vid: vid
   langcode:
     plugin: default_value

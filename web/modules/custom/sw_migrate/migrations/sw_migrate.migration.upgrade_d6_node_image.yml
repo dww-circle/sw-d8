@@ -17,7 +17,7 @@ source:
 
 process:
 # It's media, not node, so the target is 'mid' not 'nid'
-  mid: tnid
+  mid: nid
   vid: vid
   langcode:
     plugin: default_value

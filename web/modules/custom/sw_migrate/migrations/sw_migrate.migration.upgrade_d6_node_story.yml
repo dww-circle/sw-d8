@@ -15,7 +15,7 @@ source:
   plugin: d6_node
   node_type: story
 process:
-  nid: tnid
+  nid: nid
   vid: vid
   langcode:
     plugin: default_value
