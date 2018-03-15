@@ -295,11 +295,11 @@ function sw_get_story_label(NodeInterface $node, $view_mode) {
   if (!empty($section[0]['target_id'])) {
     switch ($section[0]['target_id']) {
       case SW_SECTION_EDITORIALS_TID:
-        $story_label = t('Editorials');
+        $story_label = t('Editorial');
         break;
 
       case SW_SECTION_READERS_VIEWS_TID:
-        $story_label = t("Readers' Views");
+        $story_label = t("Readers' View");
         break;
 
       case SW_SECTION_OBRERO_SOCIALISTA_TID:
