@@ -802,7 +802,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: '&lt;entity-embed id=[{{ mid }}] /&gt;'
+            text: "&lt;drupal-entity data-entity-type=\"media\" data-entity-id=\"{{ mid }}\" data-view-mode=\"embed\" data-caption=\"default\"&gt;&lt;/drupal-entity&gt;\n"
             make_link: false
             path: ''
             absolute: false
