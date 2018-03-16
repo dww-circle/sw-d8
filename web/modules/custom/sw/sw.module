@@ -2,6 +2,7 @@
 
 use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\media\Entity\Media;
 use Drupal\node\Entity\Node;
 use Drupal\node\NodeInterface;
 use Drupal\taxonomy\Entity\Term;
@@ -377,4 +378,34 @@ function sw_get_entity_label_multiple(array $entities, $label_callback) {
     $text = $last_label;
   }
   return $text;
+}
+
+/**
+ * Returns the appropriate caption (if any) to use for a given media entity.
+ *
+ * @param integer $entity_id
+ *   The ID of the entity we're considering.
+ *
+ * @return string
+ *   The appropriate caption, or NULL if there is none.
+ */
+function sw_get_media_caption($entity_id) {
+  $entity = Drupal\media\Entity\Media::load($entity_id);
+  if (!empty($entity)) {
+    $caption = $entity->get('field_default_caption')->value;
+    if (!empty($caption)) {
+      // @todo Add automated support for credits / provider.
+      return $caption;
+    }
+  }
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_embed_alter().
+ *
+ * Preserves 'data-entity-id' while embedding entities so our custom caption
+ * filter can load the embedded entity when it needs it.
+ */
+function sw_media_embed_alter(array &$build, EntityInterface $entity, array &$context) {
+  $build['#attributes']['data-entity-id'] = $context['data-entity-id'];
 }
