@@ -26,8 +26,14 @@ process:
   status: status
   created: created
   changed: changed
-  promote: promote
-  sticky: sticky
+  # Ignore the D6 value, we never want insert boxes 'promoted to the front page'.
+  promote:
+    plugin: default_value
+    default_value: 0
+  # Ignore the D6 value, we never want insert boxes 'sticky at the top of lists'.
+  sticky:
+    plugin: default_value
+    default_value: 0
   field_insert_body/value: body
   field_insert_body/format:
     plugin: migration_lookup
@@ -41,22 +47,6 @@ process:
     source: field_header_text
     process:
       value: value
-      format:
-        -
-          plugin: static_map
-          bypass: true
-          source: format
-          map:
-            - null
-        -
-          plugin: skip_on_empty
-          method: process
-        -
-          plugin: migration
-          migration:
-            - upgrade_d6_filter_format
-            - upgrade_d7_filter_format
-          source: format
   field_topic:
     plugin: skip_on_empty
     source: sw3_topic_tid
