@@ -19,7 +19,6 @@ dependencies:
     - field.field.node.story.field_secondary_topic
     - field.field.node.story.field_section
     - field.field.node.story.field_series
-    - field.field.node.story.field_show_related
     - field.field.node.story.field_state
     - field.field.node.story.field_story_label
     - field.field.node.story.field_story_type
@@ -70,7 +69,6 @@ hidden:
   field_secondary_topic: true
   field_section: true
   field_series: true
-  field_show_related: true
   field_state: true
   field_story_label: true
   field_story_type: true

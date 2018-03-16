@@ -69,7 +69,6 @@ process:
     source: field_kicker
     process:
       value: value
-  field_show_related: field_show_related
   field_story_weight:
     plugin: callback
     source: field_story_weight
