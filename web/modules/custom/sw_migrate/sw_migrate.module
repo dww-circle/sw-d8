@@ -91,10 +91,46 @@ function sw_migrate_migrate_upgrade_d6_taxonomy_term_prepare_row(Row $row, Migra
 }
 
 /**
+ * Implements hook_migrate_MIGRATION_ID_prepare_row() for 'upgrade_d6_node_story'.
+ *
+ * Handles story type term, and optional custom story label.
+ *
+ * @see http://tasks.socialistworker.org/node/982
+ */
+function sw_migrate_migrate_upgrade_d6_node_story_prepare_row(Row $row, MigrateSourceInterface $source, MigrationInterface $migration) {
+  $values = $row->getSource();
+  $node_terms = $source->getDatabase()
+      ->query('SELECT td.tid, td.vid, td.name FROM {term_node} tn INNER JOIN {term_data} td ON td.tid = tn.tid WHERE td.vid IN (10) AND tn.vid = :vid',
+              [':vid' => $values['vid']])
+      ->fetchAllAssoc('vid', PDO::FETCH_ASSOC);
+
+  // Story type is a special case, since we have to see if we need to preserve
+  // the SW 2.0 value as a custom story label.
+  // First, set what we think the story_type_tid should be
+  $sw3_story_type_tid = sw_migrate_story_type_id_map($node_terms[10]['tid']);
+
+  // If the 2.0 story type is defined
+  // AND the 3.0 story type is undefined
+  // AND either the story was configured not to show authors
+  //     OR the story has no authors
+  if (!empty($node_terms[10])
+      && empty($sw3_story_type_tid)
+      && (empty($values['field_story_label_has_names'][0]['value'])
+          || empty($values['field_authors']))
+  ) {
+    // Save the 2.0 story type as a custom story label for 3.0.
+    $row->setSourceProperty('sw3_story_label', $node_terms[10]['name']);
+    $sw3_story_type_tid = SW_STORY_TYPE_CUSTOM_TID;
+  }
+  $row->setSourceProperty('sw3_story_type_tid', $sw3_story_type_tid);
+}
+
+/**
  * Migrate callback function to deal with taxonomy term IDs.
  *
  * This prunes terms from the Department/Section and Story type vocabularies
- * that we no longer need in SW 3.0.
+ * that we no longer need in SW 3.0. Used while creating the taxonomy terms
+ * themselves via the update_d6_taxonomy_term migration.
  *
  * @param string $tid_vid_duple
  *   A string containing the D6 term ID (TID) and vocabulary ID (VID)
@@ -108,37 +144,67 @@ function sw_migrate_term_id_map($tid_vid_duple) {
   list ($tid, $vid) = explode('\\', $tid_vid_duple);
   switch ($vid) {
     case 1: // 2.0 Department ("Section" in 3.0)
-      switch ($tid) {
-        case 6:     // History and Traditions
-        case 7:     // Labor
-        case 8:     // Activist News
-        case 9:     // Readers' Views
-        case 11:    // Editorials
-        case 17255: // Obrero Socialista
-          return $tid;
-        // Otherwise, drop the term.
-        default:
-          return 0;
-      }
-      break;
+      return sw_migrate_section_id_map($tid);
 
     case 10: // Story type
-      switch ($tid) {
-        case 391:   // Analysis: will be re-purposed into 'Custom'
-        case 393:   // Interview
-        case 4556:  // Obituary
-        case 2922:  // Roundtable
-          return $tid;
-        // Otherwise, drop the term.
-        default:
-          return 0;
+      // Analysis: will be re-purposed into 'Custom'
+      if ($tid == 391) {
+        return $tid;
       }
-      break;
+      return sw_migrate_story_type_id_map($tid);
 
       // All other vocabularies, we want to create all terms.
-      // @todo Is that actually true? Should we be more smart?
     default:
       return $tid;
+  }
+}
+
+/**
+ * Callback function to deal with department/section taxonomy term IDs.
+ *
+ * This prunes terms that we no longer need in SW 3.0.
+ *
+ * @param integet $tid
+ *   The term ID (TID) of the SW 2.0 Department.
+ *
+ * @return integer
+ *   The term ID we want to use for the SW 3.0 Section, or 0 to drop this term.
+ */
+function sw_migrate_section_id_map($tid) {
+  switch ($tid) {
+    case 6:     // History and Traditions
+    case 7:     // Labor
+    case 8:     // Activist News
+    case 9:     // Readers' Views
+    case 11:    // Editorials
+    case 17255: // Obrero Socialista
+      return $tid;
+      // Otherwise, drop the term.
+    default:
+      return 0;
+  }
+}
+
+/**
+ * Callback function to deal with story type taxonomy term IDs.
+ *
+ * This prunes terms that we no longer need in SW 3.0.
+ *
+ * @param integet $tid
+ *   The term ID (TID) of the SW 2.0 Story type.
+ *
+ * @return integer
+ *   The term ID we want to use for the SW 3.0 story type, or 0 to drop this term.
+ */
+function sw_migrate_story_type_id_map($tid) {
+  switch ($tid) {
+    case 393:   // Interview
+    case 4556:  // Obituary
+    case 2922:  // Roundtable
+      return $tid;
+      // Otherwise, drop the term.
+    default:
+      return 0;
   }
 }
 

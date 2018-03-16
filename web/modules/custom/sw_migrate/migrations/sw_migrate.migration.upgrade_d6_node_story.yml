@@ -110,6 +110,14 @@ process:
         -
           plugin: skip_on_empty
           method: process
+  field_story_type:
+    plugin: skip_on_empty
+    source: sw3_story_type_tid
+    method: process
+  field_story_label:
+    plugin: skip_on_empty
+    source: sw3_story_label
+    method: process
 
 destination:
   plugin: 'entity:node'
