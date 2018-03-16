@@ -110,6 +110,7 @@ process:
         -
           plugin: skip_on_empty
           method: process
+  # Taxonomy term associations.
   field_section:
     plugin: skip_on_empty
     source: sw3_section_tid
@@ -117,6 +118,14 @@ process:
   field_topic:
     plugin: skip_on_empty
     source: sw3_topic_tid
+    method: process
+  field_issue_number:
+    plugin: skip_on_empty
+    source: sw3_issue_number_tid
+    method: process
+  field_series:
+    plugin: skip_on_empty
+    source: sw3_series_tid
     method: process
   field_story_type:
     plugin: skip_on_empty

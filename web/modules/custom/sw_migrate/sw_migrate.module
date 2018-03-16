@@ -101,32 +101,52 @@ function sw_migrate_migrate_upgrade_d6_taxonomy_term_prepare_row(Row $row, Migra
 function sw_migrate_migrate_upgrade_d6_node_story_prepare_row(Row $row, MigrateSourceInterface $source, MigrationInterface $migration) {
   $values = $row->getSource();
   $node_terms = $source->getDatabase()
-      ->query('SELECT td.tid, td.vid, td.name FROM {term_node} tn INNER JOIN {term_data} td ON td.tid = tn.tid WHERE td.vid IN (1, 2, 10) AND tn.vid = :vid',
+      ->query('SELECT td.tid, td.vid, td.name FROM {term_node} tn INNER JOIN {term_data} td ON td.tid = tn.tid WHERE tn.vid = :vid',
               [':vid' => $values['vid']])
-      ->fetchAllAssoc('vid', PDO::FETCH_ASSOC);
+      ->fetchAllAssoc('tid', PDO::FETCH_ASSOC);
+
+  $node_vocabs = [];
+  foreach ($node_terms as $tid => $term) {
+    $node_vocabs[$term['vid']][$tid] = $term;
+  }
 
   // Most departments are dropped, a few are merged. Use the callback map function.
-  $row->setSourceProperty('sw3_section_tid', sw_migrate_section_id_map($node_terms[1]['tid']));
+  if (!empty($node_vocabs[1])) {
+    $term = array_shift($node_vocabs[1]);
+    $row->setSourceProperty('sw3_section_tid', sw_migrate_section_id_map($term['tid']));
+  }
 
-  // Topics are migrated exactly as-is.
-  $row->setSourceProperty('sw3_topic_tid', $node_terms[2]['tid']);
+  // These are all migrated exactly as-is.
+  $vocab_map = [
+    2 => 'sw3_topic_tid',
+    5 => 'sw3_issue_number_tid',
+    12 => 'sw3_series_tid',
+  ];
+  foreach ($vocab_map as $vid => $sw3_id) {
+    if (!empty($node_vocabs[$vid])) {
+      $term = array_shift($node_vocabs[$vid]);
+      $row->setSourceProperty($sw3_id, $term['tid']);
+    }
+  }
 
   // Story type is a special case, since we have to see if we need to preserve
   // the SW 2.0 value as a custom story label.
   // First, set what we think the story_type_tid should be
-  $sw3_story_type_tid = sw_migrate_story_type_id_map($node_terms[10]['tid']);
-
+  if (!empty($node_vocabs[10])) {
+    $sw2_story_type_term = array_shift($node_vocabs[10]);
+    $sw3_story_type_tid = sw_migrate_story_type_id_map($sw2_story_type_term['tid']);
+  }
   // If the 2.0 story type is defined
   // AND the 3.0 story type is undefined
   // AND either the story was configured not to show authors
   //     OR the story has no authors
-  if (!empty($node_terms[10])
+  if (!empty($sw2_story_type_term['tid'])
       && empty($sw3_story_type_tid)
       && (empty($values['field_story_label_has_names'][0]['value'])
           || empty($values['field_authors']))
   ) {
     // Save the 2.0 story type as a custom story label for 3.0.
-    $row->setSourceProperty('sw3_story_label', $node_terms[10]['name']);
+    $row->setSourceProperty('sw3_story_label', $sw2_story_type_term['name']);
     $sw3_story_type_tid = SW_STORY_TYPE_CUSTOM_TID;
   }
   $row->setSourceProperty('sw3_story_type_tid', $sw3_story_type_tid);
