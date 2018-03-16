@@ -57,6 +57,14 @@ process:
             - upgrade_d6_filter_format
             - upgrade_d7_filter_format
           source: format
+  field_topic:
+    plugin: skip_on_empty
+    source: sw3_topic_tid
+    method: process
+  field_insert_type:
+    plugin: skip_on_empty
+    source: sw3_insert_type_tid
+    method: process
 destination:
   plugin: 'entity:node'
   default_bundle: insert_box

@@ -133,6 +133,23 @@ function sw_migrate_migrate_upgrade_d6_node_story_prepare_row(Row $row, MigrateS
 }
 
 /**
+ * Implements hook_migrate_MIGRATION_ID_prepare_row() for 'upgrade_d6_node_insert_box'.
+ *
+ * Handles topic and insert type terms.
+ */
+function sw_migrate_migrate_upgrade_d6_node_insert_box_prepare_row(Row $row, MigrateSourceInterface $source, MigrationInterface $migration) {
+  $values = $row->getSource();
+  $node_terms = $source->getDatabase()
+      ->query('SELECT td.tid, td.vid, td.name FROM {term_node} tn INNER JOIN {term_data} td ON td.tid = tn.tid WHERE td.vid IN (2, 13) AND tn.vid = :vid',
+              [':vid' => $values['vid']])
+      ->fetchAllAssoc('vid', PDO::FETCH_ASSOC);
+
+  // There's no special re-mapping or filtering needed for either of these.
+  $row->setSourceProperty('sw3_topic_tid', $node_terms[2]['tid']);
+  $row->setSourceProperty('sw3_insert_type_tid', $node_terms[13]['tid']);
+}
+
+/**
  * Migrate callback function to deal with taxonomy term IDs.
  *
  * This prunes terms from the Department/Section and Story type vocabularies
