@@ -93,16 +93,23 @@ function sw_migrate_migrate_upgrade_d6_taxonomy_term_prepare_row(Row $row, Migra
 /**
  * Implements hook_migrate_MIGRATION_ID_prepare_row() for 'upgrade_d6_node_story'.
  *
- * Handles story type term, and optional custom story label.
+ * Handles section, topic and story type terms, and optional custom story label.
  *
  * @see http://tasks.socialistworker.org/node/982
+ * @see http://tasks.socialistworker.org/node/984
  */
 function sw_migrate_migrate_upgrade_d6_node_story_prepare_row(Row $row, MigrateSourceInterface $source, MigrationInterface $migration) {
   $values = $row->getSource();
   $node_terms = $source->getDatabase()
-      ->query('SELECT td.tid, td.vid, td.name FROM {term_node} tn INNER JOIN {term_data} td ON td.tid = tn.tid WHERE td.vid IN (10) AND tn.vid = :vid',
+      ->query('SELECT td.tid, td.vid, td.name FROM {term_node} tn INNER JOIN {term_data} td ON td.tid = tn.tid WHERE td.vid IN (1, 2, 10) AND tn.vid = :vid',
               [':vid' => $values['vid']])
       ->fetchAllAssoc('vid', PDO::FETCH_ASSOC);
+
+  // Most departments are dropped, a few are merged. Use the callback map function.
+  $row->setSourceProperty('sw3_section_tid', sw_migrate_section_id_map($node_terms[1]['tid']));
+
+  // Topics are migrated exactly as-is.
+  $row->setSourceProperty('sw3_topic_tid', $node_terms[2]['tid']);
 
   // Story type is a special case, since we have to see if we need to preserve
   // the SW 2.0 value as a custom story label.

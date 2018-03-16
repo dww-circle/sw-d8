@@ -110,6 +110,14 @@ process:
         -
           plugin: skip_on_empty
           method: process
+  field_section:
+    plugin: skip_on_empty
+    source: sw3_section_tid
+    method: process
+  field_topic:
+    plugin: skip_on_empty
+    source: sw3_topic_tid
+    method: process
   field_story_type:
     plugin: skip_on_empty
     source: sw3_story_type_tid
