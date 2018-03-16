@@ -1,0 +1,10 @@
+uuid: 6df5aaa5-4c35-45cb-877c-f3aa0838b343
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.embed_wide
+label: 'Embed (wide)'
+targetEntityType: media
+cache: true
