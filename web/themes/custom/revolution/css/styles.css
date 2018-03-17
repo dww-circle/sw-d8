@@ -850,6 +850,14 @@ h4 {
     margin-bottom: 20px;
     margin-left: 0;
     width: 40px; }
+  .social-links .hover {
+    display: none; }
+  .social-links a:hover {
+    color: #ff0000; }
+    .social-links a:hover .hover {
+      display: block; }
+    .social-links a:hover .default {
+      display: none; }
   .social-links svg {
     height: 40px;
     text-indent: 0;

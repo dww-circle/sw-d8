@@ -1,8 +1,8 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 48 48" style="enable-background:new 0 0 48 48;" xml:space="preserve">
-<g>
+<g id="Layer_77">
 	<g>
-		<circle style="fill:#58595B;" cx="24" cy="23.998" r="24"/>
+		<circle style="fill:#ff0000;" cx="24" cy="23.998" r="24"/>
 		<polygon style="fill:#FFFFFF;" points="39,21 27,21 27,9 21,9 21,21 9,21 9,27 21,27 21,39 27,39 27,27 39,27 		"/>
 	</g>
 </g>

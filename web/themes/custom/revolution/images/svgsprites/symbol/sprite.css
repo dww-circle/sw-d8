@@ -3,7 +3,17 @@
 	height: 48px;
 }
 
+.svg-facebook-hover-dims {
+	width: 48px;
+	height: 48px;
+}
+
 .svg-mail-dims {
+	width: 48px;
+	height: 48px;
+}
+
+.svg-mail-hover-dims {
 	width: 48px;
 	height: 48px;
 }
@@ -13,7 +23,17 @@
 	height: 48px;
 }
 
+.svg-placeholder-hover-dims {
+	width: 48px;
+	height: 48px;
+}
+
 .svg-plus-dims {
+	width: 48px;
+	height: 48px;
+}
+
+.svg-plus-hover-dims {
 	width: 48px;
 	height: 48px;
 }
@@ -23,7 +43,17 @@
 	height: 48px;
 }
 
+.svg-rss-hover-dims {
+	width: 48px;
+	height: 48px;
+}
+
 .svg-twitter-dims {
+	width: 48px;
+	height: 48px;
+}
+
+.svg-twitter-hover-dims {
 	width: 48px;
 	height: 48px;
 }

@@ -11,7 +11,8 @@
   <li class="{{ linkdata.service }}">
     <a href="{{ linkdata.link }}" title="{{ linkdata.text }}">
     <svg>
-      <use xlink:href="#{{ linkdata.service }}"></use>
+      <use class="default" xlink:href="#{{ linkdata.service }}"></use>
+      <use class="hover" xlink:href="#{{ linkdata.service }}-hover"></use>
     </svg>
       <span class="visually-hidden">{{ linkdata.text }}</span>
     </a>

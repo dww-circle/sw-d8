@@ -50,6 +50,22 @@
     width: 40px;
   }
 
+  .hover {
+    display: none;
+  }
+
+  a:hover {
+    color: $c-red;
+
+    .hover {
+      display: block;
+    }
+    
+    .default {
+      display: none;
+    }
+  }
+
   svg {
     height: 40px;
     text-indent: 0;

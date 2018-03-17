@@ -2,7 +2,7 @@
 	 viewBox="0 0 48 48" style="enable-background:new 0 0 48 48;" xml:space="preserve">
 <g id="Layer_90">
 	<g>
-		<circle style="fill:#58595B;" cx="24" cy="23.998" r="24"/>
+		<circle style="fill:#ff0000;" cx="24" cy="23.998" r="24"/>
 		<g>
 			<ellipse style="fill:#FFFFFF;" cx="12.998" cy="34.982" rx="4" ry="3.982"/>
 			<path style="fill:#FFFFFF;" d="M23.03,38.992h5.773c0-10.918-8.881-19.799-19.797-19.799v5.75c3.745,0,7.267,1.457,9.914,4.109

@@ -1,8 +1,8 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 48 48" style="enable-background:new 0 0 48 48;" xml:space="preserve">
-<g id="Layer_142">
+<g>
 	<g>
-		<circle style="fill:#58595B;" cx="24" cy="24" r="24.001"/>
+		<circle style="fill:#ff0000;" cx="24" cy="24" r="24.001"/>
 		<g>
 			<path style="fill:#FFFFFF;" d="M38.173,12.442c-1.189,0.695-2.508,1.2-3.91,1.472C33.142,12.736,31.542,12,29.771,12
 				c-3.398,0-6.154,2.713-6.154,6.059c0,0.475,0.055,0.936,0.158,1.38c-5.115-0.253-9.65-2.665-12.686-6.33
