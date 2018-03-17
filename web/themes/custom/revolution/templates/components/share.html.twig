@@ -9,10 +9,10 @@
 <ul class="social-links share">
   {% for linkdata in services %}
   <li class="{{ linkdata.service }}">
-    <a href="{{ linkdata.link }}" title="{{ linkdata.text }}">
+    <a href="{{ linkdata.link }}" title="{{ linkdata.text }}" target="_blank">
     <svg>
       <use class="default" xlink:href="#{{ linkdata.service }}"></use>
-      <use class="hover" xlink:href="#{{ linkdata.service }}-hover"></use>
+      <use class="hover" xlink:href="#{{ linkdata.service }}-red"></use>
     </svg>
       <span class="visually-hidden">{{ linkdata.text }}</span>
     </a>

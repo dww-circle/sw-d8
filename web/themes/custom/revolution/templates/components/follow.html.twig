@@ -1,3 +1,19 @@
-<div class="social-links follow">
-  <a href="">xxxx</a>
-</div>
+{% set services = [
+  { 'service': 'facebook', 'link': '//www.facebook.com/socialistworker', 'text': 'Follow Socialist Worker on Facebook'},
+  { 'service': 'twitter', 'link': '//twitter.com/SocialistViews', 'text': 'Follow @socialistviews on Twitter'},
+  { 'service': 'rss', 'link': '/rss.xml', 'text': 'RSS Feed'},
+] %}
+
+<ul class="social-links share">
+  {% for linkdata in services %}
+    <li class="{{ linkdata.service }}">
+      <a href="{{ linkdata.link }}" title="{{ linkdata.text }}" target="_blank">
+        <svg>
+          <use class="default" xlink:href="#{{ linkdata.service }}-red"></use>
+          <use class="hover" xlink:href="#{{ linkdata.service }}"></use>
+        </svg>
+        <span class="visually-hidden">{{ linkdata.text }}</span>
+      </a>
+    </li>
+  {% endfor %}
+</ul>

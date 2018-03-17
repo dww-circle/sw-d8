@@ -188,7 +188,8 @@ main {
   font-family: "FF DIN Pro Regular", sans-serif;
   font-size: 10px;
   padding-bottom: 30px;
-  padding-top: 30px; }
+  padding-top: 30px;
+  text-align: center; }
   .footer-wrapper .block {
     max-width: 1260px;
     margin: 0 auto;
@@ -205,8 +206,7 @@ main {
     font-family: Helvetica, sans-serif;
     font-size: 12px;
     font-weight: 300;
-    line-height: 16px;
-    text-align: center; }
+    line-height: 16px; }
   .footer-wrapper p:first-of-type {
     color: #EA3223; }
 
@@ -532,7 +532,7 @@ main {
       padding: 0 5px; }
 
 .page-node-type-story .node--type-story {
-  font-family: "Libre Baskerville", "Georgia", "Times", serif;
+  font-family: "Georgia", "Times New Roman", "Times", serif;
   font-size: 18px;
   line-height: 27px; }
 
@@ -811,31 +811,6 @@ h4 {
   height: auto;
   width: 100%; }
 
-@media (min-width: 961px) {
-  .story-social-left {
-    position: absolute;
-    left: -80px; } }
-
-@media (min-width: 961px) {
-  .story-social-left .social-links {
-    display: block; } }
-
-@media (min-width: 961px) {
-  .story-social-left li,
-  .story-social-left a {
-    display: block; } }
-
-.story-social-bottom {
-  text-align: center; }
-  @media (min-width: 961px) {
-    .story-social-bottom .social-links {
-      display: inline-block; } }
-  @media (min-width: 961px) {
-    .story-social-bottom li,
-    .story-social-bottom a {
-      display: inline-block;
-      margin: 0 50px; } }
-
 .social-links {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -862,6 +837,43 @@ h4 {
     height: 40px;
     text-indent: 0;
     width: 40px; }
+
+@media (min-width: 961px) {
+  .story-social-left {
+    position: absolute;
+    left: -80px; } }
+
+@media (min-width: 961px) {
+  .story-social-left .social-links {
+    display: block; } }
+
+@media (min-width: 961px) {
+  .story-social-left li,
+  .story-social-left a {
+    display: block; } }
+
+.story-social-bottom {
+  text-align: center; }
+  @media (min-width: 961px) {
+    .story-social-bottom .social-links {
+      display: inline-block; } }
+  @media (min-width: 961px) {
+    .story-social-bottom li,
+    .story-social-bottom a {
+      display: inline-block;
+      margin: 0 50px; } }
+
+.footer-wrapper .follow-label {
+  font-size: 16px;
+  text-transform: uppercase; }
+
+.footer-wrapper .social-links {
+  display: block;
+  text-align: center; }
+  .footer-wrapper .social-links li,
+  .footer-wrapper .social-links a {
+    display: inline-block;
+    margin: 0 10px; }
 
 .user-login-form input {
   max-width: 100%; }

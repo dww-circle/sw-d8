@@ -1,3 +1,39 @@
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding-left: 0;
+
+  li {
+    height: 40px;
+    margin-bottom: 20px;
+    margin-left: 0;
+    width: 40px;
+  }
+
+  .hover {
+    display: none;
+  }
+
+  a:hover {
+    color: $c-red;
+
+    .hover {
+      display: block;
+    }
+
+    .default {
+      display: none;
+    }
+  }
+
+  svg {
+    height: 40px;
+    text-indent: 0;
+    width: 40px;
+  }
+}
+
 .story-social-left {
 
   @include breakpoint($desktop) {
@@ -37,38 +73,22 @@
   }
 }
 
-.social-links {
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-  padding-left: 0;
+.footer-wrapper {
+  // See _footer.scss for global footer styles.
 
-  li {
-    height: 40px;
-    margin-bottom: 20px;
-    margin-left: 0;
-    width: 40px;
+  .follow-label {
+    font-size: 16px;
+    text-transform: uppercase;
   }
 
-  .hover {
-    display: none;
-  }
+  .social-links {
+    display: block;
+    text-align: center;
 
-  a:hover {
-    color: $c-red;
-
-    .hover {
-      display: block;
+    li,
+    a {
+      display: inline-block;
+      margin: 0 10px;
     }
-    
-    .default {
-      display: none;
-    }
-  }
-
-  svg {
-    height: 40px;
-    text-indent: 0;
-    width: 40px;
   }
 }
