@@ -91,11 +91,12 @@
     {{ title_suffix }}
 
     <div{{ content_attributes.addClass('node__content') }}>
+      {{ content.field_introduction }}
       {{ date }}
       <div class="story-social-left">
         {% include  directory ~ '/templates/components/share.html.twig' %}
       </div>
-      {{ content }}
+      {{ content|without('field_introduction') }}
       <div class="story-social-bottom">
         {% include  directory ~ '/templates/components/share.html.twig' %}
       </div>
