@@ -92,7 +92,13 @@
 
     <div{{ content_attributes.addClass('node__content') }}>
       {{ date }}
+      <div class="story-social-left">
+        {% include  directory ~ '/templates/components/share.html.twig' %}
+      </div>
       {{ content }}
+      <div class="story-social-bottom">
+        {% include  directory ~ '/templates/components/share.html.twig' %}
+      </div>
     </div>
   </div>
 

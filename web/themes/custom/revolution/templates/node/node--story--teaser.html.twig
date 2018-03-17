@@ -75,7 +75,8 @@
     'node--type-' ~ node.bundle|clean_class,
     not node.isPublished() ? 'node--unpublished',
     view_mode ? 'story--' ~ view_mode|clean_class,
-  ]
+  'nid-' ~ node.id
+]
 %}
 
 <a href="{{ url }}" rel="bookmark" class="story-link">
