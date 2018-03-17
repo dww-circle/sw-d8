@@ -161,6 +161,7 @@ main {
 .page-title {
   font-family: "FF DIN Pro Bold", sans-serif;
   font-size: 60px;
+  letter-spacing: -2px;
   text-transform: uppercase; }
 
 .region-content,
@@ -566,7 +567,7 @@ main {
     left: 0;
     margin-bottom: 10px;
     margin-right: 10px;
-    margin-top: 10px;
+    margin-top: 7px;
     width: 40px; }
   .page-node-type-story .field--name-field-body .question {
     color: #808080;
