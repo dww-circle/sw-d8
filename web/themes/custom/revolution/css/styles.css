@@ -71,34 +71,6 @@ img {
     .align-center img {
       margin: 0 auto; } }
 
-.text-formatted img {
-  max-width: 100%;
-  padding-bottom: 20px; }
-
-.text-formatted figure {
-  margin: 0 0 1em;
-  position: relative; }
-  .text-formatted figure img {
-    padding-bottom: 0px; }
-  .text-formatted figure figcaption {
-    font-size: 14px;
-    line-height: 25px; }
-    @media (min-width: 1201px) {
-      .text-formatted figure figcaption {
-        left: -193px;
-        padding-top: 15px;
-        position: absolute;
-        text-align: right;
-        top: 0;
-        width: 170px; }
-        .text-formatted figure figcaption:before {
-          content: '';
-          height: 5px;
-          left: 0;
-          position: absolute;
-          top: -5px;
-          width: 100%; } }
-
 hr {
   border: none;
   height: 10px;
@@ -580,6 +552,29 @@ main {
 .page-node-type-story .contributors {
   font-style: italic; }
 
+.caption-article {
+  border-bottom: 10px solid #ff0000;
+  margin: 0 auto;
+  max-width: 290px; }
+  @media (min-width: 540px) {
+    .caption-article {
+      float: left;
+      margin: 4px 20px 20px 0; } }
+  @media (min-width: 961px) {
+    .caption-article {
+      margin-bottom: 20px;
+      margin-left: -88px;
+      margin-right: 40px; } }
+  .caption-article img {
+    height: auto;
+    padding-bottom: 3px;
+    width: 100%; }
+  .caption-article figcaption {
+    font-family: "FF DIN Pro Regular", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    padding-bottom: 16px; }
+
 label {
   display: block;
   font-size: 16px;
@@ -619,10 +614,12 @@ select {
   font-family: Helvetica, sans-serif;
   font-size: 15px;
   line-height: 18px;
-  margin-bottom: 20px; }
+  margin: 0 auto 20px;
+  max-width: 80%; }
   @media (min-width: 961px) {
     .node--type-insert-box {
       float: left;
+      margin-bottom: 20px;
       margin-left: -88px;
       margin-right: 40px;
       max-width: 290px; } }
@@ -649,11 +646,6 @@ select {
   .node--type-insert-box object {
     height: auto;
     max-width: 100%; }
-
-.caption {
-  font-family: "FF DIN Pro Regular", sans-serif;
-  font-size: 14px;
-  line-height: 18px; }
 
 .pager {
   padding-bottom: 25px;

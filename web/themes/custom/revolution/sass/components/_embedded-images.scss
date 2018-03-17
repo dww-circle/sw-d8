@@ -1,0 +1,29 @@
+.caption-article {
+  border-bottom: 10px solid $c-red;
+  margin: 0 auto;
+  max-width: 290px;
+
+  @include breakpoint($handheld) {
+    float: left;
+    margin: 4px 20px 20px 0;
+  }
+
+  @include breakpoint($desktop) {
+    margin-bottom: 20px;
+    margin-left: -88px;
+    margin-right: 40px;
+  }
+
+  img {
+    height: auto;
+    padding-bottom: 3px;
+    width: 100%;
+  }
+
+  figcaption {
+    font-family: $ff-din-regular;
+    font-size: 14px;
+    line-height: 18px;
+    padding-bottom: 16px;
+  }
+}

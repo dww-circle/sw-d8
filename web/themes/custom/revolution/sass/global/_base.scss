@@ -84,48 +84,6 @@ img {
   }
 }
 
-// Images in WYSIWYG
-.text-formatted {
-
-  img {
-    max-width: 100%;
-    padding-bottom: 20px;
-  }
-
-  // Image with Caption
-  figure {
-    margin: 0 0 1em;
-    position: relative;
-
-    img {
-      padding-bottom: 0px;
-    }
-
-    figcaption {
-      font-size: 14px;
-      line-height: 25px;
-
-      @include breakpoint($desktop-large) {
-        left: -193px;
-        padding-top: 15px;
-        position: absolute;
-        text-align: right;
-        top: 0;
-        width: 170px;
-
-        &:before {
-          content:'';
-          height: 5px;
-          left: 0;
-          position: absolute;
-          top: -5px;
-          width: 100%;
-        }
-      }
-    }
-  }
-}
-
 hr {
   border: none;
   height: 10px;

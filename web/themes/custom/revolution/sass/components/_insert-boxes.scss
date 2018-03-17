@@ -3,10 +3,12 @@
   font-family: $ff-helv;
   font-size: 15px;
   line-height: 18px;
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
+  max-width: 80%;
 
   @include breakpoint($desktop) {
     float: left;
+    margin-bottom: 20px;
     margin-left: -88px;
     margin-right: 40px;
     max-width: 290px;
@@ -34,10 +36,4 @@
     height: auto;
     max-width: 100%;
   }
-}
-
-.caption {
-  font-family: $ff-din-regular;
-  font-size: 14px;
-  line-height: 18px;
 }
