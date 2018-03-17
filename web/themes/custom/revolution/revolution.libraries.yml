@@ -2,7 +2,7 @@ global:
   css:
     theme:
       css/styles.css: {}
-      //fonts.googleapis.com/css?family=Source+Code+Pro:400: { type: external }
+      //fonts.googleapis.com/css?family=Source+Code+Pro:400|Libre+Baskerville:400|700: { type: external }
   js:
     js/global.min.js: {}
     js/myfonts.com.js: {}
