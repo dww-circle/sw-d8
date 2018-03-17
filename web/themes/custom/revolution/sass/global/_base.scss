@@ -126,6 +126,33 @@ img {
   }
 }
 
+hr {
+  border: none;
+  height: 10px;
+  display: block;
+  padding-bottom: 30px;
+  padding-top: 20px;
+  position: relative;
+
+  &::after,
+  &::before {
+    background: $c-red;
+    content: ' ';
+    display: block;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+  }
+
+  &::before {
+    left: calc(50% - 15px);
+  }
+
+  &::after {
+    right: calc(50% - 15px);
+  }
+}
+
 blockquote {
   font-size: 90%;
 }
@@ -193,5 +220,4 @@ main {
       width: 350px;
     }
   }
-
 }

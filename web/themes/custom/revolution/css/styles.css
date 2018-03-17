@@ -99,6 +99,25 @@ img {
           top: -5px;
           width: 100%; } }
 
+hr {
+  border: none;
+  height: 10px;
+  display: block;
+  padding-bottom: 30px;
+  padding-top: 20px;
+  position: relative; }
+  hr::after, hr::before {
+    background: #ff0000;
+    content: ' ';
+    display: block;
+    height: 10px;
+    position: absolute;
+    width: 10px; }
+  hr::before {
+    left: calc(50% - 15px); }
+  hr::after {
+    right: calc(50% - 15px); }
+
 blockquote {
   font-size: 90%; }
 
