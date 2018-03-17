@@ -105,6 +105,10 @@ Thumbs.db
 
 # Ignore node.js files
 web/themes/custom/revolution/node_modules
+
+# Misc
 config-local
 config.local.json
 .ht.router.php
+sprite.css
+styles.css.map
