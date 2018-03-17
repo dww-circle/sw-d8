@@ -392,11 +392,37 @@ function sw_get_entity_label_multiple(array $entities, $label_callback) {
 function sw_get_media_caption($entity_id) {
   $entity = Drupal\media\Entity\Media::load($entity_id);
   if (!empty($entity)) {
-    $caption = $entity->get('field_default_caption')->value;
-    if (!empty($caption)) {
-      // @todo Add automated support for credits / provider.
-      return $caption;
+    $caption = '';
+    $default_caption = $entity->get('field_default_caption')->value;
+    $credits = $entity->get('field_credit')->referencedEntities();
+    $provider = $entity->get('field_image_provider')->entity;
+    if (!empty($default_caption)) {
+      $caption = $default_caption;
     }
+    if (!empty($credits)) {
+      // If there's already a caption, add a space before credits.
+      $caption .= empty($caption) ? '(' : ' (';
+      $caption .= implode(', ', array_map('sw_plain_label', $credits));
+    }
+    if (!empty($provider)) {
+      if (!empty($credits)) {
+        // If there's already credits, separate the provider with '|'.
+        $caption .= ' | ';
+      }
+      elseif (!empty($caption)) {
+        // Otherwise, if there's a caption, we need a space.
+        $caption .= ' (';
+      }
+      else {
+        // Otherwise, the provider is the only caption, no space.
+        $caption .= '(';
+      }
+      $caption .= $provider->label();
+    }
+    if (!empty($credits) || !empty($provider)) {
+      $caption .= ')';
+    }
+    return $caption;
   }
 }
 

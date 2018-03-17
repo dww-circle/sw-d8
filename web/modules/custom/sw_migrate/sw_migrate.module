@@ -138,12 +138,12 @@ function sw_migrate_migrate_upgrade_d6_node_story_prepare_row(Row $row, MigrateS
   }
   // If the 2.0 story type is defined
   // AND the 3.0 story type is undefined
-  // AND either the story was configured not to show authors
-  //     OR the story has no authors
+  // AND either the story has no authors
+  //     OR the story has more than 3 authors
   if (!empty($sw2_story_type_term['tid'])
       && empty($sw3_story_type_tid)
-      && (empty($values['field_story_label_has_names'][0]['value'])
-          || empty($values['field_authors']))
+      && (empty($values['field_authors'])
+          || count($values['field_authors']) > 3)
   ) {
     // Save the 2.0 story type as a custom story label for 3.0.
     $row->setSourceProperty('sw3_story_label', $sw2_story_type_term['name']);
