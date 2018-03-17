@@ -50,6 +50,9 @@
   page.sidebar|render|striptags ? 'layout-sidebar',
 ]
 %}
+<div class="svgsprite">
+  {% include directory ~ '/images/svgsprites/symbol/svg/sprite.symbol.svg' %}
+</div>
 
 <div {{ attributes.addClass(classes) }}>
   {{ page.utility_menu }}

@@ -167,6 +167,11 @@ blockquote {
   padding: 2px 2px 3px 4px;
 }
 
+// Hide that SVG.
+.svgsprite {
+  display: none;
+}
+
 // List Styles
 .item-list {
   ul,

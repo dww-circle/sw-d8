@@ -1,0 +1,58 @@
+.story-social-left {
+
+  @include breakpoint($desktop) {
+    position: absolute;
+    left: -80px;
+  }
+
+  .social-links {
+    @include breakpoint($desktop) {
+      display: block;
+    }
+  }
+
+  li,
+  a {
+    @include breakpoint($desktop) {
+      display: block;
+    }
+  }
+}
+
+.story-social-bottom {
+  text-align: center;
+
+  .social-links {
+    @include breakpoint($desktop) {
+      display: inline-block;
+    }
+  }
+
+  li,
+  a {
+    @include breakpoint($desktop) {
+      display: inline-block;
+      margin: 0 50px;
+    }
+  }
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding-left: 0;
+
+  li {
+    height: 40px;
+    margin-bottom: 20px;
+    margin-left: 0;
+    width: 40px;
+  }
+
+  svg {
+    height: 40px;
+    text-indent: 0;
+    width: 40px;
+  }
+}

@@ -1,15 +1,20 @@
 {% set services = [
-  { 'service': 'print', 'link': 'javascript:window.print();', 'text': 'Send to Printer'},
-  { 'service': 'facebok', 'link': '//www.facebook.com/sharer.php', 'text': 'Share on Facebook'},
+  { 'service': 'mail', 'link': '/email', 'text': 'Email this story'},
+  { 'service': 'facebook', 'link': '//www.facebook.com/sharer.php', 'text': 'Share on Facebook'},
   { 'service': 'twitter', 'link': '//www.twitter.com/share', 'text': 'Share on Twitter'},
-  { 'service': 'email', 'link': '/email', 'text': 'Email this story'},
+  { 'service': 'placeholder', 'link': 'javascript:window.print();', 'text': 'Send to Printer'},
   { 'service': 'plus', 'link': '/more', 'text': 'More Options'}
 ] %}
 
-<div class="social-links share">
+<ul class="social-links share">
   {% for linkdata in services %}
   <li class="{{ linkdata.service }}">
-    <a href="{{ linkdata.link }}" title="{{ linkdata.text }}">{{ linkdata.text }}</a>
+    <a href="{{ linkdata.link }}" title="{{ linkdata.text }}">
+    <svg>
+      <use xlink:href="#{{ linkdata.service }}"></use>
+    </svg>
+      <span class="visually-hidden">{{ linkdata.text }}</span>
+    </a>
   </li>
   {% endfor %}
-</div>
+</ul>
