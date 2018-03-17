@@ -1,0 +1,43 @@
+.node--type-insert-box {
+  border-bottom: 10px solid $c-red;
+  font-family: $ff-helv;
+  font-size: 15px;
+  line-height: 18px;
+  margin-bottom: 20px;
+
+  @include breakpoint($desktop) {
+    float: left;
+    margin-left: -88px;
+    margin-right: 40px;
+    max-width: 290px;
+  }
+
+  h2 {
+    display: none;
+  }
+
+  h3 {
+    border-top: 4px solid $c-black;
+    font-family: $ff-din-bold;
+    font-size: 28px;
+    line-height: 36px;
+    padding-top: 13px;
+    text-transform: uppercase;
+
+    a {
+      @include link-colors($c-black, $c-red);
+    }
+  }
+
+  img,
+  object {
+    height: auto;
+    max-width: 100%;
+  }
+}
+
+.caption {
+  font-family: $ff-din-regular;
+  font-size: 14px;
+  line-height: 18px;
+}

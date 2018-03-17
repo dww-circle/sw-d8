@@ -614,6 +614,47 @@ select {
 .form-type-select {
   position: relative; }
 
+.node--type-insert-box {
+  border-bottom: 10px solid #ff0000;
+  font-family: Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 18px;
+  margin-bottom: 20px; }
+  @media (min-width: 961px) {
+    .node--type-insert-box {
+      float: left;
+      margin-left: -88px;
+      margin-right: 40px;
+      max-width: 290px; } }
+  .node--type-insert-box h2 {
+    display: none; }
+  .node--type-insert-box h3 {
+    border-top: 4px solid #1A272E;
+    font-family: "FF DIN Pro Bold", sans-serif;
+    font-size: 28px;
+    line-height: 36px;
+    padding-top: 13px;
+    text-transform: uppercase; }
+    .node--type-insert-box h3 a:link {
+      color: #1A272E; }
+    .node--type-insert-box h3 a:visited, .node--type-insert-box h3 a:link:visited {
+      color: #1A272E; }
+    .node--type-insert-box h3 a:focus {
+      color: #1A272E; }
+    .node--type-insert-box h3 a.is-active:hover, .node--type-insert-box h3 a.active:hover, .node--type-insert-box h3 a.active-trail:hover, .node--type-insert-box h3 a.visited:hover, .node--type-insert-box h3 a:hover {
+      color: #ff0000; }
+    .node--type-insert-box h3 a.is-active, .node--type-insert-box h3 a:active, .node--type-insert-box h3 a.active-trail {
+      color: #1A272E; }
+  .node--type-insert-box img,
+  .node--type-insert-box object {
+    height: auto;
+    max-width: 100%; }
+
+.caption {
+  font-family: "FF DIN Pro Regular", sans-serif;
+  font-size: 14px;
+  line-height: 18px; }
+
 .pager {
   padding-bottom: 25px;
   padding-left: 0; }
