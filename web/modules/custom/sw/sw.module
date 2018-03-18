@@ -133,8 +133,14 @@ function sw_insert_box_node_form_alter(&$form, FormStateInterface $form_state, $
  * stuffing everything into a giant function, call bundle-specific functions.
  */
 function sw_preprocess_node(&$variables) {
-  if ($variables['node']->getType() == 'story') {
-    sw_preprocess_node_story($variables);
+  switch ($variables['node']->getType()) {
+    case 'story':
+      sw_preprocess_node_story($variables);
+      break;
+
+    case 'insert_box':
+      sw_preprocess_node_insert_box($variables);
+      break;
   }
 }
 
@@ -194,6 +200,29 @@ function sw_preprocess_node_story(&$variables) {
     }
   }
 
+}
+
+/**
+ * Preprocess function for insert_box nodes.
+ *
+ * Replace the title (which is only for admins) with the display-appropriate title.
+ * The display title is based on insert type, and optionally header_text.
+ *
+ */
+function sw_preprocess_node_insert_box(&$variables) {
+  $insert_type = $variables['node']->get('field_insert_type')->entity;
+  $header_text = $variables['node']->get('field_header_text')->value;
+  $insert_title = $insert_type->label();
+  switch ($insert_type->id()) {
+    case SW_INSERT_BOX_TYPE_COLUMNIST_TID:
+    case SW_INSERT_BOX_TYPE_REVIEW_TID:
+    case SW_INSERT_BOX_TYPE_SERIES_TID:
+      if (!empty($header_text)) {
+        $insert_title .= ': ' . $header_text;
+      }
+      break;
+  }
+  $variables['label'] = $insert_title;
 }
 
 /**
