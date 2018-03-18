@@ -314,15 +314,13 @@ function sw_get_story_label(NodeInterface $node, $view_mode) {
   if (empty($story_label) && !empty($story_type[0]['target_id'])) {
     switch ($story_type[0]['target_id']) {
       case SW_STORY_TYPE_INTERVIEW_TID:
-        $story_label = t('Interview: ');
+        $story_label = t('Interview');
         $target_field = 'sw_interviewees';
-        $label_func = $use_markup ? 'sw_subject_label' : 'sw_plain_label';
         break;
 
       case SW_STORY_TYPE_OBITUARY_TID:
-        $story_label = t('Obituary: ');
+        $story_label = t('Obituary');
         $target_field = 'sw_interviewees';
-        $label_func = $use_markup ? 'sw_subject_label' : 'sw_plain_label';
         break;
 
       case SW_STORY_TYPE_ROUNDTABLE_TID:
@@ -335,6 +333,20 @@ function sw_get_story_label(NodeInterface $node, $view_mode) {
     }
   }
 
+  // Some stories are set as 'Interview' or 'Obituary' that don't define a
+  // subject person. We have to handle that. If there are subject(s) defined,
+  // add ': ' to the label before their name(s).
+  if (!empty($target_field) && $target_field == 'sw_interviewees') {
+    if (empty($node->sw_interviewees)) {
+      $target_field = '';
+    }
+    else {
+      $story_label .= ': '; 
+      $label_func = $use_markup ? 'sw_subject_label' : 'sw_plain_label';
+    }
+  }
+
+  // Nothing special from section or story type, use the author(s) (if any).
   if (empty($story_label) && !empty($node->sw_authors)) {
     $target_field = 'sw_authors';
     $label_func = $use_markup ? 'sw_author_label' : 'sw_plain_label';
