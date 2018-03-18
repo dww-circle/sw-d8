@@ -326,13 +326,105 @@ function sw_migrate_find_first_dme_img($body) {
  * Currently, this only rewrites long chains of '- - -'... into <hr /> tags.
  * @todo: Rewrite and move <dme:*> tags into something else.
  *
- * @param string $d6_body
- *   The D6 value of field_body.
+ * @param string $sw2_body
+ *   The SW 2.0 (Drupal 6) value of field_body.
  *
  * @return string
  *   The appropriate value for field_body in SW 3.0 (D8).
  */
-function sw_migrate_rewrite_story_body($d6_body) {
-  // 1 or more instances of '- ' and an optional trailing '-' with '<hr />':
-  return preg_replace('#(- )+(-)?#', '<hr />', $d6_body);
+function sw_migrate_rewrite_story_body($sw2_body) {
+  // Replace 1 or more instances of '- ' and an optional trailing '-' with '<hr />':
+  $sw2_body = preg_replace('#(- )+(-)?#', '<hr />', $sw2_body);
+
+  // Split the body into an array for easier DME tag re-positioning.
+  // We split on 2 line breaks (\R matches \n, \r or \r\n).
+  // We don't want to split on single line breaks, since for example, we want
+  // to keep all this together as a single paragraph:
+  // <blockquote>
+  // Whatever the quote is.
+  // </blockquote>
+  $sw2_body = preg_split('/(\R){2}/', $sw2_body);
+
+  // Build up the array of paragraphs we want for the 3.0 body.
+  $sw3_body = [];
+  $pending_embed_tags = [];
+  $current_embed_offset = 0;
+  foreach ($sw2_body as $para) {
+    $matches = [];
+    if (preg_match('@<dme:(box|img|series)[^>]*>@', $para, $matches)) {
+      switch ($matches[1]) {
+        case 'box':
+          $pending_embed_tags[] = sw_migrate_rewrite_dme_box($para);
+          break;
+
+        case 'img':
+          $pending_embed_tags[] = sw_migrate_rewrite_dme_img($para);
+          break;
+
+        case 'series':
+          // @todo Are we going to re-write these?
+          $pending_embed_tags[] = $para;
+          break;
+      }
+    }
+    else {
+      $sw3_body[] = $para;
+      if ($para !== '<hr />') {
+        $current_embed_offset++;
+      }
+    }
+    if ($current_embed_offset >= 4 && count($pending_embed_tags) > 0) {
+      $sw3_body[] = array_shift($pending_embed_tags);
+      $current_embed_offset = 0;
+    }
+  }
+  return implode("\r\n\r\n", $sw3_body);
+}
+
+/**
+ * Helper function to re-write SW 2.0 DME box tags into <drupal-embed>.
+ *
+ * @param string $dme_box
+ *   The SW 2.0 DME box tag to re-write.
+ *
+ * @return string
+ *   The appropriate <drupal-embed> tags for SW 3.0.
+ */
+function sw_migrate_rewrite_dme_box($dme_box) {
+  $nid = [];
+  if (preg_match('@<dme:box nid=(\d+)[^>]*>@', $dme_box, $nid)) {
+    return '<drupal-entity data-entity-type="node" data-entity-id="'
+      . $nid[1] . '" data-view-mode="default"></drupal-entity>';
+  }
+}
+
+/**
+ * Helper function to re-write SW 2.0 DME img tags into <drupal-embed>.
+ *
+ * @param string $dme_img
+ *   The SW 2.0 DME img tag to re-write.
+ *
+ * @return string
+ *   The appropriate <drupal-embed> tags for SW 3.0.
+ */
+function sw_migrate_rewrite_dme_img($dme_img) {
+  $embed_attrs = [];
+  $nid = [];
+  if (preg_match('@<dme:img nid=(\d+)[^>]*>@', $dme_img, $nid)) {
+    $embed_attrs[] = 'data-entity-type="media"';
+    $embed_attrs[] = 'data-entity-id="' . $nid[1] . '"';
+    $view_mode = 'embed';
+    $size = [];
+    if (preg_match('@.*size=(\d+)@', $dme_img, $size)) {
+      if ($size[1] > 425) {
+        $view_mode = 'embed_wide';
+      }
+    }
+    $embed_attrs[] = 'data-view-mode="' . $view_mode . '"';
+    $caption = [];
+    if (preg_match('@.*caption="([^"]+)"@', $dme_img, $caption)) {
+      $embed_attrs[] = 'data-caption="' . $caption[1] . '"';
+    }
+    return '<drupal-entity ' . implode(' ', $embed_attrs) . '></drupal-entity>';
+  }
 }
