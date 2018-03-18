@@ -1,0 +1,178 @@
+// Slice Title
+.slice-title {
+  border-top: 1px solid red;
+  color: red;
+  font-size: 28px;
+  font-family: $ff-din-bold;
+  line-height: 32px;
+  position: relative;
+  text-transform: uppercase;
+
+  &:after {
+    background: red;
+    content: '';
+    height: 30px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 60px;
+  }
+}
+
+// Slice Date.
+.field--name-field-date {
+  color: red;
+  font-family: $ff-din-regular;
+  font-size: 10px;
+  text-transform: uppercase;
+
+  @include breakpoint($desktop) {
+    font-size: 16px;
+  }
+}
+
+// Story Link.
+.story-link {
+  display: block;
+  margin-bottom: 50px;
+
+  &:hover,
+  &:visited:hover {
+    opacity: .8;
+    text-decoration: none;
+
+    .field--name-field-kicker,
+    h4,
+    .field--name-field-teaser {
+      color: #72726c;
+    }
+  }
+
+  &:visited {
+    .field--name-field-kicker,
+    h4,
+    .field--name-field-teaser {
+      color: #725c5f;
+    }
+  }
+
+  .field--name-field-nested-right & {
+    margin-bottom: 30px;
+  }
+}
+
+// Node Title.
+h4 {
+  color: black;
+  font-size: 30px;
+  font-family: $ff-din-bold;
+  line-height: 1;
+  margin-bottom: .5em;
+
+  .node--view-mode-teaser-image-large & {
+    font-size: 42px;
+    text-transform: uppercase;
+  }
+
+  .story--teaser-image-large & {
+    font-size: 50px;
+  }
+
+  // Weeekend sub
+  .field--name-field-sub & {
+    font-size: 22px;
+    margin-bottom: 16px;
+    text-transform: none;
+  }
+
+  // Weeekend left with pic
+  .field--name-field-nested-left .story--teaser-image-medium & {
+    font-size: 30px;
+    text-transform: none;
+  }
+
+  // Weeekend left no pic
+  .field--name-field-nested-left .node--view-mode-teaser & {
+    font-size: 22px;
+    text-transform: none;
+  }
+
+  // Weeekend right
+  .field--name-field-nested-right & {
+    font-size: 18px;
+    text-transform: none;
+  }
+}
+
+// Story Label.
+.story-label {
+  color: #808080;
+  font-family: $ff-nitti;
+  font-size: 16px;
+  font-weight: $fw-light;
+  text-transform: uppercase;
+
+  .field--name-field-sub &,
+  .paragraph--type--nested & {
+    font-size: 13px;
+    margin-bottom: 3px;
+  }
+}
+
+// Teaser Body Style.
+.field--name-field-teaser {
+  color: #666666;
+  font-family: "Helvetica", sans-serif;
+  font-size: 15px;
+  line-height: 18px;
+
+  // Weekend right
+  .field--name-field-nested-right {
+    font-size: 13px;
+    line-height: 15px;
+  }
+}
+
+// Nested Paragraph border titles.
+.column-left {
+  .paragraph--type--nested {
+    .field--name-field-display-title {
+      @include paragraph-nested-title;
+      border-width: 1px;
+      font-size: 20px;
+      line-height: 25px;
+      margin-bottom: 22px;
+
+      &:after {
+        height: 20px;
+        width: 40px;
+      }
+    }
+  }
+}
+
+.column-right {
+  .weekend-also {
+    @include paragraph-nested-title;
+    border-width: 4px;
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 36px;
+
+    &:after {
+      height: 40px;
+      width: 20px;
+    }
+  }
+
+  .paragraph--type--nested {
+    .field--name-field-display-title {
+      border-top: 1px solid $c-gr7d;
+      font-family: $ff-din-bold;
+      font-size: 16px;
+      line-height: 30px;
+      margin-bottom: 18px;
+      text-transform: uppercase;
+    }
+  }
+}

@@ -1,0 +1,79 @@
+// Groups.
+.story-group--teaser_image_large {
+  @include clearfix;
+}
+
+.paragraph--type--queue {
+  .story-group--teaser_image_medium {
+    @include page-left;
+  }
+
+  .story-group--teaser {
+    @include page-right;
+  }
+}
+
+.column-left {
+  @include page-left;
+  margin-bottom: 20px;
+}
+
+.column-right{
+  @include page-right;
+  margin-bottom: 20px;
+}
+
+.story--teaser-image-medium,
+.story--teaser-image-large {
+  margin-bottom: 35px;
+
+  @include breakpoint($desktop) {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 50px;
+  }
+}
+
+.story--teaser-image-large {
+  img {
+    width: 100%;
+
+    @include breakpoint($desktop) {
+      max-width: 95%;
+      width: 480px;
+    }
+  }
+
+  .content {
+    @include breakpoint($desktop) {
+      border-bottom: 1px solid $c-gr7d;
+    }
+  }
+}
+
+.story--teaser-image-medium {
+  img {
+    float: left;
+    margin-right: 30px;
+    width: 192px;
+
+    @include breakpoint($desktop) {
+      float: none;
+      max-width: 95%;
+      width: 290px;
+    }
+  }
+
+  .content {
+    border-bottom: 1px solid $c-gr7d;
+  }
+
+  .node__content {
+    @include clearfix-before;
+    margin-bottom: 25px;
+
+    @include breakpoint($desktop) {
+      margin-bottom: 40px;
+    }
+  }
+}
