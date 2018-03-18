@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.weekend.field_ad_right
     - field.field.paragraph.weekend.field_date
     - field.field.paragraph.weekend.field_display_title
     - field.field.paragraph.weekend.field_lead
@@ -18,6 +19,15 @@ targetEntityType: paragraph
 bundle: weekend
 mode: default
 content:
+  field_ad_right:
+    weight: 6
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
   field_date:
     weight: 1
     settings: {  }

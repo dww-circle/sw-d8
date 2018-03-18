@@ -1,0 +1,31 @@
+uuid: 9ddaa995-d989-412d-abe2-b81bf4486c60
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_ad_right
+    - media.type.image
+    - media.type.video
+    - paragraphs.paragraphs_type.weekend
+id: paragraph.weekend.field_ad_right
+field_name: field_ad_right
+entity_type: paragraph
+bundle: weekend
+label: 'Ad Right'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+      video: video
+    sort:
+      field: created
+      direction: DESC
+    auto_create: false
+    auto_create_bundle: image
+field_type: entity_reference
