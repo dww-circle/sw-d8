@@ -168,6 +168,22 @@
   }
 }
 
+@mixin paragraph-nested-title {
+  border-top: 1px solid $c-black;
+  color: $c-black;
+  font-family: $ff-din-bold;
+  position: relative;
+  text-transform: uppercase;
+
+  &:after {
+    background: $c-black;
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
 @mixin page-container {
   max-width: 1260px;
   margin: 0 auto;
