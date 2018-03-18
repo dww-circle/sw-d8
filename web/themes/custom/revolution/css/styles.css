@@ -836,6 +836,9 @@ select {
     .story--teaser-image-medium .node__content {
       margin-bottom: 40px; } }
 
+.border-none .story--teaser-image-medium .content {
+  border-bottom: 0; }
+
 .slice-title {
   border-top: 1px solid red;
   color: red;

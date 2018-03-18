@@ -77,3 +77,8 @@
     }
   }
 }
+
+// Selectively removing border.
+.border-none .story--teaser-image-medium .content {
+  border-bottom: 0;
+}

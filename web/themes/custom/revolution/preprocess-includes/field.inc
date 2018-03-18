@@ -29,5 +29,9 @@ function revolution_preprocess_field__paragraph__nested__field_articles(&$variab
   // Show image on the first story on the left.
   if ($variables['element']['#object']->get('parent_field_name')->value == 'field_nested_left') {
     $variables['items'][0]['content']['#view_mode'] = 'teaser_image_medium';
+
+    if (!isset($variables['items'][1])) {
+      $variables['items'][0]['attributes']->setAttribute('class', 'border-none');
+    }
   }
 }
