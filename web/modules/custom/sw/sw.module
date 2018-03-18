@@ -204,6 +204,10 @@ function sw_preprocess_node_story(&$variables) {
     // backwards, but it's right given the inverted meaning of weights.
     if ($weight[0]['value'] >= -8) {
       unset($variables['content']['field_main_image']);
+      $variables['attributes']['class'][] = 'teaser-conditional-no-image';
+    }
+    else {
+      $variables['attributes']['class'][] = 'teaser-conditional-with-image';
     }
   }
 
