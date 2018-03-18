@@ -1,0 +1,19 @@
+uuid: 166321a1-4561-4ecd-8350-883c7e43db53
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_display_title
+    - paragraphs.paragraphs_type.nested
+id: paragraph.nested.field_display_title
+field_name: field_display_title
+entity_type: paragraph
+bundle: nested
+label: 'Display Title'
+description: 'The section title visible to users'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

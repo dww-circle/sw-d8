@@ -1,12 +1,12 @@
-uuid: d1968245-8a77-45b0-af68-9d742f549f8c
+uuid: aaeae3dd-53bf-4f2e-82e9-408a20953420
 langcode: en
 status: true
 dependencies:
   module:
     - node
     - paragraphs
-id: paragraph.field_articles
-field_name: field_articles
+id: paragraph.field_sub
+field_name: field_sub
 entity_type: paragraph
 type: entity_reference
 settings:

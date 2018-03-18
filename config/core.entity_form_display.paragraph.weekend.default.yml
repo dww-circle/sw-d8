@@ -5,9 +5,14 @@ dependencies:
   config:
     - field.field.paragraph.weekend.field_date
     - field.field.paragraph.weekend.field_display_title
+    - field.field.paragraph.weekend.field_lead
+    - field.field.paragraph.weekend.field_nested_left
+    - field.field.paragraph.weekend.field_nested_right
+    - field.field.paragraph.weekend.field_sub
     - paragraphs.paragraphs_type.weekend
   module:
     - datetime
+    - paragraphs
 id: paragraph.weekend.default
 targetEntityType: paragraph
 bundle: weekend
@@ -26,6 +31,48 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_lead:
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_nested_left:
+    type: entity_reference_paragraphs
+    weight: 4
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_nested_right:
+    type: entity_reference_paragraphs
+    weight: 5
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_sub:
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
 hidden:
   created: true

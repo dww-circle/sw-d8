@@ -1,0 +1,40 @@
+uuid: 9fd6c4a8-5dd0-42a1-ae60-959e6ac77b56
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_nested_left
+    - paragraphs.paragraphs_type.nested
+    - paragraphs.paragraphs_type.weekend
+  module:
+    - entity_reference_revisions
+id: paragraph.weekend.field_nested_left
+field_name: field_nested_left
+entity_type: paragraph
+bundle: weekend
+label: 'Nested Left'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      nested: nested
+    target_bundles_drag_drop:
+      nested:
+        enabled: true
+        weight: 5
+      queue:
+        weight: 6
+        enabled: false
+      today:
+        weight: 7
+        enabled: false
+      weekend:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,29 @@
+uuid: 83e18c63-684c-450f-a884-66b7b368b169
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_lead
+    - node.type.story
+    - paragraphs.paragraphs_type.weekend
+id: paragraph.weekend.field_lead
+field_name: field_lead
+entity_type: paragraph
+bundle: weekend
+label: 'Lead Story'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      story: story
+    sort:
+      field: created
+      direction: DESC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

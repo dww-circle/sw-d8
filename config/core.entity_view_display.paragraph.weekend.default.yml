@@ -5,9 +5,14 @@ dependencies:
   config:
     - field.field.paragraph.weekend.field_date
     - field.field.paragraph.weekend.field_display_title
+    - field.field.paragraph.weekend.field_lead
+    - field.field.paragraph.weekend.field_nested_left
+    - field.field.paragraph.weekend.field_nested_right
+    - field.field.paragraph.weekend.field_sub
     - paragraphs.paragraphs_type.weekend
   module:
     - datetime
+    - entity_reference_revisions
 id: paragraph.weekend.default
 targetEntityType: paragraph
 bundle: weekend
@@ -15,7 +20,7 @@ mode: default
 content:
   field_date:
     weight: 1
-    label: above
+    label: hidden
     settings:
       format_type: medium
       timezone_override: ''
@@ -24,10 +29,46 @@ content:
     region: content
   field_display_title:
     weight: 0
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+    region: content
+  field_lead:
+    weight: 2
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_nested_left:
+    type: entity_reference_revisions_entity_view
+    weight: 4
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_nested_right:
+    type: entity_reference_revisions_entity_view
+    weight: 5
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_sub:
+    weight: 3
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
     region: content
 hidden: {  }

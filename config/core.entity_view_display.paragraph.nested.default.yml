@@ -1,0 +1,31 @@
+uuid: fa69500f-6f15-4f6b-82aa-3f21fb82f47d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.nested.field_articles
+    - field.field.paragraph.nested.field_display_title
+    - paragraphs.paragraphs_type.nested
+id: paragraph.nested.default
+targetEntityType: paragraph
+bundle: nested
+mode: default
+content:
+  field_articles:
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_display_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

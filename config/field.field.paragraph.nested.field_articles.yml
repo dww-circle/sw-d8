@@ -1,0 +1,29 @@
+uuid: ec3dca38-96e5-45bb-80c6-ef18ac23595f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_articles
+    - node.type.story
+    - paragraphs.paragraphs_type.nested
+id: paragraph.nested.field_articles
+field_name: field_articles
+entity_type: paragraph
+bundle: nested
+label: Articles
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      story: story
+    sort:
+      field: created
+      direction: DESC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

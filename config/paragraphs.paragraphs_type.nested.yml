@@ -1,0 +1,9 @@
+uuid: a8ca787c-d872-470c-8129-a4ef58c50609
+langcode: en
+status: true
+dependencies: {  }
+id: nested
+label: 'Nested Slice'
+icon_uuid: null
+description: 'A container to group stories within the Weekend Edition slice.'
+behavior_plugins: {  }
