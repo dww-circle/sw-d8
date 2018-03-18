@@ -15,20 +15,12 @@
   }
 
   h2 {
-    display: none;
-  }
-
-  h3 {
     border-top: 4px solid $c-black;
     font-family: $ff-din-bold;
     font-size: 28px;
     line-height: 36px;
     padding-top: 13px;
     text-transform: uppercase;
-
-    a {
-      @include link-colors($c-black, $c-red);
-    }
   }
 
   img,

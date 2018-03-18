@@ -1,0 +1,27 @@
+{#
+/**
+ * @file
+ * Theme implementation to display an insert_box node.
+ *
+ * @see template_preprocess_node()
+ * @see sw_preprocess_node_insert_box()
+ *
+ * @ingroup themeable
+ */
+#}
+{%
+  set classes = [
+    'node--type-insert-box',
+    not node.isPublished() ? 'node--unpublished',
+  ]
+%}
+<article{{ attributes.addClass(classes) }}>
+
+  {{ title_prefix }}
+    <h2{{ title_attributes }}>{{ label }}</h2>
+  {{ title_suffix }}
+  <div{{ content_attributes }}>
+    {{ content }}
+  </div>
+
+</article>

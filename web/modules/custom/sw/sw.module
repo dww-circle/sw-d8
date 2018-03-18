@@ -133,8 +133,14 @@ function sw_insert_box_node_form_alter(&$form, FormStateInterface $form_state, $
  * stuffing everything into a giant function, call bundle-specific functions.
  */
 function sw_preprocess_node(&$variables) {
-  if ($variables['node']->getType() == 'story') {
-    sw_preprocess_node_story($variables);
+  switch ($variables['node']->getType()) {
+    case 'story':
+      sw_preprocess_node_story($variables);
+      break;
+
+    case 'insert_box':
+      sw_preprocess_node_insert_box($variables);
+      break;
   }
 }
 
@@ -144,7 +150,14 @@ function sw_preprocess_node(&$variables) {
  * Inject the correct story_label based on the complex logic.
  *
  * On full view mode, also rewrites introduction and body_introduction to
- * replace %author and %interviewee
+ * replace %author and %interviewee.
+ *
+ * Handles the display-friendly version of field_contributors (sorts
+ * alphabetically based on last name, adds appropriate delimiters and puts it
+ * all on a single line.).
+ *
+ * For the teaser-conditional-image view mode, hides images on stories that
+ * don't have weight -8 or lighter.
  */
 function sw_preprocess_node_story(&$variables) {
   // For any view mode, we're going to need to load the authors (and
@@ -165,9 +178,11 @@ function sw_preprocess_node_story(&$variables) {
     if (!empty($variables['node']->sw_interviewees)) {
       $placeholders['%interviewee'] = sw_get_entity_label_multiple($variables['node']->sw_interviewees, 'sw_subject_label');
     }
-    foreach (['field_introduction', 'field_body_introduction'] as $intro_field) {
-      if (!empty($variables['content'][$intro_field][0]['#text'])) {
-        $variables['content'][$intro_field][0]['#text'] = strtr($variables['content'][$intro_field][0]['#text'], $placeholders);
+    if (!empty($placeholders)) {
+      foreach (['field_introduction', 'field_body_introduction'] as $intro_field) {
+        if (!empty($variables['content'][$intro_field][0]['#text'])) {
+          $variables['content'][$intro_field][0]['#text'] = strtr($variables['content'][$intro_field][0]['#text'], $placeholders);
+        }
       }
     }
     sw_load_referenced_entities($variables['node'], 'contributors', ['Drupal\taxonomy\Entity\Term', 'loadMultiple']);
@@ -192,6 +207,29 @@ function sw_preprocess_node_story(&$variables) {
     }
   }
 
+}
+
+/**
+ * Preprocess function for insert_box nodes.
+ *
+ * Replace the title (which is only for admins) with the display-appropriate title.
+ * The display title is based on insert type, and optionally header_text.
+ *
+ */
+function sw_preprocess_node_insert_box(&$variables) {
+  $insert_type = $variables['node']->get('field_insert_type')->entity;
+  $header_text = $variables['node']->get('field_header_text')->value;
+  $insert_title = $insert_type->label();
+  switch ($insert_type->id()) {
+    case SW_INSERT_BOX_TYPE_COLUMNIST_TID:
+    case SW_INSERT_BOX_TYPE_REVIEW_TID:
+    case SW_INSERT_BOX_TYPE_SERIES_TID:
+      if (!empty($header_text)) {
+        $insert_title .= ': ' . $header_text;
+      }
+      break;
+  }
+  $variables['label'] = $insert_title;
 }
 
 /**
@@ -312,15 +350,13 @@ function sw_get_story_label(NodeInterface $node, $view_mode) {
   if (empty($story_label) && !empty($story_type[0]['target_id'])) {
     switch ($story_type[0]['target_id']) {
       case SW_STORY_TYPE_INTERVIEW_TID:
-        $story_label = t('Interview: ');
+        $story_label = t('Interview');
         $target_field = 'sw_interviewees';
-        $label_func = $use_markup ? 'sw_subject_label' : 'sw_plain_label';
         break;
 
       case SW_STORY_TYPE_OBITUARY_TID:
-        $story_label = t('Obituary: ');
+        $story_label = t('Obituary');
         $target_field = 'sw_interviewees';
-        $label_func = $use_markup ? 'sw_subject_label' : 'sw_plain_label';
         break;
 
       case SW_STORY_TYPE_ROUNDTABLE_TID:
@@ -333,6 +369,20 @@ function sw_get_story_label(NodeInterface $node, $view_mode) {
     }
   }
 
+  // Some stories are set as 'Interview' or 'Obituary' that don't define a
+  // subject person. We have to handle that. If there are subject(s) defined,
+  // add ': ' to the label before their name(s).
+  if (!empty($target_field) && $target_field == 'sw_interviewees') {
+    if (empty($node->sw_interviewees)) {
+      $target_field = '';
+    }
+    else {
+      $story_label .= ': '; 
+      $label_func = $use_markup ? 'sw_subject_label' : 'sw_plain_label';
+    }
+  }
+
+  // Nothing special from section or story type, use the author(s) (if any).
   if (empty($story_label) && !empty($node->sw_authors)) {
     $target_field = 'sw_authors';
     $label_func = $use_markup ? 'sw_author_label' : 'sw_plain_label';
