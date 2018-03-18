@@ -150,7 +150,14 @@ function sw_preprocess_node(&$variables) {
  * Inject the correct story_label based on the complex logic.
  *
  * On full view mode, also rewrites introduction and body_introduction to
- * replace %author and %interviewee
+ * replace %author and %interviewee.
+ *
+ * Handles the display-friendly version of field_contributors (sorts
+ * alphabetically based on last name, adds appropriate delimiters and puts it
+ * all on a single line.).
+ *
+ * For the teaser-conditional-image view mode, hides images on stories that
+ * don't have weight -8 or lighter.
  */
 function sw_preprocess_node_story(&$variables) {
   // For any view mode, we're going to need to load the authors (and
