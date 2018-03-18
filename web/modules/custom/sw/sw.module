@@ -165,9 +165,11 @@ function sw_preprocess_node_story(&$variables) {
     if (!empty($variables['node']->sw_interviewees)) {
       $placeholders['%interviewee'] = sw_get_entity_label_multiple($variables['node']->sw_interviewees, 'sw_subject_label');
     }
-    foreach (['field_introduction', 'field_body_introduction'] as $intro_field) {
-      if (!empty($variables['content'][$intro_field][0]['#text'])) {
-        $variables['content'][$intro_field][0]['#text'] = strtr($variables['content'][$intro_field][0]['#text'], $placeholders);
+    if (!empty($placeholders)) {
+      foreach (['field_introduction', 'field_body_introduction'] as $intro_field) {
+        if (!empty($variables['content'][$intro_field][0]['#text'])) {
+          $variables['content'][$intro_field][0]['#text'] = strtr($variables['content'][$intro_field][0]['#text'], $placeholders);
+        }
       }
     }
     sw_load_referenced_entities($variables['node'], 'contributors', ['Drupal\taxonomy\Entity\Term', 'loadMultiple']);
