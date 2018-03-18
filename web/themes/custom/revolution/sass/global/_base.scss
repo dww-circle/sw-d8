@@ -33,6 +33,10 @@ h2 {
 h3 {
   font-size: 36px;
   line-height: 50px;
+
+  .view & {
+    @include title-fancy-red;
+  }
 }
 
 h4 {

@@ -168,22 +168,6 @@
   }
 }
 
-@mixin paragraph-nested-title {
-  border-top: 1px solid $c-black;
-  color: $c-black;
-  font-family: $ff-din-bold;
-  position: relative;
-  text-transform: uppercase;
-
-  &:after {
-    background: $c-black;
-    content: '';
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-}
-
 @mixin page-container {
   max-width: 1260px;
   margin: 0 auto;
@@ -212,6 +196,43 @@
     float: right;
     max-width: 340px;
     width: 34%;
+  }
+}
+
+@mixin title-fancy-black {
+  border-top: 1px solid $c-black;
+  color: $c-black;
+  font-family: $ff-din-bold;
+  position: relative;
+  text-transform: uppercase;
+
+  &:after {
+    // Add height and width of box here;
+    background: $c-black;
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+@mixin title-fancy-red {
+  border-top: 1px solid red;
+  color: red;
+  font-size: 28px;
+  font-family: $ff-din-bold;
+  line-height: 32px;
+  position: relative;
+  text-transform: uppercase;
+
+  &:after {
+    background: red;
+    content: '';
+    height: 30px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 60px;
   }
 }
 /// Apply to <ul> tag.

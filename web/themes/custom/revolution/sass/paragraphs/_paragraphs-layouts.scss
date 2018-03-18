@@ -53,12 +53,12 @@
 
 .story--teaser-image-medium {
   img {
+    height: auto;
     float: left;
     margin-right: 30px;
     width: 192px;
 
     @include breakpoint($desktop) {
-      float: none;
       max-width: 95%;
       width: 290px;
     }

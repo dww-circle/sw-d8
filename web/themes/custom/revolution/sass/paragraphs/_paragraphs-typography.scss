@@ -1,22 +1,6 @@
 // Slice Title
 .slice-title {
-  border-top: 1px solid red;
-  color: red;
-  font-size: 28px;
-  font-family: $ff-din-bold;
-  line-height: 32px;
-  position: relative;
-  text-transform: uppercase;
-
-  &:after {
-    background: red;
-    content: '';
-    height: 30px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 60px;
-  }
+  @include title-fancy-red;
 }
 
 // Slice Date.
@@ -137,7 +121,7 @@ h4 {
 .column-left {
   .paragraph--type--nested {
     .field--name-field-display-title {
-      @include paragraph-nested-title;
+      @include title-fancy-black;
       border-width: 1px;
       font-size: 20px;
       line-height: 25px;
@@ -153,7 +137,7 @@ h4 {
 
 .column-right {
   .weekend-also {
-    @include paragraph-nested-title;
+    @include title-fancy-black;
     border-width: 4px;
     font-size: 30px;
     line-height: 40px;
