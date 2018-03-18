@@ -21,11 +21,12 @@ mode: default
 content:
   field_ad_right:
     weight: 6
-    label: above
+    label: hidden
     settings:
-      link: true
+      view_mode: embed
+      link: false
     third_party_settings: {  }
-    type: entity_reference_label
+    type: entity_reference_entity_view
     region: content
   field_date:
     weight: 1
