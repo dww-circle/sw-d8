@@ -1,0 +1,36 @@
+uuid: 5d429e58-1615-4e1d-a4d5-2daa4fdce5d3
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - node
+    - sw
+  theme:
+    - revolution
+id: sw_further_reading
+theme: revolution
+region: sidebar
+weight: -3
+provider: null
+plugin: sw_further_reading_block
+settings:
+  id: sw_further_reading_block
+  label: 'Further reading'
+  provider: sw
+  label_display: visible
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      story: story
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  node_type:
+    id: node_type
+    bundles:
+      story: story
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
