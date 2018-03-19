@@ -333,8 +333,8 @@ function sw_migrate_find_first_dme_img($body) {
  *   The appropriate value for field_body in SW 3.0 (D8).
  */
 function sw_migrate_rewrite_story_body($sw2_body) {
-  // Replace 1 or more instances of '- ' and an optional trailing '-' with '<hr />':
-  $sw2_body = preg_replace('#(- )+(-)?#', '<hr />', $sw2_body);
+  // Replace 3 or more instances of '- ' and an optional trailing '-' with '<hr />':
+  $sw2_body = preg_replace('#(- ){3,}(-)?#', '<hr />', $sw2_body);
 
   // Split the body into an array for easier DME tag re-positioning.
   // We split on 2 line breaks (\R matches \n, \r or \r\n).
