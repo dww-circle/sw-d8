@@ -44,11 +44,12 @@
   .social-links {
     @include breakpoint($desktop) {
       display: block;
+      padding: 0;
+      margin: 5px 0 0 0;
     }
   }
 
-  li,
-  a {
+  li {
     @include breakpoint($desktop) {
       display: block;
     }
@@ -64,11 +65,10 @@
     }
   }
 
-  li,
-  a {
+  li {
     @include breakpoint($desktop) {
       display: inline-block;
-      margin: 0 50px;
+      margin: 0 10px;
     }
   }
 }
@@ -85,8 +85,7 @@
     display: block;
     text-align: center;
 
-    li,
-    a {
+    li {
       display: inline-block;
       margin: 0 10px;
     }
