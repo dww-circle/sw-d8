@@ -23,6 +23,7 @@
   margin-bottom: 20px;
 }
 
+.teaser-conditional-with-image,
 .story--teaser-image-medium,
 .story--teaser-image-large {
   margin-bottom: 35px;
@@ -51,14 +52,21 @@
   }
 }
 
-.story--teaser-image-medium {
+/*
+@Todo story styles are general now. Should be moved to node/story...
+*/
+
+.story--teaser-image-medium,
+.teaser-conditional-with-image {
   img {
     height: auto;
     float: left;
+    margin-bottom: 15px;
     margin-right: 30px;
     width: 192px;
 
     @include breakpoint($desktop) {
+      margin-bottom: 0;
       max-width: 95%;
       width: 290px;
     }
