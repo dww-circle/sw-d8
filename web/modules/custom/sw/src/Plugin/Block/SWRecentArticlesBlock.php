@@ -26,20 +26,49 @@ class SWRecentArticlesBlock extends BlockBase {
     $dates = $this->getRecentPublicationDates();
     $all_articles = $this->findRecentArticles($dates);
 
-    $date_tabs = [];
+    $articles_by_date = [];
     foreach ($all_articles as $nid => $article) {
-      if (empty($date_tabs[$article->created_day])) {
-        $date_tabs[$article->created_day] = [
-          '#markup' => $this->getTabLabel($article->created_day),
-        ];
-      }
-      $date_tabs[$article->created_day]['children'][] = $this->buildArticleRenderArray($article);
+      $articles_by_date[$article->created_day][] = $this->buildArticleRenderArray($article);
+    }
+
+    $date_labels = [];
+    $date_tabs = [];
+    foreach ($articles_by_date as $pub_date => $articles) {
+      $tab_id = 'recent-articles-tab-' . $pub_date;
+      $label_id = 'recent-articles-date-' . $pub_date;
+      $date_labels[$pub_date] = [
+        '#markup' => '<a id="' . $label_id . '" href="#" class="recent-articles-date">' . $this->getTabLabel($pub_date) . '</a>',
+      ];
+      $date_tabs[$pub_date] = [
+        '#theme' => 'item_list',
+        '#list_type' => 'ul',
+        '#wrapper_attributes' => [
+          'class' => 'recent-articles-tab js-hide',
+          'id' => $tab_id,
+        ],
+        '#items' => $articles,
+      ];
     }
 
     return [
-      '#theme' => 'item_list',
-      '#list_type' => 'ul',
-      '#items' => $date_tabs,
+      'labels' => [
+        '#theme' => 'item_list',
+        '#list_type' => 'ul',
+        '#items' => $date_labels,
+        '#wrapper_attributes' => [
+          'class' => 'recent-articles-dates',
+        ],
+      ],
+      'dates' => [
+        '#prefix' => '<div class="recent-articles-tabs">',
+        'children' => $date_tabs,
+        '#suffix' => '</div>',
+      ],
+      '#attached' => [
+        'library' => [
+          'sw/recent-articles',
+        ],
+      ],
     ];
   }
 

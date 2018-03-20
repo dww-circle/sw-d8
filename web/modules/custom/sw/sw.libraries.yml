@@ -1,0 +1,10 @@
+recent-articles:
+  version: VERSION
+  css:
+    component:
+      css/sw.recent-articles.css: {}
+  js:
+    js/sw.recent-articles.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
