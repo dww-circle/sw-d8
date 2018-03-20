@@ -4,6 +4,8 @@ namespace Drupal\sw\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
 use Drupal\Core\Url;
+use Drupal\node\Entity\Node;
+use Drupal\node\NodeInterface;
 
 /**
  * A site-wide block for recent articles.
@@ -88,11 +90,24 @@ class SWRecentArticlesBlock extends BlockBase {
    *   The render array to display the specific article.
    */
   protected function buildArticleRenderArray($article) {
+    // @todo: If we denormalize the story_label into a separate field, we
+    // don't need to incur the cost of all the full entity loads here.
+    $node = \Drupal\node\Entity\Node::load($article->nid);
+    foreach (['authors', 'interviewees'] as $field_id) {
+      sw_load_referenced_entities($node, $field_id, ['Drupal\node\Entity\Node', 'loadMultiple']);
+    }
     return [
+      'story_label' => [
+        '#markup' => sw_get_story_label($node, 'teaser'),
+        '#prefix' => '<div class="story-label">',
+        '#suffix' => '</div>',
+      ],
       'headline' => [
         '#type' => 'link',
         '#title' => $article->title,
         '#url' => new Url('entity.node.canonical', ['node' => $article->nid]),
+        '#prefix' => '<div class="headline">',
+        '#suffix' => '</div>',
       ],
     ];
   }
