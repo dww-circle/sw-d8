@@ -69,6 +69,9 @@ class SWRecentArticlesBlock extends BlockBase {
           'sw/recent-articles',
         ],
       ],
+      '#cache' => [
+        'tags' => ['node_list'],
+      ],
     ];
   }
 
