@@ -125,19 +125,20 @@ class SWRecentArticlesBlock extends BlockBase {
     foreach (['authors', 'interviewees'] as $field_id) {
       sw_load_referenced_entities($node, $field_id, ['Drupal\node\Entity\Node', 'loadMultiple']);
     }
+    $node_url = new Url('entity.node.canonical', ['node' => $article->nid]);
     return [
+      '#prefix' => '<a href="' . $node_url->toString() . '">',
       'story_label' => [
         '#markup' => sw_get_story_label($node, 'teaser'),
         '#prefix' => '<div class="story-label">',
         '#suffix' => '</div>',
       ],
       'headline' => [
-        '#type' => 'link',
-        '#title' => $article->title,
-        '#url' => new Url('entity.node.canonical', ['node' => $article->nid]),
+        '#markup' => $article->title,
         '#prefix' => '<div class="headline">',
         '#suffix' => '</div>',
       ],
+      '#suffix' => '</a>',
     ];
   }
 
