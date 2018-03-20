@@ -736,6 +736,10 @@ select {
     text-decoration: none; }
   .block-sw-recent-articles-block .recent-articles-tabs a:hover .headline {
     color: #ff0000; }
+  .block-sw-recent-articles-block .recent-articles-tabs a:visited .headline {
+    color: #725c5f; }
+  .block-sw-recent-articles-block .recent-articles-tabs a:visited:hover .headline {
+    color: #72726c; }
   .block-sw-recent-articles-block .recent-articles-tabs .story-label {
     font-size: 12px;
     line-height: 14px;

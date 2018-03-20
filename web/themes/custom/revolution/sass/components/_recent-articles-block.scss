@@ -61,6 +61,12 @@
     a:hover .headline {
       color: $c-red;
     }
+    a:visited .headline {
+      color: #725c5f;
+    }
+    a:visited:hover .headline {
+      color: #72726c;
+    }
     .story-label {
       font-size: 12px;
       line-height: 14px;
