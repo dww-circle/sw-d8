@@ -1,7 +1,7 @@
 .block-sw-recent-articles-block .recent-articles-dates ul li {
   list-style: none;
   display: inline-block;
-  margin: 0 5px;
+  margin: 0 0.5em;
 }
 
 .block-sw-recent-articles-block .recent-articles-tabs ul li {
@@ -9,4 +9,15 @@
   display: block;
   margin: 0;
   padding: 0;
+}
+
+.block-sw-recent-articles-block .recent-articles-tabs h3 {
+  font-size: 14px;
+  line-height: 16px;
+  margin: 0 0 1em 0;
+  padding: 0;
+}
+
+.block-sw-recent-articles-block .recent-articles-tabs .recent-articles-tab {
+  margin-bottom: 2em;
 }
