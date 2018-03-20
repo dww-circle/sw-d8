@@ -686,6 +686,72 @@ select {
   .pager a.is-active, .pager a:active, .pager a.active-trail {
     color: #1A272E; }
 
+.block-sw-recent-articles-block {
+  border-bottom: 1px solid #bbb;
+  padding-bottom: 20px;
+  margin-bottom: 20px; }
+  .block-sw-recent-articles-block h2 {
+    border-top: 1px solid #1A272E;
+    color: #1A272E;
+    font-family: "FF DIN Pro Bold", sans-serif;
+    position: relative;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0; }
+    .block-sw-recent-articles-block h2:after {
+      background: #1A272E;
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0; }
+    .block-sw-recent-articles-block h2:after {
+      height: 40px;
+      width: 20px; }
+  .block-sw-recent-articles-block .recent-articles-dates {
+    font-size: 15px;
+    line-height: 20px;
+    border-bottom: 1px solid #bbb;
+    margin-bottom: 15px; }
+    .block-sw-recent-articles-block .recent-articles-dates a {
+      color: #1A272E;
+      text-decoration: none; }
+    .block-sw-recent-articles-block .recent-articles-dates a.active {
+      color: #ff0000; }
+    .block-sw-recent-articles-block .recent-articles-dates a:hover {
+      color: #ff0000; }
+    .block-sw-recent-articles-block .recent-articles-dates ul {
+      margin: 0;
+      padding: 0; }
+      .block-sw-recent-articles-block .recent-articles-dates ul li {
+        display: inline-block;
+        list-style: none;
+        margin: 0;
+        padding: 0; }
+        .block-sw-recent-articles-block .recent-articles-dates ul li a {
+          width: 53px;
+          display: block;
+          text-align: center;
+          font-family: "FF DIN Pro Regular", sans-serif; }
+  .block-sw-recent-articles-block .recent-articles-tabs a {
+    text-decoration: none; }
+  .block-sw-recent-articles-block .recent-articles-tabs a:hover .headline {
+    color: #ff0000; }
+  .block-sw-recent-articles-block .recent-articles-tabs .story-label {
+    font-size: 12px;
+    line-height: 14px;
+    margin: 0; }
+  .block-sw-recent-articles-block .recent-articles-tabs .headline {
+    color: #1A272E;
+    font-size: 16px;
+    line-height: 18px;
+    font-family: "FF DIN Pro Medium", sans-serif; }
+  .block-sw-recent-articles-block .recent-articles-tabs ul {
+    margin: 0;
+    padding: 0; }
+    .block-sw-recent-articles-block .recent-articles-tabs ul li {
+      list-style: none;
+      margin: 0 0 15px 0; }
+
 .social-links {
   display: -webkit-flex;
   display: -ms-flexbox;

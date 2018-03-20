@@ -1,0 +1,84 @@
+.block-sw-recent-articles-block {
+  h2 {
+    @include title-fancy-black;
+    &:after {
+      height: 40px;
+      width: 20px;
+    }
+    margin: 0;
+    padding: 0;
+  }
+
+  border-bottom: 1px solid #bbb;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  
+  .recent-articles-dates {
+    font-size: 15px;
+    line-height: 20px;
+    border-bottom: 1px solid #bbb;
+    margin-bottom: 15px;
+    a {
+      color: $c-black;
+      text-decoration: none;
+    }
+    a.active {
+      color: $c-red;
+    }
+    a:hover {
+      color: $c-red;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        display: inline-block;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        // Instead of relying on padding/margins, set the <a> to a fixed width.
+        // This gives reliable and consistent results regardless of the width
+        // of the specific dates we're showing (e.g. 10/30 vs. 1/7).
+        // A wide <a> (vs. <li>) gives a larger target (especially on mobile).
+        // Since this block appears in a 320px wide sidebar, and we're showing
+        // 6 date links, each link can by 53px wide (with 2px to spare). ;)
+        a {
+          width: 53px;
+          display: block;
+          // Centering the text w/n the link seems more natural, even though
+          // it doesn't match the comp (which wants the 1st date flush left).
+          text-align: center;
+          font-family: $ff-din-regular;
+        }
+      }
+    }
+  }
+
+  .recent-articles-tabs {
+    a {
+      text-decoration: none;
+    }
+    a:hover .headline {
+      color: $c-red;
+    }
+    .story-label {
+      font-size: 12px;
+      line-height: 14px;
+      margin: 0;
+    }
+    .headline {
+      color: $c-black;
+      font-size: 16px;
+      line-height: 18px;
+      font-family: $ff-din-medium;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        list-style: none;
+        margin: 0 0 15px 0;
+      }
+    }
+  }
+}
