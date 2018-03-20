@@ -14,3 +14,13 @@
   margin-top: 2px;
   padding: 6px;
 }
+
+.view-sw-admin-find-image tbody td {
+  padding: 5px;
+}
+
+.view-sw-admin-find-image tbody .views-field-nothing,
+.view-sw-admin-find-insert-box tbody .views-field-nothing {
+  font-size: 10px;
+}
+
