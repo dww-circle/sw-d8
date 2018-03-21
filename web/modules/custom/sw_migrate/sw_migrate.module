@@ -323,7 +323,7 @@ function sw_migrate_find_first_dme_img($body) {
 /**
  * Migrate callback function to rewrite the D6 body field on story nodes.
  *
- * Currently, this only rewrites long chains of '- - -'... into <hr /> tags.
+ * Currently, this only rewrites long chains of '- - -'... into <hr> tags.
  * @todo: Rewrite and move <dme:*> tags into something else.
  *
  * @param string $sw2_body
@@ -333,8 +333,8 @@ function sw_migrate_find_first_dme_img($body) {
  *   The appropriate value for field_body in SW 3.0 (D8).
  */
 function sw_migrate_rewrite_story_body($sw2_body) {
-  // Replace 3 or more instances of '- ' and an optional trailing '-' with '<hr />':
-  $sw2_body = preg_replace('#(- ){3,}(-)?#', '<hr />', $sw2_body);
+  // Replace 3 or more instances of '- ' and an optional trailing '-' with '<hr>':
+  $sw2_body = preg_replace('#(- ){3,}(-)?#', '<hr>', $sw2_body);
 
   // Split the body into an array for easier DME tag re-positioning.
   // We split on 2 line breaks (\R matches \n, \r or \r\n).
@@ -369,7 +369,7 @@ function sw_migrate_rewrite_story_body($sw2_body) {
     }
     else {
       $sw3_body[] = $para;
-      if ($para !== '<hr />') {
+      if ($para !== '<hr>') {
         $current_embed_offset++;
       }
     }
