@@ -735,10 +735,16 @@ select {
         margin: 0;
         padding: 0; }
         .block-sw-recent-articles-block .recent-articles-dates ul li a {
-          width: 53px;
+          width: 50px;
           display: block;
           text-align: center;
           font-family: "FF DIN Pro Regular", sans-serif; }
+          @media (min-width: 540px) {
+            .block-sw-recent-articles-block .recent-articles-dates ul li a {
+              width: 55px; } }
+          @media (min-width: 961px) {
+            .block-sw-recent-articles-block .recent-articles-dates ul li a {
+              width: 53px; } }
   .block-sw-recent-articles-block .recent-articles-tabs a {
     text-decoration: none; }
   .block-sw-recent-articles-block .recent-articles-tabs a:hover .headline {

@@ -40,11 +40,20 @@
         // This gives reliable and consistent results regardless of the width
         // of the specific dates we're showing (e.g. 10/30 vs. 1/7).
         // A wide <a> (vs. <li>) gives a larger target (especially on mobile).
-        // Since this block appears in a 320px wide sidebar, and we're showing
-        // 6 date links, each link can by 53px wide (with 2px to spare). ;)
+        // At very small screens (320px), plus padding, so we only want 50px.
+        // Normal handhelds and tablets can be more spacious, so we use 55px.
+        // Otherwise, since this block appears in a 320px wide sidebar, and
+        // we're showing 6 date links, each link can be 53px wide
+        // (with 2px to spare). ;)
         a {
-          width: 53px;
+          width: 50px;
           display: block;
+          @include breakpoint($handheld) {
+            width: 55px;
+          }
+          @include breakpoint($desktop) {
+            width: 53px;
+          }
           // Centering the text w/n the link seems more natural, even though
           // it doesn't match the comp (which wants the 1st date flush left).
           text-align: center;
