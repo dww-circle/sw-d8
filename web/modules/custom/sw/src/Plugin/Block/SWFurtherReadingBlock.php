@@ -45,6 +45,11 @@ class SWFurtherReadingBlock extends BlockBase {
       return $block;
     }
 
+    // If we got this far, the block is going to be generated. Add a cache tag
+    // for the specific node so the system will invalidate it whenever that
+    // story is updated.
+    $block['#cache']['tags'][] = 'node:' . $node->id();
+
     // view_builder = \Drupal::entityManager()->getViewBuilder('node');
     return [
       '#title' => $this->t('Further reading'),
