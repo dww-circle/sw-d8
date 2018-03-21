@@ -138,9 +138,13 @@ blockquote {
 main {
   max-width: 1260px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 10px;
   width: 100%; }
-  @media (min-width: 961px) {
+  @media (min-width: 540px) {
+    .page-container,
+    main {
+      padding: 0 15px; } }
+  @media (min-width: 821px) {
     .page-container,
     main {
       padding: 0 60px; } }
@@ -181,9 +185,12 @@ main {
   .footer-wrapper .block {
     max-width: 1260px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 10px;
     width: 100%; }
-    @media (min-width: 961px) {
+    @media (min-width: 540px) {
+      .footer-wrapper .block {
+        padding: 0 15px; } }
+    @media (min-width: 821px) {
       .footer-wrapper .block {
         padding: 0 60px; } }
     @media (min-width: 961px) {
