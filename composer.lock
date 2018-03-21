@@ -1869,16 +1869,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.5.0-rc1",
+            "version": "8.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "a8897035912d10ecd7930ab15ee1b229746f3db9"
+                "reference": "0b9070370e272da441b4be52561c559c05f4553d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/a8897035912d10ecd7930ab15ee1b229746f3db9",
-                "reference": "a8897035912d10ecd7930ab15ee1b229746f3db9",
+                "url": "https://api.github.com/repos/drupal/core/zipball/0b9070370e272da441b4be52561c559c05f4553d",
+                "reference": "0b9070370e272da441b4be52561c559c05f4553d",
                 "shasum": ""
             },
             "require": {
@@ -1920,7 +1920,7 @@
                 "symfony/serializer": "~3.4.0",
                 "symfony/translation": "~3.4.0",
                 "symfony/validator": "~3.4.0",
-                "symfony/yaml": "~3.4.0",
+                "symfony/yaml": "~3.4.5",
                 "twig/twig": "^1.35.0",
                 "zendframework/zend-diactoros": "^1.1",
                 "zendframework/zend-feed": "^2.4"
@@ -2103,7 +2103,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2018-02-21T17:08:11+00:00"
+            "time": "2018-03-07T21:10:20+00:00"
         },
         {
             "name": "drupal/ctools",
@@ -5911,16 +5911,16 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v3.4.4",
+            "version": "v3.4.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "eab73b6c21d27ae4cd037c417618dfd4befb0bfe"
+                "reference": "6af42631dcf89e9c616242c900d6c52bd53bd1bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/eab73b6c21d27ae4cd037c417618dfd4befb0bfe",
-                "reference": "eab73b6c21d27ae4cd037c417618dfd4befb0bfe",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/6af42631dcf89e9c616242c900d6c52bd53bd1bb",
+                "reference": "6af42631dcf89e9c616242c900d6c52bd53bd1bb",
                 "shasum": ""
             },
             "require": {
@@ -5965,7 +5965,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2018-01-21T19:05:02+00:00"
+            "time": "2018-02-16T09:50:28+00:00"
         },
         {
             "name": "twig/twig",
@@ -6034,16 +6034,16 @@
         },
         {
             "name": "webflo/drupal-core-strict",
-            "version": "8.5.0-rc1",
+            "version": "8.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webflo/drupal-core-strict.git",
-                "reference": "43a9f583f6775f1708c00027b71f0b3f2ade80ef"
+                "reference": "75aa7f11c667ae28a59a70322475a5f35925781e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webflo/drupal-core-strict/zipball/43a9f583f6775f1708c00027b71f0b3f2ade80ef",
-                "reference": "43a9f583f6775f1708c00027b71f0b3f2ade80ef",
+                "url": "https://api.github.com/repos/webflo/drupal-core-strict/zipball/75aa7f11c667ae28a59a70322475a5f35925781e",
+                "reference": "75aa7f11c667ae28a59a70322475a5f35925781e",
                 "shasum": ""
             },
             "require": {
@@ -6084,7 +6084,7 @@
                 "symfony/serializer": "v3.4.4",
                 "symfony/translation": "v3.4.4",
                 "symfony/validator": "v3.4.4",
-                "symfony/yaml": "v3.4.4",
+                "symfony/yaml": "v3.4.5",
                 "twig/twig": "v1.35.0",
                 "wikimedia/composer-merge-plugin": "v1.4.1",
                 "zendframework/zend-diactoros": "1.4.1",
@@ -6133,7 +6133,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Locked core dependencies",
-            "time": "2018-02-21T18:00:43+00:00"
+            "time": "2018-03-07T21:30:40+00:00"
         },
         {
             "name": "webflo/drupal-finder",
