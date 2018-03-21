@@ -22,10 +22,34 @@ class SWFurtherReadingBlock extends BlockBase {
    * {@inheritdoc}
    */
   public function build() {
+    // This block must be cached separately for every page/route. Define this
+    // render array here so that if we bail early, the render system knows to
+    // only cache the empty response for the specific route that generated it.
+    $block = [
+      '#cache' => [
+        'contexts' => ['route'],
+      ],
+    ];
+
+    $node = \Drupal::routeMatch()->getParameter('node');
+    if (! $node instanceof \Drupal\node\NodeInterface) {
+      return $block;
+    }
+
+    if ($node->bundle() != 'story') {
+      return $block;
+    }
+
+    $topic = $node->get('field_topic')->getValue();
+    if (empty($topic[0]['target_id']) || $topic[0]['target_id'] == SW_TOPIC_NONE_TID) {
+      return $block;
+    }
+
+    // view_builder = \Drupal::entityManager()->getViewBuilder('node');
     return [
       '#title' => $this->t('Further reading'),
-      '#markup' => 'Further: dww was here',
-    ];
+      '#markup' => 'Further reading for ' . $node->label(),
+    ] + $block;
   }
 
 }
