@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "1a7d3b658997ff58b550fd6c0203bc13",
+    "content-hash": "63dab615994443c64100bb45b9266b45",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1222,6 +1222,53 @@
                 "issues": "https://www.drupal.org/project/issues/auto_entitylabel"
             },
             "time": "2017-11-13 10:50:28"
+        },
+        {
+            "name": "drupal/bueditor",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/bueditor",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/bueditor-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "a6266c058e57bd04106837f3ec632b42033442fe"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1494778385",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "ufku",
+                    "homepage": "https://www.drupal.org/user/9910"
+                }
+            ],
+            "description": "Provides a customizable text editor.",
+            "homepage": "https://drupal.org/project/bueditor",
+            "support": {
+                "source": "http://cgit.drupalcode.org/bueditor"
+            }
         },
         {
             "name": "drupal/chosen",
