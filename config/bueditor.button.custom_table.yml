@@ -1,0 +1,15 @@
+uuid: 4e284a29-8173-4351-be26-b22eacb001c4
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: UeEBoLgKXnu9Uol-LBIfAwynxN7-h-Wgic4N8fHik3c
+id: custom_table
+label: Table
+tooltip: 'Insert table'
+text: null
+cname: ficon-table
+shortcut: null
+code: "js:\n// Form fields\nvar fields = [\n  {type: 'number', value: 2, required: true, attributes: {min: 1}, name: 'rows', title: 'Rows'},\n  {type: 'number', value: 2, required: true, attributes: {min: 1}, name: 'cols', title: 'Columns'}\n];\n// Submit handler\nvar submitHandler = function(htmlObj, Popup, E) {\n  // Get number of cols and rows.\n  var i, attr = htmlObj.attributes, cols = Math.max(attr.cols * 1, 1), rows = Math.max(attr.rows * 1, 1);\n  // Prevent them to be printed as attribute values.\n  attr.cols = attr.rows = null;\n  // Create cells\n  var cells = '';\n  for (i = 0; i < cols; i++) {\n    cells += '\\n    ' + BUE.html('td', 'Data' + (i + 1));\n  }\n  // Create table body\n  var body = '';\n  for (i = 0; i < rows; i++) {\n    body += '\\n  ' + BUE.html('tr', cells + '\\n  ', {'class': i % 2 ? 'even' : 'odd'});\n  }\n  body = BUE.html('tbody', body + '\\n');\n  // Create table head\n  var head = BUE.html('thead', '\\n  '+ BUE.html('tr', cells.replace(/td/g, 'th').replace(/Data/g, 'Header') + '\\n  ') + '\\n');\n  // Create the table\n  var table = BUE.html('table', '\\n' + head + '\\n' + body + '\\n', attr);\n  // Insert\n  E.setSelection(table, 'end');\n};\n// Open tag dialog\nE.tagDialog('custom_table', fields, {title: 'Insert table', submit: submitHandler});\n"
+template: null
+libraries: {  }

@@ -1,0 +1,27 @@
+uuid: 63c7f70c-eb6b-47b4-9a18-93f85b4b7da9
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Y44BTYpgzg2SH7CVZmFcbTOiBAm9ThPdkBOXZJ_FTx4
+id: basic_html
+label: 'Basic HTML'
+description: 'Editor for Basic HTML text format.'
+settings:
+  toolbar:
+    - bold
+    - italic
+    - '-'
+    - h4
+    - h5
+    - h6
+    - '-'
+    - quote
+    - code
+    - '-'
+    - ul
+    - ol
+    - '-'
+    - image
+    - link
+  acTags: true

@@ -1,0 +1,36 @@
+uuid: 44e332ba-c58e-4d86-b447-824cf7345e3c
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: rxgvc7yF5J_7dK1z82bHwLQmlbL-rd3PZ1Wweg3cfiY
+id: test
+label: Test
+description: 'Test editor'
+settings:
+  toolbar:
+    - bold
+    - italic
+    - underline
+    - strike
+    - '-'
+    - h1
+    - h2
+    - h3
+    - h4
+    - h5
+    - h6
+    - /
+    - quote
+    - code
+    - ul
+    - ol
+    - image
+    - link
+    - undo
+    - redo
+    - custom_headings
+    - custom_table
+    - xpreview
+  acTags: true
+  indent: true
