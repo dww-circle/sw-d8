@@ -368,7 +368,10 @@ function sw_migrate_rewrite_story_body($sw2_body) {
       }
     }
     else {
-      $sw3_body[] = $para;
+      // If a paragraph begins with optional whitespace, exactly two hyphens,
+      // and more optional whitespace, replace all that with the bullet point
+      // span and a single space.
+      $sw3_body[] = preg_replace('#^(\s*--\s*)#', '<span class="bullet"></span> ', $para);
       if ($para !== '<hr>') {
         $current_embed_offset++;
       }
