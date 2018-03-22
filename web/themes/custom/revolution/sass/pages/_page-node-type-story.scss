@@ -14,7 +14,6 @@
     margin-bottom: 26px;
   }
 
-  .field--name-field-body-introduction,
   .field--name-field-introduction {
     font-style: italic;
   }
@@ -22,6 +21,21 @@
   .sw-subject,
   .sw-author {
     font-weight: bold;
+  }
+
+  .field--name-field-body-introduction {
+    font-family: $ff-din-regular;
+    font-size: 17px;
+    line-height: 24px;
+    border-bottom: 1px solid #808080;
+    margin-bottom: 15px;
+    b,
+    strong,
+    .sw-subject,
+    .sw-author {
+      font-family: $ff-din-bold;
+      font-weight: normal;
+    }
   }
 
   .field--name-created {

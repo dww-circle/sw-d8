@@ -571,13 +571,25 @@ main {
 .page-node-type-story .page-title {
   margin-bottom: 26px; }
 
-.page-node-type-story .field--name-field-body-introduction,
 .page-node-type-story .field--name-field-introduction {
   font-style: italic; }
 
 .page-node-type-story .sw-subject,
 .page-node-type-story .sw-author {
   font-weight: bold; }
+
+.page-node-type-story .field--name-field-body-introduction {
+  font-family: "FF DIN Pro Regular", sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+  border-bottom: 1px solid #808080;
+  margin-bottom: 15px; }
+  .page-node-type-story .field--name-field-body-introduction b,
+  .page-node-type-story .field--name-field-body-introduction strong,
+  .page-node-type-story .field--name-field-body-introduction .sw-subject,
+  .page-node-type-story .field--name-field-body-introduction .sw-author {
+    font-family: "FF DIN Pro Bold", sans-serif;
+    font-weight: normal; }
 
 .page-node-type-story .field--name-created {
   border-bottom: 1px solid #808080;
