@@ -20,20 +20,31 @@ body {
 
 // h1-h6
 h1  {
-  font-size: 45px;
-  line-height: 55px;
+  font-size: 30px;
+  line-height: 40px;
+  @include breakpoint($tablet) {
+    font-size: 45px;
+    line-height: 55px;
+  }
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 26px;
+  line-height: 40px;
   font-weight: bold;
-  line-height: 48px;
+  @include breakpoint($tablet) {
+    font-size: 32px;
+    line-height: 48px;
+  }
 }
 
 h3 {
-  font-size: 36px;
-  line-height: 50px;
-
+  font-size: 24px;
+  line-height: 40px;
+  @include breakpoint($tablet) {
+    font-size: 36px;
+    line-height: 50px;
+  }
   .view & {
     @include title-fancy-red;
   }
@@ -172,9 +183,23 @@ main {
 
 .page-title {
   font-family: $ff-din-bold;
-  font-size: 60px;
-  letter-spacing: -2px;
   text-transform: uppercase;
+  font-size: 30px;
+  line-height: 40px;
+  letter-spacing: -1px;
+  @include breakpoint($handheld) {
+    font-size: 40px;
+    line-height: 45px;
+  }
+  @include breakpoint($tablet) {
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: -2px;
+  }
+  @include breakpoint($desktop) {
+    font-size: 60px;
+    line-height: 55px;
+  }
 }
 
 .region-content,
