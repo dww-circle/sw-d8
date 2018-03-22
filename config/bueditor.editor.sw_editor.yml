@@ -1,0 +1,27 @@
+uuid: 4c2a96d7-12f6-4ead-bf05-99b498984855
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Y44BTYpgzg2SH7CVZmFcbTOiBAm9ThPdkBOXZJ_FTx4
+id: sw_editor
+label: 'SW editor'
+description: 'Editor SW staff'
+settings:
+  toolbar:
+    - bold
+    - italic
+    - '-'
+    - h2
+    - h3
+    - '-'
+    - quote
+    - '-'
+    - ul
+    - ol
+    - '-'
+    - link
+  cname: ''
+  indent: false
+  acTags: true
+  fileBrowser: ''
