@@ -1,0 +1,13 @@
+uuid: 56e14d03-c657-4700-bebe-40d5b7a2d800
+langcode: en
+status: true
+dependencies: {  }
+id: custom_sw_hr
+label: 'SW hr'
+tooltip: 'Horizontal rule'
+text: '&#x254C;'
+cname: ''
+shortcut: ''
+code: "<hr>\r\n"
+template: ''
+libraries: {  }

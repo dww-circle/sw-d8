@@ -1,0 +1,13 @@
+uuid: c5b0fa50-3d91-42bc-a837-5d978f476820
+langcode: en
+status: true
+dependencies: {  }
+id: custom_sw_bullet_box
+label: 'SW bullet box'
+tooltip: 'Bullet span'
+text: '&#x25A0;'
+cname: ''
+shortcut: ''
+code: '<span class="bullet"></span>'
+template: ''
+libraries: {  }

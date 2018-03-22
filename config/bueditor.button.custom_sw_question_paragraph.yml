@@ -1,0 +1,13 @@
+uuid: d696378c-5814-4b09-af00-9979d200c816
+langcode: en
+status: true
+dependencies: {  }
+id: custom_sw_question_paragraph
+label: 'SW question paragraph'
+tooltip: 'Question paragraph'
+text: '?'
+cname: ''
+shortcut: ''
+code: '<p class="question">|</p>'
+template: ''
+libraries: {  }

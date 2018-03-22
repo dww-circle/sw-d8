@@ -6,21 +6,26 @@ _core:
   default_config_hash: Y44BTYpgzg2SH7CVZmFcbTOiBAm9ThPdkBOXZJ_FTx4
 id: sw_editor
 label: 'SW editor'
-description: 'Editor SW staff'
+description: 'Editor for SW staff'
 settings:
   toolbar:
+    - link
     - bold
     - italic
+    - '-'
+    - quote
+    - custom_sw_question_paragraph
+    - custom_sw_bullet_box
+    - custom_sw_hr
     - '-'
     - h2
     - h3
     - '-'
-    - quote
-    - '-'
     - ul
     - ol
     - '-'
-    - link
+    - undo
+    - redo
   cname: ''
   indent: false
   acTags: true
