@@ -119,6 +119,15 @@ blockquote {
   font-size: 90%;
 }
 
+span.bullet {
+  background: $c-red;
+  content: ' ';
+  height: 10px;
+  width: 10px;
+  margin: 0 5px 0 0;
+  display: inline-block;
+}
+
 .marker {
   background: black;
   color: white;
