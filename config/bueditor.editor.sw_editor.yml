@@ -18,6 +18,9 @@ settings:
     - custom_sw_bullet_box
     - custom_sw_hr
     - '-'
+    - custom_sw_embed_image
+    - custom_sw_embed_insert_box
+    - '-'
     - h2
     - h3
     - '-'
