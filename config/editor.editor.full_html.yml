@@ -1,0 +1,14 @@
+uuid: 6f063082-c9b2-46b0-9bab-c8026f58713a
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+  module:
+    - bueditor
+format: full_html
+editor: bueditor
+settings:
+  default_editor: sw_editor
+  roles_editors: {  }
+image_upload: {  }

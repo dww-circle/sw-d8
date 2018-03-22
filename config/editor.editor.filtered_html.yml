@@ -1,0 +1,14 @@
+uuid: 18ee0bd7-5e07-4d97-85bc-1362b4583c0e
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.filtered_html
+  module:
+    - bueditor
+format: filtered_html
+editor: bueditor
+settings:
+  default_editor: sw_editor
+  roles_editors: {  }
+image_upload: {  }
