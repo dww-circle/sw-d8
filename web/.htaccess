@@ -150,6 +150,16 @@ AddEncoding gzip svgz
   # Copy and adapt this rule to directly execute PHP files in contributed or
   # custom modules or to run another PHP application in the same directory.
   RewriteCond %{REQUEST_URI} !/core/modules/statistics/statistics.php$
+  # Allow access to legacy SW *.php files.
+  RewriteCond %{REQUEST_URI} !/200.*\.php$
+  RewriteCond %{REQUEST_URI} !/386Pages/.*\.php$
+  RewriteCond %{REQUEST_URI} !/ArticleSent\.php$
+  RewriteCond %{REQUEST_URI} !/Featured.*\.php$
+  RewriteCond %{REQUEST_URI} !/NewSite\.php$
+  RewriteCond %{REQUEST_URI} !/Obrero.*\.php$
+  RewriteCond %{REQUEST_URI} !/Previous.*\.php$
+  RewriteCond %{REQUEST_URI} !/Storylist\.php$
+  RewriteCond %{REQUEST_URI} !/WhatOn\.php$
   # Deny access to any other PHP files that do not match the rules above.
   # Specifically, disallow autoload.php from being served directly.
   RewriteRule "^(.+/.*|autoload)\.php($|/)" - [F]
