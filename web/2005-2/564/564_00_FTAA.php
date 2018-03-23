@@ -6,25 +6,25 @@ Bush faces protests in Argentina
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">As FTAA trade deal brakes down...</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Bush faces protests in Argentina</b></font><p>
@@ -42,12 +42,12 @@ To keep its trade initiative alive, the U.S. has been pushing a free trade area 
 The left-of-center governments that hold office in most of Latin America--with the exception of Venezuela--haven't broken with pro-business economic policy. Even so, they've had to make concessions to labor and social movements--and with presidential elections due in 12 Latin American countries by the end of 2006, few leaders are eager to line up with Bush's FTAA.<p>
 The main exception is Colombian President &Aacute;lvaro Uribe, the sort of right-wing strongman that the U.S. would like to see emerge to crack down on the left across Latin America. But as the mass protests against Bush in Argentina will show, opposition to Washington's notions of order continues to grow.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

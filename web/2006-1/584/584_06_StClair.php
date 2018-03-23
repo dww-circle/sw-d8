@@ -6,25 +6,25 @@
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Jeffrey St. Clair on the new war profiteers</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>"The system is irretrievably corrupt"</b></font><p>
@@ -105,12 +105,12 @@ Who else is going to end this war? The peace movement in the U.S. is flat on its
 There are a lot of reasons for that. For one thing, there's no draft. The war hasn't had a personal effect on most people. How many people do you know who have served or are serving in Iraq? One of my son's friends is in the Marines, and he may, at some time in the future, go to Iraq. Otherwise, the only way I come in contact with people who are immediately affected is at speaking events--with Military Families Against the War. <p>
 I don't think the peace movement is going to end the war. It probably will be ended by the Iraqi resistance--they'll boot the U.S. out of Iraq. But if it's going to be ended at all from the U.S. side, it could also be ended by this internal war inside the Pentagon. We can't have our Star Wars, our F-22, our aircraft carriers and have these petty wars in Iraq, so let's get out. <p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

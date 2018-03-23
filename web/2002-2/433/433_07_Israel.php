@@ -6,25 +6,25 @@ Sharon intensifies military attacks
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Arial, Helvetica, sans-serif" size="2"><b>ISRAEL/PALESTINE</b></font><BR>
 <font face="Times New Roman, Times, serif" size="5"><b>Sharon intensifies military attacks</b></font></P>
@@ -42,12 +42,12 @@ Sharon intensifies military attacks
 <P>But Israel's state-sponsored terrorism--the daily killings by settlers and the Israeli military and the near-constant military curfew that has imprisoned hundreds of thousands of Palestinians in their homes--hasn't shaken the massive U.S. military and economic commitment to Israel.</P>
 <P>The U.S. relies on Israel as a key strategic ally in the Middle East. We have to demand an end to U.S. support for Israel's terror while we oppose the U.S. war for oil against Iraq.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

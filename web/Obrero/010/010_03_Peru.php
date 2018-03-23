@@ -6,25 +6,25 @@ Huelga masiva paraliza a Per&uacute;
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="5"><b>Huelga masiva paraliza a Per&uacute;</b></font></P>
 <P><font face="Times New Roman, Times, serif" size="2"><b>Por Elizabeth Schulte</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | 13 de junio de 2003 | P&aacute;gina 3</font></P>
@@ -43,12 +43,12 @@ Huelga masiva paraliza a Per&uacute;
 <P>Toda Latinoam&eacute;rica ha visto una ola creciente de lucha. En febrero, los trabajadores bolivianos organizaron demostraciones inmensas contra las medidas de austeridad del gobierno. Y en diciembre de 2001, el ex-presidente argentino Fernando de la R&uacute;a fue forzado a renunciar despu&eacute;s de que declar&oacute; la ley marcial para confrontar protestas militantes.</P>
 <P>Como dijo el maestro de preparatoria Jorge Vargas en una protesta en la capital: "Si el gobierno no cambia su pol&iacute;tica de arrodillarse frente al FMI...si no mira al pueblo peruano en la cara...se va a tener que ir".</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

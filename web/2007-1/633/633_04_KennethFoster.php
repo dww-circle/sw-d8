@@ -6,25 +6,25 @@ Fighting for his life from Texas death row
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>Fighting for his life from Texas death row</b></font><p>
 <font face="Arial, Helvetica, sans-serif" size="2">May 25, 2007 | Page 4</font><p>
@@ -57,12 +57,12 @@ While news of an execution date is devastating, Kenneth and his supporters aren'
 While Perry typically ignores the demands of the anti-death penalty community, the national tide against capital punishment has made it harder for Texas to continue executing people with impunity. Recently, the state lost three major death penalty cases before the Supreme Court. National support for the death penalty continues to drop as concerns about innocence and lethal injection grow.<p>
 Kenneth's supporters hope to ride this momentum with a petition and letter-writing campaign, plus a series of rallies and public events. A broad coalition, led by Kenneth's family, the Campaign to End the Death Penalty, the ISO and other groups, intends to expose the Law of Parties for the sham that it is--and put another dent in the armor of the Texas death machine.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

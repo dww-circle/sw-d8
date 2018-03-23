@@ -6,25 +6,25 @@ Bush's recycled lies
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Arial, Helvetica, sans-serif" size="2"><b>WHAT WE THINK</b></font><br>
 <font face="Times New Roman, Times, serif" size="4">Scrambling to repackage the occupation for June 30 deadline</font><br>
@@ -43,12 +43,12 @@ Bush's recycled lies
 <P>This pathetic speech might seem like a political gift to Democratic presidential candidate John Kerry. But Kerry's program for Iraq is the same as Bush's--involve the UN, make deals with allies and send <I>more </I>troops. Because Kerry, like Bush, doesn't want to end U.S. control of Iraq, but rather repackage it in order to maintain Washington's dominance in the Middle East.</P>
 <P>The resistance in Iraq and the spreading torture scandal may upset Bush's plans sooner rather than later. But in any circumstance, one thing is clear: The killing, suffering and torture of Iraqis won't end until the U.S. gets out. The time to go is now. </P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

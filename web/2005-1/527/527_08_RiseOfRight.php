@@ -6,25 +6,25 @@ What's behind the rise of the right?
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">The truth about the conservative movement</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>What's behind the rise of the right?</b></font><p>
@@ -81,12 +81,12 @@ D.C. officials say that fund can cover $5.4 million of the cost. But as for the 
 In 2000, the District was told to find $8 million to cover Bush's inauguration. This year, the cost to D.C. is more than double that. So in addition to spending nearly $9 million on overtime pay for D.C. police, taxpaying residents are being expected to cover the cost of more than 1,000 officers being sent in from across the country, as well as $3 million to construct stands along the inaugural route.<p>
 But while D.C. residents get their pockets picked, Corporate America will be lining up to do the opposite: fling enough cash at the Bush administration to get their voices heard. As the <i>Post </i>commented, "Wall Street investment firms seeking to profit from private Social Security accounts; oil, gas and mining companies pushing the White House to revive a stalled energy-subsidy bill; and hotels and casinos seeking an influx of immigrant labor are among the 44 interests that have each given $250,000 and the 66 that have donated $100,000 to $225,000. And the money keeps pouring in."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

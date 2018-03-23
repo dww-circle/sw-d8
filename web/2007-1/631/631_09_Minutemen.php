@@ -6,25 +6,25 @@ Menaced by the Minutemen
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>Menaced by the Minutemen</b></font><p>
 <font face="Times New Roman, Times, serif" size="2"><b>By Michele Bollinger</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | May 11, 2007 | Page 9</font><p>
@@ -47,12 +47,12 @@ Froatz's connections to the group should be investigated and publicized--so that
 Froatz may be just one individual, but D.C. area activists shouldn't underestimate the threat of the far right. Recently, an arsonist attacked a day laborers' center run by the immigrant rights group CASA of Maryland in the town of Derwood.<p>
 While the far right must be confronted, we must also challenge the daily attacks on immigrants in this country from so-called "legitimate" forces--from ICE raids to the regular denunciation of "illegals" on Lou Dobbs' television program--that give confidence to fanatics like Froatz.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

@@ -6,25 +6,25 @@ The crumbling occupation
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Arial, Helvetica, sans-serif" size="2"><b>WHAT WE THINK</b></font><br>
 <font face="Times New Roman, Times, serif" size="4">Constitution meltdown highlights crisis for the U.S. in Iraq</font><br>
@@ -48,12 +48,12 @@ There is one source of relief for Bush, however: leading Democrats are embracing
 This is why it's essential not only to build the September 24 national antiwar mobilization, but to build a political current that can oppose the imperial project embraced by both parties. That means organizing around key issues that are inextricable from Washington's rule in Iraq--such as opposing Israeli rule over Palestinians and defending the civil rights of Arabs and Muslims in the U.S.<p>
 The potential is there. Cindy Sheehan, the mother of a soldier killed in Iraq, has captured the imagination of the country by seeking to confront Bush in Crawford, Texas. Now is the time for tens of thousands of people to follow her example by turning out to protest--and step up the demand to bring the troops home now.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

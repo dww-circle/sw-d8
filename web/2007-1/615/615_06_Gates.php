@@ -6,25 +6,25 @@ Sleazy investments of the Gates charity
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>Sleazy investments of the Gates charity</b></font><p>
 <font face="Times New Roman, Times, serif" size="2"><b>By Leela Yellesetty</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | January 19, 2007 | Page 6</font><p>
@@ -41,12 +41,12 @@ The <i>Times </i>feature offers poignant examples of individuals who have been h
 One example is a 14-month-old child in Nigeria who got vaccinations provided by the Gates Foundation, but suffers from the heavy pollution of oil companies that the foundation invests in. Another is an elderly Seattle couple who received housing assistance from a Gates-supported non-profit--after losing their home due to the fraudulent practices of Ameritrade, in which the Gates Foundation invests.<p>
 The Gates Foundation claims it will reassess its investment practices. But this won't fix the underlying hypocrisy of corporations that make their millions exploiting ordinary people--and then expect applause for handing us back a few crumbs.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

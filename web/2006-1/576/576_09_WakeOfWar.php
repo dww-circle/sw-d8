@@ -6,25 +6,25 @@ The face of war and occupation
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Interviews with the people of Iraq and Afghanistan</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>The face of war and occupation</b></font><p>
@@ -46,12 +46,12 @@ This is combined with small observations about everyday life that are absent fro
 Nivat succeeds in humanizing those she meets, even the most brutal. This includes a short interview with a 26-year-old former member of the Saddam Hussein's Saffa Brigade, whose job it was to murder or kidnap for "reasons of state." He counts the number of tongues and hands he cut off and is only now beginning to come to terms with his past. The interview takes place at a caf&eacute; because he does not want to expose his family to the brutal stories, who he is now trying to put before all else.<p>
 <i>The Wake of War's </i>biggest weakness is Nivat's lack of Arabic or Farsi, so she primarily interviews those who speak English, French or Russian, who are more well-educated and more prosperous than the general population. Despite this, you come away from <i>The Wake of War</i> with a sense of the humanity and difficulties faced by those under U.S. occupation, as well as the complex interactions between ethnic groups.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

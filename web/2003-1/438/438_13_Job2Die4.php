@@ -6,25 +6,25 @@ Why work is bad for your health
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="5"><b>Why work is bad for your health</b></font></P>
 <P><font face="Times New Roman, Times, serif" size="2"><b>Review by Carole Ramsden</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | January 31, 2003 | Page 13</font></P>
@@ -39,12 +39,12 @@ Why work is bad for your health
 <P>While much of the book details how workers' compensation and OSHA have been manipulated, outspent and gutted, only a small part is dedicated to a solution. While <I>A Job to Die For</I> diligently defends workers from page one, unfortunately it includes almost nothing about what workers' own organizations--unions--can do. Reliable reporting, proper media coverage and public oversight are the biggest part of Cullen's cure.</P>
 <P>The facts are in--workers unnecessarily face injury and death on the job. What's needed now is for workers to organize a resistance to these horrors in our workplaces that the employers--and the government--can't ignore.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

@@ -6,25 +6,25 @@ Will the Democrats ever fight?
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4">Why the "party of the people" signed a blank check for war</font><BR>
 <font face="Times New Roman, Times, serif" size="5"><b>Will the Democrats ever fight?</b></font></P>
@@ -63,12 +63,12 @@ Will the Democrats ever fight?
 <P>We shouldn't ignore the Democrats when some of them make antiwar statements. When Ted Kennedy uses the phrase "imperialism" to describe Bush's war plan, this is both a response to growing pressure from ordinary people--and an opportunity for us to talk to a wider audience that may have gained the confidence to speak up because the issue has been raised in the mainstream.</P>
 <P>But struggle has always been the most important factor in winning real change--not putting our faith in a politician to change the system for us. We won't stop the Bush war drive by electing Democrats to Congress--only by building the struggle against a political system that serves the rich first.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

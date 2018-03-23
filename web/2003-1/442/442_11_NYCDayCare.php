@@ -6,25 +6,25 @@ NYC day care workers take lead in fighting concessions
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="5"><b>NYC day care workers take lead in fighting concessions</b></font></P>
 <P><font face="Times New Roman, Times, serif" size="2"><b>By Michael Ware</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | February 28, 2003 | Page 11</font></P>
@@ -42,12 +42,12 @@ NYC day care workers take lead in fighting concessions
 <P>The one-day strike has already proven effective. The city had refused to bargain seriously until the union walked out. The strike illustrated who makes the city run--and the power that unions have to fight cuts to social services. </P>
 <P>A win for 1707 is a win for all working-class New Yorkers. Every union in New York has a stake in this fight, especially the city's 125,000 municipal workers. Broad solidarity and support will be needed to back Bloomberg down and force him to look elsewhere in solving the city's budget crisis--such as taxing his corporate pals on Wall St.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

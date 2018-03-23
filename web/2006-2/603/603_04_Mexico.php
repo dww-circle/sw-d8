@@ -6,25 +6,25 @@ Post-election challenge in Mexico
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Arial, Helvetica, sans-serif" size="2"><b>READING BETWEEN THE LINES</b></font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Post-election challenge in Mexico</b></font><p>
@@ -46,12 +46,12 @@ The CND will be working alongside the Broad Progressive Front (FAP), a coalition
 In other words, while the CND is set up as a direct challenge to Mexico's political institutions, its key ally will be negotiating with those institutions. As the leftist <i>La Jornada</i> editorialist Marcos Rascon observed, "The leaders of the convention want to be on the barricades in the street...while at the same time not giving up their reservations for dinner in the oligarchy's clubs and restaurants."<p>
 AMLO's rhetoric lays out some stark challenges for the movement. He calls for it to prevent Calder&oacute;n's inauguration and stop the privatization of the country's resources. Making that rhetoric a reality presupposes a much bigger and more radical movement than the CND represents at this point. <p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

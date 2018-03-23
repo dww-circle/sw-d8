@@ -6,25 +6,25 @@ Israel's bloody siege of Gaza
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Palestinians plunged into humanitarian crisis</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Israel's bloody siege of Gaza</b></font><p>
@@ -50,12 +50,12 @@ In response to the kidnapping, PA President Mahmoud Abbas told Prime Minister Ha
 In the run-up to the attack on Gaza, Abbas' Fatah party pushed Hamas to sign an agreement recognizing the Israeli state and renouncing resistance. On June 27, it was announced that Hamas leaders had agreed to sign the agreement, but that they had not changed their stance on the illegitimacy of the Israeli state.<p>
 With this agreement, Abbas hoped to prove to the West that Hamas would "surrender to reality" and prove its commitment to "peace," so that sanctions would be lifted and aid restored to the PA. But with Israeli tanks plowing through Gaza, no agreement will be enough to stop Israeli's aim of starving the Palestinians.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

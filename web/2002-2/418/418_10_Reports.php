@@ -6,25 +6,25 @@ News from the struggle
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>News from the struggle</b></font></p>
 <p><font face="Arial, Helvetica, sans-serif" size="2">August 23, 2002 | Page 10</font></p>
@@ -60,12 +60,12 @@ News from the struggle
 <P>The book--published by Haymarket Books--places the Palestinian question in the context of U.S. economic and military domination in the Middle East. "How can the U.S. be a neutral broker when it gives billions of dollars every year to one of the parties to wage war on the other?" asked Arnove, a member of the International Socialist Organization and editor of <I>Iraq Under Siege</I>.</P>
 <P>Masri, director of the Economic and Environmental Justice Program at the Institute for Southern Studies, highlighted the courage of ordinary Palestinians living under occupation. For them, "daily life represents an act of resistance," said Masri. "It is our tax dollars that pay for the crimes of occupation. The Palestinian people have the courage to fight back. We have the responsibility to do so as well."</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

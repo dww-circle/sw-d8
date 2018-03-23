@@ -6,25 +6,25 @@ On the picket line
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="5"><b>On the picket line</b></font></P>
 <font face="Arial, Helvetica, sans-serif" size="2"> April 30, 2004 | Page 11</font>
@@ -88,12 +88,12 @@ On the picket line
 <P>Like so many other labor battles today, the key issue in the bus strike was health care. In the final contract, the Metropolitan Council, which manages Metro Transit, dropped its demand that workers have 17 years of service before qualifying for retiree insurance benefits. But the union agreed to a provision that caps retiree health payments at a specified dollar amount--effectively, a reduction in benefits. Even worse, the new deal eliminates all retiree health benefits for new hires--in other words, a two-tier system on health insurance.</P>
 <P>Metro Transit's wage offer is virtually unchanged--a freeze in the first year of the contract and a 1 percent increase in the second, with an additional 0.5 percent hike tacked on next February. That's a wage cut once inflation is taken into account.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

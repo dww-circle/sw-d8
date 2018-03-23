@@ -6,25 +6,25 @@
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>&#8230;but the fire is so delightful</b></font><p>
 <font face="Arial, Helvetica, sans-serif" size="2">December 14, 2007 | Page 11</font><p>
@@ -82,12 +82,12 @@ Walker initially succeeds and leaves, and then is called back 10 years later to 
 Another film I would recommend is <i><a href="http://www.amazon.com/gp/redirect.html?ie=UTF8&amp;location=http%3A%2F%2Fwww.amazon.com%2FNorma-Rae-Barbara-Baxley%2Fdp%2FB000059HAN%3Fie%3DUTF8%26s%3Ddvd%26qid%3D1197421235%26sr%3D1-1&amp;tag=socialistwork-20&amp;linkCode=ur2&amp;camp=1789&amp;creative=9325" target="_blank">Norma Rae</a> </i>starring Sally Field, who won an Oscar for her performance as a worker in small Southern textile town fighting to form a union. <i>Norma Rae </i>was directed by McCarthy-era blacklisted director Martin Ritt, who pays great attention to the details of factory and family life, as well as the realities of organizing against all odds.<p>
 The last film I would recommend is <i><a href="http://www.amazon.com/gp/redirect.html?ie=UTF8&amp;location=http%3A%2F%2Fwww.amazon.com%2FTigerland-Colin-Farrell%2Fdp%2FB00003CXOY%3Fie%3DUTF8%26s%3Ddvd%26qid%3D1197421314%26sr%3D1-1&amp;tag=socialistwork-20&amp;linkCode=ur2&amp;camp=1789&amp;creative=9325" target="_blank">Tigerland</a> </i>starring Colin Farrell and directed by Joel Schumacher. It takes place in the last years of the Vietnam War as the U.S. Army is falling apart. Farrell stars as Roland Bozz who is in constant rebellion against army discipline, and is hated by some of his platoon and admired by others.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

@@ -6,25 +6,25 @@ Republicans on the rampage
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4">Bush uses election to demand wish list from Congress</font><BR>
 <font face="Times New Roman, Times, serif" size="5"><b>Republicans on the rampage</b></font></P>
@@ -37,12 +37,12 @@ Republicans on the rampage
 <P>Meanwhile, Republicans stumbled when it came to pushing through a bankruptcy "reform" law that will make it much harder for ordinary people to get out from under a big debt burden. Credit card companies and banks have been pushing for this for years. But in an eleventh-hour vote last Friday, anti-abortion House Republicans stripped out a provision that would have made it more difficult for pro-life demonstrators facing fines resulting from violent attacks on abortion clinics to declare bankruptcy. As a consequence, it's unlikely that the legislation will make it through Congress before next year.</P>
 <P>This scuffle reveals that even with a majority in both houses of Congress, fights among Republicans could slow down the GOP juggernaut. And even some conservatives see a backlash in the making as Republicans push their pet projects. "Many Republicans in Congress want the president to be hard-line on their issues," said Norman Ornstein of the right-wing American Enterprise Institute. "But that carries risks for the president's re-election."</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

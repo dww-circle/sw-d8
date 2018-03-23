@@ -6,25 +6,25 @@ Broken promises on fighting AIDS
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="5"><b>Broken promises on fighting AIDS</b></font></P>
 <P><font face="Times New Roman, Times, serif" size="2"><b>By Nicole Colson</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | May 16, 2003 | Page 2</font></P>
@@ -36,12 +36,12 @@ Broken promises on fighting AIDS
 <P>According to the Sexuality Information and Education Council of the U.S. (SIECUS), the House version of global AIDS legislation added two amendments that will cost countless lives. One amendment sets aside one-third of the bill's overall prevention dollars for totally ineffective abstinence-only programs. A second amendment allows faith-based organizations that receive funds to be exempt from discussing prevention methods--such as condom use--in "conflict" with religious teachings. </P>
 <P>"These amendments directly contradict what science says works best to prevent HIV/AIDS--a broad comprehensive approach that addresses multiple factors, including the use of condoms," said SIECUS President Tamara Kreinin in a statement. "The U.S. is exporting policies born of conservative ideology, not public health."</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

@@ -6,25 +6,25 @@
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4">El gobierno de los EE.UU.: </font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>"Los despachadores m&aacute;s grandes de violencia en el mundo" </b></font></P>
@@ -47,12 +47,12 @@
 <P>"El terrorismo por definici&oacute;n golpea a los inocentes para llamar la atenci&oacute;n a los pecados de los invulnerables", &eacute;l escribi&oacute;. "Los inocentes del siglo 21 cosechar&aacute;n los desastres inesperados de "rebote" (blowback) por las aventuras imperialistas de d&eacute;cadas recientes. Aunque la mayor&iacute;a de los estadounidenses pueden ser ampliamente ignorantes de lo que era, y sigue siendo, hecho en su nombre, todos probablemente pagar&aacute;n un alto precio--individual y colectivamente--por los esfuerzos continuos de su naci&oacute;n por dominar la escena global". </P>
 <P>Si Bush y sus secuaces se salen con la suya, la tragedia humana terrible de los ataques en Nueva York y Washington ser&aacute; usada como un pretexto para ataques militares horribles por los EE.UU. que matar&aacute;n a m&aacute;s gente inocente a&uacute;n. Es por esto que debemos desenmascarar las exhortaciones falsas de Bush a defender la "libertad"--y oponernos a su campa&ntilde;a por la guerra.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

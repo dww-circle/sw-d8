@@ -6,25 +6,25 @@ Frenzy of patriotism
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4">Salt Lake City turned into armed camp for Olympics</font><BR>
 <font face="Times New Roman, Times, serif" size="5"><b>Frenzy of patriotism</b></font></P>
@@ -41,12 +41,12 @@ Frenzy of patriotism
 <P>Not exactly, according to the <I>Los Angeles Times</I>, which described the appalling land grab by developers that accompanied the Games. "Pristine mountain wilderness soon morphed into condos, restaurants and ski runs," the <I>Times</I> wrote. "As approved by Congress, these developments were exempt from the usual public review required by the National Environmental Policy Act."</P>
 <P>As always in the Olympics, individual athletic achievements tend to be overshadowed by patriotism and commercialism. As Kaliya Young, a former member of the Canadian water polo team who chose not to participate in the upcoming Summer Olympics, wrote last year, "I was deeply troubled by the corporate sellout of the event, by the hollowness of Olympic environmental claims and by the blatant lie that the competition served to 'bring the world together'&#133;What this world needs is a festival of true cooperation that brings a diverse mix of rich and poor together<I>--</I>not to compete against each other, but to find common ground and to work together to imagine a brighter, fuller future."</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

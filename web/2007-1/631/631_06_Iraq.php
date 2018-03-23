@@ -6,25 +6,25 @@ How the U.S. set Iraq on fire
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>How the U.S. set Iraq on fire</b></font><p>
 <font face="Arial, Helvetica, sans-serif" size="2">May 11, 2007 | Pages 6 and 7</font><p>
@@ -109,12 +109,12 @@ From then on, the civil war has continued unabated, with attacks and counter-att
 Today, Iraq lies in ruins. Allawi's book is the most detailed account of how it happened. He retains vain hopes that it could have gone differently--that the U.S. could have done a better job of occupation with more troops, better planning, a more thorough transformation of the Baathist state and a more rigorous imposition of free market reforms.<p>
 But none of these could have overcome the fact that occupation does not bring liberation, but instead inevitably provokes resistance. The urgent task in the U.S. and in the Middle East is to build an anti-imperialist opposition capable of overcoming national and religious divisions--and defeating a wounded but still very dangerous U.S. imperialism.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

@@ -6,25 +6,25 @@ Voice of the U.S. socialist movement
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4">Howard Zinn on:</font><BR>
 <font face="Times New Roman, Times, serif" size="5"><b>Voice of the U.S. socialist movement</b></font></P>
@@ -73,12 +73,12 @@ Voice of the U.S. socialist movement
 <P>I stand for the overthrow of the entire system that murders childhood. I stand for the overthrow of a system that can give $6,000 jobs to labor leaders who have betrayed these infants in their infancy. I stand for the teachings of Christ put into practice, not the teachings of capitalism, and graft and murder.</P>
 <P>I stand for the day when this rotten structure will totter of its own vileness. I stand for the day when the baby will live in God's fair land, enjoy its air, its food, its pleasures, when every mother will caress it warmly, when there will be no parasites, no slaves, when $2,000 won't be paid for a hat to cover the skull of the desirable citizen's daughter, when the child shall not be taxed for such diabolical infamy, when poodle dogs will not be caressed on the life blood of innocent childhood, when these children of Comer's hell-hole will live under God's heaven without any master to rob them of their lives.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

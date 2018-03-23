@@ -6,25 +6,25 @@ Headed for a showdown?
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Arial, Helvetica, sans-serif" size="2"><b>WHAT WE THINK</b></font><br>
 <font face="Times New Roman, Times, serif" size="4">Tensions between China and the U.S.</font><br>
@@ -39,12 +39,12 @@ Headed for a showdown?
 <P>The more aggressive posture of each side isn't simply the result of short-sighted leaders or U.S. defense industry lobbying. The U.S. and China are competing for influence in Asia, an area that the U.S. has dominated for the past half-century.</P>
 <P>"Both countries are headed for additional military showdowns," one mainstream analyst concluded. As <I>Progressive</I> magazine editor Matthew Rothschild pointed out: "The last time the air chilled so noticeably was when Ronald Reagan came to power." But Reagan's "bellicosity galvanized the peace movement... A revitalized opposition to war-making is what it will take to rein in Bush and his baying dogs."</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

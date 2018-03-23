@@ -6,25 +6,25 @@ A voice of optimism in the struggle for justice
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>A voice of optimism in the struggle for justice</b></font><p>
 <font face="Times New Roman, Times, serif" size="2"><b>Review by Keith Rosenthal</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | July 20, 2007 | Page 11</font><p>
@@ -42,12 +42,12 @@ In a few places, Zinn seems to come across as contradictory. For instance, at on
 But these inconsistencies (which are few) hardly take away from the overall contribution this book makes to an understanding of the power of protest.<p>
 In the end, whether Zinn is telling us about the 1919 general strike in Seattle or the 1999 Seattle rebellion against the World Trade Organization, his message is an important one: that "the real heroes are not on national television or in the headlines. They are the nurses, the doctors, the teachers, the social workers, the community organizers...and they are the protesters against war, the apostles of peace in a world going mad with violence."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

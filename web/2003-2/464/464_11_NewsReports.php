@@ -6,25 +6,25 @@ News and reports
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 
 <P><font face="Times New Roman, Times, serif" size="5"><b>News and reports</b></font></P>
@@ -62,12 +62,12 @@ News and reports
 <P>To prevent this power grab, 11 Democratic senators headed for New Mexico to prevent a quorum. They are threatening to stay there until redistricting is killed, and Texas lawmen are having no part of a roundup. Now the Republicans have sued to force the eleven back to vote, and the Democrats have sued to declare the redistricting plan illegal. The plan, if passed, would meet numerous court challenges. Texans foresee mounting legal fees adding to the huge budget deficit. </P>
 <P>The rally as planned was largely a Democrat love-fest with family members of the Senate 11 speaking and a patriotic rendition of "God Bless America" and the pledge of allegiance. The majority of the crowd, however, were not party faithful and spoke of their anger at Bush and DeLay and the failure of government to meet their needs.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

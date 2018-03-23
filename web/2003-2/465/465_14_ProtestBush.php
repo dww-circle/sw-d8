@@ -6,25 +6,25 @@ Protest George W. Bush!
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="5"><b>Protest George W. Bush!</b></font></P>
 <P><font face="Times New Roman, Times, serif" size="2"><b>By Katie Jacquet and Tim Cook</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | August 22, 2003 | Page 14</font></P>
@@ -36,12 +36,12 @@ Protest George W. Bush!
 <P>The initiative represents a longstanding aim of Big Timber--to strike down the ban on old-growth logging in national forests. Environmental activists point out that old-growth timber isn't the problem causing these mammoth forest fires--it's undergrowth and newer growth, which would naturally burn away during a fire leaving most of the old trees to survive. The problem for Bush and his timber industry buddies is that the real solution--controlled burns that are carefully planned--offers no profits for the bosses and in fact would require the U.S. Forest Service to actually be funded properly.</P>
 <P>The protest against Bush wasn't limited to environmental issues. Activists from the National Organization for Women, local AFL-CIO affiliates and the Border Action Network rallied at the demonstration, reflecting the wide range of Bush's assault on working people. One clever sign put it well: "Trees aren't the problem. It's Bushes."</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

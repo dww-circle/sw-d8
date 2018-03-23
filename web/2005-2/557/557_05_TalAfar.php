@@ -6,25 +6,25 @@ Iron fist in Tal Afar
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Washington's latest offensive in Iraq</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Iron fist in Tal Afar</b></font><p>
@@ -46,12 +46,12 @@ The attack on Tal Afar, according to Iraq expert Juan Cole, is "an attempt by th
 The U.S. blitz on Tal Afar will also disrupt efforts by the Sunni population in Nineveh province from mobilizing for a "no" vote in the October 15 referendum on the new constitution. But the constitution--approved over the heads of Iraq's Sunni Islam leaders in August--hadn't even been printed as of September 11 because of last-minute haggling over details of its federal structure.<p>
 Whatever the outcome of the vote, the savagery of the U.S. attack is aimed at sending a message to Iraq that Washington isn't going to loosen its grip on the country until it is forced to do so. The assault on Tal Afar gives new urgency to the antiwar protests in Washington and San Francisco on September 24--and the need to step up the demand to bring the troops home now.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

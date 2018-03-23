@@ -6,25 +6,25 @@ Facing expulsion for speaking out
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Pace University students threatened by administrators</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Facing expulsion for speaking out</b></font><p>
@@ -50,12 +50,12 @@ Approximately 50 students, professors and supporters from Pace and around the ci
 Kelly and Giaccone are under investigation by the Secret Service, and the threat of expulsion by the university remains. But students and their supporters are fighting back--seeking to change Pace's unconstitutional policies that prevent students from organizing against the war in Iraq, while also challenging the university's unfair labor practices and tuition hikes.<p>
 <i>Call on Pace University to stop its threats against Brian Kelly and Lauren Giaccone. Call Pace University President David Caputo at 212-346-1097, or e-mail him at <a href="mailto:president@pace.edu">president@pace.edu</a>. Send letters of support to Brian at <a href="mailto:Kelly@leftist.ws">Kelly@leftist.ws</a> and Lauren <a href="mailto:lg11679n@pace.edu">lg11679n@pace.edu</a>. For information about the case, visit <a href="http://www.traprockpeace.org/pace_repression" target="_blank">www.traprockpeace.org/pace_repression</a> on the Web</i>.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

@@ -6,25 +6,25 @@ News and reports
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>News and reports</b></font><P>
 <font face="Arial, Helvetica, sans-serif" size="2">June 30, 2006 | Pages 14 and 15</font><p>
@@ -110,12 +110,12 @@ The university has agreed to recognize the students' lawyer, their due process r
 As support for the illegal and unjust war in Iraq reaches an all-time low, it is more important than ever that antiwar demonstrators are not criminalized for their opposition.<p>
 <i>E-mail letters of support to SFSU President Robert Corrigan at <a href="mailto:corrigan@sfsu.edu" target="_blank">corrigan@sfsu.edu</a>, or Vice President of Student Affairs Penny Saffold at <a href="mailto:psaffold@sfsu.edu" target="_blank">psaffold@sfsu.edu</a>, or call 415-338-2032. Sign a petition in defense of the students at <a href="http://www.petitiononline.com/sfsu10/petition.html" target="_blank">http://www.petitiononline.com/sfsu10/petition.html</a></i>.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

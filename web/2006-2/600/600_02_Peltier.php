@@ -6,25 +6,25 @@ Why won't the FBI release Peltier files?
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>Why won't the FBI release Peltier files?</b></font><p>
 <font face="Times New Roman, Times, serif" size="2"><b>By Joe Allen</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | September 8, 2006 | Page 2</font><p>
@@ -41,12 +41,12 @@ A look at the Minneapolis FBI's Web site gives an idea of the agency's strange v
 In the waning days of the Clinton administration, when an effort was made to secure a presidential pardon for Peltier, hundreds of FBI agents responded by picketing the White House. Clinton backed away from a pardon. Since September 11, federal prison authorities have refused media access to Peltier. He has been unable to give an interview to the media in over five years. Only his legal counsel and a small number of supporters and family members can meet with him.<p>
 The FBI's latest actions are symbolic of its 30-year persecution of Peltier and his supporters--and are perpetuating a terrible injustice.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

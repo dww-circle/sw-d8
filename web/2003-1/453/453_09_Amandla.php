@@ -6,25 +6,25 @@ The music that fought racist apartheid
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="5"><b>The music that fought racist apartheid</b></font></P>
 <P><font face="Times New Roman, Times, serif" size="2"><b>Review by Craig Johnson</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | May 16, 2003 | Page 9</font> </P>
@@ -38,12 +38,12 @@ The music that fought racist apartheid
 <P>After the 1976 Soweto massacre, the movement gained more militancy, and songs were charged with imagery of an armed struggle for liberation. The toyi-toyi, a military march dance and song style became commonplace in massive street demonstrations. As one activist puts it, "The toyi-toyi was our weapon. We did not have the technology of warfare, the tear gas and tanks, but we had this weapon."</P>
 <P><I>Amandla! </I>neither lets the music merely serve as a soundtrack to its story nor allows the history of the South African struggle to wallpaper an exploration of the songs, but manages to show how each fed one another. It will inspire anyone who wants to fight for a better world.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

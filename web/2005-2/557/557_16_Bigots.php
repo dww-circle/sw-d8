@@ -6,25 +6,25 @@ Challenging the bigots at the border
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>Challenging the bigots at the border</b></font><p>
 <font face="Times New Roman, Times, serif" size="2"><b>By Avery Wear</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | September 16, 2005 | Page 16</font><p>
@@ -40,12 +40,12 @@ Immigrant-rights protesters now believe that the vigilante movement may be demor
 "Liberal" Latino State Assembly Speaker Fabian Nu&ntilde;ez of Los Angeles became the latest Democrat to call for California to declare a state of emergency about immigration last month--something that even Minuteman-praising Republican Gov. Arnold Schwarzenegger resisted. Far-right Republicans like Colorado Rep. Tom Tancredo have gained national support, and Gilchrist now plans to run for Congress. <p>
 Even if we stop the Minutemen in Calexico, the challenge of building a truly mass movement to counter the racists remains.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

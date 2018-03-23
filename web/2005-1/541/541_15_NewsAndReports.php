@@ -6,25 +6,25 @@ News and reports
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>News and reports</b></font><P>
 <font face="Arial, Helvetica, sans-serif" size="2">April 29, 2005 | Pages 14 and 15</font><p>
@@ -78,12 +78,12 @@ About 30 minutes after marchers departed, a campus cop did show up--not to help 
 In the last year, there have been three domestic violence homicides, and the federally funded Transformation Project, which provides serves for victims of sexual and domestic violence, helped 30 victims fall semester. But the federal grant funding the Transformation Project was recently cut. <p>
 Though BGSU initially stepped in to help pay for the program's victims' advocate, BGSU stopped funding the position in December. "We don't have that luxury," explained Vice President of Student Affairs Edward Whipple, who has an annual base salary of $141,235, of the decision to cut the position. "It's sort of cruel. But we just don't have the funds." Meanwhile, students have been forced to hold fundraisers to pay victims' advocate Rebecca Nickels-Theis. It's past time for us to organize a serious fightback against this attack.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

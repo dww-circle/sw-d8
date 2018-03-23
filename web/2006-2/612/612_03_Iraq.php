@@ -6,25 +6,25 @@ They don't want to end their war on Iraq
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Arial, Helvetica, sans-serif" size="2"><b>WHAT WE THINK</b></font><br>
 <font face="Times New Roman, Times, serif" size="4">The politicians debate phony ''withdrawal'' plans</font><br>
@@ -64,12 +64,12 @@ Now, the muddled proposals of the bipartisan Iraq Study Group represent the fund
 The catastrophe that the U.S. has caused in Iraq and the surrounding region will not be solved overnight, even if Washington were forced to withdraw its forces from Iraq tomorrow. But every day longer that the U.S. does remain--whether operating under Bush's delusion of "finishing the mission," or under one or another phony plan for withdrawal that attempts to maintain Washington's grip--is another day that the violence grows worse, and the region's conflicts more intractable.<p>
 The U.S. caused the nightmare in Iraq. Anything it does now will make the situation even worse. That is why the antiwar movement must not concede any ground on its most essential demand--U.S. out of Iraq now.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

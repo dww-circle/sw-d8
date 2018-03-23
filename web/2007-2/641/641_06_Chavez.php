@@ -6,25 +6,25 @@ What does Ch&aacute;vez have in store for Venezuela?
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>What does Ch&aacute;vez have in store for Venezuela?</b></font><p>
 <font face="Arial, Helvetica, sans-serif" size="2">August 24, 2007 | Pages 6 and 7</font><p>
@@ -84,12 +84,12 @@ In response to this pressure, Chirino's C-CURA has aligned with another current 
 Created in 2003 out of the ruins of the discredited CTV, the UNT has never moved beyond a provisional structure because of factional rivalries among its five currents, not least between Chirino's and M&aacute;spero's supporters, who came to blows at a conference last year. Their realignment on the basis of trade union independence is an important step towards strengthening the UNT as vehicle to fight for workers' interests.<p>
 So while Venezuelan political life will be dominated in the weeks ahead with constitutional reform and the founding conference of the PSUV, another debate within the labor movement will also take place--one with major consequences for the development of independent working-class organization and the struggle for socialism in Venezuela.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

@@ -6,25 +6,25 @@ Qwest takes aim at CWA
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Contract negotiations continue past August 15 strike deadline</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Qwest takes aim at CWA</b></font><p>
@@ -41,12 +41,12 @@ CWA leaders agreed to extend the old contract twice during Qwest's financial cri
 Now Notebaert, having failed to boost Qwest's fortunes in a failed attempt to purchase MCI, is out to squeeze workers harder than ever. He aims to force workers to begin paying for health care premiums for the first time--costs that could easily eat up most or all of the 3 percent annual raises. Notebaert also wants to push new hires into a 401(k)-type retirement plan, rather the defined-pension benefits that workers currently receive. <p>
 Those demands led to a fighting mood on the Portland picket line. "Most people have been working here for five years or less," the CWA's Elder told <i>Socialist Worker</i>. "They've never been on strike. They are so pissed off and ready to go. They're pretty militant."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

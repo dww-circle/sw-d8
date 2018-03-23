@@ -6,25 +6,25 @@ Sindicalistas combaten represi&oacute;n
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Arial, Helvetica, sans-serif" size="2"><b>COLOMBIA</b></font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Sindicalistas combaten represi&oacute;n</b></font></P>
@@ -79,12 +79,12 @@ Sindicalistas combaten represi&oacute;n
 <P>Pide ayuda en su lucha contra Coca Cola, espec&iacute;ficamente en la organizaci&oacute;n de un boicot de consumo de sus productos y para desenmascarar la imagen benigna de esta empresa. Insiste en que a Coca Cola no le importa a cuantos sindicalistas tiene que matar para seguir ganando dinero. Esto es as&iacute; no s&oacute;lo en Colombia, sino tambi&eacute;n en otros pa&iacute;ses subdesarrollados&#150;es un pulpo  que extiende sus tent&aacute;culos por todo el mundo. Dice que ma&ntilde;ana lo mismo le puede pasar a los hijos de los trabajadores en los Estados Unidos.</P>
 <P>Una meta de su campa&ntilde;a es llegarle a los estudiantes universitarios que consumen mucha Coca Cola. Han comenzado a tratar de llegarle a los estudiantes de universidades en Nueva York para exponer la realidad de lo que Coca Cola hace.</P></FONT></BODY>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

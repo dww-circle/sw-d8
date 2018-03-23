@@ -6,25 +6,25 @@ Preparing for a new draft?
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Plans for a medical call-up exposed</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Preparing for a new draft?</b></font><p>
@@ -61,12 +61,12 @@ Ferriola was forced to sue the government October 23, saying that his mobilizati
 But other soldiers haven't been as lucky. Last month, a judge ruled that Todd Parrish, a former Army reservist from North Carolina, must report for active duty--despite the fact that Parrish says his Army commitment expired December 19, 2003, after four years of active duty and another four years in the reserves. Parrish even sent the Army a letter resigning his commission. <p>
 But incredibly, the military claims that because he failed to sign a resignation line on a letter asking for an update on his personal information, he's now eligible for call up. A judge agreed--and the Army had scheduled him to report for duty as of October 26. As Parrish told one reporter: "It was a life-altering experience when I read the orders to report to active duty. I felt like I was being drafted without a draft being instituted."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

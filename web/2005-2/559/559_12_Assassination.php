@@ -6,25 +6,25 @@ Murdered by the FBI
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Leader of Puerto Rico's nationalists shot down</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Murdered by the FBI</b></font><p>
@@ -42,12 +42,12 @@ Ojeda R&iacute;os had been a fugitive since 1990, when he removed an electronic 
 The U.S. colonial authorities have chosen Puerto Rican nationalist holidays to make their own bloody statements as well. On July 25, 1978--the 80th anniversary of the U.S. invasion of the island--the FBI and Puerto Rican police assassinated two young Puerto Rican independence activists in Cerro Maravilla after an undercover cop lured them into joining a plan to blow up a television station.<p>
 Today, according to OSI's Barretto, the authorities are trying to intimidate pro-independence activists, the broader left and the social movements, which together succeeded in driving the U.S. Navy off of the island of Vieques in 2003. "The assassination of Ojeda R&iacute;os might be as big as Cerro Maravilla in terms of political repercussions," he said. "The U.S. wants to link this to the war on terror, and respond to the revolts in Latin America. They don't want to see another Vieques."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

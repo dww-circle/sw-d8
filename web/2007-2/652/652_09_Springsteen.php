@@ -6,25 +6,25 @@ Searching for a world with some soul
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>Searching for a world with some soul</b></font><p>
 <font face="Times New Roman, Times, serif" size="2"><b>Review by Jesse Zarley</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | November 9, 2007 | Page 9</font><p>
@@ -67,12 +67,12 @@ With the ugly racism exhibited recently in Jena, it's hard to disagree with him.
 The side of Springsteen revealed in <i>Magic </i>is clearly different than the one who played "No Surrender" for Democratic Party presidential candidate John Kerry rallies in 2004 in a last stand against the greater evil of a potential Bush reelection. Unlike the seminal "Born in the U.S.A." I don't think anyone from either side of the aisle will be leaping to appropriate the songs on this album as no one gets off the hook.<p>
 In the words of radical rock journalist Dave Marsh, "Faith, Springsteen seems to be saying, will get you so far, and not a step more. The rest is down to work and struggle, and you'd better not stop, except maybe to dance, and then you'd better make sure you're dancing as well as a man with a pistol pointed at his toes."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

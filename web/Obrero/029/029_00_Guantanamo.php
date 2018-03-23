@@ -6,25 +6,25 @@ En Guant&aacute;namo se ha perdido toda esperanza
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Suicidio de presos en la prisi&oacute;n estadounidense</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>En Guant&aacute;namo se ha perdido toda esperanza</b></font><p>
@@ -48,12 +48,12 @@ Precisamente, el mes pasado, El Comit&eacute; de Naciones Unidas contra la Tortu
 Actualmente, se estima que 460 presos siguen en el recinto, algunos de los cuales ten&iacute;an menos de 18 a&ntilde;os cuando se los llev&oacute; a Guant&aacute;namo, lo que constituye una clara violaci&oacute;n de la legislaci&oacute;n internacional. Hasta la fecha, s&oacute;lo diez de ellos han sido acusados de alg&uacute;n delito y se les ha comunicado que tienen que comparecer ante un tribunal militar.<p>
 <i>Traducido del ingl&eacute;s por Felisa Sastre. Les agradecemos a Felisa Sastre y los compa&ntilde;eros de </i><a href="http://www.lahaine.org" target="_blank">La Haine</a> <i>por enviarnos esta traducci&oacute;n</i>.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

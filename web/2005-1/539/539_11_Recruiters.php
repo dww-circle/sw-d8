@@ -6,25 +6,25 @@
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Arial, Helvetica, sans-serif" size="2"><b>MILITARY OUT OF OUR SCHOOLS</b></font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>"Hey recruiters, go away!&#8221</b></font>;<p>
@@ -47,12 +47,12 @@ After the appropriate bureaucrats were informed, the recruiters were told to lea
 -- In <b>Atlanta, </b>Students for Peace and Justice (SPJ) at Georgia State University (GSU), a campus aggressively targeted by military recruiters, collected about 500 signatures this semester on a petition opposing the presence of military recruiters. Then, on March 17, some 50 students marched on the president's office to deliver the petitions. The struggle continues as the president passed the buck, saying that his hands are tied and that students should target the Board of Regents instead.<p>
 <i>Hector Agredano, Todd Dewey, Michael Hoffman, Craig Johnson, Bernie Kuszewski and Charles Peterson contributed to this report</i>. <p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

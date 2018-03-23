@@ -6,25 +6,25 @@ An appeal for justice for Gary Tyler
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>An appeal for justice for Gary Tyler</b></font><p>
 <font face="Times New Roman, Times, serif" size="2"><b>By Nicole Colson</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | December 14, 2007 | Page 12</font><p>
@@ -48,12 +48,12 @@ A federal appeals court has declared Tyler's trial "fundamentally unfair," yet h
 According to the Amnesty International appeal, "Gary Tyler has served more than three times as much as the national U.S. average for a person convicted of murder or non-negligent manslaughter. As a life-sentenced prisoner, Gary Tyler cannot be granted release on parole unless his sentence is first commuted to a term of years by the Pardon Board and the Board's recommendation is accepted by the Governor.<p>
 "High-ranking staff at Angola have reportedly endorsed his latest application for a pardon on the ground that he has matured into a responsible citizen deserving of release. However, to date, his name has not yet appeared on the parole board's docket for a hearing, and it is feared that, without further pressure, he may miss the chance to be heard before the governor leaves office."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

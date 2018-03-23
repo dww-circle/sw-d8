@@ -6,25 +6,25 @@ Bush's racist "war on terror"
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Video of U.S. atrocity in Afghanistan sparks outrage</font> <br>
 <font face="Times New Roman, Times, serif" size="5"><b>Bush's racist "war on terror"</b></font><p>
@@ -55,12 +55,12 @@ For the people of Afghanistan, fed up with U.S. atrocities and support for regio
 A secret opinion poll of Iraqis conducted by Britain's Ministry of Defense--and leaked to the press--found 82 percent of people "strongly opposed" to the presence of coalition troops. Two-thirds of Iraqis said they felt less secure because of the occupation, 72 percent don't have confidence in the multinational forces, and less than 1 percent of Iraqis think the U.S.-led forces are helping to improve security. And between 45 and 65 percent of Iraqis--depending on their location--think that military attacks on coalition troops are justified.<p>
 The findings are in contrast to a BBC poll in early 2004 showing that more Iraqis supported the war than opposed it. "The nationwide survey suggests that the coalition has lost the battle to win the hearts and minds of the Iraqi people, which Tony Blair and George W. Bush believed was fundamental to creating a safe and secure country," Britain's <i>Telegraph </i>newspaper concluded.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

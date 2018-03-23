@@ -6,25 +6,25 @@ CEOs cut jobs and line their pockets
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>CEOs cut jobs and line their pockets</b></font><p>
 <font face="Times New Roman, Times, serif" size="2"><b>By Nicole Colson</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | April 13, 2007 | Pages 1 and 4</font><p>
@@ -47,12 +47,12 @@ Nevertheless, according to economists, while unemployment may have fallen somewh
 According to the Center on Budget and Policy Priorities (CBPP), data released by the federal government last month showed that the share of national income going to wages and salaries in 2006 was at its lowest level ever recorded, with data going back to 1929. By contrast, the share of national income captured by corporate profits was at its highest level on record.<p>
 "As a consequence, wages and salaries have captured an exceptionally small share of the total growth in national income that has occurred in the current period," reported the CBPP. "Only 34 percent of the overall increase in national income since the end of 2001 has gone to increases in workers' pay, a smaller fraction than in any other expansion since World War II. For the first time on record, corporate profits have captured a larger share of the income growth in a recovery--46 percent of it--than wages and salaries have."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

@@ -6,25 +6,25 @@ Una Casa Blanca de espaldas a la pared
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Hora de empujar contra...</font> <br>
 <font face="Times New Roman, Times, serif" size="5"><b>Una Casa Blanca de espaldas a la pared</b></font><p>
@@ -43,12 +43,12 @@ La administraci&oacute;n de Bush est&aacute; arrinconada y es dif&iacute;cil con
 Este tipo de oposici&oacute;n debe ser construida a partir de cada lucha, por menor que sea. Pero la posibilidad de que surja esta lucha generalizada es patente en este momento.<p>
 No hay tiempo que perder. Tenemos que lanzarnos de frente y envolvernos en toda lucha que se oponga a las prioridades conservadoras de la clase dominante. Y en este proceso, tenemos que construir una nueva izquierda que pueda convertirse en el eje de todas las luchas que surjan.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

@@ -6,25 +6,25 @@ Washington's favored ally in the Middle East
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Israel escalates the terror</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Washington's favored ally in the Middle East</b></font><p>
@@ -44,12 +44,12 @@ U.S. officials describe Israel's occupation of Palestine, like the U.S. war on I
 Though pro-Israel politicians in the U.S. still cling to the myth that Palestine was "a land without people for a people without land," even some high-ranking Israeli government officials admit the truth. "The Intifada is the Palestinian people's war of national liberation," wrote former Israeli Attorney General Michael Ben-Yair two years ago. "We enthusiastically chose to become a colonialist society, ignoring international treaties, expropriating lands, transferring settlers from Israel to the Occupied Territories, engaging in theft and finding justification for all these activities...We established an apartheid regime."<p>
 The antiwar movement can't oppose the U.S. occupation of Iraq without also supporting the Palestinian demand for liberation.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

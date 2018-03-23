@@ -6,25 +6,25 @@ Bush's lies about Lenin
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Arial, Helvetica, sans-serif" size="2"><b>THE MEANING OF MARXISM</b></font><br>
 <font face="Times New Roman, Times, serif" size="4">Myths and slanders to justify the "war on terror"</font><br>
@@ -81,12 +81,12 @@ In all of Lenin's writings and actions, there is not a trace of elitism, of cont
 "The Black Hundreds' plans are designed to foment antagonism among the different nations, to poison the minds of the ignorant and downtrodden masses," he argued. "But the working class needs <i>unity, not division</i>. It has no more bitter enemy than the savage prejudices and superstitions which its enemies sow among the ignorant masses. That is why the working class must protest most strongly against national oppression in any shape and form."<p>
 Compare this appeal for international workers' solidarity to the U.S. political establishment's incessant rants against Muslims and Arabs--which, like anti-Semitism in Tsarist Russia, are designed to play on "prejudices and superstitions" in order to keep working-class people weak and divided.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

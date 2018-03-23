@@ -6,25 +6,25 @@ News and reports
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>News and reports</b></font><P>
 <font face="Arial, Helvetica, sans-serif" size="2">September 1, 2006 | Pages 14 and 15</font><p>
@@ -66,12 +66,12 @@ Only 5,000 people still reside in the community in the wake of Mayor Richard Dal
 Former Israeli Prime Minister Ehud Barak and Eliza Olmert, the wife of current Israeli Prime Minister Ehud Olmert, held a banquet to raise funds for Israel--an incredible irony given the fact that Israel receives more aid than any other country in the world from the U.S.<p>
 The protest was especially spirited and enthusiastic in the wake of the August 12 protests that brought tens of thousands across the U.S. in solidarity with Palestinian and Lebanese self-determination. Popular chants were "Free, free Palestine" and "Free, free Lebanon," and people also took up chants in support of Palestinian and Lebanese resistance to oppression by Israel and the U.S.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

@@ -6,25 +6,25 @@ Teachers in Kentucky ready to strike
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4">Fight for health care is focus of contract battle</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Teachers in Kentucky ready to strike</b></font></P>
@@ -38,12 +38,12 @@ Teachers in Kentucky ready to strike
 <P>KEA rallies throughout the state forced Gov. Fletcher to retreat by calling a special legislative session to on October 5 to craft another health insurance plan for 2005. As <I>Socialist Worker </I>went to press, hundreds of rank-and-file education workers were gathering at the state capitol for the special session to protest and continue to push for affordable health care. </P>
 <P>The rank-and-file members of KEA authorized an indefinite strike to begin October 27 if the special legislative sessions does not result in a health plan that restores the current 2004 costs and benefits. As Boone County maintenance staff worker Fred Johnson put it,  "The rally on September 27 is just the beginning. If our demands are not met by October 27, then we're walking [out on strike.]"</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

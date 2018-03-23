@@ -6,25 +6,25 @@ Los federales se vengan contra Elvira
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>Los federales se vengan contra Elvira</b></font><p>
 <font face="Times New Roman, Times, serif" size="2"><b>Por Orlando Sep&uacute;lveda y Lee Sustar</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | octubre-noviembre de 2007 | p&aacute;gina 2</font><p>
@@ -38,12 +38,12 @@ Protestas por su arresto y deportaci&oacute;n se hicieron sentir inmediatamente 
 Ah&iacute;, Flor Cris&oacute;stomo, tambi&eacute;n v&iacute;ctima de una publicitada redada una semana antes de la movilizaci&oacute;n de Mayo primero del 2006, dijo que "los que ICE quiere es callar nuestra m&aacute;s poderosa voz, pero no podr&aacute;n, por que todos somos ahora la voz de Elvira."<p>
 "Elvira Arellano --dijo Joshua Hoyt, director ejecutivo de la Coalici&oacute;n de Illinois por los Derechos de los Inmigrantes y Refugiados -- "nos ense&ntilde;&oacute; a no tener miedo, luchando hasta las &uacute;ltimas consecuencias y dando una cara humana a la tragedia de millones. Tenemos que agradecer Elvira por su valor."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

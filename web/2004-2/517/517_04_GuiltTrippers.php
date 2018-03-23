@@ -6,25 +6,25 @@ Guilt trippers for Kerry
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Arial, Helvetica, sans-serif" size="2"><b>WHICH SIDE ARE YOU ON?</b></font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Guilt trippers for Kerry</b></font><p>
@@ -43,12 +43,12 @@ As Palestinian activist and scholar Naseer Aruri wrote recently in the Egyptian 
 Nader's platform, Aruri continued, "is the only one that responds to Arab-American interests and positions on Palestine, Iraq, civil liberties and worldwide respect for international law." Far from a "wasted vote," Aruri argued, a strong showing for Nader "would constitute the initial necessary investment in a long and continuing process designed to keep all future candidates apprised of the actual worth of the Arab-American vote."<p>
 Ali would do well to revisit his own comments last February, when he observed, "Iraqis have one thing of which they can be proud, and of which British and U.S. citizens should be envious: an opposition." A left third party can only be built as a political expression of a movement against U.S. imperialism and a rejection of both its war parties.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

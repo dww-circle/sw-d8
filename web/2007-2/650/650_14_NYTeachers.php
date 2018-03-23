@@ -6,25 +6,25 @@ New York teachers' union concedes on merit pay
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>New York teachers' union concedes on merit pay</b></font><p>
 <font face="Times New Roman, Times, serif" size="2"><b>By Peter Lamphere and Megan Behrent, United Federation of Teachers</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | October 26, 2007 | Page 14</font><p>
@@ -48,12 +48,12 @@ There were a few speakers in favor of the proposal, mostly on the basis that it 
 One delegate moved to table the issue so delegates would have an opportunity to discuss it with the rank and file, but this was ruled out of order. In a confusing rush, the delegates then voted for the plan by a large majority. A proposal for a national teachers' demonstration against individual merit pay was voted down by delegates, although Weingarten promised to contact the AFT about the possibility.<p>
 However, thanks to Weingarten's "bonus" plan, merit pay is now a reality in the New York Public Schools. The delegates' assembly meeting was a historic turning point in the history of our union--for the worse.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

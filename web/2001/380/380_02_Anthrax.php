@@ -6,25 +6,25 @@ Stoking panic about anthrax
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4">Pentagon hardliners blame outbreaks on Iraq</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Stoking panic about anthrax</b></font></P>
@@ -51,12 +51,12 @@ Stoking panic about anthrax
 <P>Shipments of BioPort's anthrax vaccine have been suspended by the Food and Drug Administration (FDA) since 1998 because of poor quality. Officials say the company has a hard time making the same vaccine twice. Plus 30 percent of soldiers given the vaccine have reported mysterious side effects after taking the drug, including serious ones that may have caused six deaths.</P>
 <P>But BioPort's team of owners--which includes Adm. William Crowe, former chair of the Joint Chiefs of Staff under Ronald Reagan--have a lot of pull in Washington. The anthrax scare may help the company win FDA approval to resume shipments to the Pentagon--so U.S. soldiers can again become guinea pigs for BioPort.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

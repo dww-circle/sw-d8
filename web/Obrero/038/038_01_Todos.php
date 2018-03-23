@@ -6,25 +6,25 @@ Todos a marchar
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Legalizaci&oacute;n para todos * No al Acta SAVE * Alto a las redadas y deportaciones * No a las cartas No-Match</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Todos a marchar</b></font><p>
@@ -65,12 +65,12 @@ En un panel con luchadores pro inmigrantes y anti-b&eacute;licos se habl&oacute;
 En el encuentro, m&aacute;s de 30 j&oacute;venes universitarios, secundarios y algunos profesores acordaron comenzar a propagar y promover entre las escuelas y c&iacute;rculos juveniles la marcha del pr&oacute;ximo Primero de Mayo y realizar para abril un taller de oportunidades educacionales para estudiantes indocumentados. Para el fin de la primera jornada, los mismos j&oacute;venes montaron un evento cultural en homenaje al D&iacute;a Internacional de la Mujer Obrera.<p>
 A parte de la movilizaci&oacute;n regional, en la sesi&oacute;n de trabajo del d&iacute;a domingo, los conferencistas acordaron en conformar un comit&eacute; promotor de unidad del movimiento inmigrante de la regi&oacute;n, luchar contra la aprobaci&oacute;n del Acta SAVE, comenzar a trabajar en un boicot econ&oacute;mico afectando las propiedades del infame senador Sensenbrenner que ser&aacute; lanzado del Primero de Mayo, y continuar el camino a la convergencia del movimiento reuni&eacute;ndose pr&oacute;ximamente en la conferencia Labor Notes del 12 de abril en Detroit, Michigan.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

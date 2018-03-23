@@ -6,25 +6,25 @@ Portraying the victims as "criminals"
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Authorities justified crackdown by...</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Portraying the victims as "criminals"</b></font><p>
@@ -60,12 +60,12 @@ That's why Louisiana Gov. Kathleen Blanco, a Democrat, announced September 2 tha
 The National Guard's role at the Superdome was, in part, to make sure the Blacks were kept their assigned place in the filth and squalor. The troops prevented them crossing over to the nearby Hyatt, where guests at the upscale hotel got food and water supplied from other Hyatts across the South as early as Tuesday, August 30--three days before the Superdome received any supplies. On Friday, September 2, the guard held off people from the Superdome as busses evacuated some 700 guests and employees--most of them white--from the Hyatt. <p>
 Moreover, the racist rhetoric used to justify U.S. imperial military adventures abroad came easily to the lips of Brig. Gen. Gary Jones, commander of the Louisiana National Guard's Joint Task Force, in charge of restoring "order" in New Orleans. "This place is going to look like Little Somalia," he told the <i>Army Times. </i>"We're going to go out and take this city back. This will be a combat operation to get this city under control."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

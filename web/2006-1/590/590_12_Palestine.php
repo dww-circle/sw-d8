@@ -6,25 +6,25 @@ Strangulation of the Palestinians
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">"We are facing a complete collapse"</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Strangulation of the Palestinians</b></font><p>
@@ -54,12 +54,12 @@ But the perpetrator of violence is not Hamas. It is Israel.<p>
 Israel's institutional racism against Palestinians was on display earlier this month as the Israeli Supreme Court upheld a 2003 law barring Palestinians from living with an Israeli spouse inside Israel. With one in five of Israel's population Palestinian by descent, the real aim of the law, as a recent editorial in the <i>Jerusalem Post</i> admitted, is to strip Palestinians of any rights to their historic homeland.<p>
 As Palestinian activist Ali Abunimah recently wrote, "Within Israeli society, the dehumanization of Palestinians continues to advance: A new poll by the Israel Democracy Institute found that 62 percent of Israelis support 'government-backed Arab emigration'--in other words ethnic cleansing of Palestinians."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

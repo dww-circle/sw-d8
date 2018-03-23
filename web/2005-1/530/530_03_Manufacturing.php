@@ -6,25 +6,25 @@ Manufacturing "democracy"
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Arial, Helvetica, sans-serif" size="2"><b>WHAT WE THINK</b></font><br>
 <font face="Times New Roman, Times, serif" size="4">Washington wants the Iraq election to legitimize occupation</font><br>
@@ -53,12 +53,12 @@ The masses of Shiites who supported the UIA on Election Day didn't cast a ballot
 If the UIA does come to represent the face of the new government, this will expose conflicts among Shiites--between the majority who want the U.S. out, and moderate leaders who are for compromise. The militant Shiite cleric Moqtada al-Sadr called for a boycott of the January 30 election and says he will oppose further concessions to the occupation. "The Iraqi people want a pullout timetable, security, job opportunities and social services," said Sheikh Hassan al-Zarqani, Sadr's press spokesperson. "We will obey the new elected government if it serves the best interests of the Iraqi people. If not, we will be its arch enemies."<p>
 No one who opposes the U.S. war on the Iraqi people should accept Iraq's elections as legitimate. They are another chapter in Washington's long history "of using elections held under conditions of war and occupation to legitimize its illegal wars," as Phyllis Bennis wrote. Ending the occupation--and bringing all U.S. troops home now--is the precondition for Iraqis being able to determine their own future.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

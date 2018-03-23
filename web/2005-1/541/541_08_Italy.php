@@ -6,25 +6,25 @@ Behind the crisis facing Berlusconi
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Arial, Helvetica, sans-serif" size="2"><b>ITALY</b></font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Behind the crisis facing Berlusconi</b></font><p>
@@ -45,12 +45,12 @@ There are three different answers to these questions. The first and most importa
 The second answer is that Unity is actually far more "anti-Berlusconi," than "pro-something." Unity's members go from former Christian Democrats to supporters of neoliberal policies (the "Daisy" alliance); and from the Democrats of the Left (part of the former Communist Party, led by Massimo D'Alema, who as Italian premier gave Bill Clinton the full support of Italy for the bombing of Yugoslavia) to Communist Refoundation (which is firmly antiwar and for the defense of the outstanding social benefits and labor laws conquered by Italian workers in the past 50 years). Therefore, what kind of social and international policies that Unity could have once in government remains a mystery.<p>
 The third answer is that a center-left government will anyway face the challenge of a stagnant economy, as well as the consequences of the ruinous trends of neoliberal social, labor and fiscal policies. Those policies were surely aggravated by Berlusconi's government, but were actually and firstly promoted by his predecessors--the governments led by Romano Prodi and Massimo D'Alema.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

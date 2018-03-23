@@ -6,25 +6,25 @@ How the NLRB system is rigged against labor
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>How the NLRB system is rigged against labor</b></font><p>
 <font face="Arial, Helvetica, sans-serif" size="2">March 30, 2007 | Page 11</font><p>
@@ -63,12 +63,12 @@ Many people today think of Franklin Roosevelt as a friend of labor because his "
 A look at strike figures for the periods 1923 to 1932 and 1936 to 1955 help show how the increased level of militancy, not Roosevelt, led to the enormous growth in union membership over that period. According to the U.S. Bureau of Labor Statistics, between 1923 and 1932, there were 9,658 strikes involving just over 3.9 million strikers. Between 1936 and 1955, there were 78,798 strikes involving 42,366,000 strikers.<p>
 In 2008, many people will vote for whatever Democratic candidate gets the presidential nomination in the hope that he or she will be better than eight years of Bush. But history shows that a resurgence of class struggle like the 1930s, which pushed Roosevelt to make the changes he did, will be necessary to turn around the labor movement.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

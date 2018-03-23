@@ -6,25 +6,25 @@ Baseball's ugly secret in Latin America
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="5"><b>Baseball's ugly secret in Latin America</b></font></P>
 <P><font face="Times New Roman, Times, serif" size="2"><b>By Peter DiLeo</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | September 12, 2003 | Page 9</font></p></P>
@@ -38,12 +38,12 @@ Baseball's ugly secret in Latin America
 <P>Alexis' nightmarish story culminates in a second tour at the academy where he dislocates his shoulder. The team--unwilling to pay for a proper medical attention--brings him to a utility shed where a "doctor" stomps on his shoulder to pop it into place. Not only was Quiroz never able to play again, but never regained full use of his arm.</P>
 <P>This compared to the treatment of baseball prospects in the U.S. and Asia, where amateurs are showered with million-dollar signing bonuses and given the best training regiments. <I>Stealing Lives</I> is a shocking indictment of the depths that major league franchises will sink to make money.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

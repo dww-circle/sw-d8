@@ -6,25 +6,25 @@ Por qu&eacute; apoyamos el matrimonio gay
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Arial, Helvetica, sans-serif" size="2"><b>EL SENTIDO DEL MARXISMO</b></font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Por qu&eacute; apoyamos el matrimonio gay</b></font></P>
@@ -42,12 +42,12 @@ Por qu&eacute; apoyamos el matrimonio gay
 <P>Tambi&eacute;n es exactamente el tipo de demanda que le da m&aacute;s confianza a nuestro bando porque es una reforma que podemos ganar en el presente. Y el envolvimiento de n&uacute;meros crecientes de parejas gay en desafiar los l&iacute;mites de la ley--mientras que los pol&iacute;ticos Dem&oacute;cratas se preocupan de que el asunto les costar&iacute;a votos--muestra que las reformas se ganan en la lucha, y no en las urnas. Vivimos en una &eacute;poca de creciente polarizaci&oacute;n pol&iacute;tica respecto a un mont&oacute;n de asuntos: desde la guerra y ocupaci&oacute;n de Irak, hasta las leyes represivas, y hasta la p&eacute;rdida de millones de empleos. </P>
 <P>El respaldo de Bush a una enmienda constitucional que prohibir&iacute;a el matrimonio entre los homosexuales le ha causado un profundo malestar a millones de personas. El potencial para movilizar a las muchas personas agraviadas por los fanfarrones derechistas de este gobierno est&aacute; latente en la lucha por el derecho al matrimonio de los gays y lesbianas.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

@@ -6,25 +6,25 @@ The hawks debate "pre-emptive" war
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Arial, Helvetica, sans-serif" size="2"><b>READING BETWEEN THE LINES</b></font><BR>
 <font face="Times New Roman, Times, serif" size="5"><b>The hawks debate "pre-emptive" war</b></font></P>
@@ -43,12 +43,12 @@ The hawks debate "pre-emptive" war
 <P>The Kissingers and the Scowcrofts don't disagree with the need to maintain U.S. dominance. Nor do they rule out unilateral U.S. action. But they worry that a "pre-emptive" war to enforce a "regime change" in Iraq will backfire. Where the hawks feel that U.S. power alone can make the world bow down to American primacy, the establishment critics think it's preferable to get U.S. allies to "want what we want."</P>
 <P>This isn't a debate between "hawks" and "doves." It's a policy dispute between figures who assume that the U.S. is an imperial power and must act like one. And when the Bush administration gives the order for war, you can be sure that all of today's establishment critics will "stand with the president."</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

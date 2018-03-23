@@ -6,25 +6,25 @@
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="5"><b>1.3 millones m&aacute;s caen en la pobreza</b></font></P>
 <P><font face="Times New Roman, Times, serif" size="2"><b>Por Lee Sustar</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | 24 de septiembre de 2004 | p&aacute;gina 4</font></p>
@@ -41,12 +41,12 @@
 <P>"Los recortes de impuestos para los ricos y la dura ideolog&iacute;a de derecha de la administraci&oacute;n han eliminado gran parte de la red de seguridad social que hab&iacute;amos logrado construir durante d&eacute;cadas, dej&aacute;ndonos con una creciente poblaci&oacute;n de hombres, mujeres y ni&ntilde;os vulnerables. Esto ha tenido un impacto desproporcionado sobre las ciudades, y el panorama, a corto y largo plazo, es desolador en el mejor de los casos. Estos son los asuntos importantes que podr&iacute;amos estar discutiendo si alguien pusiera en su agenda a las ciudades. Pero nadie lo hace".</P>
 <P>Los asuntos de pobreza y deterioro social est&aacute;n en el centro de la campa&ntilde;a independiente por la Casa Blanca de Ralph Nader y Peter Camejo. Pero los Dem&oacute;cratas no hay truco que no hayan utilizado para impedir que Nader y Camejo y sus propuestas sean parte del debate p&uacute;blico. Las estad&iacute;sticas de pobreza y de la falta de acceso a servicios m&eacute;dicos son los ejemplos mas recientes de por qu&eacute; necesitamos una verdadera alternativa pol&iacute;tica.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

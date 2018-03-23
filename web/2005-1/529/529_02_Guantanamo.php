@@ -6,25 +6,25 @@ New setback for military tribunals
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Ruling on rights of detainees</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>New setback for military tribunals</b></font><p>
@@ -37,12 +37,12 @@ In November, when another court ruling forced the Pentagon to suspend the tribun
 Green also pointed out in her opinion that U.S. officials haven't said how they will determine when the "war on terrorism" has ended. "The government has conceded that the war could last several generations, thereby making it possible, if not likely, that 'enemy combatants' will be subject to terms of life imprisonment at Guant&aacute;namo Bay," Green wrote.<p>
 Michael Ratner, president of the Center for Constitutional Rights, which filed the suit against the tribunals, said Green's decision was a victory. The ruling, he said, "reaffirms that the Guant&aacute;namo detainees cannot be imprisoned outside the law, that they have a constitutional right to a fair hearing and that evidence resulting from torture and coercion cannot be used to continue their imprisonments."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

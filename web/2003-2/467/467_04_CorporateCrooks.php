@@ -6,25 +6,25 @@ Crooks write the laws
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4">Report exposes Cheney's energy task force</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Crooks write the laws</b></font></P>
@@ -37,12 +37,12 @@ Crooks write the laws
 <P>But the GAO did discover that task force meetings included private sessions with Ken Lay, the former head of Enron, the Texas energy company that bilked thousands of workers out of their savings as it plunged plunged into bankruptcy at the end of 2001. The GAO report also says that several corporations and industry groups, including Chevron and the National Mining Association, gave detailed energy policy "recommendations"--most of which were adopted wholesale by the Bush gang.</P>
 <P>Among the policy guidelines the White House developed from the meetings: tax breaks and other incentives for energy production, including oil drilling in the Arctic National Wildlife Refuge. The task force was one of the biggest scams that the Bush administration had going when it took over the White House. No wonder they've tried to hush up the truth ever since.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

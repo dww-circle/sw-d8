@@ -6,25 +6,25 @@ Pressure grows at Delphi
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Judge hands executives $21 million in bonuses</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Pressure grows at Delphi</b></font><p>
@@ -40,12 +40,12 @@ Thus the UAW, Delphi and GM are negotiating to cover the costs of Delphi retiree
 "Now, they see that the same people who caused the failure at Delphi are going to be rewarded at the same time we are getting wage cuts. It has become clear to people that the intent was to attack us, and that we would not be an easy settlement. Now, the bargaining committee chairs [at Delphi plants across the U.S.] are telling people to prepare for a long strike."<p>
 The Soldiers of Solidarity network isn't leaving strike preparations to the UAW officials, who pushed through health care concessions at GM and Ford. "This is an underground movement," Shotwell said. "The people most involved in the work-to-rule campaign are not wearing buttons and distributing literature...It's the dog that doesn't bark that bites."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

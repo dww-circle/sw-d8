@@ -6,25 +6,25 @@ Solidarity in the streets
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>Solidarity in the streets</b></font><p>
 <font face="Arial, Helvetica, sans-serif" size="2">May 5, 2006 | Pages 6 and 7</font><p>
@@ -68,12 +68,12 @@ Instead of shrinking under the threats, immigrants showed their power--spurred t
 And protesters say that the struggle isn't over. "Next, we need to march from here to Sacramento, then to Salinas, then to Los Angeles," said San Francisco marcher Guadalupe Berumen, "We have to be in the streets."<p>
 <i>Michele Bollinger, Dave Buckingham, Mark Clinton, Roger Dyer, Patrick Dyer, Elizabeth Fawthrop, Danielle Heck, Andrea Hektor, Lilah Hinde, Missy Jacob, Naveen Jaganathan, Pranav Jani, Zakiya Khabir, Sarah Knopp, Chris Murphy, Jenny Olson, Caitlin Powell, Jennifer Roesch, Gillian Russom, Kyle Schmaus, Adam Turl, Corrie Westing, Jason Yanowitz, Leela Yellesetty contributed to this report</i>.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

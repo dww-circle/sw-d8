@@ -6,25 +6,25 @@ Framed in a fabricated bomb plot
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Latest victim of the war at home</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Framed in a fabricated bomb plot</b></font><p>
@@ -47,12 +47,12 @@ But according to Desis Rising Up and Moving (DRUM), a community-based organizati
 Both Siraj's father and mother have ongoing and severe medical conditions, and his mother was only allowed to take two days of medicine with her at the time of the arrests. All three family members are currently being held at Elizabeth Detention Center in Elizabeth, N.J., but they may be moved or sent to different facilities.<p>
 <i>For more information on the case, go to DRUM's web site at <a href="http://www.drumnation.org" target="_blank">drumnation.org</a>. DRUM is urging activists to call the ICE Field Office Director at 973-645-3666, and demand that the Siraj family be released immediately, and to call Warden Charlotte Collins at Elizabeth Detention Center at 908-352-3776 to demand that medical care be given to Siraj's parents</i>.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

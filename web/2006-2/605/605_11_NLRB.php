@@ -6,25 +6,25 @@ Labor board votes to limit union rights
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Ruling deems charge nurses "supervisors"<br>
 <font face="Times New Roman, Times, serif" size="5"><b>Labor board votes to limit union rights</b></font><p>
@@ -47,12 +47,12 @@ University of California-Santa Barbara professor Nelson Lichtenstein, director o
 Nationwide, an estimated 400,000 RNs are represented by collective bargaining agreements, and it is unclear how many will be affected by the NLRB decision. As Rose Ann DeMoro, executive director of the CNA/NNOC said, the ruling "opens the door to redefining every nurse as someone who uses professional judgment and is therefore ineligible for collective bargaining."<p>
 The CNA/NNOC, which represents 70,000 registered nurses (RNs) throughout the country, says it will "go to war" if employers try to take away its members' union rights. On October 5, 400 RNs protested in Los Angeles, and actions took place in other cities including Chicago, St. Louis, Louisville, Ky., and Bangor, Maine, in response to the ruling. And CNA/NNOC members have signed 30,000 strike pledges and plan to strike any hospital that attempts to enforce Kentucky River.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

@@ -6,25 +6,25 @@ King's stand against a U.S. war
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="5"><b>King's stand against a U.S. war</b></font></P>
 <p><font face="Arial, Helvetica, sans-serif" size="2">April 19, 2002 | Pages 8 and 9</font></p>
@@ -37,12 +37,12 @@ King's stand against a U.S. war
 <P>Like other leaders of the movement, King had seen the civil rights struggle as an effort to fix an essentially just system in the U.S. But the years of battles--not only against racist Southern Dixiecrats, but also the national political establishment--led King to begin making connections between the struggles against racism, war and imperialism, and poverty and class inequality.</P>
 <P>"On the one hand, we are called to play the good Samaritan on life's roadside," King said at the end of his speech. "But that will be only an initial act. One day, we must come to see that the whole Jericho road must be transformed, so that men and women will not be constantly beaten and robbed as they make their journey on life's highway. True compassion is more than flinging a coin to a beggar; it is not haphazard and superficial. It comes to see that an edifice which produces beggars needs restructuring."</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

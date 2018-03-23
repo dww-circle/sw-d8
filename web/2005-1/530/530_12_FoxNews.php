@@ -6,25 +6,25 @@ On the Fox News hit list
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Bill O'Reilly targets critics of U.S. war</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>On the Fox News hit list</b></font><p>
@@ -41,12 +41,12 @@ The strength of Churchill's point was undermined by comments which imply that so
 Meanwhile, Churchill was recently "disinvited" from speaking at a panel discussion on "The Limits of Dissent" at Hamilton College in New York--and was forced to resign as head of the ethnic studies department at the University of Colorado. Now, administrators are "reviewing" all of his writings--in order to determine whether he should keep his job.<p>
 <i>Statements in support of M. Shahid Alam can be sent to Northeastern University President <a href="http://155.33.227.141/president/letters.nclk" target="_blank">Richard Freeland</a> via the Internet. Statements in support of Ward Churchill can be e-mailed to University of Colorado President Elizabeth Hoffman at <a href="mailto:president@cu.edu">president@cu.edu</a>.</i> <p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

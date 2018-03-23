@@ -6,25 +6,25 @@ Howie Hawkins' antiwar challenge
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">The Green alternative to Hillary Clinton</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Howie Hawkins' antiwar challenge</b></font><p>
@@ -106,12 +106,12 @@ I COVER the debate in the Green Party, but also some of the other documents in t
 Until the Green Party, we haven't had an opening outside the Democrats since. There were early efforts like the Peace and Freedom Party in 1968, the People's Party in the early 1970s, and then the Greens starting in 1984. I see them as an expression in the political arena of the social movements that came out of the 1960s. It's a New Left type of formation. So I think this isn't a debate that just happened in the Green Party in 2004--it's a perennial debate in American politics. It's a debate we'll return to in 2008, and we're hearing about in 2006. There are a lot of people on the left saying, "If we could only a elect a Democratic Congress, everything will change." Of course, not much will change. It will be a little different, but not fundamentally. The issues we're talking about: ending the Iraq war, national health care, a serious energy policy--those issues won't be on the agenda just because the Democrats win Congress.<p>
 
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

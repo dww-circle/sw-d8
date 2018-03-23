@@ -6,25 +6,25 @@ UMass professor targeted by cops
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4">Trying to silence resistance</font><BR>
 <font face="Times New Roman, Times, serif" size="5"><b>UMass professor targeted by cops</b></font></P>
@@ -36,12 +36,12 @@ UMass professor targeted by cops
 <P>The campus police chief, who said publicly that he was proud of his officers, promised to "review the procedural guidelines for arrests." "This is not about procedure, this is about racism," responded Jemadari Kamara, a colleague of Van Der Meer's. </P>
 <P>Van Der Meer himself has spoken out against police brutality and racism. He and a large number of students have vowed to put up a fight until the charges are dropped. "This is reflective of the crackdown on civil liberties," said Van Der Meer. "People have to speak up; this isn't a time to be silent. And we also have to stand up and expose their lies that the war on Iraq is about freedom. It's an invasion and an occupation, and if we allow it to happen to them, it will happen to us. As Martin Luther King put it, 'Injustice anywhere is a threat to justice everywhere.'"</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

@@ -6,25 +6,25 @@ New York City mayor declares war on workers and the poor
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="5"><b>New York City mayor declares war on workers and the poor</b></font></P>
 <P><font face="Times New Roman, Times, serif" size="2"><b>By Thomas Barton, shop steward, AFSCME Local 768</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | April 18, 2003 | Page 11</font></P>
@@ -40,12 +40,12 @@ New York City mayor declares war on workers and the poor
 <P>Politicians like Bloomberg and Bush are convinced that working people have no way of fighting back. Their overconfidence has led them to attack broad sectors of society all at once. Have they overplayed their hand? </P>
 <P>City unions should reject the logic of concessions and rally working-class New Yorkers to fight for jobs, better education and social services. DC 37 has called a rally at City Hall Park on Tuesday, April 29, from 5:30 p.m. to 7:30 p.m. to protest the cuts. And the United Federation of Teachers plan to protest against education cuts in Albany on May 3.</P>
 <I><P>Michael Ware contributed to this report.</P>
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

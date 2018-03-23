@@ -6,25 +6,25 @@ Why he wore black
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 
 <P><font face="Times New Roman, Times, serif" size="4">Johnny Cash stood up for the little guy</font><br>
@@ -47,12 +47,12 @@ Why he wore black
 <P>The results won him a Grammy in 1998 for best country record. Instead of thanking the country music establishment that rejected him, he took out another full-page ad in <I>Billboard </I>featuring a picture of a much younger Cash flipping the bird.</P>
 <P>A story told by Kris Kristofferson probably best sums up Johnny Cash. "I opened for John in Philadelphia a few years ago, and I dedicated a song to Mumia Abu-Jamal," Kristofferson told <I>Rolling Stone</I> magazine in 2000. "The police at the show went ballistic. After I came off, they said that I had to go out and make an apology. I felt pretty bad, because it was John's show. But John heard about it and said to me, 'Listen, you don't need to apologize for nothin'. I want you to come out at the end of the show and do "Why Me" with me.' So I went out and sang with him. John just refuses to compromise."</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

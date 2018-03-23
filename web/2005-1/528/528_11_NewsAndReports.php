@@ -6,25 +6,25 @@ News and reports
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>News and reports</b></font><P>
 <font face="Arial, Helvetica, sans-serif" size="2">January 28, 2005 | Page 11</font><p>
@@ -75,12 +75,12 @@ The meeting was held to figure out how to re-launch student antiwar organizing o
 The keynote speaker was George Johnson of Veterans for Peace. Johnson spoke of the importance of connecting student activists and Iraqi soldiers. "Be ready to welcome vets and vets families," he said, "and be ready to meet those on the other side of the wall that don't necessarily know about organizing but still want to be involved." <p>
 The summit's main objectives came down to three points: First, planning around the upcoming March protests of the two-year anniversary of the invasion of Iraq by making sure CAN is well represented by an organized student contingent. Second, connecting with colleges that don't have CAN chapters to help them get one started. Third, strengthening CAN's relationship with veterans and military families while, at the same time, campaigning to kick military recruiters off college and high school campuses.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

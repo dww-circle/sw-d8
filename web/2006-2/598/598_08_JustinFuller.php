@@ -6,25 +6,25 @@ Don't let them kill Justin
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Arial, Helvetica, sans-serif" size="2"><b>VIEWS AND VOICES</b></font><br>
 <font face="Times New Roman, Times, serif" size="4">Texas plans to execute a beautiful young man</font><br>
@@ -48,12 +48,12 @@ I am asking everyone to please fax, call and e-mail the governor of Texas and th
 <i>E-mails and faxes can be <a href="http://www.democracyinaction.org/dia/organizationsORG/tmn/campaign.jsp?campaign_KEY=4941&amp;t=cedp.dwt" target="_blank">sent directly online</a> from the Democracy in Action Web site. Contact Gov. Rick Perry at 512-463-2000, 512-463-1849 (fax) or at <a href="http://www.governor.state.tx.us/contact" target="_blank">www.governor.state.tx.us/contact</a>. Contact the Texas Board of Pardons and Paroles at 512-406-5852, or 512-467-0945 (fax)</i>.<p>
 <i>An interview with Justin Fuller, conducted by fellow activist and Texas death row prisoner Tony Ford, is available at <a href="http://www.myspace.com/tonyegbunaford999075" target="_blank">www.myspace.com/tonyegbunaford999075</a></i>.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

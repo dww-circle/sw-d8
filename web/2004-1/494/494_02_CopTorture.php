@@ -6,25 +6,25 @@ Chicago police torture exposed
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4">Cop's sister confirms Black suspects were brutalized</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Chicago police torture exposed</b></font></P>
@@ -42,12 +42,12 @@ Chicago police torture exposed
 <P>In April 2002, anti-police brutality and anti-death penalty activists won a victory when a special prosecutor was appointed to investigate Burge and the cases of the African Americans he tortured. But the investigation has dragged out, with no word being made public. With the emergence of Ellen Pryweller's testimony, activists should step up the pressure and demand a swift and public investigation of Burge and his thugs.</P>
 <P>Members of the Enough Is Enough Campaign against police torture and the Campaign to End the Death Penalty are cosponsoring a picket and press conference at the special prosecutor's office on April 6, and a public forum to expose the allegations of torture on April 20. We need to put more pressure on the Chicago police and prosecutors to break their conspiracy of silence--and finally give justice to the men who were tortured by Chicago's finest.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

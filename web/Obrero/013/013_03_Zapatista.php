@@ -6,25 +6,25 @@ La rebeli&oacute;n Zapatista: Diez a&ntilde;os despu&eacute;s
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Arial, Helvetica, sans-serif" size="2"><b>LA IZQUIERDA EN DEBATE</b></font><BR>
 <font face="Times New Roman, Times, serif" size="5"><b>La rebeli&oacute;n Zapatista: Diez a&ntilde;os despu&eacute;s</b></font></P>
@@ -71,12 +71,12 @@ La rebeli&oacute;n Zapatista: Diez a&ntilde;os despu&eacute;s
 <P>Pero hoy en M&eacute;xico el sistema de libre empresa es responsable de que millones de personas est&eacute;n sumidas en la pobreza y la explotaci&oacute;n. S&oacute;lo la clase obrera de ambos lados de la frontera entre M&eacute;xico y EE.UU. tiene el poder para poner al sistema de rodillas. El derrotar las fuerzas de la globalizaci&oacute;n corporativa que aplastan a los trabajadores, campesinos e ind&iacute;genas mexicanos requerir&aacute; no s&oacute;lo una rebeli&oacute;n, sino una revoluci&oacute;n que reemplace esta sociedad cimentada sobre el lucro y la avaricia por una sociedad controlada por los trabajadores para satisfacer las necesidades humanas.</P>
 
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

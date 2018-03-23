@@ -6,25 +6,25 @@
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>&iquest;Por qu&eacute; el Acta DREAM derrotada?</b></font><p>
 <font face="Times New Roman, Times, serif" size="2"><b>Por Justin Akers Chac&oacute;n y Lee Sustar</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | diciembre de 2007 | p&aacute;gina 4</font><p>
@@ -66,12 +66,12 @@ David Chu, Subsecretario de Defensa para el enlistamiento de personal, y Bill Ca
 A pesar de la derrota del acta DREAM a manos de la derecha, los esfuerzos para atraer o presionar a inmigrantes para enlistarse en las fuerzas armadas continuar&aacute;n. El debate dentro del movimiento sobre el acta DREAM ha subrayado las conexiones entre la guerra, el imperio y la inmigraci&oacute;n. Depende de los activistas por los derechos de los inmigrantes y de los activistas contra la guerra hacer estas conexiones--y construir el tipo de movimiento que puede unir a aquellos que pelean por la paz con aquellos que pelean por la justicia. <p>
 <i>Traducido por Nadia Sol Ireri Unzueta Carrasco</i> <p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

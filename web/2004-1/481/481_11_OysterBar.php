@@ -6,25 +6,25 @@ Oyster Bar strikers stand strong in NYC
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="5"><b>Oyster Bar strikers stand strong in NYC</b></font></P>
 <P><font face="Times New Roman, Times, serif" size="2"><b>By Sean Petty</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | January 9, 2004 | Page 11</font></P>
@@ -38,12 +38,12 @@ Oyster Bar strikers stand strong in NYC
 <P>The question remains about the union is going to stop scabs from keeping the restaurant open. But the workers are not giving up on trying to hurt the Oyster Bar in any way possible. Local 100 president Bill Granfield told <I>Socialist Worker</I>, "I think the key to winning is going to be the daily pressure on the picket lines."</P>
 <I><P>If you would like to contribute to the strike fund, please mail a check or money order to HERE Local 100, Oyster Bar Holiday Strike Fund, 321 West 44th Street, New York, NY, 10036.</I></P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

@@ -6,25 +6,25 @@ En defensa de los inmigrantes
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Arial, Helvetica, sans-serif" size="2"><b>LO QUE PENSAMOS</b></font><br>
 <font face="Times New Roman, Times, serif" size="4">Por un nuevo movimiento de derechos civiles</font><br>
@@ -48,12 +48,12 @@ Existe un peligro sustancial que los Dem&oacute;cratas oficialicen el programa d
 Despu&eacute;s de proclamar un "estado de emergencia" en la frontera, Napolitano mand&oacute; tropas de la Guardia Nacional para patrullarla. Esto es otro ejemplo de la simple verdad de que el "mal menor" de los Dem&oacute;cratas es todav&iacute;a un "mal". Por lo tanto, un movimiento pro derechos de los inmigrantes debe ser indepiendente de las maniobras de los partidos de los patrones y debe elaborar sus propias demandas.<p>
 Los 30 grupos defensores de los derechos de los inmigrantes que organizaron la marcha de Chicago presentaron como sus demandas centrales la amnist&iacute;a para los inmigrantes indocumentados, el declarar a Illinois como un santuario para todos los inmigrantes y el apoyo a una huelga general en respuesta a los Minutemen, a la ley de Sensenbrenner, y contra el Muro del Apartheid en la frontera entre EEUU y M&eacute;xico. Esto representa un nuevo cap&iacute;tulo en la lucha por derechos civiles de los inmigrantes.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

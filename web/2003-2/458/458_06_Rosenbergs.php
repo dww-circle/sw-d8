@@ -6,25 +6,25 @@ The execution of Ethel and Julius Rosenberg
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="5"><b>The execution of Ethel and Julius Rosenberg</b></font></P>
 <p><font face="Arial, Helvetica, sans-serif" size="2">June 20, 2003 | Pages 6 and 7</font></p>
@@ -68,12 +68,12 @@ The execution of Ethel and Julius Rosenberg
 <P>Supporters made last-minute attempts to save their lives, with almost 10,000 turning out for a vigil on the day their execution was scheduled to take place. Unfortunately, it was too little, too late. Despite nine appeals to the Supreme Court, clemency requests to Presidents Harry Truman and Dwight Eisenhower, and a last-minute stay by Supreme Court Justice William Douglas, the Rosenbergs were executed on June 19, 1953--their 14th wedding anniversary.</P>
 <P>Even so, their unwavering commitment to expose the terrible injustices committed by the U.S. government and their belief that a better world is possible live on today. As Ethel wrote in the couple's last appeal to the president: "We are not martyrs or heroes, nor do we wish to be. We do not want to die. We are young, too young, for death. We long to see our two young sons, Michael and Robert, grown to full manhood...We desire some day to be restored to a society where we can contribute our energies toward building a world where all shall have peace, bread and roses. Yes, we wish to live, but in the simple dignity that clothes only those who have been honest with themselves and their fellow men."</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

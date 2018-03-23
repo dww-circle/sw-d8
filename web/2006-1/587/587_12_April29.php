@@ -6,25 +6,25 @@ Antiwar march takes to NYC streets
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Could April 29 protest have accomplished more?</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Antiwar march takes to NYC streets</b></font> <p>
@@ -48,12 +48,12 @@ Veterans' and military families' groups had a large presence on the march, but t
 With no platform for speeches, these important antiwar voices went largely unheard. Jody Casey, a member of Iraq Veterans Against the War, was stationed in Baquba, Iraq, and left the military just last month. He traveled from Wenatchee, Wash., for the April 29 protest. "I've been dismissed as a 'disgruntled' soldier, but I would have been a lifer--I was a proud soldier," Casey said. "But we're tormenting innocent people in Iraq, people trying to lead ordinary lives, and the amount of destruction is outrageous." <p>
 April 29 showed the potential for revitalizing the movement, but the real work of organizing will take place where it always has--at the grassroots.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

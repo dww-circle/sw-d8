@@ -6,25 +6,25 @@ Making the case for affirmative action
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="5"><b>Making the case for affirmative action</b></font></P>
 <P><font face="Times New Roman, Times, serif" size="2"><b>Review by Dennis Kosuth</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | October 4, 2002 | Page 9</font></P>
@@ -41,12 +41,12 @@ Making the case for affirmative action
 <P>"That goal [liberating everyone] will be realized only when more privileged whites, as well as middle- and upper-class people of color, join their fate with those less fortunate and make personal sacrifices in the short run to struggle together for larger social justice ideals," Guinier and Torres write. This ignores how those in power benefit from racism--by using the issue of race to scapegoat minorities and deflect attention from their overall attack on working people.</P>
 <P>The potential for unity does exist among workers, Black and white alike--but whether the potential is realized depends on the actions of opponents of racism in making the connections clear. <I>The Miners' Canary</I> is helpful--in taking apart the arguments against affirmative action and calling for a unified grassroots struggle, not only against racism, but all social injustices. </P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

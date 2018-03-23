@@ -6,25 +6,25 @@ On the picket line
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>On the picket line</b></font><P>
 <font face="Arial, Helvetica, sans-serif" size="2">December 3, 2004 | Pages 10 and 11</font><p>
@@ -74,12 +74,12 @@ In 2000, CUNA illegally fired 22 union janitors and outsourced the work to Clean
 For more than seven months, CUNA has refused to fairly negotiate a new agreement with Office Professionals Employees International Union (OPEIU) Local 39, which represents about 1,400 of its workers. This summer, Mike Kitchen, CUNA's former CEO, was forced to retire after illegally paying $1,000 to a union splinter group calling for decertification. In 2000, CUNA unjustly fired a developmentally disabled worker--and his supervisor who refused to sign the termination papers. <p>
 Rallies are being planned elsewhere to build support for the Justice for Janitors campaign. However, contract talks between OPEIU Local 39 and CUNA remain deadlocked, and the union has yet to discuss any plans to strike.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

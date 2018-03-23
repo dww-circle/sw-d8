@@ -6,25 +6,25 @@ Contradicciones del voto latino por Bush
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>Contradicciones del voto latino por Bush</b></font><p>
 <font face="Times New Roman, Times, serif" size="2"><b>Por Lance Selfa</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | 26 de noviembre de 2004 | p&aacute;gina 2</font><p>
@@ -40,12 +40,12 @@ Por eso Nativo Lopez, un activista comunitario californiano de muchos a&ntilde;o
 "Nunca hemos recibido el apoyo leg&iacute;timo o sincero del partido [Dem&oacute;crata] que hemos ayudado a construir, y en muchos casos ni de los candidatos electos de este partido", dijo a <i>Obrero Socialista</i> Lopez, l&iacute;der de la Mexican American Political Association. "Es un partido que no responde a las necesidades de la mayor&iacute;a y es dirigido por millonarios blancos y sus consejeros pol&iacute;ticos que solamente tratan de imponer su voluntad pol&iacute;tica sobre la mayor&iacute;a (incluso los trabajadores anglosajones), y &uacute;nicamente apoyan a los candidatos minoritarios que pueden controlar y manipular para su propio inter&eacute;s econ&oacute;mico".<p>
 Mientras m&aacute;s gente llegue a las mismas conclusiones que Lopez--y busque una alternativa de izquierda en vez de apoyar a los dos partidos del status quo--mejor ser&aacute; para el pueblo trabjador.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

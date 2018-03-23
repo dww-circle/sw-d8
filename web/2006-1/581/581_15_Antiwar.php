@@ -6,25 +6,25 @@
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Protests bloom across U.S. on third anniversary of Iraq war</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>"Bring them home now"</b></font><p>
@@ -59,12 +59,12 @@ In Rochester, N.Y., more than 400 people took to the streets braving below-freez
 Some 400 protesters marched in downtown Providence, R.I. At a speak-out that turned out 85 in Vermont, Jimmy Leas from Burlington Says No to War told the crowd, "We can't rely on the Democrats. We have to build a grassroots movement of students, soldiers and workers to end this war now."<p>
 <i>Sam Bernstein, Erika Claich, Alden Eagle, Robin Gee, Danielle Heck, Brian Huseby, Josh Karpoff, Zakiya Khabir, Evan Kornfeld, Kate Johnson, Brian Lenzo, John Osmand, Steve Ramey, Jennifer Ramos, Gillian Russom, Camille White-Avian and Hannah Wolfe contributed to this report</i>.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

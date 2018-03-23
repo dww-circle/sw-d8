@@ -6,25 +6,25 @@ V&iacute;ctimas de la guerra dom&eacute;stica
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4">Cacer&iacute;a de brujas del gobierno federal contra &aacute;rabes y musulmanes</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>V&iacute;ctimas de la guerra dom&eacute;stica</b></font></P>
@@ -43,12 +43,12 @@ V&iacute;ctimas de la guerra dom&eacute;stica
 <P>Ah&iacute; le exigieron que subiera al cuarto piso, donde se encuentra la oficina de deportaci&oacute;n y detenci&oacute;n. Abdo tuvo suerte, y no fue arrestado. Pero centenares m&aacute;s no ser&aacute;n tan afortunados. Por eso los activistas est&aacute;n organizando manifestaciones en las sedes del INS en Nueva York, San Francisco, Chicago y otras ciudades para confrontar cada nueva fecha l&iacute;mite de inscripci&oacute;n con una oposici&oacute;n visible. </P>
 <P>Seg&uacute;n Hussam Ayloush, director ejecutivo del Concilio de Relaciones Isl&aacute;micas con Am&eacute;rica en el sur de California, dijo en una manifestaci&oacute;n: "Este nuevo Macartismo contra los musulmanes debe acabarse. &#191;Nos van a deportar a todos?" </P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

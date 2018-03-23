@@ -6,25 +6,25 @@ Harry Potter: The final conflict
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>Harry Potter: The final conflict</b></font><p>
 <font face="Arial, Helvetica, sans-serif" size="2">August 3, 2007 | Page 11</font><p>
@@ -61,12 +61,12 @@ Voldemort's world would be one built on the supremacy of the "Pure Bloods" and t
 Harry's early rejection of snobbery and judging people on the basis of money or blood shape his later development as a skilled fighter against Voldemort and all that he represents. That he isn't as politically developed as some of the other, older wizards are understandable. The characters are wonderfully contradictory, and while we may sometimes be frustrated with Harry's youthful self-absorbedness we never doubt that as he matures he comes to understand Voldemort's threat more fully, as he grows more committed to building the fight see him defeated.<p>
 This is encapsulated in an exchange between Harry, and his friend, the werewolf Remus Lupin, the type of being which would be forced underground and hunted if Voldemort were allowed to reign. Remus explains to Harry why he was willing to fight and sacrifice so that he could help in building a world where one "could live a happier life." As a werewolf, facing discrimination and persecution, this can only mean a world in which all creatures and people, regardless of blood purity, could live together as equals.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

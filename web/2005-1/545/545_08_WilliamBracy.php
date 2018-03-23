@@ -6,25 +6,25 @@
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Arial, Helvetica, sans-serif" size="2"><b>VIEWS AND VOICES</b></font><br>
 <font face="Times New Roman, Times, serif" size="4">An inspiration to those on death row</font><br>
@@ -45,12 +45,12 @@ I will always remember the day I told him that I just couldn't take being on dea
 Judge Maloney was convicted and sent to prison for accepting bribes to fix cases in the Greylord scandal, and Bracy received a new hearing from the U.S. Supreme Court because it was determined that the excessively harsh treatment he received from Judge Maloney was "to hide or to compensate for the fact that leniency was sold in other cases." The court ruled that Bracy had a right to a "fair trial in a fair tribunal before a judge with no actual bias," and it's unfortunate and unjust that he never received the chance to be rightfully reunited with his family and loved ones.<p>
 Bracy is no longer physically with us, but his love, guidance and inspiration will forever shine in our hearts. We love you William Bracy and know that you are safely in God's loving embrace! I send my deepest condolences to his family and loved ones on behalf of all of us, and those who work endlessly in the Campaign to End the Death Penalty.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

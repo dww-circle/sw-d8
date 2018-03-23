@@ -6,25 +6,25 @@ Unity on what basis?
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Antiwar movement debate over Palestine:</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Unity on what basis?</b></font><p>
@@ -62,12 +62,12 @@ The only unity worth fighting for is one that incorporates the legitimate demand
 A July statement from the Campus Antiwar Network, one of the organizations spearheading the growing movement to get military recruiters out of universities and high schools, gets this right: "As a new counter-recruitment movement is exploding across the country, it is vital for students, teachers, parents, and others who wish to reclaim our schools from recruitment for a war most Americans oppose to be able to march alongside one another. This unity is threatened by the specter of two separate protests in D.C. Therefore, in the interests of building the strongest movement possible to end occupation, we call on United for Peace and Justice to drop its opposition to demands in support of Palestine and civil liberties, so that all of us--including broad segments of the populations most affected by the war at home--can come together as one united protest in Washington."<p>
 <i>Socialist Worker</i> stands in solidarity with Arab and Muslim activists in calling on the antiwar movement to take up the issue of Palestine and oppose Israel's occupation.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

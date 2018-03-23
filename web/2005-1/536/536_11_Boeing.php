@@ -6,25 +6,25 @@ Mass layoffs at Boeing
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Wichita workers must reapply for jobs at new company</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Mass layoffs at Boeing</b></font><p>
@@ -42,12 +42,12 @@ The Boeing job cuts have accelerated the decline in the IAM's active membership,
 What happens next in the Onex-IAM negotiations will have far-reaching implications not only for the IAM in Wichita, but also for manufacturing unions across the U.S. So far the unions' response in the auto and steel industries has been to try to slow job shrinkage by making concessionary deals in order to make new owners profitable--an approach that the IAM seems set to follow.<p>
 Local 834 leaders, for example, have already ruled out a strike, warning members that the Boeing-Onex deal--and its promised new jobs--would disappear if workers reject a future contract. Such a strategy will only ensure further decline for the IAM--unless the rank and file takes the initiative and fights for a decent contract.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

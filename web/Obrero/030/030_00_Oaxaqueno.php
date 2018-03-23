@@ -6,25 +6,25 @@ La lucha por "nuestros derechos universales como seres humanos"
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Un maestro en huelga oaxaque&ntilde;o relata...</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>La lucha por "nuestros derechos universales como seres humanos"</b></font><p>
@@ -87,12 +87,12 @@ EL PRIMER paso es seguir conservando esta unidad del pueblo obrero de Oaxaca. Lo
 
 POR SUPUESTO, fueron contextos diferentes. Particip&eacute; en reuniones con inmigrantes de Oaxaca aqu&iacute; en California, con los universitarios, con los maestros, pero al final tenemos una coincidencia. Todos est&aacute;n preocupados por la violencia contra el pueblo en Oaxaca. Y todos est&aacute;n unidos en apoyo de nuestras demandas para una educaci&oacute;n p&uacute;blica para nuestros ni&ntilde;os. Pero tambi&eacute;n creo que ustedes tienen que unirse para defender sus derechos en los Estados Unidos, como inmigrantes, como trabajadores. Creo que todos los obreros en todas partes del mundo tienen que formar muchas APPO. Porque en esencia es la defensa de nuestros derechos universales como seres humanos ante la opresi&oacute;n y la represi&oacute;n del poder.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

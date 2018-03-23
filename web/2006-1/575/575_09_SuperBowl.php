@@ -6,25 +6,25 @@ Super Bowl city on the brink
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>Super Bowl city on the brink</b></font><p>
 <font face="Times New Roman, Times, serif" size="2"><b>By Dave Zirin</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | February 10, 2006 | Page 9</font><p>
@@ -43,12 +43,12 @@ For a city that built a stable "middle class" out of union struggle and the auto
 There is no NORAD, however, on the streets of Detroit to protect people from Operation Enduring Class War otherwise known as the Super Bowl. (If instead of betting on the big game, you want to give to the Detroit Rescue Mission, call 313-993-4700 or send a check to Detroit Rescue Mission, 150 Stimson, Detroit, MI 48201.)<p>
 <i>Dave Zirin is the author of </i>What's My Name, Fool? Sports and Resistance in the United States<i>, available from <a href="http://www.haymarketbooks.org" target="_blank">www.haymarketbooks.org</a>. Read more of his writing at <a href="http://www.edgeofsports.com" target="_blank">edgeofsports.com</a></i>.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

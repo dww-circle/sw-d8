@@ -6,25 +6,25 @@ Rebeli&oacute;n en Bolivia
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4">Presidente busca refugio en EE.UU.</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Rebeli&oacute;n en Bolivia</b></font></P>
@@ -56,12 +56,12 @@ Rebeli&oacute;n en Bolivia
 <P>La primera gran marcha por el gas el 19 de septiembre fue convocada por la Coordinadora del Gas. En Cochabamba ha sido quien ha dado las pautas para las movilizaciones. Sin embargo, actualmente, no podemos hablar de un protagonismo de ninguna de las organizaciones. Es la propia gente autoconvocada que ha tomado las calles y los caminos.</P>
 <P>El neoliberalismo nos ha destruido la vida, rob&aacute;ndolo todo. Durante su primera administraci&oacute;n, S&aacute;nchez de Losada privatiz&oacute; todo excepto el aire, y fueron el capital internacional y la oligarqu&iacute;a boliviana los que se beneficiaron. La riqueza que representa el gas es nuestra &uacute;ltima oportunidad--nuestra &uacute;ltima esperanza--para salir de la pobreza en que estamos hundidos y fortalecer nuestra propia infraestructura econ&oacute;mica. El gas boliviano debe ser destinado ante todo a construir una vida mejor y un futuro seguro para el pueblo boliviano. Pero eso ser&iacute;a imposible si el gas contin&uacute;a en manos de las transnacionales.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

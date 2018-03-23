@@ -6,25 +6,25 @@ Upside down priorities
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">A graphic look at America's rich and poor</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Upside down priorities</b></font><p>
@@ -62,12 +62,12 @@ The <a href="http://www.nationalpriorities.org" target="_blank">National Priorit
 Journalist David Cay Johnston's book <i><a href="http://www.amazon.com/gp/redirect.html?ie=UTF8&amp;location=http%3A%2F%2Fwww.amazon.com%2FPerfectly-Legal-Campaign-Rich-CheatEverybody%2Fdp%2FB000CDG8N8%3Fie%3DUTF8%26s%3Dbooks%26qid%3D1195097890%26sr%3D8-2&amp;tag=socialistwork-20&amp;linkCode=ur2&amp;camp=1789&amp;creative=9325" target="_blank">Perfectly Legal: The Covert Campaign to Rig Our Tax System to Benefit the Super-Rich--and Cheat Everybody Else</a> </i>looks at the role played by the tax system in facilitating a shift in wealth from poor to rich.<p>
 <i><a href="http://www.haymarketbooks.org/Merchant2/merchant.mv?Screen=PROD&amp;Store_Code=Haymarket&amp;Product_Code=MSCFS" target="_blank">The Case for Socialism</a></i>, by <i>Socialist Worker </i>editor Alan Maass, also contains a wealth of useful statistics about working-class living standards as well as a socialist analysis of how the wealth of the few depends on the poverty of the many.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

@@ -6,25 +6,25 @@ News and reports
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>News and reports</b></font><P>
 <font face="Arial, Helvetica, sans-serif" size="2">September 23, 2005 | Pages 14 and 15</font><p>
@@ -47,12 +47,12 @@ There has been an outpouring of grassroots relief efforts to try to meet the nee
 There's also been an attempt to connect the plight of the evacuees to some of the larger political issues that groups have been organizing around. The local organizing committee of the Millions More Movement in Chicago organized a last-minute fundraiser called the Hurricane Katrina Relief-A-Thon. The fundraiser was a tremendous success as 150 people raised over $1,000 in a little over three hours. Local entertainers read poetry, sang songs and played instruments to raise money.<p>
 -- At Hunter College and Columbia University in <b>New York City</b>, campus-wide coalitions met last week to discuss how to coordinate relief efforts at their campuses. On September 9, activists held a press conference and picket at the FEMA offices in New York. This was followed by a fundraiser for relief, organized by Palestinian groups, called "Refugees for Refugees."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

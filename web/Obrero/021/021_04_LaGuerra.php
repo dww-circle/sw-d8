@@ -6,25 +6,25 @@ La guerra unilateral de clases
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Trabajando m&aacute;s por menos y los patrones se hacen m&aacute;s ricos</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>La guerra unilateral de clases</b></font><p>
@@ -51,12 +51,12 @@ Los retos para lograr esto son profundos. El excedente persistente de mano de ob
 Las estad&iacute;sticas salariales m&aacute;s recientes refuerzan el punto: Ya no es cierto--si alguna vez lo fue--que la marea econ&oacute;mica alta levanta a todos los botes. Es la guerra de clases arremetida desde arriba lo que ha permitido que la clase gobernante estadounidense acumule su inmenso poder--y ser&aacute; necesaria una guerra de clases acometida desde abajo para que los obreros logren mejoras significativas en sus vidas.<p>
 <i>Traducci&oacute;n de Brian Chidester</i> 
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

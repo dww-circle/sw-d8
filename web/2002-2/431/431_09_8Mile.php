@@ -6,25 +6,25 @@ Is Eminem transformed?
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4">Movie offers up brand-new image for rapper</font><BR>
 <font face="Times New Roman, Times, serif" size="5"><b>Is Eminem transformed?</b></font></P>
@@ -42,12 +42,12 @@ Is Eminem transformed?
 <P>Eminem himself has sold more records than any other hip-hop artist. This is often explained by his "crossover appeal"--that is, he's white. Eminem himself acknowledges this on his new album: "Let's do the math--if I were Black, I would have sold half," he says in the song "White America."</P>
 <P>Yet while he may be derided by some as "the Elvis of hip-hop," Eminem nonetheless brings strong acting and rhyming to <I>8 Mile</I>. But if you think the populist tone of his new hit "Lose Yourself," along with the themes in <I>8 Mile,</I> are evidence that Eminem has changed his ways, don't hold your breath. His next gig is an appearance on <I>Girls Gone Wild,</I> a video series where stars videotape college women exposing themselves.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

@@ -6,25 +6,25 @@ Spying on antiwar protesters
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">New documents show the scale of federal surveillance</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Spying on antiwar protesters</b></font><p>
@@ -40,12 +40,12 @@ Other documents include references to the potential for disruption to military r
 The new documents show that intelligence reports and tips about antiwar protests, including details like the schedule for weekly antiwar planning meetings, were widely shared among analysts from the military, the FBI and the Department of Homeland Security.<p>
 "There is simply no reason why the United States military should be monitoring the peaceful activities of American citizens who oppose U.S. war policies," said ACLU attorney Ben Wizner in a statement. "When information about non-violent protest activity is included in a military anti-terrorism database, all Americans should be concerned about the unchecked authority this administration has seized in the name of fighting terrorism...It is an abuse of power and an abuse of trust for the military to play any role in monitoring critics of administration policies."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

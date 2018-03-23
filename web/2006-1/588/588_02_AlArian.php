@@ -6,25 +6,25 @@ Al-Arian's nightmare continues
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Left to rot in jail by federal judge</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Al-Arian's nightmare continues</b></font><p>
@@ -41,12 +41,12 @@ In a statement during the sentencing, Moody claimed that Al-Arian was guilty of 
 As the Tampa Bay Coalition for Justice and Peace noted, "None of [Moody's] accusations, which were unequivocally rejected by the jury, appear anywhere in the actual plea agreement for which Dr. Al-Arian was being sentenced, or in the pre-sentencing report issued by a probation officer. He regurgitated long-disproven accusations by the prosecution and even rehashed a charge by a previously discredited FBI informant. During the course of his tirade, Moody resorted to name-calling and personal insults...<p>
 "On a day when all sides expected a swift and final resolution to this painful chapter, the judge ensured Dr. Al-Arian's and his family's continued suffering and sparked outrage by friends, colleagues and supporters. Following the vindictive display, many experienced lawyers and legal experts said they had never seen a judge carry himself in such an unscrupulous manner."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

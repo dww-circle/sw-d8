@@ -6,25 +6,25 @@ The G8's debt scam
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Rich countries put conditions on debt relief</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>The G8's debt scam</b></font><p>
@@ -45,12 +45,12 @@ This is a familiar recipe of free-market, neoliberal policies that have devastat
 It's this agenda that prompted a warning from three South African activists--poet and social justice campaigner Dennis Brutus, author Patrick Bond and anti-debt activist Virginia Setshedi. In a recent article, they described the campaign around the G8 as swept up by "media buzz, fashion statement, celebrity chasing and the NGO's proximity to power." Hailing the G8 debt relief plan as a victory "concedes that the vast populations of lower-middle income countries will suffer under indefinite debt peonage," they wrote.<p>
 That's why a range of global justice organizations will use the Gleneagles counter-summit protest not to declare victory, but to denounce the G8 initiative for the public relations scam it is--and step up the demand for complete abolition of the debt.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

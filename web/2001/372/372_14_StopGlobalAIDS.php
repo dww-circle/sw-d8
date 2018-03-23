@@ -6,25 +6,25 @@ Stop global AIDS
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <p><font face="Times New Roman, Times, serif" size="5"><b>Stop global AIDS</b></font></p>
 <p><font face="Times New Roman, Times, serif" size="2"><b>by REBECCA KURTI</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | July 6, 2001 | Page 14</font></p>
@@ -37,12 +37,12 @@ Stop global AIDS
 <P>March organizer Asia Russell, of Philadelphia ACT UP, pointed to the recent racist remarks of Andrew Natsios, head of the U.S. Agency for International Development, who said AIDS drugs would be wasted in Africa because Africans couldn't understand "Western time." As Russell argued, Natsios is willing to trade the lives of millions of people to protect the profits of drug companies.</P>
 <P>Earlier this year, drug companies were pressured into dropping a lawsuit against the South African government's law allowing the manufacturing of cheaper generic AIDS drugs. But there are more battles to be fought. We need to keep up the pressure on the U.S. government and the drug company giants alike--and show them that we want patients before profits!</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

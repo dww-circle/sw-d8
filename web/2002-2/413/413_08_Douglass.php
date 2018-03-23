@@ -6,25 +6,25 @@ What to the slave is the Fourth of July?
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4">Frederick Douglass on U.S. "democracy" and "freedom"</font><BR>
 <font face="Times New Roman, Times, serif" size="5"><b>What to the slave is the Fourth of July?</b></font></P>
@@ -60,12 +60,12 @@ What to the slave is the Fourth of July?
 <P>Fellow citizens! The existence of slavery in this country brands your republicanism as a sham, your humanity as a base pretence, and your Christianity as a lie. It destroys your moral power abroad; it corrupts your politicians at home. It saps the foundation of religion; it makes your name a hissing, and a byword to a mocking earth. It is the antagonistic force in your government, the only thing that seriously disturbs and endangers your <I>Union. </I>It fetters your progress; it is the enemy of improvement, the deadly foe of education; it fosters pride; it breeds insolence; it promotes vice; it shelters crime; it is a curse to the earth that supports it; and yet, you cling to it, as if it were the sheet anchor of all your hopes.</P>
 <P>Oh be warned! Be warned! A horrible reptile is coiled up in your nation's bosom; the venomous creature is nursing at the tender breast of your youthful republic; for the love of God, tear away, and fling from you the hideous monster, and let the weight of twenty millions crush and destroy it forever!</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

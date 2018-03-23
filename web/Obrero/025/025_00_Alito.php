@@ -6,25 +6,25 @@ La derecha ve su sue&ntilde;o hecho realidad
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Pat&eacute;tica resistencia de Dem&oacute;cratas a la confirmaci&oacute;n de Alito</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>La derecha ve su sue&ntilde;o hecho realidad</b></font><p>
@@ -42,12 +42,12 @@ A pesar de la creciente evidencia que revela el p&eacute;simo r&eacute;cord de A
 Richard H. Fallon, profesor de la escuela de leyes en Harvard, no le ech&oacute; la culpa a los senadores Dem&oacute;cratas del comit&eacute;, sino al p&uacute;blico. "Puede ser un error pensar que el fracaso [de los Dem&oacute;cratas] demuestre que ellos hicieran algo mal... Mientras la mayor&iacute;a del p&uacute;blico acepta o tolera respuestas evasivas o poco informativas, a lo mejor no podr&iacute;an haber hecho nada para hacerle a Alito caer en el error". Sin embargo, los senadores responsables para interrogar a Alito no hicieron ning&uacute;n esfuerzo por indagar p&uacute;blicamente el r&eacute;cord jur&iacute;dico del juez.<p>
 En las pr&oacute;ximas semanas el Senado confirmar&aacute; al juez conservador, sin que los Dem&oacute;cratas siquiera intenten el obstruccionismo parlamentario (filibuster en ingl&eacute;s). &iquest;La soluci&oacute;n que ellos proponen para cambiar el car&aacute;cter m&aacute;s y m&aacute;s conservador de la Corte Suprema? Votar por m&aacute;s Dem&oacute;cratas para la C&aacute;mara y la presidencia. Pero esta estrategia de votar Dem&oacute;crata para "proteger" los derechos civiles nunca ha logrado conseguir ni mantener los derechos ganados mediante la lucha popular &#8211; el aborto, la acci&oacute;n afirmativa, las protecciones contra abuso policial, etc. <p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

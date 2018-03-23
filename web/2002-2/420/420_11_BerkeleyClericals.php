@@ -6,25 +6,25 @@ Clericals strike at Berkeley
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="5"><b>Clericals strike at Berkeley</b></font></P>
 <font face="Times New Roman, Times, serif" size="3"><P>FOR THREE days last week, the Coalition of University Employees (CUE) at the University of California-Berkeley walked the picket line. "The issue in this strike is [the university's] unwillingness to bargain fairly and abide by the law," explains Margy Wilkinson, chief negotiator for the clerical workers. </P>
@@ -36,12 +36,12 @@ Clericals strike at Berkeley
 <P>Members of at least six labor organizations, city council members and student government representatives all pledged their solidarity to the Berkeley strikers--as well as to honor picket lines when the Santa Cruz clericals walk out.</P>
 <P>The strikers ended their walkout with two rallies--one at Chancellor Robert Berdahl's office and the other at UC President Richard Atkinson's office in Oakland. "We're hoping this will show them how far we're willing to go and how serious we are," said Yakov Wiegmann, a striking library assistant.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

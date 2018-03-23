@@ -6,25 +6,25 @@
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>&iquest;Viene una recesi&oacute;n econ&oacute;mica?</b></font><p>
 <font face="Arial, Helvetica, sans-serif" size="2">abril-mayo de 2007 | p&aacute;gina 4</font><p>
@@ -61,12 +61,12 @@ Pero en cualquier caso, el costo de la recesi&oacute;n sobre la clase obrera -qu
 Por ahora la econom&iacute;a mundial a&uacute;n est&aacute; en expansi&oacute;n. China e India tienen enormes tasas de crecimiento, y un n&uacute;mero de pa&iacute;ses recientemente industrializados, incluyendo algunos en Latino Am&eacute;rica, se han beneficiado de la demanda china por petr&oacute;leo y materia prima. La econom&iacute;a de Estados Unidos, aunque lenta, contin&uacute;a creciendo, as&iacute; como la alemana y la japonesa.<p>
 Nadie puede decir por cierto si los temblores en el mercado accionario mundial presagian el fin de este ciclo expansivo, pero vienen para recordarnos que el capitalismo no comparte con los trabajadores los beneficios de un auge econ&oacute;mico, pero luego les hace pagar los platos rotos en tiempos de recesi&oacute;n.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

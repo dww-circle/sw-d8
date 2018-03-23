@@ -6,25 +6,25 @@ Punished for delivering aid to Iraqis
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Feds target Voices in the Wilderness</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Punished for delivering aid to Iraqis</b></font><p>
@@ -42,12 +42,12 @@ Kelly points out that while Voices has been fined for bringing small amounts of 
 "If I ever did have the chance to stand in front of some justice figure that cared, I would want to say, 'Look, we're not asking to see penalties or jail time for the 'big fish' that broke the sanctions--nor do we think that these kinds of penalties should be imposed on the 'little fish.' What we want you to see is the monster in the pond--and that is the callous disregard for Iraqi children...<p>
 "You could say, 'Well, there are poor and wasting children all over the world,' and that's certainly true, and I think we have a big responsibility for them, too, actually. But these children are among generations now who have been punished because the U.S. insists on weighing in with our military might and with our ability to manipulate world opinion and UN politics. The responsibility to stop that murder, I think, is on us."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

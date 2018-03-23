@@ -6,25 +6,25 @@
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="5"><b>&#161;Defiende el derecho al aborto!</b></font></P>
 <P><font face="Times New Roman, Times, serif" size="2"><b>Por Nicole Colson</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | 19 de marzo de 2004 | p&aacute;gina 4</font></P>
@@ -39,12 +39,12 @@
 <P>Cuarenta y siete Dem&oacute;cratas de la C&aacute;mara de Representantes se sumaron a los Republicanos para votar a favor de la Ley de las V&iacute;ctimas de Violencia No Nacidas--y 63 congresistas Dem&oacute;cratas y 11 senadores Dem&oacute;cratas votaron a favor de la prohibici&oacute;n de los abortos en las &uacute;ltimas etapas del embarazo el pasado noviembre. Particularmente, los candidatos presidenciales Dem&oacute;cratas m&aacute;s prominentes, los senadores John Kerry de Massachussets y John Edwards de Carolina del Norte, ni se preocuparon de presentarse al congreso para votar en contra de esta prohibici&oacute;n.</P>
 <P>Las victorias recientes de los conservadores en contra del aborto nos demuestran porqu&eacute; es m&aacute;s importante que nunca que nos tiremos a la calle a reconstruir un nuevo movimiento que luche por el derecho al aborto desde la base. Un buen punto de partida es el participar en la "Marcha por las Vidas de las Mujeres" que se llevar&aacute; a cabo el 25 de abril en Washington, D.C. Es hora de enviarle un mensaje claro a la administraci&oacute;n de Bush y a los fan&aacute;ticos antiabortos: &#161;Ni un paso atr&aacute;s!</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

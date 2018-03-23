@@ -6,25 +6,25 @@ U.S. fans the flames
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Iraq's sham election deepens ethnic and religious divisions</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>U.S. fans the flames</b></font><p>
@@ -53,12 +53,12 @@ But just this outcome has been the subject of recent proposals and speculation. 
 According to Knight Ridder reporter Tom Lasseter, "Kurdish leaders have inserted more than 10,000 of their militia members into Iraqi army divisions in northern Iraq to lay the groundwork to swarm south, seize the oil-rich city of Kirkuk and possibly half of Mosul, Iraq's third-largest city, and secure the borders of an independent Kurdistan...[The aim is] to protect territory and ethnic and religious interests in the event of Iraq's fragmentation, which many of them think is inevitable."<p>
 In any case, the U.S. presence will continue to inflame such divisions. That's why there is no hope of justice and self-determination in Iraq until the U.S. gets its troops out.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

@@ -6,25 +6,25 @@ The stakes for the UAW at GM
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>The stakes for the UAW at GM</b></font><p>
 <font face="Arial, Helvetica, sans-serif" size="2">September 28, 2007 | Page 15</font><p>
@@ -43,12 +43,12 @@ In fact, Gettelfinger said, it was UAW leaders who first proposed the creation o
 Although Gettelfinger has calculated the advantages of a VEBA for GM, he has done little to prepare UAW local leaders to sell such a deal to union members. Soldiers of Solidarity activists, however, have produced shop floor newsletters detailing how underfunded VEBAs ran out of money at Caterpillar and Detroit Diesel, leaving UAW retirees with more expensive health care coverage, or no coverage at all.<p>
 "I'm not going on strike for an underfunded VEBA, two-tier pay scales or a wage cut," Shotwell said. "If I'm going to strike, I want to win something. This strike is long overdue. We have been taking concessions for a long time. Maybe Gettelfinger got the message we have been trying to send him--that concessions don't save jobs."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

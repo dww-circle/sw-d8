@@ -6,25 +6,25 @@ Protesters dog Minutemen leader
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>Protesters dog Minutemen leader</b></font><p>
 <font face="Times New Roman, Times, serif" size="2"><b>By Mike Corwin and Ariella Cohen</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | April 20, 2007 | Page 15</font><p>
@@ -39,12 +39,12 @@ This time, when the YCT brought the real immigrant hunters to speak to an audien
 The spirited demonstration slowed traffic into the event. Inside, dozens of students stood up and turned their back to express their disagreement. They chanted and stomped their feet--much like what happened at Columbia University when ousted Minutemen leader Jim Gilchrist spoke in October of last year.<p>
 "I am here to give voice to the message that this action is unacceptable," Hyacinth Blanchard of UAW Local 2110 said of the College Republican event. "So much of our society remains silent. Discontent is our right. We must keep the pro-immigrant message in the public eye. I'm here to say that racism is something that is not good for anyone, anywhere."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

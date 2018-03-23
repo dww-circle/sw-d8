@@ -6,25 +6,25 @@
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4">S&iacute; de la ONU no justifica guerra contra Irak</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>&#161;Dile a Bush que NO!</b></font></P>
@@ -44,12 +44,12 @@
 <P>Pero la verdad es que ese informe concluy&oacute; lo opuesto--que hab&iacute;a cero posibilidad de que esto ocurriera. Un sondeo conjunto de la revista <I>Time </I>y de CNN a principios de septiembre encontr&oacute; que el apoyo a una invasi&oacute;n de Irak hab&iacute;a ca&iacute;do a apenas un 51 por ciento de los entrevistados, habiendo bajado de 70 por ciento durante el pasado oto&ntilde;o. Los activistas planearon m&aacute;s de 100 vigilias y protestas anti-guerra en unos 36 estados para la semana del 11 de septiembre.</P>
 <P>La consigna del movimiento anti-guerra hace un a&ntilde;o atr&aacute;s era "Que no conviertan la tragedia en guerra". Esto es aun tan pertinente en las pr&oacute;ximas semanas, cuando Bush y compa&ntilde;&iacute;a tratar&aacute;n de explotar el 11 de septiembre otra vez para presionar por una invasi&oacute;n de Irak. Es hora de decirle a Bush: &#161;No a la guerra y no al racismo!</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

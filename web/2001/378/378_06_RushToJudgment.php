@@ -6,25 +6,25 @@ Rush to judgment
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4">Does the U.S. have evidence against Osama bin Laden?</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Rush to judgment</b></font></P>
@@ -57,12 +57,12 @@ Rush to judgment
 <P>When the U.S. decided that Osama bin Laden was behind the bombing of two U.S. embassies in Africa in 1998, it launched a cruise missile attack on a supposed bin Laden camp in Afghanistan. A CNN reporter praised the "pinpoint accuracy" of the missiles--even though one hit the wrong country, neighboring Pakistan.</P>
 <P>The U.S. missiles fired at Sudan did destroy their target--a pharmaceutical company supposedly tied to bin Laden. But it turned out that the company had no connection at all to bin Laden. High-ranking U.S. officials knew as much, according to a <I>New York Times</I> investigation, but the U.S. fired anyway, destroying the only source of several needed medicines in an impoverished, war-torn Sudan.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

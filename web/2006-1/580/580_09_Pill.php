@@ -6,25 +6,25 @@ The drug industry's prescription for super-profits
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>The drug industry's prescription for super-profits</b></font><p>
 <font face="Times New Roman, Times, serif" size="2"><b>Review by Susan Dwyer</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | March 17, 2006 | Page 9</font><p>
@@ -47,12 +47,12 @@ When we learn that antacids create a $7 billion-per-year market, it becomes clea
 The cost to the world's population in this drive for profits rather than curative medicine is becoming increasingly clear as the threat of avian flu becomes more pronounced. Further, diseases like tuberculosis--long thought to be a thing of the past--threaten large portions of the world. Those who read <i>The $800 Million Pill </i>will realize that Big Pharma is not equipped to solve any of these pressing problems.<p>
 Nothing exposes the bankruptcy of capitalism quite like a life-threatening virus. Those of us who are not willing to trade lives for money need to redouble our efforts to work for a system that puts human need above any other consideration.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

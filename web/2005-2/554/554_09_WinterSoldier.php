@@ -6,25 +6,25 @@ Winter Soldier
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">A re-released documentary exposes Washington's war crimes in Vietnam</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Winter Soldier</b></font><p>
@@ -46,12 +46,12 @@ One thing that's clear from <i>Winter Soldier </i>is the key role played by the 
 Antiwar activity provided not only a political but also an emotional outlet for Vietnam vets, who were often plagued by anger, disillusionment and guilt--not to mention, all too frequently, drug addiction. Many veterans in <i>Winter Soldier </i>describe the importance of speaking out in allowing them to get over the "dehumanization" of military training and combat in Vietnam. <p>
 <i>Winter Soldier </i>is an amazingly relevant film, not only because it details what American wars of "liberation" actually mean for the people being "liberated," also because it gives us insight into the experiences of soldiers fighting in Iraq today. Hopefully, our generation will have its own "Winter Soldier Investigation" someday soon--featuring antiwar veterans of the U.S. government's most recent war crimes in Iraq.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

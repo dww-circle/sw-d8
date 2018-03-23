@@ -6,25 +6,25 @@ Nightmare behind bars for Al-Arian
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Victim of a witch-hunt</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Nightmare behind bars for Al-Arian</b></font><p>
@@ -40,12 +40,12 @@ In early January, a federal judge ordered Al-Arian to be moved to another facili
 "Almost two years since his unjust arrest, our father has not yet been tried and continues to suffer under the most atrocious and inhumane conditions of confinement," said his family in a statement. "The past 694 days have been a trying and traumatic experience, in which countless holidays, birthdays, and anniversaries were spent without our beloved father, with whom we have had only four contact visits."<p>
 Still, Al-Arian's family asked that people remember his birthday by remembering the thousands of Palestinians killed under Israel's occupation. As they wrote, "A Palestinian refugee, our father appreciated the freedom of expression that our country offered and felt a profound responsibility to give voice to the oppressed Palestinian people suffering under a brutal occupation."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

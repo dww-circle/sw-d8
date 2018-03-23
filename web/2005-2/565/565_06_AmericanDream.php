@@ -6,25 +6,25 @@ What happened to the American Dream?
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Showdown at Delphi highlights the war on workers</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>What happened to the American Dream?</b></font><p>
@@ -87,12 +87,12 @@ Two veterans of the 1990s strikes at Caterpillar were on the agenda to discuss t
 An active Caterpillar worker, George Cornwell of UAW Local 974 in Peoria, Ill., focused on how to win over coworkers into supporting action in the face of pressure from management and union leaders. Cornwell was fired by Cat earlier this year, but was rehired months later following a national effort by rank-and-file UAW members that pressured union officials into taking action.<p>
 Although he's eligible to retire, he's remained on the job to rebuild the UAW at Caterpillar after its defeat in the strike and the union's acceptance of another concessionary contract last January. Delphi and GM workers, he said, now have to step up to the fight: "We have to take this battle upon our shoulders for our children."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

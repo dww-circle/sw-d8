@@ -6,25 +6,25 @@ Cr&oacute;nica de un a&ntilde;o crucial
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>Cr&oacute;nica de un a&ntilde;o crucial</b></font><p>
 <font face="Times New Roman, Times, serif" size="2"><b>Rese&ntilde;a por Peter Lamphere</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | 28 de enero de 2005</font><p>
@@ -44,12 +44,12 @@ Peque&ntilde;os comit&eacute;s de apoyo comenzaron a surgir entre los obreros de
 A pesar de la represi&oacute;n y la derrota eventual del movimiento estudiantil, el movimiento tuvo un impacto duradero en la sociedad mexicana. Fue la primera grieta en el masivo aparato monol&iacute;tico y burocr&aacute;tico-nacionalista del Partido Revolucionario Institucional. Los activistas que se forjaron pocos meses antes de los Juegos Ol&iacute;mpicos eventualmente fueron a organizar luchas ind&iacute;genas, sindicatos democr&aacute;ticos, y movimientos populares urbanos que ser&aacute;n los que lograran una transici&oacute;n democr&aacute;tica para el pueblo mexicano. Un movimiento popular que produzca los cimientos de una transformaci&oacute;n popular en el futuro.<p>
 Seg&uacute;n escribi&oacute; Taibo: "El movimiento estudiantil fue muchas cosas al mismo tiempo: un desenmascaramiento del estado mexicano, rey desnudo ante los millares de estudiantes; fue escuelas tomadas y creaci&oacute;n de un espacio comunal libertario basado en la asamblea; fue debate familiar en millares de hogares, fue crisis de las tradicionales formas de desinformar a la patria y encuentro del volante, la voz viva y el rumor salvador como alternativas a la prensa y a la tele controladas; fue tambi&eacute;n violencia, represi&oacute;n, miedo, c&aacute;rcel, asesinatos. Pero sobre todo, m&aacute;s que nada, ante todo, signific&oacute; el relanzamiento de una generaci&oacute;n de estudiantes sobre su propia sociedad, la retoma del barrio hasta ahora desconocido, la discusi&oacute;n en el autob&uacute;s, la ruptura de fronteras, el descubrimiento de la solidaridad popular, la visi&oacute;n m&aacute;s cercana de otro mont&oacute;n de los "ellos", traspasando las bardas grises de la f&aacute;brica y llegando hasta los que estaban en su interior".<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

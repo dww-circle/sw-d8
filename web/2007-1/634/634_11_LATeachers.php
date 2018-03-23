@@ -6,25 +6,25 @@ How charter schools were used against LA teachers
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>How charter schools were used against LA teachers</b></font><p>
 <font face="Times New Roman, Times, serif" size="2"><b>By Randy Childs, United Teachers Los Angeles</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | June 1, 2007 | Page 11</font><p>
@@ -41,12 +41,12 @@ Charter schools claim to offer autonomy from school district bureaucracies. This
 The reality is that LAUSD and Green Dot aim to discredit public schools, scapegoat teachers and their unions, and pave the way for the further privatization of education. The real alternative is to cut the bureaucracy, tax the rich, and put this money directly into the classroom, with teachers, parents and students having final say over how to spend it. But this is a solution that neither Green Dot, nor the LAUSD bureaucracy, nor the editors of the <i>Los Angeles Times</i> are offering.<p>
 We're going to have to fight for it, and we're going to need UTLA more than ever to win.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

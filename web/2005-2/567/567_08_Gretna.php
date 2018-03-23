@@ -6,25 +6,25 @@ No to Jim Crow in our city
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Arial, Helvetica, sans-serif" size="2"><b>VIEWS AND VOICES</b></font><br>
 <font face="Times New Roman, Times, serif" size="4">On the march for justice after Hurricane Katrina</font><br>
@@ -46,12 +46,12 @@ McKinney denounced the Bush administration's handling of Hurricane Katrina and t
 After the rally near the Ernest N. Morial Convention Center in New Orleans, participants marched across the Crescent City Connection Bridge into Gretna. Along the route, motorists frequently honked and gave the thumbs up in shows of support for the demonstration. Marchers repeatedly chanted, "Whose streets, our streets!" They also chanted, "No justice, no peace!" When marchers crossed into Gretna, local police made no attempt to halt the action. <p>
 This development was a victory against the de facto campaign by Gretna authorities to transform that town into a "no-go zone" for poor people and African Americans. The march made clear to Gretna authorities that their attempt to institute a neo-Jim Crow order is meeting with resistance from below. <p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

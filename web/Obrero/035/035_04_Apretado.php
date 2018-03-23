@@ -6,25 +6,25 @@ Apretado en el supermercado
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>Apretado en el supermercado</b></font><p>
 <font face="Arial, Helvetica, sans-serif" size="2">octubre-noviembre de 2007 | p&aacute;gina 4</font><p>
@@ -66,12 +66,12 @@ Pero no todos ven el aumento de precios de comida de forma negativa. Para alguno
 El a&ntilde;o pasado, por ejemplo, el Banco Deutsche inici&oacute; el "Fondo DWS Agropecuarios Globales" de $1.6 mil millones para ganar dinero espec&iacute;ficamente de "agflaci&oacute;n". Bill Barbour, un director de inversi&oacute;n para el fondo, se jact&oacute; al <i>Age</i> de Australia que el Fondo DWS hab&iacute;a recaudado $14 millones de inversionistas locales en menos de un a&ntilde;o. Las unidades del fondo hab&iacute;an subido cuatro veces m&aacute;s r&aacute;pido que otras inversiones. "Precios m&aacute;s altos para los alimentos son inevitables en todo el mundo; estamos en LAS MIELES??", dijo &eacute;l.<p>
 Como coment&oacute; el sitio de red de inversi&oacute;n <i>ThisIsMoney.co.uk</i>, "Mientras [el aumento en los precios] pueden ser malas noticias para consumidores, podr&iacute;a se&ntilde;alar una cosecha provechosa para los inversionistas".<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

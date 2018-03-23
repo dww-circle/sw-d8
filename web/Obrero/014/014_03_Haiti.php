@@ -6,25 +6,25 @@ Golpe de estado con otro nombre
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Arial, Helvetica, sans-serif" size="2"><b>HAIT&Iacute;</b></font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Golpe de estado con otro nombre</b></font></P>
@@ -48,12 +48,12 @@ Golpe de estado con otro nombre
 <P>Hait&iacute; es un s&iacute;mbolo de resistencia desde que los esclavos derrotaron a los mejores ej&eacute;rcitos europeos de hace dos siglos atr&aacute;s. Y ha sufrido continuas intervenciones imperialistas a trav&eacute;s de su historia. Necesitamos alzar nuestra voz en contra de esta, la m&aacute;s reciente atrocidad contra Hait&iacute;--y organizarnos para combatirla.</P>
 <P>Si seguimos fortaleciendo el movimiento anti-guerra y contra la ocupaci&oacute;n que surgi&oacute; para oponerse a la invasi&oacute;n de Irak por EE.UU., podremos organizarnos para exigir la retirada de las tropas estadounidenses de Hait&iacute;, y el regreso de Aristide. Tenemos que confrontar al imperialismo estadounidense, tanto en Irak como en Hait&iacute;, y en cualquier parte del mundo donde intente plantar sus garras.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

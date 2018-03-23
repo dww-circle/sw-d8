@@ -6,25 +6,25 @@ War crimes of the U.S. empire
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="5"><b>War crimes of the U.S. empire</b></font></P>
 <p><font face="Arial, Helvetica, sans-serif" size="2">May 14, 2004 | Pages 6 and 7</font></P>
@@ -64,12 +64,12 @@ War crimes of the U.S. empire
 <P>The brutality isn't limited to Chicago, of course. "When I saw Bush's interview on Arab TV stations, I was thinking, had he ever stepped inside a Texas prison when he was governor?" Judy Greene of Justice Strategies, a research and public advocacy group in New York, told Reuters.</P>
 <P>If he had stepped inside Texas' Brazoria County jail in 1996, then-Gov. Bush could have witnessed guards staging a drug raid on inmates that was videotaped for "training purposes." The tape showed prisoners forced to strip and lie on the ground. A police dog attacked several, and guards prodded prisoners with stun guns and forced them to crawl along the ground. During much of the time that Bush was governor, Texas prisons functioned under the terms of a federal consent decree because of crowding and violence by guards.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

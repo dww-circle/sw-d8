@@ -6,25 +6,25 @@ Aliado de Bush pierde
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Arial, Helvetica, sans-serif" size="2"><b>ELECCIONES EN ESPA&Ntilde;A</b></font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Aliado de Bush pierde</b></font></P>
@@ -40,12 +40,12 @@ Aliado de Bush pierde
 <P>La derrota de los conservadores espa&ntilde;oles es un vict&oacute;ria para el movimiento mundial contra la guerra. Pero el ganador de las elecciones, el Partido Socialista Obrero Espa&ntilde;ol (PSOE), no se opone al imperialismo. Durante la guerra del Golfo P&eacute;rsico de 1991, el gobierno del PSOE presidido por Felipe Gonz&aacute;lez permiti&oacute; que las fuerzas armadas de EE.UU. usaran las facilidades militares espa&ntilde;olas para bombardear a Irak--y mand&oacute; buques de guerra para bloquear a ese pa&iacute;s. El movimiento anti-guerra espa&ntilde;ol debe continuar su lucha.</P>
 <P>Sin embargo, despu&eacute;s de estos eventos en Espa&ntilde;a, ser&aacute; m&aacute;s dificil para George W. Bush y sus aliados el usar al "terrorismo" como justificaci&oacute;n para la ocupaci&oacute;n de Irak. Aqu&iacute; en las entra&ntilde;as de la bestia, tenemos que organizarnos tambi&eacute;n y reenfatizar nuestras demandas: &#161;EE.UU. fuera de Irak--y alto a la ocupaci&oacute;n ahora!</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

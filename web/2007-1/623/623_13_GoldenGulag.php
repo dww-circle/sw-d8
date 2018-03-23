@@ -6,25 +6,25 @@ California--the prison state
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>California--the prison state</b></font><p>
 <font face="Times New Roman, Times, serif" size="2"><b>Review by Dana Blanchard</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | March 16, 2007 | Page 13</font><p>
@@ -45,12 +45,12 @@ Where Gilmore could have spent more time is on what we as activists in Californi
 MothersROC is amazing in that it is made up of mothers and other family members of the victims of California's race to incarcerate. What Gilmore doesn't do enough of is show how the actions of MothersROC are going to seriously take on the state. As an activist in California, I would like to look at how we can link up with other groups, like the labor movement, to really challenge the political and economic agenda of our state government.<p>
 Overall, this book is a great manual for how we got to a point where young people of color in many communities are more likely to end up in prison than graduating college. But it's only the beginning of the discussion of how we can organize and fight for a different kind of state with a different set of priorities.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

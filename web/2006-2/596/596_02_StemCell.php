@@ -6,25 +6,25 @@ Catering to the "pro-life" fanatics
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Stem cell research vetoed</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Catering to the "pro-life" fanatics</b></font><p>
@@ -36,12 +36,12 @@ During hearings on the bill, Republican Neanderthals used similarly anti-science
 "Since that little embryo doesn't have a pair of eyes and a hair color, doesn't have a name, it's very easy to dismiss this entity as insignificant," said Sen. Rick Santorum (R-Pa.). "So we just kind of claim that there is a cloud as to what this is, and that allows us then to destroy that life and use it for our purposes."<p>
 The bill that passed both the Senate and House would have allowed funding for research on stem cells obtained from discarded embryos--research that has the potential of finding treatments for diabetes; Parkinson's, Alzheimer's and Lou Gehrig's diseases; multiple sclerosis; cancer; and neurological and spinal-cord injuries.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

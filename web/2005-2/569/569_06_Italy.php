@@ -6,25 +6,25 @@ High-speed rail line sparks protests
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Arial, Helvetica, sans-serif" size="2"><b>ITALY</b></font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>High-speed rail line sparks protests</b></font><p>
@@ -41,12 +41,12 @@ The scale of the unrest is so great that the head of the Italian organizing comm
 The struggle has united local residents with global justice organizations whose protests against the G8 summit in Genoa, Italy, in 2001 shook the country. They argue that there is--in the words of Italian transportation expert Marco Ponti--"no rational motivation" for building the Turin-to-Lyons link. "The capacity of the existing [rail] network is already excessive with respect to the demand, and goods that travel by rail have no need to move at 300 miles an hour," Ponti told the magazine <i>L'Espresso</i>.<p>
 Yurii Colombo, an Italian socialist, told <i>Socialist Worker </i>that some of the demonstrators were from Italy's far-left groups, but most were local residents who were "more radical than us. The attempts of the right-wing government--and the center left--to say that this is only the far left isn't working."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

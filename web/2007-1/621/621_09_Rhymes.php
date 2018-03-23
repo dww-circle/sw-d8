@@ -6,25 +6,25 @@ Is sexism at the heart of hip-hop today?
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>Is sexism at the heart of hip-hop today?</b></font><p>
 <font face="Times New Roman, Times, serif" size="2"><b>Review by Jeffrey Boyette</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | March 2, 2007 | Page 9</font><p>
@@ -47,12 +47,12 @@ Instead viewers see that the representation of Black culture in hip-hop is const
 Though some artists such as The Coup and Dead Prez continue to produce music that challenges racism and the status quo of state repression, they lack legitimacy because of their exclusion from the dominant record labels. <i>Beyond </i>does a great service by giving audiences from both within and without the world of hip-hop a lens through which to view misogyny in mainstream culture.<p>
 <i>Hurt is currently touring </i>Beyond Beats and Rhymes<i> on college campuses across the country. Check out <a href="http://www.bhurt.com/" target="_blank">www.bhurt.com</a> for details</i>.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

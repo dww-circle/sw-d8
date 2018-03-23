@@ -6,25 +6,25 @@ Pearl Jam takes on the Iraq war's deadly toll
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>Pearl Jam takes on the Iraq war's deadly toll</b></font><p>
 <font face="Times New Roman, Times, serif" size="2"><b>Review by Lee Wengraf and Petrino DiLeo</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | June 16, 2006 | Page 13</font><p>
@@ -43,12 +43,12 @@ In promoting the album, Vedder and band mates have talked about how the environm
 "If you highlighted the classic aspects of this war, find out who's fighting and who's dying, and why are there billions of dollars being spent on this war and schools are crumbling and 45 million people in the U.S. don't have health insurance? This is all stuff I've been reading in a book on Iraq called <i>The Logic of Withdrawal </i>by Anthony Arnove. It seems like it's a class issue, because there are things going on underneath this spectacle of war, and the Bush administration is using it as a distraction for the ills of this country that are being not only ignored but exacerbated."<p>
 At a time when the antiwar movement grows ever more silent, opting for support of the least-worst Democrat, <i>Pearl Jam</i> is a breath of fresh air for the millions in the U.S. who hate the war and its political backers.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

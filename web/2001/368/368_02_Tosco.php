@@ -6,25 +6,25 @@ Tosco risks workers' lives for profits
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="5"><b>Tosco risks workers' lives for profits</b></font></P>
 <P><font face="Times New Roman, Times, serif" size="2"><b>By Michal Myers</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | May 11, 2001 | Page 2</font></P>
@@ -36,12 +36,12 @@ Tosco risks workers' lives for profits
 <P>"I think it's a slap on the hand to them," said Genesa Duncan, the wife of a Tosco worker injured at Avon. Genesa's husband has undergone 40 operations and still hasn't recovered from the blast. "It's giving them the go-ahead that it's alright, that a few lives doesn't matter, that it happens all the time, that it will happen again," she said. </P>
 <P>The cause of the Carson fire is being investigated. But Dave Campbell, of the oil workers' union PACE, said Tosco runs a "bare-bones operation. "When Tosco took over the refinery from UNOCAL, they fired 20 percent of the workforce, including all their safety personnel. "The top dogs' bonuses depend on meeting production goals, and the maintenance managers' job is to stay within budget, so no one in power has safety as their guiding concern."</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

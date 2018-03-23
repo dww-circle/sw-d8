@@ -6,25 +6,25 @@ Iraq veterans write against the war
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>Iraq veterans write against the war</b></font><p>
 <font face="Times New Roman, Times, serif" size="2"><b>Review by Mary Howland</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | May 18, 2007 | Page 11</font><p>
@@ -44,12 +44,12 @@ The book is filled with the desire for the occupation to end, for the warfare an
 <i>Warrior Writers </i>gives a human face to the harshness of the military and the destruction of the occupation. It is an amazing tool to be used in organizing against the war, and giving a voice to the soldiers who are now fighting back--fighting for a world free of occupation and violence.<p>
 To get a copy of <i>Warrior Writers, </i>contact Drew Cameron at <a href="mailto:drew@ivaw.org">drew@ivaw.org</a> or Lovella Calica at <a href="mailto:lovella@ivaw.org">lovella@ivaw.org</a>. Copies will also be available at <a href="http://www.socialismconference.org" target="_blank">Socialism 2007</a> in Chicago, June 14-17.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

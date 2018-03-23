@@ -6,25 +6,25 @@ National Guard descends on N.O. protest
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>National Guard descends on N.O. protest</b></font><p>
 <font face="Times New Roman, Times, serif" size="2"><b>By Alden Eagle and Gimena Gordillo</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | September 7, 2007 | Pages 1 and 8</font><p>
@@ -50,12 +50,12 @@ In addition to the many residents fighting to return to closed public housing, t
 The city has made it easy for developers to get a property declared "blighted" and then swoop in to purchase it on the cheap, with no say whatsoever from its owner. So throughout the city, there are empty houses where owners have spray-painted a plea: "Don't demolish!"<p>
 "Promises, that's all there is, promises," 58-year-old Sharon Sears Jasper, who lived at the St. Bernard complex in the Seventh Ward off and on since she was baby, told the New Orleans <i>Times-Picayune. </i>"I want to be home. That's my house."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

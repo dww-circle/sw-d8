@@ -6,25 +6,25 @@ No hay recuperaci&oacute;n para los trabajadores
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Arial, Helvetica, sans-serif" size="2"><b>LO QUE PENSAMOS</b></font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>No hay recuperaci&oacute;n para los trabajadores</b></font></P>
@@ -43,12 +43,12 @@ No hay recuperaci&oacute;n para los trabajadores
 <P>La Casa Blanca est&aacute; determinada a producir una recuperaci&oacute;n econ&oacute;mica de corto plazo, justo a tiempo para las elecciones del pr&oacute;ximo a&ntilde;o. Pero incluso si en esto es exitosa, los problemas a largo plazo van a permanecer --sobre todo, altos niveles de sobrecapacidad y deuda corporativa, lo que continuar&aacute; presionando la c&aacute;ida de la inversi&oacute;n y obstaculizar&aacute; la expansi&oacute;n econ&oacute;mica que producir&iacute;a nuevos empleos. </P>
 <P>La verdad es cruel. Las corporaciones pueden salir de cualquier crisis si pueden forzar a los trabajadores a pagar el precio. Y as&iacute; lo est&aacute;n haciendo otra vez--y ese es el verdadero sentido de las estad&iacute;sticas econ&oacute;micas que los analistas de Wall Street celebraron euf&oacute;ricamente.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

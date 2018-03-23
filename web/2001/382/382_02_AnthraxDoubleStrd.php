@@ -6,25 +6,25 @@ A double standard about anthrax
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Top care for lawmakers while postal workers die</font><BR>
 <font face="Times New Roman, Times, serif" size="5"><b>A double standard about anthrax</b></font></P>
@@ -43,12 +43,12 @@ A double standard about anthrax
 <P>They continued to fuel speculation that the anthrax in the Daschle envelope came from Iraq--even as FBI officials were beginning to admit, at least anonymously to reporters, that the culprit could be a homegrown Nazi. Meanwhile, Attorney General John Ashcroft refused to meet with representatives of Planned Parenthood, which has years of experience dealing with anthrax threats from anti-abortion fanatics.</P>
 <P>George W. Bush told a conference of business leaders that he mourned the deaths of "two postal officers who lost their lives in the line of duty." But that's a lot of hot air--coming from a government that rushed to provide top-notch health care for Capitol Hill lawmakers but waited until postal workers died before even testing them.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

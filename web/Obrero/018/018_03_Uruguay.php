@@ -6,25 +6,25 @@ Otro gobierno de izquierda en Su Am&eacute;rica
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Arial, Helvetica, sans-serif" size="2"><b>ELECCIONES EN URUGUAY</b></font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Otro gobierno de izquierda en Su Am&eacute;rica</b></font><p>
@@ -41,12 +41,12 @@ Por otro lado, el gobierno de Hugo Ch&aacute;vez en Venezuela se autodenomina re
 Pero esta no es toda la historia. Las ganancias electorales de la izquierda en Am&eacute;rica Latina son un reflejo de una rebeli&oacute;n social gigantesca--incluyendo el movimiento sin tierra en Brasil, el Argentinazo que forz&oacute; la renuncia de cuatro presidentes en diciembre del 2001, las marchas grandes de los ind&iacute;genas en Ecuador, la ca&iacute;da del presidente de Bolivia mencionada arriba (por su privatizaci&oacute;n del gas), y la movilizaci&oacute;n popular contra el golpe de estado derechista en Venezuela en el 2002.<p>
 Los nuevos gobiernos de centroizquierda quieren controlar la resistencia e imponer "estabilidad"--en realidad, mantener las relaciones sociales de explotaci&oacute;n. Por eso, la tarea de la izquierda, los sindicatos y los movimientos sociales es continuar sus luchas.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

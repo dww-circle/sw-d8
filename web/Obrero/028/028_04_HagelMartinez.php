@@ -6,25 +6,25 @@
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Propuesta de Hagel y Mart&iacute;nez divide al movimiento pro-inmigrantes</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>"Nuestra posici&oacute;n es no a los arreglos conciliatorios"</b></font><p>
@@ -53,12 +53,12 @@ Pero al haber apoyado las provisiones de PTT del proyecto McCain-Kennedy, SEIU e
 Al tomar esta posici&oacute;n, la SEIU est&aacute; creando una divisi&oacute;n dentro movimiento pro derechos de los inmigrantes, dice Nativo L&oacute;pez de MAPA. El NIF, el NCLR, LULAC y SEIU juegan "un juego peligroso con los Dem&oacute;cratas", dijo L&oacute;pez. "El juego de 'mejorar' HyM es una traici&oacute;n frontal porque cualquier conciliaci&oacute;n basada en este tendr&aacute; como resultado dividir a las familias, apoyar el reforzamiento de la frontera y socavar los derechos de los obreros inmigrantes. Tomamos la posici&oacute;n de rechazo a arreglos conciliatorios y a la divisi&oacute;n de nuestras familias. Es mejor que ninguna reforma migratoria sea aprobada este a&ntilde;o a que esta legislaci&oacute;n se apruebe".<p>
 <i>Habr&aacute; una conferencia nacional en julio en Chicago para coordinar acciones en contra de esta legislaci&oacute;n y para exigir una legalizaci&oacute;n completa para todos los indocumentados. Leer la declaraci&oacute;n de esta iniciativa en el sitio de Web de Obrero Socialista, <a href="http://www.socialistworker.org/Obrero.shtml" target="_blank">www.socalistworker.org/Obrero.shtml</a>. Para m&aacute;s informaci&oacute;n sobre la conferencia, contacta a <a href="mailto:10demarzo@googlegroups.com">10demarzo@googlegroups.com</a></i>.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

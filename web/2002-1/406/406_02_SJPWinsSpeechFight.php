@@ -6,25 +6,25 @@ Free speech fight wins at Berkeley
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4">Suspension of Palestinian rights group lifted</font><BR>
 <font face="Times New Roman, Times, serif" size="5"><b>Free speech fight wins at Berkeley</b></font></P>
@@ -38,12 +38,12 @@ Free speech fight wins at Berkeley
 <P>But the university is bent on seeing protesters prosecuted on charges ranging from trespassing to preventing a public employee from doing his or her job to resisting arrest. One student was charged with assault and battery against a police officer. Dates for hearings on the charges will be set this week, and the SJP is holding actions to let Berkeley officials know that their targeting of free speech won't go unnoticed.</P>
 <P>"There's a real recognition that we're standing in the legacy of the Free Speech Movement (FSM), which Berkeley students organized in the 1960s," said Shingavi. "Three years ago, the university opened up the FSM Caf&eacute; to commemorate free speech in the abstract, but this isn't a real right. Identical things happened to the SJP today. And that's forcing people to recognize that the university isn't neutral in the political debates on campus--and that today, nearly 40 years later, we're still fighting for free speech."</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

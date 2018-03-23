@@ -6,25 +6,25 @@ La verdad genuina acerca de Pearl Harbor
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="5"><b>La verdad genuina acerca de Pearl Harbor</b></font> </P>
 <p><font face="Arial, Helvetica, sans-serif" size="2">14 de Septiembre de 2001 | P&aacute;gina 4</font></p>
@@ -37,12 +37,12 @@ La verdad genuina acerca de Pearl Harbor
 <P>La raz&oacute;n verdadera por Hiroshima y Nagasaki era demostrar a Rusia y al resto del mundo el poder impresionante de la nueva arma de terror en masa de los EE.UU. </P>
 <P>Los paralelos entre el Pearl Harbor y el ataque terrorista reciente nos conducen a hacer la misma pregunta propuesta por Alexander Cockburn y Jeffrey St. Clair. "&#191;Se supone que nos creamos ", ellos escribieron, "que el presupuesto anual de 30 billones de d&oacute;lares en inteligencia, la inmensa capacidad de espionaje electr&oacute;nico, y miles de agentes alrededor del mundo, produjeron nada en la forma de una advertencia?" </P></FONT></BODY>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

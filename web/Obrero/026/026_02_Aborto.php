@@ -6,25 +6,25 @@ El derecho al aborto bajo ataque otra vez
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>El derecho al aborto bajo ataque otra vez</b></font><p>
 <font face="Times New Roman, Times, serif" size="2"><b>Por Nicole Colson</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | marzo-abril de 2006 | p&aacute;gina 2</font><p>
@@ -44,12 +44,12 @@ Los Dem&oacute;cratas han demostrado que no van a luchar por nuestros derechos. 
 Esta lucha debe ser construida paso a paso, comenzando con charlas y foros que puedan recuperar la idea de que el derecho al aborto es una parte esencial de los derechos de la mujer, que organicen protestas y piquetes contra los fan&aacute;ticos antiabortos, incluso cuando se presenten en las cl&iacute;nicas para hostigar a las mujeres. Es la hora de reconstruir un movimiento por el derecho al aborto, sin disculpas.<p>
 <i>Traducido por Lance Selfa</i> <p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

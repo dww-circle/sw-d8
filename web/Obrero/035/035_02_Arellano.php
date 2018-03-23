@@ -6,25 +6,25 @@ Muerte por negligenica a manos de ICE
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>Muerte por negligenica a manos de ICE</b></font><p>
 <font face="Times New Roman, Times, serif" size="2"><b>Por Gillian Russom</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | octubre-noviembre de 2007 | p&aacute;gina 2</font><p>
@@ -38,12 +38,12 @@ La industria carcelaria se ha beneficiado altamente de la pol&iacute;tica de la 
 Louis Jean, un veterano de Irak que enfrent&oacute; deportaci&oacute;n y estuvo detenido en San Diego, report&oacute; haber sido dicho por un guardia, tambi&eacute;n veterano, que a &eacute;l "le hab&iacute;an ense&ntilde;ado a no tomar en cuenta los reclamos de los detenidos y a tratarlos como ciudadanos de segunda clase... como sea, iban a ser deportados de todas maneras". <p>
 "&iquest;Qu&eacute; es m&aacute;s ilegal..." pregunt&oacute; en un rally el vocero una organizaci&oacute;n de activistas latinos contra el SIDA, Bienestar, "dejar morir alguien en la manera que ellos hicieron, o tratar de vivir en este pa&iacute;s de la manera que ha Victoria le fuera posible?"<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

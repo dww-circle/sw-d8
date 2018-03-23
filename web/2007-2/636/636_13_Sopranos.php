@@ -6,25 +6,25 @@ Turning out the light on The Sopranos
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>Turning out the light on <i>The Sopranos</i></b></font><p>
 <font face="Arial, Helvetica, sans-serif" size="2">June 22, 2007 | Page 13</font><p>
@@ -48,12 +48,12 @@ Other conflicts abound. The war on terror was a background theme, and while no o
 Many, such as <i>The Nation's</i> Max Fraser, have pointed out that <i>The Sopranos </i>was a significant departure from earlier mob classics in that themes of decline and decay were at its core. Tony's family was going down. The mafia was seen as petty, irrelevant, falling apart and under attack. The rottenness and sense of alienation at the core of suburban life was exposed. And there were increasing references to the disaster in Iraq.<p>
 <i>The Sopranos </i>didn't challenge us to do something about these contradictions, nor did it provide any answers to feelings of alienation of millions of Americans. But it painted a stark and brilliant portrait of the rot in the fabric of American society.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

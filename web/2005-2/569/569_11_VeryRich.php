@@ -6,25 +6,25 @@ Lifestyles of the rich and very rich
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Arial, Helvetica, sans-serif" size="2"><b>THE MEANING OF MARXISM</b></font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Lifestyles of the rich and very rich</b></font><p>
@@ -44,12 +44,12 @@ Microsoft cofounder Paul Allen owns a 414-foot yacht. "You really are nobody," a
 Meanwhile, the majority of Americans "suffer in fear and poverty." The latest outrage? The Supreme Court ruled on behalf of the Bush administration that the government can garnish Social Security checks to pay for delinquent student loans. According to an AP report: "The unanimous decision went against a disabled 67-year-old Seattle man who lives in public housing and had sued, claiming he needed all of his $874 monthly check to pay for food and medicine. James Lockhart's benefits had been cut by 15 percent to cover debts he incurred for college in the 1980s. He has about $77,000 in unpaid loans."<p>
 What people like James Lockhart fail to understand is that their money is needed to pay military contractor CEOs like David Brooks.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

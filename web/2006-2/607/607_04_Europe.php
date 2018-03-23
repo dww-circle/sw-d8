@@ -6,25 +6,25 @@ European leaders stoke Islamophobia
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Arial, Helvetica, sans-serif" size="2"><b>BRITAIN</b></font><br>
 <font face="Times New Roman, Times, serif" size="4">Labour ministers echo anti-Muslim racism of far right</font><br>
@@ -62,12 +62,12 @@ The growing Nazi and far right are mobilizing behind the Movement Against Illega
 Following raids and mass deportation of Georgians after Russia's spy scandal involving that former republic of the USSR, Putin gave a speech in which he declared that Russians are being "terrorized" by gangs of "criminals" from the Muslim countries of former USSR republics in Central Asia, the Caucasus and the large Muslim population of Russia itself.<p>
 Islamophobia has replaced anti-Semitism as the focus of the European far right, according to Glyn Ford, a British member of the European Parliament and author of a book on neo-fascism in Europe. "Europe is in danger of seeing its extreme-right parties move into the mainstream," he said, adding, "Islamophobia has become the prejudice of the day, but the threat from the extreme right is real and it is found across the European Union."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

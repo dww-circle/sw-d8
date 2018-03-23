@@ -34,15 +34,15 @@ function popup(url,w,h,menu) {
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
@@ -50,7 +50,7 @@ function popup(url,w,h,menu) {
 <img src="../../OtherImages/6x12space.gif" width="600" height="12" border="0"><br>
 <img src="../../OtherImages/Border_Header.600.gif" width="600" height="80" border="0"><p>
 
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 <font face="Times New Roman, Times, serif" size="5"><b>Picturing the border</b></font><p>
 
 <font face="Times New Roman, Times, serif" size="3">You can view a gallery of Eric Ruder's photos that accompanied <i>Socialist Worker's </i>special feature "Life and death on the border." Click on any of the thumbnail pictures below to open a viewer with the photo at full size&#8212;and use the "previous" and "next" links to navigate through the full gallery (please temporarily turn off any software that blocks pop-up windows).<p>

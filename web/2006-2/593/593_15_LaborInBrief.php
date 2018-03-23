@@ -6,25 +6,25 @@ On the picket line
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>On the picket line</b></font><P>
 <font face="Arial, Helvetica, sans-serif" size="2">June 16, 2006 | Page 15</font><p>
@@ -62,12 +62,12 @@ Diane Ellis, who's also a nurse and a member of the bargaining team, explained t
 <font face="Times New Roman, Times, serif" size="3">CONTRACTORS HAD to throw in the towel June 5 after a four-day strike by 2,000 members of the Laborers Union in the Chicago area. The union had extraordinary leverage, given the huge reconstruction project underway on Chicago's Dan Ryan Expressway.<p>
 The employers had sought to cut pensions by 20 percent, eliminate time-and-a-half pay on Saturdays, and slash wages by half for workers doing cleanup, landscaping and flagger duty.<p>
 Instead, the contractors' Mid-America Regional Bargaining Association had to drop those demands and agree to a $12 per hour pay increase over the life of the four-year contract. The base rate is currently $30.15 per hour. While neither side released details, the Laborers claimed that the agreement protects members from subcontracting and preserves pension benefits.<p>
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

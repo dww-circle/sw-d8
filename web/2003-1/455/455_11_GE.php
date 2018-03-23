@@ -6,25 +6,25 @@ GE workers ready to strike
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4">Executives want massive concessions from union</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>GE workers ready to strike</b></font></P>
@@ -44,12 +44,12 @@ GE workers ready to strike
 <P>The fact that GE is trying to get workers to pay more for their health insurance is particularly outrageous since GE is now a profitable player in the health care industry. GE's sales of medical equipment brought in $1.8 billion in 2001. And its "side business" as an insurance company covers 700,000 people. " GE is not a victim of the health care business," said Jeff Crosby, president of IUE/CWA Local 201 in Lynn. "GE is the health care business."</P>
 <P>The union's aggressive stance is a welcome change in the labor movement. Steps are already being taken to build solidarity in the event of a strike. On June 5, GE workers will take part in a nationwide day of action for universal health care. And on June 7, thousands of workers and supporters are expected to participate in a massive march and rally here. On June 12, the 14 unions that make up the Coordinated Bargaining Council at GE will be holding a rally in New York to show that GE workers are standing together in this fight.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

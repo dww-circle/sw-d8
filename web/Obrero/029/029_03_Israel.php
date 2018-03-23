@@ -6,25 +6,25 @@ Los or&iacute;genes racistas del estado israel&iacute;
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Arial, Helvetica, sans-serif" size="2"><b>EL SENTIDO DEL MARXISMO</b></font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Los or&iacute;genes racistas del estado israel&iacute;</b></font><p>
@@ -48,12 +48,12 @@ La brutalidad extrema fue empleada para lograr este objetivo contra una poblaci&
 Menachem Begin--luego el primer ministro de Israel--comand&oacute; a las bandas terroristas que masacr&oacute; a los 245 habitantes, incluso 70 mujeres y ni&ntilde;os, del pueblo Deir Yassin el 9 de abril. Hubo decenas de otras masacres que dejaban pocos muertos. Durante los primeros cinco a&ntilde;os de la existencia del nuevo estado jud&iacute;o, 350 de los 370 nuevos asentamientos jud&iacute;os fueron construidos sobre los terrenos que hab&iacute;an pose&iacute;do por los &aacute;rabes que huyeron.<p>
 <i>Traducido del ingl&eacute;s por Lance Selfa</i>.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

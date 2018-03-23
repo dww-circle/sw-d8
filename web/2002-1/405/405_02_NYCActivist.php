@@ -6,25 +6,25 @@ Leading Palestinian activist arrested in NYC
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>Leading Palestinian activist arrested in NYC</b></font></P>
 <P><font face="Times New Roman, Times, serif" size="2"><b>By Lee Wengraf</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | May 3, 2002 | Page 2</font></P>
@@ -37,12 +37,12 @@ Leading Palestinian activist arrested in NYC
 <P>Activists who have been fighting the Justice Department's witch-hunt of Arabs and Muslims in its September 11 investigation have taken up Abdel-Muhti's case. "Faruk is one of hundreds, thousands, who have been disappeared," said Subhash Kateel of Desis Rising Up and Moving, which has organized protests to pressure the INS. "His arrest highlights our demand: we need answers by the INS and the FBI."</P>
 <P><I>Call the INS's district director for New Jersey, Andrea Quarantillo, at 973-645-4421 and demand the immediate release of Faruk Abdel-Muhti.</I> </P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

@@ -6,25 +6,25 @@
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>&iquest;Qu&eacute; har&aacute; el movimiento inmigrante?</b></font><p>
 <font face="Arial, Helvetica, sans-serif" size="2">febrero-marzo de 2008 | p&aacute;gina 2</font><p>
@@ -74,12 +74,12 @@ Para evaluar, la asamblea organizar&aacute; y convocar&aacute; una segunda reuni
 Entre los que asistieron se encontraban representativos de la Asociaci&oacute;n de Inmigrantes de Indiana, Asociaci&oacute;n C&iacute;vica Mexicana de Indiana, Chicago Workers Collaborative, Farm Labor OC de Ohio, Illinois Migrant Council, International Socialist Organization, Labor Notes, Organizaci&oacute;n 10 de Abril de Madison, Wisc., Socialist Workers Party, Solidaridad Migrante de Du Page IL., South East Chicago Community for Immigrant Rights, TAP San Adalberto de South Bend, Indiana y UNITE-HERE 39-C<p>
 <i>Contribuyeron a este art&iacute;culo Jeff Bale, Brian Chidester y Orlando Sep&uacute;lveda</i><p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

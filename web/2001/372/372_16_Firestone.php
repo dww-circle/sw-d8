@@ -6,25 +6,25 @@ Corporate killers make workers pay
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <p><font face="Times New Roman, Times, serif" size="4">Firestone shuts Decatur plant</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Corporate killers make workers pay</b></font></p>
@@ -55,12 +55,12 @@ Corporate killers make workers pay
 <P>"One of the problems during the War Zone was that we didn't listen to the activists who came here and said you have to take over that plant and stop scabs going in," Harlan Smith, vice president of USWA Local 713, told <I>Socialist Worker. </I>"We had 8,000 people at these rallies. We should have taken it over--at all three of the locations. </P>
 <P>"You can sit back, and have good speakers, and have a good feeling inside. But meanwhile, people inside are stealing your job. It doesn't have to be violent. If you have enough people, you can take it over. I'm not advocating violence. It's just standing up for your job. And you have to do what you have to do in order to defend your job."</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

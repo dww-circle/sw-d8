@@ -6,25 +6,25 @@ The ugly truth about guest-worker programs
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>The ugly truth about guest-worker programs</b></font><p>
 <font face="Arial, Helvetica, sans-serif" size="2">March 23, 2007 | Pages 6 and 7</font><p>
@@ -88,12 +88,12 @@ As an alternative, a coalition of immigrant rights groups and unions are expecte
 While some in the pro-immigrant camp have proposed an improved guest-worker program--including the National Council of La Raza and the Service Employees International Union--many immigrant rights activists reject any efforts to put a new face on a system that inherently violates workers' rights.<p>
 "A humane guest-worker program is a contradiction," said Saket Soni of the Alliance of Guest Workers. "The guest-worker program is being sold to the American public as a solution to America's so-called immigration problem. In reality, we don't have an immigration problem. What the U.S. has is an economic situation in which the U.S. is so dependent on cheap labor--cheap, exploitable labor--that it can't see a way out."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

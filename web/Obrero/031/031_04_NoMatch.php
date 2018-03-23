@@ -6,25 +6,25 @@ Luchando contra las cartas "No Match"
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>Luchando contra las cartas "No Match"</b></font><p>
 <font face="Arial, Helvetica, sans-serif" size="2">enero-febrero de 2007 | p&aacute;gina 4</font><p>
@@ -52,12 +52,12 @@ Vivimos y trabajamos en la comunidad, aqu&iacute; compramos, aqu&iacute; mandamo
 Hoy tenemos el ejemplo de la compa&ntilde;&iacute;a de tubos en donde 60 trabajadores "no match" contin&uacute;an laborando; el ejemplo del hospital donde 40 trabajadores mantienen su empleo y los que se hab&iacute;an ido fueron llamados por la empresa a trabajar nuevamente; hoy est&aacute; casi resuelto el problema de la f&aacute;brica de papas fritas Jay's, gracias a la presi&oacute;n de la comunidad representada por el Movimiento 10 de marzo, donde afortunadamente participan miembros de muchos grupos, incluso la organizaci&oacute;n de Chicago Worker's Collaborative y muy especialmente la C&aacute;mara de Comercio de la Calle 26 que ayud&oacute; para que las empresas se sentaran a hablar con CWC representando a los trabajadores.<p>
 No podemos dejar de mencionar el gran triunfo de Smithfield, donde los trabajadores (6,000) pararon la compa&ntilde;&iacute;a y la obligaron a regresar a los trabajadores "no match" que ya hab&iacute;an sido despedidos. As&iacute; que conectando todo, este a&ntilde;o que empieza, no solo ser&aacute; de legalizaci&oacute;n sino tambi&eacute;n del despertar de la clase trabajadora migrante en lucha por sus propios derechos laborales.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

@@ -6,25 +6,25 @@ Battle for "survival" looming at Boeing
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><P><font face="Times New Roman, Times, serif" size="5"><b>Battle for "survival" looming at Boeing</b></font></P>
 <p><font face="Times New Roman, Times, serif" size="2"><b>By Darrin Hoop</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | August 30, 2002 | Page 12</font></P>
@@ -47,12 +47,12 @@ Battle for "survival" looming at Boeing
 <P>Boeing's other main union, the 18,000-member Society of Professional Engineering Employees in Aerospace (SPEEA) pledged to support the IAM. SPEEA--which walked out for 40 days in 2000--doesn't have contract language allowing it to honor IAM picket lines. But IAM members "can count on us to stand with them in any way we can," SPEEA spokesperson Bill Dugovich said. "They offered us immense support during our strike, and we were immensely grateful." </P>
 <P>Boeing will present its final offer August 27, and the union has scheduled a vote on the deal two days later. The outcome of the battle at Boeing will have a major impact on the entire labor movement. "Minimum, a strike will cost Boeing $2 billion," Local 834 member Keith Thomas wrote in a plant leaflet. "If Boeing executives want a strike, BRING IT ON!"</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

@@ -6,25 +6,25 @@ FBI invade hogares en Puerto Rico
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Persecuci&oacute;n de activistas pol&iacute;ticos </font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>FBI invade hogares en Puerto Rico</b></font><p>
@@ -41,12 +41,12 @@ Seg&uacute;n la declaraci&oacute;n de prensa del FBI, el supuesto ataque de los 
 Seg&uacute;n el ex-legislador del Partido Independentista Puertorrique&ntilde;o (PIP), David Noriega, dijo en una entrevista de radio en San Juan, "la &uacute;nica explicaci&oacute;n l&oacute;gica que yo le veo a esta atrocidad es que hay como una sa&ntilde;a, un sentido antipuertorrique&ntilde;o, porque a fin de cuentas est&aacute;n descargando su furia...contra el pueblo que los sac&oacute; de Vieques".<p>
 Los activistas no se quedaron cruzados de brazos y organizaron marchas y protestas en los d&iacute;as siguientes a los allanamientos. El PIP y el Congreso Nacional Hostosiano convocaron a sendas protestas a las que concurrieron miles de manifestantes frente a facilidades federales en la isla para denunciar las injusticias ejecutadas por el gobierno de EEUU en Puerto Rico.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

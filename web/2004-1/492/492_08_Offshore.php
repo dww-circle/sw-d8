@@ -6,25 +6,25 @@ What's to blame for lost jobs?
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4">Offshoring is only one of the causes of high unemployment</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>What's to blame for lost jobs?</b></font></P>
@@ -59,12 +59,12 @@ What's to blame for lost jobs?
 <P>Rising health care costs--cited by employers as a reason to hold down hiring--can be brought under control with a national health care insurance system. Workers in factories slated for closure could take inspiration from the sit-down strikes that built the unions in the 1930s, and occupy their plants to fight for their demands. Organized labor can demand a real jobs program of public works--not the Clinton "workfare" that forces welfare recipients to take jobs for sub-minimum wages, but long-term employment</P>
 <P>All this will be dismissed as "unrealistic" by union officials--as if pinning labor's hopes on a free-trader like Kerry is rational. It should be recalled that it was "unrealistic" to build unions during the mass unemployment of the 1930s as well. The fight for jobs will remain an issue beyond the 2004 elections. It's time to develop a realistic strategy--one that centers on fighting back.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

@@ -6,25 +6,25 @@ Israel's rampage
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4">Deadly attacks on Palestinians</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Israel's rampage</b></font></P>
@@ -42,12 +42,12 @@ Israel's rampage
 <P>The White House wants to pin the label "terrorism" on any act of Palestinian resistance--even when the target is Israeli soldiers in Palestinian territory. But it won't condemn Israel's relentless killing of Palestinians. It's as if killing people is fine as long as the killers wear uniforms, fly American-made helicopters and fire American-made rockets.</P>
 <P>The same double standard applies to Washington's support for the road map--something that wasn't lost on most Palestinians, who have a legitimate skepticism about U.S.-backed "peace" plans that have only led to intensified misery under Israeli occupation. In the words of Palestinian author Edward Said, the "road map...is not about a plan for peace so much as a plan for pacification. It is about putting an end to Palestine as a problem...based on the notion that the underlying problem has been the ferocity of Palestinian resistance, rather than the occupation that has given rise to it."</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

@@ -6,25 +6,25 @@
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Arial, Helvetica, sans-serif" size="2"><b>EL SENTIDO DEL MARXISMO</b></font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>&iquest;Cu&aacute;l es la verdadera tradici&oacute;n marxista?</b></font><p>
@@ -45,12 +45,12 @@ Y fue capaz de mantener su prestigio porque la revoluci&oacute;n degener&oacute;
 Los resultados pr&aacute;cticos fueron terribles. Los grandes partidos comunistas, que contaban con el apoyo de millones de trabajadores en Europa y por todo el mundo, estaban subordinados burocr&aacute;ticamente no s&oacute;lo a la nueva expurgaci&oacute;n del marxismo de Estalin, sino que tambi&eacute;n fueron subordinados ante los intereses de la pol&iacute;tica exterior de Rusia. En un pr&oacute;ximo art&iacute;culo examinaremos las consecuencias de estos desarrollos.<p>
 <i>Traducci&oacute;n de H&eacute;ctor Reyes</i> 
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

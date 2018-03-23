@@ -6,25 +6,25 @@ Mitos del capitalismo y la burocracia
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Arial, Helvetica, sans-serif" size="2"><b>EL SENTIDO DEL MARXISMO</b></font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Mitos del capitalismo y la burocracia</b></font> <p>
@@ -46,12 +46,12 @@ El estudio revela que la burocracia se lleva el 31 por ciento del gasto en asist
 Un sistema nacional p&uacute;blico de servicios de salud en Estados Unidos ofrecer&iacute;a m&aacute;s servicios por menos costo pero, una vez m&aacute;s, hay que se&ntilde;alar que los servicios de salud en EE.UU. no tratan de ayudar a la gente sino que se preocupan exclusivamente de que un peque&ntilde;o n&uacute;mero de capitalistas obtengan enormes sumas de dinero.<p>
 <i>Esta traducci&oacute;n del art&iacute;culo original, que apareci&oacute; por primera vez en ingl&eacute;s en</i> Socialist Worker, <i>se puede encontrar en la p&aacute;gina de Web de <a href="http://www.rebelion.org" target="_blank">www.rebelion.org</a>. Este art&iacute;culo fue traducido para <a href="http://www.rebelion.org" target="_blank">Rebelion.org</a> por Felisa Sastre</i>.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

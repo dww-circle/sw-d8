@@ -6,25 +6,25 @@ Por qu&eacute; EEUU apoya la destrucci&oacute;n del L&iacute;bano por Israel
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Declaraci&oacute;n de la International Socialist Organization</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Por qu&eacute; EEUU apoya la destrucci&oacute;n del L&iacute;bano por Israel</b></font><p>
@@ -69,12 +69,12 @@ Una pol&iacute;tica antirracista y antiimperialista no constituye un desv&iacute
 La guerra de Israel contra el L&iacute;bano es el presagio de un funesto nuevo giro de la "guerra contra el terrorismo" de Washington. Oponerse a los planes imperiales del gobierno norteamericano es de suma importancia para revivir y fortalecer el movimiento contra la guerra en los EEUU, desarrollando la solidaridad internacional y oponi&eacute;ndose a las intervenciones imperialistas norteamericanas, ya sean llevadas a cabo directamente por EEUU o por medio de los militares israel&iacute;es.<p>
 <i>Traducido del ingl&eacute;s por Roberto Platzer</i>.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

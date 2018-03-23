@@ -6,25 +6,25 @@ Barefaced class war
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4">Making workers pay for Connecticut budget crisis</font><BR>
 <font face="Times New Roman, Times, serif" size="5"><b>Barefaced class war</b></font></P>
@@ -37,12 +37,12 @@ Barefaced class war
 <P>Rowland seems to have this in mind. In the past few months, he used the budget cuts to hold a gun to the head of state workers' unions. After laying off 2,800 employees, Rowland had the gall to say that it was the unions' fault--because they wouldn't accept more concessions. In fact, he is now pushing legislation that would allow the state legislature to "open up" union contracts any time they deem necessary in order to force more concessions. </P>
 <P>Most people in Connecticut see these budget plans for what they are: barefaced class warfare. As another posting asked, "Will the money mongrels of this state ever know and understand what it is to live with a daily struggle for a life of quality?"</P>
 <B><P>Leela Yellesetty,</B> New Haven, Conn.</P>
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

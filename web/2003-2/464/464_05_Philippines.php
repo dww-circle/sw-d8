@@ -6,25 +6,25 @@ Behind the mutiny in Manila
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Arial, Helvetica, sans-serif" size="2"><b>PHILIPPINES</b></font><br>
 <font face="Times New Roman, Times, serif" size="4">Symptom of the political crisis facing the Arroyo government</font><br>
@@ -47,12 +47,12 @@ Behind the mutiny in Manila
 <P>Right-wing forces are also manipulating the mutineers' legitimate grievances. Hanasan and his allies, which reportedly include forces loyal to former President Estrada and the late dictator Ferdinand Marcos, reportedly bankrolled the mutiny. Sojme mutineers are also identified with such CIA-backed organizations as the Reform the Armed Forces Movement and the Young Officers Union.</P>
 <P>For the workers and poor of the Philippines, the solution will come through the country's tradition of "People Power." Mass popular protests drove out the U.S.-backed dictator Ferdinand Marcos in 1986, corrupt President Joseph Estrada in 2001 and nearly toppled Arroyo the same year. This tradition of struggle, if firmly grounded from below, could both challenge U.S. imperialism--and organize a movement to improve the living conditions of poor and working people.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

@@ -6,25 +6,25 @@ Delphi puts squeeze on UAW
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Management has local president arrested in Dayton</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Delphi puts squeeze on UAW</b></font><p>
@@ -48,12 +48,12 @@ Chuck Layton, who ran on a two-person slate for convention delegate along with L
 As a union activist, Layton said, he's been forced off the more desirable jobs in the plant for allegedly failing to maintain the proper pace. "I am 53, and they put a 25-year-old in my place, and told me, 'You are not going fast enough.'" he said. "They are trying to send me out for two weeks" on suspension.<p>
 Since the union did little to keep members informed of the fight to keep Keen's and Lamb's jobs, their return to work hasn't done much to boost workers' confidence in the union, Lamb said. "Your shop committee chair is fired, your president locked out of the plant--I thought that was a given that you walk out," he said. "This is where the UAW has gone."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

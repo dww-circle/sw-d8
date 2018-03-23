@@ -6,25 +6,25 @@ The Horowitz witch-hunt list
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Left-wing professors targeted</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>The Horowitz witch-hunt list</b></font><p>
@@ -44,12 +44,12 @@ Despite the ludicrous charges he levels, Horowitz's attacks shouldn't be ignored
 Horowitz's smearing of individual professors is part of a larger campaign to silence the left-wing voices on campuses. In addition to starting CampusWatch, a Web site "black list" of professors and courses around the country, Horowitz is pushing for misnamed "academic freedom" laws and codes of conduct on campus. The aim is to restrict the rights of liberal and left-wing professors to openly discuss politics in their classes.<p>
 The real threat to academic freedom and free speech is Horowitz, says Cloud. "Universities have historically been sites of antiwar activism and other struggles," she says. "They are supposed to be places for free inquiry, critical thinking and public dialogue. This is why cracking down on professors and universities is so important to the right wing...[T]hey want to scare faculty into not even raising the core questions that should be subjects of debate and discussion, like the war, Hurricane Katrina, the economy."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

@@ -6,25 +6,25 @@ Victim of Israeli torture on trial
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Accused of aiding terrorism</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Victim of Israeli torture on trial</b></font><p>
@@ -43,12 +43,12 @@ While the Bush administration ratcheted up the witch-hunt against Salah, it was 
 According to law professor David Cole, when Salah was placed on this list, it became a crime for anyone in the U.S. to have any economic transactions with him.<p>
 "As a result," Cole wrote in Britain's <i>Guardian</i> newspaper, "Salah was subjected to a kind of internal banishment, in which it was a crime for anyone else in the United States to provide him with anything of value. The law prohibited Salah's neighbor from offering him a cup of coffee, the local news agent from selling him a newspaper, or a doctor from treating him in the hospital. The Treasury Department told him he could get a job only if he first informed his prospective employer that he was a 'specially designated terrorist' and the employer then obtained a special license to pay Salah."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

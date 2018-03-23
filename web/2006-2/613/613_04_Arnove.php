@@ -6,25 +6,25 @@ The case for immediate withdrawal
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">"The U.S. occupation is the major source of violence and chaos in Iraq"</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>The case for immediate withdrawal</b></font><p>
@@ -118,12 +118,12 @@ We are still only at the beginning of organizing the kind of opposition we need 
 A clear majority of active-duty U.S. troops want to come home, as a much-ignored Zogby International poll found in early 2005, with 72 percent saying they wanted to be out of Iraq by the end of 2006. Groups like Iraq Veterans Against the War are pushing for immediate withdrawal, as well as reparations. We need to support their work and also those individual soldiers who are speaking out.<p>
 We need to keep up our pressure on military recruiters, which has already had an impact of the military's ability to prosecute and expand the war. And we need to raise the costs of this war for U.S. elites, to the point that they recognize they are not only losing this war in the streets of Baghdad and Basra, but of Baltimore and Birmingham.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

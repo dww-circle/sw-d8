@@ -6,25 +6,25 @@ Histeria racista contra los inmigrantes
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Pol&iacute;ticos le hacen el juego a los cazamigrantes</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Histeria racista contra los inmigrantes</b></font><p>
@@ -47,12 +47,12 @@ El liderato Dem&oacute;crata cree que Bush flaquea en cuanto a la inmigraci&oacu
 A fin de cuentas estas propuestas solamente apoyan y alimentan el crecimiento de los grupos vigilantes como los <i>Minutemen</i>. Su primera acci&oacute;n el pasado abril en la frontera entre Arizona y M&eacute;xico ha sido emulada en lugares tan diversos como California, Idaho, Washington y Nueva York. Esto demuestra el peligro que los inmigrantes enfrentan en todo el pa&iacute;s, no solamente en el suroeste.<p>
 Cuando los pol&iacute;ticos como Napolitano y Richardson exigen medidas m&aacute;s severas de control fronterizo, solo garantizan que los grupos de vigilantes puedan crecer y aterrorizar a los inmigrantes. No importa si provienen de los vigilantes vestidos con camuflaje militar o de los pol&iacute;ticos en sus trajes finos: &iexcl;tenemos que confrontar y combatir sus pol&iacute;ticas anti-inmigrantes y el racismo que las engendra!<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

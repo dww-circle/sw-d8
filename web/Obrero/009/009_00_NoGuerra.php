@@ -6,25 +6,25 @@
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4">Desde Estados Unidos, en el vientre de la bestia decimos:</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>&#161;No a la guerra por petr&oacute;leo e imperio!</b></font></P>
@@ -70,12 +70,12 @@
 <P>A pesar de la abrumadora propaganda e intimidaci&oacute;n un 30 por ciento del pueblo estadounidense se mantuvo firme en su oposici&oacute;n a la guerra contra Irak, y rechazar&aacute; su ocupaci&oacute;n. Este segmento de la poblaci&oacute;n ha llegado a entender de una forma u otra que la guerra contra Irak no era para su beneficio. Seg&uacute;n pase el tiempo, muchos otros de los que fueron manipulados para apoyar la guerra llegar&aacute;n a las mismas conclusiones porque nada bueno vendr&aacute; para ellos de &eacute;sta, mientras se les pide que paguen por las consecuencias--en t&eacute;rminos econ&oacute;micos y sociales. Y si Bush o sus sucesores intentan otra pr&oacute;xima guerra, el por ciento de los que firmemente se rehusar&aacute; a apoyarla incrementar&aacute;.</P>
 <P>Estas son las crecientes contradicciones que la clase gobernante estadounidense enfrenta dom&eacute;stica e internacionalmente. Cada vez que intenten estirar su imperio se les har&aacute; cada vez m&aacute;s dif&iacute;cil el poder mantenerlo. Y mayor el n&uacute;mero de personas que llegar&aacute; a la conclusi&oacute;n de que contra el imperio lo &uacute;nico que resta hacer es combatirlo con un s&oacute;lido movimiento anti-imperialista, tanto desde las entra&ntilde;as de la bestia como en el resto del mundo.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

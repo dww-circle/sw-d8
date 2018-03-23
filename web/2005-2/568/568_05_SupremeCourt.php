@@ -6,25 +6,25 @@ How can we save our rights?
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">As Bush stacks the Supreme Court...</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>How can we save our rights?</b></font><p>
@@ -71,12 +71,12 @@ The political climate <i>can </i>be shifted back--if our side gets organized and
 As historian and activist Howard Zinn wrote recently in the <i>Progressive </i>magazine: "It would be naive to depend on the Supreme Court to defend the rights of poor people, women, people of color, dissenters of all kinds. Those rights only come alive when citizens organize, protest, demonstrate, strike, boycott, rebel, and violate the law in order to uphold justice...<p>
 "The right of a woman to an abortion did not depend on the Supreme Court decision in <i>Roe v. Wade. </i>It was won before that decision, all over the country, by grassroots agitation that forced states to recognize the right. If the American people, who by a great majority favor that right, insist on it, act on it, no Supreme Court decision can take it away. The rights of working people, of women, of Black people have not depended on decisions of the courts. Like the other branches of the political system, the courts have recognized these rights only after citizens have engaged in direct action powerful enough to win these rights for themselves."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

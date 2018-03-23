@@ -6,25 +6,25 @@ The private eye and the state of Israel
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>The private eye and the state of Israel</b></font><p>
 <font face="Times New Roman, Times, serif" size="2"><b>Review by Amy Muldoon</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | September 14, 2007 | Page 11</font><p>
@@ -43,12 +43,12 @@ Needless to say, Chabon has been attacked for being anti-Semitic for writing a b
 It's Landsman's sense of right and wrong that guides the story, his deep longing for permanence with people not with a patch of land, that gives the story a broad resonance, despite Chabon's dead-on distillation of a Jewish fear of "always being a guest in someone else's house." <p>
 As a piece of "alternate reality" fiction, <i>YPU </i>ranks with <i>Lord of the Rings</i> in inventiveness and complexity. But it's not much of a fantasy; characters and places are so closely observed they're almost familiar, while its just off-center version of the world gives enough perspective to look under the edge of our reality and challenge assumptions about how and why Israel came to be. Combined with Chabon's crisp, beautiful language and can't-put-it-down mystery writing, <i>YPU </i>is a downright masterpiece.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

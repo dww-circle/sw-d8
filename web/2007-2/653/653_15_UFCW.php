@@ -6,25 +6,25 @@ Which side won in new grocery contracts?
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>Which side won in new grocery contracts?</b></font><p>
 <font face="Arial, Helvetica, sans-serif" size="2">November 16, 2007 | Page 15</font><p>
@@ -62,12 +62,12 @@ A 2006 study by the Kaiser Family Foundation of HRA-type plans, known as Consume
 The UFCW contracts still maintain the traditional health care plans in addition to the HRA. But is it fair to characterize as a victory a contract that allows the Big Three to avoid paying what could be several hundred million dollars over the life of the contract into the RCWT? Keep in mind that in 2006, the combined profits of the Big Three were $8.3 billion.<p>
 The new contracts are likely to become the models for the other UFCW grocery agreements across the U.S. In a climate in which workers' health care under is constant attack, organized labor has the power to draw the line and boost the struggle for health care reform. Unfortunately the UFCW, despite its rhetoric, has so far failed to do this.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

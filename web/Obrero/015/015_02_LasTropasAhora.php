@@ -6,25 +6,25 @@
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Arial, Helvetica, sans-serif" size="2"><b>LO QUE PENSAMOS</b></font><br>
 <font face="Times New Roman, Times, serif" size="4">Ocupaci&oacute;n no es liberaci&oacute;n</font><br>
@@ -41,12 +41,12 @@
 <P>El gobierno estadounidense no tiene ning&uacute;n derecho a determinar el futuro de Irak. Sin embargo, los funcionarios de EE.UU. est&aacute;n cuidadosamente escogiendo un gobierno provisional para una "transferencia de poder" el 30 de junio que en realidad dejar&aacute; a Washington con el control militar completo de Irak.</P>
 <P>La ocupaci&oacute;n por EE.UU.--no importa si su poder se manifiesta directamente con soldados norteamericanos, o entre bastidores a trav&eacute;s de un gobierno de t&iacute;teres--solamente crear&aacute; una resistencia mayor hasta que Washington sea expulsado. Tenemos que apoyar la lucha de los iraqu&iacute;es por su liberaci&oacute;n--&#161;y exigir que EEUU saque sus tropas de Irak ahora! </P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

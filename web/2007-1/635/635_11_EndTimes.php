@@ -6,25 +6,25 @@ Guardians of the status quo
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>Guardians of the status quo</b></font><p>
 <font face="Arial, Helvetica, sans-serif" size="2">June 8, 2007 | Page 11</font><p>
@@ -77,12 +77,12 @@ This is food for thought. The Internet has made it much easier to get access to 
 But this point does raise another question. In spite of this unprecedented access to information, the U.S. government was still able to get away with its invasion of Iraq. The facts to debunk the lies that justified the invasion could be found easily--on CounterPunch, in <i>Socialist Worker </i>and well beyond. But that didn't stop it from happening.<p>
 To successfully challenge wars and injustice, more than the right information is needed. The facts and ideas put forward in books like <i>End Times</i>, on Web sites like CounterPunch and in publications like <i>Socialist Worker </i>need to be put into practice--by activists who share both the bitter anger of this book toward the everyday crimes of the system and the hope that struggle can win genuine change.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

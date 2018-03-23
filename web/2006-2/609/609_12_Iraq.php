@@ -6,25 +6,25 @@ Why isn't the U.S. on trial in Iraq?
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Hussein verdict comes days before U.S. election</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Why isn't the U.S. on trial in Iraq?</b></font><p>
@@ -48,12 +48,12 @@ According to the <i>New York Times, </i>"[F]uel and electricity prices are up mo
 As Riverbend continues, "Iraq has not been this bad in decades. The occupation is a failure. The various pro-American, pro-Iranian Iraqi governments are failures. The new Iraqi army is a deadly joke. Is it really time to turn Saddam into a martyr?...It's not about the man--presidents come and go, governments come and go. It's the frustration of feeling like the whole country and every single Iraqi inside and outside of Iraq is at the mercy of American politics.<p>
 "It is the rage of feeling like a mere chess piece to be moved back and forth at will. It is the aggravation of having a government so blind and uncaring about their people's needs that they don't even feel like it's necessary to go through the motions or put up an act. And it's the deaths. The thousands of dead and dying, with Bush sitting there smirking and lying about progress and winning in a country where every single Iraqi outside of the Green Zone is losing."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

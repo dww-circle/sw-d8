@@ -6,25 +6,25 @@ The "man of peace" who waged total war on Palestine
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">What's next after Sharon?</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>The "man of peace" who waged total war on Palestine</b></font><p>
@@ -51,12 +51,12 @@ But whatever the outcome of the Palestinian elections in January, and the Israel
 Israel couldn't have maintained its grip over Palestine since 1948 without the political and financial support of the U.S. Israel's location at the heart of the oil-rich Middle East has made it the largest annual beneficiary of U.S. foreign aid since 1976, and the largest cumulative recipient since the Second World War, according to the Congressional Research Service in Washington, D.C. In 2005, the U.S. gave Israel nearly $2.6 billion in direct aid and provided an additional $3 billion in loan guarantees.<p>
 That's why opposing the U.S. drive to dominate the Middle East--beginning with the U.S. occupation of Iraq--also requires opposing U.S. support for Israel and its apartheid treatment of Palestinians.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

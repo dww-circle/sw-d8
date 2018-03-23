@@ -6,25 +6,25 @@ Will the UFCW stand up to the grocery giants?
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>Will the UFCW stand up to the grocery giants?</b></font><p>
 <font face="Arial, Helvetica, sans-serif" size="2">May 11, 2007 | Page 15</font><p>
@@ -49,12 +49,12 @@ Three years ago, support for the grocery workers was tremendous. However, the cu
 Despite this, the potential to revive solidarity in is real. The Los Angeles County Federation of Labor said its more than 300 unions and 800,000 members would mobilize for demonstrations, boycotts and food drives to aid any striking workers. Also, grocery workers at Stater Bros. and Gelson's, which control between 12-15 percent of the Southern California grocery market, recently eliminated the two-tier system in their contracts.<p>
 It will be up to the UFCW rank and file to push the union leadership to provide more information on the negotiations, to call for mass meetings of union members to discus the contract, to hold rallies to draw on the solidarity of the community, and to take strike authorization votes everywhere. Finally, it most likely will take another round of strikes to reverse the concessions agreed to in the last negotiations.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

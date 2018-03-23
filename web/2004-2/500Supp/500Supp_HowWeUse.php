@@ -6,25 +6,25 @@
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4">How we use <i>Socialist Worker</i></font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>"Connecting us to what we can do"</b></font></P>
@@ -77,12 +77,12 @@
 <P><I>Socialist Worker </I>has been able to fill this void for people as it continues to print the truth with headlines like "This is what occupation looks like"--alongside articles that link the torture in Iraq to atrocities in Vietnam, Japan and Chicago's South Side. <I>SW's </I>bold headlines led the ISO branch at the University of Illinois-Chicago to engage in a high level of political discussion at school and workplaces that we hadn't seen since before the invasion of Iraq. </P>
 <P>But bold headlines aren't enough to get people involved, and <I>SW </I>is aware of this. Using the articles within the paper has been the key to convincing people that the current situation in Abu Ghraib is not the workings of a few bad apples within the military, but instead is a result of a system that oppresses people for profit. The articles inside <I>SW </I>make the links and show that the average American has more in common with the average Iraqi than either Bush or Kerry. </P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

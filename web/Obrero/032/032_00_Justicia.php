@@ -6,25 +6,25 @@
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Arial, Helvetica, sans-serif" size="2"><b>LO QUE PENSAMOS</b></font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>&iquest;Le har&aacute; justicia Washington a los inmigrantes?</b></font><p>
@@ -52,12 +52,12 @@ La ley STRIVE no es simplemente un veh&iacute;culo para la reforma de las leyes 
 Luego la legislaci&oacute;n del Senado que autorizaba un programa de trabajadores hu&eacute;spedes y el aumento de medidas represivas fue presentada como la "alternativa". Entonces una secci&oacute;n substancial del movimiento pro derechos del inmigrante se opuso tambi&eacute;n a la ley del Senado precisamente por estas dos provisiones.<p>
 En vez de escoger entre las medidas severas de Bush y la ley STRIVE con su proceso sumamente limitado de legalizaci&oacute;n y su programa de trabajadores hu&eacute;spedes, el movimiento pro derechos de los inmigrantes debe decirles NO a ambas--y seguir organizando para exigir que las leyes de inmigraci&oacute;n provean igualdad y el derecho de conseguir la ciudadan&iacute;a para todos.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

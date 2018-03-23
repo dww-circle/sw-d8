@@ -6,25 +6,25 @@ Victims of the U.S. "war on terrorism"
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4">One year after September 11</font><BR>
 <font face="Times New Roman, Times, serif" size="5"><b>Victims of the U.S. "war on terrorism"</b></font></P>
@@ -80,12 +80,12 @@ Victims of the U.S. "war on terrorism"
 <P>Barton Biggs, a hot-shot stock analyst with Morgan Stanley, could barely contain his excitement about the war. "The emergence of vocal and respected opposition to the Bush administration's plan to make a pre-emptive strike against Iraq to 'preserve, protect, and defend' the Homeland from terrorism is a positive development," Biggs wrote. "Under present circumstances, a strike against Iraq would cause, in my opinion, a sharp sell-off in equity markets around the world. However, assuming an overwhelming victory and that all went well subsequently, equity markets would surge as the world would be perceived as a safer place." </P>
 <P>Plus there's the little matter of deflecting attention from corporate crime. "The debate about Iraq&#133;also serves to distract the media and the public from obsessing about the villains of the bear market," Biggs wrote. "Everybody was to blame and everyone was greedy, including the public and the media, not just CEOs and Wall Street."</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

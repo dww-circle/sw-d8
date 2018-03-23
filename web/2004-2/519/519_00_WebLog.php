@@ -6,25 +6,25 @@ Election 2004: What we're reading
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>Election 2004: What we're reading</b></font><P>
 
@@ -65,12 +65,12 @@ Could there possibly have been an incumbent more easy to knock-off than George W
 Cooper's pre-election article, <a href="http://www.laweekly.com/ink/04/49/dissonance-cooper.php" target="_blank">"The Incidental Candidate,"</a> in which he said we would unhappily vote for a Democrat for the first time since 1972, makes an important point that is worth remembering as we face a second Bush term. He urges his liberal friends "to get their heads around the not-too-complex notion that Bush can win the election and still lose." <p>
 <a href="http://www.votenader.com/media_press/index.php?cid=398" target="_blank">Ralph Nader's post-election assessment</a> is worth reading. Nader should have gotten more than .3 percent of the vote, but was abandoned by the ABB left for Kerry. He argues that Kerry lost because the Democrats failed to offer any real alternative. He says that we need to begin organizing&#8212;"yesterday"&#8212;against the occupation of Iraq&#8212;which progressives put on hold for the election.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

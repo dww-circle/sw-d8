@@ -6,25 +6,25 @@ Haiti's year of terror
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Since the U.S. coup that toppled Aristide one year ago...</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Haiti's year of terror</b></font><p>
@@ -74,12 +74,12 @@ Despite the evidence of human rights violations, the Bush administration has ref
 Since the elections may not even appear legitimate, let alone stabilize Haiti, the UN announced that it has extended its "peacekeeping" mission for another 18 months. Some diplomats have even expressed support for the UN turning Haiti into a "protectorate."<p>
 Antiwar activists must support the popular resistance in Haiti against the U.S.-UN occpation. "Without the UN forces, this phony government wouldn't last a week," one Aristide supporter told the <i>Black Commentator. </i>"That is why we call them occupation forces, and it is criminal for them to prop up this killing machine that is trying to destroy us. It is an insult to see them occupying the streets in front of our National Palace to keep in place a government that was not chosen by the people...We have no choice but to defend ourselves and our communities against their tanks and guns."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

@@ -6,25 +6,25 @@ Glaring malice of war
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4">How Iraqis will suffer after the U.S. invasion</font><BR>
 <font face="Times New Roman, Times, serif" size="5"><b>Glaring malice of war</b></font></P>
@@ -71,12 +71,12 @@ Glaring malice of war
 <P>An obvious question: how can my limited effort in providing minimal assistance to a handful of families serve the greater goal of dissolving the tension between Iraq and the United States and bringing relief to all the people? I recall a proverb I once heard from an Iraqi artist: when two elephants fight, he said, only the grass suffers. So it is that from the "grass," real change will come. The work I do in Iraq is quintessentially grassroots, person-to-person activism. Not only do I bring material aid; I also listen to people's stories and share the truth of my own life experience. As far as possible, I witness and acknowledge what people are enduring under sanctions and the threat of war. Furthermore, I honor their culture, language, and customs, and try to create balanced relationships based on mutual respect.</P>
 <P>Given the complexity of the crisis that now exists, I do not for a moment believe that what I have done could be construed as a template for a large-scale, nonviolent solution. On the other hand, the spirit in which I have carried on this work is something I would most definitely put forward as an alternative to the current whoops and hollers for war.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

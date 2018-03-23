@@ -6,25 +6,25 @@ Why we stand for immediate withdrawal
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">An antiwar movement statement</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Why we stand for immediate withdrawal of all U.S. troops from Iraq</b></font><p>
@@ -87,12 +87,12 @@ With former Secretary of State Henry Kissinger insisting that a military victory
 
 <font face="Times New Roman, Times, serif" size="2">Other signatories include &#8226; <b>Mike Alewitz, </b>muralist &#8226; <b>Naseer Aruri, </b>author, <i>Dishonest Broker: America's Role in Israel and Palestine</i> &#8226; <b>Bill Ayers, </b>author, <i>Fugitive Days</i> &#8226; <b>David Barsamian, </b>director, Alternative Radio &#8226; <b>Thomas Barton, </b><i>GI Special</i> &#8226; <b>Phyllis Bennis, </b>Institute for Policy Studies &#8226; <b>Leslie Cagan, </b>United for Peace and Justice &#8226; <b>Ira Chernus, </b>The Smirking Chimp &#8226; <b>Todd Chretien, </b>Green Party Senate candidate in California &#8226; <b>Ramsey Clark, </b>legal council for Saddam Hussein &#8226; <b>Roxanne Dunbar-Ortiz, </b>author, <i>Blood on the Border</i> &#8226; <b>Sam Farber, </b>author, <i>The Origins of the Cuban Revolution Reconsidered</i> &#8226; <b>James Fennerty, </b>National Lawyers Guild &#8226; <b>Josh Frank, </b>author, <i>Left Out! How Liberals Helped Reelect George W. Bush</i> &#8226; <b>Elaine Hagopian, </b>author, <i>Civil Rights in Peril</i> &#8226; <b>Doug Henwood, </b>editor, <i>Left Business Observer</i> &#8226; <b>Goretti Horgan, </b>Derry Antiwar Coalition &#8226; <b>Maurice Isserman, </b>author, <i>If I Had a Hammer</i> &#8226; <b>Ron Jacobs, </b>author, <i>The Way the Wind Blew</i> &#8226; <b>Charles Jenks, </b>Traprock Peace Center &#8226; <b>Gabriel Kolko, </b>author, <i>The Politics of War</i> &#8226; <b>Joanne Landy, </b>Campaign for Peace and Democracy &#8226; <b>Michael Letwin, </b>co-chair, New York City Labor Against the War &#8226; <b>Adrian Lomax, </b>prisoner rights activist &#8226; <b>Alan Maass, </b>editor, <i>Socialist Worker</i> &#8226; <b>Frances Fox Piven, </b>author, <i>Poor Peoples' Movements</i> &#8226; <b>Peter Rachleff, </b>author, <i>Hard-Pressed in the Heartland</i> &#8226; <b>Matthew Rothschild, </b>editor, <i>The Progressive</i> &#8226; <b>Michael Schwartz, </b>sociology professor, State University of New York at Stony Brook &#8226; <b>Ahmed Shawki, </b>editor, <i>International Socialist Review</i> &#8226; <b>Sharon Smith, </b>author, <i>Subterranean Fire</i> &#8226; <b>David Swanson, </b>AfterDowningStreet.org &#8226; <b>Sherry Wolf, </b>International Socialist Organization &#8226; <b>Ann Wright, </b>U.S. Army colonel/State Department, resigned in protest of Iraq War &#8226; <b>Dave Zirin, </b>author, <i>What's My Name, Fool?</i> &#8226; Organizations listed for identification purposes only</font><p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

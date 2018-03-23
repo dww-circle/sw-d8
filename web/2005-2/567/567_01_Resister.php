@@ -6,25 +6,25 @@ Refusing to serve in Bush's wars
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>Refusing to serve in Bush's wars</b></font><p>
 <font face="Times New Roman, Times, serif" size="2"><b>By Eric Ruder</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | December 2, 2005 | Page 1</font><p>
@@ -36,12 +36,12 @@ The press conference took place on the eve of the annual protest against the Sch
 "And she brings up the issue of Afghanistan. This is important because there is some reluctance in the peace movement to bring up Afghanistan, because the Taliban's supposed role in harboring al-Qaeda and the connection to 9/11 justifies the war on Afghanistan in some people's minds. So how ironic that she gave her press conference in front of Ft. Benning, which trains terrorists. If we're saying that harboring terrorists justifies the war in Afghanistan, we would have to say that a war on the U.S. is justified. We don't just house them, we train them."<p>
 Speakers on Jashinski's behalf at the press conference included Iraq Veterans Against the War members Aidan Delgado and Eric Garcia; Aimee Allison, a 1991 Gulf War resister; Debbie Clark of Veterans for Peace; and Father Roy Bourgeois, founder of the School of the Americas Watch.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

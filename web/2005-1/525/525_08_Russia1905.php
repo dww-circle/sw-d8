@@ -6,25 +6,25 @@ Russia's 1905 Revolution
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">"The great dress rehearsal"</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Russia's 1905 Revolution</b></font><p>
@@ -64,12 +64,12 @@ The experience and organization that the Bolsheviks gained during the 1905 revol
 In a speech on 1905 that Lenin gave to a group of young workers in January 1917, he pointed out, "We must not be deceived by the present grave-like stillness in Europe. Europe is pregnant with revolution. The monstrous horrors of the imperialist war, the suffering caused by the high cost of living everywhere engender a revolutionary mood; and the ruling classes, the bourgeoisie, and its servitors, the governments, are more and more moving into a blind alley from which they can never extricate themselves without tremendous upheavals. <p>
 "Just as in Russia in 1905, a popular uprising against the tsarist government began under the leadership of the proletariat with the aim of achieving a democratic republic, so, in Europe, the coming years, precisely because of this predatory war, will lead to popular uprisings under the leadership of the proletariat against the power of finance capital, against the big banks, against the capitalists; and these upheavals cannot end otherwise than with the expropriation of the bourgeoisie, with the victory of socialism."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

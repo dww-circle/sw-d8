@@ -6,25 +6,25 @@ Revolt of the Black athletes
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4">How Black Power took center stage at the 1968 Olympics</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Revolt of the Black athletes</b></font></P>
@@ -63,12 +63,12 @@ Revolt of the Black athletes
 <P>Despite this, women athletes voiced their solidarity after the fact. The anchor of the women's gold medal-wining 4 x 100 team, Wyomia Tyus said, "I'd like to say that we dedicate our relay win to John Carlos and Tommie Smith."</P>
 <P>It was a watershed moment of resistance. But Carlos and Smith are not merely creatures of nostalgia. As we build resistance today to racism war, theirs is a living history we should celebrate. As Smith said recently of his frozen moment, "It's not something I can lay on my shelf and forget about. My heart and soul are still on that team, and I still believe everything we were trying to fight for in 1968 has not been resolved and will be part of our future."</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

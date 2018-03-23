@@ -6,25 +6,25 @@ UC blocks nurses' strike
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Governator and University of California retaliate against CNA</font> <br>
 <font face="Times New Roman, Times, serif" size="5"><b>UC blocks nurses' strike</b></font><p>
@@ -40,12 +40,12 @@ In place of the strike, the CNA organized pickets and rallies at UC Medical Cent
 A major CNA concern is UC's attack on their pension plans, which would require an 8 percent employee contribution--essentially a pay cut--for a plan that provides less protection than under previous contracts. "We have been taking cuts in pay for years in order to keep a secure pension plan, and now they want to start cutting into that," said Irene Cale, a nurse at UC-San Francisco.  "I don't think I can work in the UC system if this goes through."  <p>
 Janis Fox-Davis, a nurse with 26 years of experience who was set to retire the day after the blocked strike, bluntly described the change in conditions for nurses during her career. "Nursing used to be about being in a caring profession. Now, it is a work camp."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

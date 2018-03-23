@@ -6,25 +6,25 @@ Protesters run over by bigot in LA
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Confronting vigilantes</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Protesters run over by bigot in LA</b></font><p>
@@ -38,12 +38,12 @@ Yasser Giron, the picketer who was hospitalized, said he recognized that Netkin 
 "It's important to realize that violent racism grows precisely when it goes unopposed," said Giron. "The point of confronting groups like the Minutemen and resisting politicians' attacks is to show them for what they are. They receive political cover from both Democrats and Republicans and have been trying to appear legitimate. They need to be confronted now."<p>
 Despite his injuries, Giron thinks that public opposition to anti-immigrant vigilantes must continue. "Demonstrations and pickets are an effective way of confronting these groups," he said. "Not only do they bring attention to this type of hate, but they also show these racists that they cannot go anywhere unopposed. It was beautiful to see activists and community members unified on this issue, against racism."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

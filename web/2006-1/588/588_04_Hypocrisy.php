@@ -6,25 +6,25 @@ The nuclear hypocrites
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">World's biggest nuclear power demands disarmament by Iran</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>The nuclear hypocrites</b></font><p>
@@ -66,12 +66,12 @@ So when the U.S. raises alarms about Iran's nuclear program, it's the responsibi
 "It's the exact replay of the game plan used for Iraq, where we didn't care what Saddam did, what he said, what the weapons inspectors found. We created the perception of a noncompliant Iraq, and we stuck with that perception, selling that perception until we achieved our ultimate objective, which was invasion that got rid of Saddam."<p>
 The U.S. wants to sell its war in Iran by using the language of nuclear disarmament. But its threats to use nuclear weapons in a pre-emptive strike, its support for a nuclear-armed Israel and its own massive nuclear arsenal make the U.S. itself the biggest threat to peace and justice in the Middle East and around the world.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

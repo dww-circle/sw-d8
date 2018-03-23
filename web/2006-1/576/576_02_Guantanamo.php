@@ -6,25 +6,25 @@ Tortured for the "war on terror"
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Guant&aacute;namo hunger strikers</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Tortured for the "war on terror"</b></font><p>
@@ -44,12 +44,12 @@ Lt. Col. Jeremy Martin, the chief military spokesman at Guant&aacute;namo, recen
 But according to a new analysis of declassified Defense Department evaluations carried out by Seton Hall Law School professor Mark Denbeaux and attorney Joshua Denbeaux, 92 percent of the prisoners at Guant&aacute;namo aren't even classified as al-Qaeda fighters. And just over half of detainees at the prison camp are even accused of committing a "hostile" act against the U.S.--even though a "hostile" act is defined, in some instances, as nothing more serious than possessing rifles, using a guest house or wearing olive drab clothing.<p>
 "Now, for the first time, the military's lies and misrepresentations about the prisoners in Guant&aacute;namo have been debunked through the military's own documents," Center for Constitutional Rights attorney Gita Gutierrez said in a statement. "Yet these men remain in prison, while at every turn, the [Bush administration] seeks to avoid judicial scrutiny of its unlawful conduct."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

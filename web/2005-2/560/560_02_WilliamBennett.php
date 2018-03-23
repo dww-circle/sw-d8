@@ -6,25 +6,25 @@ Bennett's bigotry
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Ideologue in hot water over racist "solution" to crime</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Bennett's bigotry</b></font><p>
@@ -38,12 +38,12 @@ When the watchdog group Media Matters for America broke the story, even the Bush
 In interviews after the incident, Bennett seemed to believe that the problem was that people thought he was saying Black babies <i>should</i> be aborted. But there's no doubt that Bennett was serious about his racist assertion that Blacks are responsible for the crime rate in the U.S.<p>
 Bennett couldn't resist adding insult to injury--attacking the Congressional Black Congress. "When it comes to abortion, my wife's program, Best Friends, has kept more young women from having abortions...than the entire Black Caucus," Bennett told Fox News Channel's Sean Hannity. "She has done more for inner-city Black girls than the entire Black Caucus. So I will not bow my head to any of these people." <p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

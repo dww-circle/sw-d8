@@ -6,25 +6,25 @@ Nurses strike for health care
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">N.J. hospital hires scabs in effort to break walkout</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Nurses strike for health care</b></font><p>
@@ -42,12 +42,12 @@ Several strikers reported that management had subjected them to a campaign of in
 Local newspapers have been trying to portray the strikers as "greedy" nurses who don't care for their patients. "Challenge them to become a nurse for a day," says striker Jonathan Grover. "Nurses take care of people so much more than they take care of themselves. The media try to make nurses feel bad about being on strike, but we are not making paper here--we are taking care of people, we are keeping people alive, holding their hands while they die, delivering their babies...You can't put a price tag on that."<p>
 The strikers are confident they can win, because they have the support of the larger New Brunswick community. Building on that support, calling on other unions to show their solidarity, and developing a strategy to deal with the scabs will be crucial in the days and weeks ahead.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

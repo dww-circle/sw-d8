@@ -6,25 +6,25 @@ What the U.S. has in store for Iran
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Arial, Helvetica, sans-serif" size="2"><b>READING BETWEEN THE LINES</b></font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>What the U.S. has in store for Iran</b></font><p>
@@ -44,12 +44,12 @@ Why the obsession with Iran? Why would the U.S. even think about such an adventu
 Writing in <i>Le Monde Diplomatique</i>, Walid Charara explained: "Behind the ideological window-dressing of the new 'democratic messianism,' there are two main reasons for the Bush administration's uncompromising determination. First, there is Iran's geo-strategic status. It is an independent and middle-ranking regional power that has engaged in military cooperation with Russian and China...[T]his makes it the last bastion still to be holding out against a permanent U.S. takeover of the Middle East. [Second,] Iran is the last surveying ally in the region of those states and organizations still opposed to Israel."<p>
 In the coming months, we will be subjected to a barrage of scare stories about the Iranian bomb, Iranian backing for terrorism, Iranian support for the resistance in Iraq--even Bush's delusions about a post-Islamic Republic of Iran. That's why it will be important to remember the real reasons why the U.S. worries about Iran.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

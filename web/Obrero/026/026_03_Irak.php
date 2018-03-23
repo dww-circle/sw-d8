@@ -6,25 +6,25 @@ Irak al borde del precipicio
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Maniobras de EEUU empujan a&#8230; </font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Irak al borde del precipicio</b></font><p>
@@ -39,12 +39,12 @@ La bomba de Samarra estall&oacute; cuando el embajador estadounidense, Zalmay Kh
 La meta de EEUU era quitarle el control del influyente Ministerio del Interior al Concilio Supremo para la Revoluci&oacute;n Isl&aacute;mica en Irak, partido chi&iacute;ta apoyado por Ir&aacute;n&#8212;y forzar la retirada del Primer Ministro Ibrahim al-Jaafari, cuyo partido, Dawa, tambi&eacute;n tiene v&iacute;nculos con Ir&aacute;n. La maniobra fracas&oacute; cuando Jaafari logr&oacute; que diputados chi&iacute;tas respaldaran su permanencia  como primer ministro, gracias al apoyo de Moktada al-Sadr. <p>
 Ahora la bomba de Samarra y sus repercusiones han puesto al descubierto lo que el prominente comentarista conservador William F. Buckley llama el "fracaso" de EEUU en la ocupaci&oacute;n de Irak.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

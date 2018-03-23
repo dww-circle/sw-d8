@@ -6,25 +6,25 @@ Crouching Tiger's hidden world of dreams
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="5"><b><i>Crouching Tiger's </i>hidden world of dreams</b></font></P>
 <P><font face="Times New Roman, Times, serif" size="2"><b>Review by Alice Kim</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | April 13, 2001 | Page 15</font></P>
@@ -40,12 +40,12 @@ Crouching Tiger's hidden world of dreams
 <P>One exciting aspect of <i>Crouching Tiger</i> is its women characters--who are fierce and defiant fighters, each with a sense of dignity. They're a far cry from the typical portrayal of women in Hollywood action films--as, at most, sex objects who can "kick ass," like the stars of <i>Charlie's Angels.</i></P>
 <P><i>Crouching Tiger</i> is scheduled to be out on video in June. But because of the Oscar hype, it's still in theaters. Don't miss it on the big screen!</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

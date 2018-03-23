@@ -6,25 +6,25 @@ Punishing NYC students for the education crisis
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4">Bloomberg's testing scheme</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Punishing NYC students for the education crisis</b></font></P>
@@ -40,12 +40,12 @@ Punishing NYC students for the education crisis
 <P>Even the <I>New York Times </I>weighed in against Bloomberg's policy. "Dozens of studies have led many educators to conclude that policies forcing students to repeat a grade are costly and counterproductive, resulting in no gains in student achievement and sharp increases in dropout rates." Ironically, the city tried such a program in the early 1980's which was abandoned after just a few disastrous years. </P>
 <P>The only things that can solve the education crisis are smaller class sizes, improved salaries so experienced teachers don't burn out or move to better-paying suburban districts, and more resources for the often dilapidated and overcrowded school system. Holding students back only punishes the most vulnerable students for the failures of the entire system.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

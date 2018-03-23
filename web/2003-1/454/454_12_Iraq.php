@@ -6,25 +6,25 @@ Shoot to kill
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4">Washington's new boss in Iraq gives the order...</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Shoot to kill</b></font></P>
@@ -50,12 +50,12 @@ Shoot to kill
 <P>In the 1970s, Bremer was an aide to Secretary of State Henry Kissinger when Kissinger helped to engineer the overthrow of Salvador Allende, Chile's democratically elected president. After retiring from the State Department, Bremer spent 11 years with Kissinger Associates, a global consulting firm run by Kissinger himself. In the late 1980s, Kissinger's firm faced a congressional investigation for setting up shady deals with an Italian bank to funnel $4 billion to Saddam Hussein's regime in Iraq--which at the time was receiving firm U.S. support in its war on Iran.</P>
 <P>In truth, the dispute between the Pentagon and the State Department isn't a struggle over the merits of empire building--only how best to go about it. And Bremer's brand of iron-fisted diplomacy with a smile happens to fit the bill--for now.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

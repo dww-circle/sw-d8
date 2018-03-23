@@ -6,25 +6,25 @@ U.S. can't cover up its record of torture
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">More details of abuse emerge</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>U.S. can't cover up its record of torture</b></font><p>
@@ -42,12 +42,12 @@ According to "Beyond Abu Ghraib: Detention and Torture in Iraq," a report releas
 "Many cases of torture and ill treatment of detainees held in facilities controlled by the Iraqi authorities have been reported since the handover of power in June 2004," the report said. "Among other methods, victims have been subjected to electric shocks or have been beaten with plastic cable. The picture that is emerging is one in which the Iraqi authorities are systematically violating the rights of detainees in breach of guarantees contained both in Iraqi legislation and in international law and standards."<p>
 And, says the report, U.S. military forces were often complicit in the abuse. "Former detainees who were subjected to torture or ill-treatment or who witnessed the infliction of such abuses on fellow detainees while they were being held in the custody of the Iraqi authorities, have told Amnesty International that such incidents occurred with the knowledge or even in the presence of U.S. troops."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

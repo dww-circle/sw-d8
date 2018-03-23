@@ -6,25 +6,25 @@ Acorralan a miles en redadas anti-inmigrantes en California
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="5"><b>Acorralan a miles en redadas anti-inmigrantes en California</b></font> </P>
 <P><font face="Times New Roman, Times, serif" size="2"><b>Por Sarah Knopp</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | 23 de julio de 2004 | p&aacute;gina 2</font></P>
@@ -40,12 +40,12 @@ Acorralan a miles en redadas anti-inmigrantes en California
 <P>La concurrencia fue m&aacute;s peque&ntilde;a que previas manifestaciones pro-derechos de los inmigrantes a causa del temor creado por las redadas. Pero miles de trabajadores indocumentados en el distrito de la industria textil en Los Angeles se tiraron a la calle para mostrar su apoyo. "Los pol&iacute;ticos saben que necesitan todo el trabajo duro que hacemos", Juan Jose Gutierrez dijo a la multitud. "No pueden acallarnos a base de miedo".</P>
 <P>Los grupos que planearon la marcha del 26 de junio han convocado a un d&iacute;a de acci&oacute;n para todo el estado el 16 de octubre para protestar el d&eacute;cimo aniversario de la anti-inmigrante Propuesta 187. Necesitamos organizar esta lucha para repeler los ataques de la derecha.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

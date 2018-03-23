@@ -6,25 +6,25 @@ How Katrina unleashed a storm of racism
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">The confrontation at the bridge</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>How Katrina unleashed a storm of racism</b></font><p>
@@ -70,12 +70,12 @@ Nevertheless, the features of this story reflect the powerful role played by rac
 "We don't see our run-in with the Gretna police force as an individual case of mistreatment, but it's the issue of racism and brutality that exists throughout the relief effort and is endemic throughout our country," says Lorrie Beth. "One-third of Black children in this country are growing up in poverty, infant mortality is on the rise among Blacks, Black children are twice as likely to die before their first birthday as white children. The list goes on. Racism plays a huge role in this country, politically and economically."<p>
 Larry agrees. "It's important to put this in a context. A million more people became poor last year. And for the last 20 years, we've had both Democrats and Republicans withdrawing public services from poor and working families, and we've seen the results of that in the aftermath of Hurricane Katrina."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

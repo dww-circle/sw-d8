@@ -6,25 +6,25 @@ Are SUVs the reason for Bush's Iraq war?
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Arial, Helvetica, sans-serif" size="2"><b>WHAT DO SOCIALISTS SAY?</b></font><BR>
 <font face="Times New Roman, Times, serif" size="5"><b>Are SUVs the reason for Bush's Iraq war?</b></font></P>
@@ -43,12 +43,12 @@ Are SUVs the reason for Bush's Iraq war?
 <P>Oil is the most important commodity in the world, vital for both industry and the military. Even when consumer demand was much lower, Washington still wanted to control the world's oil supplies. In the 1940s, the State Department described the Middle East's oil as "a stupendous source of strategic power, and one of the greatest material prizes in world history." This is the reason why the U.S. has intervened repeatedly in the Middle East over the past half century.</P>
 <P>Capitalist economies aren't driven by consumer demand, but by the need of capitalists to make profits. If we want to change the nature of the system--including its tendency to destroy the environment and its drive towards war--we need to change the way production is organized, not point moralistic fingers at SUV drivers or other consumers.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

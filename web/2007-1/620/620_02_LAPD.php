@@ -6,25 +6,25 @@ Victim of LA's deadly gang in blue
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>Victim of LA's deadly gang in blue</b></font><p>
 <font face="Times New Roman, Times, serif" size="2"><b>By Kurt Krueger</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | February 23, 2007 | Page 2</font><p>
@@ -43,12 +43,12 @@ Navarro, who says he was a close friend of Cornejo, told the <i>Times </i>that t
 For residents of Ramona Gardens, Cornejo's death is history repeating itself. In 1991, a sheriff's deputy shot and killed an unarmed gang member, leading to a tense standoff with residents. In 1992, two Black families were targeted with firebombings in a community that is otherwise almost entirely Latino. In 1996, an angry crowd confronted police after a gun battle left a suspected gang member dead and an officer wounded.<p>
 No one should accept the LAPD's excuse of cracking down on gang violence as justification for another murder.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

@@ -6,25 +6,25 @@ LA County's sick health care system
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">One hospital after another makes plans to cut or close</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>LA County's sick health care system</b></font><p>
@@ -55,12 +55,12 @@ Rev. Frederick Murph of Brookins Community AME Church was cheered when he told t
 Organizations involved in the ongoing battle over King/Drew are the Korean Immigrant Workers Advocates, the California Nurses Association, Clergy and Laity United for Economic Justice, and Action Grassroots Empowerment and Neighborhood Development Alternative (AGENDA). <p>
 AGENDA organizer Esperanza Martinez, fresh off a victory against Wal-Mart's plan to build a superstore in Inglewood, said, "I think that eventually if we don't get together and organize and hold these officials accountable, the whole hospital will be closed down. South L.A. is an epicenter of poverty. There's so much violence &#8211; so many people dying of gunshot wounds here...This hospital is a huge resource for us." <p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

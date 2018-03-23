@@ -6,25 +6,25 @@ El por qu&eacute; del paro patronal
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Arial, Helvetica, sans-serif" size="2"><b>VENEZUELA</b></font><br>
 <font face="Times New Roman, Times, serif" size="4">&#191;Qui&eacute;n es la oposici&oacute;n anti-democr&aacute;tica en Venezuela? </font><br>
@@ -69,12 +69,12 @@ El por qu&eacute; del paro patronal
 <P>Hoy, grupos de trabajadores, de desempleados, organizaciones de estudiantes y comunitarias buscan alternativas pol&iacute;ticas que sobrepasan el "Chavismo" y que puedan confrontar a los continuos ataques de la oposici&oacute;n contra sus vidas. Los trabajadores se han organizado por su propia para controlar la producci&oacute;n de petr&oacute;leo y la transportaci&oacute;n, y los residentes de las comunidades han exigido que el gobierno tome los comestibles que est&aacute;n siendo acaparados.</P>
 <P>Estas son las acciones pol&iacute;ticas que alientan a m&aacute;s personas a tratar de tomar el control de su sociedad, y a encontrar una alternativa verdadera a la versi&oacute;n patas arriba de la democracia de la Coordinador Democr&aacute;tica.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

@@ -6,25 +6,25 @@ El imperio desenmascarado
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4">El esc&aacute;ndalo sobre las mentiras que justificaban la guerra revela la agenda imperialista de Washington</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>El imperio desenmascarado</b></font></P>
@@ -42,12 +42,12 @@ El imperio desenmascarado
 <P>Los capitalistas de los pa&iacute;ses avanzados comparten un inter&eacute;s en explotar los estados m&aacute;s d&eacute;biles y m&aacute;s peque&ntilde;os a trav&eacute;s de lkos "pr&eacute;stamos" y los programas de "ajuste estructural" empujados por el Fondo Monetario Internacional y el Banco Mundial. Pero los poderes imperialistas se compiten entre s&iacute; tambi&eacute;n, tanto econ&oacute;micamente como pol&iacute;ticamente, sino a&uacute;n militarmente.</P>
 <P>Los argumentos entre EE UU y Europa sobre las tarifas de acero, por ejemplo, y la guerra de Irak, son dos lados de la misma moneda--la lucha entre una pandilla de hermanos hostiles, como Marx llam&oacute; la clase capitalista. Todo esto ha convertido al mundo en un lugar a&uacute;n m&aacute;s inestable--con m&aacute;s guerras para venir como consecuencia de la ofensiva estadounidense para la dominaci&oacute;n global. Los activistas del movimiento antiguerra en EE.UU. tienen que usar el esc&aacute;ndalo de la guerra de Irak para construir un movimiento que opondr&iacute;a al proyecto entero del imperialismo estadounidense.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

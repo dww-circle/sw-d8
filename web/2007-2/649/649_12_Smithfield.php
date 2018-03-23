@@ -6,25 +6,25 @@ Raids drive immigrants from jobs at Smithfield
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>Raids drive immigrants from jobs at Smithfield</b></font><p>
 <font face="Times New Roman, Times, serif" size="2"><b>By Eric Ruder</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | October 19, 2007 | Page 12</font><p>
@@ -42,12 +42,12 @@ A recent string of ICE raids in Nassau County, N.Y., supposedly targeting gang m
 "Armed squads bursting into homes in the dead of night with shotguns and automatic weapons, terrorizing families and taking away anyone who lacks identity papers, even if they have raided the wrong house," the <i>Times</i> editorialized. "It may sound like Baghdad, but it is the suburbs of New York City, the latest among hundreds of communities around the country where federal agents have been invading homes and workplaces in search of immigrants to deport."<p>
 Immigrant rights activists need to continue their efforts to oppose ICE raids wherever and whenever they happen--and support efforts of immigrant workers to defend themselves and their families.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

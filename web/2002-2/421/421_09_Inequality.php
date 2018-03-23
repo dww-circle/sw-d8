@@ -6,25 +6,25 @@ Can a revolution end inequality?
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Arial, Helvetica, sans-serif" size="2"><b>THE MEANING OF MARXISM</b></font><BR>
 <font face="Times New Roman, Times, serif" size="5"><b>Can a revolution end inequality?</b></font></P>
@@ -42,12 +42,12 @@ Can a revolution end inequality?
 <P>"All the preceding classes that got the upper hand," Marx and Engels wrote also in <I>The Communist Manifesto,</I> "sought to fortify their already acquired status by subjecting society at large to their conditions of appropriation. The proletarians cannot become masters of the productive forces of society, except by abolishing their own previous mode of appropriation, and thereby also every other previous mode of appropriation&#133;</P>
 <P>"All previous historical movements were movements of minorities, or in the interest of minorities. The proletarian movement is the self-conscious, independent movement of the immense majority, in the interest of the immense majority. The proletariat, the lowest stratum of our present society, cannot stir, cannot raise itself up, without the whole super incumbent strata of official society being sprung into the air."</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

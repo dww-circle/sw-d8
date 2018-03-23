@@ -6,25 +6,25 @@ What Kind of Party Do We Need?
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Arial, Helvetica, sans-serif" size="2"><b>VOICES FROM SOCIALISM 2006</b></font><br>
 <font face="Times New Roman, Times, serif" size="4">Ahmed Shawki</font><br>
@@ -118,12 +118,12 @@ When we parted way with some comrades some years ago in the 1970s--actually at t
 That was one of the debates between ourselves and comrades in the International Socialists some years ago. I have to say that 30 years after the process, it is undoubtedly the case that comrades in the IS and Labor Notes have done extremely good work in the labor movement. But from the point of view of the project of Leninism--of building the seeds of a socialist organization committed to the transformation of society--we have made a contribution which has at least kept together that potential.<p>
 With a coming radicalization, our organization will really be put to the test. We have not, as of yet, accomplished the heights. Surviving this period has been quite an accomplishment. But the real accomplishment is proving your relevance in the struggle, and I believe that we are at the stage in which we have the constituent elements of an organization that can--over time, and with others--become the kind of party we look to.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

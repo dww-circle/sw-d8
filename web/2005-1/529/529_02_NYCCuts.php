@@ -6,25 +6,25 @@ Deadly toll of budget cuts
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Three fires in New York City have something in common</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Deadly toll of budget cuts</b></font><p>
@@ -50,12 +50,12 @@ At the same time, Bloomberg is stumping to get a new $1.4 billion stadium for th
 And to top it off, Bloomberg is trying to use $350 million from the Battery Park City Authority to pay for the football stadium and convention center--money that is supposed to be used for affordable housing, but has been sitting, untouched, for nearly 40 years.<p>
 <i>In response to the housing crisis, a large coalition of community groups, local unions and housing and homeless advocacy organizations have a called a march and rally for February 2. Some groups will march over the Brooklyn Bridge, and the rally will begin at 4:30 p.m. at City Hall. Endorsers include 1199, UFT, AFSCME DC 37, ACORN, Coalition for the Homeless, NYC AIDS Housing Network, and Make the Road By Walking.</i> <p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

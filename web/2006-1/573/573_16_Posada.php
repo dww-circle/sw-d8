@@ -6,25 +6,25 @@ The kind of terrorist that Bush admires
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Anti-Castro exile Luis Posada:</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>The kind of terrorist that Bush admires</b></font><p>
@@ -47,12 +47,12 @@ At his press conference, Acosta blasted Carlos Alvarez for "betraying" the U.S. 
 "Every time he traveled for Puentes Cubanos to Cuba, he did so completely legally, with a license from the Treasury Department," Silvia Wilhelm, executive director of Puentes Cubanos, recently told the <i>Los Angeles Times</i>. It wasn't until 2004, that Puentes Cubanos lost its license to organize trips to Cuba when the Bush administration clamped down on travel to the country.<p>
 According to Steven Chaykin, a lawyer for Carlos Alvarez, the couple are victims of a "McCarthy-like hysteria" fostered by the Bush administration. "The presumption of innocence has disappeared," Chaykin said. "There are serious and troubling questions about these charges--their timing and purpose."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

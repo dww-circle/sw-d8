@@ -6,25 +6,25 @@ Growth of the Minuteklan
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Anti-immigrant rhetoric sets the stage for the right</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Growth of the Minuteklan</b></font><p>
@@ -51,12 +51,12 @@ Indeed, in contrast to their failure to document the Minutemen's clear ties to f
 In Chicago, for example, the media went to work reporting on a strange alliance between the city's Minutemen chapter and the pastor of a predominately Black church in the Englewood area. Chicago <i>Sun-Times </i>columnist Mark Brown's article--about a small demonstration of 10 or 15 people in front of a meat processing plant that may or may not have employed undocumented workers--was headlined "Minutemen recruit Blacks against illegal immigration."<p>
 In spite of the growth of the far right and the endorsement of mainstream media, opposition to the racists is growing as well, from community groups to national civil rights organizations. Antiracists and pro-immigrant activists have to expose the Minutemen for the racists they are and directly confront them wherever they appear.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

@@ -6,25 +6,25 @@ Balance y perspectivas de la huelga en la UPR
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>Balance y perspectivas de la huelga en la UPR</b></font><p>
 <font face="Times New Roman, Times, serif" size="2"><b>Por Giovanni Roberto</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | julio-agosoto de 2005 | p&aacute;gina 1</font><p>
@@ -67,12 +67,12 @@ Al no haber utilizado la negociaci&oacute;n para obtener el mayor logro posible,
 Sin embargo, esto no significa que la lucha contra el alza haya terminado. El alza sigue en pie y de igual forma la lucha contra el alza. El movimiento estudiantil debe aprovechar este tiempo para fortalecer los comit&eacute;s de bases y aprender del proceso huelgario.<p>
 Adem&aacute;s, debe estrechar las relaciones con aquellos sectores que prometieron su apoyo durante la huelga. El alza en la matr&iacute;cula es parte de un ataque general al costo de la vida. La importancia de esta lucha estudiantil radica tambi&eacute;n en demostrar que el aumento al costo de vida puede ser resistido. El ejemplo importante de lo que ha sido el CUCA debe servirnos de base para organizar el resto de la lucha. Solo la lucha organizada de los estudiantes podr&aacute; detener el alza y democratizar la UPR.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

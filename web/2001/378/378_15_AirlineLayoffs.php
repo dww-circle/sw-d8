@@ -6,25 +6,25 @@ Sacrifice for some
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4">Massive airline layoffs in wake of September 11 tragedy</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Sacrifice for some</b></font></P>
@@ -41,12 +41,12 @@ Sacrifice for some
 <P>American Airlines promised that no one would be laid off as the result of its takeover of TWA in order to win union support for the deal. But American seized the opportunity to announce 20,000 job cuts following the air attacks.</P>
 <P>"Congress cannot leave out the heroes. It's sad how quickly those who sacrifice to make our great country work, even in these times of tragedy, get left out when corporations go asking for taxpayer money," said Patricia Friend, president of the Association of Flight Attendants. "In announcing layoffs, many in airline management are refusing to follow the contracts they have negotiated, which outline methods for furloughs and layoffs. The tactics of these airlines are un-American. Their greed and antipathy towards workers are needlessly going to hurt thousands more working families."</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

@@ -6,25 +6,25 @@ What leads workers to fight together?
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Arial, Helvetica, sans-serif" size="2"><b>THE MEANING OF MARXISM</b></font><BR>
 <font face="Times New Roman, Times, serif" size="5"><b>What leads workers to fight together?</b></font></P>
@@ -40,12 +40,12 @@ What leads workers to fight together?
 <P>The experience of collective action in the form of strikes in turn gives workers more confidence, and sharpens their consciousness of the nature of the system and how to challenge it. From the elementary idea of combination into unions for the purposes of defense of living standards, workers are able to develop a sense of themselves as an exploited class, and from there, the idea that their interests are diametrically opposed to those who rule society. But because of the contradiction Marx describes, this doesn't happen automatically or smoothly, but with wild swings in the level of struggle, and unevenly, so that some workers are more accepting of the system, and others ready to fight destroy it.</P>
 <P>The balance between these two poles depends on the level of organization, of struggle, and of consciousness in the working class as a whole. The key is bringing together in the course of struggle the most militant, class-conscious workers into an organization that can lead others in struggle against the system as a whole, reducing the level of unevenness and increasing the level of conscious opposition to the system.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

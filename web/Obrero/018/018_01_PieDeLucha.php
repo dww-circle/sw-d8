@@ -6,25 +6,25 @@ En pie de lucha
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Contra los ataques de Bush estamos...</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>En pie de lucha</b></font><p>
@@ -39,12 +39,12 @@ Sin embargo, podemos detener a Bush--por medio de la organizaci&oacute;n, la pro
 Con respecto a estos asuntos no estamos partiendo de cero. Los cientos de miles de personas que participaron en las enormes protestas contra la guerra durante los &uacute;ltimos dos a&ntilde;os--y los millones m&aacute;s que se oponen a la guerra de Bush por petr&oacute;leo--pueden formar la base de una oposici&oacute;n real a la agenda imperial de Washington. Y mientras m&aacute;s fuerte sea la resistencia contra Bush en cuanto a la guerra, m&aacute;s f&aacute;cil ser&aacute; nuestra capacidad para luchar por otros objetivos tambi&eacute;n.<p>
 Bush tiene un exceso de confianza--y va a encontrarse en medio de peleas que no esperaba. Lo podemos hacer retroceder--y proseguir a luchar por nuestras propias prioridades.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

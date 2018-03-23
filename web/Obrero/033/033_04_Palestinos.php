@@ -6,25 +6,25 @@ Los Palestinos con la soga al cuello
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>Los Palestinos con la soga al cuello</b></font><p>
 <font face="Times New Roman, Times, serif" size="2"><b>Por Lee Sustar</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | junio-julio de 2007 | p&aacute;gina 4</font><p>
@@ -53,12 +53,12 @@ El ataque es una repetici&oacute;n de la guerra civil libanesas de 1975-1989, cu
 En la actualidad, al tomar como objetivo a un grupo tan impopular como al-Qaeda, la derecha libanesa puede renovar sus viejos planes contra los palestinos agitando una nueva bandera. Pero en lugar de condenar el ataque contra el campamento de Naher el-Bared, el actual representante de la OLP ofreci&oacute; que sus fuerzas entraran en el campo, en lugar del ej&eacute;rcito liban&eacute;s, para luchar contra Fatah al-Islam. Estos &uacute;ltimos intentos de dividir y vencer al pueblo palestino se est&aacute;n cobrando un terrible peaje, y ponen de manifiesto la necesidad de que el movimiento contra la guerra haga justicia a las demandas palestinas m&aacute;s importantes.<p>
 <i>Traducido por Felisa Sastre</i><p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

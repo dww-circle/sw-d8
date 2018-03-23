@@ -6,25 +6,25 @@ Working poor in Bush's America
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4">A constant struggle to make ends meet</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Working poor in Bush's America </b></font></P>
@@ -42,12 +42,12 @@ Working poor in Bush's America
 <P>Meanwhile, Congress is dragging its feet on new proposals to raise the minimum wage. The minimum wage was raised twice in the 1990s, but once inflation is taken into account, its value is now at the same level as it was before the hike. Since 1968, the real value of the minimum wage has dropped by 40 percent. If it had only kept pace with inflation, the minimum wage today would be $8.46 an hour today, not $5.15.</P>
 <P>As <I>Business Week </I>summarized, tens of millions of people in the U.S.--the richest country in the history of the world--endure "a netherworld of maximum insecurity, where one missed bus, one stalled engine, one sick kid means the difference between keeping a job and getting fired, between subsistence and setting off the financial tremors of turned-off telephones and $1,000 emergency-room bills that can bury them in a mountain of sub-prime debt."</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

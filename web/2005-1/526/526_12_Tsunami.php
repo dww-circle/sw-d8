@@ -6,25 +6,25 @@ Bush's insult to tsunami victims
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Strings attached to Washington's disaster relief</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Bush's insult to tsunami victims</b></font><p>
@@ -52,12 +52,12 @@ The horrifying images of the tsunami disaster and its aftermath have moved count
 Washington looks like even more of a miser when you look at who gets the money. Of the $16 billion budgeted for official development assistance, most went to loyal allies carrying out U.S. military and political objectives--like Israel, Egypt and Colombia. Recent increases in the foreign aid budget aren't a sign of generosity, but the result of money spent on the "war on terror"--from aid packages to woo countries like Pakistan, to upgraded security at U.S. facilities overseas.<p>
 Last year, the U.S. government spent just $2.4 billion on humanitarian aid for the whole world. The state of Florida alone got almost <i>six times </i>that in emergency funding after last summer's four hurricanes. All in all, the U.S. spends about as much on humanitarian aid as Washington's war makers spend in a week and a half on the occupation of Iraq.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

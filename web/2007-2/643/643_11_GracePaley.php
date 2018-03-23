@@ -6,25 +6,25 @@ Grace Paley: Passion for art and activism
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Arial, Helvetica, sans-serif" size="2"><b>OBITUARY</b></font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Grace Paley: Passion for art and activism</b></font><p>
@@ -42,12 +42,12 @@ In <i>Just As I Thought</i>, a 1998 anthology of her lectures, articles and essa
 She understood keenly the connections between art and social movements, asserting, "There has to be some political movement before there can be a literature. Black literature came because first there was a Black political movement. Women's literature came with a women's movement."<p>
 Even while battling breast cancer, Paley remained politically active; earlier this summer she participated in an antiwar sit-in at the office of Rep. Peter Welch (D-Vt.). Paley made her home in Thetford, Vt., for the past 25 years, serving as the state's poet laureate from 2002 to 2007. With Grace Paley's passing, we have lost an artist and activist of great verve; it is up to all of us to keep alive her compassionate spirit and her dedication to radical grassroots change.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

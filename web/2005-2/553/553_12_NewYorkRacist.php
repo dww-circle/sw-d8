@@ -6,25 +6,25 @@ Beaten by racist thugs in New York
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Politicians created the climate for this</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Beaten by racist thugs in New York</b></font><p>
@@ -42,12 +42,12 @@ Racial profiling is already standard operating procedure for the New York Police
 Deputy Police Commissioner Paul Browne defended the random roundup, saying "We sought to determine whether the persons arrested would have any information about the shooting, and that's what we should be doing." But the "shooting" Browne referred to occurred when a police officer in the 105th precinct shot himself in the foot with his own gun--while trying, unsuccessfully, to apprehend a man in a park for possession of marijuana.<p>
 Angela, a resident of the Brooklyn neighborhood where Alex Moore was assaulted, made a connection between the NYPD's harassment of Black men and the attack on Moore. "The police do it, so that sends the message that it's okay for them to do it, too," she said. "[The police] need to clean up their act before we can feel safe. They're like a gang, an organized gang running around here. They intimidate people because they think they can't speak up for themselves."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

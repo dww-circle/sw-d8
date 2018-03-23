@@ -6,25 +6,25 @@ No to the WTO!
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4">Government and business leaders gather for the Cancun summit</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>No to the WTO!</b></font></P>
@@ -65,12 +65,12 @@ No to the WTO!
 <P>But even Friedman's mainstream media colleagues had to notice the growing numbers of people who weren't buying their happy talk. "They are folks who don't check each day to see how their 401(k) is doing or hang out with people who have become millionaires when their companies went public," the <I>Washington Post </I>reported. "What they all seem to agree on is that giant corporations have gone too far in gaining control over their lives and defining the values of their culture and that the WTO has become a handmaiden to those corporate interests."</P>
 <P>The demonstrations in Seattle brought together activists from a range of struggles--unionists, environmentalists, students and left-wing activists--in a protest that exposed the sick priorities of the system. This unity has suffered somewhat since--especially in the wake of September 11 and the Bush administration's war on the world. But the Battle in Seattle--as well as the mass protests in Genoa, Italy, in 2001 and other demonstrations against the WTO and its related international institutions--show the potential to build resistance to an unjust system.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

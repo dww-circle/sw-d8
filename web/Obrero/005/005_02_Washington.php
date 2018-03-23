@@ -6,25 +6,25 @@ Washington en guerra contra el mundo
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Arial, Helvetica, sans-serif" size="2"><b>LO QUE PENSAMOS</b></font><br>
 <font face="Times New Roman, Times, serif" size="4">Casa Blanca declara doctrina militar de "golpes preventivos"</font><br>
@@ -40,12 +40,12 @@ Washington en guerra contra el mundo
 <P>Y eso nos es todo. "Ning&uacute;n lugar corre un m&aacute;s alto riesgo que el sur asi&aacute;tico", dijo el ex-embajador americano en Croacia Peter Galbraith, qui&eacute;n tambi&eacute;n apoya la nueva doctrina. "Si India adopta la doctrina americana de prevenci&oacute;n, hay riesgos de una guerra nuclear, con consecuencias devastadoras para el mundo. Es un asunto complicado".</P>
 <P>Todo esto expone a la "Guerra contra el Terror" por lo que realmente es: una nueva y agresiva fase del imperialismo americano para consolidar su poder pol&iacute;tico y econ&oacute;mico por medio del uso desproporcionado de la fuerza. No podemos permitir que la ret&oacute;rica acerca de la "Guerra contra el Terror" nos ponga a la defensiva. Necesitamos oponernos a la locura militar de Washington ahora, antes de que traiga nuevas atrocidades al mundo.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

@@ -6,25 +6,25 @@ Story of revolt in 1968 Mexico
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>Story of revolt in 1968 Mexico</b></font><p>
 <font face="Times New Roman, Times, serif" size="2"><b>Review of by Peter Lamphere</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | February 4, 2005 | Page 9</font><p>
@@ -43,12 +43,12 @@ Small support committees began to spring up amongst workers in the refineries an
 Despite the repression and eventually crushing of the student movement, the student movement had a long-lasting impact on Mexican society. It was the first crack in the edifice of the ruling Institutional Revolutionary Party.<p>
 As Taibo writes, "The student movement was many things at the same time: an unmasking of the Mexican state, an emperor without clothes in front of the thousands of students; it was schools taken over by the creation of a communal liberated space based on assemblies; it was family debate in thousands of homes; it was a crisis in the traditional methods of misinforming the country and the discovery of the flyer, the spoken word, and the saving rumor as alternatives to the press and the TV; it was also violence, repression, fear and murder. But above all, more than anything, before all else, it meant the re-launching of a generation of students towards their own society...the discovery of popular solidarity...trespassing the grey walls of the factory and arriving to those who were inside."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

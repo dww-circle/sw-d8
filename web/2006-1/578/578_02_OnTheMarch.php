@@ -6,25 +6,25 @@ On the march against occupation
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Veterans plan demonstrations along West and Gulf Coasts</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>On the march against occupation</b></font> <p>
@@ -42,12 +42,12 @@ Along the Gulf Coast, members of Iraq Veterans Against the War (IVAW), Veterans 
 "The same corporations that get no-bid contracts in Iraq are getting no-bid contracts on the Gulf Coast, but not to rebuild the homes of working people. These corporations, instead of hiring local workers at fair wages, are importing workers, paying them below scale and rebuilding higher rent housing than was there before, so now people who used to live there can't afford to come back."<p>
 <i>For more information about how you can support--financially or otherwise--both of these antiwar marches, go to <a href="http://www.guerreroazteca.org" target="_blank">www.guerreroazteca.org</a> and <a href="http://www.vetgulfmarch.org" target="_blank">www.vetgulfmarch.org</a></i>.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

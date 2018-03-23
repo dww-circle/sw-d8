@@ -6,25 +6,25 @@ Africa's struggle for independence
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="5"><b>Africa's struggle for independence</b></font></P>
 <P><font face="Times New Roman, Times, serif" size="2"><b>Review by Lance Selfa</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | February 8, 2002 | Page 9</font></P>
@@ -40,12 +40,12 @@ Africa's struggle for independence
 <I><P>The Short Century</I> is both an art exhibit and a work of social and political history. It makes this connection explicit through continuously playing video documentaries of political events--from the Algerian civil war to the 1976 Soweto Uprising of school children against the apartheid regime. One section displays political posters of the independence struggles in Angola, Mozambique, Guinea-Bissau and the anti-apartheid struggle.</P>
 <I><P>The Short Century</I> pays tribute to the hopes that the African liberation movements unleashed. With Western governments blithely talking about "failed states" and a "new colonialism," <I>The Short Century</I> reminds us of the struggles that defeated the "old colonialism."</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

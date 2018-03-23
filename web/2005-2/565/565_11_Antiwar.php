@@ -6,25 +6,25 @@ Thousands protest Iraq war across the U.S.
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>Thousands protest Iraq war across the U.S.</b></font><p>
 <font face="Arial, Helvetica, sans-serif" size="2">November 11, 2005 | Page 11</font><p>
@@ -45,12 +45,12 @@ Iraq veterans Robert Acosta, Joe Lopez and Anthony Mantel also spoke out against
 And in <b>Toledo, Ohio, </b>75 people participated in a rally and march sponsored by University of Toledo (UT) AntiWar--a group affiliated with CAN. Speakers talked about the urgency of rebuilding the antiwar movement. Following a march through campus, the vocal and lively crowd ended at a ROTC station that students want removed from campus. Students and faculty reported that this was the largest political demonstration the UT campus had seen in years.<p>
 <i>Jeremy Atkinson, Todd Chretien, Patrick Dyer, Vicky Jambor, Ben Lassiter, Alison McKenna and Zachary Zill contributed to this report</i>.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

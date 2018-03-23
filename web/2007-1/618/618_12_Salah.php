@@ -6,25 +6,25 @@ The frame-up that fell apart
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Jury acquits target of Feds' witch-hunt</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>The frame-up that fell apart</b></font><p>
@@ -68,12 +68,12 @@ Yet he remains in prison today, having twice been found guilty of contempt after
 As <i>Socialist Worker </i>went to press, Al-Arian was on his 15th day of a hunger strike to protest the brutal conditions he's facing in prison--including solitary confinement, physical and verbal abuse from guards, and prison cells infested with rats and roaches.<p>
 As lawyer William Moffitt, who has represented both Ashqar and Al-Arian, told the <i>New York Times</i>, the government wants to use these cases to turn the fight for Palestinian rights in the Middle East "into a battle of criminal law in an American courtroom." "The Bush administration cannot win this war by trying to make criminals out of people who are fighting for their freedom," he told reporters. "And two American juries have said that."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

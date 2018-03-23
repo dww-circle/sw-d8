@@ -6,25 +6,25 @@
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4">Padre de soldado estadounidense que muri&oacute; en Irak:</font><BR>
 <font face="Times New Roman, Times, serif" size="5"><b>"Si nos unimos los padres de los soldados, podemos cambiar muchas cosas"</b></font></P>
@@ -73,12 +73,12 @@
 <P>Yo quiero imaginarme que de repente fueron no cuatro padres de familia o cinco, como fuimos nosotros. Sino que fueron cien madres y cien padres de familia con hijos en Irak, o m&aacute;s, que fueron a Irak a querer ver a sus hijos. &#191;Que respuesta iban a recibir esas familias del gobierno de Bush? &#191;Tambi&eacute;n los iba a atacar? Y creo que esa demostraci&oacute;n ser&iacute;a muy importante para obligar al gobierno de Bush a regresar a nuestros muchachos a sus casas. </P>
 <P>Y aparte de lo que pueden hacer aqu&iacute; en los Estados Unidos, pues pueden unirse para hablar, no cada cual por su lado, si no todos en una sola uni&oacute;n, que es lo que logra m&aacute;s fuerza; como el grupo que existe, <I>Military Families Speak Out</I>, que ya somos cerca de 2 mil padres de familia y que estamos haciendo diferentes demostraciones, concentraciones, marchas, escritos a la prensa, escritos a las congresistas; esas son varias actividades que pueden hacer esos padres de familias.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

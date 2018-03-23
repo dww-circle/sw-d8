@@ -6,25 +6,25 @@ A journalist who broke all the rules
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Arial, Helvetica, sans-serif" size="2"><b>OBITUARY: HUNTER S. THOMPSON</b></font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>A journalist who broke all the rules</b></font><p>
@@ -45,12 +45,12 @@ Thompson never came to terms with these contradictions. His most enduring weakne
 Sadly, the final high points of the '60s and '70s period--driving Nixon out of the White House and the U.S. withdrawal from Vietnam--also marked the end of Thompson's best writing. His later political articles never achieved the same political depth, and the clownish aspect of his writing--his bombast and often crude sexism, for example--became more pronounced. In 2000, he voted for Ralph Nader. But last year, Thompson was one of the liberal attack dogs who heaped abuse on a man who had been one of his personal heroes.<p>
 The best part of Hunter S. Thompson got left behind. But his books and writings from the 1960s and '70s should be read and reread--for the fun of it, but also for what they explain about an era of questioning, struggle and change.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

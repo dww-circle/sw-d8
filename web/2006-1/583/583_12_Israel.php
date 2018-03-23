@@ -6,25 +6,25 @@ Israeli offensive ignored by media
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Missile attack on Gaza</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Israeli offensive ignored by media</b></font><p>
@@ -37,12 +37,12 @@ The Gaza offensive was met with a deafening silence. The mainstream media around
 Dozens of Israeli shells hit agricultural land near the towns of Jabaliya, Beit Lahya and Beit Hanoon. Ominously, these are the same areas that Israel planned to target in the second part of a three-stage offensive to punish any Palestinian actions considered "threatening" by Israel, according to a December report in Israel's <i>Yedioth Ahronoth </i>newspaper. The third stage would include a massive ground operation to reoccupy Gaza.<p>
 According to an unnamed Israeli military source, a similar plan to crack down on Palestinian resistance in the West Bank is being considered by senior figures in Kadima, the party that won Israel's March 28 elections and is now in the process of forming a government. "The military aim will be to seize the main Palestinian towns in the West Bank and continue the operation until the last of the militants are dead or under arrest," said the official.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

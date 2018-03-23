@@ -6,25 +6,25 @@ Pigs feeding at the trough of war
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>Pigs feeding at the trough of war</b></font><p>
 <font face="Times New Roman, Times, serif" size="2"><b>Review by Ashley Smith</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | December 9, 2005 | Page 9</font><p>
@@ -48,12 +48,12 @@ He also shows how, from the very beginning, the Bush administration set its eyes
 And they found willing liars in the rest of the establishment, from the CIA to the Democratic Party and the servile corporate media. One CIA manager told his staff, "If Bush wants to go to war, it's your job to give him a reason to do so." Hillary Clinton, John Kerry and the rest of the Democrats save for a handful of dissenters joined the chorus of liars.<p>
 But now the tide has turned against Bush, the war and its profiteers. As St. Clair concludes, the task is to reinvigorate "a militant and uncompromising popular movement, unaligned with either political party, whose first task must be to put an end to the wars in Afghanistan and Iraq and snuff out further imperial adventurism in Iran, Syria and North Korea." <i><a href="http://www.amazon.com/exec/obidos/ASIN/1567513360/counterpunchmaga/104-0561235-8162368" target="_blank">Grand Theft Pentagon</a> </i>is an invaluable tool in the building of just such a movement.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

@@ -6,25 +6,25 @@ Bringing back the old days of empire
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Arial, Helvetica, sans-serif" size="2"><b>THE MEANING OF MARXISM</b></font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Bringing back the old days of empire</b></font></P>
@@ -44,12 +44,12 @@ Bringing back the old days of empire
 <P>It is true that the British introduced capitalist social relations into India and other parts of its empire. But this would have taken place without conquest as a result of the spread of the capitalist world market, and perhaps had a far less distorting effect. As Vijay Prashad points out in a recent ZNet article, the British built the railroad system in India "to remove raw materials to the coast, ship troops to troubled areas and return finished products to the markets."</P>
 <P>In the end, the greatest "benefit" British imperialism brought to its colonies was the creation of mass movements destined to toss them out. "The Indians will not reap the fruits of the new elements of society scattered among the by the British bourgeoisie," wrote Marx, "till in Great Britain itself the now ruling classes shall have been supplanted by the industrial proletariat, or till the Hindus themselves shall have grown strong enough to throw off the English yoke altogether."</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

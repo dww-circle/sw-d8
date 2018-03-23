@@ -6,25 +6,25 @@
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4">Interview with Ed Zacovic, president of PATCO Local 203</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>"We were a thorn in the side of the government"</b></font></P>
@@ -49,12 +49,12 @@
 <P>The government could say things are running normal, but I question why during and an ice and snowstorm a plane went off the runway in Boston, and people got killed. Why during a heavy snowstorm in Washington did a plane take off and crash, and everybody got killed? And why during a heavy thunderstorm in New Orleans did a plane take off and crash.</P>
 <P>I can say what I think it was--that everybody wanted to keep their time stats that had been allotted to them, because of the way they've had to cut back traffic. I can't prove it. But why in the past didn't we see accidents during bad weather. Planes don't take off from airports in the middle of a thunderstorm or snowstorm. They stay on the ground and wait the 15 to 20 minutes until the storm passes.</P>
 <P>I think there's proof there that they're trying to keep stats. They never would have done it before. Also the fact that the people working in the tower at the New Orleans crash were three trainees who weren't checked out--and who were being trained by two people only partially checked out, and a supervisor who had only been there one year. That's the staffing we have.</P>
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

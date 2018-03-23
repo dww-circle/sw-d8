@@ -6,25 +6,25 @@ Stop Israel's war on the Palestinians
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <p><font face="Times New Roman, Times, serif" size="4">"No one is safe from this terror"</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Stop Israel's war on the Palestinians</b></font></p>
@@ -40,12 +40,12 @@ Stop Israel's war on the Palestinians
 <p>But as Israel steps up its terror, people around the world are showing their outrage. Across the Middle East, from Yemen to Iraq to Syria to Egypt, hundreds of thousands of people marched to show their opposition to Israel's war. And in the U.S. itself, thousands of Palestinians and their supporters took to the streets in Los Angeles, Washington, D.C., Chicago and other cities.</p>
 <p>Israel's war and occupation depend on massive economic, military and political support from the U.S. We have a responsibility to stand up for justice--and demand that the U.S. government end its support for Israel's terrorist regime.</p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

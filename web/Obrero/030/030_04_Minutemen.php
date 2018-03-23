@@ -6,25 +6,25 @@ Enfrentan a los Minutemen
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Arial, Helvetica, sans-serif" size="2"><b>NUEVA YORK</b></font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Enfrentan a los Minutemen</b></font><p>
@@ -48,12 +48,12 @@ El Student Protesters Defense Committee (Comit&eacute; en defensa de los manifes
 En una rueda de prensa llena de gente, Monique Dols, una de los manifestantes que hab&iacute;an subido al escenario dijo: "La violencia de los Minutemen es una respuesta al movimiento masivo que estall&oacute; en las calles durante la primavera pasada. Los Minutemen est&aacute;n tratando de callar a ese movimiento por el temor, la intimidaci&oacute;n, provocando la histeria racista y la violencia no disfrazada. Sin embargo, los trabajadores han trabajado tan duro y han esperado tanto por derechos iguales y dignidad. Nuestro movimiento no se calla".<p>
 <i>Traducido por Lance Selfa</i>.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

@@ -6,25 +6,25 @@ Who are the real pirates?
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Does downloading hurt the music industry?</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Who are the real pirates?</b></font><p>
@@ -44,12 +44,12 @@ Singer Janis Ian, who had big hits in the 1970s, has said that the Internet has 
 If RIAA really wanted to stop the problem of illegal downloading, they would start to show both artists and consumers a little respect. How about cutting the insanely bloated prices of CDs--which haven't seen an industry-wide price cut in the two decades that CDs have been on the market? The industry could also put more efforts into bringing back the concept of a "single"--so that consumers can cheaply explore new music and artists. And corporations could put real money into marketing quality, lesser-known bands--instead of shudder-inducing kiddie pop stars.<p>
 Downloading, of course, will never be a solution to the greed of music industry. As long as music is made and sold for profit, music fans and artists will have to contend with the bloated, backwards corporate logic of the industry. As John Flansburgh of alternative band They Might Be Giants commented, "Major labels aren't going away, but until they figure out how to lead the Internet, rather than chase it, the mainstream music scene is destined to just get even duller and safer than it already is."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

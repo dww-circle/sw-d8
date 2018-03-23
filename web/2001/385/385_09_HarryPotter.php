@@ -6,25 +6,25 @@ Harry Potter: A blockbuster that lives up to the hype
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4"><i>Harry Potter and the Sorcerer's Stone:</I></font><BR>
 <font face="Times New Roman, Times, serif" size="5"><b>A blockbuster that lives up to the hype</b></font></P>
@@ -46,12 +46,12 @@ Harry Potter: A blockbuster that lives up to the hype
 <P>But at the same time, people want to make and see films that capture our imagination and entertain us. That's why even blockbuster hits with market tie-ins and multimillion-dollar contracts are more than just about the corporate media industry. <I>Harry Potter</I> perfectly illustrates this.</P>
 <P>As Russian revolutionary Leon Trotsky once wrote, "the longing for amusement, distraction, sightseeing and laughter is the most legitimate desire of human nature." The packed, diverse matinee audience I watched the film with seemed to agree that <I>Harry Potter</I> successfully captivated and allowed us, for a few hours, to escape the horrors of the real world.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

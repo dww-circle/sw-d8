@@ -6,25 +6,25 @@ A society that breeds violence and horror
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Arial, Helvetica, sans-serif" size="2"><b>WHAT DO SOCIALISTS SAY?</b></font><BR>
 <font face="Times New Roman, Times, serif" size="5"><b>A society that breeds violence and horror</b></font></P>
@@ -40,12 +40,12 @@ A society that breeds violence and horror
 <P>In a recent interview, Muhammad's ex-wife told the <I>Washington Post,</I> "When he got back, he was a very angry man. I didn't know this man. The one I knew stayed in Saudi." Dr. William E. Baumzweiger, a Los Angeles neurologist and psychiatrist who specializes in treating those suffering from Gulf War Syndrome, recognizes this profile. "Once it came out that he had a military background, I said this must be a Gulf War veteran," he told MSNBC. "There is no doubt that a small but significant number of Gulf War veterans become homicidal because of Gulf War Syndrome."</P>
 <P>Politicians like Bush may claim that the sniper case has nothing to do with "the America I know." But violence is a part of daily life in so many ways in this country--and the blame for this reality lies with the likes of George W. Bush.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

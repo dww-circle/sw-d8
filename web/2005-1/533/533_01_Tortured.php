@@ -6,25 +6,25 @@ Tortured to death in Abu Ghraib prison
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>Tortured to death in Abu Ghraib prison</b></font><p>
 <font face="Times New Roman, Times, serif" size="2"><b>By Nicole Colson</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | March 4, 2005 | Page 1</font><p>
@@ -42,12 +42,12 @@ One victim is Ahmed Omar Abu Ali, a U.S. citizen accused of plotting with al-Qae
 Instead, he was whipped--sometimes for three straight days--kept in solitary confinement for months, blindfolded and denied food, his family members recently told the <i>New York Times.</i> Now, the Justice Department has brought Abu Ali to the U.S. and charged him with giving "material aid" to terrorists--for supposedly using money from "terrorist" associates to buy a laptop computer and books. <p>
 There won't be any apologies from the Bush administration for its use of torture--whether by U.S. forces or their surrogates in other countries. John Radsan, a former CIA lawyer, recently explained to the <i>New Yorker: </i>"As a society, we haven't figured out what the rough rules are yet. There are hardly any rules for illegal enemy combatants. It's the law of the jungle. And right now, we happen to be the strongest animal."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

@@ -6,25 +6,25 @@ Public power in the age of empire
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4">Arundhati Roy:</font><BR>
 <font face="Times New Roman, Times, serif" size="5"><b>Public power in the age of empire </b></font></P>
@@ -114,12 +114,12 @@ Public power in the age of empire
 <P>Terrorism. Armed struggle. Insurgency. Call it what you want. Terrorism is vicious, ugly and dehumanizing for its perpetrators, as well as its victims. But so is war. You could say that terrorism is the privatization of war. Terrorists are the free marketers of war. They are people who don't believe that the state has a monopoly on the legitimate use of violence. </P>
 <P>Human society is journeying to a terrible place. Of course, there is an alternative to terrorism. It's called justice. It's time to recognize that no amount of nuclear weapons or full-spectrum dominance or daisy cutters or spurious governing councils and loya jirgas can buy peace at the cost of justice. The urge for hegemony and preponderance by some will be matched with greater intensity by the longing for dignity and justice by others. Exactly what form that battle takes, whether it's beautiful or bloodthirsty, depends on us. </P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

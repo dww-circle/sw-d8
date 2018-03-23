@@ -6,25 +6,25 @@ Don't blame Greens if Wellstone loses
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Arial, Helvetica, sans-serif" size="2"><b>READING BETWEEN THE LINES</b></font><BR>
 <font face="Times New Roman, Times, serif" size="5"><b>Don't blame Greens if Wellstone loses</b></font></P>
@@ -41,12 +41,12 @@ Don't blame Greens if Wellstone loses
 <P>With corporate scandals giving him a ready-made platform against Coleman--a blow-dried, corporate clone--Wellstone has had little to say. To counter Coleman's charges that he is a liberal ideologue, he has cast himself as a senator who works with Republicans to "get things done." And he's made time to welcome Sen. Joe Lieberman (D-Conn.)--one of the Democrats' most pro-corporate politicians--to headline a "Business Leaders for Wellstone" fundraiser.</P>
 <P>As Wellstone morphed into a go-along-to-get-along Washington insider, he hasn't moved the national political debate an inch to the left. Minnesota journalist Steve Perry, writing in <I>CounterPunch,</I> nails it right on the head: "Yes, yes: Wellstone has done some admirable things in the Senate, Wellstone is palpably better than the inveterate lizard he's running against, blah blah blah. But if he continues to abstain from action and comment on the most pressing domestic matter of the day--he could, at minimum, lead the charge in demanding hearings regarding Bush/Harken and Cheney/Halliburton--he may still snatch defeat from the jaws of victory. And if that happens, he had better not whine about the White House or the Republican National Committee or the invisible Green candidacy of Ed McGaa, because he will have only himself to blame."</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

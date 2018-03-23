@@ -6,25 +6,25 @@ The case for ending the death penalty
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="5"><b>The case for ending the death penalty</b></font></P>
 <font face="Arial, Helvetica, sans-serif" size="2"><B><P>BOOKS:</B> Rev. Jesse Jackson Sr., Rep. Jesse Jackson Jr. and Bruce Shapiro, <B><I>Legal Lynching: The Death Penalty and America's Future,</B></I> The New Press, 174 pages, 2001, $22.95.</P></font>
@@ -59,12 +59,12 @@ Exonerated Florida death row inmate <B>Delbert Tibbs</B><BR>
 <I><P>Sponsored by the Campaign to End the Death Penalty. Call 773-955-4841 for information or visit www.nodeathpenalty.org. Endorsing organizations include: Chicago Anti-Bashing Network, Chicago Committee to Free Mumia Abu-Jamal, Illinois Coalition Against the Death Penalty, International Socialist Organization, Justice Coalition of Greater Chicago, Naperville Concerned Neighbors of Marilyn Lemak, Pax Christi DuPage, Rainbow/PUSH Coalition and more.</P>
 </I>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

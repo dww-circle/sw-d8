@@ -6,25 +6,25 @@
 </TITLE>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><FONT FACE="Times New Roman, Times, serif" SIZE="4">Voices of resistance against Israel's brutality</FONT><BR>
 <FONT FACE="Times New Roman, Times, serif" SIZE="5"><B>"Everything is a struggle"</B></FONT></P>
@@ -78,12 +78,12 @@
 <P>The army's reaction has been panic at the possibility of a widening movement. After the chief of staff issued some initial stern warnings, there's been confusion about how to deal with the possibility of a growing number of officers refusing to serve.</P>
 <P>Although it's not going to change the political terrain of Israel in the near future, it still indicates cracks in the public consensus around the occupation. And it has the potential to become a mass refusal to serve in the Occupied Territories--a development which could challenge blind obedience among soldiers to the most criminal orders they're given by their superiors.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <TD WIDTH="108" VALIGN="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </TD>
 </TR>
 </TABLE>

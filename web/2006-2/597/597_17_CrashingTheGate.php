@@ -6,25 +6,25 @@ Not-so-grassroots activism
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Advice from the liberal Democrat blogsters</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Not-so-grassroots activism</b></font><p>
@@ -50,12 +50,12 @@ History shows that only mass movements--from the labor movement to the civil rig
 But Armstrong and Z&uacute;niga are clearly not interested in those. "Now the politics of protest activism are, in large part, dead. Once huge media events, the big-march in D.C. model of activism is a big media bore. And if the media doesn't cover an event, does it really happen?"<p>
 Despite using rhetorical flourishes about "civil war" and "revolution" and "the netroots," <i>Crashing the Gate</i> is really pretty conventional in its diagnoses and prescriptions. Armstrong's MyDD.com colleague Matt Stoller probably said more than he intended when he told <i>In These Times'</i> Lakshmi Chaudhry: "We [the blogosphere] have no interest in being anti-establishment. We're going to be the establishment."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

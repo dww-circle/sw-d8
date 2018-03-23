@@ -6,25 +6,25 @@ Crashing the two parties
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Nader's Corporate Crimebusters arrested at an Edwards rally</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Crashing the two parties</b></font><p>
@@ -58,12 +58,12 @@ Sadly, many Nader supporters from the 2000 race this time backed Democrat John K
 The biggest blow to Nader-Camejo came from the Green Party, which nominated Nader in the 2000 race. This time, the Greens spurned an endorsement of Nader in favor of David Cobb, whose safe-states strategy was calculated to support Kerry--effectively surrendering the Greens' hard-won independence from the Democrats.<p>
 The Nader candidacy had serious flaws--including his acceptance of ballot lines of the right-wing Reform Party and the cultish Independence Party in New York. Yet there's no question that the main thrust of the campaign was a left-wing challenge to the two corporate parties. It's shameful that so much of the left joined Democrats in heaping abuse on the only real alternative to the two-party system in Election 2004.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

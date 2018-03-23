@@ -6,25 +6,25 @@ Maimed for oil and empire
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Hidden story of the Iraq war</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Maimed for oil and empire</b></font><p>
@@ -59,12 +59,12 @@ And the brass have called up more than 4,400 Individual Ready Reservists, former
 Of course, when orders don't work, the Army figures that threats will do the trick. According to the <i>Rocky Mountain News,</i> soldiers from a Fort Carson combat unit were recently issued an ultimatum--re-enlist for three more years, or be transferred to other units expected to deploy to Iraq. <p>
 "They said if you refuse to re-enlist with the 3rd Brigade, we'll send you down to the 3rd Armored Cavalry Regiment, which is going to Iraq for a year, and you can stay with them, or we'll send you to Korea, or to Fort Riley [in Kansas], where they're going to Iraq," said one of the soldiers, a sergeant. "I don't want to go back to Iraq. I went through a lot of things for the Army that weren't necessary and were risky. Iraq has changed a lot of people.'' <p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

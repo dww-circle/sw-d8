@@ -6,25 +6,25 @@ Lies, damn lies and Fox News
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4">Corporate media cheerlead the U.S. slaughter in Iraq</font><BR>
 <font face="Times New Roman, Times, serif" size="5"><b>Lies, damn lies and Fox News</b></font></P>
@@ -45,12 +45,12 @@ Lies, damn lies and Fox News
 <P>"I said in that interview essentially what we all know about the war--that there have been delays in implementing policy, there have been surprises," Arnett said on NBC's <I>Today</I> show. Arnett went on to apologize anyway. But that wasn't good enough for the bosses at NBC--or the other media blowhards, like the right-wing fanatics at Fox News, who smeared Arnett for "celebrating" a U.S. "war failure."</P>
 <P>This isn't the first time that Arnett got the boot. After gaining renown for his live reports for CNN from Baghdad during the 1991 Gulf War, Arnett was fired after the Pentagon complained about a documentary that accused the U.S. of using sarin gas during the Vietnam War.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

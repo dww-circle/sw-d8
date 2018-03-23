@@ -6,25 +6,25 @@
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Why French voters said...</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>"Non" to a bosses' Europe</b></font><p>
@@ -69,12 +69,12 @@ There are 35,000 Euro-bureaucrats to imagine a solution for Plan B. And they are
 I think we should propose that the European Party of the Left call a European Left Convention as soon as possible, with the participation of all parties, movements and trade unions that are against the EU constitution and neoliberal policies--including the left of the French Socialist Party and the split from the SPD, and of course, members of the European anti-capitalist left. We have to discuss adopting a common program of action against the neoliberal "Lisbon Agenda," for a social progressive European budget for 2007-2013 and the immediate resignation of the already corrupt new Barroso Commission. <p>
 Only in that way can we start building a social and progressive Europe. We have to call for a real European constitutional process, based on new elections to the European parliament. The new European Parliament would produce a new EU constitution, after an open and democratic debate, and put it to ratification in one single European referendum. Only in that way will we have a Europe of the citizens, not a Europe of the oligarchs.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

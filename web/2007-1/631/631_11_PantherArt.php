@@ -6,25 +6,25 @@ Radical art of the Black Panther Party
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>Radical art of the Black Panther Party</b></font><p>
 <font face="Times New Roman, Times, serif" size="2"><b>Review by Sarah Macaraeg</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | May 11, 2007 | Page 11</font><p>
@@ -42,12 +42,12 @@ Despite whatever political limitations the BPP had, unrelenting critiques of Bla
 Best of all, his work is essentially hopeful. While harsh conditions are never hidden from view, they are also infused with dignity, militancy, and the certainty of fundamental change. And as Douglas was shaped by the politics around him, he in turn shaped them. From Boots Riley to Danny Glover, essay after essay in the book speaks to the impact in consciousness his images helped foster. As Douglas explained in an interview, "no such thing as art for art's sake. All art was a reflection of a class outlook. Which is true, even today...I feel art should serve a purpose by doing social commentary...all of it is whether it's positive, negative, mainstream...it has some social commentary to it."<p>
 Interestingly, Douglas, who is still active on behalf of political prisoners, says he is most proud of his organizing. While we certainly need more activists on the ground, one can't also help but hope to see more art in the same tradition as Emory Douglas as well.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

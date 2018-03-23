@@ -6,25 +6,25 @@ Exposing their lies about immigrants
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>Exposing their lies about immigrants</b></font><p>
 <font face="Arial, Helvetica, sans-serif" size="2">May 12, 2006 | Page 5</font><p>
@@ -106,12 +106,12 @@ In the early 1900s, a wave of anti-Japanese violence led to a 1907 agreement bar
 The U.S. carried out mass deportations of Mexicans during the Great Depression, and in a 1954 program actually called Operation Wetback in 1954. Today, both documented and undocumented immigrants in the U.S. face the uncertainty of random raids and deportations, the threat of separation from their families and increased exploitation on the job.<p>
 And forget about all men being "created equal. Under an April 29, 2003 Supreme Court ruling, even <i>legal </i>immigrants don't have the same due process rights as citizens. "Congress may make rules as to aliens that would be unacceptable if applied to citizens," then-Chief Justice William Rehnquist declared in upholding a law permitting the federal government to detain immigrants indefinitely if they have been arrested and convicted of a crime. <p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

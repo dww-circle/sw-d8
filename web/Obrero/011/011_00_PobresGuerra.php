@@ -6,25 +6,25 @@ C&oacute;mo los guerreristas de Washington mandan a los pobres a la guerra
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="5"><b>C&oacute;mo los guerreristas de Washington mandan a los pobres a la guerra</b></font></P>
 <p><font face="Arial, Helvetica, sans-serif" size="2">15 de augusto de 2003</font></p>
@@ -47,12 +47,12 @@ C&oacute;mo los guerreristas de Washington mandan a los pobres a la guerra
 <P> "Seis meses despu&eacute;s de llegar a Kuwait y casi tres meses despu&eacute;s que entrar a Irak, ellos est&aacute;n listos para irse a sus casas", escribi&oacute; un periodista de <I>New York Times</I> sobre la Tercera Divisi&oacute;n de Infanter&iacute;a del ej&eacute;rcito, una de las primeras en entrar a Bagdad. "Algunos son atormentados por las muertes que ellos causaron--y sufrieron--y han pedido terapia. Todos est&aacute;n cansados y acalorados y cada vez m&aacute;s amargados. La moral ha deca&iacute;do tan agudamente como la temperatura ha subido".</P>
 <P>El elogio de George Bush para los soldados estadounidenses es un insulto para los hombres y mujeres trabajadores que encaran pobreza y opresi&oacute;n como parte de una de las instituciones clasistas m&aacute;s racistas y r&iacute;gidas del sistema. La verdadera  "misi&oacute;n de liberaci&oacute;n" comenzar&aacute; cuando estos soldados reconozcan que sus verdaderos enemigos no se encuentran en Irak, sino gobernando su pa&iacute;s.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

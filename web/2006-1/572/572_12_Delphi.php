@@ -6,25 +6,25 @@ A fight for labor's future at Delphi
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">New "test case" in the auto industry</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>A fight for labor's future at Delphi</b></font><p>
@@ -56,12 +56,12 @@ SOS also pulled together an inspiring protest of more than 700 rank-and-file uni
 On January 23, SOS plans to build on that solidarity by showing up at Delphi's front door--with a picket at Delphi headquarters in Troy, Mich., at 2:30 p.m.<p>
 Shotwell says that Delphi workers can't allow themselves to be intimidated anymore by threats of bankruptcy and concessions. "[The media] said, 'Aren't you biting the hand that feeds you?'" Shotwell said. "In other words, if you strike and you put General Motors down, how are they going to have the money that you require for a satisfactory contract? Aren't you biting the hand that feeds you? I said, 'No. We're biting the hand that slapped us, that cheated us and that robbed us.'"<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

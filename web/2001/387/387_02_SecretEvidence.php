@@ -6,25 +6,25 @@ Facing deportation on secret evidence
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4">Feds renew persecution of Mazen Al-Najjar</font><BR>
 <font face="Times New Roman, Times, serif" size="5"><b>Facing deportation on secret evidence</b></font></P>
@@ -38,12 +38,12 @@ Facing deportation on secret evidence
 <P>The Bush administration is using this case as a test for its new broad federal powers to detain and deport immigrants based on secret evidence. "I believe that the government will be successful in his deportation," Attorney General John Ashcroft boasted in a November 27 press conference. But Joe Hohenstein, one of Al-Najjar's attorneys, said he plans to file a petition for Supreme Court review of the case.</P>
 <P>Activism won Al-Najjar's release in 2000, and will be key to stopping his deportation. "Before my detention, I was having second thoughts about activism. Sometimes I felt the fatigue. But after my detention, I am really a different person. I will never quit from activism. I will never be fully satisfied until I see every prisoner of conscience freed from injustice," Al-Najjar said.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

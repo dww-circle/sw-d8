@@ -6,25 +6,25 @@ Free Iraqi women prisoners, free Jill Carroll
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>Free Iraqi women prisoners, free Jill Carroll</b></font><p>
 <font face="Times New Roman, Times, serif" size="2"><b>By Elizabeth Schulte</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | February 17, 2006 | Page 3</font><p>
@@ -37,12 +37,12 @@ A petition, written by Palestinian activist Toufic Haddad, reads: "In light of t
 Supporters of four Christian Peacemaker Team members who were kidnapped in November and are still being held in Iraq are making a similar call. Their petition, which argues that the peace team's abduction is the result of the U.S. and Britain's occupation of Iraq, has been signed by prominent antiwar figures such as Arundhati Roy, Noam Chomsky, Cindy Sheehan, and Craig and Cindy Corrie.<p>
 <i>Sign the "Free Iraqi Women Prisoners, Free Jill Carroll" petition at <a href="http://new.petitiononline.com/freejill/petition.html" target="_blank">http://new.petitiononline.com/freejill/petition.html</a>. Sign the petition for the Christian Peacemaker Team members at <a href="http://www.petitionspot.com/petitions/freethecpt" target="_blank">www.petitionspot.com/petitions/freethecpt</a></i>.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

@@ -6,25 +6,25 @@ Bhopal: The making of a disaster
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>Bhopal: The making of a disaster</b></font><p>
 <font face="Arial, Helvetica, sans-serif" size="2">December 10, 2004 | Page 8</font><p>
@@ -61,12 +61,12 @@ There's also an effort underway to bring Warren Anderson, then the CEO of Union 
 In April, two Bhopal survivors, Rashida Bee and Champa Devi Shukla, were awarded the prestigious Goldman prize for environmental activism for their work in fighting for compensation and economic opportunities for survivors. In an <a href="http://www.socialistworker.org/2004-2/504/504_08_Bhopal.shtml" target="_blank">interview</a> with <i>Socialist Worker </i>published earlier this year, Bee and Devi Shukla described how their struggle has established links with the movement against corporate globalization. <p>
 "We don't think they will be able to put us off forever," Devi Shukla said. "You know, more and more people are becoming aware of what is going on. We are trying to wake people up. And once you have a population that is awake and willing to fight, nothing can stop you."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

@@ -6,25 +6,25 @@ Driven to suicide by U.S. torturers
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Detainees at the Guant&aacute;namo prison camp</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Driven to suicide by U.S. torturers</b></font><p>
@@ -44,12 +44,12 @@ The U.S. "should cease to detain any person at Guant&aacute;namo Bay and close t
 The Bush administration claims that it wants to shut down Guant&aacute;namo--but can't, in part because it fears detainees might be "mistreated" by other countries. "We work almost daily with governments to try to get people returned to their native lands if their governments will take them and give assurances that they are both not going to be mistreated and that they're going to be watched and monitored so that they can't commit crimes again," claimed Secretary of State Condoleezza Rice on <i>Fox News Sunday</i>.<p>
 But the findings of the UN Committee on Torture show that it is the U.S. that subjects prisoners to routine mistreatment. As Joshua Colangelo-Bryan, an attorney for a detainee from Bahrain who has repeatedly tried to kill himself, told the Associated Press, "Under these circumstances, it's hardly surprising that people become desperate and hopeless enough to attempt suicide."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

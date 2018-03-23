@@ -6,25 +6,25 @@ Bush's torture camp at Guantanamo Bay
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Transferring detainees from secret CIA jails to...</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Bush's torture camp at Guantanamo Bay</b></font><p>
@@ -76,12 +76,12 @@ Last year, declassified records in his case showed that Kurnaz was designated an
 Yet Kurnaz was kept in what his lawyer described as a "cage," under the glare of bright lights 24 hours a day. Even when finally flying him home to Germany, Kurnaz's U.S. captors kept him shackled and blindfolded for the entire flight.<p>
 As Moazzam Begg, a British Muslim who spent three years wrongfully imprisoned by the U.S. in both Afghanistan and Guant&aacute;namo told <i>Democracy Now</i>, "The fact is that people are being persecuted there. They may not be having their fingernails and toenails pulled out, but the absence of the rule of law, the fact that you're in legal limbo, the fact that you have no meaningful communication with your family, the fact of the cruel, inhuman and degrading treatment, the fact of psychological abuse...you don't have even an inkling as to what it is that you've done to harm this country that has ruined and destroyed your life."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

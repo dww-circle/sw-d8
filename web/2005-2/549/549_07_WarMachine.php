@@ -6,25 +6,25 @@ A cog in the Bush war machine
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">"My sister shipped out to Baghdad"</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>A cog in the Bush war machine</b></font><p>
@@ -44,12 +44,12 @@ At its height, the anti-Vietnam War movement and the anti-imperialist environmen
 Sometimes it takes experience to learn this. My brother was in the Navy during the 1991 Gulf War. He, fortunately, didn't go to Iraq. But it changed him profoundly. By the end of his four years, he was cynical about the U.S. as a force for world peace, fed up with the racism within the Navy, and convinced that "NAVY" was an acronym for "Never Again Volunteer Yourself." <p>
 I hope that it will not take the same bitter experience for my sister to figure this out. I hope she doesn't come back badly hurt or worse. I hope she can come back to a strengthened antiwar movement that can change the context and conditions in which people like her make the "choice" to participate in the occupation of Iraq or any other war.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

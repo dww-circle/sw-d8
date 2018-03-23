@@ -6,25 +6,25 @@ Protests at UNC against anti-Muslim cartoons
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>Protests at UNC against anti-Muslim cartoons</b></font><p>
 <font face="Times New Roman, Times, serif" size="2"><b>By Julie Southerland</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | March 3, 2006 | Page 11</font><p>
@@ -39,12 +39,12 @@ The newspaper's editor has refused--and has promised to print even more of the c
 These protests need to be part of a national response to these cartoons, which have contributed to an atmosphere of racism against Arabs and Muslims. This is not a free speech issue--it is about hate speech used to demonize Muslims.<p>
 <i>Write or call these two newspapers to demand apologies for printing these racist cartoons. Call 336-273-0885 to reach the </i>Rhinoceros Times<i> or email editor-in-chief John Hammer at <a href="mailto:johnhammer@rhinotimes.com">johnhammer@rhinotimes.com</a>. Call </i>Daily Tar Heel <i>editor Ryan C. Tuck at 919-962-4086 or e-mail <a href="mailto:rctuck@email.unc.edu">rctuck@email.unc.edu</a></i>.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

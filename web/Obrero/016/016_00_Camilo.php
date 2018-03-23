@@ -6,25 +6,25 @@
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4">Condenado por negarse a pelear en la guerra de Bush</font><BR>
 <font face="Times New Roman, Times, serif" size="5"><b>"Gente como Camilo revelan la verdad"</b></font></P>
@@ -99,12 +99,12 @@
 <P>Le resistencia existe, el potencial existe, y los soldados mismos est&aacute;n ah&iacute;, haciendo declaraciones pol&iacute;ticas inconscientes al desaparecerse. Pero dentro de mi panorama, solamente llega hasta ah&iacute;. Esta gente puede ir volviendo poco a poco al Fuerte Stewart y a otras bases, y son enjuiciados a distintos niveles. A algunos les dar&aacute;n una palmadita en la mano y los mandar&aacute;n de vuelta a sus unidades, y a otros los echar&aacute;n en cortes especiales, y no tenemos contacto con ellos.</P>
 <P>Y no hay forma en que podamos decir que hemos formado un movimiento de soldados. Hay muchos individuos tratando de hacerlo, y a lo mejor hay formaciones emergentes en algunas bases--no s&eacute;, y no me quiero presentar como un experto en este punto. Pero habiendo estado ac&aacute; en el Fuerte Stewart durante la &uacute;ltima semana, y habiendo visto lo que he visto, nos falta un trecho.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

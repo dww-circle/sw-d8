@@ -6,25 +6,25 @@ GM job massacre
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Nearly one in four blue-collar jobs set to go</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>GM job massacre</b></font><p>
@@ -51,12 +51,12 @@ UAW President Ron Gettelfinger and Vice President in charge of GM Richard Shoema
 Shotwell says that the hope for a UAW resurgence lies among parts workers--where there are now more UAW members than are employed at the Big Three automakers. He also says that there has been renewed interest in the UAW New Directions Movement (NDM), a union reform group. Shotwell says the <a href="http://www.uawndm.org" target="_blank">group's Web site</a> will soon "introduce a plan calling for a national pattern contract [at parts companies], portability of pensions, a national benefits pool and preferential hiring and transfer rights for UAW members. NDM is promoting a 'No Concessions' campaign and advocating that the UAW put the horse in front of the cart by organizing transplants, instead of lobbying for Democrats."<p>
 As he concludes, "It remains to be seen if the sleeping giant can be roused to action. In the meantime, I intend to stick verbal firecrackers in her ears."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

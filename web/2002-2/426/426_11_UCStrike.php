@@ -6,25 +6,25 @@ UC hit by two-day strike
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="5"><b>UC hit by two-day strike</b></font></P>
 <P><font face="Times New Roman, Times, serif" size="2"><b>By Martin Smith</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | October 18, 2002 | Page 11</font></P>
@@ -38,12 +38,12 @@ UC hit by two-day strike
 <P>The solidarity between the various campus unions on strike is historic. Other unions who aren't on strike--both on and off campus--have also pledged their support. University Professional and Technical Employees have vowed not to cross the lecturers' picket lines. And the Service Employees International Union Local 415, which just won a successful strike by county workers in Santa Cruz, has pledged to walk the picket lines and is allowing their union hall to be used for strike organizing.</P>
 <P>"This strike is about flexing our muscle," one CUE member told <I>Socialist Worker</I>. "We will show UC that they must take us seriously. This strike is only the beginning."</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

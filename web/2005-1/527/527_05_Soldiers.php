@@ -6,25 +6,25 @@ Resistance on the home front
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>Resistance on the home front</b></font><p>
 <font face="Times New Roman, Times, serif" size="2"><b>By Eric Ruder</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | Janury 21, 2005 | Page 5</font><p>
@@ -43,12 +43,12 @@ Fleckenstein--whose nephew is in the Army and will likely be deployed to Iraq or
 In the Boston area, antiwar activists are organizing an 18-stop speaking tour between January 29 and February 6--featuring Michael Hoffman, who was a Marine artilleryman and helped to found Iraq Veterans Against the War, and Kelly Dougherty, who served in the 220th Military Police Company. The tour will touch down at high schools, colleges and community forums, where these soldiers will share the experiences and horrors they witnessed in Iraq in order to inspire more people to oppose the war.<p>
 Plus, on the second anniversary of the beginning of the war in Iraq, as part of the March 19 international day of action, thousands of veterans, soldiers, military family members and antiwar activists will converge on Fayetteville, N.C.--home to Fort Bragg and the Army's 82nd Airborne Division--for what promises to be the largest antiwar demonstration there since the Vietnam War.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

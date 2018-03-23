@@ -6,25 +6,25 @@ Rising poverty in Bush's America
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>Rising poverty in Bush's America</b></font><p>
 <font face="Times New Roman, Times, serif" size="2"><b>By Lance Selfa</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | September 16, 2005 | Pages 1 and 2</font><p>
@@ -43,12 +43,12 @@ Like the New Orleans rich with their heliports, billionaire real estate develope
 Meanwhile, in the Wagner Houses, a public housing project only a few miles from Trump Tower, auto mechanic Darryl Powell told the <i>Times </i>that his neighbors were struggling. "They're trying to keep a roof over their head," he said. "People are trying to hold onto what they get." Sheila Estep faces eviction from the Wagner Houses because she was working full-time at home trying to raise her kids, instead of in her earlier jobs in the building trades.<p>
 If the worst happens, Sheila and her three kids will end up like hundreds of thousands in the Gulf region--homeless. And she won't be a victim of a hurricane and flood. Instead, she'll be a victim of a system that rewards a tiny minority with more wealth than it can possibly use--while millions more struggle just to keep from sinking deeper into poverty.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

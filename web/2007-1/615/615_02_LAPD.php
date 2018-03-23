@@ -6,25 +6,25 @@ LAPD whitewashes shooting
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">No discipline for officer who killed a 13-year-old</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>LAPD whitewashes shooting</b></font><p>
@@ -41,12 +41,12 @@ Adding to the absurdity, it was recently revealed that an LAPD captain who voted
 In May 1997, Garcia and his partner chased a car three miles from Koreatown to Echo Park, where a passenger, Francisco Morales, jumped out and was found in some bushes, with his hands raised in surrender. Garcia kicked Morales in the face and handcuffed him. Later, Garcia admitted to his ex-girlfriend that he intentionally kicked Morales in the head and was going to lie to investigators about how the man was injured.<p>
 But this history was ignored at the secret hearing--because LAPD rules don't allow an officer's past misconduct to be considered unless the officer is found guilty of an offense. Garcia was found not guilty, so his past was considered irrelevant.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

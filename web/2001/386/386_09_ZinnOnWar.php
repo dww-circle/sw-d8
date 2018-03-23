@@ -6,25 +6,25 @@ Zinn exposes U.S. "democracy"
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="5"><b>Zinn exposes U.S. "democracy"</b></font></P>
 <P><font face="Arial, Helvetica, sans-serif" size="2"><B>BOOKS: <I>Howard Zinn on War,</I></B> Seven Stories Press, 205 pages, 2001, $12.95.</font></P>
@@ -36,12 +36,12 @@ Zinn exposes U.S. "democracy"
 <P>"Whatever 'humanitarian' motives are claimed by our political leaders--it is always a war against children: the child amputees created by our bombing of Yugoslavia, the hundreds of thousands of Iraqi children dead as a result of our post-war sanctions&#133;Our leaders cannot be trusted," Zinn writes. "Modern war is inevitably a war against civilians and particularly children&#133;Only a determined citizenry can stop the government when it embarks on mass murder."</P>
 <P>Although Zinn's book was written before the latest U.S. venture into mass murder in Afghanistan, his arguments against America's brutal military ventures over the last century are just as important for the antiwar movement today.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

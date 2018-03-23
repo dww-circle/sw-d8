@@ -6,25 +6,25 @@ No queremos esta guerra
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4">Oposici&oacute;n a la agenda de Bush </font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>No queremos esta guerra</b></font></P>
@@ -42,12 +42,12 @@ No queremos esta guerra
 <P>No es de extra&ntilde;ar que m&aacute;s y m&aacute;s gente est&eacute; cuestionando la carrera b&eacute;lica emprendida por Bush y su pandilla. Los planes de Washington para causar m&aacute;s destrucci&oacute;n y muerte, en un pa&iacute;s ya devastado por m&aacute;s de una d&eacute;cada de sanciones militares y econ&oacute;micas, han producido un movimiento en contra de la guerra que ha crecido r&aacute;pidamente, incluso antes que comenzara la guerra.</P>
 <P>Por eso es tan importante el organizarse para protestar y oponerse a la barbarie militar de Bush. Todos y todas a la protesta nacional en Wasington, D.C. el 18 de enero para decirle a viva voz a Bush y sus matones: &#161;Alto a la guerra contra Irak!</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

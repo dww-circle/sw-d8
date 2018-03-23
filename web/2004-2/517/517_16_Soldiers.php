@@ -6,25 +6,25 @@ Soldiers refuse to be cannon fodder
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Platoon detained for defying orders</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Soldiers refuse to be cannon fodder</b></font><p>
@@ -55,12 +55,12 @@ But few believe that the weapons exchange will establish stability unless desper
 This won't be easy, especially considering that a new United Nations report concludes that half of the $5 billion disbursed by the U.S. for reconstruction efforts while the U.S.-led Coalition Provisional Authority was running Iraq has disappeared. Kurdish leaders deposited $1.4 billion of the money in a bank in northern Iraq, but no further information about the funds can be found, according to auditors. And another $1 billion--earmarked for hundreds of projects--has simply vanished.<p>
 Still, even as the U.S. lurches from one crisis to the next, it will be able to retreat, regroup and try again--until the antiwar movement and U.S. soldiers refuse to give their consent to the goal of occupation. We must take up the cause of soldiers who refuse combat--and demand that the U.S. bring the troops home now.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

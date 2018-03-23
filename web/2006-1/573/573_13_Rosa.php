@@ -6,25 +6,25 @@ How we're taught the story of Rosa Parks
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>How we're taught the story of Rosa Parks</b></font> <p>
 <font face="Times New Roman, Times, serif" size="2"><b>Review by Leela Yellesetty</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | January 27, 2006 | Page 13</font><p>
@@ -42,12 +42,12 @@ Kohl's book will be especially useful to teachers as it contains an appendix fil
 His concluding paragraph beautifully makes the case for why teaching the real story is so important: "Rosa Parks, the humane activist, is challenging us today to do more than just memorialize the past but to act in the present and in the future. However, when the story of the Montgomery bus boycott is told merely as a tale of a single person, it leaves children hanging or searching for someone to follow, when they should be the actors...Of course, the idea that only special people can create change is useful if you want to prevent mass movements and keep change from happening. Not every child can be Rosa Parks, but everyone can imagine her- or himself as a participant in the boycott.<p>
 "As a tale of a social movement and a community effort to overthrow injustice, the Rosa Parks story, as I've tried to retell it, creates the possibility of every child identifying her- or himself as an activist, as someone who can help make justice happen." <p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

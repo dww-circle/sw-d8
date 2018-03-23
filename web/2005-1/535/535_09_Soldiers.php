@@ -6,25 +6,25 @@ Inside the U.S. military machine
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Soldiers' books cut through the lies</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Inside the U.S. military machine</b></font><p>
@@ -46,12 +46,12 @@ On page after page, soldiers and veterans transformed by the lies and arrogance 
 But this otherwise powerful collection of letters is deeply marred by Moore's preoccupation with the 2004 presidential campaign, which was in full swing as he collected the entries for his book. As a consequence, the book ends up straying from its strength as a portrait of the men and women in the armed services who seethe with resentment and instead oozes with Moore's compulsion to portray himself as a patriot bent on restoring the public's trust in government--as if evicting Bush by campaigning for John Kerry, who proclaimed himself every bit as committed to waging war in Iraq and Afghanistan, could do anything but further demoralize people who desperately want an alternative to Bushism.<p>
 Supplement Ensign with Appy's <i>Working Class War </i>for a well-rounded picture of the centrifugal forces pulling at the U.S. military today.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

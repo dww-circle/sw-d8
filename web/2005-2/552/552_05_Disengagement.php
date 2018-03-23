@@ -6,25 +6,25 @@ What is Israel really after?
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">"Disengagement" in Gaza:</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>What is Israel really after?</b></font><p>
@@ -59,12 +59,12 @@ Here, the U.S. government's "road map" will play a role--as a "political process
 The ushering in of this new era--a long-term scenario of permanent war that aims at nothing less than crushing the Palestinian national movement and its people, and which, over time, may even result in their expulsion--is far more significant than the disengagement itself. <p>
 U.S. antiwar and solidarity forces have an enormous role to play in exposing the truth about the disengagement plan and the "formaldehyde era" that Israel promises will precede it in the form of the "road map." Building a mass movement which links the struggle of Palestine with the antiwar struggle against the occupation of Iraq--together with the domestic struggle against American taxpayer money being spent on these colonial adventures--is the best hope of averting the ominous future that these policies promise for us all.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

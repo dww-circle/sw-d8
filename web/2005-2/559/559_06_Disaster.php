@@ -6,25 +6,25 @@ Righting the wrong of this disaster
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Activists' grassroots relief effort</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Righting the wrong of this disaster</b></font><p>
@@ -58,12 +58,12 @@ Criminal defense lawyer and activist Buddy Spells told us that the local jail in
 Buddy was blocked from visiting a client in the Greyhound bus station--which has been turned into an emergency detention center under the declaration of emergency issued by President Bush--despite having a court order. No one knows how many people are held inside, whether they have been charged or how they are being treated. <p>
 Driving back through the night toward Atlanta, where we would board our plane and return to New York, we talked about what would happen after this initial stage of emergency relief efforts. Much like during the 1960s, the connections between the struggles against war, racism and poverty were clear to us from all we had seen and heard on our trip. Our hope is that the spirit of solidarity and determination we saw on the part of people determined to right the wrong of this unnatural disaster is just the beginning.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

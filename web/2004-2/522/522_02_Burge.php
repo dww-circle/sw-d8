@@ -6,25 +6,25 @@ Chicago cop saw suspects tortured
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Pressure mounts on Burge</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Chicago cop saw suspects tortured</b></font><p>
@@ -41,12 +41,12 @@ Now, Burge is trying to silence the attorneys who are fighting to get justice fo
 U.S. Magistrate Judge Geraldine Soat Brown recently ruled in favor of Burge's petition. She is holding off from ruling if she will also block the lawyers from publicly commenting on the depositions. Burge's attorney, James Sotos, also asked Brown to impose monetary sanctions against an attorney for former death row prisoner Madison Hobley for releasing files to the media.<p>
 Clearly, Burge and his supporters in the city political machine are feeling the pressure. The special prosecutor's office has said that it is close to completing its investigation. A fair investigation should lead to long-awaited indictments of Burge and his officers. Activists will need to keep up the fight to expose Chicago police torture as we demand Burge's prosecution--and justice for his victims. <p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

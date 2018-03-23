@@ -6,25 +6,25 @@ Building strike in NYC?
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">SEIU Local 32BJ squares off against real estate bosses</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Building strike in NYC?</b></font><p>
@@ -43,12 +43,12 @@ The building bosses now want Local 32BJ to accept the same concessions as the of
 "What the real estate industry is saying is not true," said Fishman. "The added equity in a building allows them to borrow against it and move money into another building. It's like someone saying, 'It doesn't mean anything that your portfolio has gone up $100 million.'" "Even at $17.94 an hour, our members are pretty much part of the working poor," continued Fishman. "It's not easy supporting a family in New York on $37,000 a year."<p>
 Carlos Padilla, a doorman on the Upper West Side, thinks that tenants are sympathetic to the workers' cause. "I don't think a strike would be a bad idea," he said. "It's really our only weapon to negotiate. We are ready to go on strike if we are forced to."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

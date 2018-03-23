@@ -6,25 +6,25 @@ El candidato del "yo tambi&eacute;n"
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="5"><b>El candidato del "yo tambi&eacute;n"</b></font></P>
 <P><font face="Times New Roman, Times, serif" size="2"><b>Por Elizabeth Schulte</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | 27 de mayo de 2004 | p&aacute;gina 2</font></P>
@@ -41,12 +41,12 @@ El candidato del "yo tambi&eacute;n"
 <P>Sin embargo un voto por Kerry inevitablemente significa aceptar el &aacute;mbito pol&iacute;tico cada vez m&aacute;s estrecho entre los dos partidos. Kerry puede que traiga un cambio de estilo, pero la sustancia--el proseguir la agenda de las corporaciones americanas y el uso agresivo del poder imperial de EE.UU.--se quedar&aacute; igual.</P>
 <P>John Kerry puede que derrote a Bush--pero su victoria no representar&aacute; la derrota de las pol&iacute;ticas de Bush. Ahora es el momento de construir una oposici&oacute;n a las pol&iacute;ticas miserables de la administraci&oacute;n de Bush--y de su contraparte Dem&oacute;crata, los del "Yo tambi&eacute;n".</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

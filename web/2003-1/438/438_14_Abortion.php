@@ -6,25 +6,25 @@ Fight for abortion rights
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="5"><b>Fight for abortion rights</b></font></P>
 <P><font face="Times New Roman, Times, serif" size="2"><b>By Lee Wengraf</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | January 31, 2003 | Page 14</font></P>
@@ -35,12 +35,12 @@ Fight for abortion rights
 <P>In Chicago, only about 50 pro-choice demonstrators turned out, and in Washington, D.C., a pro-choice rally was overwhelmingly outnumbered--as up to 50,000 anti-choice protesters celebrated Bush's attacks on abortion rights.</P>
 <P>We have to remember how abortion rights were won in the first place--in the streets, not by relying on the Democrats or the courts. "All organizations need to come together, men and women alike, to say that pro-choice is the majority, not the minority," Robin Sklar, co-chair of the Green Party Manhattan Office, told <I>Socialist Worker</I>. "Everyone has the fundamental right to make their own decision on abortion."</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

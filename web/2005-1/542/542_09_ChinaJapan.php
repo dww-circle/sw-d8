@@ -6,25 +6,25 @@ What's behind the growing conflict?
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Arial, Helvetica, sans-serif" size="2"><b>CHINA/JAPAN</b></font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>What's behind the growing conflict?</b></font><p>
@@ -46,12 +46,12 @@ Then, at the end of the month, China welcomed the leader of Taiwan's Guomindang 
 Tensions with Japan may cool following a 55-minute meeting in Jakarta on April 23 between Koizumi and Chinese President Hu Jintao. In Jakarta, Koizumi publicly reaffirmed the terms of a 1995 apology for wartime atrocities--at the same time that 80 members of Japan's parliament, including a cabinet member, visited the Yasukuni shrine.<p>
 Japan is a major investor in China, and the two countries have become each other's biggest trading partners. In the future, these connections are likely to draw the two countries into periodic spells of peace, in between outbreaks of conflict over whether Japan--and its allies in Washington--or China is to be the dominant power in Asia.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

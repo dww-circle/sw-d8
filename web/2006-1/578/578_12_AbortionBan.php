@@ -6,25 +6,25 @@ South Dakota's all-out abortion ban
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Right wants Supreme Court challenge to <i>Roe</i></font> <br>
 <font face="Times New Roman, Times, serif" size="5"><b>South Dakota's all-out abortion ban</b></font><p>
@@ -50,12 +50,12 @@ Keenan is wrong if she thinks NARAL's long-held strategy of electing Democrats i
 More attacks on abortion rights are guaranteed in the coming months. Last week, the Supreme Court agreed to hear the Bush administration's appeal of a decision invalidating the so-called "Partial-Birth Abortion Ban Act of 2003," a law that would ban pregnancies terminated as early as 12 or 13 weeks, and that doesn't include exceptions for the woman's health.<p>
 The religious right's success in restricting women's access to abortion--from mandatory waiting periods to parental consent legislation--has built their confidence to take on <i>Roe.</i> An activist movement to defend abortion rights has to organize where it can't be ignored--in the streets.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

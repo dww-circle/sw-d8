@@ -6,25 +6,25 @@ Por qu&eacute; apoyamos el retiro inmediato de las tropas estadounidenses en Ira
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Declaraci&oacute;n del movimiento contra la guerra</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Por qu&eacute; apoyamos el retiro inmediato de las tropas estadounidenses en Irak</b></font><p>
@@ -67,12 +67,12 @@ Los abajo firmantes exigimos que los EEUU se retiren de Irak, no dentro de seis 
 
 Entre otros que ya han firmado se incluye: &#8226; <b>Mike Alewitz, </b>muralista &#8226; <b>Naseer Aruri, </b>autor, <i>Dishonest Broker: America's Role in Israel and Palestine</i> &#8226; <b>Bill Ayers, </b>autor, <i>Fugitive Days</i> &#8226; <b>David Barsamian, </b>director, Alternative Radio &#8226; <b>Thomas Barton, </b><i>GI Special</i> &#8226; <b>Phyllis Bennis, </b>Institute for Policy Studies &#8226; <b>Leslie Cagan, </b>United for Peace and Justice &#8226; <b>Ira Chernus, </b>The Smirking Chimp &#8226; <b>Todd Chretien</b>, candidato al Senado del Green Party en California &#8226; <b>Ramsey Clark, </b>consejero legal de Saddam Hussein &#8226; <b>Roxanne Dunbar-Ortiz, </b>autor, <i>Blood on the Border</i> &#8226; <b>Sam Farber, </b>autor, <i>The Origins of the Cuban Revolution Reconsidered</i> &#8226; <b>James Fennerty, </b>National Lawyers Guild &#8226; <b>Josh Frank, </b>autor, <i>Left Out! How Liberals Helped Reelect George W. Bush</i> &#8226; <b>Elaine Hagopian, </b>autor, <i>Civil Rights in Peril</i> &#8226; <b>Doug Henwood, </b>editor, <i>Left Business Observer</i> &#8226; <b>Goretti Horgan, </b>Derry Antiwar Coalition &#8226; <b>Maurice Isserman, </b>autor, <i>If I Had a Hammer</i> &#8226; <b>Ron Jacobs, </b>autor, <i>The Way the Wind Blew</i> &#8226; <b>Charles Jenks, </b>Traprock Peace Center &#8226; <b>Gabriel Kolko, </b>autor, <i>The Politics of War</i> &#8226; <b>Joanne Landy, </b>Campaign for Peace and Democracy &#8226; <b>Michael Letwin, </b>co-moderador, New York City Labor Against the War &#8226; <b>Adrian Lomax, </b>activista por los derechos de los encarcelados &#8226; <b>Alan Maass, </b>editor, <i>Socialist Worker</i> &#8226; <b>Frances Fox Piven, </b>autor, <i>Poor Peoples' Movements</i> &#8226; <b>Peter Rachleff, </b>autor, <i>Hard-Pressed in the Heartland</i> &#8226; <b>Matthew Rothschild, </b>editor, <i>The Progressive</i> &#8226; <b>Michael Schwartz, </b>professor de sociolog&iacute;a, State University of New York at Stony Brook &#8226; <b>Ahmed Shawki, </b>editor, <i>International Socialist Review</i> &#8226; <b>Sharon Smith, </b>autor, <i>Subterranean Fire</i> &#8226; <b>David Swanson, </b>AfterDowningStreet.org &#8226; <b>Sherry Wolf, </b>International Socialist Organization &#8226; <b>Ann Wright, </b>U.S. Army colonel/State Department, renunci&oacute; en protesta con la guerra en Irak &#8226; <b>Dave Zirin, </b>autor, <i>What's My Name, Fool?</i> &#8226; Las firmas son a t&iacute;tulo personal y no comprometen a las organizaciones o instituciones mencionadas.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

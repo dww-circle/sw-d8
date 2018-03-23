@@ -6,25 +6,25 @@ Mr. Outside or Mr. Inside?
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">The not-so-antiwar Democrat</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Mr. Outside or Mr. Inside?</b></font><p>
@@ -63,12 +63,12 @@ The fact that a close Dean adviser worked for a consulting firm involved in pitc
 Dean's choice of Sebright as an adviser shows how little difference there actually was between Dean and the Bush administration on the issue of the Iraq war. Based on the statements made by Dean after announcing his campaign in the summer of 2003, it appears that he only opposed the war in Iraq because he didn't believe the Bush administration had proven that Iraq posed an "imminent threat" to the United States.<p>
 Certainly, there are many reasons he should have raised opposition to the Iraq War. However, by failing to do so, it became quite clear that Dean was not an "antiwar" candidate. The fact is, Dean proved he was just another politician from the Democratic mainstream whose position on Iraq was not grounded on a philosophical aversion to war. On the contrary, Howard Dean's opposition was political in nature.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

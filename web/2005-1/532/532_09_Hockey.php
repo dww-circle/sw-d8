@@ -6,25 +6,25 @@ How the owners destroyed hockey
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>How the owners destroyed hockey</b></font><p>
 <font face="Times New Roman, Times, serif" size="2"><b>By Dave Zirin</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | February 25, 2005 | Page 9</font><p>
@@ -47,12 +47,12 @@ NHL union chief Bob Goodenow caved on the hard cap at the end, but Bettman snubb
 Where this goes from here is difficult to say. The owners have been left with dusty jerseys, melting ice and a Panglossian belief that everything will be alright once they get their precious hard cap. Unfortunately they may find that if a hockey puck falls on the ice and no one is there to see it, it will fail to make a sound.<p>
 <i>This article was adapted from Dave Zirin's weekly column "Edge of Sports." You can read Dave's columns at <a href="http://www.edgeofsports.com" target="_blank">www.edgeofsports.com</a>.</i> <p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

@@ -6,25 +6,25 @@ Alternativa de lucha ante un mundo en crisis
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Arial, Helvetica, sans-serif" size="2"><b>FORO SOCIAL MUNDIAL</b></font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Alternativa de lucha ante un mundo en crisis</b></font></P>
@@ -42,12 +42,12 @@ Alternativa de lucha ante un mundo en crisis
 <P>Lula todav&iacute;a es muy popular. Las multitudes corearon su nombre durante su discurso a comienzos del FSM, y luego otra vez en la concentraci&oacute;n final del evento. Pero al final de la concentraci&oacute;n, el gent&iacute;o sali&oacute; hacia una enorme marcha contra la guerra en Irak y contra el ALCA.</P>
 <P>El potencial para un cambio real en Brasil se nota en este esp&iacute;ritu de lucha. Y de hecho, la masiva oposici&oacute;n izquierdista al neoliberalismo demostrada en el FSM, muestra que hay una alternativa de la lucha que se est&aacute; fermentado a trav&eacute;s de Latino Am&eacute;rica. El reto que enfrentamos ser&aacute; el poder construir las organizaciones y elaborar las pol&iacute;ticas que puedan hacer realidad ese cambio a partir de las luchas de la gente com&uacute;n, desde abajo.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

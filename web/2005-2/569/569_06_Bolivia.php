@@ -6,25 +6,25 @@ Will Bolivia's vote bring real change?
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Arial, Helvetica, sans-serif" size="2"><b>BOLIVIA</b></font><br>
 <font face="Times New Roman, Times, serif" size="4">Evo Morales poised to win presidential election</font><br>
@@ -48,12 +48,12 @@ The early elections were, in fact, called to impose a solution to the political 
 The agenda of the social movements and the revolutionary left at the time centered on nationalizing natural gas resources. But Evo joined the call for nationalization only at the last minute, and then agreed to early elections as a way of ending the a standoff. Like October 2003, when former President Gonzalo S&aacute;nchez de Lozada was ousted during a previous struggle over gas privatization, the main role of the MAS in May/June 2005 was to help restrain the social movements.<p>
 Olivera sees no reason to trust a Morales government to bring fundamental change. "What the social movements need to do now," he argues, "is to continue accumulating popular forces, as we have been doing since 2000, to build up our ability to pressure whatever government that comes. A Morales government would be less difficult to move, but it will still be difficult."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

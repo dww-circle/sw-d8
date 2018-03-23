@@ -6,25 +6,25 @@ What's behind the violence in Gaza?
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>What's behind the violence in Gaza?</b></font><p>
 <font face="Arial, Helvetica, sans-serif" size="2">June 22, 2007 | Page 16</font><p>
@@ -50,12 +50,12 @@ After Arafat's death in 2004, Palestinians' patience with Abbas' conciliatory po
 Pitting Palestinian factions against one another has been a matter of U.S. policy. In a confidential report leaked in early June, UN Middle East envoy Alvaro de Soto wrote that Abbas advisers worked with the U.S., Israel and the European Union in a "plot" to "bring about the untimely demise of the [Palestinian Authority] government led by Hamas." De Soto also recounted hearing a U.S. official twice declare at a meeting in Washington, "I like this violence."<p>
 As writer Mike Whitney put it on the CounterPunch Web site, "Bush and Olmert are using the familiar 'divide-and-conquer' strategy to provoke 'Arab-on-Arab' violence. The policy is an extension of Henry Kissinger's dictum during the Iran-Iraq war: 'I hope they all kill each other.' The goal is the same today as it was then."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

@@ -6,25 +6,25 @@ Labor against war
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4">Veterans speak out at Chicago labor meeting</font><BR>
 <font face="Times New Roman, Times, serif" size="5"><b>Labor against war</b></font></P>
@@ -95,12 +95,12 @@ Labor against war
 <P>Veterans have always been a two-edged sword in our society. They're a voice of reaction, such as the American Legion, and later on, the VFW, which was formed, by the way, as a progressive alternative to the American Legion. The American Legion was never a friend of unions. In a lot of places in West Virginia, where I come from, people wouldn't join the American Legion, because they were strikebreakers and vigilantes and Ku Klux Klan--all one in the same. </P>
 <P>But veterans have also become a progressive voice. Working-class veterans comprised the movement during the Depression of the 1930s that marched on Washington. And they didn't just demand for themselves, they demanded for the entire class--housing, food and the basic things that are guaranteed us as human beings. The back home movement after World War II, the veterans' antiwar movement during and after the Vietnam War--these are all legacies of veterans and the working class, and they're something that we should be proud of. So we say, "Decent benefits for all veterans" and "No blood for oil."</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

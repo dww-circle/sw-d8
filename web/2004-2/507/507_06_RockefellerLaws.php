@@ -6,25 +6,25 @@ Rotting away in prison
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4">Consequences of New York's Rockefeller drug laws</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Rotting away in prison</b></font></P>
@@ -55,12 +55,12 @@ Rotting away in prison
 <P>He spoke of how his thought process about the system dramatically changed while sitting in a jail cell during a prison lockdown. The federal government had just passed crack cocaine legislation, which led to several federal prison riots. As Hubbell sat in his cell like a caged animal, his mind opened up, bringing up his past. It made him remember a day when he signed a similar lockdown order that would affect thousands of prisoners. This was his road-to-Damascus experience that led him to be an agent of change to seek a better system. </P>
 <P>As he spoke, I turned to another ex-prisoner and said, "This is it, this is how we change the system. We pass a law that makes it mandatory to spend some time in a jail cell before taking a political position or governmental office." Maybe then, the system would benefit the people, instead of those in power.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

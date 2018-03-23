@@ -6,25 +6,25 @@ Show trial in Florida
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">The Feds' witch-hunt of Sami Al-Arian goes to court</font> <br>
 <font face="Times New Roman, Times, serif" size="5"><b>Show trial in Florida</b></font><p>
@@ -44,12 +44,12 @@ According to the <i>St. Petersburg Times</i>, among the prospective jurors who m
 Yet despite the clear indications that a fair trial in Florida will be impossible, the judge has refused to allow a change of venue. As Al-Arian's lawyer, William Moffitt, said: "This is probably the first time that I will go into a case believing that my client is not presumed innocent."<p>
 <i>Letters of support can be sent Dr. Sami Al-Arian #05007418, Orient Road Jail, 1201 Orient Rd., Tampa, FL 33619. Donations to help cover the cost of Al-Arian's legal expenses can be made to the National Liberty Fund, P.O. Box 3568, Washington, D.C. 20007. Visit <a href="http://www.freesamialarian.com" target="_blank">www.freesamialarian.com</a> for information</i>.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

@@ -6,25 +6,25 @@ Tim Burton's Planet of the Apes: New but not improved
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="5"><b>Tim Burton's <I>Planet of the Apes</I>: New but not improved</b></font></P>
 <P><font face="Arial, Helvetica, sans-serif" size="2"><B>MOVIES: <I>Planet of the Apes</B></I>, directed by Tim Burton, written by William Broyles, Jr., starring Mark Wahlberg, Helena Bonham Carter, Tim Roth and Michael Clarke Duncan.</P>
@@ -42,12 +42,12 @@ Tim Burton's Planet of the Apes: New but not improved
 <P>The most improbable role reversal, though, is left to National Rifle Association President Heston, who makes a cameo as an old dying ape. Heston tells his son, the ruthless General Thade (Tim Roth), that one thing above all others makes the humans so treacherous--a gun!</P>
 <P>As funny as it might seem, Heston's anti-gun diatribe doesn't have the same impact as the original movie's anti-Cold War stance. Burton's <I>Planet of the Apes</I> gains in slickness and spectacle, but it lacks the original's sharp-edged political punch.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

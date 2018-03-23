@@ -6,25 +6,25 @@ Peligra el derecho al aborto
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Arial, Helvetica, sans-serif" size="2"><b>LO QUE PENSAMOS</b></font><br>
 <font face="Times New Roman, Times, serif" size="4">Importante batalla por la Corte Suprema</font><br>
@@ -43,12 +43,12 @@ En cambio, el l&iacute;der Dem&oacute;crata de la minor&iacute;a en el Senado, H
 El a&ntilde;o pasado, m&aacute;s de un mill&oacute;n de personas acudieron a Washington, D.C., para reivindicar el derecho al aborto en la "Marcha por la Vida de las Mujeres". Aquel d&iacute;a, Dem&oacute;crata tras Dem&oacute;crata nos dijo que ten&iacute;amos que votar por John Kerry para salvaguardar el derecho a decidir. Esa estrategia solo nos ha hecho da&ntilde;o--dificultando lo que hubiera podido ser el comienzo de una nueva lucha de base para proteger y expandir el derecho al aborto.<p>
 No podemos confiar en un partido que ya ha reculado tanto en cuanto al aborto. Y no debemos tener esperanza de que Roberts termine siendo m&aacute;s "moderado" de lo que ahora parece. Es hora de reconstruir una verdadera lucha por el derecho al aborto donde s&iacute; hace diferencia, en las calles.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

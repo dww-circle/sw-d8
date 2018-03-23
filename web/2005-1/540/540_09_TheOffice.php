@@ -6,25 +6,25 @@ Meet the new boss
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">NBC's take on British sitcom <i>The Office</i></font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Meet the new boss</b></font><p>
@@ -44,12 +44,12 @@ Thankfully, with the exception of a fledging crush between receptionist Pam and 
 Refreshingly free of laugh tracks and musical cues, <i>The Office </i>is best when it's at its snarkiest and most viciously, blackly humorous. Viewers familiar with the British version might complain that the U.S. show isn't as dryly funny, and that Carell isn't quite as good at being offensive as his British counterpart Ricky Gervais. That may be true to a small extent--but <i>The Office</i> is still one of he funniest shows on U.S. network television.<p>
 My advice to white-collar workers looking to hold onto their sanity? Steal company supplies. Surf the Web as much as you can. Make long distance calls on the company dime. Churn out as many free photocopies as you can smuggle out. And watch <i>The Office.</i><br>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

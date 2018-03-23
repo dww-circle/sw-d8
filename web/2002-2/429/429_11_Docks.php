@@ -6,25 +6,25 @@ Will ILWU deal save jobs?
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4">Dockworkers and employers reach pact on technology</font><BR>
 <font face="Times New Roman, Times, serif" size="5"><b>Will ILWU deal save jobs?</b></font></P>
@@ -39,12 +39,12 @@ Will ILWU deal save jobs?
 <P>Indeed, the deal on technology reflects the fact that the ILWU was negotiating under coercion. And despite the union's claims of success, the <I>New York Times</I> reported that "one [union] adviser close to the negotiations who insisted that he not be identified, disagreed, saying management obtained almost all of what it wanted on technology, like using optical scanners to speed the entry of trucks carrying cargo." If the technology deal allows them to do so, the ILWU will risk the steady bleeding of membership through outsourcing. Employers have long used such tactics to decimate the membership of unions in the aerospace, steel and automotive industries.</P>
 <P>ILWU members have to draw the line. They must be prepared to reject any agreement that could gut their union's power--and mobilize the labor solidarity that's needed to withstand this government-backed assault on our unions.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

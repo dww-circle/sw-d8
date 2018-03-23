@@ -6,25 +6,25 @@ How the U.S. organized a massacre
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4">Taliban prisoners slaughtered</font><BR>
 <font face="Times New Roman, Times, serif" size="5"><b>How the U.S. organized a massacre</b></font></P>
@@ -58,12 +58,12 @@ How the U.S. organized a massacre
 <P>Censorship also played a major role in suppressing the news of more recent U.S. violations of the Geneva convention in the 1991 Gulf War. Only months after the war, <I>Newsday</I> reported that U.S. Army tanks bulldozed sand to bury thousands of wounded Iraqi soldiers and others alive--even as they tried to surrender. "For all I know, we could have killed thousands," said Col. Anthony Moreno, the commander who led the assault on the heaviest defenses.</P>
 <P>Capt. Bennie Williams, who was awarded the Silver Star for his role in the assault, told <I>Newsday,</I> "Once we went through there, other than the ones who surrendered, there wasn't anybody left."</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

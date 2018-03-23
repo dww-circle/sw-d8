@@ -6,25 +6,25 @@ No witch-hunts!
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4">Activists at CCNY say:</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>No witch-hunts!</b></font></P>
@@ -35,12 +35,12 @@ No witch-hunts!
 <P>It's clear that the attacks won't stop at CCNY, either. Already, administrators at Brooklyn College have harassed members of the Third World Within Peace Action Coalition and forced an antiwar event scheduled for October 12 to be moved off campus. In Los Angeles, Jonnie Hargis, a library assistant at UCLA, was suspended without pay for five days--for the "crime" of criticizing U.S. support for Israel in an e-mail sent from one of the school's computers.</P>
 <P>At CCNY, students and faculty say they're determined to continue with more teach-ins. Antiwar groups at other New York campuses have offered to support CCNY activists any way they can, as have union members in the newly formed Labor Against War committee. This solidarity will be needed to stop the witch-hunt of opponents of Bush's war.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

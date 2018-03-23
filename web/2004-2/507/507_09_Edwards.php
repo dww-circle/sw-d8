@@ -6,25 +6,25 @@ The John-John team
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4">What you should know about...</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>The John-John team</b></font></P>
@@ -53,12 +53,12 @@ The John-John team
 <P>As the conservative, pro-business Democratic Leadership Council's Web newsletter, the <I>New Dem Daily,</I> said,<I> </I>"Like the Clinton-Gore ticket in 1992, the Kerry-Edwards ticket sends the same strong, unmistakable signal about 2004: The New Democrat message can compete anywhere, from the South to the West, from suburbs to small towns...Both are 'Blair Democrats' who supported the use of force in Iraq and advocate a tough-minded internationalism in foreign relations. Both have strong centrist records of support for fiscal discipline, middle-class tax cuts and work-based welfare reform." </P>
 <P>That leaves anyone who not only wants to see Bush and Cheney kicked out of office, but an end to the policies they promoted with very little choice at all.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

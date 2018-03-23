@@ -6,25 +6,25 @@ Voices from Socialism 2006
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>Voices from Socialism 2006</b></font><p>
 <font face="Arial, Helvetica, sans-serif" size="2">June 30, 2006 | Page 7</font><p>
@@ -142,12 +142,12 @@ This is certainly the opposite of the view that the 1917 revolution was a coup, 
 But it's important also to remember the point made by Leon Trotsky in his telling of the story of the revolution--that no action, no matter how unplanned, is ever entirely spontaneous. Many of those key individuals who took the initiative to begin the defense of Petrograd were Bolsheviks--and lying behind their actions were years of experience as socialists and leaders of working class struggles.<p>
 Thus, the ultimate tribute to Lenin and the years he devoted to building the Bolshevik Party so that it would be a party of leaders, rooted in every struggle, is that though Lenin was in hiding and days behind the times in learning about the Kornilov threat, when his urgent letters finally arrived in Petrograd, the Bolsheviks had responded exactly as he recommended.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

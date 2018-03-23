@@ -6,25 +6,25 @@ Occupation, resistance...only in outer space
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>Occupation, resistance...only in outer space</b></font><p>
 <font face="Times New Roman, Times, serif" size="2"><b>Review by Adam Turl</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | November 10, 2006 | Page 9</font><p>
@@ -49,12 +49,12 @@ If the show were set on Earth, it wouldn't have been made.<p>
 Last season, after the colonists settled on New Caprica, before the occupation, Galen Tyrol was leading a strike. He rallied workers with this speech: "There is a time when the operation of the machine becomes so odious, makes you so sick at heart, that you can't take part; you can't even passively take part, and you've got to put your bodies upon the gears and upon the wheels, upon the levers, upon all the apparatus, and you've got to make it stop. And you've got to indicate to the people who run it, to the people who own it, that unless you're free, the machine will be prevented from working at all!"<p>
 It is--word for word--Mario Savio's speech from the steps of Sproul Hall on December 2, 1964--during the Berkeley free speech movement. If the producers of <i>Battlestar</i> decided to use their shows' machinery to weigh in on the war, they deserve the credit.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

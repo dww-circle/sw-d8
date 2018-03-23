@@ -6,25 +6,25 @@ Autopsy of the American Dream
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="5"><b>Autopsy of the American Dream</b></font></P>
 <p><font face="Arial, Helvetica, sans-serif" size="2">September 17, 2004 | Pages 6 and 7</font></P>
@@ -105,12 +105,12 @@ Autopsy of the American Dream
 <P><font face="Times New Roman, Times, serif" size="3">THE WORSENING conditions facing working people in the U.S. are only discussed superficially in mainstream political debate--especially during the 2004 presidential campaign. While Democrats hammer George W. Bush for a terrible performance on jobs, there's an underlying bipartisan consensus shaped by the corporate backers of both parties--which is why significant numbers of Democrats in Congress backed Bush's tax cuts.</P>
 <P>So don't expect Democrats to raise proposals for a government-funded jobs creation program, an increase in the minimum wage big enough to lift millions out of poverty, or a nationalized, universal health care system. Fortunately, the <I>State of Working America </I>provides an invaluable tool for those who do want to expose the endless attacks on the working-class majority--and to organize to do something about it.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

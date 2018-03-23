@@ -6,25 +6,25 @@ El movimiento obrero y el tema de la inmigraci&oacute;n
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">&iquest;Retirar&aacute;n los sindicatos su apoyo a la amnist&iacute;a?</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>El movimiento obrero y el tema de la inmigraci&oacute;n</b></font><p>
@@ -49,12 +49,12 @@ Lo ir&oacute;nico es que, mientras un l&iacute;der sindical liberal como Stern e
 "Esta propuesta es equivalente a la servidumbre contractual sancionada por el gobierno, que pondr&aacute; los derechos de los trabajadores en manos de los patrones", escribi&oacute; Hoffa respondiendo una propuesta anterior. "Hist&oacute;ricamente, los PTT han solo conllevado al abuso de los trabajadores y a convertir trabajos buenos de tiempo completo en trabajos temporales de bajo sueldo y con malas condiciones de trabajo".<p>
 Hoffa se queda corto y no llega a apoyar la amnist&iacute;a. Pero refleja el hecho de que millones de trabajadores inmigrantes siguen moviliz&aacute;ndose. Y en cuanto a decidir la posici&oacute;n del movimiento obrero sobre los asuntos de inmigraci&oacute;n se refiere, esto es lo que m&aacute;s importa.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

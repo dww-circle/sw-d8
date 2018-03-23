@@ -6,25 +6,25 @@ Why is Kerry running such a lame campaign?
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="5"><b>Why is Kerry running such a lame campaign?</b></font></P>
 <P><font face="Times New Roman, Times, serif" size="2"><b>By Alan Maass</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | September 24, 2004 | Page 7</font></P>
@@ -44,12 +44,12 @@ Why is Kerry running such a lame campaign?
 <P>Kerry and this bunch may not be "trying to lose." But they certainly don't want to win so badly that they are willing to upset the Washington status quo.</P>
 <P>As left-wing commentator Steve Perry put it, "Given the choice between winning what might prove an unruly victory and running yet another me-too campaign that will likely lose (but without upsetting their real base, which consists largely of the same funding sources as the Republicans), they take the second path every time. The Democrats are not stupid. They are cynical. They have no interest in changing the rules of the game, and toward that end, they are even more loath than Republicans to invite new people into the 'process.'"</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

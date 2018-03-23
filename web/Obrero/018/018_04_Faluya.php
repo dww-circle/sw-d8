@@ -6,25 +6,25 @@ Carnicer&iacute;a en Faluya
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Ciudad destrozada para amedrentar al resto de Irak</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Carnicer&iacute;a en Faluya</b></font><p>
@@ -42,12 +42,12 @@ Como cuando un <i>marine</i> estadounidense fue filmado matando un a preso iraqu
 Son horrores como estos lo que explica por qu&eacute; EE.UU. puede ser capaz de ganar batallas como estas usando un poder&iacute;o abrumador, pero no significa que est&eacute; ganado la guerra--pues n&uacute;meros mayores de iraqu&iacute;es comunes se van uniendo a la resistencia dado el odio que se ha ganado EE.UU. y su gobierno de titeres iraqu&iacute;es. <p>
 Cada d&iacute;a que EE.UU. controla a Irak produce m&aacute;s atrocidades, cr&iacute;menes de guerra y la opresi&oacute;n de todo un pueblo. &iexcl;Tenemos que exigir un alto a la ocupaci&oacute;n ahora!<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

@@ -6,25 +6,25 @@ Oil-for-food witch-hunt
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">British antiwar politician testifies against...</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Oil-for-food witch-hunt </b></font><p>
@@ -41,12 +41,12 @@ Zureikat acknowledges that he sold Iraqi oil to international companies--as a sm
 Galloway says that he never had any connection to Iraqi oil sales--and points out that no politician or newspaper has ever presented any evidence that he profited from them. "Believe me, if Saddam Hussein or anybody else had ever given me the huge sums of money that these contracts generated, you would already have the check in your hand," Galloway told Britain's <i>Independent </i>newspaper. "You would already have my bank account details. The United States security services would have provided you with all of that."<p>
 Galloway denounced the Senate committee--chaired jointly by right-wing Republican Sen. Norm Coleman (R-Minn.) and Democrat Sen. Carl Levin (D-Mich.)--for issuing a report before ever interviewing him, calling them "lickspittles" for the Bush administration who defend the U.S. war on Iraq.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

@@ -6,25 +6,25 @@ Swelling fortunes for the super-rich
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">While workers struggle to get by...</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Swelling fortunes for the super-rich </b></font><p>
@@ -43,12 +43,12 @@ As journalist Lila Rajiva pointed out, the Gates' $100 million donation to comba
 Meanwhile, U.S. workers are getting squeezed to boost the profits that created the billionaires' club. Some 24.5 percent of all workers in the U.S. are paid poverty-level wages--a figure that's actually increased<i> </i>as the recovery has continued. "The major development in the labor market in recent years has been the stunning divergence between rapidly rising productivity without a parallel rise in wages," the Economic Policy Institute (EPI) reported last month.<p>
 Which means that accumulating even the most modest kinds of wealth--a house, for example--is out of the reach of tens of millions in the U.S. "[S]ome 30 percent of households had net worth below $10,000, and 17 percent had zero or negative net worth," the EPI noted. "In short, in 21st century America, wealth begets wealth, and those without wealth find it farther out of reach."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

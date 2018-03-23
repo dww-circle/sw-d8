@@ -6,25 +6,25 @@
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">El reducido debate encubre el apoyo bipartidista al desarrollo del poder estadounidense</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>&iquest;Est&aacute;n el Partido Dem&oacute;crata con el movimiento contra la guerra?</b></font><p>
@@ -59,12 +59,12 @@ Confiar en el Partido Dem&oacute;crata para poner las condiciones del debate es 
 Si el movimiento contra la guerra quiere detener la ocupaci&oacute;n, tenemos que organizar una oposici&oacute;n independiente de los dem&oacute;cratas y de sus c&iacute;nicas maniobras. Tenemos que continuar exigiendo la inmediata y total retirada de todo el personal estadounidense en Iraq y en la regi&oacute;n.<p>
 <i>Esta traducci&oacute;n del art&iacute;culo original, que apareci&oacute; por primera vez en ingl&eacute;s en</i> Socialist Worker, <i>se puede encontrar en la p&aacute;gina de Web de <a href="http://www.rebelion.org" target="_blank">www.rebelion.org</a>. Este art&iacute;culo fue traducido para <a href="http://www.rebelion.org" target="_blank">Rebelion.org</a> por Felisa Sastre.</i><p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

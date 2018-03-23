@@ -6,25 +6,25 @@ Cruel cost of Bush's tax cuts
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4">Veterans denied health care</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Cruel cost of Bush's tax cuts</b></font></P>
@@ -43,12 +43,12 @@ Cruel cost of Bush's tax cuts
 <P>And like many states, Colorado is cutting back even more to close a $809 million budget deficit. Last week, the state's governor signed a bill that will drop legal immigrants from Colorado's Medicaid program. Aleksandr Nukhman, a 79-year-old Russian Jew who depends on Medicaid to cover radiation treatment for his prostate cancer, fainted when he heard the news that he would be cut off.</P>
 <P>The truth is that there's no reason for these health care nightmares--for veterans or anyone else. The resources are there--by taxing the rich to pay for a national system that guarantees health care to every person in the U.S. But the politicians would rather reward their rich friends, even if it means pain, suffering and death for the disabled, elderly and poor.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

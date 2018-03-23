@@ -6,25 +6,25 @@ A challenge to the status quo
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Seattle activist launches independent Senate campaign</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>A challenge to the status quo</b></font><p>
@@ -48,12 +48,12 @@ Other community leaders agree that Dixon isn't a "spoiler"--and is, in fact, a v
 Speaking at Dixon's press conference, Dustin Washington, program director of the American Friends Service Committee's Cross-Cultural Youth Leadership Development and Action Program, brought the crowed to its feet when he declared, "The majority of the Democratic Party and Republican Party have proven themselves unfit to govern...Based on Cantwell's record of supporting war, it is clear that it is time for a change...It's time to send Maria Cantwell back into the private sector, and it's time to elect Aaron Dixon as our next United States senator."<p>
 <i>For more information about Aaron Dixon's campaign, go to <a href="http://www.aarondixon.org" target="_blank">www.aarondixon.org</a> on the Web.</i><p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

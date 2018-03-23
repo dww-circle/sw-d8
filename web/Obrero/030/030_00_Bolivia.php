@@ -6,25 +6,25 @@ La Bolivia de Evo Morales
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4"><font face="Times New Roman, Times, serif" size="4">El nuevo panorama de la lucha</font></font><br>
 <font face="Times New Roman, Times, serif" size="5"><b><font face="Times New Roman, Times, serif" size="5"><b>La Bolivia de Evo Morales</b></font></b></font><p>
@@ -61,12 +61,12 @@ Adem&aacute;s, cuando el Ministro de Hidrocarburos Andr&eacute;s Soliz Rada anun
 Al fin del noveno mes de su gesti&oacute;n, Morales asegur&oacute; consecutivamente que el gobierno respetar&aacute; la propiedad privada y dar&aacute; vueltas para el capital internacional y poco para cumplir con sus obligaciones con los movimientos sociales, obreros, y pobres que se subieron al poder.<p>
 La lucha larga de los mineros de Huanuni para preservar los recursos minerales de Bolivia y su reciente &eacute;xito con la destituci&oacute;n de Villarroel muestra que presi&oacute;n y lucha popular de abajo ser&aacute; necesaria para mantener el gobierno firme en sus prometidos y enfrentar el sistema capitalista que depende de la miseria de los obreros y pobres Bolivianos para su progreso.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

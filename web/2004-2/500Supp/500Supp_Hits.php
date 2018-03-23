@@ -6,25 +6,25 @@ Greatest hits of Socialist Worker
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="5"><b>Greatest hits of Socialist Worker</b></font></P>
 
@@ -243,12 +243,12 @@ Greatest hits of Socialist Worker
 <font face="Times New Roman, Times, serif" size="3"><P>Thousands of gays and lesbians lined up at City Hall in San Francisco when Mayor Gavin Newsom announced that the city would issue marriage licenses to same-sex couples, in defiance of state law. "A lot of us had already said 'I do' in our own private ceremonies years earlier," said Kathryn Lybarger, describing the scene. "But the tears coming down this time came from the understanding that we were saying 'I do' together, for the first time in history. My friend James said it felt something like the end of apartheid, or the Berlin Wall coming down."</P>
 <P>What the events in San Francisco and elsewhere show is the huge potential for activism around the issue of gay marriage--and support among ordinary people who clearly understand that this is a civil rights issue. <font face="Arial, Helvetica, sans-serif" size="3" color="990000"><b>| <a href="../../2004-1/488/488_05_SeperateUNequal.shtml">Read the full article</a></b></font></P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

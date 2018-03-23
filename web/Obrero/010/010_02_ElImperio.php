@@ -6,25 +6,25 @@ El imperio se quema los dedos
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4">Las aventuras militares de EE.UU. instigan violencia alrededor del mundo</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>El imperio se quema los dedos</b></font></P>
@@ -48,12 +48,12 @@ El imperio se quema los dedos
 <P>Quien quiera detener al imperialismo estadounidense tiene que entender que estos ataques s&oacute;lo retrasan la lucha porque le proveen a Washington un pretexto para ensanchar sus guerras. Pero esto no cambia el hecho de que los l&iacute;deres de EE.UU son los responsables por el "blowback" contra el imperio por los cr&iacute;menes que cometen en nuestro nombre.</P>
 <P>Los que nos oponemos a los guerreristas de Washington tenemos que mantenernos firmes en la postura que afirma que la soluci&oacute;n es que EE.UU. se vaya de Irak y del Medio Oriente.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

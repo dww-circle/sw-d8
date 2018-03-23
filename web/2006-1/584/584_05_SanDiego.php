@@ -6,25 +6,25 @@ San Diego speaks out: "&iexcl;S&iacute; se puede!"
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>San Diego speaks out: "&iexcl;S&iacute; se puede!"</b></font><p>
 <font face="Arial, Helvetica, sans-serif" size="2">April 14, 2006 | Page 5</font><p>
@@ -40,12 +40,12 @@ The crowd was full of people, communities and organizations that had come to the
 A large number of marchers were young people, who, despite what the conservative media would have people think, knew exactly why they were walking out of classes a week earlier. "Of course I know why we're here," one sixth-grader from St. Jude Academy said. "There are people being discriminated against and made into criminals. They're my mom, my dad, my cousins. They're me, they're my future!" Her classmate added, "At school, the rich teach us about their democracy. Here, we show them ours." <p>
 In the conservative, military town of San Diego, activists are often asked whether working people could ever really put aside their differences and make real change. For anybody still wondering this, they need only open their windows and listen to the voices still ringing through the streets of San Diego: "&iexcl;S&iacute;, se puede!"<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

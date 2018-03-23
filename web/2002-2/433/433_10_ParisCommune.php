@@ -6,25 +6,25 @@ The Paris Commune
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Arial, Helvetica, sans-serif" size="2"><b>THE MEANING OF MARXISM</b></font><BR>
 <font face="Times New Roman, Times, serif" size="4">The first glimpse of a society run by workers</font><BR>
@@ -42,12 +42,12 @@ The Paris Commune
 <P>He elaborated on what made the Commune so distinct. First, elected delegates to the commune were workers themselves, "revocable at short terms" and paid at "workman's wages." Moreover, the Commune wasn't set up to be a parliamentary talk shop, but "a working&#133;body, executive and legislative at the same time." The police--under the bourgeoisie a special force standing apart from society and enforcing the interests of the rich--would now be "turned into the responsible, and at all times revocable, agent of the Commune."</P>
 <P>Much has been made about the fact that Marx and Engels used the term "dictatorship of the proletariat" to refer to a workers' government--as if they meant rule by an individual or a minority. Engels answered this charge best when he said: "Of late, the Social-Democratic philistine has once more been filled with wholesome terror at the words: Dictatorship of the Proletariat. Well and good, gentlemen, do you want to know what this dictatorship looks like? Look at the Paris Commune. That was the Dictatorship of the Proletariat." </P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

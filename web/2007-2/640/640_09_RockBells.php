@@ -6,25 +6,25 @@ Which way forward for hip-hop?
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>Which way forward for hip-hop?</b></font><p>
 <font face="Times New Roman, Times, serif" size="2"><b>Review by Leia Petty</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | August 17, 2007 | Page 9</font><p>
@@ -44,12 +44,12 @@ Rage Against the Machine's set didn't disappoint. Favorites such as "Guerilla Ra
 Immortal Technique, introduced as the "Che Guevara of hip-hop," performed "Bin Laden" with the crowd singing along: "Bin Laden didn't blow up the projects/It was you/Tell the truth." This wasn't the only song the crowd joined in on. Mos Def and Talib Kweli, bringing Black Star back to life, united for songs "Definition" and "Respiration." Public Enemy performed "Fight the Power" with intensity and conviction and, later in the set, brought Anthrax guitarist Scott Ian on stage for "Bring Tha Noize."<p>
 The second stage showcased underground artists Mr. Lif, the Living Legends crew, and MF Doom. And if they represent the future of hip-hop, the main stage was a reminder that they are standing on the shoulders of giants.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

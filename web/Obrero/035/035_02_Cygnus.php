@@ -6,25 +6,25 @@ Una victoria con lecciones para el movimiento laboral
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>Una victoria con lecciones para el movimiento laboral</b></font><p>
 <font face="Times New Roman, Times, serif" size="2"><b>Por Lee Sustar y Orlando Sep&uacute;lveda</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | octubre-noviembre de 2007 | p&aacute;gina 2</font><p>
@@ -41,12 +41,12 @@ Adem&aacute;s, activistas pro-inmigrante locales estuvieron listos para responde
 Tambi&eacute;n, los obreros de Cygnus demostraron que la organizaci&oacute;n de un sindicato no necesita ser la pesadilla burocr&aacute;tica, como lo son la mayor&iacute;a de esfuerzos organizativos sindicales por la resistencia del patr&oacute;n. De hecho, ellos mostraron qu&eacute; la victoria es posible cuando los trabajadores toman la iniciativa de la huelga.<p>
 "El movimiento laboral tiene mucho que aprender de los trabajadores [de Cygnus], porque no podr&aacute; avanzar se deja a los trabajadores inmigrantes de lado," dijo Mart&iacute;n Unzueta de Chicago Workers Collaborative, que sirvi&oacute; como consejero a los huelguistas, "los trabajadores inmigrantes est&aacute;n listos para organizar."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

@@ -6,25 +6,25 @@ Gonzales' new powers to speed up executions
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>Gonzales' new powers to speed up executions</b></font><p>
 <font face="Times New Roman, Times, serif" size="2"><b>By Alan Maass</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | August 24, 2007 | Page 5</font><p>
@@ -38,12 +38,12 @@ The Patriot Act reauthorization transferred the power to approve fast-tracking f
 That won't come as any surprise to opponents of the death penalty. When he was counsel to the Texacutioner, then-Texas Gov. George Bush, Gonzales reviewed every execution before his boss signed off on the order, and he never found a single reason--not sleeping lawyers, not claims of innocence, not the barbarism of lethal injection--to delay sending men and women to their deaths.<p>
 The Justice Department says it will implement the new regulation in a month's time. As Kathryn Kase, co-chair of the death-penalty committee for the National Association of Criminal Defense Lawyers, told the <i>LA Times, </i>"This is the Bush administration throwing down the gauntlet and saying, 'We are going to speed up executions.'"<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

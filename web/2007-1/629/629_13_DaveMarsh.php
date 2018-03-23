@@ -6,25 +6,25 @@ How hip-hop got blamed for Imus
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>How hip-hop got blamed for Imus</b></font><p>
 <font face="Arial, Helvetica, sans-serif" size="2">April 27, 2007 | Page 13</font><p>
@@ -94,12 +94,12 @@ The anti-rock crowd was basically a cat's paw for James Dobson's Focus on the Fa
 That's the history of the thing, and the attack hasn't let up since, despite the fact that the major labels all have lyric committees now--and because of that, I can't remember the last time a really gangster record was put out by a major record label.<p>
 So I think that's the history. Really, what I should have given you as an answer is to read <i><a href="http://www.amazon.com/gp/redirect.html?ie=UTF8&amp;location=http%3A%2F%2Fwww.amazon.com%2FCant-Stop-Wont-History-Generation%2Fdp%2F0312425791%3Fie%3DUTF8%26s%3Dbooks%26qid%3D1177265024%26sr%3D8-1&amp;tag=socialistwork-20&amp;linkCode=ur2&amp;camp=1789&amp;creative=9325" target="_blank">Can't Stop Won't Stop</a></i>, by Jeff Chang, because it is, and probably will remain for quite a long time, the definitive history of hip-hop--of the early years in particular. It's the best music book that I've read in more than a decade.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

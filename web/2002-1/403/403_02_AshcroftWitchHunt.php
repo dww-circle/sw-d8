@@ -6,25 +6,25 @@ Ashcroft's witch-hunt
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4">Justice Department targets attorney</font><BR>
 <font face="Times New Roman, Times, serif" size="5"><b>Ashcroft's witch-hunt</b></font></P>
@@ -37,12 +37,12 @@ Ashcroft's witch-hunt
 <P>It's no surprise that the feds focused on Stewart. She has a long history of challenging government repression and representing political defendants in high-profile trials. "The prosecution here is designed to intimidate criminal defendants, and she's a criminal defendant," Michael Letwin, president of the Association of Legal Aid Attorneys/United Auto Workers, told <I>Socialist Worker</I>. "The government has targeted someone on the extreme, radical end. If they prosecute her, it's a warning to all lawyers and all dissenters."</P>
 <P>After arraignment on April 9, Stewart was released on half a million dollars bail. Outside the courthouse, she told reporters: "The government has to put up or shut up--and I don't think they can put up&#133;I know a good fight when I see it, and I think this will be a very good fight. [Hopefully, it will be] a touchstone case that points out the limits the government can go through in prosecuting people they don't like."</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

@@ -6,25 +6,25 @@ Embusteros, ladrones y estafadores
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="5"><b>Embusteros, ladrones y estafadores</b></font></P>
 <p><font face="Arial, Helvetica, sans-serif" size="2">8 de febrero de 2002 | P&aacute;gina 2</font></p>
@@ -38,12 +38,12 @@ Embusteros, ladrones y estafadores
 <P>La pandilla de Bush puede estar en la silla caliente. Pero sus "adversarios" en el Partido Dem&oacute;crata tambi&eacute;n tienen mucho que esconder. Enron reparti&oacute; fondos para las campa&ntilde;as de casi la mitad de los miembros del Congreso--inclusive 100 Dem&oacute;cratas--y su ej&eacute;rcito de cabilderos abarcaba el espectro pol&iacute;tico de Washington, desde el jefe anterior de la Coalici&oacute;n Cristiana Ralph Reed hasta Michael Lewan, el anterior jefe de personal del Senador Dem&oacute;crata de Connecticut Joe Lieberman.</P>
 <P>Casi todo el establecimiento pol&iacute;tico de los EE.UU. puede ser vinculado a Enron de una forma u otra. El esc&aacute;ndalo de Enron ha expuesto todo lo corrupto y cruel del sistema capitalista.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

@@ -6,25 +6,25 @@ La izquierda boliviana enfrenta un momento estrat&eacute;gico dif&iacute;cil
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Carta desde Bolivia</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>La izquierda boliviana enfrenta un momento estrat&eacute;gico dif&iacute;cil</b></font><p>
@@ -63,12 +63,12 @@ Mejor dicho, tenemos que aprender como construir una organizaci&oacute;n revoluc
 En la presente coyuntura, la participaci&oacute;n electoral, en forma independiente o en un frente &uacute;nico, puede ayudar a la construcci&oacute;n de tal instrumento, siempre que &eacute;sta sean considerada como un medio, y no un fin en si misma.<p>
 Tambi&eacute;n contribuir&aacute; al crecimiento de los movimientos sociales en s&iacute;, y dar&aacute; oportunidades para precisar las propuestas, y la visi&oacute;n de la sociedad pos-neoliberal, que tienen los distintos grupos que componen el movimiento social. Y de estos di&aacute;logos y debates vendr&aacute;n los militantes que llegar&aacute;n a conformar un verdadero "instrumento pol&iacute;tico" de los trabajadores y trabajadoras--ind&iacute;genas, campesinos, urbanos, regulares, eventuales, y desempleados--de Bolivia.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

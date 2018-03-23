@@ -6,25 +6,25 @@ Queremos una alternativa real
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Arial, Helvetica, sans-serif" size="2"><b>LO QUE PENSAMOS</b></font><br>
 <font face="Times New Roman, Times, serif" size="4">En las elecciones presidenciales del 2004</font><br>
@@ -42,12 +42,12 @@ Queremos una alternativa real
 <P>Nader y Camejo est&aacute;n llevando a cabo una campa&ntilde;a que desaf&iacute;a no s&oacute;lo a Bush y los Republicanos, sino tambi&eacute;n al otro partido de las corporaciones y de los belicistas de Washington--el Partido Dem&oacute;crata. Nader y Camejo apoyan la terminaci&oacute;n de la ocupaci&oacute;n en Irak, la revocaci&oacute;n del PATRIOT Act, el derecho a asistencia m&eacute;dica para todos, el derecho a casarse de los gays y lesbianas, y el derecho a obtener licencias de conducir para todos los inmigrantes.</P>
 <I><P>Obrero Socialista </I>insta a sus lectores a votar por Nader y Camejo el d&iacute;a de las elecciones, y al d&iacute;a siguiente a unirse a la lucha por nuestras metas--para que regresen las tropas de Irak y Afganist&aacute;n, y para que se nos haga justicia en nuestras comunidades y en nuestros lugares de empleo.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

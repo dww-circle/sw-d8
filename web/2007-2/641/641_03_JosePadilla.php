@@ -6,25 +6,25 @@ The torture of Jose Padilla
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>The torture of Jose Padilla</b></font><p>
 <font face="Arial, Helvetica, sans-serif" size="2">August 24, 2007 | Page 3</font><p>
@@ -58,12 +58,12 @@ Even if the form was his, Peter Margulies, a law professor at Roger Williams Uni
 As the <i>Washington Post's </i>Andrew Cohen noted, "For the government, it's a verdict that brings a huge sigh of relief. Now the feds don't have to worry about what to do with Padilla, the once-upon-a-time 'dirty bomber.' Now they can declare victory, even though the people who have followed this case closely know that Padilla ultimately was convicted on evidence that federal authorities did not believe amounted to a crime when it was gathered back before 2001...<p>
 "For the defense, it's further proof that if you can convince an American jury that a man in the dock had anything to do with al-Qaeda, you can pretty much bank on a conviction, no matter how tenuous the evidence...If this is a grand victory in the war on terror, I do not look forward to seeing what a defeat looks like."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

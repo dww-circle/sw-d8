@@ -6,25 +6,25 @@ Vieques: Marina de EEUU derrotada
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="5"><b>Vieques: Marina de EEUU derrotada</b></font></P>
 <P><font face="Times New Roman, Times, serif" size="2"><b>por Roberto Barreto</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | 18 de abril de 2003 | P&aacute;gina 4</font></P>
@@ -42,12 +42,12 @@ Vieques: Marina de EEUU derrotada
 <P>Su desmantelamiento parcial disminuye la capacidad de Estados Unidos de utilizar a Puerto Rico como trampol&iacute;n para intervenir militarmente en Am&eacute;rica Latina y otras partes del mundo. Ahora, siguiendo el ejemplo de Vieques, se debe organizar la lucha para su cierre total y la devoluci&oacute;n de las tierras a Puerto Rico. </P>
 <P>Para aquellos que luchan contra el militarismo, ya sea por cerrar la base en Okinawa, o aquellos que quieren cerrar la Escuela de las Am&eacute;ricas o tratan de detener la guerra y la ocupaci&oacute;n de Irak, la lecci&oacute;n de Vieques es de gran relevancia, pues demuestra que la gente com&uacute;n puede organizarse efectivamente para derrotar los planes guerreristas del imperio m&aacute;s poderoso del mundo.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

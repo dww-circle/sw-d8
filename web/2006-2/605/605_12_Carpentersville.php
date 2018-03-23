@@ -6,25 +6,25 @@ Rallying against bigotry in Illinois
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>Rallying against bigotry in Illinois</b></font><p>
 <font face="Times New Roman, Times, serif" size="2"><b>By Andrew Freund</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | October 13, 2006 | Page 12</font><p>
@@ -43,12 +43,12 @@ The anti-immigrant ordinance is modeled after a recent law in Hazleton, Pa. Fort
 Meanwhile, the Minutemen in the Chicago area are trying to convince local officials to train police to "identify" undocumented immigrants--and to use school records to uncover residents from immigrant families living in overcrowded homes.<p>
 The Carpentersville village board is trying to reserve a local high school to hold their next meeting so the measure can be voted on. Some board members are opposed to the proposed law, but it will take more demonstrations like this one to drive the message home about these anti-immigrant ordinances: "&iexcl;Aqu&iacute; estamos, y no nos vamos!" "We are here, and we are not leaving!"<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

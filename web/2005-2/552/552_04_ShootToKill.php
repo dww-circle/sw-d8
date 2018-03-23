@@ -6,25 +6,25 @@ His only crime was to leave his house for work
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Shoot-to-kill victim in London</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>His only crime was to leave his house for work</b></font><p>
@@ -50,12 +50,12 @@ The government's only resort is to intensify its propaganda about stopping the "
 "The usual self-congratulatory contrast between 'our' civilization and 'their' barbarism has set the stage for a cycle of moralistic inquiries into the motivations of suicide bombers and the supposed duty of 'good' Muslims to restrain 'bad' ones," Saree Makdisi, a UCLA professor teaching in London this summer, wrote in an article for the <i>Los Angeles Times</i>. "Few have noticed that suicide bombing is merely a tactic used by those who lack other means of delivering explosives. Fewer still seem to notice that what happened in London is what occurs every time a U.S. or British warplane unloads its bombs on an Iraqi village...<p>
 "American and British media have devoted hours to wondering what would drive a seemingly normal young Muslim to destroy himself and others. No one has paused to ask what would cause a seemingly normal young Christian or Jew to strap himself into a warplane and drop bombs on a village, knowing full well his bombs will inevitably kill civilians (and, of course, soldiers). Because 'our' way of killing is dressed up in smart uniforms and shiny weapons and cloaked in the language of grand causes, we place it on a different moral plane than 'theirs.'"<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

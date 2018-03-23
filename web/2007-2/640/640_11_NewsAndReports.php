@@ -6,25 +6,25 @@ News and reports
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>News and reports</b></font><p>
 <font face="Arial, Helvetica, sans-serif" size="2">August 17, 2007 | Pages 10 and 11</font><p>
@@ -68,12 +68,12 @@ The Elm City Resident Card program is the first of its kind nationally, and is a
 The ID card is considered by many to be a major victory in the fight for immigrant rights. The card allows its holders to access city services like the library and parks and recreation programs, and can also act as a debit card at parking meters and local businesses. It is an accepted form of ID at local banks and makes its holders less vulnerable to police by allowing them to identify themselves.<p>
 The ID card program has survived a series of attacks, beginning immediately after it was approved with a series of local raids in which 35 people were detained by federal agents. Southern Connecticut Citizens for Immigration Control, a local affiliate of the anti-immigrant Minutemen, also filed a Freedom of Information Act request for the personal information of cardholders to intimidate those who wished to apply. In spite of this pressure, the IDs were distributed on schedule.<p>
 Activists from Unidad Latina en Acci&oacute;n, the International Socialist Organization, Junta for Progressive Action and others will continue to defend the program against attacks from the federal government and racist groups.<p>
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

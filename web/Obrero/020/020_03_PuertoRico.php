@@ -6,25 +6,25 @@
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Arial, Helvetica, sans-serif" size="2"><b>PUERTO RICO</b></font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>"Mi hijo no era un perro, no se merec&iacute;a eso"</b></font><p>
@@ -47,12 +47,12 @@ El pasado 20 de febrero, los residentes de Manuel A. P&eacute;rez indignados y c
 Esta protesta constituye un ejemplo importante para otras comunidades que sufren atropellos a causa de los operativos de la polic&iacute;a. Debemos organizarnos para combatir la impunidad policiaca, y para defender nuestros derechos civiles. La clase trabajadora se debe unir para luchar por la erradicaci&oacute;n de los discriminatorios programas de Mano Dura.<p>
 La discriminatoria pol&iacute;tica de perseguir y criminalizar a los pobres debe cesar. En su lugar hacen falta servicios sociales adecuados. Menos dinero para polic&iacute;as y m&aacute;s fondos para mejores escuelas, viviendas y hospitales. Sobre todo debemos exigir del gobierno un intento serio por eliminar la pobreza, lo que no se hace con programas cosm&eacute;ticos, sino creando empleos y aumentando los salarios significativamente. En lugar de fomentar la marginalidad, se debe fomentar una redistribuci&oacute;n de las riquezas.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

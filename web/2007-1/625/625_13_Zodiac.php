@@ -6,25 +6,25 @@ Not your average serial killer movie
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>Not your average serial killer movie</b></font><p>
 <font face="Times New Roman, Times, serif" size="2"><b>Review by Joe Allen</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | March 30, 2007 | Page 13</font><p>
@@ -47,12 +47,12 @@ Elements of this have their origin in the Zodiac case. <i>Dirty Harry,</i> the 1
 Ironically, <i>Zodiac </i>is in many ways the anti-serial killer film. There is no evil genius but a compulsive killer who gets away because of the bigotry, incompetence and competition of the cops. The film is well worth seeing. It is made in a style reminiscent of films of the 1970s rather than the gore and overblown special effects that followed.<p>
 If there is one flaw in the film, it's the need to point the finger at the alleged killer when the identity remains as unclear today as it was nearly four decades ago. Go and enjoy the unsolved mystery.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

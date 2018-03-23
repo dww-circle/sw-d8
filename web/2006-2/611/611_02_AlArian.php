@@ -6,25 +6,25 @@ They want him to rot behind bars
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Added sentence for Al-Arian</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>They want him to rot behind bars</b></font><p>
@@ -41,12 +41,12 @@ The government's anti-Muslim bias has been on display in its recent treatment of
 And one of Al-Arian's attorneys says that Assistant U.S. Attorney Gordon Kromberg responded to a request to delay Al-Arian's transfer to Virginia until after the Muslim holy month of Ramadan by saying, "If they can kill each other during Ramadan, they can appear before the grand jury--all they can't do is eat before sunset. "I believe Mr. Al-Arian's request is part of the attempted Islamization of the American Justice System," Kromberg reportedly said. "I am not going to put off Dr. Al-Arian's grand jury appearance just to assist in what is becoming the Islamization of America."<p>
 Now, Al-Arian has been given an additional 18-month sentence--which he will be forced to serve out on top of the remaining 174 days from his original sentence unless he agrees to testify. He could now remain in prison until November 2008.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

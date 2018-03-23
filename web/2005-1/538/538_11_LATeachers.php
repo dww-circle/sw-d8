@@ -6,25 +6,25 @@ Vote no on UTLA contract
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Old guard leaders negotiate concessionary contract</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Vote no on UTLA contract</b></font><p>
@@ -40,12 +40,12 @@ In addition, the contract institutionalizes a series of practices that attempt t
 Shamefully, the outgoing union leadership is trying to sell the agreement dishonestly. By adding the years 2002-03--actually part of the previous contract--and by claiming that increases in health care costs are part of a "salary increase," outgoing UTLA President John Perez is claiming that the "total compensation increase" in the agreement is 10.1 percent.<p>
 The "no" vote campaign will be the first test of the new United Action leadership, elected as a fighting alternative to the Perez leadership. "The membership has deserved more for a long time," said United Action's Washington. "But union leaders can't do it alone. It's time, now, for the members of UTLA to mobilize and organize if they indeed want something better."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

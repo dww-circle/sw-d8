@@ -6,25 +6,25 @@ Those who dare to resist empire
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>Those who dare to resist empire</b></font><p>
 <font face="Arial, Helvetica, sans-serif" size="2">August 24, 2007 | Page 9</font><p>
@@ -50,12 +50,12 @@ Pilger contrasts the case of the Chagos Islanders with Britain's war to recaptur
 The heroes in Pilger's book are the ordinary people who continue to fight against the injustices he describes, even when the odds seem insurmountable--the Chagos Islanders who continue to demand their rights, a Palestinian doctor in Gaza who performs plastic surgery on children disfigured by plastic bullets, an Israeli father whose young daughter was killed in a suicide bombing but who now campaigns against the Israeli occupation, and many others.<p>
 "Once I believed," writes Pilger, "that if only those with power and responsibility had seen what I had seen, the horror and degradation of war, they would act otherwise. That was naive, for only the power of popular dissent changes their course, or rids us of them." Pilger's reporting in<i> Freedom Next Time</i> is invaluable for the light in throws on the crimes of the powerful and can only help to strengthen the popular dissent that is needed to stop them.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

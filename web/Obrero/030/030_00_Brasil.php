@@ -6,25 +6,25 @@ Elecciones 2006 - un primer balance del PSOL
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>Elecciones 2006 - un primer balance del PSOL</b></font><p>
 <font face="Arial, Helvetica, sans-serif" size="2">noviembre-diciembre de 2006</font><p>
@@ -90,12 +90,12 @@ El partido tiene que insistir al m&aacute;ximo en instancias unitarias, y mecani
 19 - La batalla electoral del PSOL y sus resultados  fortaleci&oacute; los elementos m&aacute;s progresivos de la lucha antiimperialista en nuestro continente; esto es,  la vanguardia m&aacute;s consecuente. La que en Venezuela apoya al Ch&aacute;vez y sus medidas progresivas pero que al mismo tiempo,  lucha por la profundizaci&oacute;n del proceso bolivariano y contra la burocratizaci&oacute;n del mismo. A los sectores que en Per&uacute; se diferenciaron del curso adoptado por Humala, la izquierda argentina que enfrenta al gobierno de Kirchner, y en general a todos luchadores anticapitalistas de nuestro continente. El desaf&iacute;o de continuar profundizando las relaciones establecidas por el PSOL a nivel de Am&eacute;rica Latina est&aacute;  colocado ahora con m&aacute;s objetividad y m&aacute;s fuerza a&uacute;n, as&iacute; como con todas las organizaciones socialistas internacionalistas que apoyaron y apoyan el PSOL en Europa y otros continentes  <p>
 Finalmente, nosotros del Movimento de Esquerda Socialista concluimos con este  llamado: Ayude a construir el PSOL. Participe. El MES &eacute;sta a servicio de esta construcci&oacute;n. Por eso llamamos a a todos tambi&eacute;n para la construcci&oacute;n de nuestra corriente. Por eso convidamos los que est&eacute;n de acuerdo con nosotros a sumarse al MES y a construir el PSOL.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

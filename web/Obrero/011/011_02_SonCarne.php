@@ -6,25 +6,25 @@
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4">Padre de un soldado estadounidense muerto en Irak</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>"Son carne de ca&ntilde;&oacute;n"</b></font></P>
@@ -58,12 +58,12 @@
 <P>Alemania instig&oacute; la Segunda Guerra Mundial, y hoy en d&iacute;a--60 o 70 a&ntilde;os despu&eacute;s--todav&iacute;a tienen bases militares norteamericanas. &#191;Va a pasar lo mismo en Irak? Dicen que van a liberar al pueblo, pero &#191;por qu&eacute; mantienen una fuerza polic&iacute;aca norteamericana como una amenaza constante all&iacute;? </P>
 <P>La inmensa mayor&iacute;a de los j&oacute;venes en las fuerzas armadas fueron reclutados enga&ntilde;osamente. Son los primeros en la l&iacute;nea de fuego. Ellos son los primeros que van a combate. Ellos son la carne de ca&ntilde;&oacute;n. Por lo tanto, para la comunidad hispana apoyar la posici&oacute;n anti-guerra es proteger a sus hijos. Est&aacute;n protegiendo a sus seres queridos de ir a morir en guerras absurdas.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

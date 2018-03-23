@@ -6,25 +6,25 @@ What's in the Chicago teachers contract?
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>Chicago teachers clash over tentative deal</b></font><p>
 <font face="Times New Roman, Times, serif" size="2"><b>By Jesse Sharkey, CTU delegate, Senn High School</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | September 1, 2007</font><p>
@@ -38,12 +38,12 @@ With the hour getting late, President Stewart called a vote on the tentative agr
 The room erupted in anger, with delegates shouting for a "roll call" vote or simply standing on their chairs and shaking their fists at the podium. Angry members stormed downstairs to a press conference that Stewart had called and took it over, chanting, stomping on the tentative agreement and even setting it on fire. <a href="http://wgntv.trb.com/" target="_blank">A video posted on the Internet</a> gives a sense of the mood.<p>
 Now, the agreement will go to a vote in the schools, where members will have a chance to reject the tentative deal on September 10.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

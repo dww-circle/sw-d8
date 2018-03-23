@@ -6,25 +6,25 @@ Abandoned again
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Bush administration fails Katrina victims</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Abandoned again</b></font><p>
@@ -65,12 +65,12 @@ She only learned that Leo was safe when she reached Houston. But Annette then fa
 When they were finally evacuated, at least some of the prisoners were taken to a highway bridge, where they were left to sit in the open for hours, watched by armed guards with orders to shoot anyone who tried to escape. Leo suffered from skin infections due to all the time spent in the polluted floodwaters. After the evacuation, it was three days before he was allowed to change clothes.<p>
 Annette said Leo told her he himself saw seven bodies floating in the flooded jail. "The water was so high that if my son didn't know how to swim, he would have died," Annette said. "He said he stepped on a dead body, and was so scared. He said some of the guards were shooting inmates inside the prison. And some who attempted to get way once they were outside were shot to death."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

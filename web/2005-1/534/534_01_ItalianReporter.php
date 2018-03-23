@@ -6,25 +6,25 @@ Italian reporter shot by the U.S.
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Was she targeted?</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Italian reporter shot by the U.S.</b></font><p>
@@ -41,12 +41,12 @@ While this attack captured headlines worldwide, killings by U.S. soldiers in Ira
 Italy's right-wing Prime Minister Silvio Berlusconi immediately pledged that his government would continue to support Washington's occupation. Communications Minister Maurizio Gasparri told one news agency, "The military mission must carry on because it consolidates democracy and liberty in Iraq."<p>
 This defense of the war prompted outrage among ordinary Italians, a large majority of whom are opposed to the U.S. occupation. At a demonstration last month calling for Sgrena's release from captivity, an estimated 500,000 turned out in Rome, carrying signs that read "Free Giuliana" and "Free the Iraqi people." Now, the U.S. attack on Sgrena is sparking a new protests against the U.S. and Berlusconi--with renewed calls for the withdrawal of Italy's 3,000 troops stationed in Iraq.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

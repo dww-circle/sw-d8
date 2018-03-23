@@ -6,25 +6,25 @@ Mensaje a los lectores de Obrero Socialista de Peter Miguel Camejo
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="5"><b>Mensaje a los lectores de <I>Obrero Socialista</I> de Peter Miguel Camejo</b></font></P>
 
@@ -37,12 +37,12 @@ Mensaje a los lectores de Obrero Socialista de Peter Miguel Camejo
 <P>Pero hay una alternativa este a&ntilde;o. Ralph Nader quiere que vuelvan de Irak las tropas de EE.UU. Quiere abolir el PATRIOT Act. Quiere que los ricos y las corporaciones paguen una justa proporci&oacute;n de los impuestos para que podamos reconstruir nuestras escuelas y para que todos tengamos acceso a servicios m&eacute;dicos a nivel nacional. &Eacute;l apoya nuestro derecho a obtener licencias de conducir, irrespectivo de nuestro status inmigratorio.</P>
 <P>Cierto es, &eacute;l no va a ganar en estas elecciones. Pero el sindicato de trabajadores agr&iacute;colas, la UFW de C&eacute;sar Ch&aacute;vez, tampoco gan&oacute; sus primeras huelgas. Lo importante es reconocer que si no comenzamos a votar y a organizarnos ahora en defensa de nuestra comunidad, entonces los Dem&oacute;cratas siempre nos considerar&aacute;n presa segura.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

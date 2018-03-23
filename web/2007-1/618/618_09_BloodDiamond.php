@@ -6,25 +6,25 @@ The vicious legacy of colonialism
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>The vicious legacy of colonialism</b></font><p>
 <font face="Times New Roman, Times, serif" size="2"><b>Review by Cindy Beringer</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | February 9, 2007 | Page 9</font><p>
@@ -46,12 +46,12 @@ One can measure the success of this process in the applause of the representativ
 No diamond miner will receive better wages as a result of the Kimberly Process, or health care, or a chance at a better life. Civil conflicts will continue, and diamonds will be smuggled as long as the system is driven by profits. Not surprisingly, "many within the diamond industry are playing little more than lip service to the Kimberly Process," says Alex Yearsley, one of the leaders in the campaign against "blood" diamonds.<p>
 Meanwhile, the majority of the world's jewels are polished and processed in India by workers in miserable sweatshops earning less than $2 a day. To the estimated 3,000 children breathing the foul air in diamond workshops, conflict-free diamonds are not a huge concern.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

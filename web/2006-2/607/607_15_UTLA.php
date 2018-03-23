@@ -6,25 +6,25 @@ UTLA rejects city takeover
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Los Angeles teachers vote down a deal backed by union leaders</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>UTLA rejects city takeover</b></font><p>
@@ -41,12 +41,12 @@ Meanwhile, UTLA's 47,000 members have been working under an expired contract sin
 As <i>Socialist Worker</i> went to press, a rank-and-file campaign of protests has forced LAUSD to reverse its punitive transfer of popular teacher and UTLA activist Alex Caputo-Pearl out of his school. This victory comes not a moment too soon, as UTLA starts to implement a timeline for a mobilization campaign to win our contract demands.<p>
 Progressive Educators for Action (PEAC), a rank-and-file caucus within UTLA, has been instrumental in pressuring UTLA's reform leadership (supported by PEAC) into moving the campaigns for Alex Caputo-Pearl and our contract forward. We will continue to need this kind of rank-and-file organizing to get our leadership out of the business of cutting deals with politicians and turn UTLA into a fighting union.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

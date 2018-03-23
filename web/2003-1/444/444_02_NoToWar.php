@@ -6,25 +6,25 @@ Students take action
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Arial, Helvetica, sans-serif" size="2"><b>SAY NO TO BUSH'S WAR ON IRAQ</b></font><BR>
 <font face="Times New Roman, Times, serif" size="4">Tens of thousands involved in March 5 protests</font><BR>
@@ -48,12 +48,12 @@ Students take action
 <P>After waiting all afternoon, protesters heard from the National Park Police that they had been denied their right to march to the White House. Dozens of protesters, including author Alice Walker, were arrested trying to cross the police line. As one protester put it, "Why would you deliberately impede the exercise of constitutional rights by a group of grandmothers wearing pink? What are they afraid of?"</P>
 <I><P>Candice Amich, Jonah Birch, Eduardo Capulong, Melissa Cuerdon, Joy Greenburg, Sarah Hines, Dennis Kosuth, Larry Lewis, Natalie MacFarland, Afsaneh Moradian, Sid Patel, Sheri Pegram,</I> <I>Margaret Terry and Sarah Wolf contributed to this report.</P></I>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

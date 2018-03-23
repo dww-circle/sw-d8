@@ -6,25 +6,25 @@ The innocents who sit in Guant&aacute;namo
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>The innocents who sit in Guant&aacute;namo</b></font><p>
 <font face="Times New Roman, Times, serif" size="2"><b>Review by Elizabeth Lalasz</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | July 14, 2006 | Page 13</font><p>
@@ -48,12 +48,12 @@ This portrayal cuts against the anti-Muslim racism that has been whipped up sinc
 The most astonishing part of the film comes through the actual interviews of Shafiq, Asif and Ruhel and the actors who play them. It's obvious during their interviews that they have been completely altered by their harrowing experience at Guant&aacute;namo, but what also comes through is their resolve not to be broken under the incredible circumstances. The film concludes with Asif going back to Pakistan to finally get married.<p>
 <i>The Road to Guant&aacute;namo</i> confirms that innocent Arabs and Muslims are being unjustly held at Guant&aacute;namo Bay. We need to use this film to demand not only that they are released but that this torture prison is shut down once and for all.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

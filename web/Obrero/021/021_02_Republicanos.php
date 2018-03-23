@@ -6,25 +6,25 @@
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Embestida de los Republicanos</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>&iquest;C&oacute;mo podemos pararlos?</b></font><p>
@@ -40,12 +40,12 @@ Hasta ahora, los Dem&oacute;cratas en el Congreso han hecho poco para oponerse a
 Respondiendo a la amenaza de los Republicanos de utilizar la 'opci&oacute;n nuclear' en el Senado, el portavoz Dem&oacute;crata del Senado, Harry Reid, se&ntilde;al&oacute; pusil&aacute;nimemente que "el Congreso ya ha aprobado 205 de los candidatos judiciales del presidente. Aparentemente, una tasa de aprobaci&oacute;n de 95 por ciento no es suficiente para este presidente". <p>
 Si vamos a ver una real oposici&oacute;n a tener una monta&ntilde;a de fan&aacute;ticos anti-abortos y de amantes de la guerra en las cortes, en el Congreso y  en la Casa Blanca, tenemos que organizarla desde abajo, para decirles a los Republicanos y los Dem&oacute;cratas que no vamos a rendir nuestros derechos.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

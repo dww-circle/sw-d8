@@ -6,25 +6,25 @@ Debating the future of the Green Party
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>Debating the future of the Green Party</b></font><p>
 <font face="Times New Roman, Times, serif" size="2"><b>Review by Todd Chretien</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | September 15, 2006 | Page 9</font><p>
@@ -50,12 +50,12 @@ Worse, in too many places, small cliques of lesser-evil Greens control the party
 There are still thousands of Greens, and many thousands more who are sick of the Democrats, who agree with Hawkins when he says, "the Greens should forget what the professional liberals say about spoiling elections for the Democrats...The task of the Greens is to organize [the people who are fed up] into an independent party and movement, not deliver them once again to a Democratic Party that stands opposed to their demands." <p>
 Whether that is still possible within the framework of the Green Party, or whether the Democrats have once again succeeded in destroying an opponent to their left, will be decided in the run-up to the 2008 elections. This book is an important contribution to setting the record straight, and preparing for that fight.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

@@ -6,25 +6,25 @@ Which side are they on?
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <FONT FACE="Courier New" SIZE=2><P><font face="Times New Roman, Times, serif" size="4">Union heads back Bush's energy plan</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Which side are they on?</b></font></P>
@@ -42,12 +42,12 @@ Which side are they on?
 <P>Unfortunately, labor's biggest political blow to Bush so far is the Senate's opposition to so-called "NAFTA trucks"-Mexican trucks that would be driven more than 20 miles into the U.S. The Teamsters' fear-mongering campaign over "unsafe" Mexican trucks undercuts international labor solidarity and slides backward into immigrant bashing.</P>
 <P>The AFL-CIO Executive Council did take a step in the right direction this month when it endorsed the demonstrations against the International Monetary Fund and World Bank in late September. That's the kind of action that can contribute to building a real fight against Bush and his corporate backers.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

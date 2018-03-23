@@ -6,25 +6,25 @@ Putting the bosses first
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4">How the Democrats moved to the right to cater to business</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Putting the bosses first</b></font></P>
@@ -61,12 +61,12 @@ Putting the bosses first
 <P>Clinton's pro-corporate policies shaped Al Gore's 2000 campaign--so much so that Gore was reluctant to appeal the Democratic Party's base lest populist rhetoric upset his corporate backers or raise potentially destabilizing expectations of gains for working people. John Kerry, of course, has veered even further to the right.</P>
 <P>Having concluded that the Democratic "base"--African Americans, unions, progressives--is in the bag, Kerry's handlers think that a support-the-war, cut-the-deficit platform will keep the CEOs sweet, while appealing to Republican-leaning swing voters. That's why the 2004 presidential election isn't about ideology. It's about maintaining the neoliberal consensus in U.S. politics--one that will remain in place until the left is strong enough to challenge it.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

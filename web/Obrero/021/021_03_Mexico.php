@@ -6,25 +6,25 @@ Emerge el descontento en M&eacute;xico
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Con un mill&oacute;n en la calle Fox tira la toalla</font> <br>
 <font face="Times New Roman, Times, serif" size="5"><b>Emerge el descontento en M&eacute;xico</b></font><p>
@@ -65,12 +65,12 @@ El l&iacute;der Zapatista, el Subcomandante Marcos, inst&oacute; a sus partidari
 Seg&uacute;n opin&oacute; el 30 de abril en <i>La Jornada</i> el socialista mexicano Adolfo Gilly: "Sin enfrentar ni quedarse al margen del movimiento popular que est&aacute; luchando por la democracia, por sus derechos y por la soberan&iacute;a nacional sin ponerse a la cola o sumarse a la cargada como seguidores incondicionales, la izquierda aut&oacute;noma e independiente de las instituciones, las asesor&iacute;as y los partidos de r&eacute;gimen en crisis, necesita hoy una vez m&aacute;s organizar sus propias ideas, defender el presente, preparar el porvenir".<p>
 <i>Traducci&oacute;n de Lance Selfa</i>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

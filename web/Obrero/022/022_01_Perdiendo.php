@@ -6,25 +6,25 @@ Bush est&aacute; perdiendo la ocupaci&oacute;n de Irak
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>Bush est&aacute; perdiendo la ocupaci&oacute;n de Irak</b></font><p>
 <font face="Arial, Helvetica, sans-serif" size="2">julio-agosto de 2005 | p&aacute;gina 1</font><p>
@@ -47,12 +47,12 @@ La campa&ntilde;a electoral pro-guerra de los Dem&oacute;cratas fue responsable 
 Nunca ha habido un movimiento que haya sido construido renunciando a sus principios. Tenemos que presionar a los pol&iacute;ticos, y no adaptarnos a sus posturas--o en nombre de llegarle al m&iacute;tico "coraz&oacute;n conservador del pa&iacute;s", diluir nuestro mensaje hasta que no nos quede mensaje alguno.<p>
 Las demostraciones nacionales del 24 de septiembre proveer&aacute;n la oportunidad a los activistas anti-guerra de base para llegar m&aacute;s ampliamente a nuevos sectores que se oponen a la guerra. En septiembre, tenemos que alzar nuestra voz y exigir el retiro completo e inmediato de las fuerzas estadounidenses de Irak.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

@@ -6,25 +6,25 @@ Threatened by a Marine recruiter
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Antiwar activists in New Haven refuse to be silenced</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Threatened by a Marine recruiter </b></font><p>
@@ -44,12 +44,12 @@ The Marine recruiting office on Orange Street has since been closed pending an i
 Activists in New Haven plan to continue campaigning for their right to speak out, and for the unconditional release of Ehren Watada, Suzanne Swift and all other war resisters. Rallies are planned in front of the recruitment station each Wednesday at 5:15 p.m., and an event is being planned for July 15 at 12:30 p.m. as part of a national call to action for Suzanne Swift.<p>
 <i>Register your protest of the treatment of activists by <a href="http://www.petitiononline.com/nhctspks/petition.html" target="_blank">signing an online petition</a> defending activists' right to protest in New Haven, or calling New Haven Mayor John DeStefano Jr.'s office at 203-946-7672</i>.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

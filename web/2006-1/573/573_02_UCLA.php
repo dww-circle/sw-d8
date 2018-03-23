@@ -6,25 +6,25 @@ A right-winger's witch-hunt
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">UCLA graduate offers students money to spy on teachers</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>A right-winger's witch-hunt</b></font><p>
@@ -40,12 +40,12 @@ Even his allies think Jones is a kook. Since graduating, he has been fired from 
 The other was for David Horowitz, self-appointed opponent of supposed left-wing bias on campus. Horowitz told the <i>LA Times </i>that Jones was fired for pressuring students to "file false reports on leftist students" at UCLA. The fanatical Horowitz called Jones "uncontrollable."<p>
 "Ultimately, of course, this has nothing to do with me or my colleagues, or our teaching," Saree Makdisi, a UCLA English professor singled out on Jones' Web site, wrote in the <i>LA Times. </i>"The point, rather, is to silence voices that go against the zealots' right-wing orthodoxy, and to subject the classroom to outside political surveillance, not simply by vigilante groups like this one, but ultimately by the state itself."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

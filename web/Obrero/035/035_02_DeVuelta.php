@@ -6,25 +6,25 @@ De vuelta a las calle
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Arial, Helvetica, sans-serif" size="2"><b>EDITORIAL</b></font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>De vuelta a las calle</b></font><p>
@@ -59,12 +59,12 @@ Jorge Mujica, organizador de UE en Chicago, espera que la demostraci&oacute;n "c
 Otro argumento contra incluir las redadas y deportaciones es que el movimiento hablar&iacute;a solo a su base. Esto supone que los ciudadanos son inmunes al sufrimiento de los inmigrantes. Pero m&aacute;s de la mitad de los que marcharon en el 2006 nacieron en EEUU, de acuerdo a un estudio en la Universidad de Illinois, y luego de las masivas demostraciones, el apoyo para crear un sendero a la legalizaci&oacute;n creci&oacute; a un 59 por ciento entre los ciudadanos, seg&uacute;n una encuesta de Pew.<p>
 Pero adem&aacute;s, es precisamente su propia base la que el movimiento necesita movilizar. Los millones que marcharon, y que miran con desasosiego como su fuerza se desvanece, est&aacute;n buscando una manera de participar. "si supieras como la gente llama a la radio, o me para en la calle y pregunta: &iquest;Qu&eacute; vamos a hacer, Mujica?" dice Jorge Mujica, "la gente est&aacute; lista para dar el siguiente paso."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

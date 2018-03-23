@@ -6,25 +6,25 @@ Anthony Arnove: "The character of our movement is changing"
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Arial, Helvetica, sans-serif" size="2"><b>THE CASE FOR IMMEDIATE WITHDRAWAL</b></font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Anthony Arnove: "The character of our movement is changing"</b></font><p>
@@ -115,12 +115,12 @@ The point is also that the character of the movement is changing. We are not on 
 Bush asked the other night: Who could have known that there were no weapons of mass destruction in Iraq? We knew. Why were the people in this room not in the <i>New York Times</i>, on CNN?<p>
 They want to blame it all on bad intelligence, but we had the intelligence from the very beginning to see that this war is a disaster. And we have the intelligence now to see through politicians who say that they're against the war, but vote to fund the war.<p>
 We have the intelligence to know that each day this occupation continues, the more we're at risk, the more Iraqis are at risk, and the more the world's at risk. And we also have the intelligence to know that we can build a movement that can end this occupation and change this world, and we have everything at stake in doing so.<p>
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

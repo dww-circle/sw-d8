@@ -6,25 +6,25 @@ Givebacks shake up OEA leadership
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>Givebacks shake up OEA leadership</b></font><p>
 <font face="Times New Roman, Times, serif" size="2"><b>By Jessie Muldoon, Oakland Education Association</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | June 16, 2006 | Page 15</font><p>
@@ -45,12 +45,12 @@ The contract fight was against the backdrop of OEA officer elections. In the rac
 As a member of her slate, I ran for first vice president on a platform of no concessions, union democracy, transparent bargaining and an alliance with the immigrant rights movement. Olson-Jones ultimately won a runoff election, although some in her slate--including me--did not win, having launched my campaign only when the contract proposal came to a vote.<p>
 Olson-Jones is a welcome change from the business unionism that has taken hold of the OEA leadership recently. Her challenge will to be to maintain her commitment to democracy while activating the OEA members to wage a real fight in Oakland to preserve and improve public education.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

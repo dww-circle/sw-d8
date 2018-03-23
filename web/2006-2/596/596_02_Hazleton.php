@@ -6,25 +6,25 @@ The bigots declare war on immigrants
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Hazleton, Pa., leads the way in passing racist local laws</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>The bigots declare war on immigrants</b></font> <p>
@@ -56,12 +56,12 @@ Nebraska stood alone this year in passing a law that went the other direction, w
 At the federal level, the Senate unanimously approved a $32.8 billion bill to give the Department of Homeland Security money for more border agents and more beds in detention centers to speed up deportations. The Senate also passed legislation sponsored by Dianne Feinstein and Barbara Boxer--California's two Democratic Senators--that would impose a 20-year prison sentence for building or financing a cross-border tunnel and jail landowners for 10 years if they "display a reckless disregard for the construction or use of a tunnel on their land."<p>
 The immigrant rights movement now faces the challenge of mounting resistance to this rising tide of anti-immigrant legislation. Activists need to build protests and other responses to draw attention to the scapegoating and racism that underpins these measures.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

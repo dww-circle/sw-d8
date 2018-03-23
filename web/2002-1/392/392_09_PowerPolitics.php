@@ -6,25 +6,25 @@ We need a fight for a better world
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="5"><b>We need a fight for a better world</b></font></P>
 <font face="Arial, Helvetica, sans-serif" size="2"><B><P>BOOKS:</B> Arundhati Roy, <B><I>Power Politics,</B></I> revised edition. South End Press, 182 pages, 2001, $12.</P></font>
@@ -38,12 +38,12 @@ We need a fight for a better world
 <P>In "The Algebra of Infinite Justice," Roy attacks the moral high ground Bush and Co. have crawled onto in the wake of September 11. "The equivocating distinction between civilization and savagery, between the 'massacre of innocent people' or, if you like, 'a clash of civilizations' and 'collateral damage.' The sophistry and fastidious algebra of infinite justice," writes Roy. "How many dead Iraqis will it take to make the world a better place? How many dead Afghans for every dead American?&#133;How many dead mojahedin for each dead investment banker?"</P>
 <P>Roy has contributed to the antiglobalization movement, both for exposing<I> </I>the human cost in India and for making a case that the war is the "gunboat diplomacy" of the same interests whose "merciless economic agenda that has munched through the economies of poor countries like a cloud of locusts." Not only does Roy confirm why we need to fight for a better world, but she expresses optimism about getting there.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

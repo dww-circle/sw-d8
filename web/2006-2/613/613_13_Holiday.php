@@ -6,25 +6,25 @@ Socialist Worker's holiday gift list
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b><i>Socialist Worker's </i>holiday gift list</b></font><p>
 <font face="Arial, Helvetica, sans-serif" size="2">December 15, 2006 | Page 13</font><p>
@@ -78,12 +78,12 @@ The fact that his last great musical work brought the poetry of his youth to lif
 What's more, Steel--unlike boring writers of academic histories or conservatives with an ax to grind--is sympathetic to the goals and aspirations of the revolution, and makes it obvious why the revolution still has meaning today.<p>
 2006 was a good one for political music, especially anti-Bush rants (I mean that in the best way), but the most radical album of the past year may be a collection of songs that all date back at least 50 years. Bruce Springsteen's <i><a href="http://www.amazon.com/gp/redirect.html?ie=UTF8&amp;location=http%3A%2F%2Fwww.amazon.com%2FWe-Shall-Overcome-Seeger-Sessions%2Fdp%2FB000EU1PNC%2Fsr%3D1-1%2Fqid%3D1165981376%3Fie%3DUTF8%26s%3Dmusic&amp;tag=socialistwork-20&amp;linkCode=ur2&amp;camp=1789&amp;amp" target="_blank">We Shall Overcome: The Seeger Sessions</a></i> is a tribute to socialist folksinger Pete Seeger, and the decades- and centuries-old songs sound as fresh and meaningful as ever--not to mention full of life, thanks to the inspired performances of a crack band.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

@@ -6,25 +6,25 @@ The dirty war in Iraq
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>The dirty war in Iraq</b></font><p>
 <font face="Arial, Helvetica, sans-serif" size="2">October 7, 2005 | Page 5</font><p>
@@ -63,12 +63,12 @@ With Iraq's October 15 constitutional referendum vote just weeks away, the myth 
 Even those who opposed the withdrawal of U.S. troops from Iraq for fear of the instability it would cause are beginning to change their minds. "I conclude that the presence of the U.S. ground troops is making things worse, not better," wrote Iraq expert Juan Cole, explaining late last month why he was adopting a position in favor of immediate withdrawal.<p>
 "Let's get them out now, before they destroy any more cities, create any more hundreds of thousands of internally displaced persons, provoke any more ethnic hatreds by installing Shiite police in Falluja or Kurdish troops in Turkmen Tal Afar. They are sowing a vast whirlwind, a desert sandstorm of Martian proportions, which future generations of Americans and Iraqis will reap."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

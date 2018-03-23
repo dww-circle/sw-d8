@@ -6,25 +6,25 @@ No turning back!
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4">Resisting Illinois prosecutors' death penalty attack</font><BR>
 <font face="Times New Roman, Times, serif" size="5"><b>No turning back!</b></font></P>
@@ -40,12 +40,12 @@ No turning back!
 <P>Last April, an Illinois appeals court judge appointed a special prosecutor to look into the torture of African American suspects by Chicago cops under fired Commander Jon Burge. All four of the prisoners pardoned by Ryan were victims of these torturers, and dozens more people remain in prison convicted mainly on the basis of these coerced confessions. Devine was a top official in the prosecutor's office when the tortures took place. Burge's victims say that Devine and other law enforcement officials were "completely complicit."</P>
 <P>These initiatives by death penalty opponents can build on the momentum from the commutations victory. "Death row is empty today not because of the criminal injustice system, but in spite of the criminal injustice system," said Alice Kim, an organizer with the Campaign to End the Death Penalty. "We all have to be on a mission to fight for justice and to fight for abolition."</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

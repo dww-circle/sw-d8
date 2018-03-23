@@ -6,25 +6,25 @@ Turning teachers into preachers
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Pennsylvania town votes out Christian Right school board for...</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Turning teachers into preachers</b></font><p>
@@ -40,12 +40,12 @@ As targets of Robertson's wrath, Dover's pro-science parents are in good company
 Likewise, Dover isn't the only place where the Christian Right wants to turn the Bible into a textbook. The same day as the Dover election, the Kansas Board of Education voted 6-4 to teach "doubts" about evolution. Some 20 legislatures around the country have proposed similar intelligent design curriculums.<p>
 But as Dover shows, parents and students aren't going to be taking it sitting down. Likewise, professor and parent Carol Reeves knows what she will do if Indiana lawmakers go down that road. "I tell you, I'd be down there filing a lawsuit so fast if somebody began teaching my kid intelligent design," Reeves told the <i>Indianapolis Star.</i> "This," she said, "is not science."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

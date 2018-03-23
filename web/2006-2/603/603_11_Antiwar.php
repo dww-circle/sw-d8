@@ -6,25 +6,25 @@ The antiwar struggle and the Democrats
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Why has UFPJ been so timid in calling protests?</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>The antiwar struggle and the Democrats</b></font><p>
@@ -69,12 +69,12 @@ What sense does it make for antiwar activists to support a party that worked to 
 The antiwar movement in the United States needs to oppose the various phony "exit strategies" put forward by the Democratic Party. Some are just election-year posturing to fool voters disgusted by Bush and Rumsfeld, while others--for example, Rep. John Murtha's "redeployment" plan--are schemes for continuing the war on Iraq from outside its borders, most likely by intensified bombing. <p>
 The demand for the immediate withdrawal of U.S. forces from Iraq and Afghanistan is the only principled and practical position that the antiwar movement can take to end the misery brought to the region by the United States. Support for the Democratic Party is pulling antiwar organizations further from this principled position--and must be rejected.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

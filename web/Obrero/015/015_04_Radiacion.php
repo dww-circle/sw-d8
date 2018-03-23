@@ -6,25 +6,25 @@ Expuestos a la radiaci&oacute;n en Irak
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="5"><b>Expuestos a la radiaci&oacute;n en Irak</b></font></P>
 
@@ -37,12 +37,12 @@ Expuestos a la radiaci&oacute;n en Irak
 </I><P>Aunque los soldados boricuas contaminados con UR son residentes en Nueva York, las revelaciones causaron gran malestar en la isla, ya que el pueblo entiende que la Marina de EE.UU. utiliz&oacute; bombas revestidas con UR en su campo de tiro en Vieques. Muchos indican que esto tiene que ver con que la poblaci&oacute;n viequense tenga la tasa de c&aacute;ncer m&aacute;s alta de Puerto Rico. Sobre 5,000 soldados puertorrique&ntilde;os provenientes de la isla han sido movilizados durante el actual conflicto. Sobre una docena ya han muerto.</P>
 <P>La alta tasa de bajas latinas es otra muestra del racismo del gobierno estadounidense que usa a los pobres y a las minor&iacute;as raciales como carne de ca&ntilde;&oacute;n para una guerra basada en mentiras y estereotipos racistas.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

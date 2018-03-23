@@ -6,25 +6,25 @@
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4">Taking back the streets from the GOP:</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>"Bush lied and who died?"</b></font></P>
@@ -60,12 +60,12 @@
 <P>No one is bothering to hide the influence peddling, either. The American Petroleum Institute, National Mining Association, American Gas Association and Edison Electric Institute are among the groups throwing a party to "honor" Rep. Joe Barton (R-Texas), who happens to be chair of the House Committee on Energy and Commerce.</P>
 <P>The American Bankers Association will toast Sen. Richard Shelby (R-Ala.), chair of the Senate Committee on Banking, Housing and Urban Affairs. Hoping to head off a bad PR image, the White House issued--no doubt with a wink--a "stern warning" to administration officials: Don't act up at the all-night parties, or take free gifts. In case they need quick legal advice about the toothless laws against selling political influence, the Bush team can call a 24-hour hotline, answered around the clock by the White House counsel's office.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

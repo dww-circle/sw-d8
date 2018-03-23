@@ -6,25 +6,25 @@ Las lecciones de la Revoluci&oacute;n Rusa
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Arial, Helvetica, sans-serif" size="2"><b>EL SENTIDO DEL MARXISMO</b></font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Las lecciones de la Revoluci&oacute;n Rusa</b></font></P>
@@ -39,12 +39,12 @@ Las lecciones de la Revoluci&oacute;n Rusa
 <P>El resultado final fue que tras a&ntilde;os de intervenci&oacute;n militar imperialista y guerra civil (y sin la ayuda de otros estados obreros), Rusia qued&oacute; devastada, su clase trabajadora diezmada, haciendo imposible el sostener un estado obrero. El gobierno fue poco a poco hinch&aacute;ndose con bur&oacute;cratas que desarrollaron intereses de clase en contradicci&oacute;n a los de los obreros y los campesinos. Representados por Josef Stalin, se consolidaron en el poder a finales de los 1920s estableciendo una dictadura en donde todo lo ganado por la revoluci&oacute;n fue revocado. Todav&iacute;a usando una ret&oacute;rica pseudosocialista, Stalin se convirti&oacute; en el l&iacute;der de una nueva clase capitalista dominante, capitalistas de estado, que entraron en una competencia militar con los EE.UU. y los pa&iacute;ses capitalistas avanzados de occidente. En vez de luchar por la revoluci&oacute;n internacional de los trabajadores, la burocracia rusa compet&iacute;a con los otros pa&iacute;ses capitalistas.</P>
 <P>Por muchas d&eacute;cadas la mentira de que la URSS de Stalin y sus sucesores era socialista--como tambi&eacute;n otros tantos pa&iacute;ses que trataron de imitar su curso, como China, Cuba, o Vietnam--sirvi&oacute; de forma conveniente a los gobernantes bur&oacute;cratas rusos para pintarse como progresistas, como tambi&eacute;n a los gobernantes imperialistas de occidente (particularmente en EE.UU.) que aprovechaban la falta de democracia y la escasez del desaparecido bloque sovi&eacute;tico para convencer a sus propios trabajadores de que el capitalismo era la mejor alternativa. Los voceros del capitalismo declararon la derrota del socialismo en 1989, aunque &eacute;sta hab&iacute;a ocurrido 60 a&ntilde;os antes.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

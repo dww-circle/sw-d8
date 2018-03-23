@@ -6,25 +6,25 @@ The world's greatest democracy?
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="5"><b>The world's greatest democracy?</b></font></P>
 <p><font face="Arial, Helvetica, sans-serif" size="2">September 24, 2004 | Page 5</font></P>
@@ -79,12 +79,12 @@ The world's greatest democracy?
 <font face="Times New Roman, Times, serif" size="3">The claim of states' rights has been used to defend all sorts of villainy in U.S. history, from Jim Crow segregation laws in the U.S. South, to the current bipartisan opposition to gay marriage. States' rights have allowed the richest people in the most politically backward parts of the country to protect their power and privileges. This is as true today as in the days of slavery and Jim Crow, especially, though not exclusively, in the states that make up the old Confederacy. </P>
 <P>Take federal labor law as an example. The Taft-Hartley amendments to the National Labor Relations Act, passed in 1947, allow for state "exemptions." So in 21 "right-to-work" states, closed shops and a host of other practices that keep unions strong are illegal. As a result, workers are paid less and have fewer benefits and poorer job security in these states.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

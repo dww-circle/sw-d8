@@ -6,25 +6,25 @@ A right-winger on every issue
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">The dirt on John Roberts</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>A right-winger on every issue</b></font><p>
@@ -48,12 +48,12 @@ And just days before his nomination to the Supreme Court was announced, Roberts 
 Liberal Democrats promised a vigorous fight if Bush tried to nominate a Supreme Court justice who would vote to overturn <i>Roe v. Wade</i>. But in keeping with the party's continuing slide to the right on abortion, few leading Democrats have said anything critical of Roberts. As liberal Sen. Dick Durbin (D-Ill.) told NBC's <i>Meet the Press,</i> "I said to [Roberts] the other day, 'If you will be honest and forthcoming, you're going to find a warm reception from our side of the aisle, even if we disagree with you on any given issue.'"<p>
 We can't rely on the Democrats to protect abortion rights--or anything else we value. We need to build a movement in the streets that challenges the right wing's attack on our rights and civil liberties--and tells the politicians of all stripes that we won't go back.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

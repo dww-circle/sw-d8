@@ -6,25 +6,25 @@ Sigh of relief for insurance vultures
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>Sigh of relief for insurance vultures </b></font><p>
 <font face="Times New Roman, Times, serif" size="2"><b>By Taylor Johnson</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | January 14, 2005 | Page 8</font><p>
@@ -39,12 +39,12 @@ According to Swiss Reinsurance's calculations last year, before the tsunami, the
 It's no coincidence that the most expensive disasters were all concentrated in the U.S., Europe and Japan--and the most deadly disasters occurred in some of the world's poorest regions, such as Bangladesh, China, Iran, Peru, Guatemala, Armenia and Colombia. <p>
 The majority of deaths in the 10 most fatal events of the last 30 years were due to collapsed buildings that had been constructed with poor-quality materials. Developers make huge profits by building with cheap materials where building codes don't exist or are rarely enforced. And because these buildings are more vulnerable to collapse, they are more difficult, if not impossible, to insure. <p>
 This vicious cycle leaves the world's poorest and most vulnerable paying--often with their lives--while international business elites line their pockets.<p>
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

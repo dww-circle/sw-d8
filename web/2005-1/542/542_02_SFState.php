@@ -6,25 +6,25 @@ Activists at SFSU won't be silenced
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">The right to protest at stake</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Activists at SFSU won't be silenced</b></font><p>
@@ -39,12 +39,12 @@ Cindy Sheehan, a cofounder of Gold Star Families for Peace and member of Militar
 SAW and the ISO are planning future actions. Next week, they will publish a full-page ad in the campus newspaper, demanding that the charges be dropped, the university implement its anti-discrimination policy prohibiting antigay employers from recruiting on the campus; and host a debate about whether recruiters should be allowed on campus, with representatives from the military, the university administration and SAW. <p>
 <i>To endorse the SAW ad or make a contribution to the defense campaign, send your name, title, address, phone number and e-mail address to: ISO, 110 Capp St., San Francisco, CA 94110. Make checks payable to "ISO" and put "Defend SFSU students" in the memo</i>.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

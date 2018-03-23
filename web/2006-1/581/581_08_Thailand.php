@@ -6,25 +6,25 @@ Will a U.S.-backed strongman fall?
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Mass protests shake Thailand government</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Will a U.S.-backed strongman fall?</b></font><p>
@@ -52,12 +52,12 @@ While occasionally noting Thailand's human rights abuses in State Department rep
 The military relationship was close throughout the Cold War, when Thailand was ruled mainly by military governments. U.S. forces were based in Thailand to wage war on Vietnam and the rest of Southeast Asia, and Thai military officers are trained and equipped by the U.S. Thus, if the Thai military shifts and ousts Thaskin in a coup--the top brass are alienated by Thaksin's promotion of his cronies--Washington will still have plenty of channels into the Thai military.<p>
 Thaksin may survive the protests. The business executives and politicians at the head of the opposition movement have no real alternative to his economic policies and will try to curb labor struggles. Nevertheless, Thaksin's troubles represent a major crisis--one that the U.S. could do without.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

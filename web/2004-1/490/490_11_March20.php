@@ -6,25 +6,25 @@ Preparing to march against war on March 20
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="5"><b>Preparing to march against war on March 20</b></font></P>
 <P><font face="Times New Roman, Times, serif" size="2"><b>By Nicole Colson</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | March 12, 2004 | Page 11</font></P>
@@ -48,12 +48,12 @@ Preparing to march against war on March 20
 <P><font face="Times New Roman, Times, serif" size="3">CONTINUING ITS long tradition of solidarity with antiwar and social justice movements, the membership of International Longshore and Warehouse Union (ILWU) Local 10 voted to hold a March 20 "stop work" meeting to coincide with antiwar demonstrations planned for that day. Ports across the state of Oregon are also holding "stop work" meetings.</P>
 <P>An important provision in the ILWU's contract allows the union to schedule such meetings once a month--in effect, stopping all work at a port for one day. In the past, workers have exercised this right in solidarity with demonstrations against the WTO in Seattle, in support of political prisoner Mumia Abu-Jamal, and against apartheid in South Africa. The motion passed by ILWU Local 10 members calls for an end to the war, an end to the occupation and the immediate withdrawal of all U.S. troops. </P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

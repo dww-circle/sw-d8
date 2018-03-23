@@ -6,25 +6,25 @@
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>&iexcl;Ante la represi&oacute;n, unidad y lucha!</b></font><p>
 <font face="Times New Roman, Times, serif" size="2"><b>Por Alma Torres y Bridget Broderick</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | febrero-marzo de 2008 | p&aacute;gina 4</font><p>
@@ -49,12 +49,12 @@ Miles de puertorrique&ntilde;os participaron en marchas contra la marina en Vieq
 Ahora el FBI pone en la mira a los independentistas puertorrique&ntilde;os para comenzar as&iacute; una ofensiva contra el movimiento en la isla y el continente. Utilizando la recurrida excusa de la guerra contra terrorismo, el FBI se cubre para atacar a los macheteros en Puerto Rico, como a los inmigrantes en EEUU.<p>
 Activistas puertorrique&ntilde;os han comenzado reunirse con el prop&oacute;sito de construir una resistencia contra esta nueva oleada de represi&oacute;n. En las reuniones han participado hasta 16 organizaciones comunitarias y pol&iacute;ticas que condenan la ayuda que el gobierno de la isla ha dado al FBI para que realice operativos a su gusto, y reprimiendo a los pobres en sus comunidades y a los activistas que intenten organizarse.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

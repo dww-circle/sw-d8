@@ -6,25 +6,25 @@ Countering the right's myths and double standards
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">The border crossed us...and other facts about immigration</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Countering the right's myths and double standards</b></font> <p>
@@ -102,12 +102,12 @@ Then there's Luis Posada Carriles. The infamous anti-Castro movement thug snuck 
 But the Bush administration wasn't concerned about this "illegal immigrant"--since he was central to the CIA's decades-long war on Fidel Castro, starting with the Bay of Pigs invasion in 1961, and continuing with his role in the bombing of a Cuban commercial airliner that killed 73 people in 1976. In the 1980s, Posada worked with the paramilitary death squads in El Salvador against left-wing rebels. He spent the 1990s bombing Havana tourist spots.<p>
 Yes, there <i>are </i>criminals sneaking into the U.S. But they are war criminals and allies of the U.S. government. The ordinary people who come to the U.S. seeking a better life will be made into criminals--by new anti-immigrant legislation.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

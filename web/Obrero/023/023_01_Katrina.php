@@ -6,25 +6,25 @@
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Sobrevivientes de Katrina</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>&iquest;Los abandonar&aacute; Washington por segunda vez?</b></font><p>
@@ -46,12 +46,12 @@ Tal programa ser&iacute;a una ruptura decisiva con las pol&iacute;ticas pro-empr
 Para un sinn&uacute;mero de personas, el desastre del hurac&aacute;n ha sido una motivaci&oacute;n para tomar acci&oacute;n. Esto fue obvio a partir de los esfuerzos espont&aacute;neos para otorgar auxilio hechos por mucha gente com&uacute;n de todo EE.UU., que hicieron tanto para ayudar a los damnificados mientras el gobierno no hac&iacute;a nada. Estos esfuerzos cruciales salvaron vidas y siguen haci&eacute;ndolo.<p>
 A la misma vez, necesitamos vincular estos esfuerzos inmediatos, dirigidos a proveer alivio a las v&iacute;ctimas, a una movilizaci&oacute;n pol&iacute;tica para ponerle presi&oacute;n al gobierno a favor de un programa de asistencia social y de reconstrucci&oacute;n que sirva a los intereses del pueblo trabajador. El desastre del hurac&aacute;n ha desenmascarado las prioridades mezquinas del sistema pol&iacute;tico y econ&oacute;mico estadounidense. Necesitamos presentar y defender unas nuevas prioridades y un nuevo plan.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

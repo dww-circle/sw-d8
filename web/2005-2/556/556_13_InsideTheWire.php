@@ -6,25 +6,25 @@ Eyewitness tells truth about Guant&aacute;namo
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>Eyewitness tells truth about Guant&aacute;namo</b></font><p>
 <font face="Times New Roman, Times, serif" size="2"><b>Review by Elizabeth Lalasz</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | September 9, 2005 | Page 13</font><p>
@@ -40,12 +40,12 @@ As Saar told Amy Goodman in an interview on <i>Democracy Now!</i> in May, "Well,
 <i>Inside the Wire</i> is a horrifying and engaging first-hand account and a must read for those looking for the truth about Guant&aacute;namo and about who we need to hold accountable for the horrors going on there right now.<p>
 As Saar writes in his conclusion, "What hasn't come out in any of these investigations is an assessment of the leadership's responsibility for the events that transpired at Gitmo. One of the core lessons you learn in the Army, starting at basic training, is that excuses are not tolerated...Why hasn't any leader been held accountable for the failure of Guant&aacute;namo Bay? Why are they allowed to make all the excuses?"<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

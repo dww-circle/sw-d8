@@ -6,25 +6,25 @@ Israel escalates its bloody war
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4">Source of the latest violence</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Israel escalates its bloody war</b></font></P>
@@ -42,12 +42,12 @@ Israel escalates its bloody war
 <P>But Israel's terror directed at Hamas--including the assassination of Ismail Abu Shanab, a senior figure in Hamas and a moderate who has been a consistent advocate of dialogue--raised the Islamist group's stature most of all. It's now clear to Palestinians that if Israel won't even be satisfied with a willing collaborator like Abbas, there's little alternative to resistance.</P>
 <P>Suicide bombings may bring an inevitable clampdown--but the only other option  appears to be complete surrender. No amount of Israeli repression can end Palestinian resistance--because Palestinians are fighting for the return of their land and their homes, stolen over five decades of Israel's colonial rule of Palestine. Only a secular state with democratic rights for both Jews and Palestinians will bring an end to the violence.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

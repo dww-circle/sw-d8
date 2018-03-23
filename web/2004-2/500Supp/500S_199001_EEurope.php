@@ -6,25 +6,25 @@ A revolution begins
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4">As the Stalinist regimes in Eastern Europe fall like dominoes...</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>A revolution begins</b></font></P>
@@ -84,12 +84,12 @@ A revolution begins
 <P>They wrote: "The relation of the revolutionary workers' party to the petty bourgeois democrats is this: it marches with them against the faction which it aims at overthrowing, it opposes them in everything by which they try to consolidate their position in their own interests. The mass of petty bourgeois will as long as possible remain hesitant, undecided and inactive, then, as soon as the issue has been decided, will seize the victory for themselves, will call upon the workers to maintain tranquility and return to work, will guard against so-called excesses and bar the proletariat from the fruits of victory.</P>
 <P>"While the democratic petty bourgeois wish to bring the revolution to a conclusion as quickly as possible...it is our interest and our task to make the revolution permanent, until all more- or less-possessing classes have been forced out of their position of dominance...The workers' battle cry must be: the Revolution in Permanence!"</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

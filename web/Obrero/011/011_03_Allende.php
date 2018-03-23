@@ -6,25 +6,25 @@ Reforma o revoluci&oacute;n en el Chile de Allende
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Arial, Helvetica, sans-serif" size="2"><b>EL SENTIDO DEL MARXISMO</b></font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Reforma o revoluci&oacute;n en el Chile de Allende</b></font></P>
@@ -42,12 +42,12 @@ Reforma o revoluci&oacute;n en el Chile de Allende
 <P>El ala reformista de Allende ten&iacute;a una meta diferente a la de los revolucionarios que formaron parte de UP. Los revolucionarios lucharon valientemente por el control obrero de la sociedad chilena, y en muchos murieron defendiendo esta visi&oacute;n de una sociedad socialista. Desafortunadamente, los socialistas revolucionarios en Chile no organizaron una alternativa a la v&iacute;a reformista de Allende. En los momentos decisivos de la revoluci&oacute;n, los trabajadores y los campesinos se inclinaron por el gobierno de UP porque no se present&oacute; ninguna alternativa revolucionaria.</P>
 <P>La tragedia del Chile de 1973 es que en medio de una revoluci&oacute;n en la cual los trabajadores y los campesinos controlaron muchos sectores de la sociedad, la v&iacute;a chilena los llev&oacute; a la adaptaci&oacute;n reformista al capitalismo. Los trabajadores no impulsaron la revoluci&oacute;n a su conclusi&oacute;n revolucionaria. El costo de esta lecci&oacute;n fue brutal para el mundo entero.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

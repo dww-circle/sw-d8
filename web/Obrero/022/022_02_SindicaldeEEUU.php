@@ -6,25 +6,25 @@ Burocracia sindical de EEUU ataca a maestros de Puerto Rico
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>Burocracia sindical de EEUU ataca a maestros de Puerto Rico</b></font><p>
 <font face="Times New Roman, Times, serif" size="2"><b>Por Roberto Barreto</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | julio-agosto de 2005 | p&aacute;gina 2</font><p>
@@ -38,12 +38,12 @@ La AFT, al tratar de imponer una sindicatura a trav&eacute;s del Tribunal Federa
 El tribunal considerar&aacute; la demanda de la AFT en agosto. Mientras tanto la FMPR est&aacute; en pie de lucha y solicita el apoyo activo de todo el movimiento obrero. Los trabajadores en Estados Unidos deben exigir que la AFT retire su demanda y respete el derecho de los trabajadores puertorrique&ntilde;os a decidir su propio destino. Deben tambi&eacute;n condenar la alianza del sindicalismo con las instituciones represivas del colonialismo de los patronos estadounidenses. Los bur&oacute;cratas de la AFT merecen el repudio de todo el movimiento obrero de Estados Unidos, Puerto Rico, y el resto del mundo.<p>
 <i>Para m&aacute;s informaci&oacute;n pueden comunicarse con: Migdalia Santiago, Secretar&iacute;a de Educaci&oacute;n Sindical, Federaci&oacute;n de Maestros de Puerto Rico, <a href="mailto:msantiago@fmprlucha.org">msantiago@fmprlucha.org</a>, tel&eacute;fono: 787-766-1818</i>.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

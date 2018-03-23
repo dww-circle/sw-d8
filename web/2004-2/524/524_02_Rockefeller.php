@@ -6,25 +6,25 @@ A fight ahead over N.Y. drug laws
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Lawmakers agree to limited reforms, but there's still...</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>A fight ahead over N.Y. drug laws</b></font><p>
@@ -46,12 +46,12 @@ Russell Simmons, the music producer who has campaigned against the Rockefeller l
 But other voices were critical. Robert Gangi, executive director of the Correctional Association of New York, fears that the legislation could undercut momentum for more far-reaching changes. "[T]he most serious provision of the drug laws [now] carries a sentence of eight to 20 years--still far too long," Gangi wrote in an op-ed article in <i>Newsday.</i> "Many other drug offenders, most of whom have no history of violent or predatory behavior, will still be incarcerated for inordinate periods of time, and New York's taxpayers will still foot the bill."<p>
 Anthony Papa, the author of a new book about how he was ensnared by the Rockefeller laws, spending 12 years behind bars, said activists have more work ahead of them after this new law. "It was a sellout to quiet the rage that activists have felt for many years about this issue," Papa told <i>Socialist Worker. </i>"I urge those who have been in the trenches fighting for true reform to keep up the pressure, and fight to change the power structure of the Rockefeller Drug Laws." <p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

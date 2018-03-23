@@ -6,25 +6,25 @@ The legacy of Karl Marx
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4">Duncan Hallas on</font><BR>
 <font face="Times New Roman, Times, serif" size="5"><b>The legacy of Karl Marx</b></font></P>
@@ -66,12 +66,12 @@ The legacy of Karl Marx
 <P>The people who make a living out of this, and not a bad living either, are not Marxists--although most of them think they are. Why not? Because as Marx wrote as a young man, "The philosophers have only interpreted the world in various ways. The point, however, is to change it." To be a Marxist, you have to be a fighter in the cause of the working class, nationally and internationally, as Marx himself was.</P>
 <P>One-hundred years ago this month, Frederick Engels--Marx's lifelong friend and coworker--spoke these words at the old man's funeral. They cannot be bettered: "For Marx was before all else a revolutionist. His real mission in life was to contribute, in one way or another, to the overthrow of capitalist society&#133;Fighting was his element. And he fought with a passion, a tenacity and a success that few could rival."</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

@@ -6,25 +6,25 @@ Nicaraguan voters defy U.S. threats
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Sandinista leader poised for victory</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Nicaraguan voters defy U.S. threats</b></font><p>
@@ -43,12 +43,12 @@ Ortega has also held back from criticizing the U.S, and promised that he would n
 In the days leading up to the election, he supported a vote for a ban pushed by the Catholic Church outlawing all abortions, even when a woman's life is in danger. The measure passed.<p>
 Despite this, Ortega's victory is worrying to the U.S. for a number of reasons--especially his ties to Venezuelan President Hugo Ch&aacute;vez. "Though Ortega...is a pale shadow of his former self, having jettisoned his leftist rhetoric and hostility towards his northern neighbor, nevertheless, Washington must now recognize that it has patently failed to isolate Ch&aacute;vez diplomatically," wrote author Nikolas Kozloff in an article on the <i>CounterPunch </i>Web site. "Ortega will be hampered in bringing about radical change, but will at least look upon Venezuela as an important regional ally and friend."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

@@ -6,25 +6,25 @@ Cacer&iacute;a de brujas contra inmigrantes en Arizona
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Escuadrones de racistas acechan la frontera</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Cacer&iacute;a de brujas contra inmigrantes en Arizona</b></font><p>
@@ -43,12 +43,12 @@ Es decir que los que apoyan los derechos de los inmigrantes, no s&oacute;lo en A
 Este movimiento no debe reflejar la traicionera pol&iacute;tica liberal, que se pone de acuerdo con los derechistas cuando dice que "la inmigraci&oacute;n es un problema--solo que tenemos soluciones diferentes". Esta fue la consigna de la coalici&oacute;n que se form&oacute; en Arizona <i>en contra</i> de la Proposici&oacute;n 200--y que termin&oacute; derrotada de forma horrible.<p>
 En cambio debemos rejuvenecer el movimiento pro-inmigrantes para que combata el racismo abierto de las campa&ntilde;as como el "Proyecto Minuteman,", y que luche por un mundo sin fronteras.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

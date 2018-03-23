@@ -6,25 +6,25 @@ Alto al ba&ntilde;o de sangre
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4">&#161;EEUU fuera de Irak ahora!</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Alto al ba&ntilde;o de sangre</b></font></P>
@@ -46,12 +46,12 @@ Alto al ba&ntilde;o de sangre
 <P>La administraci&oacute;n de Bush tiene el descaro de preguntarse por qu&eacute; no se ha ganado "los corazones y las mentes" del pueblo iraqu&iacute;. Las fotos de Abu Ghraib muestran exactamente por qu&eacute;. D&iacute;a tras d&iacute;a los iraq&iacute;es despiertan para enterarse de otro ultraje cometido contra su pueblo--como la masacre de sobre 40 personas reunidas para celebrar una boda en el oeste de Irak. "Odiaba tanto a Saddam que cuando llegaron los estadounidenses, los vi como libertadores", dijo a Associated Press a fines de abril Dhia al-Shweiri, quien fue encarcelado dos veces bajo el r&eacute;gimen de Saddam Hussein.</P>
 <P>Pero al-Shweiri regres&oacute; a Abu Ghraib en octubre--esta vez, como prisionero de los estadounidenses. Para &eacute;l, "Muy pronto qued&oacute; claro que no son libertadores, sino ocupadores".</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

@@ -6,25 +6,25 @@ Republicans back up a bigot
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4">Bush gets behind Santorum</font><BR>
 <font face="Times New Roman, Times, serif" size="5"><b>Republicans back up a bigot</b></font></P>
@@ -37,12 +37,12 @@ Republicans back up a bigot
 <P>"No one who knows the senator is surprised that he made [the remarks]," the <I>New York Times</I> reported. "I suspect Rick doesn't know many gay people, and it may very well be that he never had a serious conversation with gay men and women about why they are gay," his friend, Rep. James C. Greenwood (R-Pa.), told the <I>Times</I>. "I suspect that Rick thinks somehow that people choose for some strange reason to just up and be gay."</P>
 <P>Don't expect an apology from Santorum. In an interview with <I>Fox News, </I>he said: "I do not need to give an apology based on what I said and what I'm saying now&#133;These are not, you know, ridiculous, you know, comments. These are very much a very important point." The point being, apparently, that Santorum is very much a very anti-gay bigot.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

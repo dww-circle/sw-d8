@@ -6,25 +6,25 @@ Judgment Day for the Governator
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">What's at stake in California special election?</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Judgment Day for the Governator</b></font><p>
@@ -96,12 +96,12 @@ Resolved, that the people of San Francisco oppose U.S. military recruiters using
 Proposition I has been endorsed by over 75 groups, including the San Francisco Labor Council, United Educators of San Francisco teachers union, Local SEIU 790, National Lawyers Guild, Campus Antiwar Network, American Friends Service Committee, Code Pink, Justice in Palestine Coalition, International Socialist Organization, Mexican American People's Association, and personally by Cindy Sheehan of Gold Star Families for Peace. <p>
 Proposition I won't automatically end recruitment because San Francisco can't override federal law. But by making it the official policy of the city, Prop I will give activists, parents, students and teachers valuable help in their campus-by-campus efforts to end recruitment, as well as establish the necessary background for schools and the city to challenge No Child Left Behind and the Solomon Amendment.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

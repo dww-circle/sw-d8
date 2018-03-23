@@ -6,25 +6,25 @@ The celebrity view of history
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Mark Steel on the new movie about Marie-Antoinette</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>The celebrity view of history</b></font><p>
@@ -63,12 +63,12 @@ It probably doesn't matter much if someone makes a dreadful film, but it's alarm
 The French Revolution is one of the most astonishing stories in history, in which peasants, postmasters, slaves and washerwomen, overturned a regime that believed it was sanctioned by God to rule forever. It stirred a million astonishing personal stories, so to create a film set in its heart that's as dull as this is a triumph.<p>
 It's achieved because the only time there's even a reference to the outside world is when the Versailles Palace is besieged by a mob. Even then, you hear them but don't see them, and I started to hallucinate that they'd charge in, the king would bellow, "What do you want?" and the mob would scream, "We demand an immediate and total end to this film. In the name of all citizens, let the audience go free."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" --> 
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?> 
 </td>
 </tr>
 </table>

@@ -6,25 +6,25 @@ Punk rock's elder statespeople
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>Punk rock's elder statespeople</b></font><p>
 <font face="Times New Roman, Times, serif" size="2"><b>Review by Alan Maass</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | February 18, 2005 | Page 9</font><p>
@@ -43,12 +43,12 @@ Really, the Mekons are a kind of musical commune, bound together by each one's c
 This spirit was captured best on their last studio album, <i>OOOH! (Out of Our Heads), </i>released in 2002--with its glorious call-and-response, choral singing the centerpiece of what sounds like a gospel album for an alternative religion of resistance. For my money, it was the Mekons' best ever--and note that it came out when the band was 24 years old (which is, like, 107 in people years).<p>
 <i>Heaven &amp; Hell </i>isn't as great, even though it collects a lot of great songs--they lose some of their distinctive personalities when taken out of their original album contexts. But for an introduction to the Mekons, it's a fine place to start.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

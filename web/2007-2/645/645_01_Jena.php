@@ -6,25 +6,25 @@ Conviction thrown out for one of the Jena 6
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>Conviction thrown out for one of the Jena 6</b></font><p>
 <font face="Times New Roman, Times, serif" size="2"><b>By Alan Maass</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | September 21, 2007 | Pages 1 and 4</font><p>
@@ -58,12 +58,12 @@ After the charges were reduced slightly, Bell went on trial in the first trial o
 Because of the efforts of anti-racists to expose what took place in Jena, Mychal Bell is no longer in danger of spending decades of his young life in prison. But the Jena 6 are not yet free of Jim Crow injustice.<p>
 And what Jena represents about racism in the U.S. is still reverberating around the country. The case is an example, wrote Younge "that legal barriers to integration may have been removed--itself no mean feat--but the ultimate goal of equality remains elusive. And it shows that just because you are allowed to do something--even something as basic as sitting under a tree--it doesn't mean that you are able to."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

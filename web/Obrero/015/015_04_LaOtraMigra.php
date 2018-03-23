@@ -6,25 +6,25 @@ La otra migra
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4">Nuevos poderes para la polic&iacute;a local</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>La otra migra</b></font></P>
@@ -42,12 +42,12 @@ La otra migra
 <P>La ley CLEAR est&aacute; dise&ntilde;ada para silenciar a los inmigrantes. Las v&iacute;ctimas de violencia dom&eacute;stica o de violaciones laborales que son indocumentados estar&aacute;n menos dispuestas a presentar querellas por estos cr&iacute;menes por temor a ser deportados. Pero esta legislaci&oacute;n es en realidad un ataque contra todos los trabajadores.</P>
 <P>Darle a la polic&iacute;a--ya a cargo de confrontar huelgas, protestas y movimientos de base--los poderes de la "Migra" le har&iacute;a da&ntilde;o a todas las luchas por justicia. Tenemos que confrontar esta ley abusiva contra los inmigrantes.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

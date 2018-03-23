@@ -6,25 +6,25 @@ The music united will never be defeated
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>The music united will never be defeated</b></font><p>
 <font face="Times New Roman, Times, serif" size="2"><b>Review by Alan Maass</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | May 11, 2007 | Page 11</font><p>
@@ -66,12 +66,12 @@ A lot of music that's explicitly political is negative in tone--a cry of anger o
 This is why early Sly and the Family Stone--another multiracial band that bridged different worlds of music, and whose classic album <i>Stand! </i>is filled with exuberant and hopeful anthems--comes often to mind in listening to Ozomatli.<p>
 As fine as its albums are, all this comes across even better at an Ozomatli show--a joyous, sweaty, dance-crazy celebration from beginning to end. The band has toured constantly in its dozen years of existence, but it's on the road again this summer to promote the new album. So <a href="http://www.ozomatli.com/site.php?content=Upcoming_Tour_Dates" target="_blank">find out where Ozomatli is playing</a>, and go--you'll leave with lifted spirits and a smile on your face, which is a fine thing by itself in Bush-era America.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

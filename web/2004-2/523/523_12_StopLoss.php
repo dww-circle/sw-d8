@@ -6,25 +6,25 @@ Hell no, we don't want to go!
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Reservists fighting stop-loss orders</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Hell no, we don't want to go!</b></font><p>
@@ -55,12 +55,12 @@ As the pressure on soldiers grows in the run-up to the January elections, antiwa
 In the case of the soldiers fighting the stop-loss policy, they were referred to lawyers through groups like the GI Rights Hotline. The wife of one soldier represented by the CCR said she received an e-mail message from the antiwar group Military Families Speak Out. Groups like the Campus Antiwar Network and others organized petitions to support the soldiers of the 343rd.<p>
 As Hiken commented, the growing discontent among soldiers will be key to ending the war today, just as it was during the Vietnam era. "There is no more 'mission' among the majority of troops," she said. " [Their mission] is to save their own lives. If the Bush administration wants to fight a war, they're going to have to have soldiers who are willing to fight it."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

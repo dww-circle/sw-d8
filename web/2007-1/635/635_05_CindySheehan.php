@@ -6,25 +6,25 @@ Cindy Sheehan and the antiwar struggle
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>Cindy Sheehan and the antiwar struggle</b></font><p>
 <font face="Arial, Helvetica, sans-serif" size="2">June 8, 2007 | Page 5</font><p>
@@ -73,12 +73,12 @@ More to the point, we can't wait for 2008. At the current rate, there will be mo
 It's been a terrible six years. But the tide is finally turning. The Bush administration has plummeted to Richard Nixon-like lows in popularity, the Democrats are under fire for their surrender on war spending on a scale that they never expected, and there are signs that the antiwar movement is gaining new strength at the grassroots--that at last, the overwhelming public sentiment against the war can be translated into active opposition.<p>
 We owe Cindy, and her son Casey, a debt of gratitude in helping spark the painfully slow combustion of the neocons. But more than that, we owe Cindy and all the other military family members, our troops in Iraq, the Iraqi people and ourselves a movement that is stronger, louder, better-organized and more self-confident--so we can welcome Cindy back with open arms in the months ahead.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

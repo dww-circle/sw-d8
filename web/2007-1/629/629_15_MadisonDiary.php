@@ -6,25 +6,25 @@ Why we decided to occupy
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>Why we decided to occupy</b></font><p>
 <font face="Arial, Helvetica, sans-serif" size="2">April 27, 2007 | Page 15</font><p>
@@ -54,12 +54,12 @@ Outside, I held my sign up to the road: "Kohl would rather have us arrested than
 I haven't been this disillusioned in awhile, not since I almost joined the Marines and believed the administration about the WMDs. Yes, I can admit it. I was angry and betrayed when I found out they were lying, but here was my senator--my Democratic senator--who had gone against us and used his police and his guards on us. "Bullshit!" ran through my mind.<p>
 And that was April 18, the most radical day of my life. We, the sit-in group, had been in that office for almost 19 hours, from 2:38 p.m. on April 18 to 9:23 a.m. on April 19. This isn't over yet. We'll be constituents next week too, and we'll spend our time thinking of the best way to do this. We've made our statement to the city and to the media--maybe now people will start to realize what Kohl really cares about.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

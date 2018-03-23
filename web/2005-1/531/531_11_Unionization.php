@@ -6,25 +6,25 @@ Private-sector unionization is lowest in 100 years
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>Private-sector unionization is lowest in 100 years</b></font><p>
 <font face="Times New Roman, Times, serif" size="2"><b>By Lee Sustar</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | February 18, 2005 | Page 11</font><p>
@@ -39,12 +39,12 @@ As a result, unions have been largely excluded from the fast-growing Southern ec
 The statistics also show why employers are determined to finish off unions, with median weekly earnings for private sector union members at $739, compared to $604 for their non-union counterparts. Yet here, too, are signs of decline. The median union pay-advantage for manufacturing workers fell from $63 per week in 2003 to $40 week in 2004, reflecting wage concessions in union contracts.<p>
 Ironically, the statistics appeared shortly after the New Unity Partnership coalition of unions disbanded rather than press its case in the AFL-CIO on the need to organize the unorganized. As the hard numbers show, that debate is more urgent than ever.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

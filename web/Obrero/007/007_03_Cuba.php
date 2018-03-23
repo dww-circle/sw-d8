@@ -6,25 +6,25 @@
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Arial, Helvetica, sans-serif" size="2"><b>EL SENTIDO DEL MARXISMO</b></font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>&#191;Es Cuba socialista?</b></font></P>
@@ -40,12 +40,12 @@
 <P>Cosas como a qu&eacute; sectores se deb&iacute;a sacrificar durante el racionamiento severo que surgi&oacute; tras el colapso de la URSS del 1989-91--que signific&oacute; una perdida monumental de subsidios y tecnolog&iacute;a para la econom&iacute;a cubana. Cosas como toda la serie de nuevas inversiones de capitalistas europeos, canadienses y mexicanos en el turismo, minerales y comunicaciones, garantizando sus ganancias mientras que a los trabajadores se les niega siquiera el derecho de tener sus propias uniones para defender su calidad de vida.</P>
 <P>La creciente brecha social y econ&oacute;mica que esto ha alimentado entre la clase trabajadora cubana y los bur&oacute;cratas que se benefician de su relaci&oacute;n con las empresas extranjeras y las mixtas refleja un patr&oacute;n similar al del resto de los pa&iacute;ses del mundo. Pero s&oacute;lo a la clase trabajadora cubana le compete el ajustar cuentas con su clase gobernante, sin la imposici&oacute;n de las prioridades mezquinas del imperialismo estadounidense, ni las de los ricos derechistas cubanos exiliados en Miami.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

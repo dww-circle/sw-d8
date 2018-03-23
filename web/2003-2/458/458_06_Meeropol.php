@@ -6,25 +6,25 @@
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="5"><b>"What we need to do is speak out"</b></font></P>
 <p><font face="Arial, Helvetica, sans-serif" size="2">June 20, 2003 | Pages 6 and 7</font></p>
@@ -71,12 +71,12 @@
 <P>It only felt natural for me to follow in their footsteps, because my childhood experience told me that that was a positive thing. So it seemed only natural that I would get involved in antiwar work, civil rights, and ultimately the effort to reopen my parents' case in the 1970s. Finally, I started the Rosenberg Fund for Children in 1990, which is dedicated to providing for the educational and emotional needs of the children of targeted activists in this country. We look for people who are being attacked for their activism today, and if they have children, we help their children--in the same way that I was helped when I was a child.</P>
 <P>People who used to do civil disobedience at the School of the Americas used to get a $50 fine, and they'd come back the next year again. All of a sudden, people doing the exact same thing are being sentenced to nine months in prison. There are an increasing number of cases where people doing relatively symbolic acts of protest are really having the book thrown at them. We're seeing the fallout from that.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

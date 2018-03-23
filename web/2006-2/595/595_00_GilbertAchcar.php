@@ -6,25 +6,25 @@ Israel expands its war of terror into Lebanon
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Author Gilbert Achcar on the background to the war:</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>"Israel is holding a whole population hostage"</b></font><p>
@@ -97,12 +97,12 @@ It is absolutely normal for forces confronted with much more powerful enemies to
 Or does Washington believe that it is entitled to intervene wherever it wants by the sole right of its "manifest destiny"--for instance, backing today the so-called People's Mujahadeen of Iran in its cross-border attacks against Iran from U.S.-occupied Iraq, after having backed yesterday the far more significant contras against Nicaragua's government--while Iran has no right to support its correligionists in Lebanon or Palestine. This chutzpah is only exceeded by U.S. complaints against Iranian interference in Iraq, a country under U.S. occupation!<p>
 The fact that Hezbollah has links to Syria and Iran doesn't mean in the least that it is not waging a legitimate national resistance struggle--in the same way that the fact that the Vietnamese were backed by this or that Communist country didn't mean in the least that they were not fighting for the liberation of their country.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

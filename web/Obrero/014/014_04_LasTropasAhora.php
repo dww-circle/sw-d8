@@ -6,25 +6,25 @@
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4">"No nos tragaremos sus mentiras"</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>&#161;Que regresen las tropas ahora!</b></font></P>
@@ -42,12 +42,12 @@
 <P>"Aqu&iacute; en Ashville, nosotros mantenemos vigilias semanales, y hemos visto un muchacho pasar un par de veces sin decir una palabra", Tim Pluta, presidente del grupo local de Veteranos por la Paz, dijo a <I>Obrero Socialista</I>. "La tercera vez que pas&oacute; nos pregunt&oacute; si lo que nosotros hac&iacute;amos era en contra o a favor de la guerra. Le dijimos que en contra. Entonces nos dijo 'Soy un infante de marina y he estado estacionado all&aacute; [en Irak]. Estoy visitando mi casa s&oacute;lo por una par de semanas. Quiero que sepan que creo que lo que estamos haciendo all&aacute; es una misi&oacute;n in&uacute;til'. Nos dijo que muchos de sus compa&ntilde;eros, otros soldados, e incluso algunos de sus l&iacute;deres, se sienten igual. Ese es el tipo de informaci&oacute;n que no est&aacute; saliendo a la luz p&uacute;blica".</P>
 <P>Es importante unirse a la protesta del 20 de marzo, y aumentar las filas de los que se est&aacute;n organizando por doquiera en contra de la ocupaci&oacute;n de Irak. Ay&uacute;danos a regar la voz por todas partes: &#161;Alto a la ocupaci&oacute;n. Que regresen las tropas ahora!</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

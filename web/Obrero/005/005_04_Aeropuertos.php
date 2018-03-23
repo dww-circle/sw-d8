@@ -6,25 +6,25 @@ Solidaridad con trabajadores inmigrantes de aeropuertos
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="5"><b>Solidaridad con trabajadores inmigrantes de aeropuertos</b></font></P>
 <P><font face="Times New Roman, Times, serif" size="2"><b>por Jeremy Sawyer, Brian Cruz y Eduardo Capulong</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | 12 de julio de 2002 | P&aacute;gina 4</font></P>
@@ -36,12 +36,12 @@ Solidaridad con trabajadores inmigrantes de aeropuertos
 <P>No es coincidencia que sea tambi&eacute;n el aeropuerto donde la mayor&iacute;a de los inspectores ha estado activa en oposici&oacute;n al requisito de ciudadan&iacute;a de la ley nueva. El programa piloto nuevo "es una victoria para los inspectores que tienen ciudadan&iacute;a. Pero para los que no son ciudadanos ni elegibles para solicitar la ciudadan&iacute;a, a&uacute;n quedan los problemas", dijo Valencia. S&oacute;lo 160 de los inspectores del SFO son elegibles para el nuevo programa.</P>
 <P>Valencia y otro inspectores en SFO est&aacute;n contentos porque el programa los emplear&aacute; por m&aacute;s tiempo. Pero ellos ven &eacute;sta como una oportunidad importante para continuar construyendo la oposici&oacute;n de la base contra los requisitos racistas de ciudadan&iacute;a de la ley nueva.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

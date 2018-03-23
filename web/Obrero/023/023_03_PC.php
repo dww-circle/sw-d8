@@ -6,25 +6,25 @@ El PC se acomoda a la derecha...otra vez
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Arial, Helvetica, sans-serif" size="2"><b>EL SENTIDO DEL MARXISMO</b></font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>El PC se acomoda a la derecha...otra vez</b></font><p>
@@ -47,12 +47,12 @@ El PC denunciaba a los cr&iacute;ticos izquierdistas de Roosevelt como "agentes 
 Durante la Segunda Guerra Mundial, el PC se transform&oacute; en un defensor ferviente de la movilizaci&oacute;n para la guerra, y hasta apoy&oacute; el pacto de los bur&oacute;cratas sindicales que promet&iacute;an no irse a la huelga y condon&oacute; el aprisionamiento de 120,000 residentes de EE.UU. de origen japon&eacute;s, describi&eacute;ndolo como "una medida de guerra necesaria".<p>
 La l&oacute;gica del frente popular era la de adaptarse a la derecha, y el partido demuestra lo mismo hoy en d&iacute;a. <i>Political Affairs</i>, la revista del partido, recientemente public&oacute; un articulo titulado "El matrimonio para los gays: piden demasiado, demasiado r&aacute;pido". Parecer&iacute;a una farsa si no fuera tan tr&aacute;gico.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

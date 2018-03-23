@@ -6,25 +6,25 @@ Why you should join us at Socialism 2005
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>Why you should join us at Socialism 2005</b></font><p>
 <font face="Arial, Helvetica, sans-serif" size="2">June 3, 2005 | Page 9</font><p>
@@ -39,12 +39,12 @@ Courses like <b>Women's Liberation and Socialism </b>will take up the question o
 There is probably no concept in the socialist tradition more controversial, misunderstood and slandered than the revolutionary "vanguard" party of socialists. The idea's of  the Russian revolutionary leader Lenin and the lessons of the 1917 Russian Revolution will be taken up in a course on <b>Lenin and the Russian Revolutionary Movement.</b> A session on <b>Lenin and the Birth of Bolshevism </b>will be led Aaron Hess and Sarah Hines. Jason Yanowitz will present a session titled <b>In Defense of Lenin</b>.<p>
 And that's just the beginning of what you'll learn about at Socialism 2005. We invite all of our readers to join us in Chicago!
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

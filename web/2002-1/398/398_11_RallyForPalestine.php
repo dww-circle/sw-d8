@@ -6,25 +6,25 @@ Justice for Palestinians
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="5"><b>Justice for Palestinians</b></font></P>
 <P><font face="Times New Roman, Times, serif" size="2"><b>By Lee Wengraf</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | March 15, 2002 | Page 11</font></P>
@@ -35,12 +35,12 @@ Justice for Palestinians
 <P>But they were far outnumbered by pro-Palestinian activists from organizations such as Jews Against the Occupation, Al-Awda Right of Return Coalition, Palestinian student groups from Hunter College and Columbia University and the Direct Action Network. Chanting "Arabs and Jews unite, end the occupation" and "Free, free Palestine," protesters kept up a loud protest for several hours.</P>
 <P>"This kind of showing is very important right now, when Israel is escalating the killing," said Ayman El-Sawa of Al-Awda. "But we aren't afraid because we are right and they are wrong. Look how few of them there are here today--they have nothing to say. And look at the soldiers who won't fight. So we're going to keep on fighting."</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

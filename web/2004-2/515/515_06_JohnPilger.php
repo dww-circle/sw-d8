@@ -6,25 +6,25 @@ Bush vs. Kerry: The fake debate
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4">John Pilger on the "choice" in Election 2004</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Bush vs. Kerry: The fake debate</b></font></P>
@@ -71,12 +71,12 @@ Bush vs. Kerry: The fake debate
 <P>The real debate is neither Bush nor Kerry, but the system they exemplify; it is the decline of true democracy and the rise of the American "national security state" in Britain and other countries claiming to be democracies, in which people are sent to prison and the key thrown away, and whose leaders commit capital crimes in faraway places, unhindered--then, like the ruthless Tony Blair, invite the thug they install to address the British Labour Party conference.</P>
 <P>The real debate is the subjugation of national economies to a system dividing humanity as never before and sustaining the deaths, every day, of 24,000 hungry people. The real debate is the subversion of political language and of debate itself, and perhaps, in the end, our self-respect.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

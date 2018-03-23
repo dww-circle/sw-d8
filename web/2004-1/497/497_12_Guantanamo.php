@@ -6,25 +6,25 @@ Challenge to the gulag in Guant&aacute;namo
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4">New Supreme Court cases</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Challenge to the gulag in Guant&aacute;namo</b></font></P>
@@ -43,12 +43,12 @@ Challenge to the gulag in Guant&aacute;namo
 <P>So instead, the Bush administration wants to essentially ignore the U.S. Constitution and courts altogether.</P>
 <P>As law professor David Cole explained in a recent <I>New York Times</I> op-ed article, "While the federal government has often introduced security initiatives by singling out foreigners, it has just as often sought to extend those tactics to citizens later...It used to take years to extend these tactics to American citizens. But things are speeding up. Tuesday, the Bush administration intended to defend its treatment of the Guant&aacute;namo detainees on the grounds that they are foreigners who do not deserve American legal protections. Next week, it will argue that it has just as much latitude to detain American citizens. The slippery slope has never been more slick."</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

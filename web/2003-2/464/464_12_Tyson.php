@@ -6,25 +6,25 @@ Standing up to corporate greed
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4">Tyson strikers draw the line</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Standing up to corporate greed</b></font></P>
@@ -45,12 +45,12 @@ Standing up to corporate greed
 <P>In struggle after struggle over the last decade--such as the "War Zone" struggles at Caterpillar, A.E. Staley and Bridgestone-Firestone in Illinois--workers have waged heroic strikes and sacrificed tremendously, but still weren't able to win because they had no strategy for mobilizing mass support to stop scabs from crossing their picket lines. Experience has shown that the slogan "one day longer" plays into management's hands--because corporations have deep pockets and resources that allow them to wait out a lengthy strike.</P>
 <P>This is an issue that labor movement as a whole must confront. The Tyson strikers in Jefferson have shown their determination--and deserve our support. Building solidarity and shutting down production is the way to win a victory against Tyson's corporate greed.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

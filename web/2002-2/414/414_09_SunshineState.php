@@ -6,25 +6,25 @@ Unearthing racism in the Sunshine State
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="5"><b>Unearthing racism in the Sunshine State</b></font></P>
 <P><font face="Times New Roman, Times, serif" size="2"><b>Review by Anthony Arnove</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | July 12, 2002 | Page 9</font></P>
@@ -41,12 +41,12 @@ Unearthing racism in the Sunshine State
 <P>Sayles contrasts Dr. Lloyd's effort to organize with Flash Phillips's resignation. When Desiree confronts Flash about what he's doing, he tells her, "Life moves on, shit gets bought out and sold. There's a handful of people who run the whole deal and there's the rest of us who do what they say and get paid for it."</P>
 <P>But <I>Sunshine State</I> shows that this is not the whole story. The past isn't always so easy to bury, as we find out in a comic twist off fate near the end of the movie. And even if they don't always win, people resist.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

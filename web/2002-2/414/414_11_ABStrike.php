@@ -6,25 +6,25 @@ R.I. Teamsters' strike hits beer distributor
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="5"><b>R.I. Teamsters' strike hits beer distributor</b></font></P>
 <P><font face="Times New Roman, Times, serif" size="2"><b>By Matthew Taibi, Teamsters Local 251</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | July 12, 2002 | Page 11</font></P>
@@ -35,12 +35,12 @@ R.I. Teamsters' strike hits beer distributor
 <P>Management has vowed to start running scab operations starting the week of July 8. Strikers are planning ambulatory picketing of scab trucks and picketing of businesses that accept scab deliveries.</P>
 <P>The key to victory is building solidarity with the rest of the 5,000-plus members of Local 251, as well as the rest of the Rhode Island labor movement. Such solidarity will allow the strikers to prevent scab deliveries, keep morale up and force management to show the respect the workers deserve by providing a good contract.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

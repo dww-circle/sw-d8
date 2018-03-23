@@ -6,25 +6,25 @@ Queens bus drivers vote on deal
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="5"><b>Queens bus drivers vote on deal</b></font></P>
 <P><font face="Times New Roman, Times, serif" size="2"><b>By Meredith Kolodner and Monique Jean Dols</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | August 9, 2002 | Page 11</font></P>
@@ -40,12 +40,12 @@ Queens bus drivers vote on deal
 <P>Jennings--accused by many workers of running a racist, corrupt administration--at one stage tried to discredit Toussaint and break the private lines into a new local. But Toussaint has increasingly turned New Directions into his personal caucus--at the expense of union democracy and accountability to the rank and file. </P>
 <P>Most workers seemed ready to vote in favor of the new deal, deferring the struggle over job security until March 2003. With the experience of this strike, rank-and-file workers in the private bus lines can begin to form a network of people who reject the old guard, but who are also prepared to push Toussaint to fight for real job security.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

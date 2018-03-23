@@ -6,25 +6,25 @@ El socialismo es sobre el control obrero
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Arial, Helvetica, sans-serif" size="2"><b>EL SENTIDO DEL MARXISMO</b></font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>El socialismo es sobre el control obrero</b></font></P>
@@ -41,12 +41,12 @@ El socialismo es sobre el control obrero
 <P>La pregunta de si el socialismo existe, por lo tanto, no depende de esta o aquella forma de propiedad (propiedad privada o nacionalizaci&oacute;n), sino de si la sociedad est&aacute; en manos de los productores asociados, la clase trabajadora. De hecho, el objetivo del poder obrero es implementar una serie de transformaciones econ&oacute;micas y sociales que pongan fin a toda diferencia de clases y cree una sociedad en donde el Estado, un instrumento de dominaci&oacute;n de clases, gradualmente desaparezca.</P>
 <P>Como Engels escribi&oacute;, "La econom&iacute;a, ahora bajo control obrero, socializa los medios de producci&oacute;n de tal modo que la producci&oacute;n y la distribuci&oacute;n puedan hacerse de acuerdo a un plan racional que satisfaga las necesidades humanas. A medida que desaparece la anarqu&iacute;a de la producci&oacute;n social, "languidece tambi&eacute;n la autoridad pol&iacute;tica del Estado".</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

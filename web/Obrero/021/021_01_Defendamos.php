@@ -6,25 +6,25 @@ Defendamos a los inmigrantes
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Contra...Los cazamigrantes...El Real ID...El fraude del programa bracero</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Defendamos a los inmigrantes</b></font><p>
@@ -45,12 +45,12 @@ En este clima anti-inmigrante que domina el quehacer pol&iacute;tico en Washingt
 Pero el proyecto no hace m&aacute;s que hacer acceptables las mismas ideas que Bush presentar&aacute; el a&ntilde;o pasado y que re-plantean las presunciones b&aacute;sicas del infame programa Bracero de hace 40 a&ntilde;os: suficientemente buenos para trabajar para los americanos, no para vivir entre ellos.<p>
 Ha llegado la hora de rejuvenecer el movimiento pro-inmigrantes, para que confronte a los activistas anti-inmigrantes y al racismo que gu&iacute;a sus acciones. Necesitamos un movimiento que luche por un mundo sin fronteras.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

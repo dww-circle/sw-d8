@@ -6,25 +6,25 @@ How Kornilov was defeated
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Arial, Helvetica, sans-serif" size="2"><b>RUSSIA 1917 | Part 8</b></font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>How Kornilov was defeated</b></font><p>
@@ -111,12 +111,12 @@ When a group of sailors visited Trotsky and other imprisoned revolutionaries, th
 With the defeat of Kornilov, a radicalized and mobilized working class confronted the question of the direction and aims of the revolution. Throughout the crisis, the Bolsheviks had never stopped pointing out that it was Kerensky who had paved the way for Kornilov. Many workers and soldiers saw with their own eyes that it was the Bolsheviks who had most resolutely and energetically defended the city.<p>
 On September 1, the day when Kornilov was arrested, the Petrograd Soviet of Workers' and Soldiers' Deputies adopted a resolution calling for a transfer of power to the revolutionary proletariat and peasants, and the proclamation of a democratic republic. The stage was set for the next and final stage of the revolution.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

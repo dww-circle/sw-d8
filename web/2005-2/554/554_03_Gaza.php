@@ -6,25 +6,25 @@ How colonizers became ''victims'' in Gaza
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Arial, Helvetica, sans-serif" size="2"><b>WHAT WE THINK</b></font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>How colonizers became ''victims'' in Gaza</b></font> <p>
@@ -40,12 +40,12 @@ In reality, the withdrawal from Gaza isn't really a withdrawal--nor are Israel's
 "For one, Israel can comfortably subtract Gaza's 1.5 million inhabitants from its demographic nightmare, maintaining, for a while longer perhaps, the Jewish majority," writes Ramzy Baroud. "The move will also end Israel's futile military quest to subdue a strategically inconsequential enclave, scrapping with such a decision the unfavorable international attention given to its Gaza occupation, the demoralization of its armed forces and the unavoidable loss of life as a result of Palestinian attacks on its settlements."<p>
 Palestinians will surely celebrate Israel's formal exit from Gaza, but they will remain confined in what has been called the world's largest open-air prison. With Israel continuing to deny Palestinians the right to travel outside Gaza or enough control over shipping and transportation of goods to restart their devastated economy, a confrontation with Gaza's Palestinian inhabitants has simply been postponed.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

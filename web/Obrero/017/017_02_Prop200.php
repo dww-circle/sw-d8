@@ -6,25 +6,25 @@ A luchar en contra de la Proposici&oacute;n 200
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4">Pol&iacute;tica de inmigraci&oacute;n otra vez bajo la lupa en Arizona</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>A luchar en contra de la Proposici&oacute;n 200</b></font></P>
@@ -39,12 +39,12 @@ A luchar en contra de la Proposici&oacute;n 200
 <P>El resultado de esto es que la encuesta m&aacute;s reciente sobre la 200 revela que un 66 por ciento de los votantes la apoyan--y mucho peor, &#161;que un 59 por ciento apoya el requisito que obliga a los empleados p&uacute;blicos a reportar a los inmigrantes indocumentados que est&eacute;n recibiendo cualquier servicio del gobierno!</P>
 <P>Luchar en contra de la Proposici&oacute;n 200 concediendo que "hay un problema con la inmigraci&oacute;n" no ser&aacute; suficiente para derrotar a la proposici&oacute;n, ni a los racistas que la apoyan.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

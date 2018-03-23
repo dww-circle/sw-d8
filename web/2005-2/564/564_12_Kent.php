@@ -6,25 +6,25 @@
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Iraq vet arrested at protest of military recruiters</font> <br>
 <font face="Times New Roman, Times, serif" size="5"><b>"We won't let students be vulnerable"</b></font><p>
@@ -45,12 +45,12 @@ As Paredes said in a statement, "Dave Airhart did not climb a playful climbing w
 Airhart says that the administration is mistaken if it thinks it can silence him--or other antiwar voices on campus. "If Kent thinks that KSAWC are going to back off--if they're going to try and make me an example--they're wrong," said Airhart. "We're trying to make Kent a better place. We're trying to make the students safer by not allowing them to be vulnerable to be recruited and sent over to Iraq."<p>
 <i>Defend Dave Airhart--call Kent State University President Carol Cartwright at 330-672-2210 or e-mail <a href="mailto:Carol.cartwright@kent.edu">Carol.cartwright@kent.edu</a>. Read statements in support of Dave on the Web at <a href="http://www.traprockpeace.org/kent_state_students/" target="_blank">www.traprockpeace.org/kent_state_students/</a></i>.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

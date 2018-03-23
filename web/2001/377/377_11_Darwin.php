@@ -6,25 +6,25 @@ Explaining Darwin's dangerous idea
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="5"><b>Explaining Darwin's dangerous idea</b></font></P>
 <font face="Arial, Helvetica, sans-serif" size="2"><B><I><P>Evolution,</B></I> co-production of the WGBH/NOVA Science Unit and Clear Blue Sky Productions. The seven-part documentary series premieres September 24-27, 2001, on PBS stations. </P></font>
@@ -36,12 +36,12 @@ Explaining Darwin's dangerous idea
 <P>The two-hour opening program--"Darwin's Dangerous Idea"--weaves together a dramatic reconstruction of Darwin's life with documentary sequences about current scientific research. Later programs look at such issues as the role of competition and cooperation, mass extinction, the evolution of sex and human evolution.</P>
 <P>As creationists renew their attacks on science, <I>Evolution</I> could not have come out at a better time. For many viewers, deprived of a decent science education, it will be their first in-depth exposure to the power and beauty of Darwin's ideas.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

@@ -6,25 +6,25 @@ Iraq's right to national self-determination
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Why we support the resistance to occupation</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Iraq's right to national self-determination</b></font><p>
@@ -60,12 +60,12 @@ On this basis alone, resistance to the occupation deserves our support. We must 
 Trotsky argued that the struggle of oppressed nations for national independence was progressive not only because it freed the oppressed nation from the political, military and economic yoke, but it also "deals a blow to imperialism." For Trotsky, when it came to the dominance of a weak nation by an imperialist power, the issue was not the nature of the governments involved or the politics involved, but the objective character of the war.<p>
 He wrote: "That, in particular, is the reason why, in the struggle between a civilized, imperialist, democratic republic and a backward, barbaric monarchy in a colonial country, the socialists are completely on the side of the oppressed country notwithstanding its monarchy and against the oppressor country notwith-standing its 'democracy.' Imperialism camouflages its own peculiar aims--seizure of colonies, markets, sources of raw material, spheres of influence--with such ideas as 'safeguarding peace against the aggressors,' 'defense of the fatherland,' 'defense of democracy,' etc. These ideas are false through and through. It is the duty of every socialist not to support them but, on the contrary, to unmask them before the people."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

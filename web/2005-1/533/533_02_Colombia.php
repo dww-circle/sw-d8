@@ -6,25 +6,25 @@ Murdered by the Colombian military
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Leading human rights activist among the victims</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Murdered by the Colombian military </b></font><p>
@@ -44,12 +44,12 @@ That anger should be directed at the U.S. government as well--for supplying the 
 "The [Bush] administration has a big responsibility, because when it comes to increasing military aid to Colombia...they say that they don't violate human rights," says Zarate-Laun. "They shouldn't lie to the American people. They should tell them the truth. The truth is that they are not really after drug dealers. They are protecting the interests of the United States and the interests of the international corporations."<p>
 <i>Send messages of protest to Colombia Desk at the U.S. State Department (<a href="mailto:barclaycg@state.gov">barclaycg@state.gov</a>) and to Colombian President &Aacute;lvaro Uribe (<a href="mailto:auribe@presidencia.gov.co">auribe@presidencia.gov.co</a>).</i> <p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

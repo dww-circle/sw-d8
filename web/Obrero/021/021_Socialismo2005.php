@@ -6,25 +6,25 @@ Socialismo2005
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Un fin de semana de debates pol&iacute;ticos, charlas y entretenimiento</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Socialismo2005</b></font><p>
@@ -40,12 +40,12 @@ Habr&aacute; m&aacute;s de 100 discusiones sobre las luchas de hoy, la tradici&o
 Algunos de los temas de discusi&oacute;n importantes: Familias militares y soldados contra la Guerra en Irak ; La crisis en California--Peter Miguel Camejo; El imperialismo de EE.UU. y las elecciones "democr&aacute;ticas"; &iquest;Es el marxismo euroc&eacute;ntrico?; La pol&iacute;tica revolucionaria de Che Guevara; La Venezuela de Ch&aacute;vez: Imperialismo, populismo, y lucha de clases; La pol&iacute;tica y la inmigraci&oacute;n; La clase, la multitud, y los movimientos sociales en Am&eacute;rica Latina<p>
 
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

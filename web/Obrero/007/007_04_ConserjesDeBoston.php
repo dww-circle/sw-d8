@@ -6,25 +6,25 @@
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="4">Conserjes de Boston ganan huelga de cuatro semanas</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>"Nos dimos a respetar"</b></font></P>
@@ -43,12 +43,12 @@
 <P>Desde el principio, la campa&ntilde;a se habr&iacute;a beneficiado de un &eacute;nfasis m&aacute;s grande en que los conserjes se organizaran para convencer a sus compa&ntilde;eros de trabajo a que se unieran a la huelga--y para apoyarse unos a otros manteniendo las l&iacute;neas de piquete fuertes. Para Jos&eacute;, la lecci&oacute;n es sencilla: "tenemos que lograr que todos apoyen la huelga la pr&oacute;xima vez". Bartley se&ntilde;ala que "se necesita un envolvimiento m&aacute;s democr&aacute;tico, de la base en el proceso de negociaci&oacute;n".</P>
 <P>Esto significa aprovechar la red de representantes de base y de coordinadores de piquete que surgieron de la huelga para darle a los conserjes una voz m&aacute;s fuerte en la direcci&oacute;n de su campa&ntilde;a. Necesitamos apropiar el ejemplo que los conserjes nos han dado tomando la energ&iacute;a de su huelga y aplicarla a cada lucha por justicia--desde la lucha contra la guerra en Irak hasta la lucha contra la guerra que los ricos tienen contra los trabajadores pobres.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

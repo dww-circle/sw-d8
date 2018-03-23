@@ -6,25 +6,25 @@
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Journalist Patrick Cockburn on Iraq and the new constitution:</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>"All Iraqis see is their lives getting worse"</b></font><p>
@@ -92,12 +92,12 @@ The idea that a fragmented Iraq or a divided Iraq is a solution is, I think, a v
 THE CONSTITUTION has been presented in the U.S. as a formula that somehow will bring peace to Iraq, or at least prevent the war from getting worse. But Iraqis have been continually presented with things like this--the constitution, or new governments, or the elections--and all they see is their lives getting worse. <p>
 For very common-sense reasons, this tends to discredit whatever political initiatives are taking place. Disregard for a moment whether the constitution is workable, and remember that people are finding that their lives are getting more dangerous by the day--there were 1,200 bodies delivered to the Baghdad mortuary last month alone. So it's natural that if these initiatives don't improve things, they will be discredited in most people's eyes. It's a very obvious point, but it obviously isn't one that's seen in Washington.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

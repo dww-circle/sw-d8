@@ -6,25 +6,25 @@ A chance to take a "crucial first step"
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Arial, Helvetica, sans-serif" size="2"><b>THE MEANING OF MARXISM</b></font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>A chance to take a "crucial first step"</b></font><p>
@@ -42,12 +42,12 @@ What about the argument that voting for a minority left candidate "steals" votes
 Here's what Marx and Engels said about it in the 1840s: "Even when there is no prospect whatsoever of their being elected, the workers must put up their own candidates in order to preserve their independence, to count their forces, and to bring before the public their revolutionary attitude and party standpoint. In this connection, they must not allow themselves to be seduced by such arguments of the Democrats as, for example, that by so doing they are splitting the Democratic Party and making it possible for the reactionaries to win. The ultimate intention of all such phrases is to dupe the working class. The advance which the proletarian party is bound to make by such independent action is infinitely more important than the disadvantage that might be incurred by the presence of a few reactionaries in the representative body."<p>
 Misplaced support on the left for the Democratic Party has meant that our side remains disoriented and disorganized by elections. The Nader-Camejo ticket affords us that "first crucial step" to begin "counting our forces." The time is now to take advantage of it.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

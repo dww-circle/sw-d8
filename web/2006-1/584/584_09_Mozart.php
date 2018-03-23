@@ -6,25 +6,25 @@ Mozart's music in revolutionary times
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">A genius shaped by political and social upheavals</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Mozart's music in revolutionary times</b></font><p>
@@ -49,12 +49,12 @@ Mozart and his librettist Emmanuel Schikaneder set out to produce an opera that 
 Some critics of Mozart point to <i>The Magic Flute</i> as evidence of a strain of sexism in his work. Yet while it's true that the opera contains sexist statements--likely a nod to the Freemasons' own barring of women from the organization--in the end, it is the heroine Pamina who undergoes the most severe trials, and who ultimately guides Tamino into the Temple of Reason, when he is halted by fear. <p>
 Just two months after the premiere of <i>The Magic Flute,</i> Mozart died at the age of 36. But as music critic Anthony Arblaster wrote, this final work "belongs to its time, that moment of hope and optimism after 1789 that was shared so widely and so memorably expressed in literature as well as in music."<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

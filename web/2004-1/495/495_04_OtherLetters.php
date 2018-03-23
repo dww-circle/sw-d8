@@ -6,25 +6,25 @@ Letters to the editor
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <P><font face="Times New Roman, Times, serif" size="5"><b>Letters to the editor</b></font></P>
 <p><font face="Arial, Helvetica, sans-serif" size="2">April 16, 2004 | Page 4</font></P>
@@ -67,12 +67,12 @@ Recently, at a panel in Burlington, Vt., on the fight for gay marriage, the horr
 <P>The same logic was implicitly applied to the question of pushing the local mayor to issue gay marriage licenses. The mayor is running for governor of Vermont as a Democrat in November, and the worry is that if we push him to start issuing licenses to gay couples, it may cost him the governorship. Again, would it be better to have gay marriage rights in Burlington with a Republican as possible governor, or continued second-class citizenship status for gays in Vermont with a Democrat as governor?</P>
 <P>This is why the politics of lesser evilism is so deadly. It means that we won't fight for what we believe in because it may hurt so-called "friendly" politicians. Our movements should be less worried about helping "lesser evil" politicians climb the electoral ladder, and more concerned about winning concrete victories for oppressed people through mass struggle.<BR>
 <B>Keith Rosenthal, </B>Burlington, Vt.</P>
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>

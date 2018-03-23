@@ -6,25 +6,25 @@ Se reh&uacute;san a pelear en la guerra de Bush
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Pablo Paredes &#8226; Kevin Benderman &#8226; Camilo Mej&iacute;a</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Se reh&uacute;san a pelear en la guerra de Bush</b></font><p>
@@ -56,12 +56,12 @@ La amargura con las fuerzas armadas es m&aacute;s profunda entre el personal que
 El 19 de marzo, el segundo aniversario de la invasi&oacute;n, los veteranos anti-guerra, las familias militares y otros activistas anti-guerra van a viajar de todos los rincones del pa&iacute;s a Fayetteville, Carolina del Norte--donde se encuentra el Fuerte Bragg--para manifestarse. Reunir la mayor cantidad de manifestantes posible en esta protesta--y en las otras que ser&aacute;n celebradas en otras ciudades--es la mejor forma de respaldar a los soldados y los objetores militares que han dicho "que no".<p>
 Nuestro mensaje a Washington es sencillo: &iexcl;Que regresen todas las tropas ahora!<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinksObrero.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinksObrero.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdObrero.htmlf" -->
+<?php include "../../legacy-includes/RightAdObrero.htmlf" ?>
 </td>
 </tr>
 </table>

@@ -6,25 +6,25 @@ Every immigrant is now a suspect
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
 <td width="480" valign="top">
-<!--#include virtual="/legacy-includes/BodyInsert.htmlf" -->
+<?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Stories of persecution after September 11</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>Every immigrant is now a suspect</b></font><p>
@@ -42,12 +42,12 @@ The scapegoating of immigrants in times of war is nothing new, and Nguyen sees t
 He also points out that the laws requiring mandatory detention for immigration violations, as well as many other provisions that make today's xenophobic crackdown possible, were put in place under Democratic President Bill Clinton. He argues that the destruction of welfare, the strengthening of the criminal justice system and anti-immigrant legislation pushed through during the 1990s set the stage for the Immigration and Naturalization Service, the FBI and now the Department of Homeland Security to wreak havoc on the lives of tens of thousands of innocent people, who suddenly became suspects simply because of their race or religion after September 11.<p>
 Among the shattered dreams of so many immigrant families who came to this country to find a better life than the one they left behind, there is also cause for hope among the many voices included in this book. The profiles of activists like Bobby Khan of the Coney Island Avenue Project and Aarti Shahani of Families for Peace show that, even while their families and communities are under siege, it is possible for those targeted to fight back.<p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFolder.htmlf" -->
+<?php include "../../legacy-includes/RightAdFolder.htmlf" ?>
 </td>
 </tr>
 </table>
