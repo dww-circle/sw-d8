@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "1971885a9eb061175ab806cf5ce88a50",
+    "content-hash": "a439aa95c911b414d6773f61650fce9c",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3102,6 +3102,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "[#2955400-4] d6_path_redirect migration source has to define the *correct* source_module annotation": "https://www.drupal.org/files/issues/2018-03-22/2955400-4.d6_path_redirect-source_module.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
