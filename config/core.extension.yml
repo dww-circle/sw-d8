@@ -49,6 +49,7 @@ module:
   page_cache: 0
   path: 0
   rdf: 0
+  redirect: 0
   search: 0
   search_kint: 0
   shortcut: 0
