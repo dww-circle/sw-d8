@@ -6,20 +6,20 @@ Election 2004
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
@@ -252,12 +252,12 @@ Election 2004
 <A HREF="../2002-2/430/430_08_ElectionAnalysis.shtml"><font face="Times New Roman, Times, serif" size="4"><b>What happened in the election?</b></font></A><BR>
 <font face="Times New Roman, Times, serif" size="3">In all the post-election spin on the Republican midterm victory, it was easy to forget that the media's pre-election "conventional wisdom" was that the races would be "too close to call"--or that only three months ago, Bush's popularity was falling fast. What happened?</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFeatured.htmlf" -->
+<?php include "../legacy-includes/RightAdFeatured.htmlf" ?>
 </td>
 </tr>
 </table>

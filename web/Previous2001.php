@@ -6,19 +6,19 @@ Issue Archives | 2001
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "./legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<tr><td width="474"><a name="Top"></a><?php include "./legacy-includes/TopLogo.htmlf" ?></td>
+<td width="270"><?php include "./legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "./legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
@@ -53,7 +53,7 @@ Issue Archives | 2001
 <p><b><a href="2001/367/367_Storylist.shtml">April 27, 2001 | Issue 367</a></b></p>
 <p><b><a href="2001/366/366_Storylist.shtml">April 13, 2001 | Issue 366</a></b></p>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "./legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="48"></td>
 

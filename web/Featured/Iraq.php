@@ -6,20 +6,20 @@ The U.S. invasion and occupation of Iraq
 </title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<!--#include virtual="/legacy-includes/Script.htmlf" -->
+<?php include "../legacy-includes/Script.htmlf" ?>
 </head>
 
 <body bgcolor="#FFFFCC" text="000000" link="990000" vlink="660000" alink="003366" leftmargin="0" topmargin="0">
 <table width="744" cellspacing="0" cellpadding="0" border="0">
-<tr><td width="474"><a name="Top"></a><!--#include virtual="/legacy-includes/TopLogo.htmlf" --></td>
+<tr><td width="474"><a name="Top"></a><?php include "../legacy-includes/TopLogo.htmlf" ?></td>
 
-<td width="270"><!--#include virtual="/legacy-includes/TopAd.htmlf" -->
+<td width="270"><?php include "../legacy-includes/TopAd.htmlf" ?>
 </td></tr></table>
 
 <table width="744" cellspacing="0" cellpadding="0" border="0">
 <tr><td width="18" bgcolor="FFCC66"></td>
 
-<td width="108" bgcolor="FFCC66" valign=top><!--#include virtual="/legacy-includes/LeftButtons.htmlf" --></td>
+<td width="108" bgcolor="FFCC66" valign=top><?php include "../legacy-includes/LeftButtons.htmlf" ?></td>
 
 <td width="18"></td>
 
@@ -377,12 +377,12 @@ The U.S. invasion and occupation of Iraq
 <font face="Times New Roman, Times, serif" size="4"><b><a href="../2001/384/384_06_WashWarCrimes.shtml">Washington's war crimes</A></b></font><BR>
 <font face="Times New Roman, Times, serif" size="3">When George W. Bush announced that the U.S. bombing campaign against Afghanistan had begun, he declared, "We are a peaceful nation." Not exactly. Here is a partial time line of America's imperialist adventures.</P>
 
-<!--#include virtual="/legacy-includes/BottomNavLinks.htmlf" -->
+<?php include "../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>
 
 <td width="108" valign="top">
-<!--#include virtual="/legacy-includes/RightAdFeatured.htmlf" -->
+<?php include "../legacy-includes/RightAdFeatured.htmlf" ?>
 </td>
 </tr>
 </table>
