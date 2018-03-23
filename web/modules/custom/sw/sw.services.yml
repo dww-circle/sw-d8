@@ -1,0 +1,5 @@
+services:
+  sw.subscriber:
+    class: Drupal\sw\EventSubscriber\SWSubscriber
+    tags:
+      - { name: event_subscriber }
