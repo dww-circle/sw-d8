@@ -103,10 +103,11 @@
         "[#2905230-6] Alter inline_entity_form table to display auto-computed entity labels" : "https://www.drupal.org/files/issues/Title_displayed_as_AutoEntityLabel_after_saving_via_Inline_Entity_Form-2905230-6.patch"
       },
       "drupal/core": {
-	  "[#2934799-2] d6_term_node_revision migration ignores a lot of items that it shouldn't" : "https://www.drupal.org/files/issues/2934799-2-drupal-d6_term_node_revision_uses_wrong_migration_mapping.patch"
+        "[#2645954-26] Views output field as a custom link options all ignored if path is routed" : "https://www.drupal.org/files/issues/2018-03-27/2645954-26.views-output-field-as-link-for-routed-paths.patch",
+        "[#2934799-2] d6_term_node_revision migration ignores a lot of items that it shouldn't" : "https://www.drupal.org/files/issues/2934799-2-drupal-d6_term_node_revision_uses_wrong_migration_mapping.patch"
       },
       "drupal/migrate_upgrade": { 
-       "[#2935225-2] Fix to d6_term_node_revision handling (companion to core issue 2934799)" : "https://www.drupal.org/files/issues/2935225-2-migrate_upgrade-fix_to_d6_term_node_revision_handling.patch"
+        "[#2935225-2] Fix to d6_term_node_revision handling (companion to core issue 2934799)" : "https://www.drupal.org/files/issues/2935225-2-migrate_upgrade-fix_to_d6_term_node_revision_handling.patch"
       },
       "drupal/redirect": { 
        "[#2955400-4] d6_path_redirect migration source has to define the *correct* source_module annotation" : "https://www.drupal.org/files/issues/2018-03-22/2955400-4.d6_path_redirect-source_module.patch"
