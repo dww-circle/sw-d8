@@ -2,6 +2,8 @@
 
 use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Routing;
+
 use Drupal\media\Entity\Media;
 use Drupal\node\Entity\Node;
 use Drupal\node\NodeInterface;
@@ -199,8 +201,8 @@ function sw_preprocess_node_story(&$variables) {
     }
   }
 
-  // For teasers with conditional images, hide main_image based on story_weight.
   if ($variables['view_mode'] == 'teaser_conditional_image') {
+    // Hide main_image based on story_weight.
     $weight = $variables['node']->get('field_story_weight')->getValue();
     // -7 and heavier is "greater than" in the math world. This logic seems
     // backwards, but it's right given the inverted meaning of weights.
@@ -210,6 +212,28 @@ function sw_preprocess_node_story(&$variables) {
     }
     else {
       $variables['attributes']['class'][] = 'teaser-conditional-with-image';
+    }
+
+    // See if we're on a story list where the story labels don't make sense.
+    // Since the story label is conditional on the page we're viewing, the
+    // resulting render array can only be cached per route/page.
+    $variables['#cache']['contexts'][] = 'route';
+    $route_parameters = \Drupal::routeMatch()->getParameters();
+    if ($route_parameters) {
+      $view_id = $route_parameters->get('view_id');
+      if (!empty($view_id) && $view_id == 'sw_section_stories') {
+        $arg_0 = $route_parameters->get('arg_0');
+        if (!empty($arg_0)) {
+          switch (strtolower($arg_0)) {
+            case 'editorials':
+            case "readers'-views":
+            case 'obrero-socialista':
+              // @todo It'd be better not to compute these in the first place...
+              unset($variables['story_label']);
+              break;
+          }
+        }
+      }
     }
   }
 
