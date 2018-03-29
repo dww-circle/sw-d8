@@ -739,6 +739,12 @@ select {
   .pager a.is-active, .pager a:active, .pager a.active-trail {
     color: #1A272E; }
 
+#block-pagetitle-story-lists {
+  border-bottom: 2px solid #1A272E;
+  margin: 0 0 2em 0; }
+  #block-pagetitle-story-lists .page-title {
+    margin: 0 0 0.25em 0; }
+
 .block-sw-recent-articles-block {
   border-bottom: 1px solid #bbb;
   padding-bottom: 20px;
