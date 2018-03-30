@@ -98,6 +98,8 @@
 
       <div{{ content_attributes.addClass('node__content') }}>
         {{ content|without('field_main_image', 'field_wide_image') }}
+        {% block date %}
+        {% endblock date %}
       </div>
     </div>
 

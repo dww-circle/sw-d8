@@ -173,6 +173,17 @@ span.bullet {
   font-size: 13px;
 }
 
+.field--name-created {
+  color: #808080;
+  display: block;
+  font-family: $ff-din-regular;
+  font-size: 14px;
+}
+
+.field--name-field-teaser p {
+  margin: 0;
+}
+
 .clearfix {
   @include clearfix;
 }

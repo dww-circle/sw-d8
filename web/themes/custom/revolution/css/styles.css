@@ -150,6 +150,15 @@ span.bullet {
   color: grey;
   font-size: 13px; }
 
+.field--name-created {
+  color: #808080;
+  display: block;
+  font-family: "FF DIN Pro Regular", sans-serif;
+  font-size: 14px; }
+
+.field--name-field-teaser p {
+  margin: 0; }
+
 .clearfix:after {
   clear: both;
   content: " ";
@@ -594,10 +603,6 @@ main {
 
 .page-node-type-story .field--name-created {
   border-bottom: 1px solid #808080;
-  color: #808080;
-  display: block;
-  font-family: "FF DIN Pro Regular", sans-serif;
-  font-size: 14px;
   margin-bottom: 24px; }
 
 .page-node-type-story .field--name-field-body {
