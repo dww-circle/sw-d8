@@ -234,6 +234,9 @@ function sw_preprocess_node_story(&$variables) {
           }
         }
       }
+      elseif (!empty($view_id) && $view_id == 'sw_recent') {
+        unset($variables['date']);
+      }
     }
   }
 
