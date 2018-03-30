@@ -20,6 +20,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/recent\r\n/section*\r\n"
+    pages: "/recent\r\n/section*\r\n/topic/*\r\n"
     negate: false
     context_mapping: {  }
