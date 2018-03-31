@@ -1,0 +1,25 @@
+id: upgrade_d6_path_redirect
+label: Path Redirect
+migration_tags:
+  - sw_d6
+  - Drupal 6
+
+source:
+  plugin: d6_path_redirect
+
+process:
+  rid: rid
+  redirect_source: source
+  redirect_redirect:
+    plugin: d6_path_redirect
+    source:
+      - redirect
+      - query
+  language:
+    plugin: default_value
+    source: language
+    default_value: und
+  status_code: type
+
+destination:
+  plugin: entity:redirect
