@@ -199,6 +199,8 @@ main {
   font-size: 30px;
   line-height: 40px;
   letter-spacing: -1px;
+  padding-bottom: 20px;
+
   @include breakpoint($handheld) {
     font-size: 40px;
     line-height: 45px;
@@ -212,11 +214,10 @@ main {
     font-size: 60px;
     line-height: 55px;
   }
-}
 
-.region-content,
-.region-sidebar {
-  margin-top: 52px;
+  &.page-title-full {
+    border-bottom: 2px solid;
+  }
 }
 
 .layout-sidebar {

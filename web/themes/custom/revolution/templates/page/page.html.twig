@@ -50,6 +50,9 @@
   page.sidebar|render|striptags ? 'layout-sidebar',
 ]
 %}
+
+{% set page_title = page['#title'] %}
+
 <div class="svgsprite">
   {% include directory ~ '/images/svgsprites/symbol/svg/sprite.symbol.svg' %}
 </div>
@@ -96,8 +99,14 @@
   <main role="main" class="clearfix">
 
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
-    {{ page.content }}
-    {{ page.sidebar }}
+
+    {% block main %}
+
+      <h1 class="page-title page-title-full">{{ page_title }}</h1>
+      {{ page.content }}
+      {{ page.sidebar }}
+
+    {% endblock main %}
 
   </main>
 
