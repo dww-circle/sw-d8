@@ -1,0 +1,28 @@
+uuid: 0878a5f5-396e-4608-89a8-917db2c1454f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - sw
+  theme:
+    - revolution
+id: sw_story_footer_further_reading
+theme: revolution
+region: content_bottom
+weight: 0
+provider: null
+plugin: sw_further_reading_block
+settings:
+  id: sw_further_reading_block
+  label: 'Further Reading'
+  provider: sw
+  label_display: visible
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      story: story
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
