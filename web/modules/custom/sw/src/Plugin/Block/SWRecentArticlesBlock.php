@@ -2,10 +2,9 @@
 
 namespace Drupal\sw\Plugin\Block;
 
-use Drupal\Core\Block\BlockBase;
 use Drupal\Core\Url;
 use Drupal\node\Entity\Node;
-use Drupal\node\NodeInterface;
+use Drupal\sw\Plugin\Block\SWRecentArticlesBase;
 
 /**
  * A site-wide block for recent articles.
@@ -16,21 +15,13 @@ use Drupal\node\NodeInterface;
  *   category = @Translation("SW"),
  * )
  */
-class SWRecentArticlesBlock extends BlockBase {
+class SWRecentArticlesBlock extends SWRecentArticlesBase {
 
   /**
    * {@inheritdoc}
    */
   public function build() {
-    // @todo Potentially make the # of days configurable.
-    $dates = $this->getRecentPublicationDates();
-    $all_articles = $this->findRecentArticles($dates);
-
-    $articles_by_date = [];
-    foreach ($all_articles as $nid => $article) {
-      $articles_by_date[$article->created_day][] = $this->buildArticleRenderArray($article);
-    }
-
+    $articles_by_date = $this->findRecentArticles();
     $date_labels = [];
     $date_tabs = [];
     foreach ($articles_by_date as $pub_date => $articles) {
@@ -40,6 +31,10 @@ class SWRecentArticlesBlock extends BlockBase {
       $date_labels[$pub_date] = [
         '#markup' => '<a id="' . $label_id . '" href="#' . $header_id . '" class="recent-articles-date">' . $this->getTabLabel($pub_date) . '</a>',
       ];
+      $article_render_arrays = [];
+      foreach ($articles as $article) {
+        $article_render_arrays[] = $this->buildArticleRenderArray($article);
+      }
       $date_tabs[$pub_date] = [
         // Add headers for the non-JS case:
         // The tab links at least can send you to a named anchor.
@@ -56,7 +51,7 @@ class SWRecentArticlesBlock extends BlockBase {
             'class' => 'recent-articles-tab js-hide',
             'id' => $tab_id,
           ],
-          '#items' => $articles,
+          '#items' => $article_render_arrays,
         ],
       ];
     }
@@ -84,43 +79,6 @@ class SWRecentArticlesBlock extends BlockBase {
         'tags' => ['node_list'],
       ],
     ];
-  }
-
-  /**
-   * Helper function to find the 6 most recent days that SW published articles.
-   *
-   * Technically, this is all wrong, and not the Proper Drupal 8 Way(tm). It
-   * assumes MySQL. It assumes entities are stored in the DB, not some fancy
-   * plugable backend, etc. Thankfully, all these assumptions are true.
-   *
-   * @return array
-   *   Array of publication dates, of the form YYYYMMDD.
-   */
-  protected function getRecentPublicationDates() {
-    $query = \Drupal::database()->query("SELECT DATE_FORMAT((DATE_ADD('19700101', INTERVAL node_field_data.created SECOND) + INTERVAL -18000 SECOND), '%Y%m%d') AS node_field_data_created_day FROM node_field_data node_field_data WHERE (node_field_data.status = '1') AND (node_field_data.type IN ('story')) GROUP BY node_field_data_created_day ORDER BY node_field_data_created_day DESC LIMIT 6;");
-    return $query->fetchCol();
-  }
-
-  /**
-   * Helper function to find all the articles published on the given dates.
-   *
-   * Technically, this is all wrong, and not the Proper Drupal 8 Way(tm). It
-   * assumes MySQL. It assumes entities are stored in the DB, not some fancy
-   * plugable backend, etc. Thankfully, all these assumptions are true.
-   *
-   * @param array $dates
-   *   The publication dates to find articles for.
-   *   Each value must be of the form 'YYYYMMDD'.
-   *
-   * @return array
-   *   Array of article objects, indexed by nid, sorted by created_day (DESC)
-   *   and story_weight (ASC).  Each object has the values nid, vid, title,
-   *   story_weight, and created_day.
-   */
-  protected function findRecentArticles(array $dates) {
-    $query = \Drupal::database()->query(
-      "SELECT nfd.nid, nfd.vid, nfd.title, nfsw.field_story_weight_value AS story_weight, DATE_FORMAT((DATE_ADD('19700101', INTERVAL nfd.created SECOND) + INTERVAL -18000 SECOND), '%Y%m%d') AS created_day FROM {node_field_data} nfd INNER JOIN {node__field_story_weight} nfsw ON nfd.nid = nfsw.entity_id WHERE (nfd.status = '1') AND (nfd.type = 'story') AND DATE_FORMAT((DATE_ADD('19700101', INTERVAL nfd.created SECOND) + INTERVAL -18000 SECOND), '%Y%m%d') IN ( :days[] ) ORDER BY created_day DESC, story_weight ASC", [':days[]' => $dates]);
-    return $query->fetchAllAssoc('nid');
   }
 
   /**
