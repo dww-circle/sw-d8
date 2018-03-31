@@ -1,0 +1,28 @@
+uuid: 3b8d82ef-5296-42f1-8db7-6eae23f7fbab
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - sw
+  theme:
+    - revolution
+id: sw_story_footer_latest_stories
+theme: revolution
+region: content_bottom
+weight: 0
+provider: null
+plugin: sw_latest_stories_block
+settings:
+  id: sw_latest_stories_block
+  label: 'Latest Stories'
+  provider: sw
+  label_display: visible
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      story: story
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
