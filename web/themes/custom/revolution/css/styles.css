@@ -650,8 +650,6 @@ main {
     margin-right: 30px; }
   .page-node-type-story .region-content-bottom .block:nth-child(3) {
     margin-left: 30px; }
-  .page-node-type-story .region-content-bottom .block .field--name-title {
-    display: none; }
   .page-node-type-story .region-content-bottom h2 {
     color: #ff0000;
     font-family: "FF DIN Pro Bold", sans-serif;
