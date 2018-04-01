@@ -7,15 +7,15 @@ dependencies:
     - sw
   theme:
     - revolution
-id: sw_story_footer_latest_stories
+id: sw_story_footer_todays_stories
 theme: revolution
 region: content_bottom
 weight: -4
 provider: null
-plugin: sw_latest_stories_block
+plugin: sw_todays_stories_block
 settings:
-  id: sw_latest_stories_block
-  label: 'Latest Stories'
+  id: sw_todays_stories_block
+  label: "Today's Stories"
   provider: sw
   label_display: visible
 visibility:

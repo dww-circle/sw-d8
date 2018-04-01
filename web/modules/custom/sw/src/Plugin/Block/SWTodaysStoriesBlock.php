@@ -9,12 +9,12 @@ use Drupal\sw\Plugin\Block\SWRecentArticlesBase;
  * A block for "Latest Stories" in the article footer region.
  *
  * @Block(
- *   id = "sw_latest_stories_block",
- *   admin_label = @Translation("SW Latest Stories"),
+ *   id = "sw_todays_stories_block",
+ *   admin_label = @Translation("SW Today's Stories"),
  *   category = @Translation("SW"),
  * )
  */
-class SWLatestStoriesBlock extends SWRecentArticlesBase {
+class SWTodaysStoriesBlock extends SWRecentArticlesBase {
 
   /**
    * {@inheritdoc}
