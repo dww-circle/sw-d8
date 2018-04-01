@@ -103,18 +103,14 @@
     {% block main %}
 
       <h1 class="page-title page-title-full">{{ page_title }}</h1>
-      {{ page.content }}
-      {{ page.sidebar }}
-
+      <div class="flexible--container">
+        {{ page.content }}
+        {{ page.sidebar }}
+        {{ page.content_bottom }}
+      </div>
     {% endblock main %}
 
   </main>
-
-  {% if page.content_bottom %}
-    <div class="page-container">
-      {{ page.content_bottom }}
-    </div>
-  {% endif %}
 
   <div class="footer-wrapper">
     <div class="follow-label">{{ 'Follow Us'|t }}</div>

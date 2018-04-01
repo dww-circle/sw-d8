@@ -1,6 +1,9 @@
 {% extends 'page.html.twig' %}
 
 {% block main %}
-  {{ page.content }}
-  {{ page.sidebar }}
+  <div class="flexible--container">
+    {{ page.content }}
+    {{ page.sidebar }}
+    {{ page.content_bottom }}
+  </div>
 {% endblock main %}

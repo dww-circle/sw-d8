@@ -1,0 +1,46 @@
+// Sidebar layout and reordering elements for mobile happens here.
+.region-sidebar {
+  @include breakpoint($desktop) {
+    padding-left: 30px;
+  }
+}
+
+.layout-sidebar {
+
+  .flexible--container {
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint($desktop) {
+      display: grid;
+      grid-template-columns: calc(100% - 350px) 350px;
+    }
+  }
+
+  .region-content {
+    order: 1;
+
+    @include breakpoint($desktop) {
+      order: 0;
+    }
+  }
+
+  .region-sidebar {
+    order: 3;
+
+    @include breakpoint($desktop) {
+      order: 0;
+    }
+  }
+
+  .region-content-bottom {
+    order: 2;
+
+    @include breakpoint($desktop) {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      order: 0;
+    }
+  }
+}
+

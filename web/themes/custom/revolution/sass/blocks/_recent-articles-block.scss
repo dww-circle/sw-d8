@@ -1,4 +1,11 @@
 .block-sw-recent-articles-block {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+
+  @include breakpoint($desktop) {
+    border-bottom: 1px solid #bbb;
+  }
+
   h2 {
     @include title-fancy-black;
     &:after {
@@ -8,10 +15,6 @@
     margin: 0;
     padding: 0;
   }
-
-  border-bottom: 1px solid #bbb;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
   
   .recent-articles-dates {
     font-size: 15px;

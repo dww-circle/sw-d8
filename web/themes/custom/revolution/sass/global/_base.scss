@@ -219,20 +219,3 @@ main {
     border-bottom: 2px solid;
   }
 }
-
-.layout-sidebar {
-  .region-content {
-    @include breakpoint($desktop) {
-      float: left;
-      width: calc(100% - 350px);
-    }
-  }
-
-  .region-sidebar {
-    @include breakpoint($desktop) {
-      float: right;
-      padding-left: 30px;
-      width: 350px;
-    }
-  }
-}
