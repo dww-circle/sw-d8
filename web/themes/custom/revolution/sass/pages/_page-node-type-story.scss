@@ -89,14 +89,12 @@
         flex-grow: 1;
         min-width: 170px;
         width: 400px; // arbritrary number that allows flex-grow to work.
-      }
-
-      &:first-child {
-        margin-right: 30px;
-      }
-
-      &:nth-child(3) {
-        margin-left: 30px;
+        &:first-child {
+          margin-right: 30px;
+        }
+        &:nth-child(3) {
+          margin-left: 30px;
+        }
       }
     }
 
