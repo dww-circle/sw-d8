@@ -670,10 +670,12 @@ main {
   .page-node-type-story .region-content-bottom .story-link {
     margin-bottom: 25px; }
     .page-node-type-story .region-content-bottom .story-link .story-label {
-      font-size: 13px; }
+      font-size: 13px;
+      margin-bottom: 0; }
     .page-node-type-story .region-content-bottom .story-link h4 {
       font-size: 16px;
       line-height: 20px;
+      margin: 0;
       text-transform: none; }
     .page-node-type-story .region-content-bottom .story-link .field--name-field-teaser {
       font-size: 12px;
