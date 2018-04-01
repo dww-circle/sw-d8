@@ -76,7 +76,6 @@
   // Content Bottom Blocks
   .region-content-bottom {
     border-top: 1px solid;
-    margin-bottom: 50px;
     padding-top: 44px;
 
     @include breakpoint($desktop) {
@@ -85,6 +84,7 @@
     }
 
     .block {
+      margin-bottom: 50px;
       @include breakpoint($desktop) {
         flex-grow: 1;
         min-width: 170px;

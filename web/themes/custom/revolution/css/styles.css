@@ -629,7 +629,6 @@ main {
 
 .page-node-type-story .region-content-bottom {
   border-top: 1px solid;
-  margin-bottom: 50px;
   padding-top: 44px; }
   @media (min-width: 961px) {
     .page-node-type-story .region-content-bottom {
@@ -639,17 +638,19 @@ main {
       -webkit-justify-content: space-between;
           -ms-flex-pack: justify;
               justify-content: space-between; } }
-  @media (min-width: 961px) {
-    .page-node-type-story .region-content-bottom .block {
-      -webkit-flex-grow: 1;
-          -ms-flex-positive: 1;
-              flex-grow: 1;
-      min-width: 170px;
-      width: 400px; }
-      .page-node-type-story .region-content-bottom .block:first-child {
-        margin-right: 30px; }
-      .page-node-type-story .region-content-bottom .block:nth-child(3) {
-        margin-left: 30px; } }
+  .page-node-type-story .region-content-bottom .block {
+    margin-bottom: 50px; }
+    @media (min-width: 961px) {
+      .page-node-type-story .region-content-bottom .block {
+        -webkit-flex-grow: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1;
+        min-width: 170px;
+        width: 400px; }
+        .page-node-type-story .region-content-bottom .block:first-child {
+          margin-right: 30px; }
+        .page-node-type-story .region-content-bottom .block:nth-child(3) {
+          margin-left: 30px; } }
   .page-node-type-story .region-content-bottom h2 {
     color: #ff0000;
     font-family: "FF DIN Pro Bold", sans-serif;
