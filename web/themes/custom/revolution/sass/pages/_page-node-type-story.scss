@@ -72,4 +72,40 @@
   .contributors {
     font-style: italic;
   }
+
+  // Content Bottom Blocks
+  .region-content-bottom {
+    border-top: 1px solid;
+    margin-bottom: 50px;
+    padding-top: 44px;
+
+    @include breakpoint($desktop) {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .block {
+      @include breakpoint($desktop) {
+        flex-grow: 1;
+        min-width: 170px;
+        width: 400px; // arbritrary number that allows flex-grow to work.
+      }
+    }
+
+    h2 {
+      color: $c-red;
+      font-family: $ff-din-bold;
+      font-size: 16px;
+      line-height: 19px;
+      text-transform: uppercase;
+    }
+
+    ul {
+      @include ul-unstyled;
+    }
+
+    .story-link {
+      @include teaser-tiny;
+    }
+  }
 }

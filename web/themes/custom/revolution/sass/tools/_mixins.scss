@@ -203,6 +203,26 @@
   }
 }
 
+@mixin teaser-tiny { // apply to a.story-link
+  margin-bottom: 25px;
+
+  .story-label {
+    font-size: 13px;
+  }
+
+  h4 {
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: none;
+  }
+
+  .field--name-field-teaser {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+}
+
 @mixin title-fancy-black {
   border-top: 1px solid $c-black;
   color: $c-black;
@@ -251,5 +271,18 @@
     li {
       list-style: none;
     }
+  }
+}
+
+@mixin ul-unstyled {
+  list-style: none;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-top: 0;
+  padding-left: 0;
+
+  li {
+    list-style: none;
+    margin-left: 0;
   }
 }

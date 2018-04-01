@@ -110,7 +110,11 @@
 
   </main>
 
-  {{ page.content_bottom }}
+  {% if page.content_bottom %}
+    <div class="page-container">
+      {{ page.content_bottom }}
+    </div>
+  {% endif %}
 
   <div class="footer-wrapper">
     <div class="follow-label">{{ 'Follow Us'|t }}</div>
