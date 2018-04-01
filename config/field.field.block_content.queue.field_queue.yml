@@ -1,0 +1,28 @@
+uuid: 850d7a2d-878c-49a6-8ccf-2773ee3505a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.queue
+    - entityqueue.entity_queue.story_queues
+    - field.storage.block_content.field_queue
+id: block_content.queue.field_queue
+field_name: field_queue
+entity_type: block_content
+bundle: queue
+label: Queue
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:entity_subqueue'
+  handler_settings:
+    target_bundles:
+      story_queues: story_queues
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

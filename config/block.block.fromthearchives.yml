@@ -1,0 +1,33 @@
+uuid: dba595a9-8eab-47e5-96a7-dd1a3086fff1
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:queue:c8034b0c-8ee6-4cea-984f-edaab074d836'
+  module:
+    - block_content
+    - node
+  theme:
+    - revolution
+id: fromthearchives
+theme: revolution
+region: content_bottom
+weight: -3
+provider: null
+plugin: 'block_content:c8034b0c-8ee6-4cea-984f-edaab074d836'
+settings:
+  id: 'block_content:c8034b0c-8ee6-4cea-984f-edaab074d836'
+  label: 'From the Archives'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

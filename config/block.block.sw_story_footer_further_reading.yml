@@ -10,7 +10,7 @@ dependencies:
 id: sw_story_footer_further_reading
 theme: revolution
 region: content_bottom
-weight: 0
+weight: -5
 provider: null
 plugin: sw_further_reading_block
 settings:

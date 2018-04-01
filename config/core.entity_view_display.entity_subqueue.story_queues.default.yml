@@ -1,0 +1,21 @@
+uuid: e3b50a7d-e7a5-40f3-9ca4-c35f1e159bce
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.story_queues
+id: entity_subqueue.story_queues.default
+targetEntityType: entity_subqueue
+bundle: story_queues
+mode: default
+content:
+  items:
+    label: hidden
+    type: entity_reference_entity_view
+    weight: 0
+    region: content
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+hidden: {  }

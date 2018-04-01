@@ -10,7 +10,7 @@ dependencies:
 id: sw_story_footer_latest_stories
 theme: revolution
 region: content_bottom
-weight: 0
+weight: -4
 provider: null
 plugin: sw_latest_stories_block
 settings:
