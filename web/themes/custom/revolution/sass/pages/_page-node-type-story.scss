@@ -85,17 +85,30 @@
 
     .block {
       margin-bottom: 50px;
+
       @include breakpoint($desktop) {
         flex-grow: 1;
         min-width: 170px;
-        width: 400px; // arbritrary number that allows flex-grow to work.
-        &:first-child {
+        width: 400px; // Arbritrary number that allows flex-grow to work.
+      }
+
+      &:first-child {
+        @include breakpoint($desktop) {
           margin-right: 30px;
         }
-        &:nth-child(3) {
+      }
+
+      &:nth-child(3) {
+        @include breakpoint($desktop) {
           margin-left: 30px;
         }
+
       }
+
+      .field--name-field-queue > .field--name-title {
+        display: none; // Hides extra title that says "From the Archives" coming from subqueue.
+      }
+
     }
 
     h2 {

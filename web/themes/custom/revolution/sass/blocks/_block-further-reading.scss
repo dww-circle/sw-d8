@@ -1,0 +1,16 @@
+.block-sw-further-reading-block {
+
+  .region-sidebar & {
+    display: none;
+
+    @include breakpoint($desktop) {
+      display: block;
+    }
+  }
+
+  h2 {
+    font-family: $ff-din-bold;
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+}
