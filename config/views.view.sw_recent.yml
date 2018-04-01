@@ -329,7 +329,7 @@ display:
     position: 2
     display_options:
       sitename_title: true
-      path: recent/feed
+      path: recent/rss.xml
       displays:
         page_1: page_1
         default: ''
