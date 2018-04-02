@@ -1,5 +1,6 @@
 <?php
 
+use Drupal\Core\Block\BlockPluginInterface;
 use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Routing;
@@ -8,6 +9,7 @@ use Drupal\media\Entity\Media;
 use Drupal\node\Entity\Node;
 use Drupal\node\NodeInterface;
 use Drupal\taxonomy\Entity\Term;
+use Drupal\sw\Plugin\Block\SWTodaysStoriesBlock;
 
 const SW_SECTION_EDITORIALS_TID = 11;
 const SW_SECTION_READERS_VIEWS_TID = 9;
@@ -517,4 +519,17 @@ function sw_get_media_caption($entity_id) {
  */
 function sw_media_embed_alter(array &$build, EntityInterface $entity, array &$context) {
   $build['#attributes']['data-entity-id'] = $context['data-entity-id'];
+}
+
+/**
+ * Implements hook_block_view_alter().
+ *
+ * @param array $build
+ * @param \Drupal\Core\Block\BlockPluginInterface $block
+ */
+function sw_block_view_alter(array &$build, BlockPluginInterface $block) {
+  if ($block instanceof SWTodaysStoriesBlock) {
+    $build['#configuration']['label'] = $block->label();
+    $build['#cache']['max-age'] = 86400; // 1 day = 60 * 60 * 24
+  }
 }

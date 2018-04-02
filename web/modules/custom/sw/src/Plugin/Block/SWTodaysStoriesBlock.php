@@ -38,4 +38,13 @@ class SWTodaysStoriesBlock extends SWRecentArticlesBase {
     ];
   }
 
+  /**
+   * {@inheritdoc}
+   */
+  public function label() {
+    $recent_dates = $this->getRecentPublicationDates();
+    $latest = array_shift($recent_dates);
+    $current = date('Ymd');
+    return ($latest == $current) ? $this->t("Today's Stories") : $this->t("Latest Stories");
+  }
 }
