@@ -1,0 +1,33 @@
+id: csv_redirect
+label: CSV redirect
+migration_tags:
+  - CSV
+  - Content
+migration_group: sw_d6
+
+source:
+  plugin: sw_migrate_csv
+  path: csv
+  csv_path: sw3-redirects.csv
+  header_row_count: 1
+  column_names:
+    0:
+      source: Source
+    1:
+      redirect: Redirect
+  keys:
+    - source
+
+process:
+  redirect_source: source
+  redirect_redirect: redirect
+  language:
+    plugin: default_value
+    source: language
+    default_value: und
+  status_code:
+    plugin: default_value
+    default_value: 301
+
+destination:
+  plugin: entity:redirect
