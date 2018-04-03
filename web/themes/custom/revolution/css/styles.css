@@ -726,6 +726,12 @@ main {
       font-size: 12px;
       line-height: 16px; }
 
+.region-sidebar h2 {
+  font-family: "FF DIN Pro Bold", sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase; }
+
 .block-sw-recent-articles-block {
   padding-bottom: 20px;
   margin-bottom: 20px; }
@@ -809,11 +815,6 @@ main {
   @media (min-width: 961px) {
     .region-sidebar .block-sw-further-reading-block {
       display: block; } }
-
-.block-sw-further-reading-block h2 {
-  font-family: "FF DIN Pro Bold", sans-serif;
-  font-size: 24px;
-  text-transform: uppercase; }
 
 .caption-article {
   border-bottom: 10px solid #ff0000;
