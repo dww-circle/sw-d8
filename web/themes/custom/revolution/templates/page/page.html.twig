@@ -102,7 +102,8 @@
 
     {% block main %}
 
-      <h1 class="page-title page-title-full">{{ page_title }}</h1>
+      <h1 class="page-title page-title-full">{{ page_title|raw }}</h1>
+
       <div class="flexible--container">
         {{ page.content }}
         {{ page.sidebar }}
