@@ -1,0 +1,22 @@
+uuid: 4f608374-dc3f-4429-9d63-fc122d63123f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node_couldnt_make_it_up_blog
+label: 'Node: Couldn''t make it up blog'
+type: 'canonical_entities:node'
+pattern: 'blog/couldnt-make-it-up/[node:created:custom:Y]/[node:created:custom:m]/[node:created:custom:d]/[node:title]'
+selection_criteria:
+  264203c0-4c45-491e-b8cf-f4026721e335:
+    id: node_type
+    bundles:
+      blog_couldnt_make_it_up: blog_couldnt_make_it_up
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 264203c0-4c45-491e-b8cf-f4026721e335
+selection_logic: and
+weight: -5
+relationships: {  }

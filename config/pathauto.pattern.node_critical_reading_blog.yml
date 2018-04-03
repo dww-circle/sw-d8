@@ -1,0 +1,22 @@
+uuid: 4ef003ec-8fe6-47ef-823e-8ccfc53b368b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node_critical_reading_blog
+label: 'Node: Critical reading blog'
+type: 'canonical_entities:node'
+pattern: 'blog/critical-reading/[node:created:custom:Y]/[node:created:custom:m]/[node:created:custom:d]/[node:title]'
+selection_criteria:
+  ea862559-69f5-4395-894f-43c3bde86713:
+    id: node_type
+    bundles:
+      blog_critical_reading: blog_critical_reading
+    negate: false
+    context_mapping:
+      node: node
+    uuid: ea862559-69f5-4395-894f-43c3bde86713
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,22 @@
+uuid: a06b10e0-56ab-4460-b770-c0084614e7ec
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node_story
+label: 'Node: Story'
+type: 'canonical_entities:node'
+pattern: '[node:created:custom:Y]/[node:created:custom:m]/[node:created:custom:d]/[node:title]'
+selection_criteria:
+  0e87924f-2ef8-4f03-a2b0-eec4aa43111c:
+    id: node_type
+    bundles:
+      story: story
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 0e87924f-2ef8-4f03-a2b0-eec4aa43111c
+selection_logic: and
+weight: -5
+relationships: {  }
