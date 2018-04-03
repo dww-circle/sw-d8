@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "d3e258adf66c5b8d4a493995d9218b9d",
+    "content-hash": "05b27aae0f4e9da66753ceab54068f4a",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3500,6 +3500,53 @@
             "homepage": "https://www.drupal.org/project/views_autocomplete_filters",
             "support": {
                 "source": "http://cgit.drupalcode.org/views_autocomplete_filters"
+            }
+        },
+        {
+            "name": "drupal/views_contextual_filters_or",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/views_contextual_filters_or",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/views_contextual_filters_or-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "8cedb2993de7ac5f541d820c00f07f89c8f354da"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1516199585",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "m.lebedev",
+                    "homepage": "https://www.drupal.org/user/2566550"
+                }
+            ],
+            "description": "Modify views query to support OR conditions for contextual filters.",
+            "homepage": "https://www.drupal.org/project/views_contextual_filters_or",
+            "support": {
+                "source": "http://cgit.drupalcode.org/views_contextual_filters_or"
             }
         },
         {
