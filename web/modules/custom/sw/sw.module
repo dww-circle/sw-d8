@@ -3,6 +3,7 @@
 use Drupal\Core\Block\BlockPluginInterface;
 use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Link;
 use Drupal\Core\Routing;
 
 use Drupal\media\Entity\Media;
@@ -319,22 +320,18 @@ function sw_plain_label(EntityInterface $entity) {
 
 /**
  * Label callback that wraps the entity label with author-specific markup.
- *
- * @todo This should return a link once we have something to link to.
  */
 function sw_author_label(EntityInterface $entity) {
-  return '<span class="sw-author">' . $entity->label() . '</span>';
+  return '<span class="sw-author">' . $entity->toLink()->toString() . '</span>';
 };
 
 /**
  * Label callback that wraps the entity label with subject-specific markup.
  *
  * Used for interviewee, obituary, etc.
- *
- * @todo This should return a link once we have something to link to.
  */
 function sw_subject_label(EntityInterface $entity) {
-  return '<span class="sw-subject">' . $entity->label() . '</span>';
+  return '<span class="sw-subject">' . $entity->toLink()->toString() . '</span>';
 };
 
 /**
