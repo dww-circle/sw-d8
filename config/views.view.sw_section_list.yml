@@ -175,11 +175,12 @@ display:
         type: normal
         title: Sections
         description: ''
-        expanded: false
+        expanded: true
         parent: ''
         weight: 1
         context: '0'
         menu_name: main
+        enabled: true
     cache_metadata:
       max-age: -1
       contexts:
