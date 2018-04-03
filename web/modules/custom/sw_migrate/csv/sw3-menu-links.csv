@@ -1,5 +1,5 @@
 menu_name,parent_link_path,link_path,link_title,weight
-main,,/about,About us,0
+main,,/about,About us,4
 main,/section,/section/editorials,Editorials,0
 main,/section,/section/activist-news,Activist News,1
 main,/section,/section/labor,Labor,2
