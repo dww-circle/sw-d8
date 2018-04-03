@@ -1,0 +1,20 @@
+uuid: bd9586a3-c16d-4b83-a85a-f3db46318cf4
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - revolution
+id: main_page_content
+theme: revolution
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

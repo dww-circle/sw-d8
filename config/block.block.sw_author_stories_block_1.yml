@@ -1,0 +1,33 @@
+uuid: f4a877bf-62e2-4cf9-986b-25261bd0b75c
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.sw_author_stories
+  module:
+    - node
+    - views
+  theme:
+    - revolution
+id: sw_author_stories_block_1
+theme: revolution
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:sw_author_stories-block_1'
+settings:
+  id: 'views_block:sw_author_stories-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      person: person
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
