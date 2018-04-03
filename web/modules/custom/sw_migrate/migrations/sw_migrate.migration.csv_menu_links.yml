@@ -1,0 +1,60 @@
+id: csv_menu_links
+label: CSV menu links
+migration_tags:
+  - CSV
+  - Content
+migration_group: sw_d6
+
+destination:
+  plugin: entity:menu_link_content
+  default_bundle: menu_link_content
+  no_stub: true
+
+source:
+  plugin: sw_migrate_csv
+  path: csv
+  csv_path: sw3-menu-links.csv
+  header_row_count: 1
+  column_names:
+    0:
+      menu_name: Menu name
+    1:
+      parent_link_path: Parent link path
+    2:
+      link_path: Link path
+    3:
+      link_title: Link title
+    4:
+      weight: Weight
+  keys:
+    - menu_name
+    - link_path
+
+process:
+  menu_name: menu_name
+  title: link_title
+  'link/uri':
+    plugin: link_uri
+    source:
+      - link_path
+  route:
+    plugin: route
+    source: link_path
+  route_name: '@route/route_name'
+  route_parameters: '@route/route_parameters'
+  url: '@route/url'
+  weight: weight
+  expanded:
+    plugin: default_value
+    default_value: 0
+  enabled:
+    plugin: default_value
+    default_value: 1
+  parent:
+    plugin: sw_menu_link_parent
+    source:
+      - menu_name
+      - parent_link_path
+
+migration_dependencies:
+  required: { }

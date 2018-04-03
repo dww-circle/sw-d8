@@ -1,0 +1,8 @@
+menu_name,parent_link_path,link_path,link_title,weight
+main,,/about,About us,0
+main,/section,/section/editorials,Editorials,0
+main,/section,/section/activist-news,Activist News,1
+main,/section,/section/labor,Labor,2
+main,/section,/section/history-and-traditions,History and Traditions,3
+main,/section,/section/readers'-views,Readers' Views,4
+main,/section,/section/obrero-socialista,Obrero Socialista,5
