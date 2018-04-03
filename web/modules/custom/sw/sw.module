@@ -239,6 +239,14 @@ function sw_preprocess_node_story(&$variables) {
       elseif (!empty($view_id) && $view_id == 'sw_recent') {
         unset($variables['date']);
       }
+      else {
+        $node = $route_parameters->get('node');
+        if (!empty($node) && $node->getType() == 'person') {
+          if ($variables['story_label'] == $node->getTitle()) {
+            unset($variables['story_label']);
+          }
+        }
+      }
     }
   }
 
