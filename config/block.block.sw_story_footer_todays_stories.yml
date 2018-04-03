@@ -15,7 +15,7 @@ provider: null
 plugin: sw_todays_stories_block
 settings:
   id: sw_todays_stories_block
-  label: "Today's Stories"
+  label: 'Today''s Stories'
   provider: sw
   label_display: visible
 visibility:
