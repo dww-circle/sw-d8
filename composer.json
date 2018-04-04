@@ -103,7 +103,9 @@
     "patches": {
       "drupal/auto_entitylabel": {
         "[#2120055-22] Trim auto-generated labels" : "https://www.drupal.org/files/issues/2018-04-04/2120055-22.auto_entitylabel-8.x-2.x.trim-no-config.patch",
-        "[#2905230-6] Alter inline_entity_form table to display auto-computed entity labels" : "https://www.drupal.org/files/issues/Title_displayed_as_AutoEntityLabel_after_saving_via_Inline_Entity_Form-2905230-6.patch"
+        "[#2905230-6] Alter inline_entity_form table to display auto-computed entity labels" : "https://www.drupal.org/files/issues/Title_displayed_as_AutoEntityLabel_after_saving_via_Inline_Entity_Form-2905230-6.patch",
+        "[#2935247-3] Remove the (broken and misleading) 'Automatic label' configuration page at /admin/structure/auto-label" : "https://www.drupal.org/files/issues/2018-04-04/2935247-3.auto_entitylabel.remove-global-settings-page.patch",
+        "[#2958565-2] Use #states to hide settings if auto_entitylabel is disabled for a given entity type" : "https://www.drupal.org/files/issues/2018-04-04/2958565-1.hide-settings-if-auto_entitylabel-is-disabled.patch"
       },
       "drupal/core": {
         "[#2645954-26] Views output field as a custom link options all ignored if path is routed" : "https://www.drupal.org/files/issues/2018-03-27/2645954-26.views-output-field-as-link-for-routed-paths.patch",
