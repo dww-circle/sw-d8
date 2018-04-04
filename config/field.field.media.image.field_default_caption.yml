@@ -1,19 +1,21 @@
-uuid: 1676c701-82b4-4b71-931e-67f507add83f
+uuid: 5931458b-b3af-477b-91e5-a61042e0fec2
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.media.field_default_caption
     - media.type.image
+  module:
+    - text
 id: media.image.field_default_caption
 field_name: field_default_caption
 entity_type: media
 bundle: image
 label: 'Default caption'
-description: 'A default caption to use if not overridden when the image is inserted.'
+description: 'A default caption to use if not overridden when the image is embedded.'
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: string_long
+field_type: text_long
