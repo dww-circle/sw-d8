@@ -11,9 +11,15 @@ migration_tags:
   - Content
 migration_group: sw_d6
 label: 'Nodes (story)'
+
 source:
   plugin: d6_node
   node_type: story
+
+destination:
+  plugin: 'entity:node'
+  default_bundle: story
+
 process:
   nid: nid
   vid: vid
@@ -110,6 +116,7 @@ process:
           plugin: skip_on_empty
           method: process
   # Taxonomy term associations.
+  # Single-valued vocabularies:
   field_section:
     plugin: skip_on_empty
     source: sw3_section_tid
@@ -134,10 +141,53 @@ process:
     plugin: skip_on_empty
     source: sw3_story_label
     method: process
+  # Potentially multi-valued vocabularies:
+  field_contributors:
+    -
+      plugin: skip_on_empty
+      source: sw3_contributors_terms
+      method: process
+    -
+      plugin: sub_process
+      process:
+        target_id: tid
+  field_city:
+    -
+      plugin: skip_on_empty
+      source: sw3_city_terms
+      method: process
+    -
+      plugin: sub_process
+      process:
+        target_id: tid
+  field_state:
+    -
+      plugin: skip_on_empty
+      source: sw3_state_terms
+      method: process
+    -
+      plugin: sub_process
+      process:
+        target_id: tid
+  field_country:
+    -
+      plugin: skip_on_empty
+      source: sw3_country_terms
+      method: process
+    -
+      plugin: sub_process
+      process:
+        target_id: tid
+  field_keywords:
+    -
+      plugin: skip_on_empty
+      source: sw3_keywords_terms
+      method: process
+    -
+      plugin: sub_process
+      process:
+        target_id: tid
 
-destination:
-  plugin: 'entity:node'
-  default_bundle: story
 migration_dependencies:
   required:
     - upgrade_d6_user

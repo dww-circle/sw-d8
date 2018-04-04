@@ -129,6 +129,20 @@ function sw_migrate_migrate_upgrade_d6_node_story_prepare_row(Row $row, MigrateS
     }
   }
 
+  // These are potentially multi-valued, and need array support.
+  $multi_value_vocab_map = [
+    4 => 'sw3_contributors_terms',
+    6 => 'sw3_city_terms',
+    7 => 'sw3_state_terms',
+    8 => 'sw3_country_terms',
+    9 => 'sw3_keywords_terms',
+  ];
+  foreach ($multi_value_vocab_map as $vid => $sw3_id) {
+    if (!empty($node_vocabs[$vid])) {
+      $row->setSourceProperty($sw3_id, $node_vocabs[$vid]);
+    }
+  }
+
   // Story type is a special case, since we have to see if we need to preserve
   // the SW 2.0 value as a custom story label.
   // First, set what we think the story_type_tid should be
