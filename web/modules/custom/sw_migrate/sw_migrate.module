@@ -170,6 +170,50 @@ function sw_migrate_migrate_upgrade_d6_node_insert_box_prepare_row(Row $row, Mig
 }
 
 /**
+ * Implements hook_migrate_MIGRATION_ID_prepare_row() for 'upgrade_d6_node_image'.
+ *
+ * Handles section, topic and story type terms
+ */
+function sw_migrate_migrate_upgrade_d6_node_image_prepare_row(Row $row, MigrateSourceInterface $source, MigrationInterface $migration) {
+  $values = $row->getSource();
+  $node_terms = $source->getDatabase()
+      ->query('SELECT td.tid, td.vid, td.name FROM {term_node} tn INNER JOIN {term_data} td ON td.tid = tn.tid WHERE tn.vid = :vid',
+              [':vid' => $values['vid']])
+      ->fetchAllAssoc('tid', PDO::FETCH_ASSOC);
+
+  $node_vocabs = [];
+  foreach ($node_terms as $tid => $term) {
+    $node_vocabs[$term['vid']][$tid] = $term;
+  }
+
+  // These are definitely single-value and migrated exactly as-is.
+  $single_value_vocab_map = [
+    14 => 'sw3_image_gallery_tid',
+    15 => 'sw3_image_rights_tid',
+  ];
+  foreach ($single_value_vocab_map as $vid => $sw3_id) {
+    if (!empty($node_vocabs[$vid])) {
+      $term = array_shift($node_vocabs[$vid]);
+      $row->setSourceProperty($sw3_id, $term['tid']);
+    }
+  }
+  // These are potentially multi-valued, and need array support.
+  $multi_value_vocab_map = [
+    6 => 'sw3_city_terms',
+    7 => 'sw3_state_terms',
+    8 => 'sw3_country_terms',
+    16 => 'sw3_image_provider_terms',
+    17 => 'sw3_image_credit_terms',
+    18 => 'sw3_image_server_folder_terms',
+  ];
+  foreach ($multi_value_vocab_map as $vid => $sw3_id) {
+    if (!empty($node_vocabs[$vid])) {
+      $row->setSourceProperty($sw3_id, $node_vocabs[$vid]);
+    }
+  }
+}
+
+/**
  * Migrate callback function to deal with taxonomy term IDs.
  *
  * This prunes terms from the Department/Section and Story type vocabularies

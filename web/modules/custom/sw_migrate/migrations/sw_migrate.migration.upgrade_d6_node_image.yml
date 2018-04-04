@@ -11,42 +11,47 @@ migration_tags:
   - Content
 migration_group: sw_d6
 label: 'Nodes (image)'
+
 source:
   plugin: d6_node
   node_type: image
 
+destination:
+  plugin: 'entity:media'
+  default_bundle: image
+
 process:
-# It's media, not node, so the target is 'mid' not 'nid'
+  # It's media, not node, so the target is 'mid' not 'nid'
   mid: nid
   vid: vid
   langcode:
     plugin: default_value
     source: language
     default_value: und
-# Media changed the machine name for the title field to 'name'.
+  # Media changed the machine name for the title field to 'name'.
   name: title
   uid: node_uid
-# Ignore the D6 value, we always want our images published in D8.
+  # Ignore the D6 value, we always want our images published in D8.
   status:
     plugin: default_value
     default_value: 1
   created: created
   changed: changed
-# Ignore the D6 value, we never want images 'promoted to the front page'.
+  # Ignore the D6 value, we never want images 'promoted to the front page'.
   promote:
     plugin: default_value
     default_value: 0
-# Ignore the D6 value, we never want images 'sticky at the top of lists'.
+  # Ignore the D6 value, we never want images 'sticky at the top of lists'.
   sticky:
     plugin: default_value
     default_value: 0
   revision_uid: revision_uid
-# We probably don't care about these, but whatever...
+  # We probably don't care about these, but whatever...
   revision_log: log
   revision_timestamp: timestamp
-# Have to define the right migration to lookup in.
-# The fieldname changed from the D6 image node.
-# Otherwise, this miraculously seems to Just Work(tm).
+  # Have to define the right migration to lookup in.
+  # The fieldname changed from the D6 image node.
+  # Otherwise, this miraculously seems to Just Work(tm).
   field_media_image:
     plugin: d6_field_file
     migration: upgrade_d6_file
@@ -63,22 +68,85 @@ process:
     plugin: sub_process
     source: field_original_url
     process:
-# 'value' needs to go into 'uri' and ignore 'format' since this is now a link field.
+      # 'value' needs to go into 'uri'
       uri: value
-# Might want to revisit this...
+      # Ignore 'format' since this is now a link field.
+  # Might want to revisit this...
   field_image_crop_type: field_image_crop_type
-# For now, ignore field_original_image_nid since we're not migrating any crops
-# field_original_image: field_original_image_nid
+  # For now, ignore field_original_image_nid since we're not migrating any crops
+  # field_original_image: field_original_image_nid
   field_image_url:
     plugin: sub_process
     source: field_image_url
     process:
-# 'value' needs to go into 'uri' and ignore 'format' since this is now a link field.
+      # 'value' needs to go into 'uri'
       uri: value
-
-destination:
-  plugin: 'entity:media'
-  default_bundle: image
+      # Ignore 'format' since this is now a link field.
+  # Taxonomy term associations.
+  # Single-value vocabularies:
+  field_image_gallery:
+    plugin: skip_on_empty
+    source: sw3_image_gallery_tid
+    method: process
+  field_image_rights:
+    plugin: skip_on_empty
+    source: sw3_image_rights_tid
+    method: process
+  # Potentially multi-valued vocabularies:
+  field_city:
+    -
+      plugin: skip_on_empty
+      source: sw3_city_terms
+      method: process
+    -
+      plugin: sub_process
+      process:
+        target_id: tid
+  field_state:
+    -
+      plugin: skip_on_empty
+      source: sw3_state_terms
+      method: process
+    -
+      plugin: sub_process
+      process:
+        target_id: tid
+  field_country:
+    -
+      plugin: skip_on_empty
+      source: sw3_country_terms
+      method: process
+    -
+      plugin: sub_process
+      process:
+        target_id: tid
+  field_image_provider:
+    -
+      plugin: skip_on_empty
+      source: sw3_image_provider_terms
+      method: process
+    -
+      plugin: sub_process
+      process:
+        target_id: tid
+  field_credit:
+    -
+      plugin: skip_on_empty
+      source: sw3_image_credit_terms
+      method: process
+    -
+      plugin: sub_process
+      process:
+        target_id: tid
+  field_server_folder:
+    -
+      plugin: skip_on_empty
+      source: sw3_image_server_folder_terms
+      method: process
+    -
+      plugin: sub_process
+      process:
+        target_id: tid
 
 migration_dependencies:
   required:
