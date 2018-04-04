@@ -21,7 +21,10 @@ process:
     plugin: default_value
     source: language
     default_value: und
-  title: title
+  title:
+    source: title
+    plugin: callback
+    callable: trim
   uid: node_uid
   # Ignore the D6 value, we always want people nodes published.
   status:

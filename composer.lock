@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "05b27aae0f4e9da66753ceab54068f4a",
+    "content-hash": "200057c4c19018a183006bbe39a9cb77",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1190,6 +1190,7 @@
                     }
                 },
                 "patches_applied": {
+                    "[#2120055-22] Trim auto-generated labels": "https://www.drupal.org/files/issues/2018-04-04/2120055-22.auto_entitylabel-8.x-2.x.trim-no-config.patch",
                     "[#2905230-6] Alter inline_entity_form table to display auto-computed entity labels": "https://www.drupal.org/files/issues/Title_displayed_as_AutoEntityLabel_after_saving_via_Inline_Entity_Form-2905230-6.patch"
                 }
             },
