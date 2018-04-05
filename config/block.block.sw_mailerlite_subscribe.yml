@@ -4,6 +4,7 @@ status: true
 dependencies:
   module:
     - sw
+    - system
   theme:
     - revolution
 id: sw_mailerlite_subscribe
@@ -17,4 +18,9 @@ settings:
   label: 'E-mail alerts'
   provider: sw
   label_display: visible
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: /subscribe/email
+    negate: true
+    context_mapping: {  }

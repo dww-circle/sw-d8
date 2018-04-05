@@ -1,0 +1,7 @@
+sw.subscribe_email:
+  path: '/subscribe/email'
+  defaults:
+    _controller: '\Drupal\sw\Controller\SWController::subscribeEmailPage'
+    _title: 'E-mail alerts'
+  requirements:
+    _permission: 'access content'
