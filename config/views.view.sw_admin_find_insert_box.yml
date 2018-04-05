@@ -18,7 +18,7 @@ dependencies:
 id: sw_admin_find_insert_box
 label: 'SW: Admin find insert box'
 module: views
-description: 'Administrative story finder.'
+description: 'Administrative insert box finder.'
 tag: ''
 base_table: node_field_data
 base_field: nid
