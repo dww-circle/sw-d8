@@ -30,3 +30,6 @@ department/History-and-Traditions/Todd-Chretien,internal:/author/todd-chretien
 department/Books-and-Entertainment/Joe-Allen,internal:/author/joe-allen
 department/Books-and-Entertainment/Helen-Scott,internal:/author/helen-scott
 department/Books-and-Entertainment/Dave-Zirin,internal:/author/dave-zirin
+recent/feed,internal:/recent/rss.xml
+recent/feed2,internal:/recent/rss.xml
+blog/critical-reading/rss.xml,internal:/recent/rss.xml
