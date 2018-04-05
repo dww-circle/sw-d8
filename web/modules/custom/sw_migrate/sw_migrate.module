@@ -88,6 +88,36 @@ function sw_migrate_migrate_upgrade_d6_taxonomy_term_prepare_row(Row $row, Migra
   // Otherwise, this term is only worth migrating if it has nodes.
   $valid_term = $values['vid'] == 2 || $values['vid'] == 14 || !empty($node_count);
   $row->setSourceProperty('valid_term', $valid_term ? 1 : 0);
+
+  // Special handling for terms in the department/section vocabulary:
+  if ($values['vid'] == 1) {
+    // Ignore department parent values, we want everything to be top-level as a section.
+    $row->setSourceProperty('parent', 0);
+    // Force the weights how we want in the new world:
+    switch ($values['tid']) {
+      case 11:    // Editorials
+        $weight = 0;
+        break;
+      case 7:     // Labor
+        $weight = 1;
+        break;
+      case 8:     // Activist News
+        $weight = 2;
+        break;
+      case 6:     // History and Traditions
+        $weight = 3;
+        break;
+      case 9:     // Readers' Views
+        $weight = 4;
+        break;
+      case 17255: // Obrero Socialista
+        $weight = 5;
+        break;
+    }
+    if (isset($weight)) {
+      $row->setSourceProperty('weight', $weight);
+    }
+  }  
 }
 
 /**
