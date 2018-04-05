@@ -6,8 +6,10 @@ dependencies:
     - core.entity_view_mode.node.teaser_conditional_image
     - node.type.person
     - node.type.story
+    - taxonomy.vocabulary.section
   module:
     - node
+    - taxonomy
     - user
 _core:
   default_config_hash: GNfx9kN8-0_KgQ-xf3fjdXCCzZwXCI8T0IPFW8SIe7g
@@ -92,6 +94,50 @@ display:
           entity_type: node
           entity_field: type
           plugin_id: bundle
+        field_section_target_id:
+          id: field_section_target_id
+          table: node__field_section
+          field: field_section_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: not
+          value:
+            11: 11
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: section
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
       pager:
         type: mini
         options:
@@ -260,6 +306,7 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
+        - user
         - 'user.node_grants:view'
         - user.permissions
       max-age: -1
@@ -279,6 +326,7 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
+        - user
         - 'user.node_grants:view'
         - user.permissions
       max-age: -1
