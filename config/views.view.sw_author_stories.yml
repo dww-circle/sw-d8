@@ -12,7 +12,7 @@ dependencies:
 _core:
   default_config_hash: GNfx9kN8-0_KgQ-xf3fjdXCCzZwXCI8T0IPFW8SIe7g
 id: sw_author_stories
-label: 'SW author stories'
+label: 'SW: Author stories'
 module: node
 description: 'Published stories by a given author, ordered by date (and weight).'
 tag: default

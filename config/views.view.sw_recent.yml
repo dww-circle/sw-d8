@@ -13,7 +13,7 @@ dependencies:
 _core:
   default_config_hash: GNfx9kN8-0_KgQ-xf3fjdXCCzZwXCI8T0IPFW8SIe7g
 id: sw_recent
-label: Recent
+label: 'SW: Recent'
 module: node
 description: 'Published stories, grouped by date. With RSS feed.'
 tag: default
@@ -310,18 +310,18 @@ display:
         - 'config:core.entity_view_display.node.blog_couldnt_make_it_up.teaser'
         - 'config:core.entity_view_display.node.blog_critical_reading.default'
         - 'config:core.entity_view_display.node.blog_critical_reading.teaser'
-        - 'config:core.entity_view_display.node.person.teaser'
-        - 'config:core.entity_view_display.node.slices.default'
-        - 'config:core.entity_view_display.node.slices.teaser'
-        - 'config:core.entity_view_display.node.story.teaser'
-        - 'config:core.entity_view_display.node.story.teaser_image_large'
-        - 'config:core.entity_view_display.node.story.teaser_image_medium'
         - 'config:core.entity_view_display.node.insert_box.default'
         - 'config:core.entity_view_display.node.page.default'
         - 'config:core.entity_view_display.node.page.teaser'
         - 'config:core.entity_view_display.node.person.default'
+        - 'config:core.entity_view_display.node.person.teaser'
+        - 'config:core.entity_view_display.node.slices.default'
+        - 'config:core.entity_view_display.node.slices.teaser'
         - 'config:core.entity_view_display.node.story.default'
+        - 'config:core.entity_view_display.node.story.teaser'
         - 'config:core.entity_view_display.node.story.teaser_conditional_image'
+        - 'config:core.entity_view_display.node.story.teaser_image_large'
+        - 'config:core.entity_view_display.node.story.teaser_image_medium'
   feed_1:
     display_plugin: feed
     id: feed_1

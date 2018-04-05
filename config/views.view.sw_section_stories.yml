@@ -15,7 +15,7 @@ dependencies:
 _core:
   default_config_hash: GNfx9kN8-0_KgQ-xf3fjdXCCzZwXCI8T0IPFW8SIe7g
 id: sw_section_stories
-label: 'SW section stories'
+label: 'SW: Section stories'
 module: node
 description: 'Published stories per section, ordered by date (and weight).'
 tag: default

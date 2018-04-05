@@ -14,7 +14,7 @@ dependencies:
 _core:
   default_config_hash: GNfx9kN8-0_KgQ-xf3fjdXCCzZwXCI8T0IPFW8SIe7g
 id: sw_topic_stories
-label: 'SW topic stories'
+label: 'SW: Topic stories'
 module: node
 description: 'Published stories for a given Topic term (and its children).'
 tag: default

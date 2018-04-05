@@ -19,7 +19,7 @@ dependencies:
     - user
     - views_autocomplete_filters
 id: sw_admin_find_image
-label: 'SW admin find image'
+label: 'SW: Admin find image'
 module: views
 description: 'Administrative image finder.'
 tag: ''

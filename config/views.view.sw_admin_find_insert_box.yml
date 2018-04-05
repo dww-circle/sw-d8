@@ -16,7 +16,7 @@ dependencies:
     - user
     - views_autocomplete_filters
 id: sw_admin_find_insert_box
-label: 'SW admin find insert box'
+label: 'SW: Admin find insert box'
 module: views
 description: 'Administrative story finder.'
 tag: ''

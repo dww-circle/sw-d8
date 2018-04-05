@@ -9,7 +9,7 @@ dependencies:
     - taxonomy
     - user
 id: sw_section_list
-label: 'Section list'
+label: 'SW: Section list'
 module: views
 description: 'A page (at /section itself) showing all the sections on the site.'
 tag: ''
