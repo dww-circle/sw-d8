@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "b9ccf00cec5c0fe2307fbc6fa0247ca9",
+    "content-hash": "25229d8a29ec1394799d29e8863c15a6",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2129,6 +2129,7 @@
                     "merge-extra": false
                 },
                 "patches_applied": {
+                    "[#2559961-29] ManyToOneHelper ignores group configuration for some cases and forces INNER joins": "https://www.drupal.org/files/issues/manytoonehelper_ignores-2559961-29-8.3.x.patch",
                     "[#2645954-26] Views output field as a custom link options all ignored if path is routed": "https://www.drupal.org/files/issues/2018-03-27/2645954-26.views-output-field-as-link-for-routed-paths.patch",
                     "[#2934799-2] d6_term_node_revision migration ignores a lot of items that it shouldn't": "https://www.drupal.org/files/issues/2934799-2-drupal-d6_term_node_revision_uses_wrong_migration_mapping.patch"
                 }
