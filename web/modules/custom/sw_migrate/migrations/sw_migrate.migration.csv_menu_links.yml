@@ -21,14 +21,17 @@ source:
     1:
       parent_link_path: Parent link path
     2:
-      link_path: Link path
+      expanded: Expanded
     3:
-      link_title: Link title
+      link_path: Link path
     4:
+      link_title: Link title
+    5:
       weight: Weight
   keys:
     - menu_name
     - link_path
+    - parent_link_path
 
 process:
   menu_name: menu_name
@@ -43,10 +46,8 @@ process:
   route_name: '@route/route_name'
   route_parameters: '@route/route_parameters'
   url: '@route/url'
+  expanded: expanded
   weight: weight
-  expanded:
-    plugin: default_value
-    default_value: 0
   enabled:
     plugin: default_value
     default_value: 1
