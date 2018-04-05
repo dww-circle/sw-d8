@@ -1,7 +1,7 @@
 menu_name,parent_link_path,expanded,link_path,link_title,weight
 main,/section,0,/section/editorials,Editorials,0
-main,/section,0,/section/activist-news,Activist News,1
-main,/section,0,/section/labor,Labor,2
+main,/section,0,/section/labor,Labor,1
+main,/section,0,/section/activist-news,Activist News,2
 main,/section,0,/section/history-and-traditions,History and Traditions,3
 main,/section,0,/section/readers'-views,Readers' Views,4
 main,/section,0,/section/obrero-socialista,Obrero Socialista,5
