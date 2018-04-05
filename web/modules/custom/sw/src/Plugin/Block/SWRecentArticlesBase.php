@@ -64,11 +64,13 @@ abstract class SWRecentArticlesBase extends BlockBase {
   protected function findRecentArticles() {
     if (empty(SWRecentArticlesBase::$swRecentStories)) {
       $dates = $this->getRecentPublicationDates();
-      $query = \Drupal::database()->query(
-        "SELECT nfd.nid, nfd.vid, nfd.title, nfsw.field_story_weight_value AS story_weight, DATE_FORMAT((DATE_ADD('19700101', INTERVAL nfd.created SECOND) + INTERVAL -18000 SECOND), '%Y%m%d') AS created_day FROM {node_field_data} nfd INNER JOIN {node__field_story_weight} nfsw ON nfd.nid = nfsw.entity_id WHERE (nfd.status = '1') AND (nfd.type = 'story') AND DATE_FORMAT((DATE_ADD('19700101', INTERVAL nfd.created SECOND) + INTERVAL -18000 SECOND), '%Y%m%d') IN ( :days[] ) ORDER BY created_day DESC, story_weight ASC", [':days[]' => $dates]);
-      $articles = $query->fetchAllAssoc('nid');
-      foreach ($articles as $nid => $article) {
-        SWRecentArticlesBase::$swRecentStories[$article->created_day][$nid] = $article;
+      if (!empty($dates)) {
+        $query = \Drupal::database()->query(
+          "SELECT nfd.nid, nfd.vid, nfd.title, nfsw.field_story_weight_value AS story_weight, DATE_FORMAT((DATE_ADD('19700101', INTERVAL nfd.created SECOND) + INTERVAL -18000 SECOND), '%Y%m%d') AS created_day FROM {node_field_data} nfd INNER JOIN {node__field_story_weight} nfsw ON nfd.nid = nfsw.entity_id WHERE (nfd.status = '1') AND (nfd.type = 'story') AND DATE_FORMAT((DATE_ADD('19700101', INTERVAL nfd.created SECOND) + INTERVAL -18000 SECOND), '%Y%m%d') IN ( :days[] ) ORDER BY created_day DESC, story_weight ASC", [':days[]' => $dates]);
+        $articles = $query->fetchAllAssoc('nid');
+        foreach ($articles as $nid => $article) {
+          SWRecentArticlesBase::$swRecentStories[$article->created_day][$nid] = $article;
+        }
       }
     }
     return SWRecentArticlesBase::$swRecentStories;
