@@ -538,3 +538,36 @@ function sw_block_view_alter(array &$build, BlockPluginInterface $block) {
     $build['#cache']['max-age'] = 86400; // 1 day = 60 * 60 * 24
   }
 }
+
+/**
+ * Implements hook_theme().
+ */
+function sw_theme() {
+  return [
+    'sw_mailerlite_subscribe_form' => [
+      'variables' => ['form_type' => NULL],
+    ],
+  ];
+}
+
+/**
+ * Prepares variables for MailerLite subscribe form.
+ *
+ * Default template: sw-mailerlite-subscribe-form.html.twig
+ *
+ * @param array $variables
+ *   An associative array containing:
+ *   - form_type: Either 'page' or 'block'.
+ *
+ */
+function template_preprocess_sw_mailerlite_subscribe_form(&$variables) {
+  $form_classes[] = 'ml-block-form';
+  $form_classes[] = 'sw-mailerlite-form-' . $variables['form_type'];
+  $variables['form_classes'] = 'class="' . implode(' ', $form_classes) . '"';
+  if ($variables['form_type'] == 'page') {
+    $variables['form_intro'] = t('SocialistWorker.org sends out e-mail alerts to let subscribers know about new articles that have been posted and point out special features on our site.');
+  }
+  else {
+    $variables['form_intro'] = t('Get e-mail alerts from SocialistWorker.org');
+  }
+}

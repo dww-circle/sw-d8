@@ -1,0 +1,43 @@
+{#
+/**
+ * @file
+ * Template to generate markup for the SW MailerLite subscribe form.
+ *
+ * @see template_preprocess_sw_mailerlite_subscribe_form().
+ */
+#}
+<div id="mlb2-4515915" class="ml-subscribe-form ml-subscribe-form-4515915">
+    <div class="ml-vertical-align-center">
+        <form {{form_classes}} action="//app.mailerlite.com/webforms/submit/q7a9u4" data-id="344549" data-code="q7a9u4" method="POST" target="_blank">
+            <div class="subscribe-form">
+                <div class="form-section mb10">
+                    <p>{{ form_intro }}</p>
+                </div>
+                <div class="form-section">
+                    <div class="form-group ml-field-email ml-validate-required ml-validate-email">
+                        <input type="email" name="fields[email]" class="form-control" placeholder="Email*" value="" autocomplete="email" x-autocompletetype="email" spellcheck="false" autocapitalize="off" autocorrect="off">
+                    </div>
+                    <div class="form-group ml-field-name">
+                        <input type="text" name="fields[name]" class="form-control" placeholder="Name" value="" autocomplete="name" x-autocompletetype="name" spellcheck="false" autocapitalize="off" autocorrect="off">
+                    </div>
+                    <div class="form-group ml-field-city">
+                        <input type="text" name="fields[city]" class="form-control" placeholder="City" value="" spellcheck="false" autocapitalize="off" autocorrect="off">
+                    </div>
+                    <div class="form-group ml-field-state">
+                        <input type="text" name="fields[state]" class="form-control" placeholder="State" value="" spellcheck="false" autocapitalize="off" autocorrect="off">
+                    </div>
+                    <div class="form-group ml-field-zip">
+                        <input type="text" name="fields[zip]" class="form-control" placeholder="ZIP" value="" spellcheck="false" autocapitalize="off" autocorrect="off">
+                    </div>
+                    <div class="form-group ml-field-country">
+                        <input type="text" name="fields[country]" class="form-control" placeholder="Country" value="" spellcheck="false" autocapitalize="off" autocorrect="off">
+                    </div>
+                </div>
+                <input type="hidden" name="ml-submit" value="1" />
+                <button type="submit" class="primary">
+                    Subscribe
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
