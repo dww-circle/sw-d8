@@ -480,6 +480,14 @@ function sw_migrate_rewrite_story_body($sw2_body) {
       $current_embed_offset = 0;
     }
   }
+  // See if we have any pending tags we haven't inserted.
+  if (!empty($pending_embed_tags)) {
+    // Oh shit. Stuff any remaining embed tags into the end of the body.
+    foreach ($pending_embed_tags as $embed_tag) {
+      $sw3_body[] = $embed_tag;
+    }
+    // @todo Log a warning message about this.
+  }
   return implode("\r\n\r\n", $sw3_body);
 }
 
