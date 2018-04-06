@@ -66,6 +66,7 @@ class SWStoryBody extends ProcessPluginBase {
           case 'series':
             // @todo Are we going to re-write these?
             $pending_embed_tags[] = $para;
+            $this->logMessage(5, 'Story contains a <dme:series> tag');
             break;
         }
       }
@@ -99,7 +100,7 @@ class SWStoryBody extends ProcessPluginBase {
         $sw3_body[] = $embed_tag;
       }
     }
-    if ($current_embed_offset < 100) {
+    elseif ($current_embed_offset < 100) {
       // This is probably a serious design problem.
       $this->logMessage(1, "ERROR: Only $current_embed_offset characters after the last embed tag.");
     }
@@ -114,7 +115,7 @@ class SWStoryBody extends ProcessPluginBase {
   }
 
   /**
-   * Log a message to the {sw_migrate_story_warning} table.
+   * Log a message to the {migrate_message_upgrade_d6_node_story} table.
    *
    * @param integer $severity
    *   The severity level of the warning from 0 (emergency) to 7 (debug).
@@ -122,6 +123,7 @@ class SWStoryBody extends ProcessPluginBase {
    *   The warning message.
    */
   protected function logMessage($severity, $message) {
+    // MigrateExecutableInterface::saveMessage() takes these in the opposite order.
     $this->migrateExecutable->saveMessage($message, $severity);
   }
 
