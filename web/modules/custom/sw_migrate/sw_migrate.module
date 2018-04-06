@@ -411,8 +411,10 @@ function sw_migrate_find_first_dme_img($body) {
 /**
  * Migrate callback function to rewrite the D6 body field on story nodes.
  *
- * Currently, this only rewrites long chains of '- - -'... into <hr> tags.
- * @todo: Rewrite and move <dme:*> tags into something else.
+ * - Rewrites long chains of '- - -'... into <hr> tags.
+ * - Rewrites <dme> tags into <drupal-entity> tags and moves them down to the
+ *   first paragraph break 1000 characters or more below where they are now.
+ * - Avoids placing <drupal-entity> tags inside a <blockquote>.
  *
  * @param string $sw2_body
  *   The SW 2.0 (Drupal 6) value of field_body.
@@ -437,6 +439,7 @@ function sw_migrate_rewrite_story_body($sw2_body) {
   $sw3_body = [];
   $pending_embed_tags = [];
   $current_embed_offset = 0;
+  $inside_blockquote = FALSE;
   foreach ($sw2_body as $para) {
     $matches = [];
     if (preg_match('@<dme:(box|img|series)[^>]*>@', $para, $matches)) {
@@ -460,11 +463,19 @@ function sw_migrate_rewrite_story_body($sw2_body) {
       // and more optional whitespace, replace all that with the bullet point
       // span and a single space.
       $sw3_body[] = preg_replace('#^(\s*--\s*)#', '<span class="bullet"></span> ', $para);
-      if ($para !== '<hr>') {
-        $current_embed_offset++;
+      // Count the real characters (not include HTML tags) of this paragraph.
+      $current_embed_offset += strlen(strip_tags($para));
+      // See if this paragraph is opening a blockquote.
+      if (strpos($para, '<blockquote>') !== FALSE) {
+        $inside_blockquote = TRUE;
+      }
+      // If it's a 1 paragraph quote that closes it, or if it's the end of a
+      // multi-paragraph blockquote, we're no longer inside a blockquote.
+      if (strpos($para, '</blockquote>') !== FALSE) {
+        $inside_blockquote = FALSE;
       }
     }
-    if ($current_embed_offset >= 4 && count($pending_embed_tags) > 0) {
+    if (!$inside_blockquote && $current_embed_offset >= 1000 && count($pending_embed_tags) > 0) {
       $sw3_body[] = array_shift($pending_embed_tags);
       $current_embed_offset = 0;
     }
