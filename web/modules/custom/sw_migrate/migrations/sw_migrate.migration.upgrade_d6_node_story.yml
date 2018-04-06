@@ -48,9 +48,8 @@ process:
     source: field_body
     process:
       value:
+        plugin: sw_story_body
         source: value
-        plugin: callback
-        callable: sw_migrate_rewrite_story_body
       format:
         plugin: default_value
         default_value: 'filtered_html'
