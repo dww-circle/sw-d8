@@ -21,9 +21,19 @@ use Drupal\migrate\Row;
 class SWStoryBody extends ProcessPluginBase {
 
   /**
+   * The current migrate executable we're being called from.
+   *
+   * @var \Drupal\migrate\MigrateExecutableInterface
+   */
+  protected $migrateExecutable;
+  
+  /**
    * {@inheritdoc}
    */
   public function transform($value, MigrateExecutableInterface $migrate_executable, Row $row, $destination_property) {
+    // Save the current migrate_executable for use by helper methods.
+    $this->migrateExecutable = $migrate_executable;
+    
     // Replace 3 or more instances of '- ' and an optional trailing '-' with '<hr>':
     $value = preg_replace('#(- ){3,}(-)?#', '<hr>', $value);
 
@@ -83,13 +93,36 @@ class SWStoryBody extends ProcessPluginBase {
     }
     // See if we have any pending tags we haven't inserted.
     if (!empty($pending_embed_tags)) {
-      // Oh shit. Stuff any remaining embed tags into the end of the body.
+      // Oh shit. Stuff any remaining embed tags into the end of the body and log this.
+      $this->logMessage(0, 'ERROR: Hit end of body with ' . count($pending_embed_tags) . ' remaining embed tag(s)!');
       foreach ($pending_embed_tags as $embed_tag) {
         $sw3_body[] = $embed_tag;
       }
-      // @todo Log a warning message about this.
     }
+    if ($current_embed_offset < 100) {
+      // This is probably a serious design problem.
+      $this->logMessage(1, "ERROR: Only $current_embed_offset characters after the last embed tag.");
+    }
+    elseif ($current_embed_offset < 1000) {
+      // This is likely fine, but warn about it, anyway.
+      $this->logMessage(2, "Warning: Only $current_embed_offset characters after the last embed tag.");
+    }
+
+    // Finally, return a giant string based on our array of "paragraphs",
+    // each separated by 2 newlines.
     return implode("\r\n\r\n", $sw3_body);
+  }
+
+  /**
+   * Log a message to the {sw_migrate_story_warning} table.
+   *
+   * @param integer $severity
+   *   The severity level of the warning from 0 (emergency) to 7 (debug).
+   * @param string $message
+   *   The warning message.
+   */
+  protected function logMessage($severity, $message) {
+    $this->migrateExecutable->saveMessage($message, $severity);
   }
 
   /**
