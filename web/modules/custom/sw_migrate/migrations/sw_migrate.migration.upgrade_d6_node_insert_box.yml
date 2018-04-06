@@ -23,7 +23,10 @@ process:
     default_value: und
   title: title
   uid: node_uid
-  status: status
+  # Ignore the D6 value, we always want insert boxes published.
+  status:
+    plugin: default_value
+    default_value: 1
   created: created
   changed: changed
   # Ignore the D6 value, we never want insert boxes 'promoted to the front page'.
