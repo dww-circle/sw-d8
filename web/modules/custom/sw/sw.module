@@ -133,6 +133,26 @@ function sw_insert_box_node_form_alter(&$form, FormStateInterface $form_state, $
   $form['field_insert_body']['#pre_render'][] = 'sw_hide_format_guidelines_form_pre_render';
 }
 
+
+/**
+ * Implements hook_preprocess_HOOK() for taxonomy terms.
+ */
+function sw_preprocess_taxonomy_term(&$variables) {
+  // If we're on one of our term-driven story lists, tell the twig template to
+  // think we're a full-page view so we don't print a duplicate label + link.
+  $view_id = \Drupal::routeMatch()->getParameters()->get('view_id');
+  if (!empty($view_id)) {
+    switch ($view_id) {
+      case 'sw_section_stories':
+      case 'sw_series_stories':
+      case 'sw_topic_stories':
+        $variables['page'] = TRUE;
+        break;
+
+    }
+  }
+}
+
 /**
  * Implements hook_preprocess_HOOK() for nodes.
  *
