@@ -1,4 +1,5 @@
-.caption-article {
+article.embedded-entity .media--view-mode-embed, // embed without caption
+.caption-article { // embed with caption
   border-bottom: 10px solid $c-red;
   margin: 0 auto;
   max-width: 290px;
@@ -25,5 +26,12 @@
     font-size: 14px;
     line-height: 18px;
     padding-bottom: 16px;
+  }
+}
+
+article.embedded-entity .media--view-mode-embed {
+
+  img {
+    padding-bottom: 13px;
   }
 }

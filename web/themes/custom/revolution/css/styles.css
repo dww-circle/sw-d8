@@ -818,28 +818,36 @@ main {
     .region-sidebar .block-sw-further-reading-block {
       display: block; } }
 
+article.embedded-entity .media--view-mode-embed,
 .caption-article {
   border-bottom: 10px solid #ff0000;
   margin: 0 auto;
   max-width: 290px; }
   @media (min-width: 540px) {
+    article.embedded-entity .media--view-mode-embed,
     .caption-article {
       float: left;
       margin: 4px 20px 20px 0; } }
   @media (min-width: 961px) {
+    article.embedded-entity .media--view-mode-embed,
     .caption-article {
       margin-bottom: 20px;
       margin-left: -88px;
       margin-right: 40px; } }
+  article.embedded-entity .media--view-mode-embed img,
   .caption-article img {
     height: auto;
     padding-bottom: 3px;
     width: 100%; }
+  article.embedded-entity .media--view-mode-embed figcaption,
   .caption-article figcaption {
     font-family: "FF DIN Pro Regular", sans-serif;
     font-size: 14px;
     line-height: 18px;
     padding-bottom: 16px; }
+
+article.embedded-entity .media--view-mode-embed img {
+  padding-bottom: 13px; }
 
 label {
   display: block;
