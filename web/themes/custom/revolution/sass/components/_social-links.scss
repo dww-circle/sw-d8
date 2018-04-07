@@ -34,6 +34,51 @@
   }
 }
 
+.more:hover ~ .more-links {
+  display: block;
+}
+
+.more-links {
+  background: rgba( 255, 255, 255, .9);
+  display: none;
+  border: 1px solid $c-grb2;
+  bottom: 20px;
+  font-family: $ff-din-medium;
+  font-size: 12px;
+  right: -112px;
+  line-height: 16px;
+  padding: 20px 15px 10px;
+  position: absolute;
+  text-transform: uppercase;
+  width: 130px;
+  z-index: 1;
+
+  .story-social-bottom & {
+    bottom: 27px;
+    right: -100px;
+  }
+
+  li {
+    height: auto;
+    margin: 0 0 10px;
+    text-align: left;
+    width: auto;
+
+    .story-social-bottom & {
+      display: block;
+      margin: 0 0 10px;
+    }
+  }
+
+  a {
+    @include link-colors($c-black, $c-red);
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
 .story-social-left {
 
   @include breakpoint($desktop) {
