@@ -17,6 +17,7 @@
                     <div class="form-group ml-field-email ml-validate-required ml-validate-email">
                         <input type="email" name="fields[email]" class="form-control" placeholder="Email*" value="" autocomplete="email" x-autocompletetype="email" spellcheck="false" autocapitalize="off" autocorrect="off">
                     </div>
+                    {% if form_type == "page" %}
                     <div class="form-group ml-field-name">
                         <input type="text" name="fields[name]" class="form-control" placeholder="Name" value="" autocomplete="name" x-autocompletetype="name" spellcheck="false" autocapitalize="off" autocorrect="off">
                     </div>
@@ -32,6 +33,7 @@
                     <div class="form-group ml-field-country">
                         <input type="text" name="fields[country]" class="form-control" placeholder="Country" value="" spellcheck="false" autocapitalize="off" autocorrect="off">
                     </div>
+                    {% endif %}
                 </div>
                 <input type="hidden" name="ml-submit" value="1" />
                 <button type="submit" class="primary">
