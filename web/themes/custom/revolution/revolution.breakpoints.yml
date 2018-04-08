@@ -1,24 +1,12 @@
-revolution.mobile:
-  label: mobile
-  mediaQuery: '(min-width: 0px)'
+revolution.handheld:
+  label: handheld
+  mediaQuery: '(min-width: 0) and (max-width: 540px)'
   weight: 0
   multipliers:
     - 1x
 revolution.tablet:
-  label: tablet
-  mediaQuery: '(min-width: 601px)'
-  weight: 1
+  label: tablet +
+  mediaQuery: '(min-width: 541px) and (max-width: 820px)'
+  weight: 0
   multipliers:
     - 1x
-revolution.desktop:
-  label: desktop
-  mediaQuery: '(min-width: 821px)'
-  weight: 2
-  multipliers:
-    - 1x
-revolution.desktop-large:
-  label: desktop large
-  mediaQuery: '(min-width: 1201px)'
-  weight: 3
-  multipliers:
-    - 2x

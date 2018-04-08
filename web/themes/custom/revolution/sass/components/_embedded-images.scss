@@ -38,16 +38,18 @@ article.embedded-entity .media--view-mode-embed {
 }
 
 article.embedded-entity .media--view-mode-embed-wide {
-  text-align: center;
+  border-bottom: 10px solid $c-red;
 
   img {
-    margin: 0 auto;
+    height: auto;
+    margin: 0 auto 13px;
+    width: 100%;
   }
 }
 
 .caption-article.embed-wide {
   float: none;
-  max-width: 480px;
+  max-width: 100%;
   width: 100%;
 
   @include breakpoint($desktop) {

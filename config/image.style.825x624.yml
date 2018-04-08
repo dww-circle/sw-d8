@@ -1,0 +1,15 @@
+uuid: 86698a6d-aafe-4cef-be0f-f102767ade26
+langcode: en
+status: true
+dependencies: {  }
+name: 825x624
+label: 'SW 825x624'
+effects:
+  cf875fc1-76d3-480e-85b2-1a82d754568a:
+    uuid: cf875fc1-76d3-480e-85b2-1a82d754568a
+    id: image_scale
+    weight: 2
+    data:
+      width: 825
+      height: 624
+      upscale: false

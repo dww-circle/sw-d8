@@ -19,7 +19,6 @@ dependencies:
     - field.field.media.image.field_state
     - media.type.image
   module:
-    - image
     - text
 _core:
   default_config_hash: jOwnt_yq6AKAfqU6f0xKnxEkFQ2eTPJWxrk3WMLbL68
@@ -35,15 +34,6 @@ content:
     third_party_settings: {  }
     type: text_default
     region: content
-  field_media_image:
-    label: hidden
-    settings:
-      image_style: ''
-      image_link: ''
-    third_party_settings: {  }
-    type: image
-    weight: 0
-    region: content
 hidden:
   created: true
   field_city: true
@@ -54,6 +44,7 @@ hidden:
   field_image_provider: true
   field_image_rights: true
   field_image_url: true
+  field_media_image: true
   field_original_image: true
   field_original_url: true
   field_server_folder: true

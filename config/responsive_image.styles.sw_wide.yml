@@ -1,0 +1,24 @@
+uuid: ea7bbcfd-17fd-454c-95cf-6b8d9915aaf3
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.510x386
+    - image.style.825x624
+  theme:
+    - revolution
+id: sw_wide
+label: 'SW Wide'
+image_style_mappings:
+  -
+    breakpoint_id: revolution.tablet
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: 825x624
+  -
+    breakpoint_id: revolution.handheld
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: 510x386
+breakpoint_group: revolution
+fallback_image_style: 825x624

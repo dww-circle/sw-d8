@@ -1,0 +1,15 @@
+uuid: a98c591a-211d-4e82-8ea3-f5adf5eeb564
+langcode: en
+status: true
+dependencies: {  }
+name: 510x386
+label: 'SW 510x386'
+effects:
+  c2e8fb52-19f4-4051-a6ba-4354f81b43dc:
+    uuid: c2e8fb52-19f4-4051-a6ba-4354f81b43dc
+    id: image_scale
+    weight: 2
+    data:
+      width: 510
+      height: 386
+      upscale: false

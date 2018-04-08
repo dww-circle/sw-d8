@@ -18,10 +18,10 @@ dependencies:
     - field.field.media.image.field_original_url
     - field.field.media.image.field_server_folder
     - field.field.media.image.field_state
-    - image.style.large
     - media.type.image
+    - responsive_image.styles.sw_wide
   module:
-    - image
+    - responsive_image
 _core:
   default_config_hash: jOwnt_yq6AKAfqU6f0xKnxEkFQ2eTPJWxrk3WMLbL68
 id: media.image.embed_wide
@@ -32,10 +32,10 @@ content:
   field_media_image:
     label: hidden
     settings:
-      image_style: large
+      responsive_image_style: sw_wide
       image_link: ''
     third_party_settings: {  }
-    type: image
+    type: responsive_image
     weight: 0
     region: content
 hidden:
