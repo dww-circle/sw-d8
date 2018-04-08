@@ -57,12 +57,16 @@
   ul {
     border-color: #DDDDDD;
     display: none;
-    left: 0;
+    left: 31px;
     padding: 16px 0;
     position: absolute;
     text-align: left;
     width: 238px;
     z-index: $z-solar-system;
+  }
+
+  &:first-child ul {
+    left: 0;
   }
 
   &:hover ul {
@@ -76,8 +80,8 @@
   }
 
   li a {
+    @include link-colors($c-black, $c-red, $c-red);
     background: rgba( 255, 255, 255, .95);
-    color: black;
     display: block;
     font-size: 16px;
     margin: 0;
@@ -144,14 +148,14 @@
   @if $hover {
     &.is-active:hover,
     &.active:hover,
-    &.active-trail:hover,
+    .menu-item--active-trail a:hover,
     &.visited:hover,
     &:hover {
       color: $hover;
     }
   } @else {
     &.active:hover,
-    &.active-trail:hover,
+    .menu-item--active-trail &:hover,
     &.visited:hover,
     &:hover {
       color: $normal;
@@ -159,15 +163,17 @@
   }
 
   @if $active {
+    &.active,
     &.is-active,
     &:active,
-    &.active-trail {
+    .menu-item--active-trail & {
       color: $active;
     }
   } @else {
+    &.active,
     &.is-active,
     &:active,
-    &.active-trail {
+    .menu-item--active-trail & {
       color: $normal;
     }
   }

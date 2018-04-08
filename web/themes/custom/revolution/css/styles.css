@@ -79,9 +79,11 @@ a {
     color: #EA3223; }
   a:focus {
     color: #EA3223; }
-  a.active:hover, a.active-trail:hover, a.visited:hover, a:hover {
+  a.active:hover,
+  .menu-item--active-trail a:hover, a.visited:hover, a:hover {
     color: #EA3223; }
-  a.is-active, a:active, a.active-trail {
+  a.active, a.is-active, a:active,
+  .menu-item--active-trail a {
     color: #EA3223; }
   a:hover {
     text-decoration: underline; }
@@ -521,25 +523,30 @@ main {
       color: white; }
     .region-main-menu nav > ul > li > a:focus {
       color: white; }
-    .region-main-menu nav > ul > li > a.is-active:hover, .region-main-menu nav > ul > li > a.active:hover, .region-main-menu nav > ul > li > a.active-trail:hover, .region-main-menu nav > ul > li > a.visited:hover, .region-main-menu nav > ul > li > a:hover {
-      color: red; }
-    .region-main-menu nav > ul > li > a.is-active, .region-main-menu nav > ul > li > a:active, .region-main-menu nav > ul > li > a.active-trail {
-      color: white; }
+    .region-main-menu nav > ul > li > a.is-active:hover, .region-main-menu nav > ul > li > a.active:hover,
+    .region-main-menu nav > ul > li > a .menu-item--active-trail a:hover, .region-main-menu nav > ul > li > a.visited:hover, .region-main-menu nav > ul > li > a:hover {
+      color: #ff0000; }
+    .region-main-menu nav > ul > li > a.active, .region-main-menu nav > ul > li > a.is-active, .region-main-menu nav > ul > li > a:active,
+    .menu-item--active-trail .region-main-menu nav > ul > li > a {
+      color: #ff0000; }
   .region-main-menu nav > ul > li.menu-item--active-trail > a,
   .region-main-menu nav > ul > li > a.is-active,
   .region-main-menu nav > ul > li > a:hover {
+    color: #ff0000;
     text-decoration: none; }
   .region-main-menu .menu-item--expanded {
     position: relative; }
     .region-main-menu .menu-item--expanded ul {
       border-color: #DDDDDD;
       display: none;
-      left: 0;
+      left: 31px;
       padding: 16px 0;
       position: absolute;
       text-align: left;
       width: 238px;
       z-index: 300; }
+    .region-main-menu .menu-item--expanded:first-child ul {
+      left: 0; }
     .region-main-menu .menu-item--expanded:hover ul {
       display: block; }
     .region-main-menu .menu-item--expanded li {
@@ -547,11 +554,22 @@ main {
       margin: 0; }
     .region-main-menu .menu-item--expanded li a {
       background: rgba(255, 255, 255, 0.95);
-      color: black;
       display: block;
       font-size: 16px;
       margin: 0;
       text-transform: none; }
+      .region-main-menu .menu-item--expanded li a:link {
+        color: #1A272E; }
+      .region-main-menu .menu-item--expanded li a:visited, .region-main-menu .menu-item--expanded li a:link:visited {
+        color: #1A272E; }
+      .region-main-menu .menu-item--expanded li a:focus {
+        color: #1A272E; }
+      .region-main-menu .menu-item--expanded li a.is-active:hover, .region-main-menu .menu-item--expanded li a.active:hover,
+      .region-main-menu .menu-item--expanded li a .menu-item--active-trail a:hover, .region-main-menu .menu-item--expanded li a.visited:hover, .region-main-menu .menu-item--expanded li a:hover {
+        color: #ff0000; }
+      .region-main-menu .menu-item--expanded li a.active, .region-main-menu .menu-item--expanded li a.is-active, .region-main-menu .menu-item--expanded li a:active,
+      .menu-item--active-trail .region-main-menu .menu-item--expanded li a {
+        color: #ff0000; }
       .region-main-menu .menu-item--expanded li a:hover {
         color: red;
         text-decoration: none; }
@@ -785,10 +803,12 @@ main {
         color: #1A272E; }
       .block-sw-recent-articles-block .recent-articles-dates a:focus {
         color: #1A272E; }
-      .block-sw-recent-articles-block .recent-articles-dates a.is-active:hover, .block-sw-recent-articles-block .recent-articles-dates a.active:hover, .block-sw-recent-articles-block .recent-articles-dates a.active-trail:hover, .block-sw-recent-articles-block .recent-articles-dates a.visited:hover, .block-sw-recent-articles-block .recent-articles-dates a:hover {
+      .block-sw-recent-articles-block .recent-articles-dates a.is-active:hover, .block-sw-recent-articles-block .recent-articles-dates a.active:hover,
+      .block-sw-recent-articles-block .recent-articles-dates a .menu-item--active-trail a:hover, .block-sw-recent-articles-block .recent-articles-dates a.visited:hover, .block-sw-recent-articles-block .recent-articles-dates a:hover {
         color: #ff0000; }
-      .block-sw-recent-articles-block .recent-articles-dates a.is-active, .block-sw-recent-articles-block .recent-articles-dates a:active, .block-sw-recent-articles-block .recent-articles-dates a.active-trail {
-        color: #1A272E; }
+      .block-sw-recent-articles-block .recent-articles-dates a.active, .block-sw-recent-articles-block .recent-articles-dates a.is-active, .block-sw-recent-articles-block .recent-articles-dates a:active,
+      .menu-item--active-trail .block-sw-recent-articles-block .recent-articles-dates a {
+        color: #ff0000; }
     .block-sw-recent-articles-block .recent-articles-dates ul {
       margin: 0;
       padding: 0;
@@ -797,6 +817,7 @@ main {
         display: inline-block;
         list-style: none;
         margin: 0;
+        min-width: 45px;
         padding: 0;
         text-align: center;
         width: calc(100% / 6); }
@@ -972,9 +993,11 @@ select {
     color: #1A272E; }
   .pager a:focus {
     color: #1A272E; }
-  .pager a.is-active:hover, .pager a.active:hover, .pager a.active-trail:hover, .pager a.visited:hover, .pager a:hover {
+  .pager a.is-active:hover, .pager a.active:hover,
+  .pager a .menu-item--active-trail a:hover, .pager a.visited:hover, .pager a:hover {
     color: #ff0000; }
-  .pager a.is-active, .pager a:active, .pager a.active-trail {
+  .pager a.active, .pager a.is-active, .pager a:active,
+  .menu-item--active-trail .pager a {
     color: #1A272E; }
 
 .social-links {
@@ -1038,9 +1061,11 @@ select {
     color: #1A272E; }
   .more-links a:focus {
     color: #1A272E; }
-  .more-links a.is-active:hover, .more-links a.active:hover, .more-links a.active-trail:hover, .more-links a.visited:hover, .more-links a:hover {
+  .more-links a.is-active:hover, .more-links a.active:hover,
+  .more-links a .menu-item--active-trail a:hover, .more-links a.visited:hover, .more-links a:hover {
     color: #ff0000; }
-  .more-links a.is-active, .more-links a:active, .more-links a.active-trail {
+  .more-links a.active, .more-links a.is-active, .more-links a:active,
+  .menu-item--active-trail .more-links a {
     color: #1A272E; }
   .more-links a:hover {
     text-decoration: none; }
