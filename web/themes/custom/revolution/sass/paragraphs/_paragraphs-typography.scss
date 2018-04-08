@@ -95,6 +95,7 @@ h4 {
   font-family: $ff-nitti;
   font-size: 16px;
   font-weight: $fw-light;
+  letter-spacing: 2px;
   text-transform: uppercase;
 
   .field--name-field-sub &,
@@ -154,6 +155,7 @@ h4 {
     .field--name-field-display-title {
       border-top: 1px solid $c-gr7d;
       font-family: $ff-din-bold;
+      font-weight: normal;
       font-size: 16px;
       line-height: 30px;
       margin-bottom: 18px;

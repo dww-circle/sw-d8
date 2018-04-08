@@ -40,6 +40,7 @@ h3 {
     color: red;
     font-size: 28px;
     font-family: "FF DIN Pro Bold", sans-serif;
+    font-weight: normal;
     line-height: 32px;
     position: relative;
     text-transform: uppercase; }
@@ -186,7 +187,8 @@ main {
 .page-title {
   font-family: "FF DIN Pro Bold", sans-serif;
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 36px;
+  font-weight: normal;
   line-height: 40px;
   letter-spacing: -1px;
   padding-bottom: 20px; }
@@ -291,7 +293,7 @@ main {
 .header {
   background: black;
   color: white;
-  margin-bottom: 52px;
+  margin-bottom: 15px;
   padding: 15px 0 5px;
   text-align: left; }
   @media (min-width: 961px) {
@@ -327,12 +329,13 @@ main {
       max-width: 575px; } }
 
 .header-sublogo {
-  font-family: "FF DIN Pro Medium", sans-serif;
-  font-size: 12px;
+  font-family: "FF DIN Pro Regular", sans-serif;
+  font-size: 11px;
   line-height: 1;
   text-transform: uppercase; }
   @media (min-width: 961px) {
     .header-sublogo {
+      font-size: 12px;
       -webkit-align-self: flex-end;
           -ms-flex-item-align: end;
               align-self: flex-end;
@@ -360,7 +363,6 @@ main {
       display: none; } }
 
 .region-main-menu .search-block-form {
-  padding-top: 6px;
   text-align: right; }
   .region-main-menu .search-block-form .form-search {
     display: none; }
@@ -376,7 +378,7 @@ main {
     border: none;
     color: white;
     font-size: 16px;
-    padding: 13px 0;
+    padding: 8px 0 6px;
     text-transform: uppercase; }
 
 .menu-trigger {
@@ -389,8 +391,11 @@ main {
 
 .menu-trigger-text {
   color: white;
-  font-family: "FF DIN Pro Bold", sans-serif;
+  font-family: "FF DIN Pro Regular", sans-serif;
   font-size: 11.4px; }
+  @media (min-width: 961px) {
+    .menu-trigger-text {
+      font-size: 11.4px; } }
 
 .menu-trigger-desktop {
   display: none; }
@@ -483,7 +488,7 @@ main {
   background: black;
   border-top: 1px solid #747474;
   display: none;
-  font-size: 16px;
+  font-size: 12px;
   font-family: "FF DIN Pro Regular", sans-serif;
   margin-bottom: 52px;
   text-transform: uppercase;
@@ -512,7 +517,7 @@ main {
     padding-left: 0; }
   .region-main-menu nav > ul > li > a {
     display: block;
-    padding: 13px 23px 11px; }
+    padding: 2px 40px 2px; }
     .region-main-menu nav > ul > li > a:link {
       color: white; }
     .region-main-menu nav > ul > li > a:visited, .region-main-menu nav > ul > li > a:link:visited {
@@ -701,6 +706,7 @@ main {
     color: #ff0000;
     font-family: "FF DIN Pro Bold", sans-serif;
     font-size: 16px;
+    font-weight: normal;
     line-height: 19px;
     text-transform: uppercase; }
   .region-content-bottom ul {
@@ -729,6 +735,7 @@ main {
 .region-sidebar h2 {
   font-family: "FF DIN Pro Bold", sans-serif;
   font-size: 24px;
+  font-weight: normal;
   line-height: 30px;
   text-transform: uppercase; }
 
@@ -742,10 +749,12 @@ main {
     border-top: 1px solid #1A272E;
     color: #1A272E;
     font-family: "FF DIN Pro Bold", sans-serif;
+    font-weight: normal;
     position: relative;
     text-transform: uppercase;
-    font-size: 32px;
-    line-height: 48px;
+    border-width: 2px;
+    font-size: 26px;
+    line-height: 44px;
     margin: 0;
     padding: 0; }
     .block-sw-recent-articles-block h2:after {
@@ -755,39 +764,40 @@ main {
       right: 0;
       top: 0; }
     .block-sw-recent-articles-block h2:after {
-      height: 40px;
-      width: 20px; }
+      height: 33px;
+      width: 17px; }
   .block-sw-recent-articles-block .recent-articles-dates {
-    font-size: 15px;
-    line-height: 20px;
+    font-size: 12px;
+    line-height: 18px;
     border-bottom: 1px solid #bbb;
-    margin-bottom: 15px; }
+    margin-bottom: 20px; }
     .block-sw-recent-articles-block .recent-articles-dates a {
-      color: #1A272E;
       text-decoration: none; }
-    .block-sw-recent-articles-block .recent-articles-dates a.active {
-      color: #ff0000; }
-    .block-sw-recent-articles-block .recent-articles-dates a:hover {
-      color: #ff0000; }
+      .block-sw-recent-articles-block .recent-articles-dates a:link {
+        color: #1A272E; }
+      .block-sw-recent-articles-block .recent-articles-dates a:visited, .block-sw-recent-articles-block .recent-articles-dates a:link:visited {
+        color: #1A272E; }
+      .block-sw-recent-articles-block .recent-articles-dates a:focus {
+        color: #1A272E; }
+      .block-sw-recent-articles-block .recent-articles-dates a.is-active:hover, .block-sw-recent-articles-block .recent-articles-dates a.active:hover, .block-sw-recent-articles-block .recent-articles-dates a.active-trail:hover, .block-sw-recent-articles-block .recent-articles-dates a.visited:hover, .block-sw-recent-articles-block .recent-articles-dates a:hover {
+        color: #ff0000; }
+      .block-sw-recent-articles-block .recent-articles-dates a.is-active, .block-sw-recent-articles-block .recent-articles-dates a:active, .block-sw-recent-articles-block .recent-articles-dates a.active-trail {
+        color: #1A272E; }
     .block-sw-recent-articles-block .recent-articles-dates ul {
       margin: 0;
-      padding: 0; }
+      padding: 0;
+      width: calc(100% - 23px); }
       .block-sw-recent-articles-block .recent-articles-dates ul li {
         display: inline-block;
         list-style: none;
         margin: 0;
-        padding: 0; }
+        padding: 0;
+        text-align: center;
+        width: calc(100% / 6); }
         .block-sw-recent-articles-block .recent-articles-dates ul li a {
-          width: 50px;
           display: block;
-          text-align: center;
-          font-family: "FF DIN Pro Regular", sans-serif; }
-          @media (min-width: 540px) {
-            .block-sw-recent-articles-block .recent-articles-dates ul li a {
-              width: 55px; } }
-          @media (min-width: 961px) {
-            .block-sw-recent-articles-block .recent-articles-dates ul li a {
-              width: 53px; } }
+          font-family: "FF DIN Pro Regular", sans-serif;
+          width: 100%; }
   .block-sw-recent-articles-block .recent-articles-tabs a {
     text-decoration: none; }
   .block-sw-recent-articles-block .recent-articles-tabs a:hover .headline {
@@ -797,7 +807,7 @@ main {
   .block-sw-recent-articles-block .recent-articles-tabs a:visited:hover .headline {
     color: #72726c; }
   .block-sw-recent-articles-block .recent-articles-tabs .story-label {
-    font-size: 12px;
+    font-size: 11px;
     line-height: 14px;
     margin: 0; }
   .block-sw-recent-articles-block .recent-articles-tabs .headline {
@@ -913,6 +923,7 @@ select {
   .node--type-insert-box h2 {
     border-top: 4px solid #1A272E;
     font-family: "FF DIN Pro Bold", sans-serif;
+    font-weight: normal;
     font-size: 28px;
     line-height: 36px;
     padding-top: 13px;
@@ -1161,6 +1172,7 @@ select {
   color: red;
   font-size: 28px;
   font-family: "FF DIN Pro Bold", sans-serif;
+  font-weight: normal;
   line-height: 32px;
   position: relative;
   text-transform: uppercase; }
@@ -1232,6 +1244,7 @@ h4 {
   font-family: "Source Code Pro", monospace;
   font-size: 16px;
   font-weight: 300;
+  letter-spacing: 2px;
   text-transform: uppercase; }
   .field--name-field-sub .story-label,
   .paragraph--type--nested .story-label {
@@ -1251,6 +1264,7 @@ h4 {
   border-top: 1px solid #1A272E;
   color: #1A272E;
   font-family: "FF DIN Pro Bold", sans-serif;
+  font-weight: normal;
   position: relative;
   text-transform: uppercase;
   border-width: 1px;
@@ -1271,6 +1285,7 @@ h4 {
   border-top: 1px solid #1A272E;
   color: #1A272E;
   font-family: "FF DIN Pro Bold", sans-serif;
+  font-weight: normal;
   position: relative;
   text-transform: uppercase;
   border-width: 4px;
@@ -1290,6 +1305,7 @@ h4 {
 .column-right .paragraph--type--nested .field--name-field-display-title {
   border-top: 1px solid #7d7d7d;
   font-family: "FF DIN Pro Bold", sans-serif;
+  font-weight: normal;
   font-size: 16px;
   line-height: 30px;
   margin-bottom: 18px;

@@ -2,7 +2,7 @@
   background: black;
   border-top: 1px solid #747474;
   display: none;
-  font-size: 16px;
+  font-size: 12px;
   font-family: $ff-din-regular;
   margin-bottom: 52px;
   text-transform: uppercase;
@@ -38,7 +38,7 @@
     > a {
       @include link-colors(white, red);
       display: block;
-      padding: 13px 23px 11px;
+      padding: 2px 40px 2px;
     }
 
     // hover/active state

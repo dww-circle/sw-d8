@@ -11,8 +11,12 @@
 
 .menu-trigger-text {
   color: white;
-  font-family: $ff-din-bold;
+  font-family: $ff-din-regular;
   font-size: 11.4px;
+
+  @include breakpoint($desktop) {
+    font-size: 11.4px;
+  }
 }
 
 .menu-trigger-desktop {

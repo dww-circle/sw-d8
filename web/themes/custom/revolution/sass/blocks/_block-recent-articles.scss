@@ -8,61 +8,46 @@
 
   h2 {
     @include title-fancy-black;
-    &:after {
-      height: 40px;
-      width: 20px;
-    }
-    font-size: 32px;
-    line-height: 48px;
+    border-width: 2px;
+    font-size: 26px;
+    line-height: 44px;
     margin: 0;
     padding: 0;
+
+    &:after {
+      height: 33px;
+      width: 17px;
+    }
   }
   
   .recent-articles-dates {
-    font-size: 15px;
-    line-height: 20px;
+    font-size: 12px;
+    line-height: 18px;
     border-bottom: 1px solid #bbb;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+
     a {
-      color: $c-black;
+      @include link-colors($c-black, $c-red);
       text-decoration: none;
     }
-    a.active {
-      color: $c-red;
-    }
-    a:hover {
-      color: $c-red;
-    }
+
     ul {
       margin: 0;
       padding: 0;
+      width: calc(100% - 23px);
+
       li {
         display: inline-block;
         list-style: none;
         margin: 0;
         padding: 0;
-        // Instead of relying on padding/margins, set the <a> to a fixed width.
-        // This gives reliable and consistent results regardless of the width
-        // of the specific dates we're showing (e.g. 10/30 vs. 1/7).
-        // A wide <a> (vs. <li>) gives a larger target (especially on mobile).
-        // At very small screens (320px), plus padding, so we only want 50px.
-        // Normal handhelds and tablets can be more spacious, so we use 55px.
-        // Otherwise, since this block appears in a 320px wide sidebar, and
-        // we're showing 6 date links, each link can be 53px wide
-        // (with 2px to spare). ;)
+        text-align: center;
+        width: calc(100% / 6);
+
         a {
-          width: 50px;
           display: block;
-          @include breakpoint($handheld) {
-            width: 55px;
-          }
-          @include breakpoint($desktop) {
-            width: 53px;
-          }
-          // Centering the text w/n the link seems more natural, even though
-          // it doesn't match the comp (which wants the 1st date flush left).
-          text-align: center;
           font-family: $ff-din-regular;
+          width: 100%;
         }
       }
     }
@@ -82,7 +67,7 @@
       color: #72726c;
     }
     .story-label {
-      font-size: 12px;
+      font-size: 11px;
       line-height: 14px;
       margin: 0;
     }
