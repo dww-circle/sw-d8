@@ -2,8 +2,6 @@
 
 namespace Drupal\sw\Plugin\Block;
 
-use Drupal\Core\Url;
-use Drupal\node\Entity\Node;
 use Drupal\sw\Plugin\Block\SWRecentArticlesBase;
 
 /**
@@ -42,7 +40,7 @@ class SWRecentArticlesBlock extends SWRecentArticlesBase {
         'header' => [
           '#prefix' => '<h3 id="' . $header_id . '" class="js-hide">',
           '#suffix' => '</h3>',
-          '#markup' => $this->getHeaderLabel($pub_date),
+          '#markup' => $this->getHeaderLabel($pub_date, 'l, F jS'),
         ],
         'articles' => [
           '#theme' => 'item_list',
@@ -81,39 +79,6 @@ class SWRecentArticlesBlock extends SWRecentArticlesBase {
     ];
   }
 
-  /**
-   * Build the appropriate render array for a given article.
-   *
-   * @param $article
-   *   An article object as returned from our DB queries.
-   *
-   * @return array
-   *   The render array to display the specific article.
-   */
-  protected function buildArticleRenderArray($article) {
-    // @todo: If we denormalize the story_label into a separate field, we
-    // don't need to incur the cost of all the full entity loads here.
-    $node = \Drupal\node\Entity\Node::load($article->nid);
-    foreach (['authors', 'interviewees'] as $field_id) {
-      sw_load_referenced_entities($node, $field_id, ['Drupal\node\Entity\Node', 'loadMultiple']);
-    }
-    $node_url = new Url('entity.node.canonical', ['node' => $article->nid]);
-    return [
-      '#prefix' => '<a href="' . $node_url->toString() . '">',
-      'story_label' => [
-        '#markup' => sw_get_story_label($node, 'teaser'),
-        '#prefix' => '<div class="story-label">',
-        '#suffix' => '</div>',
-      ],
-      'headline' => [
-        '#markup' => $article->title,
-        '#prefix' => '<div class="headline">',
-        '#suffix' => '</div>',
-      ],
-      '#suffix' => '</a>',
-    ];
-  }
-
   /** 
    * Build the appropriate tab label for a given publication date.
    *
@@ -128,20 +93,6 @@ class SWRecentArticlesBlock extends SWRecentArticlesBase {
     $parts = str_split((string)$pub_date, 2);
     // Treat the last 2 chunks as integers (to chop leading 0) and delimit with /.
     return (int)$parts[2] . '/' . (int)$parts[3];
-  }
-
-  /** 
-   * Build the appropriate (non-JS) header label for a given publication date.
-   *
-   * @param integer $pub_date
-   *   A publication date of the form YYYYMMDD.
-   *
-   * @return string
-   *   The label to use for the h3 sub-header.
-   */
-  protected function getHeaderLabel($pub_date) {
-    $datetime = \DateTime::createFromFormat('Ymd', $pub_date);
-    return $datetime->format('l, F jS');
   }
 
 }

@@ -1,0 +1,28 @@
+uuid: c393deaf-5a2c-4a62-af26-c0a108185ba3
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - sw
+  theme:
+    - revolution
+id: sw_recent_stories
+theme: revolution
+region: content
+weight: -4
+provider: null
+plugin: sw_recent_stories_block
+settings:
+  id: sw_recent_stories_block
+  label: 'Recent stories'
+  provider: sw
+  label_display: visible
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      slices: slices
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

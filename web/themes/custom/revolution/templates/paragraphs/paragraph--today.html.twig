@@ -6,8 +6,9 @@
 
 {% block columns %}
   <div class="column-right">
-    <div class="tmps-recent-articles" style="padding: 10px; width: 100%; height: 534px; background: grey; margin-bottom: 80px; opacity: .6;">
-      Placeholder for Recent Articles
+    <div class="block-sw-recent-articles-block">
+      <h2>{{ 'Recent articles'|t }}</h2>
+      {{ sw_recent_articles_block_body }}
     </div>
     {{ content.field_ad_right }}
   </div>

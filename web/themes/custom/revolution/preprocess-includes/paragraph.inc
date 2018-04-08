@@ -84,6 +84,11 @@ function revolution_preprocess_paragraph__today(&$variables) {
 
   // Send markup to template.
   $variables['groups'] = $group;
+
+  $block_manager = \Drupal::service('plugin.manager.block');
+  $config = [];
+  $plugin_block = $block_manager->createInstance('sw_recent_articles_block', $config);
+  $variables['sw_recent_articles_block_body'] = $plugin_block->build();
 }
 
 /*
