@@ -35,3 +35,21 @@ article.embedded-entity .media--view-mode-embed {
     padding-bottom: 13px;
   }
 }
+
+article.embedded-entity .media--view-mode-embed-wide {
+  text-align: center;
+
+  img {
+    margin: 0 auto;
+  }
+}
+
+.caption-article.embed-wide {
+  float: none;
+  max-width: 480px;
+  width: 100%;
+
+  @include breakpoint($desktop) {
+    margin: 0 auto;
+  }
+}

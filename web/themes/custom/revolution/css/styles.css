@@ -849,6 +849,19 @@ article.embedded-entity .media--view-mode-embed,
 article.embedded-entity .media--view-mode-embed img {
   padding-bottom: 13px; }
 
+article.embedded-entity .media--view-mode-embed-wide {
+  text-align: center; }
+  article.embedded-entity .media--view-mode-embed-wide img {
+    margin: 0 auto; }
+
+.caption-article.embed-wide {
+  float: none;
+  max-width: 480px;
+  width: 100%; }
+  @media (min-width: 961px) {
+    .caption-article.embed-wide {
+      margin: 0 auto; } }
+
 label {
   display: block;
   font-size: 16px;
