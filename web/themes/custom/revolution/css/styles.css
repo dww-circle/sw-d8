@@ -38,7 +38,7 @@ h3 {
   .view h3 {
     border-top: 1px solid red;
     color: red;
-    font-size: 28px;
+    font-size: 24px;
     font-family: "FF DIN Pro Bold", sans-serif;
     font-weight: normal;
     line-height: 32px;
@@ -47,16 +47,15 @@ h3 {
     .view h3:after {
       background: red;
       content: '';
-      height: 30px;
+      height: 26px;
       position: absolute;
       right: 0;
       top: 0;
-      width: 60px; }
+      width: 52px; }
 
 h4 {
   font-size: 21px;
-  line-height: 28px;
-  text-transform: uppercase; }
+  line-height: 28px; }
 
 h5 {
   font-size: 14px;
@@ -192,21 +191,19 @@ main {
   line-height: 40px;
   letter-spacing: -1px;
   padding-bottom: 20px; }
-  @media (min-width: 540px) {
-    .page-title {
-      font-size: 40px;
-      line-height: 45px; } }
   @media (min-width: 821px) {
     .page-title {
       font-size: 50px;
-      line-height: 50px;
-      letter-spacing: -2px; } }
+      line-height: 50px; } }
   @media (min-width: 961px) {
     .page-title {
       font-size: 60px;
       line-height: 55px; } }
   .page-title.page-title-full {
-    border-bottom: 2px solid; }
+    margin-bottom: 10px; }
+
+.view-sw-recent .views-row {
+  margin-bottom: 25px; }
 
 @media (min-width: 961px) {
   .region-sidebar {
@@ -392,7 +389,7 @@ main {
 .menu-trigger-text {
   color: white;
   font-family: "FF DIN Pro Regular", sans-serif;
-  font-size: 11.4px; }
+  font-size: 11px; }
   @media (min-width: 961px) {
     .menu-trigger-text {
       font-size: 11.4px; } }
@@ -620,19 +617,29 @@ main {
 .page-node-type-story .node--type-story {
   font-family: "PT Serif", "Georgia", "Times New Roman", "Times", serif;
   font-size: 18px;
-  line-height: 27px; }
+  line-height: 22px; }
+  @media (min-width: 961px) {
+    .page-node-type-story .node--type-story {
+      line-height: 27px; } }
 
 .page-node-type-story .story-label {
   margin-bottom: 6px; }
+  @media (min-width: 961px) {
+    .page-node-type-story .story-label {
+      font-size: 15px; } }
 
 .page-node-type-story .page-title {
   margin-bottom: 26px; }
+  @media (min-width: 961px) {
+    .page-node-type-story .page-title {
+      font-size: 56px;
+      letter-spacing: -1px; } }
 
 .page-node-type-story .field--name-field-introduction {
   font-style: italic; }
 
-.page-node-type-story .sw-subject,
-.page-node-type-story .sw-author {
+.page-node-type-story .node__content .sw-subject,
+.page-node-type-story .node__content .sw-author {
   font-weight: bold; }
 
 .page-node-type-story .field--name-field-body-introduction {
@@ -662,7 +669,7 @@ main {
     float: left;
     height: 40px;
     left: 0;
-    margin-bottom: 10px;
+    margin-bottom: 0;
     margin-right: 10px;
     margin-top: 7px;
     width: 40px; }
@@ -740,7 +747,6 @@ main {
   text-transform: uppercase; }
 
 .block-sw-recent-articles-block {
-  padding-bottom: 20px;
   margin-bottom: 20px; }
   @media (min-width: 961px) {
     .block-sw-recent-articles-block {
@@ -813,7 +819,7 @@ main {
   .block-sw-recent-articles-block .recent-articles-tabs .headline {
     color: #1A272E;
     font-size: 16px;
-    line-height: 18px;
+    line-height: 20px;
     font-family: "FF DIN Pro Medium", sans-serif; }
   .block-sw-recent-articles-block .recent-articles-tabs ul {
     margin: 0;
@@ -852,9 +858,10 @@ article.embedded-entity .media--view-mode-embed,
   article.embedded-entity .media--view-mode-embed figcaption,
   .caption-article figcaption {
     font-family: "FF DIN Pro Regular", sans-serif;
-    font-size: 14px;
-    line-height: 18px;
-    padding-bottom: 16px; }
+    font-size: 13px;
+    line-height: 17px;
+    padding-bottom: 16px;
+    padding-top: 4px; }
 
 article.embedded-entity .media--view-mode-embed img {
   padding-bottom: 13px; }
@@ -1170,7 +1177,7 @@ select {
 .slice-title {
   border-top: 1px solid red;
   color: red;
-  font-size: 28px;
+  font-size: 24px;
   font-family: "FF DIN Pro Bold", sans-serif;
   font-weight: normal;
   line-height: 32px;
@@ -1179,11 +1186,11 @@ select {
   .slice-title:after {
     background: red;
     content: '';
-    height: 30px;
+    height: 26px;
     position: absolute;
     right: 0;
     top: 0;
-    width: 60px; }
+    width: 52px; }
 
 .field--name-field-date {
   color: red;
@@ -1212,6 +1219,8 @@ select {
     color: #725c5f; }
   .field--name-field-nested-right .story-link {
     margin-bottom: 30px; }
+  .story--teaser-conditional-image .story-link {
+    margin-bottom: 25px; }
 
 h4 {
   color: black;
@@ -1224,7 +1233,8 @@ h4 {
     font-size: 42px;
     text-transform: uppercase; }
   .story--teaser-image-large h4 {
-    font-size: 50px; }
+    font-size: 50px;
+    text-transform: uppercase; }
   .field--name-field-sub h4 {
     font-size: 22px;
     margin-bottom: 16px;
@@ -1238,27 +1248,42 @@ h4 {
   .field--name-field-nested-right h4 {
     font-size: 18px;
     text-transform: none; }
+  .teaser-conditional-width-image h4 {
+    font-size: 28px; }
+  .teaser-conditional-no-image h4 {
+    font-size: 24px; }
 
 .story-label {
   color: #808080;
   font-family: "Source Code Pro", monospace;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 300;
   letter-spacing: 2px;
+  line-height: 18px;
   text-transform: uppercase; }
+  @media (min-width: 961px) {
+    .story-label {
+      font-size: 16px; } }
   .field--name-field-sub .story-label,
   .paragraph--type--nested .story-label {
     font-size: 13px;
     margin-bottom: 3px; }
+  .story--teaser-conditional-image .story-label {
+    font-size: 12px; }
 
 .field--name-field-teaser {
   color: #666666;
   font-family: "Helvetica", sans-serif;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 18px; }
+  @media (min-width: 961px) {
+    .field--name-field-teaser {
+      font-size: 15px; } }
   .field--name-field-teaser .field--name-field-nested-right {
     font-size: 13px;
     line-height: 15px; }
+  .story--teaser-conditional-image .field--name-field-teaser {
+    font-size: 13.5px; }
 
 .column-left .paragraph--type--nested .field--name-field-display-title {
   border-top: 1px solid #1A272E;

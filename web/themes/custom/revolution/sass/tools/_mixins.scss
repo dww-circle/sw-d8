@@ -246,7 +246,7 @@
 @mixin title-fancy-red {
   border-top: 1px solid red;
   color: red;
-  font-size: 28px;
+  font-size: 24px;
   font-family: $ff-din-bold;
   font-weight: normal;
   line-height: 32px;
@@ -256,11 +256,11 @@
   &:after {
     background: red;
     content: '';
-    height: 30px;
+    height: 26px;
     position: absolute;
     right: 0;
     top: 0;
-    width: 60px;
+    width: 52px;
   }
 }
 /// Apply to <ul> tag.

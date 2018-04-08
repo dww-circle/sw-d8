@@ -53,7 +53,6 @@ h3 {
 h4 {
   font-size: 21px;
   line-height: 28px;
-  text-transform: uppercase;
 }
 
 h5 {
@@ -202,21 +201,22 @@ main {
   letter-spacing: -1px;
   padding-bottom: 20px;
 
-  @include breakpoint($handheld) {
-    font-size: 40px;
-    line-height: 45px;
-  }
   @include breakpoint($tablet) {
     font-size: 50px;
     line-height: 50px;
-    letter-spacing: -2px;
   }
+
   @include breakpoint($desktop) {
     font-size: 60px;
     line-height: 55px;
   }
 
   &.page-title-full {
-    border-bottom: 2px solid;
+    margin-bottom: 10px;
   }
+}
+
+// This applies to the Recent page. May want to refactor/be less specific/move.
+.view-sw-recent .views-row {
+  margin-bottom: 25px;
 }

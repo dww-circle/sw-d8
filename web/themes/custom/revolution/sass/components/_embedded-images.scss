@@ -23,9 +23,10 @@ article.embedded-entity .media--view-mode-embed, // embed without caption
 
   figcaption {
     font-family: $ff-din-regular;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 13px;
+    line-height: 17px;
     padding-bottom: 16px;
+    padding-top: 4px;
   }
 }
 

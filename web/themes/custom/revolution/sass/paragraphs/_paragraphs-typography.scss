@@ -43,6 +43,11 @@
   .field--name-field-nested-right & {
     margin-bottom: 30px;
   }
+
+  // Story List
+  .story--teaser-conditional-image & {
+    margin-bottom: 25px;
+  }
 }
 
 // Node Title.
@@ -61,6 +66,7 @@ h4 {
 
   .story--teaser-image-large & {
     font-size: 50px;
+    text-transform: uppercase;
   }
 
   // Weeekend sub
@@ -87,21 +93,40 @@ h4 {
     font-size: 18px;
     text-transform: none;
   }
+
+  // Story List
+  .teaser-conditional-width-image & {
+    font-size: 28px;
+  }
+
+  .teaser-conditional-no-image & {
+    font-size: 24px;
+  }
 }
 
 // Story Label.
 .story-label {
   color: #808080;
   font-family: $ff-nitti;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: $fw-light;
   letter-spacing: 2px;
+  line-height: 18px;
   text-transform: uppercase;
+
+  @include breakpoint($desktop) {
+    font-size: 16px;
+  }
 
   .field--name-field-sub &,
   .paragraph--type--nested & {
     font-size: 13px;
     margin-bottom: 3px;
+  }
+
+  // Story List Teasers
+  .story--teaser-conditional-image & {
+    font-size: 12px;
   }
 }
 
@@ -109,13 +134,22 @@ h4 {
 .field--name-field-teaser {
   color: #666666;
   font-family: "Helvetica", sans-serif;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 18px;
+
+  @include breakpoint($desktop) {
+    font-size: 15px;
+  }
 
   // Weekend right
   .field--name-field-nested-right {
     font-size: 13px;
     line-height: 15px;
+  }
+
+  // Story List Teasers
+  .story--teaser-conditional-image & {
+    font-size: 13.5px;
   }
 }
 

@@ -3,24 +3,39 @@
   .node--type-story {
     font-family: $ff-serif;
     font-size: 18px;
-    line-height: 27px;
+    line-height: 22px;
+
+    @include breakpoint($desktop) {
+      line-height: 27px;
+    }
   }
 
   .story-label {
     margin-bottom: 6px;
+
+    @include breakpoint($desktop) {
+      font-size: 15px;
+    }
   }
 
   .page-title {
     margin-bottom: 26px;
+
+    @include breakpoint($desktop) {
+      font-size: 56px;
+      letter-spacing: -1px;
+    }
   }
 
   .field--name-field-introduction {
     font-style: italic;
   }
 
-  .sw-subject,
-  .sw-author {
-    font-weight: bold;
+  .node__content {
+    .sw-subject,
+    .sw-author {
+      font-weight: bold;
+    }
   }
 
   .field--name-field-body-introduction {
@@ -47,6 +62,7 @@
     margin-bottom: 50px;
 
     > p:first-child {
+
       &:before {
         background: $c-red;
         color: $c-red;
@@ -55,7 +71,7 @@
         float: left;
         height: 40px;
         left: 0;
-        margin-bottom: 10px;
+        margin-bottom: 0;
         margin-right: 10px;
         margin-top: 7px;
         width: 40px;

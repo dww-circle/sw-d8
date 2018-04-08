@@ -1,5 +1,4 @@
 .block-sw-recent-articles-block {
-  padding-bottom: 20px;
   margin-bottom: 20px;
 
   @include breakpoint($desktop) {
@@ -74,7 +73,7 @@
     .headline {
       color: $c-black;
       font-size: 16px;
-      line-height: 18px;
+      line-height: 20px;
       font-family: $ff-din-medium;
     }
     ul {
