@@ -29,4 +29,8 @@ function revolution_theme_suggestions_page_alter(array &$suggestions, array $var
   if ($current_route_name == 'view.sw_topic_stories.page_1') {
     $suggestions[] = 'page__' . 'topic';
   }
+  // Set series view pages to use own template..
+  if ($current_route_name == 'view.sw_series_stories.page_1') {
+    $suggestions[] = 'page__' . 'series';
+  }
 }

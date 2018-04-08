@@ -1,0 +1,12 @@
+{% extends 'page.html.twig' %}
+
+{% block main %}
+  <div class="story-label">{{ 'Series'|t }}</div>
+  <h1 class="page-title page-title-full">{{ page_title|raw }}</h1>
+
+  <div class="flexible--container">
+    {{ page.content }}
+    {{ page.sidebar }}
+    {{ page.content_bottom }}
+  </div>
+{% endblock main %}
