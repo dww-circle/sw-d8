@@ -1,0 +1,38 @@
+// Content Bottom Blocks
+.block-sw-recent-stories-block {
+  border-top: 1px solid;
+  margin-bottom: 60px;
+  padding-top: 44px;
+
+  @include breakpoint($desktop) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0 70px;
+  }
+
+  h2 {
+    @include title-fancy-red;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  .story-group {
+    margin-bottom: 30px;
+  }
+
+  h3 {
+    @include ff-din-bold;
+    color: $c-red;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+  }
+
+  ul {
+    @include ul-unstyled;
+  }
+
+  a {
+    @include teaser-tiny;
+  }
+}

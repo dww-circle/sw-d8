@@ -96,7 +96,7 @@ abstract class SWRecentArticlesBase extends BlockBase {
     }
     $node_url = new Url('entity.node.canonical', ['node' => $article->nid]);
     return [
-      '#prefix' => '<a href="' . $node_url->toString() . '">',
+      '#prefix' => '<a class="story-link" href="' . $node_url->toString() . '">',
       'story_label' => [
         '#markup' => sw_get_story_label($node, 'teaser'),
         '#prefix' => '<div class="story-label">',
@@ -104,8 +104,8 @@ abstract class SWRecentArticlesBase extends BlockBase {
       ],
       'headline' => [
         '#markup' => $article->title,
-        '#prefix' => '<div class="headline">',
-        '#suffix' => '</div>',
+        '#prefix' => '<h4 class="headline">',
+        '#suffix' => '</h4>',
       ],
       '#suffix' => '</a>',
     ];

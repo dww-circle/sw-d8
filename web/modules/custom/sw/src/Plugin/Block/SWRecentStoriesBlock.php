@@ -38,15 +38,21 @@ class SWRecentStoriesBlock extends SWRecentArticlesBase {
         $article_render_arrays[] = $this->buildArticleRenderArray($article);
       }
       $build[$pub_date] = [
-        'header' => [
-          '#prefix' => '<h3>',
-          '#markup' => $this->getHeaderLabel($pub_date, 'F j, Y'),
-          '#suffix' => '</h3>',
-        ],
-        'articles' => [
-          '#theme' => 'item_list',
-          '#list_type' => 'ul',
-          '#items' => $article_render_arrays,
+        'story_group' => [
+          '#type' => 'container',
+          '#attributes' => array(
+            'class' => array('story-group'),
+           ),
+          'header' => [
+            '#prefix' => '<h3>',
+            '#markup' => $this->getHeaderLabel($pub_date, 'F j, Y'),
+            '#suffix' => '</h3>',
+          ],
+          'articles' => [
+            '#theme' => 'item_list',
+            '#list_type' => 'ul',
+            '#items' => $article_render_arrays,
+          ],
         ],
       ];
     }
