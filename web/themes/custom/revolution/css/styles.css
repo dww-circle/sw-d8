@@ -426,11 +426,11 @@ main {
   position: absolute;
   transition: none;
   width: 100%;
-  top: 80px;
+  top: 94px;
   z-index: 200; }
   @media (min-width: 961px) {
     .region-expanded-menu {
-      top: 150px;
+      top: 144px;
       min-height: calc(100vh - 150px);
       width: 220px; } }
   .region-expanded-menu ul {
