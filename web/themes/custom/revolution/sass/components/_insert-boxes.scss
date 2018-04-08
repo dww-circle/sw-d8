@@ -15,9 +15,8 @@
   }
 
   h2 {
+    @include ff-din-bold;
     border-top: 4px solid $c-black;
-    font-family: $ff-din-bold;
-    font-weight: normal;
     font-size: 28px;
     line-height: 36px;
     padding-top: 13px;

@@ -95,6 +95,11 @@
   }
 }
 
+@mixin ff-din-bold {
+  font-family: 'FF DIN Pro Bold', sans-serif;
+  font-weight: normal;
+}
+
 /// H1-6 loop
 @function headings($from:1, $to:6) {
   @if $from == $to {
@@ -226,10 +231,9 @@
 }
 
 @mixin title-fancy-black {
+  @include ff-din-bold;
   border-top: 1px solid $c-black;
   color: $c-black;
-  font-family: $ff-din-bold;
-  font-weight: normal;
   position: relative;
   text-transform: uppercase;
 
@@ -244,11 +248,10 @@
 }
 
 @mixin title-fancy-red {
+  @include ff-din-bold;
   border-top: 1px solid red;
   color: red;
   font-size: 24px;
-  font-family: $ff-din-bold;
-  font-weight: normal;
   line-height: 32px;
   position: relative;
   text-transform: uppercase;

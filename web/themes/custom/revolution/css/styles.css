@@ -36,11 +36,11 @@ h3 {
       font-size: 36px;
       line-height: 50px; } }
   .view h3 {
+    font-family: 'FF DIN Pro Bold', sans-serif;
+    font-weight: normal;
     border-top: 1px solid red;
     color: red;
     font-size: 24px;
-    font-family: "FF DIN Pro Bold", sans-serif;
-    font-weight: normal;
     line-height: 32px;
     position: relative;
     text-transform: uppercase; }
@@ -184,10 +184,10 @@ main {
       padding: 0 120px; } }
 
 .page-title {
-  font-family: "FF DIN Pro Bold", sans-serif;
+  font-family: 'FF DIN Pro Bold', sans-serif;
+  font-weight: normal;
   text-transform: uppercase;
   font-size: 36px;
-  font-weight: normal;
   line-height: 40px;
   letter-spacing: -1px;
   padding-bottom: 20px; }
@@ -652,7 +652,7 @@ main {
   .page-node-type-story .field--name-field-body-introduction strong,
   .page-node-type-story .field--name-field-body-introduction .sw-subject,
   .page-node-type-story .field--name-field-body-introduction .sw-author {
-    font-family: "FF DIN Pro Bold", sans-serif;
+    font-family: 'FF DIN Pro Bold', sans-serif;
     font-weight: normal; }
 
 .page-node-type-story .field--name-created {
@@ -710,10 +710,10 @@ main {
     .region-content-bottom .block .field--name-field-queue > .field--name-title {
       display: none; }
   .region-content-bottom h2 {
-    color: #ff0000;
-    font-family: "FF DIN Pro Bold", sans-serif;
-    font-size: 16px;
+    font-family: 'FF DIN Pro Bold', sans-serif;
     font-weight: normal;
+    color: #ff0000;
+    font-size: 16px;
     line-height: 19px;
     text-transform: uppercase; }
   .region-content-bottom ul {
@@ -740,9 +740,9 @@ main {
       line-height: 16px; }
 
 .region-sidebar h2 {
-  font-family: "FF DIN Pro Bold", sans-serif;
-  font-size: 24px;
+  font-family: 'FF DIN Pro Bold', sans-serif;
   font-weight: normal;
+  font-size: 24px;
   line-height: 30px;
   text-transform: uppercase; }
 
@@ -752,10 +752,10 @@ main {
     .block-sw-recent-articles-block {
       border-bottom: 1px solid #bbb; } }
   .block-sw-recent-articles-block h2 {
+    font-family: 'FF DIN Pro Bold', sans-serif;
+    font-weight: normal;
     border-top: 1px solid #1A272E;
     color: #1A272E;
-    font-family: "FF DIN Pro Bold", sans-serif;
-    font-weight: normal;
     position: relative;
     text-transform: uppercase;
     border-width: 2px;
@@ -928,9 +928,9 @@ select {
       margin-right: 40px;
       max-width: 290px; } }
   .node--type-insert-box h2 {
-    border-top: 4px solid #1A272E;
-    font-family: "FF DIN Pro Bold", sans-serif;
+    font-family: 'FF DIN Pro Bold', sans-serif;
     font-weight: normal;
+    border-top: 4px solid #1A272E;
     font-size: 28px;
     line-height: 36px;
     padding-top: 13px;
@@ -1175,11 +1175,11 @@ select {
   border-bottom: 0; }
 
 .slice-title {
+  font-family: 'FF DIN Pro Bold', sans-serif;
+  font-weight: normal;
   border-top: 1px solid red;
   color: red;
   font-size: 24px;
-  font-family: "FF DIN Pro Bold", sans-serif;
-  font-weight: normal;
   line-height: 32px;
   position: relative;
   text-transform: uppercase; }
@@ -1223,10 +1223,10 @@ select {
     margin-bottom: 25px; }
 
 h4 {
+  font-family: 'FF DIN Pro Bold', sans-serif;
+  font-weight: normal;
   color: black;
   font-size: 30px;
-  font-family: "FF DIN Pro Bold", sans-serif;
-  font-weight: normal;
   line-height: 1;
   margin-bottom: .5em; }
   .node--view-mode-teaser-image-large h4 {
@@ -1286,10 +1286,10 @@ h4 {
     font-size: 13.5px; }
 
 .column-left .paragraph--type--nested .field--name-field-display-title {
+  font-family: 'FF DIN Pro Bold', sans-serif;
+  font-weight: normal;
   border-top: 1px solid #1A272E;
   color: #1A272E;
-  font-family: "FF DIN Pro Bold", sans-serif;
-  font-weight: normal;
   position: relative;
   text-transform: uppercase;
   border-width: 1px;
@@ -1307,10 +1307,10 @@ h4 {
     width: 40px; }
 
 .column-right .weekend-also {
+  font-family: 'FF DIN Pro Bold', sans-serif;
+  font-weight: normal;
   border-top: 1px solid #1A272E;
   color: #1A272E;
-  font-family: "FF DIN Pro Bold", sans-serif;
-  font-weight: normal;
   position: relative;
   text-transform: uppercase;
   border-width: 4px;
@@ -1328,9 +1328,9 @@ h4 {
     width: 20px; }
 
 .column-right .paragraph--type--nested .field--name-field-display-title {
-  border-top: 1px solid #7d7d7d;
-  font-family: "FF DIN Pro Bold", sans-serif;
+  font-family: 'FF DIN Pro Bold', sans-serif;
   font-weight: normal;
+  border-top: 1px solid #7d7d7d;
   font-size: 16px;
   line-height: 30px;
   margin-bottom: 18px;

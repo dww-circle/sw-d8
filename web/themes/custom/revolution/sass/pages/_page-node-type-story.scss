@@ -48,8 +48,7 @@
     strong,
     .sw-subject,
     .sw-author {
-      font-family: $ff-din-bold;
-      font-weight: normal;
+      @include ff-din-bold;
     }
   }
 

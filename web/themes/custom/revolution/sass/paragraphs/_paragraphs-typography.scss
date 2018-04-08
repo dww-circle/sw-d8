@@ -52,10 +52,9 @@
 
 // Node Title.
 h4 {
+  @include ff-din-bold;
   color: black;
   font-size: 30px;
-  font-family: $ff-din-bold;
-  font-weight: normal;
   line-height: 1;
   margin-bottom: .5em;
 
@@ -187,9 +186,8 @@ h4 {
 
   .paragraph--type--nested {
     .field--name-field-display-title {
+      @include ff-din-bold;
       border-top: 1px solid $c-gr7d;
-      font-family: $ff-din-bold;
-      font-weight: normal;
       font-size: 16px;
       line-height: 30px;
       margin-bottom: 18px;
