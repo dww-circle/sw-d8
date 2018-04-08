@@ -12,7 +12,7 @@ dependencies:
 id: sw_author_stories_block_1
 theme: revolution
 region: content
-weight: 0
+weight: -5
 provider: null
 plugin: 'views_block:sw_author_stories-block_1'
 settings:
