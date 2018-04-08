@@ -27,7 +27,7 @@ dependencies:
     - field.field.node.story.field_topic
     - field.field.node.story.field_wide_image
     - field.field.node.story.upload
-    - image.style.medium
+    - image.style.270x204
     - node.type.story
   module:
     - media
@@ -44,7 +44,7 @@ content:
     region: content
     label: hidden
     settings:
-      image_style: medium
+      image_style: 270x204
       image_link: ''
     third_party_settings: {  }
   field_teaser:
