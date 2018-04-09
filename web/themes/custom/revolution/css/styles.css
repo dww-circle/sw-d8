@@ -435,8 +435,10 @@ main {
       top: 144px;
       min-height: calc(100vh - 150px);
       width: 220px; } }
+  .region-expanded-menu .block-menu > ul > li {
+    margin-bottom: 10px; }
   .region-expanded-menu ul {
-    margin: 0 0 10px;
+    margin: 0;
     padding: 0;
     list-style: none; }
     .region-expanded-menu ul li {
