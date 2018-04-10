@@ -4,8 +4,13 @@
   margin-bottom: 60px;
   padding-top: 44px;
 
-  @include breakpoint($desktop) {
+  @include breakpoint($tablet) {
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0 50px;
+  }
+
+  @include breakpoint($desktop) {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 0 70px;
   }
@@ -13,7 +18,10 @@
   h2 {
     @include title-fancy-red;
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 3;
+    @include breakpoint($desktop) {
+      grid-column-end: 4;
+    }
   }
 
   .story-group {
