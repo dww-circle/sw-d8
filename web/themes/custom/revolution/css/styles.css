@@ -14,7 +14,7 @@ body {
 h1 {
   font-size: 30px;
   line-height: 40px; }
-  @media (min-width: 821px) {
+  @media (min-width: 736px) {
     h1 {
       font-size: 45px;
       line-height: 55px; } }
@@ -23,7 +23,7 @@ h2 {
   font-size: 26px;
   line-height: 40px;
   font-weight: bold; }
-  @media (min-width: 821px) {
+  @media (min-width: 736px) {
     h2 {
       font-size: 32px;
       line-height: 48px; } }
@@ -31,7 +31,7 @@ h2 {
 h3 {
   font-size: 24px;
   line-height: 40px; }
-  @media (min-width: 821px) {
+  @media (min-width: 736px) {
     h3 {
       font-size: 36px;
       line-height: 50px; } }
@@ -90,7 +90,7 @@ a {
 
 img {
   display: block; }
-  @media (min-width: 821px) {
+  @media (min-width: 736px) {
     img.align-left,
     .align-left img {
       padding-right: 20px; }
@@ -176,7 +176,7 @@ main {
     .page-container,
     main {
       padding: 0 15px; } }
-  @media (min-width: 821px) {
+  @media (min-width: 736px) {
     .page-container,
     main {
       padding: 0 60px; } }
@@ -193,7 +193,7 @@ main {
   line-height: 40px;
   letter-spacing: -1px;
   padding-bottom: 20px; }
-  @media (min-width: 821px) {
+  @media (min-width: 736px) {
     .page-title {
       font-size: 50px;
       line-height: 50px; } }
@@ -274,7 +274,7 @@ main {
     @media (min-width: 541px) {
       .footer-wrapper .block {
         padding: 0 15px; } }
-    @media (min-width: 821px) {
+    @media (min-width: 736px) {
       .footer-wrapper .block {
         padding: 0 60px; } }
     @media (min-width: 961px) {
@@ -862,7 +862,7 @@ main {
   border-top: 1px solid;
   margin-bottom: 60px;
   padding-top: 44px; }
-  @media (min-width: 821px) {
+  @media (min-width: 736px) {
     .block-sw-recent-stories-block {
       display: -ms-grid;
       display: grid;
@@ -1217,7 +1217,7 @@ select {
 .story--teaser-image-medium,
 .story--teaser-image-large {
   margin-bottom: 35px; }
-  @media (min-width: 821px) {
+  @media (min-width: 736px) {
     .teaser-conditional-with-image,
     .story--teaser-image-medium,
     .story--teaser-image-large {
@@ -1246,7 +1246,7 @@ select {
   height: auto;
   margin-bottom: 15px;
   max-width: 100%; }
-  @media (min-width: 821px) {
+  @media (min-width: 736px) {
     .story--teaser-image-medium img,
     .teaser-conditional-with-image img {
       margin-bottom: 0;
@@ -1442,7 +1442,7 @@ h4 {
 
 .user-login-form input {
   max-width: 100%; }
-  @media (min-width: 821px) {
+  @media (min-width: 736px) {
     .user-login-form input {
       width: 50%; } }
 
