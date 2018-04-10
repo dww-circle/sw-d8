@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "e916c5656771f431df1b0722f64588dd",
+    "content-hash": "abc42f2568188661687fc200e3f2723d",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1171,7 +1171,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/auto_entitylabel",
-                "reference": "8393bb10292ba73abae094ede2a9cc053b52ce02"
+                "reference": "0ba871f80d1026bdafbee6bd70dca6a45100c4b4"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -1182,8 +1182,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.1-beta1+6-dev",
-                    "datestamp": "1522091584",
+                    "version": "8.x-2.1-beta1+9-dev",
+                    "datestamp": "1523363884",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -1191,9 +1191,7 @@
                 },
                 "patches_applied": {
                     "[#2120055-22] Trim auto-generated labels": "https://www.drupal.org/files/issues/2018-04-04/2120055-22.auto_entitylabel-8.x-2.x.trim-no-config.patch",
-                    "[#2905230-6] Alter inline_entity_form table to display auto-computed entity labels": "https://www.drupal.org/files/issues/Title_displayed_as_AutoEntityLabel_after_saving_via_Inline_Entity_Form-2905230-6.patch",
-                    "[#2935247-3] Remove the (broken and misleading) 'Automatic label' configuration page at /admin/structure/auto-label": "https://www.drupal.org/files/issues/2018-04-04/2935247-3.auto_entitylabel.remove-global-settings-page.patch",
-                    "[#2958565-2] Use #states to hide settings if auto_entitylabel is disabled for a given entity type": "https://www.drupal.org/files/issues/2018-04-04/2958565-1.hide-settings-if-auto_entitylabel-is-disabled.patch"
+                    "[#2905230-6] Alter inline_entity_form table to display auto-computed entity labels": "https://www.drupal.org/files/issues/Title_displayed_as_AutoEntityLabel_after_saving_via_Inline_Entity_Form-2905230-6.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -1224,7 +1222,7 @@
                 "source": "http://cgit.drupalcode.org/auto_entitylabel",
                 "issues": "https://www.drupal.org/project/issues/auto_entitylabel"
             },
-            "time": "2018-03-29 12:05:24"
+            "time": "2018-04-10 14:21:56"
         },
         {
             "name": "drupal/bueditor",
