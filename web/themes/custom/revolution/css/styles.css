@@ -701,6 +701,24 @@ main {
 .page-node-type-story .contributors {
   font-style: italic; }
 
+.view-sw-series-stories .field--name-description {
+  font-family: "FF DIN Pro Regular", sans-serif; }
+  .view-sw-series-stories .field--name-description b, .view-sw-series-stories .field--name-description strong {
+    font-family: 'FF DIN Pro Bold', sans-serif;
+    font-weight: normal; }
+
+.view-sw-series-stories .field--name-field-series-logo {
+  float: left;
+  margin: 0 20px 10px 0; }
+
+.view-sw-series-stories .view-header {
+  border-bottom: 1px solid #808080;
+  margin: 0 0 20px 0; }
+  .view-sw-series-stories .view-header:after {
+    clear: both;
+    content: " ";
+    display: table; }
+
 .region-content-bottom {
   border-top: 1px solid;
   padding-top: 44px; }
