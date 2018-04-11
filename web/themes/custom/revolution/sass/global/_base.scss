@@ -219,3 +219,8 @@ main {
 .view-sw-recent .views-row {
   margin-bottom: 25px;
 }
+
+// This applies to all views, since we never want to see the feed icons.
+.view .feed-icons {
+  display: none;
+}

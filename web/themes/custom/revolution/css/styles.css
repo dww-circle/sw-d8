@@ -207,6 +207,9 @@ main {
 .view-sw-recent .views-row {
   margin-bottom: 25px; }
 
+.view .feed-icons {
+  display: none; }
+
 @media (min-width: 961px) {
   .region-sidebar {
     padding-left: 30px; } }
