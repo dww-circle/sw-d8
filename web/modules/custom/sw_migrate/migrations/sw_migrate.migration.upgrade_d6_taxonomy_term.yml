@@ -58,6 +58,12 @@ process:
     default_value: 0
     source: parent
   changed: timestamp
+  # Series-only fields. We don't worry about skipping since they
+  # values are always set for series, and never set for the other
+  # vocabularies that don't have these fields.
+  field_show_story_labels: show_story_labels
+  field_series_insert_list_length: series_insert_list_length
+
 destination:
   plugin: 'entity:taxonomy_term'
 migration_dependencies:

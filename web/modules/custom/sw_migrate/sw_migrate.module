@@ -118,6 +118,30 @@ function sw_migrate_migrate_upgrade_d6_taxonomy_term_prepare_row(Row $row, Migra
       $row->setSourceProperty('weight', $weight);
     }
   }  
+  // Special handling for terms in the 'series' vocabulary:
+  elseif ($values['vid'] == 12) {
+    $variable_names = [
+      'sw_series_labels_' . $values['tid'],
+      'sw_series_insert_story_list_length_' . $values['tid'],
+    ];
+    $series_variables = $source->getDatabase()
+      ->query('SELECT name, value FROM {variable} WHERE name IN (:values[])',
+              [':values[]' => $variable_names])
+      ->fetchAllAssoc('name', PDO::FETCH_ASSOC);
+
+    // Declare defaults, since we only set variables in SW 2.0 to override them.
+    $show_story_labels = TRUE;
+    $series_insert_list_length = -1;  // Show all
+    if (isset($series_variables[$variable_names[0]]['value'])) {
+      $show_story_labels = unserialize($series_variables[$variable_names[0]]['value']);
+    }
+    $row->setSourceProperty('show_story_labels', $show_story_labels);
+    if (isset($series_variables[$variable_names[1]]['value'])) {
+      $series_insert_list_length = unserialize($series_variables[$variable_names[1]]['value']);
+    }
+    $row->setSourceProperty('series_insert_list_length', $series_insert_list_length);
+  }
+
 }
 
 /**
