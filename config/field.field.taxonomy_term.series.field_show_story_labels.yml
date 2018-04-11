@@ -1,0 +1,23 @@
+uuid: 12bbf5c5-2be0-42fa-bca0-0a4e37096e72
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_show_story_labels
+    - taxonomy.vocabulary.series
+id: taxonomy_term.series.field_show_story_labels
+field_name: field_show_story_labels
+entity_type: taxonomy_term
+bundle: series
+label: 'Show story labels'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'Show story labels'
+  off_label: 'Hide story labels'
+field_type: boolean
