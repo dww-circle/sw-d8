@@ -2,6 +2,7 @@
 
 use Drupal\Core\Block\BlockPluginInterface;
 use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Entity\EntityManagerInterface;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Link;
 use Drupal\Core\Routing;
@@ -10,6 +11,7 @@ use Drupal\media\Entity\Media;
 use Drupal\node\Entity\Node;
 use Drupal\node\NodeInterface;
 use Drupal\taxonomy\Entity\Term;
+
 use Drupal\sw\Plugin\Block\SWTodaysStoriesBlock;
 
 const SW_SECTION_EDITORIALS_TID = 11;
@@ -259,6 +261,22 @@ function sw_preprocess_node_story(&$variables) {
       }
       elseif (!empty($view_id) && $view_id == 'sw_recent') {
         unset($variables['date']);
+      }
+      elseif (!empty($view_id) && $view_id == 'sw_series_stories') {
+        // Sort of ugly. It's not easy to get the currently active View object
+        // to inquire directly about the taxonomy argument it's using. Call a
+        // helper method to find the term given a URL argument.
+        $arg_0 = $route_parameters->get('arg_0');
+        $term = sw_get_term_from_path('series', $arg_0);
+        if (!empty($term)) {
+          // Since this render array is dependent upon fields on the taxonomy
+          // term, add it to the #cache tags.
+          $variables['#cache']['tags'][] = 'taxonomy_term:' . $term->id();
+          // If the term doesn't want story labels, hide them.
+          if (empty($term->get('field_show_story_labels')->value)) {
+            unset($variables['story_label']);
+          }
+        }
       }
       else {
         $node = $route_parameters->get('node');
@@ -592,4 +610,31 @@ function template_preprocess_sw_mailerlite_subscribe_form(&$variables) {
   else {
     $variables['form_intro'] = t('Get e-mail alerts from SocialistWorker.org');
   }
+}
+
+/**
+ * Helper function to find the taxnomy term from a given URL argument.
+ *
+ * Uses a static cache to avoid doing lots of entity load on a story list.
+ *
+ * @param string $vocabulary
+ *  The machine name of the vocabulary we expect to find the term in.
+ * @param string $url_arg
+ *  The portion of a URL that points to a specific term. Usually the same as the
+ *  term name, but with spaces converted to '-' and all lower case.
+ *
+ * @return \Drupal\taxonomy\TermInterface
+ *  A fully-loaded taxonomy term entity that matches, or NULL if not found.
+ */
+function sw_get_term_from_path($vocabulary, $url_arg) {
+  static $terms = [];
+  if (!isset($terms[$vocabulary][$url_arg])) {
+    $values = [
+      'vid' => $vocabulary,
+      'name' => str_replace('-', ' ', $url_arg),
+    ];
+    $term_entities = \Drupal::entityManager()->getStorage('taxonomy_term')->loadByProperties($values);
+    $terms[$vocabulary][$url_arg] = !empty($term_entities) ? reset($term_entities) : NULL;
+  }
+  return $terms[$vocabulary][$url_arg];
 }
