@@ -4,10 +4,9 @@
  */
 
 function revolution_theme_suggestions_page_alter(array &$suggestions, array $variables) {
-
-  $current_route_name = \Drupal::service('current_route_match')->getRouteName();
   $node     = \Drupal::routeMatch()->getParameter('node');
   $revision = \Drupal::routeMatch()->getRawParameter('node_revision');
+  $view_id  = \Drupal::routeMatch()->getParameter('view_id');
 
   // Allow page template per content type.
   if ($node) {
@@ -24,13 +23,16 @@ function revolution_theme_suggestions_page_alter(array &$suggestions, array $var
 
     $suggestions[] = 'page__node__' . $content_type;
   }
+  elseif (!empty($view_id)) {
+    switch ($view_id) {
+      case 'sw_topic_stories':
+        $suggestions[] = 'page__topic_stories';
+        break;
 
-  // Set topic view pages to use own template..
-  if ($current_route_name == 'view.sw_topic_stories.page_1') {
-    $suggestions[] = 'page__' . 'topic';
-  }
-  // Set series view pages to use own template..
-  if ($current_route_name == 'view.sw_series_stories.page_1') {
-    $suggestions[] = 'page__' . 'series';
+      case 'sw_series_stories':
+        $suggestions[] = 'page__series_stories';
+        break;
+
+    }
   }
 }
