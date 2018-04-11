@@ -229,9 +229,12 @@ function sw_preprocess_node_story(&$variables) {
   if ($variables['view_mode'] == 'teaser_conditional_image') {
     // Hide main_image based on story_weight.
     $weight = $variables['node']->get('field_story_weight')->getValue();
+    $main_image = $variables['node']->get('field_main_image')->getValue();
     // -7 and heavier is "greater than" in the math world. This logic seems
     // backwards, but it's right given the inverted meaning of weights.
-    if ($weight[0]['value'] >= -8) {
+    // However, even for important stories (-8 and "above"), don't set the
+    // "...-with-image" class if there's no value for field_main_image.
+    if ($weight[0]['value'] > -8 || empty($main_image)) {
       unset($variables['content']['field_main_image']);
       $variables['attributes']['class'][] = 'teaser-conditional-no-image';
     }
