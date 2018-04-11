@@ -246,7 +246,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Title
+          label: Headline
           exclude: false
           element_type: ''
           element_class: ''
