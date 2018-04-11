@@ -107,6 +107,7 @@
       },
       "drupal/core": {
         "[#2559961-29] ManyToOneHelper ignores group configuration for some cases and forces INNER joins" : "https://www.drupal.org/files/issues/manytoonehelper_ignores-2559961-29-8.3.x.patch",
+        "[#2625136-63] Label visibility for exposed numeric and date filter when using single and multi value filter" : "https://www.drupal.org/files/issues/2625136-63.patch",
         "[#2645954-26] Views output field as a custom link options all ignored if path is routed" : "https://www.drupal.org/files/issues/2018-03-27/2645954-26.views-output-field-as-link-for-routed-paths.patch",
         "[#2934799-2] d6_term_node_revision migration ignores a lot of items that it shouldn't" : "https://www.drupal.org/files/issues/2934799-2-drupal-d6_term_node_revision_uses_wrong_migration_mapping.patch",
         "[#2959316-11] Views argument validators that modify argument values aren't reflected in token replacement" : "https://www.drupal.org/files/issues/2018-04-10/2959316-11.patch",
