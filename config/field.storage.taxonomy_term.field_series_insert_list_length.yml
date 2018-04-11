@@ -1,0 +1,20 @@
+uuid: 0dad5626-1eef-44fd-a712-9294cf54ed27
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.field_series_insert_list_length
+field_name: field_series_insert_list_length
+entity_type: taxonomy_term
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

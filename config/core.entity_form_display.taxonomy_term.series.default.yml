@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.taxonomy_term.series.field_series_insert_list_length
     - field.field.taxonomy_term.series.field_series_logo
     - field.field.taxonomy_term.series.field_show_story_labels
     - taxonomy.vocabulary.series
@@ -23,8 +24,15 @@ content:
       placeholder: ''
       rows: 5
     third_party_settings: {  }
-  field_series_logo:
+  field_series_insert_list_length:
     weight: 3
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_series_logo:
+    weight: 4
     settings: {  }
     third_party_settings: {  }
     type: entity_reference_number
@@ -46,7 +54,7 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 4
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }

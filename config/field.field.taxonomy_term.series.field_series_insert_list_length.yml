@@ -1,0 +1,25 @@
+uuid: d0d3cded-849e-4aa4-b244-caee0e480fac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_series_insert_list_length
+    - taxonomy.vocabulary.series
+id: taxonomy_term.series.field_series_insert_list_length
+field_name: field_series_insert_list_length
+entity_type: taxonomy_term
+bundle: series
+label: 'Series insert box story list length'
+description: 'How long should the story list be on the insert box for this series? Use <em>-1</em> for unlimited, <em>0</em> for no story list, and any other positive value to set a fixed limit.'
+required: true
+translatable: false
+default_value:
+  -
+    value: -1
+default_value_callback: ''
+settings:
+  min: -1
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

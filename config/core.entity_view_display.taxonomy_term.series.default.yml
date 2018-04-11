@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.taxonomy_term.series.field_series_insert_list_length
     - field.field.taxonomy_term.series.field_series_logo
     - field.field.taxonomy_term.series.field_show_story_labels
     - image.style.medium
@@ -32,4 +33,5 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_series_insert_list_length: true
   field_show_story_labels: true
