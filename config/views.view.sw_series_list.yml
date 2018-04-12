@@ -144,7 +144,7 @@ display:
             trim_whitespace: false
             alt: ''
             rel: ''
-            link_class: 'story-link'
+            link_class: story-link
             prefix: ''
             suffix: ''
             target: ''
