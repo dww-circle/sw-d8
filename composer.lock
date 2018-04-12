@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "303b156eaf198ffbad43b4ffcfa75634",
+    "content-hash": "27e90f556c6cbda3e665046b5ca99a70",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3537,6 +3537,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "[#2922357-11] Fix minor typo on 'Modify field values' action form": "https://www.drupal.org/files/issues/2018-04-12/2922357-11.vbe-add-values-typo.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",

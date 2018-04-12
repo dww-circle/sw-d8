@@ -121,6 +121,9 @@
       "drupal/redirect": { 
         "[#2955400-4] d6_path_redirect migration source has to define the *correct* source_module annotation" : "https://www.drupal.org/files/issues/2018-03-22/2955400-4.d6_path_redirect-source_module.patch"
       },
+      "drupal/views_bulk_edit": { 
+        "[#2922357-11] Fix minor typo on 'Modify field values' action form" : "https://www.drupal.org/files/issues/2018-04-12/2922357-11.vbe-add-values-typo.patch"
+      },
       "drupal/views_bulk_operations": { 
         "[#2960448-2] Add a cancel button on the action configuration form" : "https://www.drupal.org/files/issues/2018-04-12/2960448-2.vbo-configure-action-cancel-button.patch"
       }
