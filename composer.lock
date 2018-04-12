@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "92a9c3ffa17190611ba8d36317348b27",
+    "content-hash": "09a26b95123e455465f797da7cb44376",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3505,6 +3505,59 @@
             "homepage": "https://www.drupal.org/project/views_autocomplete_filters",
             "support": {
                 "source": "http://cgit.drupalcode.org/views_autocomplete_filters"
+            }
+        },
+        {
+            "name": "drupal/views_bulk_edit",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/views_bulk_edit",
+                "reference": "8.x-2.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/views_bulk_edit-8.x-2.0.zip",
+                "reference": "8.x-2.0",
+                "shasum": "ca60722f44ef02f61b9ecd41525673e243722dcc"
+            },
+            "require": {
+                "drupal/core": "*",
+                "drupal/views_bulk_operations": "~1.0 | ~2.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-2.0",
+                    "datestamp": "1523365384",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Marcin Grabias",
+                    "homepage": "https://www.drupal.org/u/graber"
+                },
+                {
+                    "name": "benjy",
+                    "homepage": "https://www.drupal.org/user/1852732"
+                }
+            ],
+            "description": "Allows bulk edition of entity field values.",
+            "homepage": "https://www.drupal.org/project/views_bulk_edit",
+            "support": {
+                "source": "http://cgit.drupalcode.org/views_bulk_edit",
+                "issues": "https://www.drupal.org/project/issues/views_bulk_edit?version=8.x"
             }
         },
         {
