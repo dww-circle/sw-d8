@@ -30,6 +30,19 @@ const SW_STORY_TYPE_ROUNDTABLE_TID = 2922;
 const SW_TOPIC_NONE_TID = 412;
 
 /**
+ * Implements hook_form_FORM_ID_alter() for 'views_bulk_operations_configure_action'.
+ */
+function sw_form_views_bulk_operations_configure_action_alter(&$form, FormStateInterface $form_state) {
+  $form_data = $form_state->get('views_bulk_operations');
+  if (!empty($form_data['view_id']) && $form_data['view_id'] == 'sw_admin_bulk_edit_story') {
+    foreach (['langcode', 'revision_log'] as $key) {
+      $form['node']['story'][$key]['#access'] = FALSE;
+      $form['node']['story']['_field_selector'][$key]['#access'] = FALSE;
+    }
+  }
+}
+
+/**
  * Implements hook_form_FORM_ID_alter() for 'media_image_add_form'.
  */
 function sw_form_media_image_add_form_alter(&$form, FormStateInterface $form_state, $form_id) {
