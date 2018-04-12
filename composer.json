@@ -119,7 +119,10 @@
         "[#2935225-2] Fix to d6_term_node_revision handling (companion to core issue 2934799)" : "https://www.drupal.org/files/issues/2935225-2-migrate_upgrade-fix_to_d6_term_node_revision_handling.patch"
       },
       "drupal/redirect": { 
-       "[#2955400-4] d6_path_redirect migration source has to define the *correct* source_module annotation" : "https://www.drupal.org/files/issues/2018-03-22/2955400-4.d6_path_redirect-source_module.patch"
+        "[#2955400-4] d6_path_redirect migration source has to define the *correct* source_module annotation" : "https://www.drupal.org/files/issues/2018-03-22/2955400-4.d6_path_redirect-source_module.patch"
+      },
+      "drupal/views_bulk_operations": { 
+        "[#2960448-2] Add a cancel button on the action configuration form" : "https://www.drupal.org/files/issues/2018-04-12/2960448-2.vbo-configure-action-cancel-button.patch"
       }
     },
     "installer-paths": {
