@@ -16,7 +16,7 @@ filters:
     status: true
     weight: -50
     settings:
-      allowed_html: '<a href hreflang> <b> <i> <em> <strong> <cite> <blockquote cite data-caption> <ul type> <ol start type> <li> <dl> <dt> <dd> <h1> <h2 id> <h3 id> <h4 id> <h5 id> <pre> <hr> <center> <span class> <div class> <p class> <drupal-entity alt data-caption data-align data-entity-type data-entity-uuid data-entity-id data-view-mode data-entity-embed-display data-entity-embed-settings data-embed-button data-entity-label>'
+      allowed_html: '<a href hreflang> <b> <i> <em> <strong> <cite> <blockquote cite data-caption> <ul type> <ol start type> <li> <dl> <dt> <dd> <h1> <h2 id> <h3 id> <h4 id> <h5 id> <pre> <hr> <center> <span class> <div class> <p class> <drupal-entity alt data-caption data-align data-entity-type data-entity-uuid data-entity-id data-view-mode data-entity-embed-display data-entity-embed-settings data-embed-button data-entity-label> <sw-series>'
       filter_html_help: true
       filter_html_nofollow: false
   filter_autop:
@@ -29,7 +29,7 @@ filters:
     id: filter_htmlcorrector
     provider: filter
     status: true
-    weight: -40
+    weight: -44
     settings: {  }
   filter_url:
     id: filter_url
@@ -42,13 +42,13 @@ filters:
     id: filter_html_image_secure
     provider: filter
     status: false
-    weight: -44
+    weight: -41
     settings: {  }
   editor_file_reference:
     id: editor_file_reference
     provider: editor
     status: false
-    weight: -42
+    weight: -39
     settings: {  }
   entity_embed:
     id: entity_embed
@@ -60,23 +60,29 @@ filters:
     id: filter_html_escape
     provider: filter
     status: false
-    weight: -43
+    weight: -40
     settings: {  }
   filter_caption:
     id: filter_caption
     provider: filter
     status: false
-    weight: -45
+    weight: -42
     settings: {  }
   filter_align:
     id: filter_align
     provider: filter
     status: false
-    weight: -46
+    weight: -43
     settings: {  }
   sw_filter_caption:
     id: sw_filter_caption
     provider: sw
     status: true
-    weight: -41
+    weight: -46
+    settings: {  }
+  sw_filter_series:
+    id: sw_filter_series
+    provider: sw
+    status: true
+    weight: -45
     settings: {  }
