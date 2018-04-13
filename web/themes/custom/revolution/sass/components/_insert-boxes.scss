@@ -28,4 +28,13 @@
     height: auto;
     max-width: 100%;
   }
+
+  .story-list ul {
+    @include ul-unstyled;
+  }
+
+  .story-link {
+    @include teaser-tiny;
+  }
+
 }

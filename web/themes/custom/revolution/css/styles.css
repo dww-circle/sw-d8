@@ -1057,6 +1057,28 @@ select {
   .node--type-insert-box object {
     height: auto;
     max-width: 100%; }
+  .node--type-insert-box .story-list ul {
+    list-style: none;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-top: 0;
+    padding-left: 0; }
+    .node--type-insert-box .story-list ul li {
+      list-style: none;
+      margin-left: 0; }
+  .node--type-insert-box .story-link {
+    margin-bottom: 25px; }
+    .node--type-insert-box .story-link .story-label {
+      font-size: 13px;
+      margin-bottom: 0; }
+    .node--type-insert-box .story-link h4 {
+      font-size: 16px;
+      line-height: 20px;
+      margin: 0;
+      text-transform: none; }
+    .node--type-insert-box .story-link .field--name-field-teaser {
+      font-size: 12px;
+      line-height: 16px; }
 
 .pager {
   font-family: "FF DIN Pro Medium", sans-serif;
