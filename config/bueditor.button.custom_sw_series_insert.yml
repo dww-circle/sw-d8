@@ -1,0 +1,13 @@
+uuid: 85c4d8d4-d178-4800-a408-6f0279e4801d
+langcode: en
+status: true
+dependencies: {  }
+id: custom_sw_series_insert
+label: 'SW series insert'
+tooltip: 'Series insert box'
+text: '&#x24C8;'
+cname: ''
+shortcut: ''
+code: "<sw-series></sw-series>\r\n"
+template: ''
+libraries: {  }

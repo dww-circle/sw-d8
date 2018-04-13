@@ -20,6 +20,7 @@ settings:
     - '-'
     - custom_sw_embed_image
     - custom_sw_embed_insert_box
+    - custom_sw_series_insert
     - '-'
     - h2
     - h3
