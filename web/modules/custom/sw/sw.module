@@ -155,7 +155,7 @@ function sw_insert_box_node_form_alter(&$form, FormStateInterface $form_state, $
 function sw_preprocess_taxonomy_term(&$variables) {
   // If we're on one of our term-driven story lists, tell the twig template to
   // think we're a full-page view so we don't print a duplicate label + link.
-  $view_id = \Drupal::routeMatch()->getParameters()->get('view_id');
+  $view_id = \Drupal::routeMatch()->getParameter('view_id');
   if (!empty($view_id)) {
     switch ($view_id) {
       case 'sw_section_stories':
