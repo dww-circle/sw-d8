@@ -87,4 +87,25 @@
   .contributors {
     font-style: italic;
   }
+
+  .series-navigation {
+    @include clearfix;
+    margin: 0 0 20px 0;
+    .series-prev {
+      float: left;
+      margin: 0 20px 0 0;
+    }
+    .series-next {
+      float: right;
+      margin: 0 0 0 20px;
+    }
+    .nav-label {
+      font-size: 15px;
+      font-style: italic;
+    }
+    .story-link {
+      @include teaser-tiny;
+    }
+  }
+
 }

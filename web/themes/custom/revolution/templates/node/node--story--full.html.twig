@@ -97,6 +97,22 @@
         {% include  directory ~ '/templates/components/share.html.twig' %}
       </div>
       {{ content|without('field_introduction') }}
+      {% if series_navigation %}
+        <div class="series-navigation">
+          {% if series_navigation.prev %}
+            <div class="series-prev">
+              <div class="nav-label">{{ 'Previous: '|t }}</div>
+              {{ series_navigation.prev }}
+            </div>
+          {% endif %}
+          {% if series_navigation.next %}
+            <div class="series-next">
+              <div class="nav-label">{{ 'Next: '|t }}</div>
+              {{ series_navigation.next }}
+            </div>
+          {% endif %}
+        </div>
+      {% endif %}
       <div class="story-social-bottom">
         {% include  directory ~ '/templates/components/share.html.twig' %}
       </div>
