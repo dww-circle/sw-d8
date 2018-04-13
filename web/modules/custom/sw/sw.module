@@ -673,6 +673,23 @@ function sw_get_term_from_path($vocabulary, $url_arg) {
 }
 
 /**
+ * @param \Drupal\node\NodeInterface $node
+ *   The fully-loaded node entity that contains the series insert box.
+ *
+ * @return \Drupal\taxonomy\TermInterface
+ *   A fully-loaded taxonomy term entity for the series, or NULL if there is none.
+ */
+function sw_get_series_term(NodeInterface $node) {
+  $series_value = $node->get('field_series')->getValue();
+  if (!empty($series_value[0])) {
+    $series_terms = Term::loadMultiple($series_value[0]);
+    if (!empty($series_terms)) {
+      return reset($series_terms);
+    }
+  }
+}
+
+/**
  * Generate the render array for the automagic series insert box.
  *
  * @param \Drupal\node\NodeInterface $node
@@ -684,61 +701,63 @@ function sw_get_term_from_path($vocabulary, $url_arg) {
 function sw_insert_series_box(NodeInterface $node) {
   // The render array is dependent upon edits to the host node.
   $build['#cache']['tags'][] = 'node:' . $node->id();
-  $series_value = $node->get('field_series')->getValue();
-  if (!empty($series_value[0])) {
-    $series_terms = Term::loadMultiple($series_value[0]);
-    if (!empty($series_terms)) {
-      $series_term = reset($series_terms);
-      // The render array is dependent upon edits to the series term.
-      $build['#cache']['tags'][] = 'taxonomy_term:' . $series_term->id();
-      $build += [
-        '#prefix' => '<article class="node--type-insert-box series">',
-        '#suffix' => '</article>',
-        'title' => [
-          // @todo: Do we need the config toggle to hide 'Series:' here?
-          '#markup' => t('Series: ') . $series_term->getName(),
-          '#prefix' => '<a href="' . sw_get_series_url($series_term)->toString() . '"><h2>',
-          '#suffix' => '</h2></a>',
-        ],
-      ];
-      $description = $series_term->getDescription();
-      if (!empty($description)) {
-        $build['description'] = [
-          '#prefix' => '<p class="description">',
-          '#markup' => $description,
-          '#suffix' => '</p>',
-        ];
-      }
-      $story_list_length = $series_term->get('field_series_insert_list_length')->value;
-      if (!empty($story_list_length)) {
-        $show_story_label = $series_term->get('field_show_story_labels')->value;
-        $items = [];
-        foreach (sw_get_series_stories($series_term, $story_list_length) as $nid => $story) {
-          $items[] = sw_get_story_render_array($story, $show_story_label);
-        }
-        $build['stories'] = [
-          '#theme' => 'item_list',
-          '#list_type' => 'ul',
-          '#items' => $items,
-          '#wrapper_attributes' => [
-            'class' => 'story-list',
-          ],
-        ];
-      }
-      // Unless we're already showing all the articles as a story list, provide
-      // an explicit link to the whole series page.
-      if ($story_list_length != -1) {
-        $build['all_link'] = [
-          '#type' => 'link',
-          '#title' => t('All articles in this series'),
-          '#url' => sw_get_series_url($series_term),
-          '#prefix' => '<p class="all-link">',
-          '#suffix' => '</p>',
-        ];
-      }
-    }
+  $series_term = sw_get_series_term($node);
+
+  // If there's no series for this story, bail early.
+  if (empty($series_term)) {
+    // @todo: Should we log something to the watchdog about this? This is an
+    // error condition.
+    return $build;
   }
-  return \Drupal::service('renderer')->render($build);
+
+  // The render array is dependent upon edits to the series term.
+  $build['#cache']['tags'][] = 'taxonomy_term:' . $series_term->id();
+  $build += [
+    '#prefix' => '<article class="node--type-insert-box series">',
+    '#suffix' => '</article>',
+    'title' => [
+      // @todo: Do we need the config toggle to hide 'Series:' here?
+      '#markup' => t('Series: ') . $series_term->getName(),
+      '#prefix' => '<a href="' . sw_get_series_url($series_term)->toString() . '"><h2>',
+      '#suffix' => '</h2></a>',
+    ],
+  ];
+  $description = $series_term->getDescription();
+  if (!empty($description)) {
+    $build['description'] = [
+      '#prefix' => '<p class="description">',
+      '#markup' => $description,
+      '#suffix' => '</p>',
+    ];
+  }
+  $story_list_length = $series_term->get('field_series_insert_list_length')->value;
+  if (!empty($story_list_length)) {
+    $show_story_label = $series_term->get('field_show_story_labels')->value;
+    $items = [];
+    foreach (sw_get_series_stories($series_term, $story_list_length) as $nid => $story) {
+      $items[] = sw_get_story_render_array($story, $show_story_label);
+    }
+    $build['stories'] = [
+      '#theme' => 'item_list',
+      '#list_type' => 'ul',
+      '#items' => $items,
+      '#wrapper_attributes' => [
+        'class' => 'story-list',
+      ],
+    ];
+  }
+  // Unless we're already showing all the articles as a story list, provide an
+  // explicit link to the whole series page.
+  if ($story_list_length != -1) {
+    $build['all_link'] = [
+      '#type' => 'link',
+      '#title' => t('All articles in this series'),
+      '#url' => sw_get_series_url($series_term),
+      '#prefix' => '<p class="all-link">',
+      '#suffix' => '</p>',
+    ];
+  }
+  return $build;
 }
 
 /**

@@ -28,7 +28,8 @@ class SWFilterSeries extends FilterBase {
       $series_box = '';
       $node = \Drupal::routeMatch()->getParameter('node');
       if (!empty($node) && $node->bundle() == 'story') {
-        $series_box = sw_insert_series_box($node);
+        $series_render = sw_insert_series_box($node);
+        $series_box = \Drupal::service('renderer')->render($series_render);
       }
       $result->setProcessedText(preg_replace('@<sw-series></sw-series>@', $series_box, $text));
     }
