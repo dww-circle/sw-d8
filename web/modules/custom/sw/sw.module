@@ -7,11 +7,13 @@ use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Link;
 use Drupal\Core\Render\Element;
 use Drupal\Core\Routing;
+use Drupal\Core\Url;
 
 use Drupal\media\Entity\Media;
 use Drupal\node\Entity\Node;
 use Drupal\node\NodeInterface;
 use Drupal\taxonomy\Entity\Term;
+use Drupal\taxonomy\TermInterface;
 
 use Drupal\sw\Plugin\Block\SWTodaysStoriesBlock;
 
@@ -163,7 +165,6 @@ function sw_insert_box_node_form_alter(&$form, FormStateInterface $form_state, $
   ];
   $form['field_insert_body']['#pre_render'][] = 'sw_hide_format_guidelines_form_pre_render';
 }
-
 
 /**
  * Implements hook_preprocess_HOOK() for taxonomy terms.
@@ -669,4 +670,151 @@ function sw_get_term_from_path($vocabulary, $url_arg) {
     $terms[$vocabulary][$url_arg] = !empty($term_entities) ? reset($term_entities) : NULL;
   }
   return $terms[$vocabulary][$url_arg];
+}
+
+/**
+ * Generate the render array for the automagic series insert box.
+ *
+ * @param \Drupal\node\NodeInterface $node
+ *   The fully-loaded node entity that contains the series insert box.
+ *
+ * @return array
+ *   A render array for the insert box.
+ */
+function sw_insert_series_box(NodeInterface $node) {
+  // The render array is dependent upon edits to the host node.
+  $build['#cache']['tags'][] = 'node:' . $node->id();
+  $series_value = $node->get('field_series')->getValue();
+  if (!empty($series_value[0])) {
+    $series_terms = Term::loadMultiple($series_value[0]);
+    if (!empty($series_terms)) {
+      $series_term = reset($series_terms);
+      // The render array is dependent upon edits to the series term.
+      $build['#cache']['tags'][] = 'taxonomy_term:' . $series_term->id();
+      $build += [
+        '#prefix' => '<article class="node--type-insert-box series">',
+        '#suffix' => '</article>',
+        'title' => [
+          // @todo: Do we need the config toggle to hide 'Series:' here?
+          '#markup' => t('Series: ') . $series_term->getName(),
+          '#prefix' => '<a href="' . sw_get_series_url($series_term) . '"><h2>',
+          '#suffix' => '</h2></a>',
+        ],
+      ];
+      $description = $series_term->getDescription();
+      if (!empty($description)) {
+        $build['description'] = [
+          '#prefix' => '<p class="description">',
+          '#markup' => $description,
+          '#suffix' => '</p>',
+        ];
+      }
+      $story_list_length = $series_term->get('field_series_insert_list_length')->value;
+      if (!empty($story_list_length)) {
+        $show_story_label = $series_term->get('field_show_story_labels')->value;
+        $items = [];
+        foreach (sw_get_series_stories($series_term, $story_list_length) as $nid => $story) {
+          $items[] = sw_get_story_render_array($story, $show_story_label);
+        }
+        $build['stories'] = [
+          '#theme' => 'item_list',
+          '#list_type' => 'ul',
+          '#items' => $items,
+          '#wrapper_attributes' => [
+            'class' => 'story-list',
+          ],
+        ];
+      }
+    }
+  }
+  return \Drupal::service('renderer')->render($build);
+}
+
+/**
+ * Returns a render array for a given story.
+ *
+ * @param array $story
+ *   An array of story data, with keys 'nid' and 'title'.
+ * @param boolean $show_story_label
+ *   Boolean that controls if the render array should include a story label.
+ *
+ * @return array
+ *   A valid render array to display the given story.
+ *
+ * @see sw_get_story_label()
+ */
+function sw_get_story_render_array(array $story, $show_story_label = FALSE) {
+  $node_url = new Url('entity.node.canonical', ['node' => $story['nid']]);
+  $build = [
+    '#prefix' => '<a class="story-link" href="' . $node_url->toString() . '">',
+    '#suffix' => '</a>',
+    // This render array is dependent upon edits to the story we're displaying.
+    '#cache' => ['tags' => ['node:' . $story['nid']]],
+  ];
+  if ($show_story_label) {
+    // @todo: If we denormalize the story_label into a separate field, we
+    // don't need to incur the cost of all the full entity loads here.
+    $node = \Drupal\node\Entity\Node::load($story['nid']);
+    foreach (['authors', 'interviewees'] as $field_id) {
+      sw_load_referenced_entities($node, $field_id, ['Drupal\node\Entity\Node', 'loadMultiple']);
+    }
+    $build['story_label'] = [
+      '#markup' => sw_get_story_label($node, 'teaser'),
+      '#prefix' => '<div class="story-label">',
+      '#suffix' => '</div>',
+    ];
+  }
+  $build['headline'] = [
+    '#markup' => $story['title'],
+    '#prefix' => '<h4 class="headline">',
+    '#suffix' => '</h4>',
+  ];
+  return $build;
+}
+
+/**
+ * Helper function to get the path to a series series list.
+ *
+ * @param \Drupal\taxonomy\TermInterface $series_term
+ *   A fully loaded taxonomy entity representing the series.
+ *
+ * @return string
+ *   The path to the series story list page.
+ */
+function sw_get_series_url(TermInterface $series_term) {
+  $path_arg = str_replace([' ', '?'], ['-', '%3F'], strtolower($series_term->getName()));
+  $url = Url::fromUri('internal:/series/' . $path_arg);
+  return $url->toString();
+}
+
+/**
+ * Build an array of stories belonging to a given series.
+ *
+ * Uses a static cache to avoid querying for the story list multiple times on
+ * the same page load.
+ *
+ * @param \Drupal\taxonomy\TermInterface $term
+ *   The fully-loaded taxonomy term entity for the series.
+ * @param integer $length
+ *   Length of the story list. Use -1 for unlimited, 0 for no list, otherwise,
+ *   the specific limit.
+ *
+ * @return array
+ *   Array of stories from the series, in chronological order. Keys are node ID
+ *   (nid). Values are nested arrays with 'nid' and 'title' keys.
+ */
+function sw_get_series_stories(TermInterface $term, $length = -1) {
+  static $stories = [];
+  if (empty($stories[$term->id()][$length])) {
+    $query = \Drupal::database()->select('node_field_data', 'nfd')
+      ->fields('nfd', ['nid', 'title']);
+    $query->join('taxonomy_index', 'ti', 'nfd.nid = ti.nid');
+    $query->condition('ti.tid', $term->id(), '=');
+    $query->orderBy('nfd.created', 'ASC');
+    if ($length != -1) {
+      $query->range(0, $length);
+    }
+    $stories[$term->id()][$length] = $query->execute()->fetchAllAssoc('nid', PDO::FETCH_ASSOC);
+  }
+  return $stories[$term->id()][$length];
 }
