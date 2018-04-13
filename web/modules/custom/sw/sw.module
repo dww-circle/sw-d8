@@ -5,6 +5,7 @@ use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Entity\EntityManagerInterface;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Link;
+use Drupal\Core\Render\Element;
 use Drupal\Core\Routing;
 
 use Drupal\media\Entity\Media;
@@ -28,6 +29,21 @@ const SW_STORY_TYPE_OBITUARY_TID = 4556;
 const SW_STORY_TYPE_ROUNDTABLE_TID = 2922;
 
 const SW_TOPIC_NONE_TID = 412;
+
+/**
+ * Implements hook_form_FORM_ID_alter() for 'taxonomy_overview_terms'.
+ *
+ * Inject a 'TID' column into the term overview page.
+ */
+function sw_form_taxonomy_overview_terms_alter(&$form, FormStateInterface $form_state) {
+  $form['terms']['#header'][] = t('TID');
+  foreach (Element::children($form['terms']) as $id) {
+    $form['terms'][$id]['tid_display'] = [
+      '#type' => 'markup',
+      '#markup' => $form['terms'][$id]['#term']->id(),
+    ];
+  }
+}
 
 /**
  * Implements hook_form_FORM_ID_alter() for 'views_bulk_operations_configure_action'.
