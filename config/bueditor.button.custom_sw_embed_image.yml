@@ -4,7 +4,7 @@ status: true
 dependencies: {  }
 id: custom_sw_embed_image
 label: 'SW embed image'
-tooltip: 'Embed insert box'
+tooltip: 'Embed image'
 text: ''
 cname: ficon-image
 shortcut: ''
