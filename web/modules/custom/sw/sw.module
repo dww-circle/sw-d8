@@ -697,7 +697,7 @@ function sw_insert_series_box(NodeInterface $node) {
         'title' => [
           // @todo: Do we need the config toggle to hide 'Series:' here?
           '#markup' => t('Series: ') . $series_term->getName(),
-          '#prefix' => '<a href="' . sw_get_series_url($series_term) . '"><h2>',
+          '#prefix' => '<a href="' . sw_get_series_url($series_term)->toString() . '"><h2>',
           '#suffix' => '</h2></a>',
         ],
       ];
@@ -723,6 +723,17 @@ function sw_insert_series_box(NodeInterface $node) {
           '#wrapper_attributes' => [
             'class' => 'story-list',
           ],
+        ];
+      }
+      // Unless we're already showing all the articles as a story list, provide
+      // an explicit link to the whole series page.
+      if ($story_list_length != -1) {
+        $build['all_link'] = [
+          '#type' => 'link',
+          '#title' => t('All articles in this series'),
+          '#url' => sw_get_series_url($series_term),
+          '#prefix' => '<p class="all-link">',
+          '#suffix' => '</p>',
         ];
       }
     }
@@ -778,13 +789,12 @@ function sw_get_story_render_array(array $story, $show_story_label = FALSE) {
  * @param \Drupal\taxonomy\TermInterface $series_term
  *   A fully loaded taxonomy entity representing the series.
  *
- * @return string
- *   The path to the series story list page.
+ * @return \Drupal\Core\Url
+ *   The Url object for the link to the series story list page.
  */
 function sw_get_series_url(TermInterface $series_term) {
   $path_arg = str_replace([' ', '?'], ['-', '%3F'], strtolower($series_term->getName()));
-  $url = Url::fromUri('internal:/series/' . $path_arg);
-  return $url->toString();
+  return Url::fromUri('internal:/series/' . $path_arg);
 }
 
 /**

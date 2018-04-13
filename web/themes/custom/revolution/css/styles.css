@@ -1080,6 +1080,9 @@ select {
       font-size: 12px;
       line-height: 16px; }
 
+.series .all-link {
+  text-align: center; }
+
 .pager {
   font-family: "FF DIN Pro Medium", sans-serif;
   font-size: 13px;
