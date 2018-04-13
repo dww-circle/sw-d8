@@ -64,9 +64,8 @@ class SWStoryBody extends ProcessPluginBase {
             break;
 
           case 'series':
-            // @todo Are we going to re-write these?
-            $pending_embed_tags[] = $para;
-            $this->logMessage(5, 'Story contains a <dme:series> tag');
+            $pending_embed_tags[] = '<sw-series></sw-series>';
+            $this->logMessage(5, 'Story contained a <dme:series> tag');
             break;
         }
       }
