@@ -254,6 +254,10 @@ function sw_preprocess_node_story(&$variables) {
         '#weight' => '100',
       ];
     }
+    $series = sw_get_series_term($variables['node']);
+    if (!empty($series)) {
+      $variables['series_navigation'] = sw_get_series_navigation($variables['node'], $series);
+    }
   }
 
   if ($variables['view_mode'] == 'teaser_conditional_image') {
@@ -846,4 +850,52 @@ function sw_get_series_stories(TermInterface $term, $length = -1) {
     $stories[$term->id()][$length] = $query->execute()->fetchAllAssoc('nid', PDO::FETCH_ASSOC);
   }
   return $stories[$term->id()][$length];
+}
+
+/**
+ * Find the 'prev' and 'next' links for a given story within a series.
+ *
+ * @param \Drupal\node\NodeInterface $node
+ *   The fully-loaded node entity for the story.
+ * @param \Drupal\taxonomy\TermInterface $series
+ *   The fully-loaded taxonomy term entity for the series.
+ *
+ * @return array
+ *   Array keyed with 'next' and 'prev', where values are render arrays for
+ *   links to the appropriate stories, or NULL if there's no appropriate link.
+ *   E.g. 'prev' will be NULL if we're on the first article in a series.
+ */
+function sw_get_series_navigation(NodeInterface $node, TermInterface $series) {
+  $prev = $next = NULL;
+  $stories = sw_get_series_stories($series);
+  // We used to use each() for this, but that's now deprecated.
+  // foreach() is the "safe" and recommended way, but we can't rely on it using
+  // the internal array pointer, so tricks with next() or prev() aren't safe.
+  // So, we fudge it with a flag, let foreach iterate, and we never care about
+  // the internal array pointer.
+  $break_on_next = FALSE;
+  foreach ($stories as $story) {
+    // If we already hit the current article and set the flag, foreach will have
+    // just given us the next story and we should set that as our next link
+    // before we break out of the loop.
+    if ($break_on_next) {
+      $next = $story;
+      break;
+    }
+    // If we're on the current story, set a flag to know we want to break out of
+    // the loop on the next iteration. If this is the last story in the series,
+    // foreach will bail before we can set $next, which is exactly what we want.
+    if ($story['nid'] == $node->id()) {
+      $break_on_next = TRUE;
+    }
+    // Otherwise, remember this story as the "previous" link in case the next
+    // article in the array is the story we're building navigation for.
+    else {
+      $prev = $story;
+    }
+  }
+  return [
+    'prev' => empty($prev) ? NULL : sw_get_story_render_array($prev),
+    'next' => empty($next) ? NULL : sw_get_story_render_array($next),
+  ];
 }
