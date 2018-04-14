@@ -1,0 +1,46 @@
+.page-node-type-blog-critical-reading {
+
+  .node--type-blog-critical-reading {
+    @include body-style;
+  }
+
+  .field--name-field-article-headline {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .field--name-field-article-source {
+    // matches .story-label.
+    color: $c-gr80;
+    font-family: $ff-nitti;
+    font-size: 14px;
+    font-weight: $fw-light;
+    letter-spacing: 2px;
+    line-height: 18px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+
+    &::before {
+      content: 'Source: ';
+    }
+  }
+
+  .field--name-field-blog-comment {
+    // matches .field--name-field-body-introduction
+    border-bottom: 1px solid $c-gr80;
+    border-top: 1px solid $c-gr80;
+    font-family: $ff-din-regular;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 25px;
+    padding-top: 15px;
+
+    b,
+    strong,
+    .sw-subject,
+    .sw-author {
+      @include ff-din-bold;
+    }
+  }
+}

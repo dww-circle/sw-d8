@@ -1,13 +1,7 @@
 .page-node-type-story {
 
   .node--type-story {
-    font-family: $ff-serif;
-    font-size: 18px;
-    line-height: 22px;
-
-    @include breakpoint($desktop) {
-      line-height: 27px;
-    }
+    @include body-style;
   }
 
   .story-label {

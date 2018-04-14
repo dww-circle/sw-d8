@@ -7,6 +7,16 @@
   }
 }
 
+@mixin body-style {
+  font-family: $ff-serif;
+  font-size: 18px;
+  line-height: 22px;
+
+  @include breakpoint($desktop) {
+    line-height: 27px;
+  }
+}
+
 @mixin button-base {
   @include link-colors(white);
   -webkit-appearance: none;
