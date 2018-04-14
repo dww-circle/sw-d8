@@ -979,6 +979,9 @@ main {
       font-size: 12px;
       line-height: 16px; }
 
+.page-node-type-story .embedded-entity ~ * {
+  position: static; }
+
 article.embedded-entity .media--view-mode-embed,
 .caption-article {
   border-bottom: 10px solid #ff0000;

@@ -1,3 +1,10 @@
+.embedded-entity ~ * {
+
+  .page-node-type-story & {
+    position: static;
+  }
+}
+
 article.embedded-entity .media--view-mode-embed, // embed without caption
 .caption-article { // embed with caption
   border-bottom: 10px solid $c-red;
