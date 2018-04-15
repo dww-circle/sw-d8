@@ -1,8 +1,0 @@
-uuid: 38befb71-85b0-4d2f-a366-664ae0d5465c
-langcode: en
-status: true
-dependencies: {  }
-id: queue
-label: 'Entity Queue Block'
-revision: 0
-description: 'Used to create blocks from entity subqueues.'
