@@ -1,0 +1,26 @@
+uuid: 22f14c65-9a13-4f00-a2f1-613c840e30e3
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: sidebar_media
+label: 'Sidebar media'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: media
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+      video: video
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: image
+queue_settings:
+  min_size: 0
+  max_size: 0
+  act_as_queue: false
+  reverse_in_admin: false
