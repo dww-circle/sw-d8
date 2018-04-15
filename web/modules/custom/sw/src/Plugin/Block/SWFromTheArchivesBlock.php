@@ -38,6 +38,11 @@ class SWFromTheArchivesBlock extends BlockBase {
     // Get the full list of items in the queue.
     $queue_list = $entityqueue->get('items')->getValue();
 
+    // Bail now if the queue is empty.
+    if (empty($queue_list)) {
+      return $block;
+    }
+
     // Restrict ourselves to the top 10 stories in the queue.
     // @todo: Make this configurable?
     $active_stories = array_slice($queue_list, 0, 10);
