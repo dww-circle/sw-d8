@@ -1031,6 +1031,9 @@ main {
       font-size: 12px;
       line-height: 16px; }
 
+.block-views-blocksw-sidebar-media-block-1 .views-row {
+  margin-bottom: 20px; }
+
 .page-node-type-story .embedded-entity ~ * {
   position: static; }
 
