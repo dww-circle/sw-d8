@@ -1,12 +1,10 @@
-uuid: f25d0122-caf4-43d6-b244-72737a655ab9
+uuid: 5fe09ae7-fc21-4816-8a12-92c292188997
 langcode: en
 status: true
 dependencies:
-  config:
-    - views.view.sw_from_the_archives
   module:
     - node
-    - views
+    - sw
   theme:
     - revolution
 id: sw_story_footer_from_the_archives
@@ -14,14 +12,12 @@ theme: revolution
 region: content_bottom
 weight: 0
 provider: null
-plugin: 'views_block:sw_from_the_archives-block_1'
+plugin: sw_from_the_archives_block
 settings:
-  id: 'views_block:sw_from_the_archives-block_1'
-  label: ''
-  provider: views
+  id: sw_from_the_archives_block
+  label: 'From the archives'
+  provider: sw
   label_display: visible
-  views_label: ''
-  items_per_page: none
 visibility:
   node_type:
     id: node_type
