@@ -701,6 +701,8 @@ function sw_get_series_term(NodeInterface $node) {
  *
  * @return array
  *   A render array for the insert box.
+ *
+ * @todo Maybe this whole thing should be converted into a twig template.
  */
 function sw_insert_series_box(NodeInterface $node) {
   // The render array is dependent upon edits to the host node.
@@ -719,11 +721,20 @@ function sw_insert_series_box(NodeInterface $node) {
   $build += [
     '#prefix' => '<article class="node--type-insert-box series">',
     '#suffix' => '</article>',
-    'title' => [
-      // @todo: Do we need the config toggle to hide 'Series:' here?
-      '#markup' => t('Series: ') . $series_term->getName(),
-      '#prefix' => '<a href="' . sw_get_series_url($series_term)->toString() . '"><h2>',
-      '#suffix' => '</h2></a>',
+    'header' => [
+      '#prefix' => '<a href="' . sw_get_series_url($series_term)->toString() . '">',
+      '#suffix' => '</a>',
+      'label' => [
+        // @todo: Should this be a more semantically accurate class name?
+        '#prefix' => '<div class="story-label">',
+        '#markup' => t('Series'),
+        '#suffix' => '</div>',
+      ],
+      'title' => [
+        '#prefix' => '<h2>',
+        '#markup' => $series_term->getName(),
+        '#suffix' => '</h2>',
+      ],
     ],
   ];
   $description = $series_term->getDescription();

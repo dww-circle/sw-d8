@@ -1116,6 +1116,8 @@ select {
   position: relative; }
 
 .node--type-insert-box {
+  border-top: 4px solid #1A272E;
+  padding-top: 13px;
   border-bottom: 10px solid #ff0000;
   font-family: Helvetica, sans-serif;
   font-size: 15px;
@@ -1129,14 +1131,15 @@ select {
       margin-left: -88px;
       margin-right: 40px;
       max-width: 290px; } }
+  .node--type-insert-box .story-label {
+    margin-bottom: 0; }
   .node--type-insert-box h2 {
     font-family: 'FF DIN Pro Bold', sans-serif;
     font-weight: normal;
-    border-top: 4px solid #1A272E;
     font-size: 28px;
     line-height: 36px;
-    padding-top: 13px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    margin-bottom: 10px; }
   .node--type-insert-box img,
   .node--type-insert-box object {
     height: auto;
