@@ -647,6 +647,12 @@ main {
 
 .page-node-type-story .story-label {
   margin-bottom: 6px; }
+  .page-node-type-story .story-label a {
+    color: #808080;
+    text-decoration: none; }
+  .page-node-type-story .story-label a:hover {
+    color: #ff0000;
+    text-decoration: underline; }
   @media (min-width: 961px) {
     .page-node-type-story .story-label {
       font-size: 15px; } }
@@ -664,6 +670,12 @@ main {
 .page-node-type-story .node__content .sw-subject,
 .page-node-type-story .node__content .sw-author {
   font-weight: bold; }
+  .page-node-type-story .node__content .sw-subject a,
+  .page-node-type-story .node__content .sw-author a {
+    color: #1A272E; }
+  .page-node-type-story .node__content .sw-subject a:hover,
+  .page-node-type-story .node__content .sw-author a:hover {
+    color: #ff0000; }
 
 .page-node-type-story .field--name-field-body-introduction {
   font-family: "FF DIN Pro Regular", sans-serif;
