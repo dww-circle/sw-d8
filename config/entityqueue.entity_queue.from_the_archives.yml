@@ -1,0 +1,25 @@
+uuid: 78628554-a568-4564-95ca-ede15e5a2a2a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: from_the_archives
+label: 'From the archives'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      story: story
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 0
+  act_as_queue: false
+  reverse_in_admin: false

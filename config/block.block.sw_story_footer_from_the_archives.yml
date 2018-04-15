@@ -1,0 +1,32 @@
+uuid: f25d0122-caf4-43d6-b244-72737a655ab9
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.sw_from_the_archives
+  module:
+    - node
+    - views
+  theme:
+    - revolution
+id: sw_story_footer_from_the_archives
+theme: revolution
+region: content_bottom
+weight: 0
+provider: null
+plugin: 'views_block:sw_from_the_archives-block_1'
+settings:
+  id: 'views_block:sw_from_the_archives-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      story: story
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
