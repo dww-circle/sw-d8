@@ -1,6 +1,4 @@
 .block-sw-recent-articles-block {
-  margin-bottom: 20px;
-
   @include breakpoint($desktop) {
     border-bottom: 1px solid #bbb;
   }
