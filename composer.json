@@ -115,17 +115,17 @@
         "[#2959316-11] Views argument validators that modify argument values aren't reflected in token replacement" : "https://www.drupal.org/files/issues/2018-04-10/2959316-11.patch",
         "[#2959415-2] When a view uses the HTTPStatusCode handler to set a 404 or 403, throw the appropriate exception" : "https://www.drupal.org/files/issues/2018-04-07/2959415-2.httpstatuscode_throw_exception.patch"
       },
-      "drupal/migrate_upgrade": { 
+      "drupal/migrate_upgrade": {
         "[#2935225-2] Fix to d6_term_node_revision handling (companion to core issue 2934799)" : "https://www.drupal.org/files/issues/2935225-2-migrate_upgrade-fix_to_d6_term_node_revision_handling.patch"
       },
-      "drupal/redirect": { 
+      "drupal/redirect": {
         "[#2955400-4] d6_path_redirect migration source has to define the *correct* source_module annotation" : "https://www.drupal.org/files/issues/2018-03-22/2955400-4.d6_path_redirect-source_module.patch"
       },
-      "drupal/views_bulk_edit": { 
+      "drupal/views_bulk_edit": {
         "[#2922357-11] Fix minor typo on 'Modify field values' action form" : "https://www.drupal.org/files/issues/2018-04-12/2922357-11.vbe-add-values-typo.patch"
       },
-      "drupal/views_bulk_operations": { 
-        "[#2960448-2] Add a cancel button on the action configuration form" : "https://www.drupal.org/files/issues/2018-04-12/2960448-2.vbo-configure-action-cancel-button.patch"
+      "drupal/views_bulk_operations": {
+        "[#2960448-8] Add a cancel button on the action configuration form" : "https://www.drupal.org/files/issues/2018-04-15/2960448-8.vbo-cancel-buttons.patch"
       }
     },
     "installer-paths": {

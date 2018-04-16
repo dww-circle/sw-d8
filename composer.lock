@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "27e90f556c6cbda3e665046b5ca99a70",
+    "content-hash": "2370e92855644534c3909ff8ddfc7109",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3599,7 +3599,7 @@
                     }
                 },
                 "patches_applied": {
-                    "[#2960448-2] Add a cancel button on the action configuration form": "https://www.drupal.org/files/issues/2018-04-12/2960448-2.vbo-configure-action-cancel-button.patch"
+                    "[#2960448-8] Add a cancel button on the action configuration form": "https://www.drupal.org/files/issues/2018-04-15/2960448-8.vbo-cancel-buttons.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
