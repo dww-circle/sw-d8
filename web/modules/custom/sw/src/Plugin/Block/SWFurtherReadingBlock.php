@@ -105,7 +105,7 @@ class SWFurtherReadingBlock extends BlockBase {
     $this->originalMainTopic = $main_topic[0]['target_id'];
 
     $secondary_topic = $this->story->get('field_secondary_topic')->getValue();
-    if (!empty($secondary_topic[0]['target_id']) && secondary_topic[0]['target_id'] != SW_TOPIC_NONE_TID) {
+    if (!empty($secondary_topic[0]['target_id']) && $secondary_topic[0]['target_id'] != SW_TOPIC_NONE_TID) {
       $this->originalSecondaryTopic = $secondary_topic[0]['target_id'];
     }
     else {
@@ -192,12 +192,12 @@ class SWFurtherReadingBlock extends BlockBase {
     $term_storage = \Drupal::entityManager()->getStorage('taxonomy_term');
     $main_parents = $term_storage->loadParents($this->originalMainTopic);
     if (!empty($main_parents)) {
-      $tids += array_keys($main_parents);
+      $tids = array_keys($main_parents);
     }
     if (!empty($this->originalSecondaryTopic)) {
       $secondary_parents = $term_storage->loadParents($this->originalSecondaryTopic);
       if (!empty($secondary_parents)) {
-        $tids += array_keys($secondary_parents);
+        $tids = array_merge($tids, array_keys($secondary_parents));
       }
     }
     if (!empty($tids)) {
@@ -261,9 +261,9 @@ class SWFurtherReadingBlock extends BlockBase {
     $query->range(0, $length);
     $nids = $query->execute()->fetchCol();
     if (!empty($nids)) {
-      $this->relatedArticles += $nids;
+      $this->relatedArticles = array_merge($this->relatedArticles, $nids);
     }
-    $this->searchedTopics += $valid_tids;
+    $this->searchedTopics = array_merge($this->searchedTopics, $valid_tids);
     return $nids;
   }
 
