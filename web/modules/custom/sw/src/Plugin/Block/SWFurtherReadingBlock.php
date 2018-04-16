@@ -52,14 +52,14 @@ class SWFurtherReadingBlock extends BlockBase {
    *
    * @var integer
    */
-  protected $originalMainTopic;
+  protected $mainTopic;
 
   /**
    * The original secondary topic term ID of the article we're searching.
    *
    * @var integer
    */
-  protected $originalSecondaryTopic;
+  protected $secondaryTopic;
 
   /**
    * {@inheritdoc}
@@ -69,8 +69,8 @@ class SWFurtherReadingBlock extends BlockBase {
     $this->maxRelated = 5; // @todo Should this be configurable?
     $this->relatedArticles = [];
     $this->searchedTopics = [SW_TOPIC_NONE_TID]; // The 'None' topic is always invalid.
-    $this->originalMainTopic = 0;
-    $this->originalSecondaryTopic = 0;
+    $this->mainTopic = 0;
+    $this->secondaryTopic = 0;
     parent::__construct($configuration, $plugin_id, $plugin_definition);
   }
 
@@ -102,23 +102,23 @@ class SWFurtherReadingBlock extends BlockBase {
     }
 
     $this->story = $node;
-    $this->originalMainTopic = $main_topic[0]['target_id'];
+    $this->mainTopic = $main_topic[0]['target_id'];
 
     $secondary_topic = $this->story->get('field_secondary_topic')->getValue();
     if (!empty($secondary_topic[0]['target_id']) && $secondary_topic[0]['target_id'] != SW_TOPIC_NONE_TID) {
-      $this->originalSecondaryTopic = $secondary_topic[0]['target_id'];
+      $this->secondaryTopic = $secondary_topic[0]['target_id'];
     }
     else {
-      $this->originalSecondaryTopic = 0;
+      $this->secondaryTopic = 0;
     }
 
     // If we got this far, the block is going to be generated. Add a cache tag
     // for the specific node so the system will invalidate it whenever that
     // story is updated. Also add tags for the main and secondary topic terms.
     $block['#cache']['tags'][] = 'node:' . $this->story->id();
-    $block['#cache']['tags'][] = 'taxonomy_term:' . $this->originalMainTopic;
-    if (!empty($this->originalSecondaryTopic)) {
-      $block['#cache']['tags'][] = 'taxonomy_term:' . $this->originalSecondaryTopic;
+    $block['#cache']['tags'][] = 'taxonomy_term:' . $this->mainTopic;
+    if (!empty($this->secondaryTopic)) {
+      $block['#cache']['tags'][] = 'taxonomy_term:' . $this->secondaryTopic;
     }
 
     $this->findRelatedArticles();
@@ -148,9 +148,9 @@ class SWFurtherReadingBlock extends BlockBase {
    * Related articles search - phase 1: Exact match of the original topics.
    */
   protected function findRelatedArticlesPhase1() {
-    $tids[] = $this->originalMainTopic;
-    if (!empty($this->originalSecondaryTopic)) {
-      $tids[] = $this->originalSecondaryTopic;
+    $tids[] = $this->mainTopic;
+    if (!empty($this->secondaryTopic)) {
+      $tids[] = $this->secondaryTopic;
     }
     $this->searchTopics($tids, $this->maxRelated);
     return count($this->relatedArticles) >= $this->maxRelated;
@@ -163,14 +163,14 @@ class SWFurtherReadingBlock extends BlockBase {
     $num_todo = $this->maxRelated - count($this->relatedArticles);
     $tids = [];
     $term_storage = \Drupal::entityManager()->getStorage('taxonomy_term');
-    $main_children = $term_storage->loadTree('topic', $this->originalMainTopic);
+    $main_children = $term_storage->loadTree('topic', $this->mainTopic);
     if (!empty($main_children)) {
       foreach ($main_children as $child_term) {
         $tids[] = $child_term->tid;
       }
     }
-    if (!empty($this->originalSecondaryTopic)) {
-      $secondary_children = $term_storage->loadTree('topic', $this->originalSecondaryTopic);
+    if (!empty($this->secondaryTopic)) {
+      $secondary_children = $term_storage->loadTree('topic', $this->secondaryTopic);
       if (!empty($secondary_children)) {
         foreach ($secondary_children as $child_term) {
           $tids[] = $child_term->tid;
@@ -190,12 +190,12 @@ class SWFurtherReadingBlock extends BlockBase {
     $num_todo = $this->maxRelated - count($this->relatedArticles);
     $tids = [];
     $term_storage = \Drupal::entityManager()->getStorage('taxonomy_term');
-    $main_parents = $term_storage->loadParents($this->originalMainTopic);
+    $main_parents = $term_storage->loadParents($this->mainTopic);
     if (!empty($main_parents)) {
       $tids = array_keys($main_parents);
     }
-    if (!empty($this->originalSecondaryTopic)) {
-      $secondary_parents = $term_storage->loadParents($this->originalSecondaryTopic);
+    if (!empty($this->secondaryTopic)) {
+      $secondary_parents = $term_storage->loadParents($this->secondaryTopic);
       if (!empty($secondary_parents)) {
         $tids = array_merge($tids, array_keys($secondary_parents));
       }
