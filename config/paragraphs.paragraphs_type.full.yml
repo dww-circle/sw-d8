@@ -1,0 +1,9 @@
+uuid: 476ca1d2-e975-4b12-ad36-4ede3351e7ca
+langcode: en
+status: true
+dependencies: {  }
+id: full
+label: 'Ad - Full Width Slice'
+icon_uuid: null
+description: 'Full Width Slice for Ads'
+behavior_plugins: {  }

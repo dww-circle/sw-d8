@@ -1,0 +1,24 @@
+uuid: 600b088a-8cf4-4b14-8c21-97810b8c2e12
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.full.field_ad
+    - paragraphs.paragraphs_type.full
+  module:
+    - entity_reference_number_widget
+id: paragraph.full.default
+targetEntityType: paragraph
+bundle: full
+mode: default
+content:
+  field_ad:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: entity_reference_number
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

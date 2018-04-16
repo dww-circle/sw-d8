@@ -1,0 +1,30 @@
+uuid: 275f97ec-ce62-42fa-a742-5b957597d995
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_ads
+    - media.type.image
+    - media.type.video
+    - paragraphs.paragraphs_type.triptych
+id: paragraph.triptych.field_ads
+field_name: field_ads
+entity_type: paragraph
+bundle: triptych
+label: Ads
+description: 'Enter 3 images and/or videos.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+      video: video
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: image
+field_type: entity_reference

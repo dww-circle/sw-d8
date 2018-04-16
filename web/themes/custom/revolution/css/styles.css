@@ -1553,10 +1553,23 @@ h4 {
   margin-bottom: 18px;
   text-transform: uppercase; }
 
+.field--name-field-ad img,
+.field--name-field-ads img,
 .field--name-field-ad-right img,
 .field--name-field-ad-left img {
   height: auto;
   width: 100%; }
+
+.field--name-field-ad {
+  margin-bottom: 60px; }
+
+.field--name-field-ads {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 30px;
+  -ms-grid-columns: 1fr 1fr  1fr;
+      grid-template-columns: 1fr 1fr  1fr;
+  margin-bottom: 60px; }
 
 .user-login-form input {
   max-width: 100%; }

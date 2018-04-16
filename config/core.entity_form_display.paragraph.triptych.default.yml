@@ -1,0 +1,24 @@
+uuid: ee5e2427-a93f-4870-9188-d2d16518b56a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.triptych.field_ads
+    - paragraphs.paragraphs_type.triptych
+  module:
+    - entity_reference_number_widget
+id: paragraph.triptych.default
+targetEntityType: paragraph
+bundle: triptych
+mode: default
+content:
+  field_ads:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: entity_reference_number
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

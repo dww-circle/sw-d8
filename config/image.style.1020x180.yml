@@ -1,0 +1,15 @@
+uuid: 726e90c8-3565-4629-8aa6-6e22a47152ea
+langcode: en
+status: true
+dependencies: {  }
+name: 1020x180
+label: 'SW 1020x180'
+effects:
+  7eb097bc-1f99-4997-a0f4-3e9f105fac98:
+    uuid: 7eb097bc-1f99-4997-a0f4-3e9f105fac98
+    id: image_scale
+    weight: 1
+    data:
+      width: 1020
+      height: 180
+      upscale: false

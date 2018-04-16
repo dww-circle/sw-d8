@@ -1,0 +1,22 @@
+uuid: cce53a95-5e9e-48ef-b5fe-58067b5ec85f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.triptych.field_ads
+    - paragraphs.paragraphs_type.triptych
+id: paragraph.triptych.default
+targetEntityType: paragraph
+bundle: triptych
+mode: default
+content:
+  field_ads:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden: {  }

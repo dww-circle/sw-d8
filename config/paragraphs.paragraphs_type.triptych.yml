@@ -1,0 +1,9 @@
+uuid: 01145980-4ced-44bb-a150-1af4ee349a58
+langcode: en
+status: true
+dependencies: {  }
+id: triptych
+label: 'Ad - Triptych'
+icon_uuid: null
+description: '3-up Ad Slice'
+behavior_plugins: {  }

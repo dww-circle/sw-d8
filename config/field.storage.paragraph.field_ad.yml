@@ -1,0 +1,20 @@
+uuid: 9899f7de-186d-4797-8f25-45c9eb4a9ef2
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - paragraphs
+id: paragraph.field_ad
+field_name: field_ad
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

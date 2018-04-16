@@ -1,8 +1,9 @@
-uuid: da8b286f-5fb4-4873-8813-cc101ac41441
+uuid: aecfaef0-b6f0-4c2a-8a04-4867af910a1b
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.media.full
     - field.field.media.image.field_city
     - field.field.media.image.field_country
     - field.field.media.image.field_credit
@@ -17,15 +18,16 @@ dependencies:
     - field.field.media.image.field_original_url
     - field.field.media.image.field_server_folder
     - field.field.media.image.field_state
+    - image.style.1020x180
     - media.type.image
   module:
     - image
 _core:
   default_config_hash: jOwnt_yq6AKAfqU6f0xKnxEkFQ2eTPJWxrk3WMLbL68
-id: media.image.default
+id: media.image.full
 targetEntityType: media
 bundle: image
-mode: default
+mode: full
 content:
   field_media_image:
     type: image
@@ -33,7 +35,7 @@ content:
     region: content
     label: hidden
     settings:
-      image_style: ''
+      image_style: 1020x180
       image_link: ''
     third_party_settings: {  }
 hidden:

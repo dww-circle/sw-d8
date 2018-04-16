@@ -1,0 +1,22 @@
+uuid: 9a4956bc-1387-4c35-a2db-ffa2a99880aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.full.field_ad
+    - paragraphs.paragraphs_type.full
+id: paragraph.full.default
+targetEntityType: paragraph
+bundle: full
+mode: default
+content:
+  field_ad:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: full
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden: {  }
