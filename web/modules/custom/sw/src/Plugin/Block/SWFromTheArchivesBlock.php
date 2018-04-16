@@ -3,6 +3,7 @@
 namespace Drupal\sw\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
+use Drupal\Core\Form\FormStateInterface;
 use Drupal\node\Entity\Node;
 
 /**
@@ -17,6 +18,51 @@ use Drupal\node\Entity\Node;
 class SWFromTheArchivesBlock extends BlockBase {
 
   use SWTeaserBlockTrait;
+
+  /**
+   * {@inheritdoc}
+   */
+  public function defaultConfiguration() {
+    return [
+      'story_list_length' => 5,
+      'number_active_stories' => 20,
+    ];
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function blockForm($form, FormStateInterface $form_state) {
+    $form = parent::blockForm($form, $form_state);
+    $config = $this->getConfiguration();
+
+    $form['story_list_length'] = [
+      '#type' => 'number',
+      '#title' => $this->t('Number of stories to display in the story list'),
+      '#default_value' => isset($config['story_list_length']) ? $config['story_list_length'] : 5,
+      '#min' => 1,
+    ];
+
+    $form['number_active_stories'] = [
+      '#type' => 'number',
+      '#title' => $this->t('Number of stories at the top of the queue to pull from'),
+      '#default_value' => isset($config['number_active_stories']) ? $config['number_active_stories'] : 20,
+      '#min' => 1,
+    ];
+
+    return $form;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function blockSubmit($form, FormStateInterface $form_state) {
+    parent::blockSubmit($form, $form_state);
+    $values = $form_state->getValues();
+    foreach (['number_active_stories', 'story_list_length'] as $config_key) {
+      $this->configuration[$config_key] = $values[$config_key];
+    }
+  }
 
   /**
    * {@inheritdoc}
@@ -45,9 +91,9 @@ class SWFromTheArchivesBlock extends BlockBase {
       return $block;
     }
 
-    // Restrict ourselves to the top 10 stories in the queue.
-    // @todo: Make this configurable?
-    $active_stories = array_slice($queue_list, 0, 10);
+    // Restrict ourselves to the top N stories in the queue.
+    $config = $this->getConfiguration();
+    $active_stories = array_slice($queue_list, 0, $config['number_active_stories']);
 
     // Save the nid and delta of these "active" stories.
     // Preserving the deltas lets us easily sort later.
@@ -60,8 +106,7 @@ class SWFromTheArchivesBlock extends BlockBase {
     shuffle($nids);
 
     // Harvest the top 5 stories from the random list to display in the block.
-    // @todo: Make this configurable?
-    $block_nids = array_slice($nids, 0, 5);
+    $block_nids = array_slice($nids, 0, $config['story_list_length']);
 
     // Sort the random stories by the original entityqueue ordering.
     foreach ($block_nids as $nid) {
