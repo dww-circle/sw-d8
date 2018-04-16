@@ -16,6 +16,8 @@ use Drupal\node\Entity\Node;
  */
 class SWFromTheArchivesBlock extends BlockBase {
 
+  use SWTeaserBlockTrait;
+
   /**
    * {@inheritdoc}
    */
@@ -68,18 +70,6 @@ class SWFromTheArchivesBlock extends BlockBase {
     ksort($ordered_list);
 
     // Load and render these stories as teasers.
-    $items = [];
-    $stories = Node::loadMultiple($ordered_list);
-    $view_builder = \Drupal::entityTypeManager()->getViewBuilder('node');
-    foreach ($stories as $story) {
-      $items[] = $view_builder->view($story, 'teaser');
-    }
-
-    // Our block body is just an item_list of the teaser render arrays.
-    return [
-      '#theme' => 'item_list',
-      '#list_type' => 'ul',
-      '#items' => $items,
-    ] + $block;
+    return $this->swGetStoryListArray($ordered_list) + $block;
   }
 }
