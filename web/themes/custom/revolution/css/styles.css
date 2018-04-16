@@ -970,6 +970,30 @@ main {
     .region-sidebar .block-sw-further-reading-block {
       display: block; } }
 
+.block-sw-further-reading-block ul {
+  list-style: none;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-top: 0;
+  padding-left: 0; }
+  .block-sw-further-reading-block ul li {
+    list-style: none;
+    margin-left: 0; }
+
+.block-sw-further-reading-block .story-link {
+  margin-bottom: 25px; }
+  .block-sw-further-reading-block .story-link .story-label {
+    font-size: 13px;
+    margin-bottom: 0; }
+  .block-sw-further-reading-block .story-link h4 {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+    text-transform: none; }
+  .block-sw-further-reading-block .story-link .field--name-field-teaser {
+    font-size: 12px;
+    line-height: 16px; }
+
 .block-sw-recent-stories-block {
   border-top: 1px solid;
   margin-bottom: 60px;

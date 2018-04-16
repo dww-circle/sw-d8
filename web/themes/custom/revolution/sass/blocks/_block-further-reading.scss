@@ -8,4 +8,12 @@
     }
   }
 
+  ul {
+    @include ul-unstyled;
+  }
+
+  .story-link {
+    @include teaser-tiny;
+  }
+
 }
