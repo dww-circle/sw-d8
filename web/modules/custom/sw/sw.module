@@ -57,6 +57,10 @@ function sw_form_views_bulk_operations_configure_action_alter(&$form, FormStateI
       $form['node']['story'][$key]['#access'] = FALSE;
       $form['node']['story']['_field_selector'][$key]['#access'] = FALSE;
     }
+    // And put the checkboxes for 'Main topic' and 'Secondary topic' at the top.
+    foreach (['field_topic' => -100, 'field_secondary_topic' => -99] as $key => $weight) {
+      $form['node']['story']['_field_selector'][$key]['#weight'] = $weight;
+    }
   }
 }
 
