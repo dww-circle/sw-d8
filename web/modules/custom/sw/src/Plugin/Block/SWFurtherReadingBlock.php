@@ -7,7 +7,7 @@ use Drupal\taxonomy\TermInterface;
 use Drupal\node\NodeInterface;
 
 /**
- * A site-wide block for recent articles.
+ * Provides the list of 'Further reading' articles on each story page.
  *
  * @Block(
  *   id = "sw_further_reading_block",
@@ -55,11 +55,25 @@ class SWFurtherReadingBlock extends BlockBase {
   protected $mainTopic;
 
   /**
+   * The parent term ID of the main topic we're searching, or 0 if a top-level topic.
+   *
+   * @var integer
+   */
+  protected $mainTopicParent;
+
+  /**
    * The original secondary topic term ID of the article we're searching.
    *
    * @var integer
    */
   protected $secondaryTopic;
+
+  /**
+   * The parent term ID of the secondary topic we're searching, or 0 if a top-level topic.
+   *
+   * @var integer
+   */
+  protected $secondaryTopicParent;
 
   /**
    * {@inheritdoc}
@@ -70,7 +84,9 @@ class SWFurtherReadingBlock extends BlockBase {
     $this->relatedArticles = [];
     $this->searchedTopics = [SW_TOPIC_NONE_TID]; // The 'None' topic is always invalid.
     $this->mainTopic = 0;
+    $this->mainTopicParent = NULL;
     $this->secondaryTopic = 0;
+    $this->secondaryTopicParent = NULL;
     parent::__construct($configuration, $plugin_id, $plugin_definition);
   }
 
@@ -130,6 +146,33 @@ class SWFurtherReadingBlock extends BlockBase {
   }
 
   /**
+   * Initialize the info about parents of the original topic(s).
+   */
+  protected function initializeTopicParents() {
+    if (!isset($this->mainTopicParent)) {
+      $term_storage = \Drupal::entityManager()->getStorage('taxonomy_term');
+      $main_parents = $term_storage->loadParents($this->mainTopic);
+      if (!empty($main_parents)) {
+        $main_parent_tids = array_keys($main_parents);
+        $this->mainTopicParent = reset($main_parent_tids);
+      }
+      else {
+        $this->mainTopicParent = 0;
+      }
+      if (!empty($this->secondaryTopic)) {
+        $secondary_parents = $term_storage->loadParents($this->secondaryTopic);
+        if (!empty($secondary_parents)) {
+          $secondary_parent_tids = array_keys($secondary_parents);
+          $this->secondaryTopicParent = reset($secondary_parent_tids);
+        }
+        else {
+          $this->secondaryTopicParent = 0;
+        }
+      }
+    }
+  }
+
+  /**
    * Invoke all the search phases, in order, until we find enough related articles.
    *
    * Each phase-specific method returns FALSE if there's more to find, TRUE if
@@ -138,7 +181,8 @@ class SWFurtherReadingBlock extends BlockBase {
   protected function findRelatedArticles() {
     for ($i = 1; $i<=4; $i++) {
       $method = "findRelatedArticlesPhase$i";
-      if ($this->$method()) {
+      $this->$method();
+      if (count($this->relatedArticles) >= $this->maxRelated) {
         break;
       }
     }
@@ -153,57 +197,119 @@ class SWFurtherReadingBlock extends BlockBase {
       $tids[] = $this->secondaryTopic;
     }
     $this->searchTopics($tids, $this->maxRelated);
-    return count($this->relatedArticles) >= $this->maxRelated;
   }
 
   /**
-   * Related articles search - phase 2: All descendents of both original topics.
+   * Related articles search - phase 2: All descendants of both original topics.
    */
   protected function findRelatedArticlesPhase2() {
     $num_todo = $this->maxRelated - count($this->relatedArticles);
     $tids = [];
     $term_storage = \Drupal::entityManager()->getStorage('taxonomy_term');
+
+    // First, find the parents (if any) of both topics. If we're searching a
+    // top-level topic, the behavior of this phase is different. And if we
+    // survive until phase 3, we'll need these TIDs, anyway.
+    $this->initializeTopicParents();
+
+    // Now, find all the children of both terms.
+    $main_child_tids = [];
+    $secondary_child_tids = [];
     $main_children = $term_storage->loadTree('topic', $this->mainTopic);
     if (!empty($main_children)) {
       foreach ($main_children as $child_term) {
-        $tids[] = $child_term->tid;
+        $main_child_tids[] = $child_term->tid;
       }
     }
     if (!empty($this->secondaryTopic)) {
       $secondary_children = $term_storage->loadTree('topic', $this->secondaryTopic);
       if (!empty($secondary_children)) {
         foreach ($secondary_children as $child_term) {
-          $tids[] = $child_term->tid;
+          $secondary_child_tids[] = $child_term->tid;
         }
       }
     }
-    if (!empty($tids)) {
+
+    // If neither topic has any children, we have to bail now.
+    if (empty($main_child_tids) && empty($secondary_child_tids)) {
+      return;
+    }
+
+    // Set some booleans to help make the logic more obvious below.
+    $main_is_top_level = empty($this->mainTopicParent);
+    $secondary_is_top_level = !empty($this->secondaryTopic) && empty($this->secondaryTopicParent);
+
+    // If either one is a top-level topic, we have to be careful.
+    if ($main_is_top_level || $secondary_is_top_level) {
+      // If *both* are top-level, or we only have a main topic, search children
+      // of main (then children of secondary, if any).
+      if ($main_is_top_level && ($secondary_is_top_level || empty($this->secondaryTopic))) {
+        $all_child_tids = array_merge($main_child_tids, $secondary_child_tids);
+        $this->searchEachTopic($all_child_tids);
+        return;
+      }
+
+      // Otherwise, prefer finding related stories from the more-specific topic
+      // (if possible).
+
+      // If secondary is top and main is not (but has children), start there.
+      if ($secondary_is_top_level && !$main_is_top_level) {
+        if (!empty($main_child_tids)) {
+          $this->searchTopics($main_child_tids, $num_todo);
+          if (count($this->relatedArticles) >= $this->maxRelated) {
+            return;
+          }
+        }
+        // We'll probably never get here, but now we have to do depth-first
+        // search of secondary topic children, 1-by-1.
+        if (!empty($secondary_child_tids)) {
+          $this->searchEachTopic($secondary_child_tids);
+          return;
+        }
+      }
+      // If main is top-level and secondary (which, if we're still here, we
+      // already know is not top-level) has children, start there.
+      elseif ($main_is_top_level && !$secondary_is_top_level) {
+        if (!empty($secondary_child_tids)) {
+          $this->searchTopics($secondary_child_tids, $num_todo);
+          if (count($this->relatedArticles) >= $this->maxRelated) {
+            return;
+          }
+        }
+        // We'll probably never get here, but now we have to do depth-first
+        // search of main topic children, 1-by-1.
+        if (!empty($main_child_tids)) {
+          $this->searchEachTopic($main_child_tids);
+          return;
+        }
+      }
+    }
+
+    // Otherwise, neither topic is top-level (which is the most common case).
+    // Search all child terms from both topics in a single query.
+    else {
+      $tids = array_merge($main_child_tids, $secondary_child_tids);
       $this->searchTopics($tids, $num_todo);
     }
-    return count($this->relatedArticles) >= $this->maxRelated;
+
   }
 
   /**
    * Related articles search - phase 3: Immediate parents.
    */
   protected function findRelatedArticlesPhase3() {
-    $num_todo = $this->maxRelated - count($this->relatedArticles);
+    // This should have already happened, but just in case...
+    $this->initializeTopicParents();
     $tids = [];
-    $term_storage = \Drupal::entityManager()->getStorage('taxonomy_term');
-    $main_parents = $term_storage->loadParents($this->mainTopic);
-    if (!empty($main_parents)) {
-      $tids = array_keys($main_parents);
-    }
-    if (!empty($this->secondaryTopic)) {
-      $secondary_parents = $term_storage->loadParents($this->secondaryTopic);
-      if (!empty($secondary_parents)) {
-        $tids = array_merge($tids, array_keys($secondary_parents));
+    foreach (['mainTopicParent', 'secondaryTopicParent'] as $parent_key) {
+      if (!empty($this->$parent_key)) {
+        $tids[] = $this->$parent_key;
       }
     }
     if (!empty($tids)) {
+      $num_todo = $this->maxRelated - count($this->relatedArticles);
       $this->searchTopics($tids, $num_todo);
     }
-    return count($this->relatedArticles) >= $this->maxRelated;
   }
 
   /**
@@ -216,9 +322,28 @@ class SWFurtherReadingBlock extends BlockBase {
     // @todo
 
     if (!empty($tids)) {
-      $this->searchTopics($tids, $num_todo);
+      $this->searchEachTopic($tids);
     }
-    return count($this->relatedArticles) >= $this->maxRelated;
+  }
+
+  /**
+   * Helper function to search a set of topics 1-by-1.
+   *
+   * @param array $tids
+   *   Array of topic term IDs to search.
+   *
+   * @return boolean
+   *   TRUE if we found all we need, FALSE if we still haven't hit the max.
+   */
+  protected function searchEachTopic(array $tids) {
+    foreach ($tids as $tid) {
+      $todo = $this->maxRelated - count($this->relatedArticles);
+      $this->searchTopics([$tid], $todo);
+      if (count($this->relatedArticles) >= $this->maxRelated) {
+        return TRUE;
+      }
+    }
+    return FALSE;
   }
 
   /**
