@@ -20,6 +20,16 @@ class SWFurtherReadingBlock extends BlockBase {
   use SWTeaserBlockTrait;
 
   /**
+   * Static cache of the block's render array body, keyed by node ID.
+   *
+   * This is shared across all instances of the class so we don't re-run the
+   * same queries (which would happen anytime the cache is cleared, since we're
+   * using the same block in two regions of the page, and the render array
+   * doesn't save us in time).
+   */
+  static protected $blockBody = [];
+
+  /**
    * The story we're finding related articles for.
    *
    * @var \Drupal\node\NodeInterface
@@ -112,6 +122,11 @@ class SWFurtherReadingBlock extends BlockBase {
       return $block;
     }
 
+    // Check our static cache to avoid re-building everything for the 2nd block on the page.
+    if (!empty(SWFurtherReadingBlock::$blockBody[$node->id()])) {
+      return SWFurtherReadingBlock::$blockBody[$node->id()];
+    }
+
     $main_topic = $node->get('field_topic')->getValue();
     if (empty($main_topic[0]['target_id']) || $main_topic[0]['target_id'] == SW_TOPIC_NONE_TID) {
       return $block;
@@ -141,6 +156,11 @@ class SWFurtherReadingBlock extends BlockBase {
     if (!empty($this->relatedArticles)) {
       $block['articles'] = $this->swGetStoryListArray($this->relatedArticles);
     }
+
+    // Now that we've done all that work, stash this render array in our static
+    // cache so the 2nd block on the page (in the story footer) doesn't have to
+    // re-do everything.
+    SWFurtherReadingBlock::$blockBody[$node->id()] = $block;
 
     return $block;
   }
