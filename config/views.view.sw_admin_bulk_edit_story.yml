@@ -914,11 +914,57 @@ display:
           exposed: true
           expose:
             operator_id: field_topic_target_id_op
-            label: Topic
+            label: 'Main topic'
             description: ''
             use_operator: false
             operator: field_topic_target_id_op
-            identifier: topic
+            identifier: main_topic
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              sw_staff: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: topic
+          hierarchy: true
+          error_message: true
+          plugin_id: taxonomy_index_tid
+        field_secondary_topic_target_id:
+          id: field_secondary_topic_target_id
+          table: node__field_secondary_topic
+          field: field_secondary_topic_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_secondary_topic_target_id_op
+            label: 'Secondary topic'
+            description: ''
+            use_operator: false
+            operator: field_secondary_topic_target_id_op
+            identifier: secondary_topic
             required: false
             remember: false
             multiple: false
