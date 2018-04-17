@@ -336,13 +336,25 @@ class SWFurtherReadingBlock extends BlockBase {
    * Related articles search - phase 4: Siblings
    */
   protected function findRelatedArticlesPhase4() {
-    $num_todo = $this->maxRelated - count($this->relatedArticles);
-    $tids = [];
-
-    // @todo
-
-    if (!empty($tids)) {
-      $this->searchEachTopic($tids);
+    $term_storage = \Drupal::entityManager()->getStorage('taxonomy_term');
+    foreach (['mainTopicParent', 'secondaryTopicParent'] as $parent_key) {
+      $tids = [];
+      if (!empty($this->$parent_key)) {
+        $siblings = $term_storage->loadTree('topic', $this->$parent_key);
+        if (!empty($siblings)) {
+          foreach ($siblings as $term) {
+            // We don't have to care about hitting the original topics (or their
+            // children), since we'll avoid re-querying any of them thanks to
+            // $this->searchedTopics being enforced inside searchTopics().
+            $tids[] = $term->tid;
+          }
+          if ($this->searchEachTopic($tids)) {
+            // searchEachTopic returns TRUE if we're done. In that case, bail
+            // before looking for secondary topic siblings.
+            return;
+          }
+        }
+      }
     }
   }
 
