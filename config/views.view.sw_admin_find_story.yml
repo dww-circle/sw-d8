@@ -821,23 +821,23 @@ display:
           hierarchy: true
           error_message: true
           plugin_id: taxonomy_index_tid
-        field_topic_target_id:
-          id: field_topic_target_id
-          table: node__field_topic
-          field: field_topic_target_id
+        tid:
+          id: tid
+          table: taxonomy_index
+          field: tid
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: Topic
           operator: or
           value: {  }
           group: 1
           exposed: true
           expose:
-            operator_id: field_topic_target_id_op
+            operator_id: tid_op
             label: Topic
             description: ''
             use_operator: false
-            operator: field_topic_target_id_op
+            operator: tid_op
             identifier: topic
             required: false
             remember: false
