@@ -216,14 +216,13 @@ class SWFurtherReadingBlock extends BlockBase {
     if (!empty($this->secondaryTopic)) {
       $tids[] = $this->secondaryTopic;
     }
-    $this->searchTopics($tids, $this->maxRelated);
+    $this->searchTopics($tids);
   }
 
   /**
    * Related articles search - phase 2: All descendants of both original topics.
    */
   protected function findRelatedArticlesPhase2() {
-    $num_todo = $this->maxRelated - count($this->relatedArticles);
     $tids = [];
     $term_storage = \Drupal::entityManager()->getStorage('taxonomy_term');
 
@@ -275,7 +274,7 @@ class SWFurtherReadingBlock extends BlockBase {
       // If secondary is top and main is not (but has children), start there.
       if ($secondary_is_top_level && !$main_is_top_level) {
         if (!empty($main_child_tids)) {
-          $this->searchTopics($main_child_tids, $num_todo);
+          $this->searchTopics($main_child_tids);
           if (count($this->relatedArticles) >= $this->maxRelated) {
             return;
           }
@@ -291,7 +290,7 @@ class SWFurtherReadingBlock extends BlockBase {
       // already know is not top-level) has children, start there.
       elseif ($main_is_top_level && !$secondary_is_top_level) {
         if (!empty($secondary_child_tids)) {
-          $this->searchTopics($secondary_child_tids, $num_todo);
+          $this->searchTopics($secondary_child_tids);
           if (count($this->relatedArticles) >= $this->maxRelated) {
             return;
           }
@@ -309,7 +308,7 @@ class SWFurtherReadingBlock extends BlockBase {
     // Search all child terms from both topics in a single query.
     else {
       $tids = array_merge($main_child_tids, $secondary_child_tids);
-      $this->searchTopics($tids, $num_todo);
+      $this->searchTopics($tids);
     }
 
   }
@@ -327,8 +326,7 @@ class SWFurtherReadingBlock extends BlockBase {
       }
     }
     if (!empty($tids)) {
-      $num_todo = $this->maxRelated - count($this->relatedArticles);
-      $this->searchTopics($tids, $num_todo);
+      $this->searchTopics($tids);
     }
   }
 
@@ -369,8 +367,7 @@ class SWFurtherReadingBlock extends BlockBase {
    */
   protected function searchEachTopic(array $tids) {
     foreach ($tids as $tid) {
-      $todo = $this->maxRelated - count($this->relatedArticles);
-      $this->searchTopics([$tid], $todo);
+      $this->searchTopics([$tid]);
       if (count($this->relatedArticles) >= $this->maxRelated) {
         return TRUE;
       }
@@ -388,22 +385,23 @@ class SWFurtherReadingBlock extends BlockBase {
    *
    * @param array $topics
    *   Numeric term ID (TID) values for the topics to search.
-   * @param integer $length
-   *   The number of stories to search for. Defaults to 5.
    *
    * @return array
    *   Array of node IDs for valid stories that match the given topics.
    */
-  protected function searchTopics(array $topics, $length = 5) {
+  protected function searchTopics(array $topics) {
     // Ignore TIDs we've already searched.
     $valid_tids = array_diff($topics, $this->searchedTopics);
     if (empty($valid_tids)) {
       return [];
     }
+    $num_todo = $this->maxRelated - count($this->relatedArticles);
     $query = \Drupal::database()->select('node_field_data', 'nfd')
       ->fields('nfd', ['nid']);
     $query->join('taxonomy_index', 'ti', 'nfd.nid = ti.nid');
     $query->join('node__field_story_weight', 'nfsw', 'nfd.nid = nfsw.entity_id AND nfd.vid = nfsw.revision_id');
+    // Limit ourselves to published articles.
+    $query->condition('nfd.status', 1, '=');
     $query->condition('ti.tid', $valid_tids, 'IN');
     // Limit ourselves to stories more "important" (lighter) than or equal to 0.
     // @todo: Make this configurable?
@@ -415,7 +413,7 @@ class SWFurtherReadingBlock extends BlockBase {
       $query->condition('nfd.nid', $this->relatedArticles, 'NOT IN');
     }
     $query->orderBy('nfd.created', 'DESC');
-    $query->range(0, $length);
+    $query->range(0, $num_todo);
     $nids = $query->execute()->fetchCol();
     if (!empty($nids)) {
       $this->relatedArticles = array_merge($this->relatedArticles, $nids);
