@@ -93,9 +93,9 @@ class SWFurtherReadingBlock extends BlockBase {
     $this->maxRelated = 5; // @todo Should this be configurable?
     $this->relatedArticles = [];
     $this->searchedTopics = [SW_TOPIC_NONE_TID]; // The 'None' topic is always invalid.
-    $this->mainTopic = 0;
+    $this->mainTopic = NULL;
     $this->mainTopicParent = NULL;
-    $this->secondaryTopic = 0;
+    $this->secondaryTopic = NULL;
     $this->secondaryTopicParent = NULL;
     parent::__construct($configuration, $plugin_id, $plugin_definition);
   }
@@ -127,34 +127,41 @@ class SWFurtherReadingBlock extends BlockBase {
       return SWFurtherReadingBlock::$blockBody[$node->id()];
     }
 
-    $main_topic = $node->get('field_topic')->getValue();
-    if (empty($main_topic[0]['target_id']) || $main_topic[0]['target_id'] == SW_TOPIC_NONE_TID) {
+    $this->story = $node;
+    $this->initializeTopics();
+    // If the story defines custom related articles, put those at the top of our list.
+    $this->initializeRelatedArtices();
+
+    // We've got a story and possibly topics to search from. Add a cache tag for
+    // the specific node so the system will invalidate the block whenever that
+    // story is updated. Also add tags for the main and secondary topic terms.
+    $block['#cache']['tags'][] = 'node:' . $this->story->id();
+    foreach (['mainTopic', 'secondaryTopic'] as $key) {
+      if (!empty($this->$key)) {
+        $block['#cache']['tags'][] = 'taxonomy_term:' . $this->$key;
+      }
+    }
+
+    // If we don't have a main topic, nor any custom related articles,
+    // we can't render anything and have to bail now.
+    if (empty($this->mainTopic) && empty($this->relatedArticles)) {
+      SWFurtherReadingBlock::$blockBody[$node->id()] = $block;
       return $block;
     }
 
-    $this->story = $node;
-    $this->mainTopic = $main_topic[0]['target_id'];
-
-    $secondary_topic = $this->story->get('field_secondary_topic')->getValue();
-    if (!empty($secondary_topic[0]['target_id']) && $secondary_topic[0]['target_id'] != SW_TOPIC_NONE_TID) {
-      $this->secondaryTopic = $secondary_topic[0]['target_id'];
-    }
-    else {
-      $this->secondaryTopic = 0;
+    // If the story didn't already define enough custom relateds, and we have
+    // any topics set, search based on the topics.
+    if (count($this->relatedArticles) <= $this->maxRelated && !empty($this->mainTopic)) {
+      $this->findRelatedArticles();
     }
 
-    // If we got this far, the block is going to be generated. Add a cache tag
-    // for the specific node so the system will invalidate it whenever that
-    // story is updated. Also add tags for the main and secondary topic terms.
-    $block['#cache']['tags'][] = 'node:' . $this->story->id();
-    $block['#cache']['tags'][] = 'taxonomy_term:' . $this->mainTopic;
-    if (!empty($this->secondaryTopic)) {
-      $block['#cache']['tags'][] = 'taxonomy_term:' . $this->secondaryTopic;
-    }
-
-    $this->findRelatedArticles();
+    // If we have anything at all, render it as a story list of teasers.
     if (!empty($this->relatedArticles)) {
       $block['articles'] = $this->swGetStoryListArray($this->relatedArticles);
+      // Also, add cache tags for every article in the list.
+      foreach ($this->relatedArticles as $nid) {
+        $block['#cache']['tags'][] = 'node:' . $nid;
+      }
     }
 
     // Now that we've done all that work, stash this render array in our static
@@ -163,6 +170,27 @@ class SWFurtherReadingBlock extends BlockBase {
     SWFurtherReadingBlock::$blockBody[$node->id()] = $block;
 
     return $block;
+  }
+
+  /**
+   * Initialize the info about the original topic(s).
+   */
+  protected function initializeTopics() {
+    if (!isset($this->mainTopic)) {
+      $fields = [
+        'field_topic' => 'mainTopic',
+        'field_secondary_topic' => 'secondaryTopic',
+      ];
+      foreach ($fields as $field_name => $memberName) {
+        $topic = $this->story->get($field_name)->getValue();
+        if (!empty($topic[0]['target_id']) && $topic[0]['target_id'] != SW_TOPIC_NONE_TID) {
+          $this->$memberName = $topic[0]['target_id'];
+        }
+        else {
+          $this->$memberName = 0;
+        }
+      }
+    }
   }
 
   /**
@@ -189,6 +217,31 @@ class SWFurtherReadingBlock extends BlockBase {
           $this->secondaryTopicParent = 0;
         }
       }
+    }
+  }
+
+  /**
+   * Harvest custom related articles from the story.
+   */
+  protected function initializeRelatedArtices() {
+    $related_articles = $this->story->get('field_related_articles')->getValue();
+    $nids = [];
+    if (!empty($related_articles)) {
+      foreach ($related_articles as $related) {
+        if (!empty($related['target_id'])) {
+          $nids[] = $related['target_id'];
+        }
+      }
+    }
+    // Only keep the published articles.
+    // @todo: Enforce a "shelf life" on these articles?
+    if (!empty($nids)) {
+      $query = \Drupal::database()->select('node_field_data', 'nfd')
+        ->fields('nfd', ['nid'])
+        ->condition('nfd.status', 1, '=')
+        ->condition('nfd.nid', $nids, 'IN');
+      $published_nids = $query->execute()->fetchCol();
+      $this->relatedArticles = array_intersect($nids, $published_nids);
     }
   }
 
