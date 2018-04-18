@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "2370e92855644534c3909ff8ddfc7109",
+    "content-hash": "6b30eb9c781a3f7936cbf85f2fce383d",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3509,17 +3509,17 @@
         },
         {
             "name": "drupal/views_bulk_edit",
-            "version": "2.0.0",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/views_bulk_edit",
-                "reference": "8.x-2.0"
+                "reference": "8.x-2.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/views_bulk_edit-8.x-2.0.zip",
-                "reference": "8.x-2.0",
-                "shasum": "ca60722f44ef02f61b9ecd41525673e243722dcc"
+                "url": "https://ftp.drupal.org/files/projects/views_bulk_edit-8.x-2.1.zip",
+                "reference": "8.x-2.1",
+                "shasum": "96e90c7a5c2ee1cc000be020480ae6debe0cf9a9"
             },
             "require": {
                 "drupal/core": "*",
@@ -3531,15 +3531,12 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.0",
-                    "datestamp": "1523365384",
+                    "version": "8.x-2.1",
+                    "datestamp": "1524063485",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
-                },
-                "patches_applied": {
-                    "[#2922357-11] Fix minor typo on 'Modify field values' action form": "https://www.drupal.org/files/issues/2018-04-12/2922357-11.vbe-add-values-typo.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
