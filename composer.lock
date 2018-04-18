@@ -1917,16 +1917,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.5.1",
+            "version": "8.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "2aeca7dfa2661296602ac16bf9fd6085f0a121be"
+                "reference": "bc21760d4be4ad117851809183c8d18880ab275a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/2aeca7dfa2661296602ac16bf9fd6085f0a121be",
-                "reference": "2aeca7dfa2661296602ac16bf9fd6085f0a121be",
+                "url": "https://api.github.com/repos/drupal/core/zipball/bc21760d4be4ad117851809183c8d18880ab275a",
+                "reference": "bc21760d4be4ad117851809183c8d18880ab275a",
                 "shasum": ""
             },
             "require": {
@@ -2156,7 +2156,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2018-03-27T09:58:42+00:00"
+            "time": "2018-04-18T17:00:56+00:00"
         },
         {
             "name": "drupal/ctools",
@@ -6364,16 +6364,16 @@
         },
         {
             "name": "webflo/drupal-core-strict",
-            "version": "8.5.1",
+            "version": "8.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webflo/drupal-core-strict.git",
-                "reference": "1aef7d924d920e72206e399635e042e0320a976f"
+                "reference": "e127bed7cd2e037ff4d714c342e8865df4c6e474"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webflo/drupal-core-strict/zipball/1aef7d924d920e72206e399635e042e0320a976f",
-                "reference": "1aef7d924d920e72206e399635e042e0320a976f",
+                "url": "https://api.github.com/repos/webflo/drupal-core-strict/zipball/e127bed7cd2e037ff4d714c342e8865df4c6e474",
+                "reference": "e127bed7cd2e037ff4d714c342e8865df4c6e474",
                 "shasum": ""
             },
             "require": {
@@ -6463,7 +6463,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Locked core dependencies",
-            "time": "2018-03-28T19:26:40+00:00"
+            "time": "2018-04-18T17:30:49+00:00"
         },
         {
             "name": "webflo/drupal-finder",
