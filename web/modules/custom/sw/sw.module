@@ -184,6 +184,7 @@ function sw_preprocess_taxonomy_term(&$variables) {
       case 'sw_section_stories':
       case 'sw_series_stories':
       case 'sw_topic_stories':
+      case 'sw_issue_stories':
         $variables['page'] = TRUE;
         break;
 
