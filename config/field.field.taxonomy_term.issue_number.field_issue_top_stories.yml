@@ -1,0 +1,21 @@
+uuid: 7041bbdc-7c5a-432d-abdc-c4ce7fee9cf2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_issue_top_stories
+    - taxonomy.vocabulary.issue_number
+id: taxonomy_term.issue_number.field_issue_top_stories
+field_name: field_issue_top_stories
+entity_type: taxonomy_term
+bundle: issue_number
+label: 'Top stories'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

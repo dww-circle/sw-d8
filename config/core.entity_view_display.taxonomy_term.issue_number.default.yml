@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.taxonomy_term.issue_number.field_issue_cover_image
     - field.field.taxonomy_term.issue_number.field_issue_date
+    - field.field.taxonomy_term.issue_number.field_issue_top_stories
     - image.style.medium
     - taxonomy.vocabulary.issue_number
   module:
@@ -38,5 +39,14 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+    region: content
+  field_issue_top_stories:
+    weight: 3
+    label: hidden
+    settings:
+      view_mode: teaser_image_medium
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
     region: content
 hidden: {  }
