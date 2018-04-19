@@ -496,7 +496,7 @@ function sw_get_story_label(NodeInterface $node, $view_mode) {
       $target_field = '';
     }
     else {
-      $story_label .= ': '; 
+      $story_label .= ': ';
       $label_func = $use_markup ? 'sw_subject_label' : 'sw_plain_label';
     }
   }
@@ -515,7 +515,7 @@ function sw_get_story_label(NodeInterface $node, $view_mode) {
   if (empty($story_label)) {
     $story_label = t('Report');
   }
-  
+
   return $story_label;
 }
 
