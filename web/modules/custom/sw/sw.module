@@ -21,6 +21,7 @@ const SW_SECTION_EDITORIALS_TID = 11;
 const SW_SECTION_READERS_VIEWS_TID = 9;
 const SW_SECTION_OBRERO_SOCIALISTA_TID = 17255;
 
+const SW_INSERT_BOX_TYPE_CUSTOM_TID = 256;
 const SW_INSERT_BOX_TYPE_COLUMNIST_TID = 262;
 const SW_INSERT_BOX_TYPE_REVIEW_TID = 265;
 const SW_INSERT_BOX_TYPE_SERIES_TID = 267;
@@ -161,6 +162,7 @@ function sw_insert_box_node_form_alter(&$form, FormStateInterface $form_state, $
   $form['field_header_text']['#states'] = [
     'visible' => [
       ':input[name="field_insert_type"]' => [
+        ['value' => SW_INSERT_BOX_TYPE_CUSTOM_TID],
         ['value' => SW_INSERT_BOX_TYPE_COLUMNIST_TID],
         ['value' => SW_INSERT_BOX_TYPE_REVIEW_TID],
         ['value' => SW_INSERT_BOX_TYPE_SERIES_TID],
@@ -337,13 +339,20 @@ function sw_preprocess_node_story(&$variables) {
  *
  * Replace the title (which is only for admins) with the display-appropriate title.
  * The display title is based on insert type, and optionally header_text.
- *
  */
 function sw_preprocess_node_insert_box(&$variables) {
   $insert_type = $variables['node']->get('field_insert_type')->entity;
   $header_text = $variables['node']->get('field_header_text')->value;
   $insert_title = $insert_type->label();
   switch ($insert_type->id()) {
+    // Set the insert box title to only what's in the header text.
+    case SW_INSERT_BOX_TYPE_CUSTOM_TID:
+      if (!empty($header_text)) {
+        $insert_title = $header_text;
+      }
+      break;
+
+    // Append the header text to the term name as the insert box title.
     case SW_INSERT_BOX_TYPE_COLUMNIST_TID:
     case SW_INSERT_BOX_TYPE_REVIEW_TID:
     case SW_INSERT_BOX_TYPE_SERIES_TID:
