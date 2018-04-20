@@ -14,6 +14,7 @@ use Drupal\node\Entity\Node;
 use Drupal\node\NodeInterface;
 use Drupal\taxonomy\Entity\Term;
 use Drupal\taxonomy\TermInterface;
+use Drupal\views\ViewExecutable;
 
 use Drupal\sw\Plugin\Block\SWTodaysStoriesBlock;
 
@@ -938,4 +939,58 @@ function sw_get_series_navigation(NodeInterface $node, TermInterface $series) {
     'prev' => empty($prev) ? NULL : sw_get_story_render_array($prev),
     'next' => empty($next) ? NULL : sw_get_story_render_array($next),
   ];
+}
+
+/**
+ * Find (and remember) the issue number taxonomy term of the current page (if any).
+ *
+ * @param \Drupal\views\ViewExecutable $view
+ *   The ViewExecutable for the current page. We harvest the argument to load
+ *   the term directly.
+ *
+ * @return \Drupal\taxonomy\TermInterface
+ *   The full-loaded taxonomy_term entity for the current issue_number term.
+ */
+function sw_get_issue_term(ViewExecutable $view = NULL) {
+  static $issue_term = NULL;
+  if (empty($issue_term)) {
+    if (!empty($view) && $view->id() == 'sw_issue_stories' && !empty($view->argument['tid']->argument)) {
+      $issue_term = Term::load($view->argument['tid']->argument);
+    }
+  }
+  return $issue_term;
+}
+
+/**
+ * Implements hook_views_pre_render().
+ *
+ * Alters the issue story list view to hide stories that are already listed as
+ * 'Top stories'. Since this runs relatively early in the page generation, it
+ * also lets us initialize sw_get_issue_term() with the $view object so we can
+ * load the term directly via tid from the view argument.
+ *
+ * @param \Drupal\views\ViewExecutable $view
+ *   The ViewExecutable for the view we're about to render.
+ *
+ * @see sw_get_issue_term()
+ */
+function sw_views_pre_render(ViewExecutable $view) {
+  if ($view->id() == 'sw_issue_stories') {
+    $issue_term = sw_get_issue_term($view);
+    // If field_issue_top_stories is defined, remove them from the view list.
+    $top_stories = $issue_term->get('field_issue_top_stories')->getValue();
+    if (!empty($top_stories)) {
+      $top_story_nids = [];
+      foreach ($top_stories as $top_story) {
+        if (!empty($top_story['target_id'])) {
+          $top_story_nids[$top_story['target_id']] = TRUE;
+        }
+      }
+      foreach ($view->result as $index => $result) {
+        if (!empty($top_story_nids[$result->nid])) {
+          unset($view->result[$index]);
+        }
+      }
+    }
+  }
 }
