@@ -219,7 +219,7 @@
 @mixin page-right {
   @include breakpoint($desktop) {
     float: right;
-    max-width: 340px;
+    max-width: 320px;
     width: 34%;
   }
 }

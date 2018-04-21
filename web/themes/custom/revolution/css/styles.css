@@ -1372,7 +1372,7 @@ select {
 @media (min-width: 961px) {
   .paragraph--type--queue .story-group--teaser {
     float: right;
-    max-width: 340px;
+    max-width: 320px;
     width: 34%; } }
 
 .column-left {
@@ -1388,7 +1388,7 @@ select {
   @media (min-width: 961px) {
     .column-right {
       float: right;
-      max-width: 340px;
+      max-width: 320px;
       width: 34%; } }
 
 .teaser-conditional-with-image,
