@@ -11,7 +11,7 @@ id: paragraph.today.field_ad_left
 field_name: field_ad_left
 entity_type: paragraph
 bundle: today
-label: 'Ad Left'
+label: 'Left Ad'
 description: ''
 required: false
 translatable: false

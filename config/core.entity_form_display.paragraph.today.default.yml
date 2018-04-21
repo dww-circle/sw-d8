@@ -6,6 +6,7 @@ dependencies:
     - entity_browser.browser.media_entity_browser
     - field.field.paragraph.today.field_ad_left
     - field.field.paragraph.today.field_ad_right
+    - field.field.paragraph.today.field_ad_visibility
     - field.field.paragraph.today.field_articles
     - field.field.paragraph.today.field_date
     - field.field.paragraph.today.field_display_title
@@ -22,7 +23,7 @@ bundle: today
 mode: default
 content:
   field_ad_left:
-    weight: 7
+    weight: 3
     settings:
       entity_browser: media_entity_browser
       field_widget_display: rendered_entity
@@ -36,7 +37,7 @@ content:
     type: entity_browser_entity_reference
     region: content
   field_ad_right:
-    weight: 8
+    weight: 4
     settings:
       entity_browser: media_entity_browser
       field_widget_display: rendered_entity
@@ -49,8 +50,14 @@ content:
     third_party_settings: {  }
     type: entity_browser_entity_reference
     region: content
+  field_ad_visibility:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
   field_articles:
-    weight: 3
+    weight: 2
     settings:
       form_mode: default
       override_labels: true
@@ -71,7 +78,7 @@ content:
     type: datetime_default
     region: content
   field_display_title:
-    weight: 2
+    weight: 1
     settings:
       size: 60
       placeholder: ''
@@ -79,7 +86,7 @@ content:
     type: string_textfield
     region: content
   field_layout:
-    weight: 6
+    weight: 5
     settings: {  }
     third_party_settings: {  }
     type: options_select

@@ -1,0 +1,21 @@
+uuid: c0cb0db5-b415-4596-a076-08f6e7933279
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_ad_visibility
+    - paragraphs.paragraphs_type.today
+  module:
+    - options
+id: paragraph.today.field_ad_visibility
+field_name: field_ad_visibility
+entity_type: paragraph
+bundle: today
+label: 'Ad Visibility'
+description: "\r\n"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

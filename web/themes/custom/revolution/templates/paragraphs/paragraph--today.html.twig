@@ -5,17 +5,23 @@
 {% endblock date %}
 
 {% block columns %}
+
+  {% set ad_visibility = [
+    content.field_ad_visibility.0['#markup'],
+    content.field_ad_visibility.1['#markup']
+  ] %}
+
   <div class="column-right">
     <div class="block-sw-recent-articles-block">
       <h2>{{ 'Recent articles'|t }}</h2>
       {{ sw_recent_articles_block_body }}
     </div>
-    {{ content.field_ad_right }}
+    {{ ('hide_right' in ad_visibility ) ? 'false' : content.field_ad_right }}
   </div>
   <div class="column-left">
     {{ groups.teaser_image_medium | raw }}
     {{ groups.teaser | raw }}
-    {{ content.field_ad_left }}
+    {{ ('hide_left' in ad_visibility ) ? 'true' : content.field_ad_left }}
   </div>
 
 {% endblock columns %}

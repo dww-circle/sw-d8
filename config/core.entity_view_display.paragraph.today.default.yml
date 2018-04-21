@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.paragraph.today.field_ad_left
     - field.field.paragraph.today.field_ad_right
+    - field.field.paragraph.today.field_ad_visibility
     - field.field.paragraph.today.field_articles
     - field.field.paragraph.today.field_date
     - field.field.paragraph.today.field_display_title
@@ -35,6 +36,13 @@ content:
       view_mode: default
       link: false
     third_party_settings: {  }
+    region: content
+  field_ad_visibility:
+    weight: 9
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
     region: content
   field_articles:
     weight: 2
