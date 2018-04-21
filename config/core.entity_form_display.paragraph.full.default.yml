@@ -3,10 +3,11 @@ langcode: en
 status: true
 dependencies:
   config:
+    - entity_browser.browser.media_entity_browser
     - field.field.paragraph.full.field_ad
     - paragraphs.paragraphs_type.full
   module:
-    - entity_reference_number_widget
+    - entity_browser
 id: paragraph.full.default
 targetEntityType: paragraph
 bundle: full
@@ -14,9 +15,17 @@ mode: default
 content:
   field_ad:
     weight: 0
-    settings: {  }
+    settings:
+      entity_browser: media_entity_browser
+      field_widget_display: rendered_entity
+      field_widget_remove: true
+      open: true
+      selection_mode: selection_append
+      field_widget_display_settings:
+        view_mode: embed
+      field_widget_edit: false
     third_party_settings: {  }
-    type: entity_reference_number
+    type: entity_browser_entity_reference
     region: content
 hidden:
   created: true

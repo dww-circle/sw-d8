@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - entity_browser.browser.media_entity_browser
     - field.field.paragraph.weekend.field_ad_right
     - field.field.paragraph.weekend.field_date
     - field.field.paragraph.weekend.field_display_title
@@ -13,6 +14,7 @@ dependencies:
     - paragraphs.paragraphs_type.weekend
   module:
     - datetime
+    - entity_browser
     - paragraphs
 id: paragraph.weekend.default
 targetEntityType: paragraph
@@ -22,11 +24,16 @@ content:
   field_ad_right:
     weight: 6
     settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+      entity_browser: media_entity_browser
+      field_widget_display: rendered_entity
+      field_widget_remove: true
+      open: true
+      selection_mode: selection_append
+      field_widget_display_settings:
+        view_mode: embed
+      field_widget_edit: false
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: entity_browser_entity_reference
     region: content
   field_date:
     weight: 1

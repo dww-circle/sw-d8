@@ -1,0 +1,43 @@
+uuid: 4e441dbf-c387-4c5a-8a59-478e57524380
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.media_entity_browser
+  module:
+    - views
+_core:
+  default_config_hash: UoGZLPH_DEy28wDjCYqiBKYsKoHlf6l6deygJjqdgPc
+name: media_entity_browser
+label: 'Media Entity Browser'
+display: modal
+display_configuration:
+  width: ''
+  height: ''
+  link_text: 'Select media'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  6586703a-6976-4124-8a49-cbb07ceaa3b1:
+    settings:
+      view: media_entity_browser
+      view_display: entity_browser_1
+      submit_text: 'Select Media'
+      auto_select: false
+    uuid: 6586703a-6976-4124-8a49-cbb07ceaa3b1
+    weight: 1
+    label: Gallery
+    id: view
+  69766683-1b6b-47cd-b308-9230c1134a51:
+    settings:
+      upload_location: 'public://'
+      multiple: true
+      submit_text: 'Select Media'
+      extensions: 'jpg jpeg gif png txt doc xls pdf ppt pps odt ods odp'
+    uuid: 69766683-1b6b-47cd-b308-9230c1134a51
+    weight: 2
+    label: Upload
+    id: upload

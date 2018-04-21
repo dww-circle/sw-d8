@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - entity_browser.browser.media_entity_browser
     - field.field.paragraph.today.field_ad_left
     - field.field.paragraph.today.field_ad_right
     - field.field.paragraph.today.field_articles
@@ -12,8 +13,8 @@ dependencies:
     - paragraphs.paragraphs_type.today
   module:
     - datetime
+    - entity_browser
     - entity_browser_entity_form
-    - entity_reference_number_widget
     - inline_entity_form
 id: paragraph.today.default
 targetEntityType: paragraph
@@ -22,15 +23,31 @@ mode: default
 content:
   field_ad_left:
     weight: 7
-    settings: {  }
+    settings:
+      entity_browser: media_entity_browser
+      field_widget_display: rendered_entity
+      field_widget_remove: true
+      open: true
+      selection_mode: selection_append
+      field_widget_display_settings:
+        view_mode: embed
+      field_widget_edit: false
     third_party_settings: {  }
-    type: entity_reference_number
+    type: entity_browser_entity_reference
     region: content
   field_ad_right:
     weight: 8
-    settings: {  }
+    settings:
+      entity_browser: media_entity_browser
+      field_widget_display: rendered_entity
+      field_widget_remove: true
+      open: true
+      selection_mode: selection_append
+      field_widget_display_settings:
+        view_mode: embed
+      field_widget_edit: false
     third_party_settings: {  }
-    type: entity_reference_number
+    type: entity_browser_entity_reference
     region: content
   field_articles:
     weight: 3
