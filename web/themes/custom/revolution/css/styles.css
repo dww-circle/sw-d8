@@ -1102,7 +1102,6 @@ article.embedded-entity .media--view-mode-embed,
   article.embedded-entity .media--view-mode-embed img,
   .caption-article img {
     height: auto;
-    padding-bottom: 3px;
     width: 100%; }
   article.embedded-entity .media--view-mode-embed figcaption,
   .caption-article figcaption {
@@ -1112,14 +1111,11 @@ article.embedded-entity .media--view-mode-embed,
     padding-bottom: 16px;
     padding-top: 4px; }
 
-article.embedded-entity .media--view-mode-embed img {
-  padding-bottom: 13px; }
-
 article.embedded-entity .media--view-mode-embed-wide {
   border-bottom: 10px solid #ff0000; }
   article.embedded-entity .media--view-mode-embed-wide img {
     height: auto;
-    margin: 0 auto 13px;
+    margin: 0 auto;
     width: 100%; }
 
 .caption-article.embed-wide {
