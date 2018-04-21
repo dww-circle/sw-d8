@@ -753,10 +753,22 @@ main {
     .page-node-type-blog-critical-reading .node--type-blog-critical-reading {
       line-height: 27px; } }
 
-.page-node-type-blog-critical-reading .field--name-field-article-headline {
+.page-node-type-blog-critical-reading .field--name-field-article-url {
   font-size: 22px;
   font-weight: bold;
   margin-bottom: 5px; }
+  .page-node-type-blog-critical-reading .field--name-field-article-url a:link {
+    color: #1A272E; }
+  .page-node-type-blog-critical-reading .field--name-field-article-url a:visited, .page-node-type-blog-critical-reading .field--name-field-article-url a:link:visited {
+    color: #1A272E; }
+  .page-node-type-blog-critical-reading .field--name-field-article-url a:focus {
+    color: #1A272E; }
+  .page-node-type-blog-critical-reading .field--name-field-article-url a.is-active:hover, .page-node-type-blog-critical-reading .field--name-field-article-url a.active:hover,
+  .page-node-type-blog-critical-reading .field--name-field-article-url a .menu-item--active-trail a:hover, .page-node-type-blog-critical-reading .field--name-field-article-url a.visited:hover, .page-node-type-blog-critical-reading .field--name-field-article-url a:hover {
+    color: #ff0000; }
+  .page-node-type-blog-critical-reading .field--name-field-article-url a.active, .page-node-type-blog-critical-reading .field--name-field-article-url a.is-active, .page-node-type-blog-critical-reading .field--name-field-article-url a:active,
+  .menu-item--active-trail .page-node-type-blog-critical-reading .field--name-field-article-url a {
+    color: #1A272E; }
 
 .page-node-type-blog-critical-reading .field--name-field-article-source {
   color: #808080;

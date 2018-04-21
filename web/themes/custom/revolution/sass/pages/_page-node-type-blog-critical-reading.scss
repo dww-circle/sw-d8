@@ -4,10 +4,14 @@
     @include body-style;
   }
 
-  .field--name-field-article-headline {
+  .field--name-field-article-url {
     font-size: 22px;
     font-weight: bold;
     margin-bottom: 5px;
+
+    a {
+      @include link-colors($c-black, $c-red);
+    }
   }
 
   .field--name-field-article-source {
