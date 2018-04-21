@@ -7,11 +7,6 @@ use Drupal\sw\Plugin\Block\SWRecentArticlesBase;
 /**
  * A block for use on the front page for 'Recent stories'.
  *
- * It's turning out to be a pain in the ass to render this via a paragraph
- * slice. For now, it's another custom block. Either we'll just place it as a
- * block and be done, or we'll have to keep jumping through hoops to get it to
- * appear inside a paragraph slice for arbitrary placement on slice pages.
- *
  * @see http://tasks.socialistworker.org/node/1035
  *
  * @Block(

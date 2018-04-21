@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - system.menu.main
     - taxonomy.vocabulary.series
   module:
     - taxonomy
@@ -237,15 +236,14 @@ display:
       display_extenders: {  }
       path: series
       menu:
-        type: normal
+        type: none
         title: Series
         description: ''
-        expanded: true
+        expanded: false
         parent: ''
         weight: 1
         context: '0'
         menu_name: main
-        enabled: true
     cache_metadata:
       max-age: -1
       contexts:

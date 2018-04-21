@@ -1,0 +1,28 @@
+id: csv_taxonomy_terms
+label: CSV taxonomy terms
+migration_tags:
+  - CSV
+  - Content
+migration_group: sw_d6
+
+destination:
+  plugin: entity:taxonomy_term
+
+source:
+  plugin: sw_migrate_csv
+  path: csv
+  csv_path: sw3-taxonomy-terms.csv
+  header_row_count: 1
+  keys:
+    - tid
+
+process:
+  tid: tid	
+  vid: vid
+  name: name
+  parent:
+    plugin: default_value
+    default_value: 0
+
+migration_dependencies:
+  required: { }

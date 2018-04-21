@@ -10,7 +10,7 @@ field_name: field_header_text
 entity_type: node
 bundle: insert_box
 label: 'Header text'
-description: 'For <em>Review</em>, <em>Columnist</em> and <em>Series</em> insert boxes, this controls the rest of the text used for the header. For example, if you want to see "Columnist: Sharon Smith", you''d enter "Sharon Smith" here and select "Columnist" in for the <em>Insert type</em> field.'
+description: 'For <em>Columnist</em>, <em>Review</em> and <em>Series</em> insert boxes, this controls the rest of the text used for the header. For example, if you want to see "Columnist: Sharon Smith", you''d enter "Sharon Smith" here and select "Columnist" in the <em>Insert type</em> field. For <em>Custom</em>, this defines the entire header.'
 required: false
 translatable: false
 default_value: {  }

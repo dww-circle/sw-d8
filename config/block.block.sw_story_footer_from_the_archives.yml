@@ -1,0 +1,30 @@
+uuid: 5fe09ae7-fc21-4816-8a12-92c292188997
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - sw
+  theme:
+    - revolution
+id: sw_story_footer_from_the_archives
+theme: revolution
+region: content_bottom
+weight: 0
+provider: null
+plugin: sw_from_the_archives_block
+settings:
+  id: sw_from_the_archives_block
+  label: 'From the archives'
+  provider: sw
+  label_display: visible
+  story_list_length: 5
+  number_active_stories: 20
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      story: story
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

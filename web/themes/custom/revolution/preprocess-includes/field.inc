@@ -21,6 +21,7 @@ function revolution_preprocess_field(&$variables) {
     }
   }
 }
+
 /**
  * Implements hook_preprocess_FIELD__ENTITY__TYPE__FIELD().
  */
@@ -34,4 +35,14 @@ function revolution_preprocess_field__paragraph__nested__field_articles(&$variab
       $variables['items'][0]['attributes']->setAttribute('class', 'border-none');
     }
   }
+}
+
+/**
+ * Implements hook_preprocess_FIELD__ENTITY__TYPE__FIELD().
+ */
+function revolution_preprocess_field__node__blog_critical_reading__field_article_url(&$variables) {
+
+  // Use article_headline field for link title.
+  $headline = $variables['element']['#object']->get('field_article_headline')->getValue();
+  $variables['items'][0]['content']['#title'] = $headline[0]['value'];
 }

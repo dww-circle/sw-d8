@@ -1,0 +1,24 @@
+uuid: e381a68d-e5eb-473b-a9a2-eebc80703b63
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.sw_sidebar_media
+  module:
+    - views
+  theme:
+    - revolution
+id: sw_sidebar_media_block
+theme: revolution
+region: sidebar
+weight: 0
+provider: null
+plugin: 'views_block:sw_sidebar_media-block_1'
+settings:
+  id: 'views_block:sw_sidebar_media-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

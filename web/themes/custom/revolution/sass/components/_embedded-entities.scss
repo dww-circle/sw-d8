@@ -24,7 +24,6 @@ article.embedded-entity .media--view-mode-embed, // embed without caption
 
   img {
     height: auto;
-    padding-bottom: 3px;
     width: 100%;
   }
 
@@ -37,19 +36,12 @@ article.embedded-entity .media--view-mode-embed, // embed without caption
   }
 }
 
-article.embedded-entity .media--view-mode-embed {
-
-  img {
-    padding-bottom: 13px;
-  }
-}
-
 article.embedded-entity .media--view-mode-embed-wide {
   border-bottom: 10px solid $c-red;
 
   img {
     height: auto;
-    margin: 0 auto 13px;
+    margin: 0 auto;
     width: 100%;
   }
 }

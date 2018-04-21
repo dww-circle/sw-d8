@@ -1,4 +1,6 @@
 .node--type-insert-box {
+  border-top: 4px solid $c-black;
+  padding-top: 13px;
   border-bottom: 10px solid $c-red;
   font-family: $ff-helv;
   font-size: 15px;
@@ -14,13 +16,16 @@
     max-width: 290px;
   }
 
+  .story-label {
+    margin-bottom: 0;
+  }
+
   h2 {
     @include ff-din-bold;
-    border-top: 4px solid $c-black;
     font-size: 28px;
     line-height: 36px;
-    padding-top: 13px;
     text-transform: uppercase;
+    margin-bottom: 10px;
   }
 
   img,

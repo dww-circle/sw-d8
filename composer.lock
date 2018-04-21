@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "27e90f556c6cbda3e665046b5ca99a70",
+    "content-hash": "6b30eb9c781a3f7936cbf85f2fce383d",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1917,16 +1917,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.5.1",
+            "version": "8.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "2aeca7dfa2661296602ac16bf9fd6085f0a121be"
+                "reference": "bc21760d4be4ad117851809183c8d18880ab275a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/2aeca7dfa2661296602ac16bf9fd6085f0a121be",
-                "reference": "2aeca7dfa2661296602ac16bf9fd6085f0a121be",
+                "url": "https://api.github.com/repos/drupal/core/zipball/bc21760d4be4ad117851809183c8d18880ab275a",
+                "reference": "bc21760d4be4ad117851809183c8d18880ab275a",
                 "shasum": ""
             },
             "require": {
@@ -2156,7 +2156,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2018-03-27T09:58:42+00:00"
+            "time": "2018-04-18T17:00:56+00:00"
         },
         {
             "name": "drupal/ctools",
@@ -3509,17 +3509,17 @@
         },
         {
             "name": "drupal/views_bulk_edit",
-            "version": "2.0.0",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/views_bulk_edit",
-                "reference": "8.x-2.0"
+                "reference": "8.x-2.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/views_bulk_edit-8.x-2.0.zip",
-                "reference": "8.x-2.0",
-                "shasum": "ca60722f44ef02f61b9ecd41525673e243722dcc"
+                "url": "https://ftp.drupal.org/files/projects/views_bulk_edit-8.x-2.1.zip",
+                "reference": "8.x-2.1",
+                "shasum": "96e90c7a5c2ee1cc000be020480ae6debe0cf9a9"
             },
             "require": {
                 "drupal/core": "*",
@@ -3531,15 +3531,12 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.0",
-                    "datestamp": "1523365384",
+                    "version": "8.x-2.1",
+                    "datestamp": "1524063485",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
-                },
-                "patches_applied": {
-                    "[#2922357-11] Fix minor typo on 'Modify field values' action form": "https://www.drupal.org/files/issues/2018-04-12/2922357-11.vbe-add-values-typo.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3599,7 +3596,7 @@
                     }
                 },
                 "patches_applied": {
-                    "[#2960448-2] Add a cancel button on the action configuration form": "https://www.drupal.org/files/issues/2018-04-12/2960448-2.vbo-configure-action-cancel-button.patch"
+                    "[#2960448-8] Add a cancel button on the action configuration form": "https://www.drupal.org/files/issues/2018-04-15/2960448-8.vbo-cancel-buttons.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -6364,16 +6361,16 @@
         },
         {
             "name": "webflo/drupal-core-strict",
-            "version": "8.5.1",
+            "version": "8.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webflo/drupal-core-strict.git",
-                "reference": "1aef7d924d920e72206e399635e042e0320a976f"
+                "reference": "e127bed7cd2e037ff4d714c342e8865df4c6e474"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webflo/drupal-core-strict/zipball/1aef7d924d920e72206e399635e042e0320a976f",
-                "reference": "1aef7d924d920e72206e399635e042e0320a976f",
+                "url": "https://api.github.com/repos/webflo/drupal-core-strict/zipball/e127bed7cd2e037ff4d714c342e8865df4c6e474",
+                "reference": "e127bed7cd2e037ff4d714c342e8865df4c6e474",
                 "shasum": ""
             },
             "require": {
@@ -6463,7 +6460,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Locked core dependencies",
-            "time": "2018-03-28T19:26:40+00:00"
+            "time": "2018-04-18T17:30:49+00:00"
         },
         {
             "name": "webflo/drupal-finder",
