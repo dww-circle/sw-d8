@@ -5,6 +5,7 @@ dependencies:
   config:
     - entity_browser.browser.media_entity_browser
     - field.field.paragraph.weekend.field_ad_right
+    - field.field.paragraph.weekend.field_ad_visibility_bool
     - field.field.paragraph.weekend.field_date
     - field.field.paragraph.weekend.field_display_title
     - field.field.paragraph.weekend.field_lead
@@ -22,7 +23,7 @@ bundle: weekend
 mode: default
 content:
   field_ad_right:
-    weight: 6
+    weight: 7
     settings:
       entity_browser: media_entity_browser
       field_widget_display: rendered_entity
@@ -35,14 +36,21 @@ content:
     third_party_settings: {  }
     type: entity_browser_entity_reference
     region: content
+  field_ad_visibility_bool:
+    weight: 0
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
   field_date:
-    weight: 1
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
     region: content
   field_display_title:
-    weight: 0
+    weight: 1
     settings:
       size: 60
       placeholder: ''
@@ -50,7 +58,7 @@ content:
     type: string_textfield
     region: content
   field_lead:
-    weight: 2
+    weight: 3
     settings:
       match_operator: CONTAINS
       size: 60
@@ -59,18 +67,6 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_nested_left:
-    type: entity_reference_paragraphs
-    weight: 4
-    settings:
-      title: Paragraph
-      title_plural: Paragraphs
-      edit_mode: open
-      add_mode: dropdown
-      form_display_mode: default
-      default_paragraph_type: ''
-    third_party_settings: {  }
-    region: content
-  field_nested_right:
     type: entity_reference_paragraphs
     weight: 5
     settings:
@@ -82,8 +78,20 @@ content:
       default_paragraph_type: ''
     third_party_settings: {  }
     region: content
+  field_nested_right:
+    type: entity_reference_paragraphs
+    weight: 6
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
   field_sub:
-    weight: 3
+    weight: 4
     settings:
       match_operator: CONTAINS
       size: 60

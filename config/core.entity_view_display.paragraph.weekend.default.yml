@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.weekend.field_ad_right
+    - field.field.paragraph.weekend.field_ad_visibility_bool
     - field.field.paragraph.weekend.field_date
     - field.field.paragraph.weekend.field_display_title
     - field.field.paragraph.weekend.field_lead
@@ -27,6 +28,16 @@ content:
       link: false
     third_party_settings: {  }
     type: entity_reference_entity_view
+    region: content
+  field_ad_visibility_bool:
+    weight: 7
+    label: hidden
+    settings:
+      format: custom
+      format_custom_true: hide
+      format_custom_false: ''
+    third_party_settings: {  }
+    type: boolean
     region: content
   field_date:
     weight: 1

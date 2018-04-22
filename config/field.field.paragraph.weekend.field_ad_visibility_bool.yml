@@ -1,0 +1,23 @@
+uuid: 141418b2-9449-4b0a-9552-733a5c18ede1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_ad_visibility_bool
+    - paragraphs.paragraphs_type.weekend
+id: paragraph.weekend.field_ad_visibility_bool
+field_name: field_ad_visibility_bool
+entity_type: paragraph
+bundle: weekend
+label: 'Hide ad(s) on this slice.'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

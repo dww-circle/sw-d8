@@ -38,6 +38,7 @@
  * @ingroup themeable
  */
 #}
+{% set ad_visibility = content.field_ad_visibility_bool.0['#markup'] %}
 
 <div class="paragraph-stories paragraph--type--{{ paragraph.bundle|clean_class }} clearfix">
 
@@ -53,6 +54,6 @@
   <div class="column-right">
     <div class="weekend-also">{{ 'Also this week'|t }}</div>
     {{ content.field_nested_right }}
-    {{ content.field_ad_right }}
+    {{ ('hide' in ad_visibility ) ? '' : content.field_ad_right }}
   </div>
 </div>
