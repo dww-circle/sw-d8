@@ -34,28 +34,33 @@
   }
 }
 
-.more:hover ~ .more-links {
-  display: block;
-}
-
 .more-links {
+  @include open-transition;
   background: rgba( 255, 255, 255, .9);
-  display: none;
   border: 1px solid $c-grb2;
-  bottom: 20px;
   font-family: $ff-din-medium;
   font-size: 12px;
-  right: -112px;
   line-height: 16px;
+  list-style: none;
   padding: 20px 15px 10px;
   position: absolute;
+  right: 0;
   text-transform: uppercase;
-  width: 130px;
+  top: 33px;
   z-index: 1;
 
+  @include breakpoint($desktop) {
+    bottom: 20px;
+    right: -141px;
+    top: auto;
+    width: 130px;
+  }
+
   .story-social-bottom & {
-    bottom: 27px;
-    right: -100px;
+    @include breakpoint($desktop) {
+      bottom: 70px;
+      right: calc(50% - 65px);
+    }
   }
 
   li {

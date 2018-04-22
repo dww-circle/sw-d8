@@ -1,9 +1,11 @@
+{{ attach_library('revolution/share') }}
+
 {% set services = [
   { 'service': 'twitter', 'link': 'https://www.twitter.com/share', 'text': 'Share on Twitter'},
   { 'service': 'facebook', 'link': 'https://www.facebook.com/sharer.php', 'text': 'Share on Facebook'},
   { 'service': 'email', 'link': '/email', 'text': 'Email this story'},
   { 'service': 'reply', 'link': '/reply;', 'text': 'Reply'},
-  { 'service': 'more', 'link': '#', 'text': 'More Options'}
+  { 'service': 'more', 'link': '#', 'text': 'Click for more options'}
 ] %}
 
 {% set more_services = [
@@ -27,14 +29,14 @@
     </a>
   </li>
   {% endfor %}
+</ul>
 
-  <ul class="more-links">
-    {% for linkdata in more_services %}
-      <li class="{{ linkdata.service }}">
-        <a href="{{ linkdata.link }}" title="{{ linkdata.text }}" target="_blank">
-          {{ linkdata.text }}
-        </a>
-      </li>
-    {% endfor %}
-  </ul>
+<ul class="more-links">
+  {% for linkdata in more_services %}
+    <li class="{{ linkdata.service }}">
+      <a href="{{ linkdata.link }}" title="{{ linkdata.text }}" target="_blank">
+        {{ linkdata.text }}
+      </a>
+    </li>
+  {% endfor %}
 </ul>

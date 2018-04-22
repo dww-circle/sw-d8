@@ -1279,26 +1279,35 @@ select {
     text-indent: 0;
     width: 40px; }
 
-.more:hover ~ .more-links {
-  display: block; }
-
 .more-links {
+  opacity: 0;
+  transition: opacity .2 ease-out;
+  visibility: hidden;
   background: rgba(255, 255, 255, 0.9);
-  display: none;
   border: 1px solid #b2b2b2;
-  bottom: 20px;
   font-family: "FF DIN Pro Medium", sans-serif;
   font-size: 12px;
-  right: -112px;
   line-height: 16px;
+  list-style: none;
   padding: 20px 15px 10px;
   position: absolute;
+  right: 0;
   text-transform: uppercase;
-  width: 130px;
+  top: 33px;
   z-index: 1; }
-  .story-social-bottom .more-links {
-    bottom: 27px;
-    right: -100px; }
+  .more-links.open {
+    opacity: 1;
+    visibility: visible; }
+  @media (min-width: 961px) {
+    .more-links {
+      bottom: 20px;
+      right: -141px;
+      top: auto;
+      width: 130px; } }
+  @media (min-width: 961px) {
+    .story-social-bottom .more-links {
+      bottom: 70px;
+      right: calc(50% - 65px); } }
   .more-links li {
     height: auto;
     margin: 0 0 10px;

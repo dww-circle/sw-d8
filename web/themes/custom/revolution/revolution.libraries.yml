@@ -12,3 +12,6 @@ global:
     - core/jquery
     - core/drupal
 
+share:
+  js:
+    js/shareExpander.js: {}

@@ -189,6 +189,17 @@
   }
 }
 
+@mixin open-transition {
+  opacity: 0;
+  transition: opacity .2 ease-out;
+  visibility: hidden;
+
+  &.open {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
 @mixin page-container {
   max-width: 1260px;
   margin: 0 auto;
