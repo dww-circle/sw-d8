@@ -6,6 +6,10 @@
         e.preventDefault();
         $(this).parent('.social-links').siblings('.more-links').toggleClass('open');
       });
+  
+      $(".more-links-close", context).click(function() {
+        $(this).parent('.more-links').removeClass('open');
+      });
     }
   };
 })(jQuery);

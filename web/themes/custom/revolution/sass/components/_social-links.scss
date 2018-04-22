@@ -42,7 +42,7 @@
   font-size: 12px;
   line-height: 16px;
   list-style: none;
-  padding: 20px 15px 10px;
+  padding: 10px 15px 10px;
   position: absolute;
   right: 0;
   text-transform: uppercase;
@@ -80,6 +80,18 @@
 
     &:hover {
       text-decoration: none;
+    }
+  }
+
+  .more-links-close {
+    background: $c-gr80;
+    color: white;
+    margin: 0 0 10px;
+    padding: 2px 0 3px;
+    text-align: center;
+
+    &:hover {
+      background: $c-red;
     }
   }
 }

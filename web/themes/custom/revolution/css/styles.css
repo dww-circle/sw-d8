@@ -1289,7 +1289,7 @@ select {
   font-size: 12px;
   line-height: 16px;
   list-style: none;
-  padding: 20px 15px 10px;
+  padding: 10px 15px 10px;
   position: absolute;
   right: 0;
   text-transform: uppercase;
@@ -1330,6 +1330,14 @@ select {
     color: #1A272E; }
   .more-links a:hover {
     text-decoration: none; }
+  .more-links .more-links-close {
+    background: #808080;
+    color: white;
+    margin: 0 0 10px;
+    padding: 2px 0 3px;
+    text-align: center; }
+    .more-links .more-links-close:hover {
+      background: #ff0000; }
 
 @media (min-width: 961px) {
   .story-social-left {
