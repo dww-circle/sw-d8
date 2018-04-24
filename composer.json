@@ -109,6 +109,7 @@
         "[#2905230-6] Alter inline_entity_form table to display auto-computed entity labels" : "https://www.drupal.org/files/issues/Title_displayed_as_AutoEntityLabel_after_saving_via_Inline_Entity_Form-2905230-6.patch"
       },
       "drupal/core": {
+        "[#1699378-156] Entity reference: Dynamic Views Arguments via Tokens" : "https://www.drupal.org/files/issues/entity_autocomplete_1699378_156.patch",
         "[#2559961-29] ManyToOneHelper ignores group configuration for some cases and forces INNER joins" : "https://www.drupal.org/files/issues/manytoonehelper_ignores-2559961-29-8.3.x.patch",
         "[#2625136-63] Label visibility for exposed numeric and date filter when using single and multi value filter" : "https://www.drupal.org/files/issues/2625136-63.patch",
         "[#2645954-26] Views output field as a custom link options all ignored if path is routed" : "https://www.drupal.org/files/issues/2018-03-27/2645954-26.views-output-field-as-link-for-routed-paths.patch",
