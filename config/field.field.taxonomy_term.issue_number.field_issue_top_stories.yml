@@ -16,6 +16,11 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:node'
-  handler_settings: {  }
+  handler: views
+  handler_settings:
+    view:
+      view_name: sw_issue_stories
+      display_name: entity_reference_1
+      arguments:
+        - '[term:tid]'
 field_type: entity_reference

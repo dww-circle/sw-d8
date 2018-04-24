@@ -976,19 +976,23 @@ function sw_get_issue_term(ViewExecutable $view = NULL) {
  */
 function sw_views_pre_render(ViewExecutable $view) {
   if ($view->id() == 'sw_issue_stories') {
-    $issue_term = sw_get_issue_term($view);
-    // If field_issue_top_stories is defined, remove them from the view list.
-    $top_stories = $issue_term->get('field_issue_top_stories')->getValue();
-    if (!empty($top_stories)) {
-      $top_story_nids = [];
-      foreach ($top_stories as $top_story) {
-        if (!empty($top_story['target_id'])) {
-          $top_story_nids[$top_story['target_id']] = TRUE;
+    // We only want to filter these stories out of the page display. We need
+    // the full list for the entity_reference display.
+    if ($view->getDisplay()->getPluginId() == 'page') {
+      $issue_term = sw_get_issue_term($view);
+      // If field_issue_top_stories is defined, remove them from the view list.
+      $top_stories = $issue_term->get('field_issue_top_stories')->getValue();
+      if (!empty($top_stories)) {
+        $top_story_nids = [];
+        foreach ($top_stories as $top_story) {
+          if (!empty($top_story['target_id'])) {
+            $top_story_nids[$top_story['target_id']] = TRUE;
+          }
         }
-      }
-      foreach ($view->result as $index => $result) {
-        if (!empty($top_story_nids[$result->nid])) {
-          unset($view->result[$index]);
+        foreach ($view->result as $index => $result) {
+          if (!empty($top_story_nids[$result->nid])) {
+            unset($view->result[$index]);
+          }
         }
       }
     }
