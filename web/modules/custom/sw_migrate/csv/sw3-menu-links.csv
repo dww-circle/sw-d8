@@ -1,4 +1,20 @@
 menu_name,parent_link_path,expanded,link_path,link_title,weight
+main,,1,/topic,Topics,-1
+main,/topic,0,/topic/187,Teachers' struggles,0
+main,/topic,0,/topic/28403,Trump administration,1
+main,/topic,0,/topic/119,Fighting the right,2
+main,/topic,0,/topic/130,Racism and anti-racism,3
+main,/topic,0,/topic/28421,The #MeToo Moment,4
+main,/topic,0,/topic/67,War in Syria,5
+main,/topic,0,/topic/141,Police violence,6
+main,/topic,0,/topic/147,Immigrant rights,7
+main,/topic,0,/topic/43,Israel and Palestine,8
+main,/topic,0,/topic/111,Democratic Party,9
+main,/topic,0,/topic/1415,Gun violence,10
+main,/topic,0,/topic/170,Public schools,11
+main,/topic,0,/topic/174,Environment,12
+main,/topic,0,/topic/73,U.S. Economy,13
+main,/topic,0,/topic/257,History of Black America,14
 main,/section,0,/section/editorials,Editorials,0
 main,/section,0,/section/labor,Labor,1
 main,/section,0,/section/activist-news,Activist News,2
