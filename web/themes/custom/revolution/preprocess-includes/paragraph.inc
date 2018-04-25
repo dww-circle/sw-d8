@@ -67,23 +67,20 @@ function revolution_preprocess_paragraph__today(&$variables) {
 
   // Get field values.
   $med_img_num = $variables['paragraph']->field_layout->value;
-  $count = $variables['content']['field_articles']['#items']->count();
 
-  $i = 0;
-  $nodes = array();
+  if (!empty($variables['content']['field_articles']['#items'])) {
+    $count = $variables['content']['field_articles']['#items']->count();
+    $nodes = [];
+    for ($i = 0; $i < $count; $i++) {
+      $nid = $variables['content']['field_articles'][$i]['#plain_text'];
+      $view_mode = _revolution_view_mode_image_chooser($i, $med_img_num);
+      $nodes[$view_mode][] =  $nid;
+    }
 
-  while($i < $count) {
-
-    $nid = $variables['content']['field_articles'][$i]['#plain_text'];
-    $view_mode = _revolution_view_mode_image_chooser($i, $med_img_num);
-    $nodes[$view_mode][] =  $nid;
-    $i++;
+    $group = _revolution_story_groups_render($nodes);
+    // Send markup to template.
+    $variables['groups'] = $group;
   }
-
-  $group = _revolution_story_groups_render($nodes);
-
-  // Send markup to template.
-  $variables['groups'] = $group;
 
   $block_manager = \Drupal::service('plugin.manager.block');
   $config = [];
