@@ -45,6 +45,13 @@ class SWFurtherReadingBlock extends BlockBase {
   protected $maxRelated;
 
   /**
+   * The current time that a request for this block is made.
+   *
+   * @var integer
+   */
+  protected $requestTime;
+
+  /**
    * Array of node IDs (nids) of related articles for a given story.
    *
    * @var array
@@ -92,6 +99,7 @@ class SWFurtherReadingBlock extends BlockBase {
   public function __construct(array $configuration, $plugin_id, $plugin_definition) {
     $this->story = NULL;
     $this->maxRelated = 5; // @todo Should this be configurable?
+    $this->requestTime = \Drupal::requestStack()->getCurrentRequest()->server->get('REQUEST_TIME');
     $this->relatedArticles = [];
     $this->searchedTopics = [SW_TOPIC_NONE_TID]; // The 'None' topic is always invalid.
     $this->mainTopic = NULL;
@@ -108,6 +116,7 @@ class SWFurtherReadingBlock extends BlockBase {
     return [
       'story_query_weight_limit' => 0,
       'story_query_date_limit' => 0,
+      'related_articles_date_limit' => 90,
     ];
   }
 
@@ -128,9 +137,16 @@ class SWFurtherReadingBlock extends BlockBase {
     ];
     $form['story_query_date_limit'] = [
       '#type' => 'number',
-      '#title' => $this->t('Date cutoff limit'),
+      '#title' => $this->t('Date limit'),
       '#description' => $this->t('Number of days in the past to draw articles from, or 0 for no date limit.'),
       '#default_value' => isset($config['story_query_date_limit']) ? $config['story_query_date_limit'] : 0,
+      '#min' => 0,
+    ];
+    $form['related_articles_date_limit'] = [
+      '#type' => 'number',
+      '#title' => $this->t('Related articles field shelf-life'),
+      '#description' => $this->t('Stories older than than this many days will ignore their own custom related articles field.'),
+      '#default_value' => isset($config['related_articles_date_limit']) ? $config['related_articles_date_limit'] : 0,
       '#min' => 0,
     ];
     return $form;
@@ -145,6 +161,7 @@ class SWFurtherReadingBlock extends BlockBase {
     $config_keys = [
       'story_query_weight_limit',
       'story_query_date_limit',
+      'related_articles_date_limit',
     ];
     foreach ($config_keys as $config_key) {
       $this->configuration[$config_key] = $values[$config_key];
@@ -180,6 +197,7 @@ class SWFurtherReadingBlock extends BlockBase {
       $node->id(),
       $config['story_query_weight_limit'],
       $config['story_query_date_limit'],
+      $config['related_articles_date_limit'],
     ];
     $cache_id = implode(':', $cache_ids);
     if (!empty(SWFurtherReadingBlock::$blockBody[$cache_id])) {
@@ -292,9 +310,16 @@ class SWFurtherReadingBlock extends BlockBase {
         }
       }
     }
-    // Only keep the published articles.
-    // @todo: Enforce a "shelf life" on these articles?
     if (!empty($nids)) {
+      $config = $this->getConfiguration();
+      if (!empty($config['related_articles_date_limit'])) {
+        $time_limit = $this->requestTime - ($config['related_articles_date_limit'] * 86400); // (60 * 60 * 24 = seconds/day)
+        // Story is too old for this field to matter, bail now.
+        if ($this->story->get('created')->value < $time_limit) {
+          return;
+        }
+      }
+      // Only keep the published articles.
       $query = \Drupal::database()->select('node_field_data', 'nfd')
         ->fields('nfd', ['nid'])
         ->condition('nfd.status', 1, '=')
@@ -529,7 +554,7 @@ class SWFurtherReadingBlock extends BlockBase {
     // Enforce the date limit (if any).
     if (!empty($config['story_query_date_limit'])) {
       $request_time = \Drupal::requestStack()->getCurrentRequest()->server->get('REQUEST_TIME');
-      $time_limit = $request_time - ($config['story_query_date_limit'] * 86400); // (60 * 60 * 24 = seconds/day)
+      $time_limit = $this->requestTime - ($config['story_query_date_limit'] * 86400); // (60 * 60 * 24 = seconds/day)
       $query->condition('nfd.created', $time_limit, '>=');
     }
     $query->orderBy('nfd.created', 'DESC');
