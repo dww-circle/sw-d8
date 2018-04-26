@@ -22,7 +22,6 @@ class AdminFrontPageForm extends FormBase {
    * {@inheritdoc}
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
-    $state_values = $this->getSiteState();
     $urls = [
       ':daily_url' => Url::fromUri('internal:/draft/daily')->toString(),
       ':weekend_url' => Url::fromUri('internal:/draft/weekend')->toString(),
@@ -52,18 +51,14 @@ class AdminFrontPageForm extends FormBase {
         [$this, 'submitForm'],
       ],
     ];
-    if (!empty($state_values['sw_front_page_target_draft'])) {
+    $state = $this->getSiteState();
+    if (!empty($state['sw_front_page_target_draft'])) {
+      $placeholders = $this->getSiteStatePlaceholders();
       $form['help_delay'] = [
         '#weight' => -2,
-        '#markup' => $this->t(
-          'Draft-to-live for %target has been scheduled to run at midnght by %account.',
-          [
-            '%target' => $state_values['sw_front_page_target_draft'],
-            '%account' => $state_values['sw_front_page_request_uid'],
-          ]
-        ),
+        '#markup' => $this->t('Draft-to-live for %target has been scheduled to run at midnght by %account.', $placeholders),
       ];
-      $form['target_draft']['#default_value'] = $state_values['sw_front_page_target_draft'];
+      $form['target_draft']['#default_value'] = $state['sw_front_page_target_draft'];
       $form['actions']['delay']['#disabled'] = TRUE;
       $form['actions']['cancel'] = [
         '#type' => 'submit',
@@ -104,23 +99,21 @@ class AdminFrontPageForm extends FormBase {
     $form_state->setRedirect('sw.admin.content.front_page.now');
   }
 
+  /**
+   * Submit callback to cancel a pending delayed draft-to-live.
+   */
   public function cancelDelay(array &$form, FormStateInterface $form_state) {
-    $values = $this->getSiteState();
+    $placeholders = $this->getSiteStatePlaceholders();
     $this->deleteSiteState();
-    drupal_set_message(
-      $this->t('Canceled the delayed draft-to-live for %target scheduled by %account.', [
-                 '%target' => $values['sw_front_page_target_draft'],
-                 // @todo Load user and print label?
-                 '%account' => $values['sw_front_page_request_uid'],
-               ])
-    );
-
+    drupal_set_message($this->t('Canceled the delayed draft-to-live for %target scheduled by %account.', $placeholders));
   }
 
+  /**
+   * Save useful values from the form state into the per-user temp storage.
+   */
   protected function saveTempState(FormStateInterface $form_state) {
-    $form_values = $form_state->getValues();
     $values = [
-      'target_draft' => $form_values['target_draft'],
+      'target_draft' => $form_state->getValue('target_draft'),
     ];
     $this->setTempStoreData($values);
   }

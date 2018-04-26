@@ -31,14 +31,9 @@ class AdminFrontPageNowConfirmForm extends ConfirmFormBase {
    */
   public function getDescription() {
     $cancel_txt = '';
-    $state = $this->getSiteState();
-    if (!empty($state['sw_front_page_target_draft'])) {
-      $placeholders = [
-        '%target' => $state['sw_front_page_target_draft'],
-        // @todo: Load user and print with a label?
-        '%account' => $state['sw_front_page_request_uid'],
-      ];
-      $cancel_txt = '<p>' . $this->t('This is a draft-to-live for %target scheduled by %account that will be canceled if you proceed.', $placeholders) . '</p>';
+    $placeholders = $this->getSiteStatePlaceholders();
+    if (!empty($placeholders['%target'])) {
+      $cancel_txt = '<p>' . $this->t('There is a draft-to-live for %target scheduled by %account that will be canceled if you proceed.', $placeholders) . '</p>';
     }
     return $this->getBaseDescription()
       . $cancel_txt
@@ -57,13 +52,9 @@ class AdminFrontPageNowConfirmForm extends ConfirmFormBase {
    * {@inheritdoc}
    */
   public function submitForm(array &$form, FormStateInterface $form_state) {
-    $state = $this->getSiteState();
-    if (!empty($state['sw_front_page_target_draft'])) {
+    $placeholders = $this->getSiteStatePlaceholders();
+    if (!empty($placeholders['%target'])) {
       $this->deleteSiteState();
-      $placeholders = [
-        '%target' => $state['sw_front_page_target_draft'],
-        '%account' => $state['sw_front_page_request_uid'],
-      ];
       drupal_set_message($this->t('Canceled the draft-to-live for %target scheduled by %account', $placeholders), 'warning');
     }
     $data = $this->getTempStoreData();

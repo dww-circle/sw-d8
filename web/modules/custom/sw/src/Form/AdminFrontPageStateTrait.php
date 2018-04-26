@@ -133,6 +133,25 @@ trait AdminFrontPageStateTrait {
   }
 
   /**
+   * Get the site-wide state related to draft-to-live an array of placeholders.
+   *
+   * @return array
+   *   Array of placeholder/value pairs saved in the site-wide state.
+   */
+  protected function getSiteStatePlaceholders() {
+    $placeholders = [];
+    $state = $this->siteState->getMultiple($this->siteStateKeys);
+    if (!empty($state['sw_front_page_target_draft'])) {
+      $placeholders['%target'] = $state['sw_front_page_target_draft'];
+    }
+    if (!empty($state['sw_front_page_request_uid'])) {
+      $account = User::load($state['sw_front_page_request_uid']);
+      $placeholders['%account'] = $account->label();
+    }
+    return $placeholders;
+  }
+
+  /**
    * Get all site-wide state related to draft-to-live.
    */
   protected function deleteSiteState() {
