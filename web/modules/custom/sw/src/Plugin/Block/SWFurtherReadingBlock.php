@@ -3,6 +3,7 @@
 namespace Drupal\sw\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
+use Drupal\Core\Form\FormStateInterface;
 use Drupal\taxonomy\TermInterface;
 use Drupal\node\NodeInterface;
 
@@ -103,6 +104,56 @@ class SWFurtherReadingBlock extends BlockBase {
   /**
    * {@inheritdoc}
    */
+  public function defaultConfiguration() {
+    return [
+      'story_query_weight_limit' => 0,
+      'story_query_date_limit' => 0,
+    ];
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function blockForm($form, FormStateInterface $form_state) {
+    $form = parent::blockForm($form, $form_state);
+    $config = $this->getConfiguration();
+
+    $form['story_query_weight_limit'] = [
+      '#type' => 'number',
+      '#title' => $this->t('Story weight limit'),
+      '#description' => $this->t('Stories must be lighter than this weight to be shown.'),
+      '#default_value' => isset($config['story_query_weight_limit']) ? $config['story_query_weight_limit'] : 0,
+      '#min' => -10,
+      '#max' => 10,
+    ];
+    $form['story_query_date_limit'] = [
+      '#type' => 'number',
+      '#title' => $this->t('Date cutoff limit'),
+      '#description' => $this->t('Number of days in the past to draw articles from, or 0 for no date limit.'),
+      '#default_value' => isset($config['story_query_date_limit']) ? $config['story_query_date_limit'] : 0,
+      '#min' => 0,
+    ];
+    return $form;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function blockSubmit($form, FormStateInterface $form_state) {
+    parent::blockSubmit($form, $form_state);
+    $values = $form_state->getValues();
+    $config_keys = [
+      'story_query_weight_limit',
+      'story_query_date_limit',
+    ];
+    foreach ($config_keys as $config_key) {
+      $this->configuration[$config_key] = $values[$config_key];
+    }
+  }
+
+  /**
+   * {@inheritdoc}
+   */
   public function build() {
     // This block must be cached separately for every page/route. Define this
     // render array here so that if we bail early, the render system knows to
@@ -122,9 +173,17 @@ class SWFurtherReadingBlock extends BlockBase {
       return $block;
     }
 
+    $config = $this->getConfiguration();
+
     // Check our static cache to avoid re-building everything for the 2nd block on the page.
-    if (!empty(SWFurtherReadingBlock::$blockBody[$node->id()])) {
-      return SWFurtherReadingBlock::$blockBody[$node->id()];
+    $cache_ids = [
+      $node->id(),
+      $config['story_query_weight_limit'],
+      $config['story_query_date_limit'],
+    ];
+    $cache_id = implode(':', $cache_ids);
+    if (!empty(SWFurtherReadingBlock::$blockBody[$cache_id])) {
+      return SWFurtherReadingBlock::$blockBody[$cache_id];
     }
 
     $this->story = $node;
@@ -167,7 +226,7 @@ class SWFurtherReadingBlock extends BlockBase {
     // Now that we've done all that work, stash this render array in our static
     // cache so the 2nd block on the page (in the story footer) doesn't have to
     // re-do everything.
-    SWFurtherReadingBlock::$blockBody[$node->id()] = $block;
+    SWFurtherReadingBlock::$blockBody[$cache_id] = $block;
 
     return $block;
   }
@@ -449,6 +508,8 @@ class SWFurtherReadingBlock extends BlockBase {
       return [];
     }
     $num_todo = $this->maxRelated - count($this->relatedArticles);
+    $config = $this->getConfiguration();
+
     $query = \Drupal::database()->select('node_field_data', 'nfd')
       ->fields('nfd', ['nid']);
     $query->join('taxonomy_index', 'ti', 'nfd.nid = ti.nid');
@@ -456,14 +517,20 @@ class SWFurtherReadingBlock extends BlockBase {
     // Limit ourselves to published articles.
     $query->condition('nfd.status', 1, '=');
     $query->condition('ti.tid', $valid_tids, 'IN');
-    // Limit ourselves to stories more "important" (lighter) than or equal to 0.
-    // @todo: Make this configurable?
-    $query->condition('nfsw.field_story_weight_value', 0, '<=');
+    // Limit the list to stories more important (lighter) than a given weight.
+    $query->condition('nfsw.field_story_weight_value', $config['story_query_weight_limit'], '<=');
     // Don't let the current story appear as related to itself.
     $query->condition('nfd.nid', $this->story->id(), '!=');
-    // Prevent duplicates (e.g. from main vs. secondary topics pointing to the same stories in different phases).
+    // Prevent duplicates (e.g. from main vs. secondary topics pointing to the
+    // same stories in different phases).
     if (!empty($this->relatedArticles)) {
       $query->condition('nfd.nid', $this->relatedArticles, 'NOT IN');
+    }
+    // Enforce the date limit (if any).
+    if (!empty($config['story_query_date_limit'])) {
+      $request_time = \Drupal::requestStack()->getCurrentRequest()->server->get('REQUEST_TIME');
+      $time_limit = $request_time - ($config['story_query_date_limit'] * 86400); // (60 * 60 * 24 = seconds/day)
+      $query->condition('nfd.created', $time_limit, '>=');
     }
     $query->orderBy('nfd.created', 'DESC');
     $query->range(0, $num_todo);
