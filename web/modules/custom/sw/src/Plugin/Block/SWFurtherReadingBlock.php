@@ -537,6 +537,7 @@ class SWFurtherReadingBlock extends BlockBase {
 
     $query = \Drupal::database()->select('node_field_data', 'nfd')
       ->fields('nfd', ['nid']);
+    $query->addExpression("DATE_FORMAT((DATE_ADD('19700101', INTERVAL nfd.created SECOND) + INTERVAL -18000 SECOND), '%Y%m%d')", 'created_day');
     $query->join('taxonomy_index', 'ti', 'nfd.nid = ti.nid');
     $query->join('node__field_story_weight', 'nfsw', 'nfd.nid = nfsw.entity_id AND nfd.vid = nfsw.revision_id');
     // Limit ourselves to published articles.
@@ -557,7 +558,8 @@ class SWFurtherReadingBlock extends BlockBase {
       $time_limit = $this->requestTime - ($config['story_query_date_limit'] * 86400); // (60 * 60 * 24 = seconds/day)
       $query->condition('nfd.created', $time_limit, '>=');
     }
-    $query->orderBy('nfd.created', 'DESC');
+    $query->orderBy('created_day', 'DESC');
+    $query->orderBy('nfsw.field_story_weight_value', 'ASC');
     $query->range(0, $num_todo);
     $nids = $query->execute()->fetchCol();
     if (!empty($nids)) {
