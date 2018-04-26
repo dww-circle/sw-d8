@@ -5,6 +5,7 @@ namespace Drupal\sw\Form;
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\State\StateInterface;
+use Drupal\Core\Url;
 
 class AdminFrontPageForm extends FormBase {
 
@@ -22,16 +23,15 @@ class AdminFrontPageForm extends FormBase {
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
     $state_values = $this->getSiteState();
-    // @todo: Better links for these.
     $urls = [
-      '@daily_url' => '/draft/daily',
-      '@weekend_url' => '/draft/weekend',
-      '@front_url' => '/front',
+      ':daily_url' => Url::fromUri('internal:/draft/daily')->toString(),
+      ':weekend_url' => Url::fromUri('internal:/draft/weekend')->toString(),
+      ':front_url' => Url::fromRoute('<front>')->toString(),
     ];
     $form['help'] = [
       '#weight' => '-4',
       '#prefix' => '<p>',
-      '#markup' => t('This form lets you clone one of the draft front pages (either <a href="@daily_url">Daily</a> or <a href="@weekend_url">Weekend</a>) to the <a href="@front_url">live front page</a>.', $urls),
+      '#markup' => t('This form lets you clone one of the draft front pages (either <a href=":daily_url">Daily</a> or <a href=":weekend_url">Weekend</a>) to the <a href=":front_url">live front page</a>.', $urls),
       '#suffix' => '</p>',
     ];
     $form['target_draft'] = [
