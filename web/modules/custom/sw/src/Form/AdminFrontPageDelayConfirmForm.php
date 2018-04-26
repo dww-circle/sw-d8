@@ -4,10 +4,12 @@ namespace Drupal\sw\Form;
 
 use Drupal\Core\Form\ConfirmFormBase;
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\State\StateInterface;
 
 class AdminFrontPageDelayConfirmForm extends ConfirmFormBase {
 
-  use SWAdminFrontPageConfirmFormTrait;
+  use AdminFrontPageStateTrait;
+  use AdminFrontPageConfirmFormTrait;
 
   /**
    * {@inheritdoc}
@@ -20,20 +22,37 @@ class AdminFrontPageDelayConfirmForm extends ConfirmFormBase {
    * {@inheritdoc}
    */
   public function getQuestion() {
-    return $this->t('Are you sure you want to make the draft front page live at midnight?');
+    $data = $this->getTempStoreData();
+    return $this->t('Are you sure you want to make the @target front page live at midnight?', ['@target' => $data['target_draft']]);
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function getDescription() {
+    return $this->getBaseDescription()
+      . '<p>' . $this->t('This can only be canceled between now and midnight.') . '</p>';
   }
 
   /**
    * {@inheritdoc}
    */
   public function getConfirmText() {
-    return $this->t('Move draft to live at midnight');
+    $data = $this->getTempStoreData();
+    return $this->t('Move @target to live at midnight', ['@target' => $data['target_draft']]);
   }
 
   /**
    * {@inheritdoc}
    */
   public function submitForm(array &$form, FormStateInterface $form_state) {
+    $data = $this->getTempStoreData();
+    $this->deleteTempStoreData();
+    $values = [
+      'sw_front_page_target_draft' => $data['target_draft'],
+      'sw_front_page_request_uid' => $this->currentUser()->id(),
+    ];
+    $this->setSiteState($values);
     drupal_set_message($this->t('The draft front page will go live at midnight.'));
     $form_state->setRedirect('sw.admin.content.front_page');
   }
