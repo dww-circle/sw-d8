@@ -33,6 +33,11 @@ trait AdminFrontPageConfirmFormTrait {
    * {@inheritdoc}
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
+    $data = $this->getTempStoreData();
+    if (empty($data['target_draft'])) {
+      drupal_set_message($this->t('You must first select which draft page to operate on.'), 'error');
+      return $this->redirect('sw.admin.content.front_page');
+    }
     $form = parent::buildForm($form, $form_state);
     $form['actions']['cancel'] = [
       '#type' => 'submit',
