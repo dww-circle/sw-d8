@@ -1007,9 +1007,7 @@ main {
     line-height: 16px; }
 
 .block-sw-recent-stories-block {
-  border-top: 1px solid;
-  margin-bottom: 60px;
-  padding-top: 44px; }
+  margin-bottom: 60px; }
   @media (min-width: 736px) {
     .block-sw-recent-stories-block {
       display: -ms-grid;
