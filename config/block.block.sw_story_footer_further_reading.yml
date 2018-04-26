@@ -18,6 +18,9 @@ settings:
   label: 'Further Reading'
   provider: sw
   label_display: visible
+  story_query_weight_limit: 0
+  story_query_date_limit: 0
+  related_articles_date_limit: 90
 visibility:
   node_type:
     id: node_type
