@@ -1,0 +1,4 @@
+administer SW:
+  title: 'Administer SW'
+  description: 'Administer SW front pages.'
+  restrict access: TRUE

@@ -12,3 +12,10 @@ sw.topic:
     _title: 'Topics'
   requirements:
     _permission: 'access content'
+admin.content.sw_front_page:
+  path: '/admin/content/sw-front-page'
+  defaults:
+    _title: 'Administer SW front page'
+    _form: '\Drupal\sw\Form\AdminFrontPageForm'
+  requirements:
+    _permission: 'administer SW'
