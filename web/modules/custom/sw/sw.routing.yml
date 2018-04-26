@@ -12,10 +12,24 @@ sw.topic:
     _title: 'Topics'
   requirements:
     _permission: 'access content'
-admin.content.sw_front_page:
-  path: '/admin/content/sw-front-page'
+sw.admin.content.front_page:
+  path: '/admin/content/front-page'
   defaults:
     _title: 'Administer SW front page'
     _form: '\Drupal\sw\Form\AdminFrontPageForm'
+  requirements:
+    _permission: 'administer SW'
+sw.admin.content.front_page.delay:
+  path: '/admin/content/front-page/delay'
+  defaults:
+    _title: 'Are you sure you want to make the draft front page live at midnight?'
+    _form: '\Drupal\sw\Form\AdminFrontPageDelayConfirmForm'
+  requirements:
+    _permission: 'administer SW'
+sw.admin.content.front_page.now:
+  path: '/admin/content/front-page/now'
+  defaults:
+    _title: 'Are you sure you want to make the draft front page live right now?'
+    _form: '\Drupal\sw\Form\AdminFrontPageNowConfirmForm'
   requirements:
     _permission: 'administer SW'

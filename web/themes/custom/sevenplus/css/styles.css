@@ -36,3 +36,17 @@
 .views-exposed-form fieldset .form-item {
   float: none;
 }
+
+.sw-admin-front-page-delay-confirm .button--primary {
+  color: #000;
+  text-shadow: none;
+  background-color: #f1e314;
+  background-image: linear-gradient(to bottom, #f1e314, #aba10e);
+  border-color: #88810c;
+}
+
+.sw-admin-front-page-now-confirm .button--primary {
+  background-color: #EA3223;
+  background-image: linear-gradient(to bottom, #EA3223, #9a2016);
+  border-color: #75140b;
+}
