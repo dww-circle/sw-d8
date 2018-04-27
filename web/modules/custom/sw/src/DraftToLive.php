@@ -75,9 +75,7 @@ class DraftToLive {
   public function execute($verbose = FALSE) {
     $this->initializeFrontPages();
     $this->archiveCurrentFrontPage($verbose);
-    //$this->cloneDraftFrontPage($verbose);
-    //$this->publishClonedFrontPage($verbose);
-    //$this->replaceFrontPage($verbose);
+    $this->cloneDraftToLive($verbose);
   }
 
   /**
@@ -110,7 +108,7 @@ class DraftToLive {
    * @param boolean $verbose
    *   Optional flag to control printing verbose messages to the screen.
    */
-  public function archiveCurrentFrontPage($verbose = FALSE) {
+  protected function archiveCurrentFrontPage($verbose = FALSE) {
     $client = \Drupal::httpClient();
     $url = Url::fromRoute('<front>', [], ['absolute' => TRUE]);
     $paragraphs = $this->liveFrontPageNode->get('field_slices')->referencedEntities();
@@ -181,6 +179,33 @@ class DraftToLive {
     }
     catch (RequestException $e) {
       // @todo Deal with errors.
+    }
+  }
+
+  /**
+   * Clone the paragraphs from the draft page and put them into the live page.
+   *
+   * @param boolean $verbose
+   *   Optional flag to control printing verbose messages to the screen.
+   */
+  protected function cloneDraftToLive($verbose = FALSE) {
+    $paragraphs = $this->draftFrontPageNode->get('field_slices')->referencedEntities();
+    $clones = [];
+    foreach ($paragraphs as $paragraph) {
+      $clone = $paragraph->createDuplicate();
+      $clone->save();
+      $clones[] = $clone;
+    }
+    $this->liveFrontPageNode->setNewRevision(TRUE);
+    $this->liveFrontPageNode->set('field_slices', $clones);
+    $this->liveFrontPageNode->save();
+    if ($verbose) {
+      $placeholders = [
+        '@target' => $this->targetDraft,
+        ':draft_url' => $this->draftFrontPageNode->toUrl('canonical')->toString(),
+        ':live_url' => $this->liveFrontPageNode->toUrl('canonical')->toString(),
+      ];
+      drupal_set_message(t('Replaced slices from <a href=":draft_url">@target</a> into the <a href=":live_url">live front page</a>.', $placeholders));
     }
   }
 
