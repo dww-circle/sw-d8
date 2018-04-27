@@ -1,10 +1,17 @@
 uuid: ab30d9ba-3770-420d-bd29-1e6116961f45
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
 _core:
   default_config_hash: KuyA4NHPXcmKAjRtwa0vQc2ZcyrUJy6IlS2TAyMNRbc
-name: Page
+name: 'Basic page'
 type: page
 description: 'A simple, 1-column static page, like the "About" page.'
 help: ''
