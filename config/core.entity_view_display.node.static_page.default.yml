@@ -3,24 +3,35 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.static_page.field_archive_date
     - field.field.node.static_page.field_static_body
     - node.type.static_page
   module:
+    - datetime
     - user
 id: node.static_page.default
 targetEntityType: node
 bundle: static_page
 mode: default
 content:
-  field_static_body:
+  field_archive_date:
     weight: 0
+    label: hidden
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_static_body:
+    weight: 1
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: basic_string
     region: content
   links:
-    weight: 1
+    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }

@@ -1,0 +1,21 @@
+uuid: 866aac02-914e-400e-8690-f83eeccf8089
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_archive_date
+    - node.type.static_page
+  module:
+    - datetime
+id: node.static_page.field_archive_date
+field_name: field_archive_date
+entity_type: node
+bundle: static_page
+label: 'Archive date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime
