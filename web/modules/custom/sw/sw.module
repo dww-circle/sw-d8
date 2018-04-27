@@ -14,8 +14,10 @@ use Drupal\node\Entity\Node;
 use Drupal\node\NodeInterface;
 use Drupal\taxonomy\Entity\Term;
 use Drupal\taxonomy\TermInterface;
+use Drupal\user\Entity\User;
 use Drupal\views\ViewExecutable;
 
+use Drupal\sw\DraftToLive;
 use Drupal\sw\Plugin\Block\SWTodaysStoriesBlock;
 
 const SW_SECTION_EDITORIALS_TID = 11;
@@ -995,6 +997,38 @@ function sw_views_pre_render(ViewExecutable $view) {
           }
         }
       }
+    }
+  }
+}
+
+/**
+ * Implements hook_cron().
+ *
+ * Handles delayed draft-to-live.
+ */
+function sw_cron() {
+  $state_keys = ['sw_front_page_target_draft', 'sw_front_page_request_uid'];
+  $values = \Drupal::state()->getMultiple($state_keys);
+
+  // Anytime cron is running when the hour is between 0 (midnight) and 3am, if
+  // there's a pending draft-to-live, run it.
+  if (!empty($values['sw_front_page_target_draft']) && date('G') < 3) {
+
+    // To ensure draft-to-live runs as the user who submitted the form, we
+    // need to safely impersonate them here. This way, all node access checks
+    // will do the right things, even when cron is being triggered anonymously.
+    $user = User::load($values['sw_front_page_request_uid']);
+    if (!empty($user)) {
+      user_login_finalize($user);
+
+      $draft_to_live = new DraftToLive($values['sw_front_page_target_draft'], $values['sw_front_page_request_uid']);
+      $draft_to_live->execute(FALSE); // Don't render messages to the screen.
+
+      \Drupal::state()->deleteMultiple($state_keys);
+
+      // Return to user 0 (anonymous)
+      $user = User::load(0);
+      user_login_finalize($user);
     }
   }
 }
