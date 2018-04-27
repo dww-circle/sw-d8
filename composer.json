@@ -121,6 +121,10 @@
       "drupal/migrate_upgrade": {
         "[#2935225-2] Fix to d6_term_node_revision handling (companion to core issue 2934799)" : "https://www.drupal.org/files/issues/2935225-2-migrate_upgrade-fix_to_d6_term_node_revision_handling.patch"
       },
+      "drupal/static_page": {
+        "[#2966642-2] Configure which field to use for static page content" : "https://www.drupal.org/files/issues/2018-04-26/2966642-2.static_page_select_field.patch",
+        "[#2966644-2] Missing page title for settings page" : "https://www.drupal.org/files/issues/2018-04-26/2966644-2.static_page_settings_page_title.patch"
+      },
       "drupal/redirect": {
         "[#2955400-4] d6_path_redirect migration source has to define the *correct* source_module annotation" : "https://www.drupal.org/files/issues/2018-03-22/2955400-4.d6_path_redirect-source_module.patch"
       },
