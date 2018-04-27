@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "5dad35bb4aa10fd56b700150dc560042",
+    "content-hash": "83a012d4f6ee13edae76e71d221b7a0b",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3278,7 +3278,8 @@
                 },
                 "patches_applied": {
                     "[#2966642-2] Configure which field to use for static page content": "https://www.drupal.org/files/issues/2018-04-26/2966642-2.static_page_select_field.patch",
-                    "[#2966644-2] Missing page title for settings page": "https://www.drupal.org/files/issues/2018-04-26/2966644-2.static_page_settings_page_title.patch"
+                    "[#2966644-2] Missing page title for settings page": "https://www.drupal.org/files/issues/2018-04-26/2966644-2.static_page_settings_page_title.patch",
+                    "[#2966660-2] Support viewing node revisions of static page nodes": "https://www.drupal.org/files/issues/2018-04-26/2966660-2.static_page_view_node_revisions.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",

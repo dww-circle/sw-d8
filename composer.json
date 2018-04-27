@@ -123,7 +123,8 @@
       },
       "drupal/static_page": {
         "[#2966642-2] Configure which field to use for static page content" : "https://www.drupal.org/files/issues/2018-04-26/2966642-2.static_page_select_field.patch",
-        "[#2966644-2] Missing page title for settings page" : "https://www.drupal.org/files/issues/2018-04-26/2966644-2.static_page_settings_page_title.patch"
+        "[#2966644-2] Missing page title for settings page" : "https://www.drupal.org/files/issues/2018-04-26/2966644-2.static_page_settings_page_title.patch",
+        "[#2966660-2] Support viewing node revisions of static page nodes" : "https://www.drupal.org/files/issues/2018-04-26/2966660-2.static_page_view_node_revisions.patch"
       },
       "drupal/redirect": {
         "[#2955400-4] d6_path_redirect migration source has to define the *correct* source_module annotation" : "https://www.drupal.org/files/issues/2018-03-22/2955400-4.d6_path_redirect-source_module.patch"
