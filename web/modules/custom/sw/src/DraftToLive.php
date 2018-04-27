@@ -31,6 +31,27 @@ class DraftToLive {
   protected $requestUID;
 
   /**
+   * The fully loaded Node object for the live front page.
+   *
+   * @var \Drupal\node\Entity\Node
+   */
+  protected $liveFrontPageNode;
+
+  /**
+   * The fully loaded Node object for the target draft front page.
+   *
+   * @var \Drupal\node\Entity\Node
+   */
+  protected $draftFrontPageNode;
+
+  /**
+   * The alias storage service object.
+   *
+   * @var \Drupal\Core\Path\AliasStorage
+   */
+  protected $aliasStorage;
+
+  /**
    * Constructor.
    *
    * @param string $target_draft
@@ -41,6 +62,8 @@ class DraftToLive {
   public function __construct($target_draft, $request_uid) {
     $this->targetDraft = $target_draft;
     $this->requestUID = $request_uid;
+    // @todo Maybe this should all be dependency injection fun.
+    $this->aliasStorage = \Drupal::service('path.alias_storage');
   }
 
   /**
@@ -50,10 +73,35 @@ class DraftToLive {
    *   Optional flag to control if the operations should print verbose messages to the screen.
    */
   public function execute($verbose = FALSE) {
+    $this->initializeFrontPages();
     $this->archiveCurrentFrontPage($verbose);
     //$this->cloneDraftFrontPage($verbose);
     //$this->publishClonedFrontPage($verbose);
     //$this->replaceFrontPage($verbose);
+  }
+
+  /**
+   * Load a node object with a given URL path alias.
+   *
+   * @param string $path_alias
+   *   The URL path alias to search for.
+   *
+   * @return \Drupal\node\Entity\Node
+   *   The fully loaded node object with the given alias, or NULL if not found.
+   */
+  protected function loadNodeFromAlias($path_alias) {
+    $alias = $this->aliasStorage->load(['alias' => $path_alias]);
+    if (!empty($alias)) {
+      $matches = [];
+      if (preg_match('@/node/(\d+)@', $alias['source'], $matches)) {
+        return Node::load($matches[1]);
+      }
+    }
+  }
+
+  protected function initializeFrontPages() {
+    $this->liveFrontPageNode = $this->loadNodeFromAlias('/live');
+    $this->draftFrontPageNode = $this->loadNodeFromAlias($this->targetDraft);
   }
 
   /**
@@ -65,31 +113,42 @@ class DraftToLive {
   public function archiveCurrentFrontPage($verbose = FALSE) {
     $client = \Drupal::httpClient();
     $url = Url::fromRoute('<front>', [], ['absolute' => TRUE]);
-    // @todo Load the actual front page entity, search through the slices for the active date.
-    $year = date('Y');
-    $month = date('m');
-    $day = date('d');
+    $paragraphs = $this->liveFrontPageNode->get('field_slices')->referencedEntities();
+    // Can't assume the slice we care about is first, since there might be a
+    // banner ad or something.
+    foreach ($paragraphs as $paragraph) {
+      $paragraph_type = $paragraph->getType();
+      if ($paragraph_type == 'today' || $paragraph_type == 'weekend') {
+        $date = $paragraph->get('field_date')->value;
+        break;
+      }
+    }
+    if (empty($date)) {
+      // @todo: This is basically a fatal error.
+      $year = date('Y');
+      $month = date('m');
+      $day = date('d');
+    }
+    else {
+      list($year, $month, $day) = explode('-', $date);
+    }
     $url_alias = "/archive/front/$year/$month/$day";
-    $alias_storage = \Drupal::service('path.alias_storage');
     try {
       $request = $client->get($url->toString());
       $status = $request->getStatusCode();
       $raw_html = $request->getBody()->getContents();
-      $alias = $alias_storage->load(['alias' => $url_alias]);
+      $node = $this->loadNodeFromAlias($url_alias);
       // If we already have this front page archived, we want to create a new revision.
-      if (!empty($alias)) {
-        // 'source' will be something like '/node/xxxx', so strip off the first
-        // 6 characters ('/node/') and we have the nid.
-        $nid = substr($alias['source'], 6);
-        $node = Node::load($nid);
+      if (!empty($node)) {
+        $new_node = FALSE;
         $node->setNewRevision(TRUE);
         $node->setRevisionUserId($this->requestUID);
         $node->revision_log = t('Draft-to-live is updating an existing front page archive.');
         $node->set('field_static_body', $raw_html);
-        $node->save();
       }
       // Otherwise, create a new node.
       else {
+        $new_node = TRUE;
         $node = Node::create(
           [
             'type' => 'static_page',
@@ -102,21 +161,21 @@ class DraftToLive {
             'path' => $url_alias,
           ]
         );
-        $node->save();
       }
+      $node->save();
       // @todo Modify the body based on the actual NID + path alias.
       // @todo Harvest + save CSS+JS?
       if ($verbose) {
-        $archive_url = Url::fromRoute('entity.node.canonical', ['node' => $node->id()]);
         $placeholders = [
           '@nid' => $node->id(),
-          ':archive_url' => $archive_url->toString(),
+          ':canonical_url' => $node->toUrl('canonical')->toString(),
+          ':edit_url' => $node->toUrl('edit-form')->toString(),
         ];
-        if (!empty($alias)) {
-          drupal_set_message(t('Updated the existing <a href=":archive_url">static page</a> (nid: @nid) to archive the current front page.', $placeholders));
+        if ($new_node) {
+          drupal_set_message(t('Created a new <a href=":canonical_url">static page</a> (nid: @nid, <a href=":edit_url">edit</a>) to archive the current front page.', $placeholders));
         }
         else {
-          drupal_set_message(t('Created a <a href=":archive_url">static page</a> (nid: @nid) to archive the current front page.', $placeholders));
+          drupal_set_message(t('Updated the existing <a href=":canonical_url">static page</a> (nid: @nid, <a href=":edit_url">edit</a>) to archive the current front page.', $placeholders));
         }
       }
     }
