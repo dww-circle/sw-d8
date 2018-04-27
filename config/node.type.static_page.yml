@@ -1,0 +1,17 @@
+uuid: cd219759-4634-4fc2-8b85-308438d1e132
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Static page'
+type: static_page
+description: 'A page of raw HTML code. Used for the front page archive. You probably don''t want to create these manually.'
+help: 'The body field defines the *entire* payload of the page. There are no regions, blocks, menus, logo, etc that will be automatically added.'
+new_revision: false
+preview_mode: 1
+display_submitted: false

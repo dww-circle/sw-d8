@@ -1,0 +1,19 @@
+uuid: 6c2eab51-3edf-48a6-a2ce-b2c552a2e32f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_static_body
+    - node.type.static_page
+id: node.static_page.field_static_body
+field_name: field_static_body
+entity_type: node
+bundle: static_page
+label: Body
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long
