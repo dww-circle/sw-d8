@@ -123,14 +123,14 @@ class DraftToLive {
         break;
       }
     }
-    if (empty($date)) {
-      // @todo: This is basically a fatal error.
+    if (!empty($date)) {
+      list($year, $month, $day) = explode('-', $date);
+    }
+    // @todo: This is basically a fatal error.
+    else {
       $year = date('Y');
       $month = date('m');
       $day = date('d');
-    }
-    else {
-      list($year, $month, $day) = explode('-', $date);
     }
     $url_alias = "/archive/front/$year/$month/$day";
     try {
@@ -144,7 +144,6 @@ class DraftToLive {
         $node->setNewRevision(TRUE);
         $node->setRevisionUserId($this->requestUID);
         $node->revision_log = t('Draft-to-live is updating an existing front page archive.');
-        $node->set('field_static_body', $raw_html);
       }
       // Otherwise, create a new node.
       else {
@@ -153,14 +152,15 @@ class DraftToLive {
           [
             'type' => 'static_page',
             'title' => "SocialistWorker raw front page from $year-$month-$day",
-            'field_static_body' => [
-              'value' => $raw_html,
-            ],
             'status' => 1,
             'uid' => $this->requestUID,
             'path' => $url_alias,
           ]
         );
+      }
+      $node->set('field_static_body', $raw_html);
+      if (!empty($date)) {
+        $node->set('field_archive_date', $date);
       }
       $node->save();
       // @todo Modify the body based on the actual NID + path alias.
