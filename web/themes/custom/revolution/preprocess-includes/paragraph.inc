@@ -72,9 +72,11 @@ function revolution_preprocess_paragraph__today(&$variables) {
     $count = $variables['content']['field_articles']['#items']->count();
     $nodes = [];
     for ($i = 0; $i < $count; $i++) {
-      $nid = $variables['content']['field_articles'][$i]['#plain_text'];
-      $view_mode = _revolution_view_mode_image_chooser($i, $med_img_num);
-      $nodes[$view_mode][] =  $nid;
+      if (!empty($variables['content']['field_articles'][$i]['#plain_text'])) {
+        $nid = $variables['content']['field_articles'][$i]['#plain_text'];
+        $view_mode = _revolution_view_mode_image_chooser($i, $med_img_num);
+        $nodes[$view_mode][] = $nid;
+      }
     }
 
     $group = _revolution_story_groups_render($nodes);
@@ -105,19 +107,17 @@ function _revolution_view_mode_image_chooser($i, $med_img_num) {
   return $view_mode;
 }
 
-/*
+/**
  * Custom function to render node.
  */
 function _revolution_render_node($nid, $view_mode) {
-  $entity_type = 'node';
   $node = Node::load($nid);
-  $view_builder = \Drupal::entityTypeManager()->getViewBuilder($entity_type);
-  $build = $view_builder->view($node, $view_mode);
-  $output = render($build);
-
-  return $output;
+  if (!empty($node)) {
+    $view_builder = \Drupal::entityTypeManager()->getViewBuilder('node');
+    $build = $view_builder->view($node, $view_mode);
+    return render($build);
+  }
 }
-
 
 /*
  * Custom function to render the grouped stories.
