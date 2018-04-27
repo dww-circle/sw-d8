@@ -124,6 +124,8 @@ class DraftToLive {
   protected function archiveCurrentFrontPage($verbose = FALSE) {
     $client = \Drupal::httpClient();
     $url = Url::fromRoute('<front>', [], ['absolute' => TRUE]);
+    $current_time = \Drupal::requestStack()->getCurrentRequest()->server->get('REQUEST_TIME');
+
     $paragraphs = $this->liveFrontPageNode->get('field_slices')->referencedEntities();
     // Can't assume the slice we care about is first, since there might be a
     // banner ad or something.
@@ -139,9 +141,9 @@ class DraftToLive {
     }
     // @todo: This is basically a fatal error.
     else {
-      $year = date('Y');
-      $month = date('m');
-      $day = date('d');
+      $year = format_date($current_time, 'custom', 'Y');
+      $month = format_date($current_time, 'custom', 'm');
+      $day = format_date($current_time, 'custom', 'd');
     }
     $url_alias = "/archive/front/$year/$month/$day";
     try {
@@ -152,9 +154,7 @@ class DraftToLive {
       // If we already have this front page archived, we want to create a new revision.
       if (!empty($node)) {
         $new_node = FALSE;
-        $node->setNewRevision(TRUE);
-        $node->setRevisionUserId($this->requestUID);
-        $node->revision_log = t('Draft-to-live is updating an existing front page archive.');
+        $node->setRevisionLogMessage(t('Draft-to-live updating an existing archive.'));
       }
       // Otherwise, create a new node.
       else {
@@ -162,14 +162,18 @@ class DraftToLive {
         $node = Node::create(
           [
             'type' => 'static_page',
-            'title' => "SocialistWorker raw front page from $year-$month-$day",
+            'title' => "$year-$month-$day front page raw HTML",
             'status' => 1,
             'uid' => $this->requestUID,
             'path' => $url_alias,
+            'revision_log' => t('Draft-to-live creating initial archive.'),
           ]
         );
       }
       $node->set('field_static_body', $raw_html);
+      $node->setNewRevision(TRUE);
+      $node->setRevisionCreationTime($current_time);
+      $node->setRevisionUserId($this->requestUID);
       if (!empty($date)) {
         $node->set('field_archive_date', $date);
       }
@@ -202,18 +206,22 @@ class DraftToLive {
    *   Optional flag to control printing verbose messages to the screen.
    */
   protected function cloneDraftToLive($verbose = FALSE) {
-    $paragraphs = $this->draftFrontPageNode->get('field_slices')->referencedEntities();
+    $draft_slices = $this->draftFrontPageNode->get('field_slices')->referencedEntities();
     $clones = [];
-    foreach ($paragraphs as $paragraph) {
-      $this->findAllReferences($paragraph);
-      $clone = $paragraph->createDuplicate();
+    foreach ($draft_slices as $slice) {
+      $this->findAllReferences($slice);
+      $clone = $slice->createDuplicate();
       $clone->save();
       $clones[] = $clone;
     }
     $this->publishAllReferences($verbose);
-    $this->liveFrontPageNode->setNewRevision(TRUE);
+    $this->liveFrontPageNode->setNewRevision(FALSE);
+    $live_slices = $this->liveFrontPageNode->get('field_slices')->referencedEntities();
     $this->liveFrontPageNode->set('field_slices', $clones);
     $this->liveFrontPageNode->save();
+    foreach ($live_slices as $slice) {
+      $slice->delete();
+    }
     if ($verbose) {
       $placeholders = [
         '@target' => $this->targetDraft,
