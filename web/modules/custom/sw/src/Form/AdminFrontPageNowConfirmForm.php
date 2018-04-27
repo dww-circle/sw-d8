@@ -5,6 +5,7 @@ namespace Drupal\sw\Form;
 use Drupal\Core\Form\ConfirmFormBase;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\State\StateInterface;
+use Drupal\sw\DraftToLive;
 
 class AdminFrontPageNowConfirmForm extends ConfirmFormBase {
 
@@ -59,8 +60,9 @@ class AdminFrontPageNowConfirmForm extends ConfirmFormBase {
     }
     $data = $this->getTempStoreData();
     drupal_set_message($this->t('Initiating immediate draft-to-live for %target!', ['%target' => $data['target_draft']]));
-    // @todo actual draft to live code.
     $this->deleteTempStoreData();
+    $draft_to_live = new DraftToLive($data['target_draft'], $this->currentUser()->id());
+    $draft_to_live->execute(TRUE);
     $form_state->setRedirect('<front>');
   }
 
