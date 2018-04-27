@@ -2,11 +2,14 @@
 
 namespace Drupal\sw;
 
+use Drupal\Core\Entity\EntityStorageInterface;
 use Drupal\Core\Path\AliasStorage;
 use Drupal\Core\Path\AliasStorageInterface;
 use Drupal\Core\State\StateInterface;
 use Drupal\Core\Url;
 use Drupal\node\Entity\Node;
+use Drupal\media\Entity\Media;
+use Drupal\paragraphs\Entity\Paragraph;
 
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\ClientInterface;
@@ -45,6 +48,15 @@ class DraftToLive {
   protected $draftFrontPageNode;
 
   /**
+   * A nested array of entities referenced by a given draft front page.
+   *
+   * Keys are string entity types, values are arrays of integer entity IDs.
+   *
+   * @var array
+   */
+  protected $referencedEntities;
+
+  /**
    * The alias storage service object.
    *
    * @var \Drupal\Core\Path\AliasStorage
@@ -64,6 +76,7 @@ class DraftToLive {
     $this->requestUID = $request_uid;
     // @todo Maybe this should all be dependency injection fun.
     $this->aliasStorage = \Drupal::service('path.alias_storage');
+    $this->referencedEntities = [];
   }
 
   /**
@@ -192,10 +205,12 @@ class DraftToLive {
     $paragraphs = $this->draftFrontPageNode->get('field_slices')->referencedEntities();
     $clones = [];
     foreach ($paragraphs as $paragraph) {
+      $this->findAllReferences($paragraph);
       $clone = $paragraph->createDuplicate();
       $clone->save();
       $clones[] = $clone;
     }
+    $this->publishAllReferences($verbose);
     $this->liveFrontPageNode->setNewRevision(TRUE);
     $this->liveFrontPageNode->set('field_slices', $clones);
     $this->liveFrontPageNode->save();
@@ -206,6 +221,121 @@ class DraftToLive {
         ':live_url' => $this->liveFrontPageNode->toUrl('canonical')->toString(),
       ];
       drupal_set_message(t('Replaced slices from <a href=":draft_url">@target</a> into the <a href=":live_url">live front page</a>.', $placeholders));
+    }
+  }
+
+  /**
+   * Find everything referenced by a given paragraph.
+   *
+   * @param \Drupal\paragraphs\Entity\Paragraph $paragraph
+   *   The paragraph entity to find references for publishing.
+   *
+   * @see publishAllReferences()
+   */
+  protected function findAllReferences($paragraph) {
+    // Figure out what fields to look in, depending on the paragraph type.
+    // @todo Maybe we should figure this out dynamically. We could iterate over
+    // all the fields, look for entity references, figure out the entity type
+    // from the field definition, etc.
+    switch ($paragraph->getType()) {
+      case 'today':
+        $fields = [
+          'node' => [
+            'field_articles',
+          ],
+          'media' => [
+            'field_ad_left',
+            'field_ad_right',
+          ],
+        ];
+        break;
+
+      case 'weekend':
+        $fields = [
+          'node' => [
+            'field_lead',
+            'field_sub',
+          ],
+          'media' => [
+            'field_ad_right',
+          ],
+        ];
+        $nested_fields = [
+          'field_nested_left',
+          'field_nested_right',
+        ];
+        break;
+
+      case 'nested':
+        $fields['node'] = ['field_articles'];
+        break;
+
+      case 'full':
+        $fields['media'] = ['field_ad'];
+        break;
+
+      case 'triptych':
+        $fields['media'] = ['field_ads'];
+        break;
+
+    }
+
+    // If there's nothing to search for in this paragraph, bail now.
+    if (empty($fields)) {
+      return;
+    }
+
+    // Iterate over all the fields we care about and find target IDs.
+    foreach ($fields as $entity_type => $entity_fields) {
+      foreach ($entity_fields as $field) {
+        $values = $paragraph->get($field)->getValue();
+        if (!empty($values)) {
+          foreach ($values as $value) {
+            $this->referencedEntities[$entity_type][] = $value['target_id'];
+          }
+        }
+      }
+    }
+    // Nested fields point to other paragraphs. Recursion to the rescue!
+    if (!empty($nested_fields)) {
+      foreach ($nested_fields as $field) {
+        $paragraphs = $paragraph->get($field)->referencedEntities();
+        foreach ($paragraphs as $nested) {
+          $this->findAllReferences($nested);
+        }
+      }
+    }
+  }
+
+  /**
+   * Publish everything referenced by all cloned paragraphs.
+   *
+   * @param boolean $verbose
+   *   Optional flag to control printing verbose messages to the screen.
+   *
+   * @see findAllReferences()
+   */
+  protected function publishAllReferences($verbose = FALSE) {
+    if (!empty($this->referencedEntities)) {
+      foreach ($this->referencedEntities as $entity_type => $ids) {
+        $entity_storage = \Drupal::entityManager()->getStorage($entity_type);
+        $entities = $entity_storage->loadMultiple($ids);
+        foreach ($entities as $entity) {
+          if (empty($entity->get('status')->value)) {
+            $entity->set('status', 1);
+            $entity->setNewRevision(FALSE);
+            $entity->save();
+            if ($verbose) {
+              $placeholders = [
+                '%label' => $entity->label(),
+                ':url' => $entity->toUrl()->toString(),
+                '@id' => $entity->id(),
+              ];
+              drupal_set_message(t('Published <a href=":url">%label</a> (id: @id).', $placeholders));
+            }
+          }
+        }
+      }
     }
   }
 
