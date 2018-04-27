@@ -179,14 +179,14 @@ class DraftToLive {
       if ($verbose) {
         $placeholders = [
           '@nid' => $node->id(),
-          ':canonical_url' => $node->toUrl('canonical')->toString(),
+          ':view_url' => $node->toUrl()->toString(),
           ':edit_url' => $node->toUrl('edit-form')->toString(),
         ];
         if ($new_node) {
-          drupal_set_message(t('Created a new <a href=":canonical_url">static page</a> (nid: @nid, <a href=":edit_url">edit</a>) to archive the current front page.', $placeholders));
+          drupal_set_message(t('Created a new <a href=":view_url">static page</a> (nid: @nid, <a href=":edit_url">edit</a>) to archive the current front page.', $placeholders));
         }
         else {
-          drupal_set_message(t('Updated the existing <a href=":canonical_url">static page</a> (nid: @nid, <a href=":edit_url">edit</a>) to archive the current front page.', $placeholders));
+          drupal_set_message(t('Updated the existing <a href=":view_url">static page</a> (nid: @nid, <a href=":edit_url">edit</a>) to archive the current front page.', $placeholders));
         }
       }
     }
@@ -217,8 +217,8 @@ class DraftToLive {
     if ($verbose) {
       $placeholders = [
         '@target' => $this->targetDraft,
-        ':draft_url' => $this->draftFrontPageNode->toUrl('canonical')->toString(),
-        ':live_url' => $this->liveFrontPageNode->toUrl('canonical')->toString(),
+        ':draft_url' => $this->draftFrontPageNode->toUrl()->toString(),
+        ':live_url' => $this->liveFrontPageNode->toUrl()->toString(),
       ];
       drupal_set_message(t('Replaced slices from <a href=":draft_url">@target</a> into the <a href=":live_url">live front page</a>.', $placeholders));
     }
