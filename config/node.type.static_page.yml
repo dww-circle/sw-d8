@@ -12,6 +12,6 @@ name: 'Static page'
 type: static_page
 description: 'A page of raw HTML code. Used for the front page archive. You probably don''t want to create these manually.'
 help: 'The body field defines the *entire* payload of the page. There are no regions, blocks, menus, logo, etc that will be automatically added.'
-new_revision: false
+new_revision: true
 preview_mode: 1
 display_submitted: false
