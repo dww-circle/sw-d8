@@ -83,8 +83,12 @@ process:
           0: 0
           6: 1
       delta: delta
-  # For now, ignore field_original_image_nid since we're not migrating any crops
-  # field_original_image: field_original_image_nid
+  field_original_image: 
+    plugin: sub_process
+    source: field_original_image_nid
+    process:
+      target_id: value
+      delta: delta
   field_image_url:
     plugin: sub_process
     source: field_image_url
