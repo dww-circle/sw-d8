@@ -71,8 +71,18 @@ process:
       # 'value' needs to go into 'uri'
       uri: value
       # Ignore 'format' since this is now a link field.
-  # Might want to revisit this...
-  field_image_crop_type: field_image_crop_type
+  field_image_crop_type:
+    plugin: sub_process
+    source: field_image_crop_type
+    process:
+      value:
+        plugin: static_map
+        bypass: true
+        source: value
+        map:
+          0: 0
+          6: 1
+      delta: delta
   # For now, ignore field_original_image_nid since we're not migrating any crops
   # field_original_image: field_original_image_nid
   field_image_url:
