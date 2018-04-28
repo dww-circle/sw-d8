@@ -147,15 +147,12 @@ class DraftToLive {
         break;
       }
     }
-    if (!empty($date)) {
-      list($year, $month, $day) = explode('-', $date);
+    // @todo: This should be a fatal error. Use today's date instead.
+    if (empty($date)) {
+      $date = format_date($current_time, 'custom', 'Y-m-d');
     }
-    // @todo: This is basically a fatal error.
-    else {
-      $year = format_date($current_time, 'custom', 'Y');
-      $month = format_date($current_time, 'custom', 'm');
-      $day = format_date($current_time, 'custom', 'd');
-    }
+    list($year, $month, $day) = explode('-', $date);
+
     $url_alias = "/archive/front/$year/$month/$day";
 
     $client = \Drupal::httpClient();
@@ -181,7 +178,7 @@ class DraftToLive {
       $node = Node::create(
         [
           'type' => 'static_page',
-          'title' => "$year-$month-$day front page raw HTML",
+          'title' => "$date front page raw HTML",
           'status' => 1,
           'uid' => $this->requestUID,
           'path' => $url_alias,
@@ -197,7 +194,7 @@ class DraftToLive {
       $node->set('field_archive_date', $date);
     }
     $node->save();
-    // @todo Modify the body based on the actual NID + path alias.
+    // @todo Modify the body based on the actual NID + path alias?
     // @todo Harvest + save CSS+JS?
     if ($verbose) {
       $t_args = [
