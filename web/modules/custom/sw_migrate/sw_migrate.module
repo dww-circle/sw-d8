@@ -89,59 +89,79 @@ function sw_migrate_migrate_upgrade_d6_taxonomy_term_prepare_row(Row $row, Migra
   $valid_term = $values['vid'] == 2 || $values['vid'] == 14 || !empty($node_count);
   $row->setSourceProperty('valid_term', $valid_term ? 1 : 0);
 
-  // Special handling for terms in the department/section vocabulary:
-  if ($values['vid'] == 1) {
-    // Ignore department parent values, we want everything to be top-level as a section.
-    $row->setSourceProperty('parent', 0);
-    // Force the weights how we want in the new world:
-    switch ($values['tid']) {
-      case 11:    // Editorials
-        $weight = 0;
-        break;
-      case 7:     // Labor
-        $weight = 1;
-        break;
-      case 8:     // Activist News
-        $weight = 2;
-        break;
-      case 6:     // History and Traditions
-        $weight = 3;
-        break;
-      case 9:     // Readers' Views
-        $weight = 4;
-        break;
-      case 17255: // Obrero Socialista
-        $weight = 5;
-        break;
-    }
-    if (isset($weight)) {
-      $row->setSourceProperty('weight', $weight);
-    }
-  }  
-  // Special handling for terms in the 'series' vocabulary:
-  elseif ($values['vid'] == 12) {
-    $variable_names = [
-      'sw_series_labels_' . $values['tid'],
-      'sw_series_insert_story_list_length_' . $values['tid'],
-    ];
-    $series_variables = $source->getDatabase()
-      ->query('SELECT name, value FROM {variable} WHERE name IN (:values[])',
-              [':values[]' => $variable_names])
-      ->fetchAllAssoc('name', PDO::FETCH_ASSOC);
+  // Special vocabulary-specific handling.
+  switch ($values['vid']) {
+    case 1:
+      _sw_migrate_d6_taxonomy_term_prepare_row_section($row, $source, $migration);
+      break;
 
-    // Declare defaults, since we only set variables in SW 2.0 to override them.
-    $show_story_labels = TRUE;
-    $series_insert_list_length = -1;  // Show all
-    if (isset($series_variables[$variable_names[0]]['value'])) {
-      $show_story_labels = unserialize($series_variables[$variable_names[0]]['value']);
-    }
-    $row->setSourceProperty('show_story_labels', $show_story_labels);
-    if (isset($series_variables[$variable_names[1]]['value'])) {
-      $series_insert_list_length = unserialize($series_variables[$variable_names[1]]['value']);
-    }
-    $row->setSourceProperty('series_insert_list_length', $series_insert_list_length);
+    case 12:
+      _sw_migrate_d6_taxonomy_term_prepare_row_series($row, $source, $migration);
+      break;
+
   }
+}
 
+/**
+ * Private helper to prepare a migration row for a 'section' taxonomy term.
+ */
+function _sw_migrate_d6_taxonomy_term_prepare_row_section(Row $row, MigrateSourceInterface $source, MigrationInterface $migration) {
+  $values = $row->getSource();
+
+  // Ignore department parent values, we want everything to be top-level as a section.
+  $row->setSourceProperty('parent', 0);
+
+  // Force the weights how we want in the new world:
+  switch ($values['tid']) {
+    case 11:    // Editorials
+      $weight = 0;
+      break;
+    case 7:     // Labor
+      $weight = 1;
+      break;
+    case 8:     // Activist News
+      $weight = 2;
+      break;
+    case 6:     // History and Traditions
+      $weight = 3;
+      break;
+    case 9:     // Readers' Views
+      $weight = 4;
+      break;
+    case 17255: // Obrero Socialista
+      $weight = 5;
+      break;
+  }
+  if (isset($weight)) {
+    $row->setSourceProperty('weight', $weight);
+  }
+}
+
+/**
+ * Private helper to prepare a migration row for a 'series' taxonomy term.
+ */
+function _sw_migrate_d6_taxonomy_term_prepare_row_series(Row $row, MigrateSourceInterface $source, MigrationInterface $migration) {
+  $values = $row->getSource();
+  $variable_names = [
+    'sw_series_labels_' . $values['tid'],
+    'sw_series_insert_story_list_length_' . $values['tid'],
+  ];
+  $series_variables = $source->getDatabase()
+    ->query('SELECT name, value FROM {variable} WHERE name IN (:values[])',
+            [':values[]' => $variable_names])
+    ->fetchAllAssoc('name', PDO::FETCH_ASSOC);
+
+  // Declare defaults, since we only set variables in SW 2.0 to override them.
+  $show_story_labels = TRUE;
+  $series_insert_list_length = -1;  // Show all
+  if (isset($series_variables[$variable_names[0]]['value'])) {
+    $show_story_labels = unserialize($series_variables[$variable_names[0]]['value']);
+  }
+  $row->setSourceProperty('show_story_labels', $show_story_labels);
+  if (isset($series_variables[$variable_names[1]]['value'])) {
+    $series_insert_list_length = unserialize($series_variables[$variable_names[1]]['value']);
+  }
+  $row->setSourceProperty('series_insert_list_length', $series_insert_list_length);
 }
 
 /**
@@ -401,7 +421,7 @@ function sw_migrate_term_node_map($tid) {
     case 14:     // History/Paul D'Amato
     case 11172:  // History/Todd Chretien
       return 6;
-      
+
     // 'Analysis' story type. This is being ditched in SW 3.0.  However, we're
     // converting this tid into the 'Custom' story type (so all the custom
     // code can already know what the ID will be). So, any story that is
