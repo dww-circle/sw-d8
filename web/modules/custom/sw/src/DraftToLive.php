@@ -122,8 +122,6 @@ class DraftToLive {
    *   Optional flag to control printing verbose messages to the screen.
    */
   protected function archiveCurrentFrontPage($verbose = FALSE) {
-    $client = \Drupal::httpClient();
-    $url = Url::fromRoute('<front>', [], ['absolute' => TRUE]);
     $current_time = \Drupal::requestStack()->getCurrentRequest()->server->get('REQUEST_TIME');
 
     $paragraphs = $this->liveFrontPageNode->get('field_slices')->referencedEntities();
@@ -146,56 +144,60 @@ class DraftToLive {
       $day = format_date($current_time, 'custom', 'd');
     }
     $url_alias = "/archive/front/$year/$month/$day";
+
+    $client = \Drupal::httpClient();
+    $url = Url::fromRoute('<front>', [], ['absolute' => TRUE]);
     try {
       $request = $client->get($url->toString());
       $status = $request->getStatusCode();
       $raw_html = $request->getBody()->getContents();
-      $node = $this->loadNodeFromAlias($url_alias);
-      // If we already have this front page archived, we want to create a new revision.
-      if (!empty($node)) {
-        $new_node = FALSE;
-        $node->setRevisionLogMessage(t('Draft-to-live updating an existing archive.'));
-      }
-      // Otherwise, create a new node.
-      else {
-        $new_node = TRUE;
-        $node = Node::create(
-          [
-            'type' => 'static_page',
-            'title' => "$year-$month-$day front page raw HTML",
-            'status' => 1,
-            'uid' => $this->requestUID,
-            'path' => $url_alias,
-            'revision_log' => t('Draft-to-live creating initial archive.'),
-          ]
-        );
-      }
-      $node->set('field_static_body', $raw_html);
-      $node->setNewRevision(TRUE);
-      $node->setRevisionCreationTime($current_time);
-      $node->setRevisionUserId($this->requestUID);
-      if (!empty($date)) {
-        $node->set('field_archive_date', $date);
-      }
-      $node->save();
-      // @todo Modify the body based on the actual NID + path alias.
-      // @todo Harvest + save CSS+JS?
-      if ($verbose) {
-        $placeholders = [
-          '@nid' => $node->id(),
-          ':view_url' => $node->toUrl()->toString(),
-          ':edit_url' => $node->toUrl('edit-form')->toString(),
-        ];
-        if ($new_node) {
-          drupal_set_message(t('Created a new <a href=":view_url">static page</a> (nid: @nid, <a href=":edit_url">edit</a>) to archive the current front page.', $placeholders));
-        }
-        else {
-          drupal_set_message(t('Updated the existing <a href=":view_url">static page</a> (nid: @nid, <a href=":edit_url">edit</a>) to archive the current front page.', $placeholders));
-        }
-      }
     }
     catch (RequestException $e) {
       // @todo Deal with errors.
+    }
+
+    $node = $this->loadNodeFromAlias($url_alias);
+    // If we already have this front page archived, we want to create a new revision.
+    if (!empty($node)) {
+      $new_node = FALSE;
+      $node->setRevisionLogMessage(t('Draft-to-live updating an existing archive.'));
+    }
+    // Otherwise, create a new node.
+    else {
+      $new_node = TRUE;
+      $node = Node::create(
+        [
+          'type' => 'static_page',
+          'title' => "$year-$month-$day front page raw HTML",
+          'status' => 1,
+          'uid' => $this->requestUID,
+          'path' => $url_alias,
+          'revision_log' => t('Draft-to-live creating initial archive.'),
+        ]
+      );
+    }
+    $node->setNewRevision(TRUE);
+    $node->setRevisionCreationTime($current_time);
+    $node->setRevisionUserId($this->requestUID);
+    $node->set('field_static_body', $raw_html);
+    if (!empty($date)) {
+      $node->set('field_archive_date', $date);
+    }
+    $node->save();
+    // @todo Modify the body based on the actual NID + path alias.
+    // @todo Harvest + save CSS+JS?
+    if ($verbose) {
+      $placeholders = [
+        '@nid' => $node->id(),
+        ':view_url' => $node->toUrl()->toString(),
+        ':edit_url' => $node->toUrl('edit-form')->toString(),
+      ];
+      if ($new_node) {
+        drupal_set_message(t('Created a new <a href=":view_url">static page</a> (nid: @nid, <a href=":edit_url">edit</a>) to archive the current front page.', $placeholders));
+      }
+      else {
+        drupal_set_message(t('Updated the existing <a href=":view_url">static page</a> (nid: @nid, <a href=":edit_url">edit</a>) to archive the current front page.', $placeholders));
+      }
     }
   }
 
