@@ -59,7 +59,6 @@ class AdminFrontPageNowConfirmForm extends ConfirmFormBase {
       drupal_set_message($this->t('Canceled the draft-to-live for %target scheduled by %account', $placeholders), 'warning');
     }
     $data = $this->getTempStoreData();
-    drupal_set_message($this->t('Initiating immediate draft-to-live for %target!', ['%target' => $data['target_draft']]));
     $this->deleteTempStoreData();
     $draft_to_live = new DraftToLive($data['target_draft'], $this->currentUser()->id());
     $draft_to_live->execute(TRUE);
