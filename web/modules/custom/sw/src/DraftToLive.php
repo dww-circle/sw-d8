@@ -14,6 +14,8 @@ use Drupal\paragraphs\Entity\Paragraph;
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\ClientInterface;
 
+use Psr\Log\LoggerInterface;
+
 /**
  * Class that contains all the logic for the magic draft-to-live operation.
  */
@@ -64,6 +66,13 @@ class DraftToLive {
   protected $aliasStorage;
 
   /**
+   * A logger instance.
+   *
+   * @var \Psr\Log\LoggerInterface
+   */
+  protected $logger;
+
+  /**
    * Constructor.
    *
    * @param string $target_draft
@@ -76,6 +85,7 @@ class DraftToLive {
     $this->requestUID = $request_uid;
     // @todo Maybe this should all be dependency injection fun.
     $this->aliasStorage = \Drupal::service('path.alias_storage');
+    $this->logger = \Drupal::logger('sw_front');
     $this->referencedEntities = [];
   }
 
@@ -113,6 +123,9 @@ class DraftToLive {
   protected function initializeFrontPages() {
     $this->liveFrontPageNode = $this->loadNodeFromAlias('/live');
     $this->draftFrontPageNode = $this->loadNodeFromAlias($this->targetDraft);
+    if (empty($this->liveFrontPageNode) || empty($this->draftFrontPageNode)) {
+      $this->logger->error('Fatal error trying to initialize front pages. Should never get here. Call Derek.');
+    }
   }
 
   /**
@@ -187,17 +200,27 @@ class DraftToLive {
     // @todo Modify the body based on the actual NID + path alias.
     // @todo Harvest + save CSS+JS?
     if ($verbose) {
-      $placeholders = [
+      $t_args = [
         '@nid' => $node->id(),
         ':view_url' => $node->toUrl()->toString(),
         ':edit_url' => $node->toUrl('edit-form')->toString(),
       ];
       if ($new_node) {
-        drupal_set_message(t('Created a new <a href=":view_url">static page</a> (nid: @nid, <a href=":edit_url">edit</a>) to archive the current front page.', $placeholders));
+        drupal_set_message(t('Created new <a href=":view_url">static page</a> (nid: @nid, <a href=":edit_url">edit</a>) to archive live front page.', $t_args));
       }
       else {
-        drupal_set_message(t('Updated the existing <a href=":view_url">static page</a> (nid: @nid, <a href=":edit_url">edit</a>) to archive the current front page.', $placeholders));
+        drupal_set_message(t('Updated existing <a href=":view_url">static page</a> (nid: @nid, <a href=":edit_url">edit</a>) to archive live front page.', $t_args));
       }
+    }
+    $log_args = [
+      'link' => $node->link(t('Edit'), 'edit-form'),
+      '@nid' => $node->id(),
+    ];
+    if ($new_node) {
+      $this->logger->notice('Created new static page (nid: @nid) to archive live front page.', $log_args);
+    }
+    else {
+      $this->logger->notice('Updated existing static page (nid: @nid) to archive live front page.', $log_args);
     }
   }
 
@@ -224,14 +247,18 @@ class DraftToLive {
     foreach ($live_slices as $slice) {
       $slice->delete();
     }
+    $t_args = [
+      '%target' => $this->targetDraft,
+      ':url' => $this->draftFrontPageNode->toUrl()->toString(),
+    ];
     if ($verbose) {
-      $placeholders = [
-        '@target' => $this->targetDraft,
-        ':draft_url' => $this->draftFrontPageNode->toUrl()->toString(),
-        ':live_url' => $this->liveFrontPageNode->toUrl()->toString(),
-      ];
-      drupal_set_message(t('Replaced slices from <a href=":draft_url">@target</a> into the <a href=":live_url">live front page</a>.', $placeholders));
+      drupal_set_message(t('Cloned slices from <a href=":url">%target</a> into the live front page.', $t_args));
     }
+    $log_args = [
+      '%target' => $this->targetDraft,
+      'link' => $this->draftFrontPageNode->link(t('View')),
+    ];
+    $this->logger->notice('Cloned slices from %target into the live front page.', $log_args);
   }
 
   /**
@@ -335,14 +362,16 @@ class DraftToLive {
             $entity->set('status', 1);
             $entity->setNewRevision(FALSE);
             $entity->save();
+            $t_args = [
+              '%label' => $entity->label(),
+              ':url' => $entity->toUrl()->toString(),
+              '@id' => $entity->id(),
+            ];
             if ($verbose) {
-              $placeholders = [
-                '%label' => $entity->label(),
-                ':url' => $entity->toUrl()->toString(),
-                '@id' => $entity->id(),
-              ];
-              drupal_set_message(t('Published <a href=":url">%label</a> (id: @id).', $placeholders));
+              drupal_set_message(t('Published <a href=":url">%label</a> (id: @id).', $t_args));
             }
+            $t_args['link'] = $entity->link(t('View'));
+            $this->logger->info('Published %label (id: @id).', $t_args);
           }
         }
       }
