@@ -56,7 +56,9 @@ class AdminFrontPageForm extends FormBase {
       $placeholders = $this->getSiteStatePlaceholders();
       $form['help_delay'] = [
         '#weight' => -2,
-        '#markup' => $this->t('Draft-to-live for %target has been scheduled to run at midnght by %account.', $placeholders),
+        '#prefix' => '<div class="messages messages--warning">',
+        '#markup' => $this->t('%target has been scheduled to go live at midnght by %account.', $placeholders),
+        '#suffix' => '</div>',
       ];
       $form['target_draft']['#default_value'] = $state['sw_front_page_target_draft'];
       $form['actions']['delay']['#disabled'] = TRUE;

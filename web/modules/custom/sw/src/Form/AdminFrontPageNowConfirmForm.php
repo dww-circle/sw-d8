@@ -34,7 +34,9 @@ class AdminFrontPageNowConfirmForm extends ConfirmFormBase {
     $cancel_txt = '';
     $placeholders = $this->getSiteStatePlaceholders();
     if (!empty($placeholders['%target'])) {
-      $cancel_txt = '<p>' . $this->t('There is a draft-to-live for %target scheduled by %account that will be canceled if you proceed.', $placeholders) . '</p>';
+      $cancel_txt = '<div class="messages messages--warning">'
+                  . $this->t('There is a draft-to-live for %target scheduled by %account that will be canceled if you proceed.', $placeholders)
+                  . '</div>';
     }
     return $this->getBaseDescription()
       . $cancel_txt
