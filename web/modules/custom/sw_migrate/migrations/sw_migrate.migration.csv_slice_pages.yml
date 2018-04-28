@@ -1,0 +1,32 @@
+id: csv_slice_pages
+label: CSV slice pages
+migration_tags:
+  - CSV
+  - Content
+migration_group: sw_d6
+
+source:
+  plugin: sw_migrate_csv
+  path: csv
+  csv_path: sw3-slice-pages.csv
+  header_row_count: 1
+  keys:
+    - nid
+
+destination:
+  plugin: 'entity:node'
+  default_bundle: slices
+
+process:
+  nid: nid
+  title: title
+  path: path
+  langcode:
+    plugin: default_value
+    default_value: und
+  status:
+    plugin: default_value
+    default_value: 1
+  uid:
+    plugin: default_value
+    default_value: 1
