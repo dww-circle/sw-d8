@@ -44,21 +44,20 @@
   }
 }
 
-//54
+// Menu when opened.
 .region-expanded-menu {
   background: black;
   color: white;
   display: none;
   font-family: $ff-din-regular;
   font-size: 16px;
-  height: 100%;
   min-height: calc(100vh - 80px);
   line-height: 22px;
   padding: 0 30px 30px;
   position: absolute;
   transition: none;
   width: 100%;
-  top: 94px;
+  top: 83px;
   z-index: 200;
 
   @include breakpoint($desktop) {

@@ -424,14 +424,13 @@ main {
   display: none;
   font-family: "FF DIN Pro Regular", sans-serif;
   font-size: 16px;
-  height: 100%;
   min-height: calc(100vh - 80px);
   line-height: 22px;
   padding: 0 30px 30px;
   position: absolute;
   transition: none;
   width: 100%;
-  top: 94px;
+  top: 83px;
   z-index: 200; }
   @media (min-width: 961px) {
     .region-expanded-menu {
