@@ -5,22 +5,8 @@
 
 use Drupal\node\Entity\Node;
 
-function revolution_preprocess_paragraph(&$variables) {
-
-  $paragraph_type = $variables['paragraph']->bundle;
-
-  // Allow preprocess callbacks.
-  $functions[] = __FUNCTION__ . '__' . $paragraph_type;
-
-  foreach ($functions as $function) {
-    if (function_exists($function)) {
-      $function($variables);
-    }
-  }
-}
-
 /*
- * Implements hook_preprocess_FIELD__ENTITY__FIELD_NAME().
+ * Implements hook_preprocess_paragraph__TYPE().
  */
 function revolution_preprocess_paragraph__queue(&$variables) {
 
@@ -61,7 +47,7 @@ function revolution_preprocess_paragraph__queue(&$variables) {
 }
 
 /*
- * Implements hook_preprocess_FIELD__ENTITY__FIELD_NAME().
+ * Implements hook_preprocess_paragraph__TYPE().
  */
 function revolution_preprocess_paragraph__today(&$variables) {
 
