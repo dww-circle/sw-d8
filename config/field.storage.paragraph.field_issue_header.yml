@@ -1,0 +1,21 @@
+uuid: ad25eaab-756e-471a-84a2-5a7995c884f1
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_issue_header
+field_name: field_issue_header
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

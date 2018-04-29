@@ -1,0 +1,68 @@
+uuid: ad98c048-21f0-48ca-82a1-4d16766de872
+langcode: en
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.media_entity_browser
+    - field.field.paragraph.reading.field_book
+    - field.field.paragraph.reading.field_display_title
+    - field.field.paragraph.reading.field_issue
+    - field.field.paragraph.reading.field_issue_caption
+    - field.field.paragraph.reading.field_issue_header
+    - paragraphs.paragraphs_type.reading
+  module:
+    - entity_browser
+    - text
+id: paragraph.reading.default
+targetEntityType: paragraph
+bundle: reading
+mode: default
+content:
+  field_book:
+    weight: 1
+    settings:
+      entity_browser: media_entity_browser
+      field_widget_display: rendered_entity
+      field_widget_remove: true
+      open: true
+      selection_mode: selection_append
+      field_widget_display_settings:
+        view_mode: default
+      field_widget_edit: false
+    third_party_settings: {  }
+    type: entity_browser_entity_reference
+    region: content
+  field_display_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_issue:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_issue_caption:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_issue_header:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

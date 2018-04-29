@@ -1,0 +1,60 @@
+uuid: cf451114-bc8a-4526-91ea-8c339861da60
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.reading.field_book
+    - field.field.paragraph.reading.field_display_title
+    - field.field.paragraph.reading.field_issue
+    - field.field.paragraph.reading.field_issue_caption
+    - field.field.paragraph.reading.field_issue_header
+    - paragraphs.paragraphs_type.reading
+  module:
+    - text
+id: paragraph.reading.default
+targetEntityType: paragraph
+bundle: reading
+mode: default
+content:
+  field_book:
+    type: entity_reference_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_display_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_issue:
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: front
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_issue_caption:
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_issue_header:
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

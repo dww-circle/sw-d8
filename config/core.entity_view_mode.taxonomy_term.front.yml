@@ -1,0 +1,10 @@
+uuid: 40f390ab-edfd-4f01-b2ff-afa639dba284
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.front
+label: Front
+targetEntityType: taxonomy_term
+cache: true

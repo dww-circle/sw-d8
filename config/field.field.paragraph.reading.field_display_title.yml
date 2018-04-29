@@ -1,0 +1,21 @@
+uuid: 2a0eee4a-fe24-4497-b8d6-8082d190a7ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_display_title
+    - paragraphs.paragraphs_type.reading
+id: paragraph.reading.field_display_title
+field_name: field_display_title
+entity_type: paragraph
+bundle: reading
+label: 'Display Title'
+description: 'Title as shown to end users.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 'What We''re Reading'
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,25 @@
+uuid: 84a9ce0c-1fee-4cdb-85ab-ba97f359233d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: what_were_reading
+label: 'What We''re Reading'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      external_article: external_article
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 0
+  act_as_queue: false
+  reverse_in_admin: false

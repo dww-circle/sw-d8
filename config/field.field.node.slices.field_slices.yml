@@ -7,6 +7,7 @@ dependencies:
     - node.type.slices
     - paragraphs.paragraphs_type.full
     - paragraphs.paragraphs_type.queue
+    - paragraphs.paragraphs_type.reading
     - paragraphs.paragraphs_type.today
     - paragraphs.paragraphs_type.triptych
     - paragraphs.paragraphs_type.weekend
@@ -31,6 +32,7 @@ settings:
       today: today
       weekend: weekend
       full: full
+      reading: reading
       triptych: triptych
     target_bundles_drag_drop:
       queue:

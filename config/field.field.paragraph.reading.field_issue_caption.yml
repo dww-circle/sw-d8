@@ -1,0 +1,24 @@
+uuid: beea2ff7-6256-4cd6-a5c6-8e6c2486bbfe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_issue_caption
+    - paragraphs.paragraphs_type.reading
+  module:
+    - text
+id: paragraph.reading.field_issue_caption
+field_name: field_issue_caption
+entity_type: paragraph
+bundle: reading
+label: 'Issue Caption'
+description: 'Smaller text under issue cover image.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 'Read the articles in this month''s<br>print edition of <i>Socialist Worker</i>.'
+    format: filtered_html
+default_value_callback: ''
+settings: {  }
+field_type: text

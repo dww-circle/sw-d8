@@ -1,0 +1,19 @@
+uuid: 07623f79-a812-49e3-9c67-4d3f6f6c0bd8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_issue_header
+    - paragraphs.paragraphs_type.reading
+id: paragraph.reading.field_issue_header
+field_name: field_issue_header
+entity_type: paragraph
+bundle: reading
+label: 'Issue Header'
+description: 'Bold text such as "March issue out now"'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

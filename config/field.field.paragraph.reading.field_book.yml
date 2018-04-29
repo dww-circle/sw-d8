@@ -1,0 +1,28 @@
+uuid: d001ad53-3439-4eb9-b474-2b7919d3047d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_book
+    - media.type.book
+    - paragraphs.paragraphs_type.reading
+id: paragraph.reading.field_book
+field_name: field_book
+entity_type: paragraph
+bundle: reading
+label: Book
+description: 'Featured Book. '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      book: book
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

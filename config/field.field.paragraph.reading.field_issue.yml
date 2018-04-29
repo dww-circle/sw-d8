@@ -1,0 +1,29 @@
+uuid: 0d695c04-03b6-4d09-b153-1a01ad26bebb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_issue
+    - paragraphs.paragraphs_type.reading
+    - taxonomy.vocabulary.issue_number
+id: paragraph.reading.field_issue
+field_name: field_issue
+entity_type: paragraph
+bundle: reading
+label: 'Current Issue'
+description: 'Display the current issue of Socialist Worker.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      issue_number: issue_number
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference
