@@ -1,0 +1,59 @@
+uuid: 6553be0d-afeb-4c0c-a997-17d5ec83e454
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.book.field_book_caption
+    - field.field.media.book.field_book_link
+    - field.field.media.book.field_media_image
+    - image.style.210x210
+    - media.type.book
+  module:
+    - image
+    - link
+    - text
+id: media.book.default
+targetEntityType: media
+bundle: book
+mode: default
+content:
+  field_book_caption:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_book_link:
+    weight: 3
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_media_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: 210x210
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  name:
+    type: string
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  created: true
+  thumbnail: true
+  uid: true

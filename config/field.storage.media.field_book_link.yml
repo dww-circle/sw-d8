@@ -1,0 +1,19 @@
+uuid: bbbf3d52-3d75-4825-8356-0f16047c6954
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - media
+id: media.field_book_link
+field_name: field_book_link
+entity_type: media
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

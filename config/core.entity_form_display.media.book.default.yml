@@ -1,0 +1,56 @@
+uuid: 4ee0f0ae-7e77-4d7d-bc8d-2dac13ddc523
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.book.field_book_caption
+    - field.field.media.book.field_book_link
+    - field.field.media.book.field_media_image
+    - image.style.thumbnail
+    - media.type.book
+  module:
+    - image
+    - link
+    - text
+id: media.book.default
+targetEntityType: media
+bundle: book
+mode: default
+content:
+  field_book_caption:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_book_link:
+    weight: 26
+    settings:
+      placeholder_url: 'https://www.haymarketbooks.org/'
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_media_image:
+    weight: 0
+    settings:
+      preview_image_style: thumbnail
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  name:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  status: true
+  uid: true

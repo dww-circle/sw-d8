@@ -1,0 +1,15 @@
+uuid: 2a732e9c-5d19-4d1d-8147-b0fcf8378632
+langcode: en
+status: true
+dependencies: {  }
+name: 210x210
+label: 'SW 210x210'
+effects:
+  c079456d-1487-4a5d-9028-d7a30546a795:
+    uuid: c079456d-1487-4a5d-9028-d7a30546a795
+    id: image_scale
+    weight: 1
+    data:
+      width: 210
+      height: 210
+      upscale: false

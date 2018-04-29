@@ -1,0 +1,13 @@
+uuid: 406da6c7-06a0-44a5-9195-1e473b12517e
+langcode: en
+status: true
+dependencies: {  }
+id: book
+label: Book
+description: 'Book images '
+source: image
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_image
+field_map: {  }
