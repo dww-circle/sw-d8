@@ -102,6 +102,7 @@
 
     {% block main %}
 
+      {% if story_label %}<div class="story-label">{{ story_label }}</div>{% endif %}
       <h1 class="page-title page-title-full">{{ page_title|raw }}</h1>
 
       <div class="flexible--container">
