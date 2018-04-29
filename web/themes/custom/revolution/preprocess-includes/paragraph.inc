@@ -47,6 +47,27 @@ function revolution_preprocess_paragraph__queue(&$variables) {
 
 }
 
+/**
+ * Implements hook_preprocess_paragraph__TYPE().
+ */
+function revolution_preprocess_paragraph__movement_news(&$variables) {
+  $i = 0;
+  $tids = [SW_SECTION_LABOR_TID, SW_SECTION_ACTIVIST_NEWS_TID];
+  $query = sw_story_taxonomy_query($tids, [], 1, -2);
+  $lead_story_nids = $query->execute()->fetchCol();
+  // We need 5 more stories, and the weight_limit is also 5.
+  $query = sw_story_taxonomy_query($tids, $lead_story_nids, 5, 5);
+  $other_nids = $query->execute()->fetchCol();
+  $nids = array_merge($lead_story_nids, $other_nids);
+  $nodes = [];
+  foreach ($nids as $nid) {
+    $view_mode = _revolution_view_mode_image_chooser($i, 1);
+    $nodes[$view_mode][] =  $nid;
+    $i++;
+  }
+  $variables['groups'] = _revolution_story_groups_render($nodes);
+}
+
 /*
  * Implements hook_preprocess_paragraph__TYPE().
  */
