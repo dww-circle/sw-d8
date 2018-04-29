@@ -22,6 +22,7 @@ visibility:
   node_type:
     id: node_type
     bundles:
+      blog_critical_reading: blog_critical_reading
       story: story
     negate: false
     context_mapping:
