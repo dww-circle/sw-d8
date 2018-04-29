@@ -1,0 +1,23 @@
+uuid: 37b39ac8-c37e-45d4-b8ed-a28ad45e7f32
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_external_article_url
+    - node.type.external_article
+  module:
+    - link
+id: node.external_article.field_external_article_url
+field_name: field_external_article_url
+entity_type: node
+bundle: external_article
+label: 'External Article URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

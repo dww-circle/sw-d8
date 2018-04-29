@@ -1,0 +1,56 @@
+uuid: 3ed905b2-3de1-4b34-b5b0-b48379034b84
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.external_article.field_external_article_url
+    - field.field.node.external_article.field_publication
+    - field.field.node.external_article.field_publication_date
+    - field.field.node.external_article.field_story_label
+    - node.type.external_article
+  module:
+    - link
+    - user
+id: node.external_article.default
+targetEntityType: node
+bundle: external_article
+mode: default
+content:
+  field_external_article_url:
+    weight: 4
+    label: hidden
+    settings:
+      trim_length: null
+      url_only: true
+      target: _blank
+      url_plain: false
+      rel: '0'
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_publication:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_publication_date:
+    weight: 5
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_story_label:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  links: true

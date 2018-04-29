@@ -1,0 +1,18 @@
+uuid: 52104ee0-adaf-437c-9b64-f967ab003ba2
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.external_article
+id: node.external_article.title
+field_name: title
+entity_type: node
+bundle: external_article
+label: Headline
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

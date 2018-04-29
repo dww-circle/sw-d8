@@ -1,0 +1,19 @@
+uuid: eae4c2ef-db20-4996-a091-96e6ff0569bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_story_label
+    - node.type.external_article
+id: node.external_article.field_story_label
+field_name: field_story_label
+entity_type: node
+bundle: external_article
+label: 'Story label'
+description: 'Text above headline.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

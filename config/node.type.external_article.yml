@@ -1,0 +1,17 @@
+uuid: 0c0522e0-d9e5-4bbb-b91c-503932d4ba7f
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'External Article'
+type: external_article
+description: 'Articles for the "What We''re Reading" queue and slice.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

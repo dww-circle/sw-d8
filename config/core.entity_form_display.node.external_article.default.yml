@@ -1,0 +1,65 @@
+uuid: cda20a3e-27cd-4094-9354-52e28ebe32ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.external_article.field_external_article_url
+    - field.field.node.external_article.field_publication
+    - field.field.node.external_article.field_publication_date
+    - field.field.node.external_article.field_story_label
+    - node.type.external_article
+  module:
+    - link
+id: node.external_article.default
+targetEntityType: node
+bundle: external_article
+mode: default
+content:
+  field_external_article_url:
+    weight: 2
+    settings:
+      placeholder_url: 'https://'
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_publication:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_publication_date:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_story_label:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true
+  url_redirects: true

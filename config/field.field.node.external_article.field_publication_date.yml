@@ -1,0 +1,19 @@
+uuid: f68f7d73-ecc1-4797-83a3-c0de72528199
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publication_date
+    - node.type.external_article
+id: node.external_article.field_publication_date
+field_name: field_publication_date
+entity_type: node
+bundle: external_article
+label: 'Publication Date'
+description: 'Preferred format: "3.5.16" or "Winter 2016"'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

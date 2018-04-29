@@ -1,0 +1,24 @@
+uuid: 95324eec-6846-4de4-a8c2-31facc7e5b1d
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.external_article.field_external_article_url
+    - field.field.node.external_article.field_publication
+    - field.field.node.external_article.field_story_label
+    - node.type.external_article
+  module:
+    - user
+id: node.external_article.teaser
+targetEntityType: node
+bundle: external_article
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_external_article_url: true
+  field_publication: true
+  field_story_label: true
