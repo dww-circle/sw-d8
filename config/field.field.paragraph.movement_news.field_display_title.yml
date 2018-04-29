@@ -1,0 +1,21 @@
+uuid: 13e0820c-9334-43e1-8474-282eaa53c3d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_display_title
+    - paragraphs.paragraphs_type.movement_news
+id: paragraph.movement_news.field_display_title
+field_name: field_display_title
+entity_type: paragraph
+bundle: movement_news
+label: 'Display title'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 'Movement news'
+default_value_callback: ''
+settings: {  }
+field_type: string

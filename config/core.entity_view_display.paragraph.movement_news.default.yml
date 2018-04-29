@@ -1,0 +1,21 @@
+uuid: a9259ce7-fa4c-4a85-89bc-14190fc0ecd2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.movement_news.field_display_title
+    - paragraphs.paragraphs_type.movement_news
+id: paragraph.movement_news.default
+targetEntityType: paragraph
+bundle: movement_news
+mode: default
+content:
+  field_display_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

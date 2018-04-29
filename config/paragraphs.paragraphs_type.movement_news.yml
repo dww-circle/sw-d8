@@ -1,0 +1,9 @@
+uuid: 649ae217-a3cc-4b3c-9de1-5afd130d3551
+langcode: en
+status: true
+dependencies: {  }
+id: movement_news
+label: 'Movement news'
+icon_uuid: null
+description: 'Auto-generated list of recent movement news stories.'
+behavior_plugins: {  }

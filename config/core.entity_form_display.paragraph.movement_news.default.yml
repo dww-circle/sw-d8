@@ -1,0 +1,24 @@
+uuid: ec8463ee-de36-48af-a59d-0c5fb5360c4f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.movement_news.field_display_title
+    - paragraphs.paragraphs_type.movement_news
+id: paragraph.movement_news.default
+targetEntityType: paragraph
+bundle: movement_news
+mode: default
+content:
+  field_display_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true
