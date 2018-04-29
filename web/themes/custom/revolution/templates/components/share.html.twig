@@ -1,18 +1,48 @@
 {{ attach_library('revolution/share') }}
 
+{% set title = node.label %}
+{% set base_url = url('<front>')  %}
+{% set absolute_url =  base_url['#markup'] ~ url %}
+{% set summary =  content.field_body_introduction.0['#text']|striptags %}
+
+{# see https://github.com/bradvin/social-share-urls for example links#}
 {% set services = [
-  { 'service': 'twitter', 'link': 'https://www.twitter.com/share', 'text': 'Share on Twitter'},
-  { 'service': 'facebook', 'link': 'https://www.facebook.com/sharer.php', 'text': 'Share on Facebook'},
+  {
+    'service': 'twitter',
+    'link':  'https://twitter.com/intent/tweet?url=' ~ absolute_url ~ '&text=' ~ title,
+    'text': 'Share on Twitter'
+  },
+  {
+    'service': 'facebook',
+    'link': 'https://www.facebook.com/sharer.php?s=100&p[url]=' ~ absolute_url ~ '&p[title]=' ~ title ~ '&p[summary]=' ~ summary,
+    'text': 'Share on Facebook'
+  },
   { 'service': 'email', 'link': '/email', 'text': 'Email this story'},
   { 'service': 'reply', 'link': '/reply;', 'text': 'Reply'},
   { 'service': 'more', 'link': '#', 'text': 'Click for more options'}
 ] %}
 
 {% set more_services = [
-  { 'service': 'reddit', 'link': '//', 'text': 'Reddit'},
-  { 'service': 'google_plus', 'link': '//', 'text': 'Google Plus'},
-  { 'service': 'instapaper', 'link': '//', 'text': 'Instapaper'},
-  { 'service': 'flipbook', 'link': '//', 'text': 'Flipbook'},
+  {
+    'service': 'reddit',
+    'link': 'https://reddit.com/submit?url=' ~ absolute_url ~ '&title=' ~ title,
+    'text': 'Reddit'
+  },
+  {
+    'service': 'google_plus',
+    'link': 'https://plus.google.com/share?url=' ~ absolute_url,
+    'text': 'Google Plus'
+  },
+  {
+    'service': 'instapaper',
+    'link': 'http://www.instapaper.com/edit?url=' ~ absolute_url ~ '&title=' ~ title ~ '&description=' ~ summary,
+    'text': 'Instapaper'
+  },
+  {
+    'service': 'flipboard',
+    'link': 'https://share.flipboard.com/bookmarklet/popout?v=2&title=' ~ title ~ '&url=' ~ absolute_url,
+    'text': 'Flipboard'
+  },
   { 'service': 'snapchat', 'link': '//', 'text': 'Snapchat'},
   { 'service': 'print', 'link': 'javascript:window.print();', 'text': 'Print'}
 ] %}
