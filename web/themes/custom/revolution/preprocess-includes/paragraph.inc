@@ -4,6 +4,7 @@
  */
 
 use Drupal\node\Entity\Node;
+use Drupal\views\Views;
 
 /*
  * Implements hook_preprocess_paragraph__TYPE().
@@ -123,4 +124,16 @@ function _revolution_story_groups_render($nodes) {
   }
 
   return $group;
+}
+
+/*
+ * Implements hook_preprocess_paragraph__TYPE().
+ */
+function revolution_preprocess_paragraph__reading(&$variables) {
+
+  // Make "What We're Reading" queue/view available in template.
+  $view = Views::getView('sw_what_were_reading');
+  $view->setDisplay('default');
+  $render_array = $view->render();
+  $variables['what_were_reading_view'] =  \Drupal::service('renderer')->render($render_array);
 }
