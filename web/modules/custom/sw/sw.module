@@ -485,7 +485,7 @@ function sw_get_story_label(NodeInterface $node, $view_mode) {
         break;
 
       case SW_SECTION_READERS_VIEWS_TID:
-        $story_label = t("Readers' View");
+        $story_label = t("Readers’ View");
         break;
 
       case SW_SECTION_OBRERO_SOCIALISTA_TID:
