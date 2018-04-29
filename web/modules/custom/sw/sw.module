@@ -1032,3 +1032,48 @@ function sw_cron() {
     }
   }
 }
+
+/**
+ * Build a query object to find stories associated with the given taxonomy terms.
+ *
+ * @param array $tids
+ *   Array of numeric term IDs (TIDs) to search for.
+ * @param array $exclude_nids
+ *   Optional array of numeric nods IDs (NIDs) to exclude from the search.
+ * @param integer $limit
+ *   Optional maximum number of stories to return in the results.
+ * @param integer $weight_max
+ *   Optional limit on the story weight. If defined, only stories lighter (more
+ *   important) than this maximum will be returned.
+ *
+ * @return \Drupal\Core\Database\Query\SelectInterface
+ *   A Select query object for the story query.
+ */
+function sw_story_taxonomy_query(array $tids, $exclude_nids = [], $limit = 0, $weight_max = NULL) {
+  $query = \Drupal::database()
+    ->select('node_field_data', 'nfd')
+    ->fields('nfd', ['nid']);
+  $query->addExpression("DATE_FORMAT((DATE_ADD('19700101', INTERVAL nfd.created SECOND) + INTERVAL -18000 SECOND), '%Y%m%d')", 'created_day');
+  $query->join('taxonomy_index', 'ti', 'nfd.nid = ti.nid');
+  $query->join('node__field_story_weight', 'nfsw', 'nfd.nid = nfsw.entity_id AND nfd.vid = nfsw.revision_id');
+  $query->condition('nfd.status', 1, '=')
+    ->condition('nfd.type', 'story', '=')
+    ->condition('ti.tid', $tids, 'IN');
+
+  if (!empty($exclude_nids)) {
+    $query->condition('nfd.nid', $exclude_nids, 'NOT IN');
+  }
+  if (isset($weight_max)) {
+    // Limit the list to stories more important (lighter) than a given weight.
+    $query->condition('nfsw.field_story_weight_value', $weight_max, '<=');
+  }
+
+  $query->orderBy('created_day', 'DESC');
+  $query->orderBy('nfsw.field_story_weight_value', 'ASC');
+
+  if (!empty($limit)) {
+    $query->range(0, $limit);
+  }
+
+  return $query;
+}

@@ -532,35 +532,26 @@ class SWFurtherReadingBlock extends BlockBase {
     if (empty($valid_tids)) {
       return [];
     }
-    $num_todo = $this->maxRelated - count($this->relatedArticles);
+    $num_needed = $this->maxRelated - count($this->relatedArticles);
     $config = $this->getConfiguration();
 
-    $query = \Drupal::database()->select('node_field_data', 'nfd')
-      ->fields('nfd', ['nid']);
-    $query->addExpression("DATE_FORMAT((DATE_ADD('19700101', INTERVAL nfd.created SECOND) + INTERVAL -18000 SECOND), '%Y%m%d')", 'created_day');
-    $query->join('taxonomy_index', 'ti', 'nfd.nid = ti.nid');
-    $query->join('node__field_story_weight', 'nfsw', 'nfd.nid = nfsw.entity_id AND nfd.vid = nfsw.revision_id');
-    // Limit ourselves to published articles.
-    $query->condition('nfd.status', 1, '=');
-    $query->condition('ti.tid', $valid_tids, 'IN');
-    // Limit the list to stories more important (lighter) than a given weight.
-    $query->condition('nfsw.field_story_weight_value', $config['story_query_weight_limit'], '<=');
     // Don't let the current story appear as related to itself.
-    $query->condition('nfd.nid', $this->story->id(), '!=');
+    $exclude_nids[] = $this->story->id();
     // Prevent duplicates (e.g. from main vs. secondary topics pointing to the
     // same stories in different phases).
     if (!empty($this->relatedArticles)) {
-      $query->condition('nfd.nid', $this->relatedArticles, 'NOT IN');
+      $exclude_nids = array_merge($exclude_nids, $this->relatedArticles);
     }
+
+    $query = sw_story_taxonomy_query($valid_tids, $exclude_nids, $num_needed, $config['story_query_weight_limit']);
+
     // Enforce the date limit (if any).
     if (!empty($config['story_query_date_limit'])) {
       $request_time = \Drupal::requestStack()->getCurrentRequest()->server->get('REQUEST_TIME');
       $time_limit = $this->requestTime - ($config['story_query_date_limit'] * 86400); // (60 * 60 * 24 = seconds/day)
       $query->condition('nfd.created', $time_limit, '>=');
     }
-    $query->orderBy('created_day', 'DESC');
-    $query->orderBy('nfsw.field_story_weight_value', 'ASC');
-    $query->range(0, $num_todo);
+
     $nids = $query->execute()->fetchCol();
     if (!empty($nids)) {
       $this->relatedArticles = array_merge($this->relatedArticles, $nids);
