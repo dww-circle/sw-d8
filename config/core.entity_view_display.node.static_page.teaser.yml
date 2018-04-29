@@ -16,4 +16,5 @@ content:
     weight: 100
     region: content
 hidden:
+  field_archive_date: true
   field_static_body: true
