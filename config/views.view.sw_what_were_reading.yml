@@ -10,7 +10,7 @@ dependencies:
     - node
     - user
 id: sw_what_were_reading
-label: 'SW: What We''re Reading'
+label: 'SW: What We’re Reading'
 module: views
 description: ''
 tag: ''
@@ -237,7 +237,7 @@ display:
             items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
-      title: 'What We''re Reading'
+      title: 'What We’re Reading'
     cache_metadata:
       max-age: -1
       contexts:
