@@ -6,45 +6,36 @@
 use Drupal\node\Entity\Node;
 use Drupal\views\Views;
 
-/*
+/**
  * Implements hook_preprocess_paragraph__TYPE().
  */
 function revolution_preprocess_paragraph__queue(&$variables) {
-
   // Get field values.
-  $med_img_num = $variables['paragraph']->field_num->value;
+  $num_med_img = $variables['paragraph']->field_num->value;
   $results = $variables['paragraph']->field_results->value;
   $queue_id = $variables['elements']['field_subqueue'][0]['#plain_text'];
 
-  // Get queue list.
-  $entity_subqueue = \Drupal::entityManager()->getStorage('entity_subqueue')->load($queue_id);
-
-  if ($queue_id != null) {
+  if ($queue_id != NULL) {
+    $entity_subqueue = \Drupal::entityManager()->getStorage('entity_subqueue')->load($queue_id);
     $queue_list = $entity_subqueue->get('items')->getValue();
-  }
 
-  $i = 0;
-  $nodes = array();
-
-  foreach($queue_list as $item) {
-
-    // Loop through until field_results value.
-    if($i <= $results - 1) {
-
-      $nid = $item['target_id'];
-      $view_mode = _revolution_view_mode_image_chooser($i, $med_img_num);
-      $nodes[$view_mode][] =  $nid;
-
+    $i = 0;
+    $nids = [];
+    foreach ($queue_list as $item) {
+      // Loop through until field_results value.
+      if ($i == $results) {
+        break;
+      }
+      $nids[] = $item['target_id'];
       $i++;
     }
+    if (!empty($nids)) {
+      $nodes = Node::loadMultiple($nids);
+    }
+    if (!empty($nodes)) {
+      $variables['groups'] = _revolution_story_groups_render($nodes, $num_med_img, TRUE);
+    }
   }
-
-  $group = _revolution_story_groups_render($nodes);
-
-  // Send markup to template.
-
-  $variables['groups'] = $group;
-
 }
 
 /**
@@ -59,37 +50,23 @@ function revolution_preprocess_paragraph__movement_news(&$variables) {
   $query = sw_story_taxonomy_query($tids, $lead_story_nids, 5, 5);
   $other_nids = $query->execute()->fetchCol();
   $nids = array_merge($lead_story_nids, $other_nids);
-  $nodes = [];
-  foreach ($nids as $nid) {
-    $view_mode = _revolution_view_mode_image_chooser($i, 1);
-    $nodes[$view_mode][] =  $nid;
-    $i++;
+  if (!empty($nids)) {
+    $nodes = Node::loadMultiple($nids);
   }
-  $variables['groups'] = _revolution_story_groups_render($nodes);
+  if (!empty($nodes)) {
+    $variables['groups'] = _revolution_story_groups_render($nodes, 1, TRUE);
+  }
 }
 
 /*
  * Implements hook_preprocess_paragraph__TYPE().
  */
 function revolution_preprocess_paragraph__today(&$variables) {
-
   // Get field values.
-  $med_img_num = $variables['paragraph']->field_layout->value;
-
-  if (!empty($variables['content']['field_articles']['#items'])) {
-    $count = $variables['content']['field_articles']['#items']->count();
-    $nodes = [];
-    for ($i = 0; $i < $count; $i++) {
-      if (!empty($variables['content']['field_articles'][$i]['#plain_text'])) {
-        $nid = $variables['content']['field_articles'][$i]['#plain_text'];
-        $view_mode = _revolution_view_mode_image_chooser($i, $med_img_num);
-        $nodes[$view_mode][] = $nid;
-      }
-    }
-
-    $group = _revolution_story_groups_render($nodes);
-    // Send markup to template.
-    $variables['groups'] = $group;
+  $num_med_img = $variables['paragraph']->field_layout->value;
+  $articles = $variables['paragraph']->get('field_articles')->referencedEntities();
+  if (!empty($articles)) {
+    $variables['groups'] = _revolution_story_groups_render($articles, $num_med_img, FALSE);
   }
 
   $block_manager = \Drupal::service('plugin.manager.block');
@@ -98,53 +75,93 @@ function revolution_preprocess_paragraph__today(&$variables) {
   $variables['sw_recent_articles_block_body'] = $plugin_block->build();
 }
 
-/*
+/**
  * Custom function to decide which view mode should be displayed.
  */
 function _revolution_view_mode_image_chooser($i, $med_img_num) {
-  // Choose View Mode.
   if ($i == 0) {
     $view_mode = 'teaser_image_large';
   }
   elseif ($i <= $med_img_num) {
     $view_mode = 'teaser_image_medium';
-  } else {
+  }
+  else {
     $view_mode = 'teaser';
   }
-
   return $view_mode;
 }
 
 /**
- * Custom function to render node.
+ * Custom function to render the stories into groups.
+ *
+ * @param array $nodes
+ *   Array of fully-loaded node objects.
+ * @param integer $num_med_img
+ *   The number of medium-sized images to include in the left column.
+ * @param boolean $has_right_column
+ *   Does the slice we're building use a right column for the stories?
+ *
+ * @return array
+ *   A nested array of slice regions. Keys are region identifiers ('lead',
+ *   'column_left' and optionally 'column_right'), values are rendered markup to
+ *   place in each region.
  */
-function _revolution_render_node($nid, $view_mode) {
-  $node = Node::load($nid);
-  if (!empty($node)) {
-    $view_builder = \Drupal::entityTypeManager()->getViewBuilder('node');
-    $build = $view_builder->view($node, $view_mode);
-    return render($build);
+function _revolution_story_groups_render(array $nodes, $num_med_img, $has_right_column) {
+  $view_builder = \Drupal::entityTypeManager()->getViewBuilder('node');
+  $node_count = count($nodes);
+  $group_markup = [
+    'lead' => '',
+    'column_left' => '',
+  ];
+  if ($has_right_column) {
+    $group_markup['column_right'] = '';
   }
+  $i = 0;
+  foreach ($nodes as $node) {
+    $view_mode = _revolution_view_mode_image_chooser($i, $num_med_img);
+    $group_id = _revolution_group_chooser($i, $node_count, $has_right_column);
+    $build = $view_builder->view($node, $view_mode);
+    $group_markup[$group_id] .= render($build);
+    $i++;
+  }
+
+  $groups = [];
+  foreach ($group_markup as $group_id => $markup) {
+    if (!empty($markup)) {
+      $groups[$group_id] = '<div class="story-group--' . $group_id . '">' . $markup . '</div>';
+    }
+  }
+
+  return $groups;
 }
 
-/*
- * Custom function to render the grouped stories.
+/**
+ * Custom fuction to decide what group to put a given node in.
+ *
+ * @param integer $i
+ *   Index of which story we're considering.
+ * @param integer $count
+ *   Total number of stories in this slice.
+ * @param boolean $has_right_column
+ *   Does this slice support a right column for stories at all?
+ *
+ * @return string
+ *   Group identifier for where this story should go.
  */
-function _revolution_story_groups_render($nodes) {
-
-  $group = array();
-
-  foreach ($nodes as $view_mode => $nids) {
-    $group_markup = '<div class="story-group--' . $view_mode . '">';
-    foreach($nids as $nid) {
-      $group_markup .= _revolution_render_node($nid, $view_mode);
-    }
-    $group_markup .= '</div>';
-
-    $group[$view_mode] = $group_markup;
+function _revolution_group_chooser($i, $count, $has_right_column) {
+  if ($i == 0) {
+    return 'lead';
   }
-
-  return $group;
+  if ($has_right_column) {
+    // Compute the size of the left column. Remove 1 for the lead story. Then
+    // take half of the remaining stories, rounding down, since the comps favor
+    // an image in the left side and those take more space.
+    $left_size = floor(($count - 1) / 2);
+    if ($i > $left_size) {
+      return 'column_right';
+    }
+  }
+  return 'column_left';
 }
 
 /*

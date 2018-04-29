@@ -19,8 +19,7 @@
     {{ ('hide_right' in ad_visibility ) ? '' : content.field_ad_right }}
   </div>
   <div class="column-left">
-    {{ groups.teaser_image_medium | raw }}
-    {{ groups.teaser | raw }}
+    {{ groups.column_left | raw }}
     {{ ('hide_left' in ad_visibility ) ? '' : content.field_ad_left }}
   </div>
 

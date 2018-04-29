@@ -1418,19 +1418,21 @@ select {
       grid-template-columns: 1fr 1fr  1fr;
   margin-bottom: 60px; }
 
-.story-group--teaser_image_large:after {
+.story-group--lead:after {
   clear: both;
   content: " ";
   display: table; }
 
 @media (min-width: 961px) {
-  .paragraph--type--queue .story-group--teaser_image_medium {
+  .paragraph--type--queue .story-group--column_left,
+  .paragraph--type--movement-news .story-group--column_left {
     float: left;
     max-width: 630px;
     width: calc(66% - 50px); } }
 
 @media (min-width: 961px) {
-  .paragraph--type--queue .story-group--teaser {
+  .paragraph--type--queue .story-group--column_right,
+  .paragraph--type--movement-news .story-group--column_right {
     float: right;
     max-width: 320px;
     width: 34%; } }

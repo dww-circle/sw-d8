@@ -1,14 +1,14 @@
 // Groups.
-.story-group--teaser_image_large {
+.story-group--lead {
   @include clearfix;
 }
 
-.paragraph--type--queue {
-  .story-group--teaser_image_medium {
+.paragraph--type--queue,
+.paragraph--type--movement-news {
+  .story-group--column_left {
     @include page-left;
   }
-
-  .story-group--teaser {
+  .story-group--column_right {
     @include page-right;
   }
 }
