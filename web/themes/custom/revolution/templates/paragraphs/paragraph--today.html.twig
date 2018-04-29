@@ -11,16 +11,16 @@
     content.field_ad_visibility.1['#markup']
   ] %}
 
+  <div class="column-left">
+    {{ groups.column_left | raw }}
+    {{ ('hide_left' in ad_visibility ) ? '' : content.field_ad_left }}
+  </div>
   <div class="column-right">
     <div class="block-sw-recent-articles-block">
       <h2>{{ 'Recent articles'|t }}</h2>
       {{ sw_recent_articles_block_body }}
     </div>
     {{ ('hide_right' in ad_visibility ) ? '' : content.field_ad_right }}
-  </div>
-  <div class="column-left">
-    {{ groups.column_left | raw }}
-    {{ ('hide_left' in ad_visibility ) ? '' : content.field_ad_left }}
   </div>
 
 {% endblock columns %}
