@@ -24,6 +24,7 @@
 @import 'pages/page-node-type-blog-critical-reading';
 
 @import 'views/view-sw-series-stories';
+@import 'views/view-sw-what-were-reading';
 
 @import 'regions/region-content-bottom';
 @import 'regions/region-sidebar';
@@ -39,8 +40,9 @@
 @import 'components/pager';
 @import 'components/social-links';
 
-@import 'paragraphs/paragraphs-layouts';
-@import 'paragraphs/paragraphs-typography';
 @import 'paragraphs/paragraphs-ads';
+@import 'paragraphs/paragraphs-layouts';
+@import 'paragraphs/paragraphs-reading';
+@import 'paragraphs/paragraphs-typography';
 
 @import 'tools/misc';

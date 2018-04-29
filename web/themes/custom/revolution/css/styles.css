@@ -815,6 +815,33 @@ main {
     content: " ";
     display: table; }
 
+.view-sw-what-were-reading .story-link {
+  margin-bottom: 25px; }
+  .view-sw-what-were-reading .story-link .story-label {
+    font-size: 13px;
+    margin-bottom: 0; }
+  .view-sw-what-were-reading .story-link h4 {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+    text-transform: none; }
+  .view-sw-what-were-reading .story-link .field--name-field-teaser {
+    font-size: 12px;
+    line-height: 16px; }
+
+.view-sw-what-were-reading .node__content {
+  color: #666;
+  font-size: 14px; }
+  .view-sw-what-were-reading .node__content .field--name-field-publication {
+    float: left;
+    font-style: italic; }
+  .view-sw-what-were-reading .node__content .field--name-field-publication-date {
+    float: right; }
+
+.view-sw-what-were-reading .more-link {
+  font-size: 13px;
+  text-align: left; }
+
 .region-content-bottom {
   border-top: 1px solid;
   padding-top: 44px; }
@@ -1373,6 +1400,24 @@ select {
     display: inline-block;
     margin: 0 10px; }
 
+.field--name-field-ad img,
+.field--name-field-ads img,
+.field--name-field-ad-right img,
+.field--name-field-ad-left img {
+  height: auto;
+  width: 100%; }
+
+.field--name-field-ad {
+  margin-bottom: 60px; }
+
+.field--name-field-ads {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 30px;
+  -ms-grid-columns: 1fr 1fr  1fr;
+      grid-template-columns: 1fr 1fr  1fr;
+  margin-bottom: 60px; }
+
 .story-group--teaser_image_large:after {
   clear: both;
   content: " ";
@@ -1465,6 +1510,60 @@ select {
 
 .border-none .story--teaser-image-medium .content {
   border-bottom: 0; }
+
+.reading__content .field--name-name,
+.reading__content .field--name-field-issue-header {
+  font-family: "FF DIN Pro Medium", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 10px; }
+
+.reading__content .field--name-field-book-caption,
+.reading__content .field--name-field-issue-caption {
+  color: #666;
+  font-size: 14px;
+  line-height: 18px; }
+
+.reading__content .field--name-field-media-image,
+.reading__content .field--name-field-issue-cover-image img {
+  margin-bottom: 16px; }
+
+@media (min-width: 961px) {
+  .reading__content .view-sw-what-were-reading {
+    float: left;
+    width: 320px; } }
+
+@media (min-width: 961px) {
+  .reading__content .field--name-field-book {
+    float: right;
+    width: calc(100% - 540px); } }
+
+.reading__content .field--name-field-book .media--type-book {
+  margin: 0 auto;
+  width: 220px; }
+
+@media (min-width: 961px) {
+  .reading__content .issue {
+    float: right;
+    width: 220px; } }
+
+.reading__content .field--name-field-media-image {
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #f1f2f2;
+  border: 1px solid #b8babc;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 290px;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 220px; }
+
+.reading__content .field--name-field-issue h2 {
+  display: none; }
 
 .slice-title {
   font-family: 'FF DIN Pro Bold', sans-serif;
@@ -1627,24 +1726,6 @@ h4 {
   line-height: 30px;
   margin-bottom: 18px;
   text-transform: uppercase; }
-
-.field--name-field-ad img,
-.field--name-field-ads img,
-.field--name-field-ad-right img,
-.field--name-field-ad-left img {
-  height: auto;
-  width: 100%; }
-
-.field--name-field-ad {
-  margin-bottom: 60px; }
-
-.field--name-field-ads {
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 30px;
-  -ms-grid-columns: 1fr 1fr  1fr;
-      grid-template-columns: 1fr 1fr  1fr;
-  margin-bottom: 60px; }
 
 .user-login-form input {
   max-width: 100%; }

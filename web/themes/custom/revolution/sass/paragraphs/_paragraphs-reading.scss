@@ -1,0 +1,75 @@
+.reading__content {
+
+  // Headlines.
+  .field--name-name,
+  .field--name-field-issue-header {
+    font-family: $ff-din-medium;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+
+  // Captions.
+  .field--name-field-book-caption,
+  .field--name-field-issue-caption {
+    color: $c-gr6;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  // Space between "image" and headline.
+  .field--name-field-media-image,
+  .field--name-field-issue-cover-image img {
+    margin-bottom: 16px;
+  }
+
+  // "Grid" Layout
+  .view-sw-what-were-reading {
+
+    @include breakpoint($desktop) {
+      float: left;
+      width: 320px;
+    }
+  }
+
+  .field--name-field-book {
+
+    @include breakpoint($desktop) {
+      float: right;
+      width: calc(100% - 540px);
+    }
+
+    .media--type-book {
+      margin: 0 auto;
+      width: 220px;
+    }
+  }
+
+  .issue {
+
+    @include breakpoint($desktop) {
+      float: right;
+      width: 220px;
+    }
+  }
+
+  // Book mat.
+  .field--name-field-media-image {
+    align-items: center;
+    background: #f1f2f2;
+    border: 1px solid #b8babc;
+    display: flex;
+    height: 290px;
+    justify-content: center;
+    width: 220px;
+  }
+
+  // Hide title on issue
+  // @todo keep from rendering.
+  .field--name-field-issue {
+
+    h2 {
+      display: none;
+    }
+  }
+}

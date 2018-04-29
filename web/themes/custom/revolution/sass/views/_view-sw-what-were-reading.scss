@@ -1,0 +1,25 @@
+.view-sw-what-were-reading {
+
+  .story-link {
+    @include teaser-tiny;
+  }
+
+  .node__content {
+    color: $c-gr6;
+    font-size: 14px;
+
+    .field--name-field-publication {
+      float: left;
+      font-style: italic;
+    }
+
+    .field--name-field-publication-date {
+      float: right;
+    }
+  }
+
+  .more-link {
+    font-size: 13px;
+    text-align: left;
+  }
+}

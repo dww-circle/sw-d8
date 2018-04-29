@@ -22,9 +22,9 @@ content:
     settings:
       trim_length: null
       url_only: true
-      target: _blank
-      url_plain: false
+      url_plain: true
       rel: '0'
+      target: '0'
     third_party_settings: {  }
     type: link
     region: content
