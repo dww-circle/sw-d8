@@ -1291,13 +1291,13 @@ select {
     margin-left: 0;
     width: 40px; }
   .social-links .hover {
-    display: none; }
+    opacity: 0; }
   .social-links a:hover {
     color: #ff0000; }
     .social-links a:hover .hover {
-      display: block; }
+      opacity: 1; }
     .social-links a:hover .default {
-      display: none; }
+      opacity: 0; }
   .social-links svg {
     height: 40px;
     text-indent: 0;
@@ -1361,7 +1361,8 @@ select {
     padding: 2px 0 3px;
     text-align: center; }
     .more-links .more-links-close:hover {
-      background: #ff0000; }
+      background: #ff0000;
+      cursor: pointer; }
 
 @media (min-width: 961px) {
   .story-social-left {
