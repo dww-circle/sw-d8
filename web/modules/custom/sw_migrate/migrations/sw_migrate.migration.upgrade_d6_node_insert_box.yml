@@ -21,7 +21,10 @@ process:
     plugin: default_value
     source: language
     default_value: und
-  title: title
+  title:
+    plugin: callback
+    source: title
+    callable: sw_migrate_fancy_quotes
   uid: node_uid
   # Ignore the D6 value, we always want insert boxes published.
   status:
@@ -49,7 +52,10 @@ process:
     plugin: sub_process
     source: field_header_text
     process:
-      value: value
+      value:
+        plugin: callback
+        source: value
+        callable: sw_migrate_fancy_quotes
   field_topic:
     plugin: skip_on_empty
     source: sw3_topic_tid

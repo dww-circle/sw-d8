@@ -10,6 +10,28 @@ use Drupal\migrate\Plugin\MigrationInterface;
 use Drupal\migrate\Row;
 
 /**
+ * Migrate callback function to replace ' and " with fancy quotes as needed.
+ *
+ * @param string $plain_text
+ *
+ * @return string
+ *   The given input with ' and " replaced with fancy quotes as needed.
+ *
+ * @todo Make this HTML-aware for use with formatted fields?
+ */
+function sw_migrate_fancy_quotes($plain_text) {
+  $preg_map = [
+    '‘' => '@^\'@',
+    ' ‘' => '@ \'@',
+    '’' => '@\'@',
+    '“' => '@^"@',
+    ' “' => '@ "@',
+    '”' => '@"@',
+  ];
+  return trim(preg_replace(array_values($preg_map), array_keys($preg_map), $plain_text));
+}
+
+/**
  * Migrate callback function to map story weights into the new values.
  *
  * @param array $story_weight
@@ -430,7 +452,7 @@ function sw_migrate_term_name_map($tid_name_duple) {
       return 'Custom';
 
     default:
-      return $name;
+      return sw_migrate_fancy_quotes($name);
   }
 }
 

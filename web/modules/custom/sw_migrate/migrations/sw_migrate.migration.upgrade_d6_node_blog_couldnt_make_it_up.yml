@@ -21,7 +21,10 @@ process:
     plugin: default_value
     source: language
     default_value: und
-  title: title
+  title:
+    plugin: callback
+    source: title
+    callable: sw_migrate_fancy_quotes
   uid: node_uid
   status: status
   created: created

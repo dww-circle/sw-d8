@@ -27,7 +27,10 @@ process:
     plugin: default_value
     source: language
     default_value: und
-  title: title
+  title:
+    plugin: callback
+    source: title
+    callable: sw_migrate_fancy_quotes
   uid: node_uid
   status: status
   created: created
@@ -73,7 +76,10 @@ process:
     plugin: sub_process
     source: field_kicker
     process:
-      value: value
+      value:
+        plugin: callback
+        source: value
+        callable: sw_migrate_fancy_quotes
   field_story_weight:
     plugin: callback
     source: field_story_weight

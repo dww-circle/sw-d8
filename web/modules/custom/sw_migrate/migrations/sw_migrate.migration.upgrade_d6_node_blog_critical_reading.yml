@@ -21,7 +21,10 @@ process:
     plugin: default_value
     source: language
     default_value: und
-  title: title
+  title:
+    plugin: callback
+    source: title
+    callable: sw_migrate_fancy_quotes
   uid: node_uid
   status: status
   created: created
@@ -54,7 +57,10 @@ process:
     plugin: sub_process
     source: field_article_headline
     process:
-      value: value
+      value:
+        plugin: callback
+        source: value
+        callable: sw_migrate_fancy_quotes
       # Ignore format since this is now plain text.
   field_article_url:
     plugin: sub_process

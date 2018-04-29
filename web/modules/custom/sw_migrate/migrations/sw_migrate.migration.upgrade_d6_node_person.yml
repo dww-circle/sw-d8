@@ -11,9 +11,11 @@ migration_tags:
   - Content
 migration_group: sw_d6
 label: 'Nodes (person)'
+
 source:
   plugin: d6_node
   node_type: person
+
 process:
   nid: nid
   vid: vid
@@ -22,9 +24,9 @@ process:
     source: language
     default_value: und
   title:
-    source: title
     plugin: callback
-    callable: trim
+    source: title
+    callable: sw_migrate_fancy_quotes
   uid: node_uid
   # Ignore the D6 value, we always want people nodes published.
   status:
@@ -47,15 +49,23 @@ process:
     plugin: sub_process
     source: field_first_name
     process:
-      value: value
+      value:
+        plugin: callback
+        source: value
+        callable: sw_migrate_fancy_quotes
   field_last_name:
     plugin: sub_process
     source: field_last_name
     process:
-      value: value
+      value:
+        plugin: callback
+        source: value
+        callable: sw_migrate_fancy_quotes
+
 destination:
   plugin: 'entity:node'
   default_bundle: person
+
 migration_dependencies:
   required:
     - upgrade_d6_user
