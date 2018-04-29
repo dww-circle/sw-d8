@@ -95,10 +95,38 @@ function sw_migrate_migrate_upgrade_d6_taxonomy_term_prepare_row(Row $row, Migra
       _sw_migrate_d6_taxonomy_term_prepare_row_section($row, $source, $migration);
       break;
 
+    case 5:
+      _sw_migrate_d6_taxonomy_term_prepare_row_issue($row, $source, $migration);
+      break;
+
     case 12:
       _sw_migrate_d6_taxonomy_term_prepare_row_series($row, $source, $migration);
       break;
 
+  }
+}
+
+/**
+ * Private helper to prepare a migration row for a 'issue' taxonomy term.
+ */
+function _sw_migrate_d6_taxonomy_term_prepare_row_issue(Row $row, MigrateSourceInterface $source, MigrationInterface $migration) {
+  $values = $row->getSource();
+
+  // If there's a timestamp record in {sw_issue_dates}, use it.
+  $datestamp = $source->getDatabase()
+    ->query('SELECT pub_date FROM {sw_issue_dates} WHERE issue_num = :number', [':number' => $values['name']])
+    ->fetchField();
+  if (!empty($datestamp)) {
+    $issue_date = format_date($datestamp, 'custom', 'F j, Y');
+  }
+  // Otherwise, see if there's custom text in {sw_issue_date_text}.
+  else {
+    $issue_date = $source->getDatabase()
+      ->query('SELECT date_text FROM {sw_issue_date_text} WHERE issue_num = :number', [':number' => $values['name']])
+      ->fetchField();
+  }
+  if (!empty($issue_date)) {
+    $row->setSourceProperty('issue_date', $issue_date);
   }
 }
 

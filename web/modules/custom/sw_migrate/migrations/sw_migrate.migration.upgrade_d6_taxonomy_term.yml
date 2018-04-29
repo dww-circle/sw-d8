@@ -58,11 +58,13 @@ process:
     default_value: 0
     source: parent
   changed: timestamp
-  # Series-only fields. We don't worry about skipping since they
+  # Series-only fields. We don't worry about skipping since the
   # values are always set for series, and never set for the other
   # vocabularies that don't have these fields.
   field_show_story_labels: show_story_labels
   field_series_insert_list_length: series_insert_list_length
+  # Issue-only fields.
+  field_issue_date: issue_date
 
 destination:
   plugin: 'entity:taxonomy_term'
