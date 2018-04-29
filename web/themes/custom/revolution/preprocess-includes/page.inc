@@ -37,18 +37,15 @@ function revolution_theme_suggestions_page_alter(array &$suggestions, array $var
   }
 }
 
-/*
+/**
  * Implements hook_preprocess_HOOK().
  */
 function revolution_preprocess_page(&$variables) {
-
   $node = \Drupal::routeMatch()->getParameter('node');
 
   if ($node) {
-    $node_type = $node->bundle();
-
-    if($node_type == 'blog_critical_reading') {
-      $variables['story_label'] = t('Front the critical reading blog');
+    if ($node->bundle() == 'blog_critical_reading') {
+      $variables['story_label'] = t('From the critical reading blog');
     }
   }
 }
