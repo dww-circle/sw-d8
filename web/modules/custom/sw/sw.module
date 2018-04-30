@@ -98,7 +98,7 @@ function _sw_form_media_image_form_alter(&$form, FormStateInterface $form_state,
 /**
  * Implements hook_form_FORM_ID_alter() for 'node_form'.
  *
- * Improves the UI for story node forms via #states.
+ * Invokes bundle-specific methods to alter node forms.
  */
 function sw_form_node_form_alter(&$form, FormStateInterface $form_state, $form_id) {
   $node = $form_state->getFormObject()->getEntity();
@@ -118,7 +118,7 @@ function sw_form_node_form_alter(&$form, FormStateInterface $form_state, $form_i
  * Helper for hook_form_FORM_ID_alter() for story nodes.
  *
  * Improves the UI by only conditionally showing relevant fields based on the
- * values of other fields via #states.
+ * values of other fields via #states, and hiding fields we don't want to see.
  */
 function sw_story_node_form_alter(&$form, FormStateInterface $form_state, $form_id) {
   $form['field_kicker']['#states'] = [
