@@ -1,0 +1,6 @@
+sw.admin.content.front_page:
+  title: SW Front page
+  description: 'Manage the front page.'
+  route_name: sw.admin.content.front_page
+  parent: system.admin_content
+  weight: 0
