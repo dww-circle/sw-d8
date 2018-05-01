@@ -34,6 +34,7 @@
     "drupal/migrate_upgrade": "^3.0",
     "drupal/paragraphs": "^1.2",
     "drupal/pathauto": "^1.0",
+    "drupal/pathologic": "^1.0",
     "drupal/redirect": "^1.1",
     "drupal/simple_block": "^1.0@beta",
     "drupal/static_page": "^1.0",
