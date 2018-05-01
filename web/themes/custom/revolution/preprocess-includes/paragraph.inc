@@ -42,14 +42,10 @@ function revolution_preprocess_paragraph__queue(&$variables) {
  * Implements hook_preprocess_paragraph__TYPE().
  */
 function revolution_preprocess_paragraph__movement_news(&$variables) {
-  $i = 0;
-  $tids = [SW_SECTION_LABOR_TID, SW_SECTION_ACTIVIST_NEWS_TID];
-  $query = sw_story_taxonomy_query($tids, [], 1, -2);
-  $lead_story_nids = $query->execute()->fetchCol();
-  // We need 5 more stories, and the weight_limit is also 5.
-  $query = sw_story_taxonomy_query($tids, $lead_story_nids, 5, 5);
-  $other_nids = $query->execute()->fetchCol();
-  $nids = array_merge($lead_story_nids, $other_nids);
+  $block_manager = \Drupal::service('plugin.manager.block');
+  $config = [];
+  $plugin_block = $block_manager->createInstance('sw_movement_news_block', $config);
+  $nids = $plugin_block->getMovementNewsStories();
   if (!empty($nids)) {
     $nodes = Node::loadMultiple($nids);
   }
