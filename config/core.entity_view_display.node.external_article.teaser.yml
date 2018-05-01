@@ -21,4 +21,5 @@ content:
 hidden:
   field_external_article_url: true
   field_publication: true
+  field_publication_date: true
   field_story_label: true
