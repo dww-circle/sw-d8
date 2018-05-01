@@ -44,10 +44,10 @@
 
   {% endblock date %}
   <h3 class="slice-title">{{ content.field_display_title }}</h3>
-  {{ groups.lead | raw }}
+  {{ groups.lead }}
   {% block columns %}
-    {{ groups.column_left | raw }}
-    {{ groups.column_right | raw }}
+    {{ groups.column_left }}
+    {{ groups.column_right }}
   {% endblock columns %}
 
 </div>

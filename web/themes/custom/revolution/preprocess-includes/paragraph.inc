@@ -103,35 +103,26 @@ function _revolution_view_mode_image_chooser($i, $med_img_num) {
  *
  * @return array
  *   A nested array of slice regions. Keys are region identifiers ('lead',
- *   'column_left' and optionally 'column_right'), values are rendered markup to
+ *   'column_left' and optionally 'column_right'), values are render arrays to
  *   place in each region.
  */
 function _revolution_story_groups_render(array $nodes, $num_med_img, $has_right_column) {
   $view_builder = \Drupal::entityTypeManager()->getViewBuilder('node');
   $node_count = count($nodes);
-  $group_markup = [
-    'lead' => '',
-    'column_left' => '',
-  ];
-  if ($has_right_column) {
-    $group_markup['column_right'] = '';
-  }
   $i = 0;
   foreach ($nodes as $node) {
     $view_mode = _revolution_view_mode_image_chooser($i, $num_med_img);
     $group_id = _revolution_group_chooser($i, $node_count, $has_right_column);
-    $build = $view_builder->view($node, $view_mode);
-    $group_markup[$group_id] .= render($build);
+    if (empty($groups[$group_id]['items'])) {
+      $groups[$group_id]['items'] = [];
+    }
+    $groups[$group_id]['items'][] = $view_builder->view($node, $view_mode);
     $i++;
   }
-
-  $groups = [];
-  foreach ($group_markup as $group_id => $markup) {
-    if (!empty($markup)) {
-      $groups[$group_id] = '<div class="story-group--' . $group_id . '">' . $markup . '</div>';
-    }
+  foreach ($groups as $group_id => $group) {
+    $groups[$group_id]['#prefix'] = '<div class="story-group--' . $group_id . '">';
+    $groups[$group_id]['#suffix'] = '</div>';
   }
-
   return $groups;
 }
 
