@@ -11,14 +11,11 @@ id: media.book.field_book_caption
 field_name: field_book_caption
 entity_type: media
 bundle: book
-label: 'Caption or Authors'
+label: 'Caption or authors'
 description: ''
 required: false
 translatable: false
-default_value:
-  -
-    value: 'Edited by Hao Ren, Eli Friedman, and Zhong Jin LI '
-    format: filtered_html
+default_value: {  }
 default_value_callback: ''
 settings: {  }
 field_type: text_long
