@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "f76478e18bfb63c6ec9017a7f915ccdf",
+    "content-hash": "4ae4baaad2776633491b2c9b7b390615",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2727,6 +2727,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "[#2968459-2] Add tokens for links to the entity being forwarded": "https://www.drupal.org/files/issues/2018-05-01/2968459-2.forward-link-tokens.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",

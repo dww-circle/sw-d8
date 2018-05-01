@@ -118,6 +118,9 @@
         "[#2959316-11] Views argument validators that modify argument values aren't reflected in token replacement" : "https://www.drupal.org/files/issues/2018-04-10/2959316-11.patch",
         "[#2959415-2] When a view uses the HTTPStatusCode handler to set a 404 or 403, throw the appropriate exception" : "https://www.drupal.org/files/issues/2018-04-07/2959415-2.httpstatuscode_throw_exception.patch"
       },
+      "drupal/forward": {
+        "[#2968459-2] Add tokens for links to the entity being forwarded" : "https://www.drupal.org/files/issues/2018-05-01/2968459-2.forward-link-tokens.patch"
+      },
       "drupal/migrate_upgrade": {
         "[#2935225-2] Fix to d6_term_node_revision handling (companion to core issue 2934799)" : "https://www.drupal.org/files/issues/2935225-2-migrate_upgrade-fix_to_d6_term_node_revision_handling.patch"
       },
