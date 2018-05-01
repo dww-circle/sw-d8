@@ -1,31 +1,94 @@
 langcode: en
 forward_entity_node: true
-forward_view_full: false
-forward_view_teaser: true
-forward_interface_type: link
+forward_view_full: true
+forward_view_teaser: false
+forward_interface_type: form
 forward_interface_title: 'Email this [forward:entity-type]'
 forward_interface_weight: 0
 forward_link_inline: 1
-forward_link_title: 'Forward this [forward:entity-type] to a friend'
+forward_link_title: 'Email this [forward:entity-type]'
 forward_link_icon: ''
-forward_link_style: 0
+forward_link_style: 2
 forward_link_noindex: true
-forward_link_nofollow: false
-forward_form_instructions: 'Thank you for your interest in spreading the word about <em>[forward:entity-title]</em> on [site:name].'
-forward_form_display_page: false
+forward_link_nofollow: true
+forward_form_instructions: ''
+forward_form_display_page: true
 forward_form_display_subject: false
 forward_form_display_body: false
 forward_form_confirmation: 'Thank you for spreading the word about [site:name]. We appreciate your help.'
 forward_personal_message: 1
-forward_personal_message_filter: false
+forward_personal_message_filter: true
 forward_personal_message_tags: 'p,br,em,strong,cite,code,ul,ol,li,dl,dt,dd'
 forward_email_logo: ''
-forward_email_subject: '[forward:sender-name] has forwarded a page to you from [site:name]'
-forward_email_message: '[forward:sender-name] thought you would like to see this page from the [site:name] web site.'
+forward_email_subject: '[SocialistWorker.org] [forward:entity-title]'
+forward_email_message: "View original article:\r\n\r\n[forward:entity-url]\r\n\r\n"
 forward_bypass_access_control: 0
 forward_filter_format: ''
 forward_flood_control_limit: 10
 forward_flood_control_error: 'You can''t send more than @number messages per hour. Please try again later.'
 _core:
   default_config_hash: LjNmrZEGeLdWqwJcnscz5MMdBFPuS_pFjmJx0AoTFAQ
-forward_email_from_address: webadmin@socialistworker.org
+forward_email_from_address: website@socialistworker.org
+forward_node_external_article: true
+forward_node_story: true
+forward_entity_contact_message: false
+forward_contact_message_general_information: false
+forward_contact_message_personal: false
+forward_contact_message_readers_views: false
+forward_contact_message_reports: false
+forward_contact_message_web_department: false
+forward_entity_entity_subqueue: false
+forward_entity_subqueue_from_the_archives: false
+forward_entity_subqueue_sidebar_media: false
+forward_entity_subqueue_story_queues: false
+forward_entity_subqueue_what_were_reading: false
+forward_entity_file: false
+forward_file_file: false
+forward_entity_media: false
+forward_media_audio: false
+forward_media_book: false
+forward_media_file: false
+forward_media_image: false
+forward_media_video: false
+forward_node_blog_couldnt_make_it_up: false
+forward_node_blog_critical_reading: false
+forward_node_insert_box: false
+forward_node_page: false
+forward_node_person: false
+forward_node_slices: false
+forward_node_static_page: false
+forward_entity_redirect: false
+forward_redirect_redirect: false
+forward_entity_shortcut: false
+forward_shortcut_default: false
+forward_entity_taxonomy_term: false
+forward_taxonomy_term_city: false
+forward_taxonomy_term_contributors: false
+forward_taxonomy_term_country: false
+forward_taxonomy_term_credit: false
+forward_taxonomy_term_image_gallery: false
+forward_taxonomy_term_image_provider: false
+forward_taxonomy_term_image_rights: false
+forward_taxonomy_term_insert_type: false
+forward_taxonomy_term_issue_number: false
+forward_taxonomy_term_keywords: false
+forward_taxonomy_term_section: false
+forward_taxonomy_term_series: false
+forward_taxonomy_term_server_folder: false
+forward_taxonomy_term_state: false
+forward_taxonomy_term_story_type: false
+forward_taxonomy_term_tags: false
+forward_taxonomy_term_topic: false
+forward_entity_user: false
+forward_user_user: false
+forward_entity_menu_link_content: false
+forward_menu_link_content_menu_link_content: false
+forward_entity_paragraph: false
+forward_paragraph_full: false
+forward_paragraph_movement_news: false
+forward_paragraph_nested: false
+forward_paragraph_queue: false
+forward_paragraph_reading: false
+forward_paragraph_today: false
+forward_paragraph_triptych: false
+forward_paragraph_weekend: false
