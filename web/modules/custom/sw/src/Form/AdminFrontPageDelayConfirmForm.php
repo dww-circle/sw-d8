@@ -53,7 +53,6 @@ class AdminFrontPageDelayConfirmForm extends ConfirmFormBase {
       'sw_front_page_request_uid' => $this->currentUser()->id(),
     ];
     $this->setSiteState($values);
-    drupal_set_message($this->t('The %target front page will go live at midnight.', ['%target' => $data['target_draft']]));
     $form_state->setRedirect('sw.admin.content.front_page');
   }
 
