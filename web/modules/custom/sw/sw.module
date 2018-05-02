@@ -823,7 +823,8 @@ function sw_insert_series_box(NodeInterface $node) {
  * @see sw_get_story_label()
  */
 function sw_get_story_render_array(array $story, $show_story_label = FALSE) {
-  $node_url = new Url('entity.node.canonical', ['node' => $story['nid']]);
+  // Use absolute URLs so that these sorts of links work fine in emails, RSS, etc.
+  $node_url = new Url('entity.node.canonical', ['node' => $story['nid']], ['absolute' => TRUE]);
   $build = [
     '#prefix' => '<a class="story-link" href="' . $node_url->toString() . '">',
     '#suffix' => '</a>',
