@@ -242,7 +242,7 @@ function sw_preprocess_node_story(&$variables) {
 
   $variables['story_label'] = sw_get_story_label($variables['node'], $variables['view_mode']);
 
-  if ($variables['view_mode'] == 'full') {
+  if ($variables['view_mode'] == 'full' || $variables['view_mode'] == 'forward') {
     if (!empty($variables['node']->sw_authors)) {
       $placeholders['%author'] = sw_get_entity_label_multiple($variables['node']->sw_authors, 'sw_author_label');
     }
