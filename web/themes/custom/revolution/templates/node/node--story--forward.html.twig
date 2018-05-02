@@ -1,0 +1,44 @@
+{%
+  set classes = [
+    'node--type-' ~ node.bundle|clean_class,
+    not node.isPublished() ? 'node--unpublished',
+    view_mode ? 'story--' ~ view_mode|clean_class,
+    'nid-' ~ node.id
+  ]
+%}
+
+<article{{ attributes.addClass(classes) }}>
+
+  <div class="content">
+    <div class="story-label">{{ story_label|raw }}</div>
+
+    {{ title_prefix }}
+      <h1 class="page-title">
+        {{ label }}
+      </h1>
+    {{ title_suffix }}
+
+    <div{{ content_attributes.addClass('node__content') }}>
+      {{ content.field_introduction }}
+      {{ date }}
+      {{ content|without('field_introduction') }}
+      {% if series_navigation %}
+        <div class="series-navigation">
+          {% if series_navigation.prev %}
+            <div class="series-prev">
+              <div class="nav-label">{{ 'Previous: '|t }}</div>
+              {{ series_navigation.prev }}
+            </div>
+          {% endif %}
+          {% if series_navigation.next %}
+            <div class="series-next">
+              <div class="nav-label">{{ 'Next: '|t }}</div>
+              {{ series_navigation.next }}
+            </div>
+          {% endif %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+
+</article>
