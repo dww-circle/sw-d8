@@ -21,7 +21,7 @@ forward_personal_message_filter: true
 forward_personal_message_tags: 'p,br,em,strong,cite,code,ul,ol,li,dl,dt,dd'
 forward_email_logo: ''
 forward_email_subject: '[SocialistWorker.org] [forward:entity-title]'
-forward_email_message: "View original article:\r\n\r\n[forward:entity-url]\r\n\r\n"
+forward_email_message: ''
 forward_bypass_access_control: 0
 forward_filter_format: ''
 forward_flood_control_limit: 10
