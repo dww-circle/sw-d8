@@ -1,32 +1,27 @@
 <html>
+  <head>
+    <link rel="stylesheet" href="{{ email_css_path}}" media="all">
+  </head>
   <body>
-    <table width="600" cellspacing="0" cellpadding="10" border="0">
-      <thead>
-        <tr>
-          <td width="25%">
-            <div class="logo"><a href="{{ site_url }}" title="{{ site_name }}">{{ logo }}</a></div>
-          </td>
-          <td>
-            <h1 class="site-name"><a href="{{ site_url }}" title="{{ site_name }}">{{ site_name }}</a></h1>
-          </td>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td colspan="2">
-            {% if header %}
-              <div class="header">{{ header }}</div>
-            {% endif %}
-            {% if message %}
-              <div class="message">{{ message }}</div>
-            {% endif %}
-            <div class="content">{{ content }}</div>
-            {% if link %}
-              <div class="link">{{ link }}</div>
-            {% endif %}
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="header">
+      <div class="header-logo">
+        <a href="{{ front_page }}" title="{{ site_name }}">{{ logo | raw }}</a>
+      </div>
+      <div class="header-sublogo">
+        <div class="sublogo-mod">{{ 'Publication of the'|t }}</div>
+        <div>{{ 'International Socialist Organization'|t }}</div>
+      </div>
+    </div>
+    <div class="body">
+      <h1 class="site-name"><a href="{{ front_page }}" title="{{ site_name }}">{{ site_name }}</a></h1>
+      {% if message %}
+        <div class="message">{{ message }}</div>
+      {% endif %}
+      <div class="story-url"><a href="{{ entity_url }}">{{ entity_url }}</a></div>
+      <div class="content page-node-type-story">{{ content }}</div>
+      {% if link %}
+        <div class="link">{{ link }}</div>
+      {% endif %}
+    </div>
   </body>
 </html>

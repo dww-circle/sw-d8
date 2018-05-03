@@ -3,5 +3,6 @@
 require_once dirname(__FILE__) . '/preprocess-includes/entity.inc';
 require_once dirname(__FILE__) . '/preprocess-includes/field.inc';
 require_once dirname(__FILE__) . '/preprocess-includes/form.inc';
+require_once dirname(__FILE__) . '/preprocess-includes/forward.inc';
 require_once dirname(__FILE__) . '/preprocess-includes/page.inc';
 require_once dirname(__FILE__) . '/preprocess-includes/paragraph.inc';
