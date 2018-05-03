@@ -105,18 +105,6 @@ h4 {
 
 // Story Label.
 .story-label {
-  color: #808080;
-  font-family: $ff-nitti;
-  font-size: 14px;
-  font-weight: $fw-light;
-  letter-spacing: 2px;
-  line-height: 18px;
-  text-transform: uppercase;
-
-  @include breakpoint($desktop) {
-    font-size: 16px;
-  }
-
   .field--name-field-sub &,
   .paragraph--type--nested & {
     font-size: 13px;

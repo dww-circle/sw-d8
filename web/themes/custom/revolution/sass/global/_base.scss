@@ -215,6 +215,21 @@ main {
   }
 }
 
+// Story Label.
+.story-label {
+  color: #808080;
+  font-family: $ff-nitti;
+  font-size: 14px;
+  font-weight: $fw-light;
+  letter-spacing: 2px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  @include breakpoint($desktop) {
+    font-size: 16px;
+  }
+}
+
 // This applies to the Recent page. May want to refactor/be less specific/move.
 .view-sw-recent .views-row {
   margin-bottom: 25px;
