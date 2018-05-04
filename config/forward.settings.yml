@@ -17,7 +17,7 @@ forward_form_display_subject: false
 forward_form_display_body: false
 forward_form_confirmation: 'Thank you for spreading the word about [site:name]. We appreciate your help.'
 forward_personal_message: 1
-forward_personal_message_filter: true
+forward_personal_message_filter: false
 forward_personal_message_tags: 'p,br,em,strong,cite,code,ul,ol,li,dl,dt,dd'
 forward_email_logo: ''
 forward_email_subject: '[SocialistWorker.org] [forward:entity-title]'
@@ -92,3 +92,6 @@ forward_paragraph_reading: false
 forward_paragraph_today: false
 forward_paragraph_triptych: false
 forward_paragraph_weekend: false
+forward_form_allow_plain_text: true
+forward_filter_format_html: ''
+forward_filter_format_plain_text: forward_plain_text
