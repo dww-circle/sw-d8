@@ -423,11 +423,11 @@ main {
 .site-name {
   display: none; }
 
-.story-url {
+.entity-url {
   font-size: 14px; }
 
 .message {
-  margin: 10px;
+  margin: 20px 0;
   padding: 10px;
   border: 1px solid #ddd; }
 

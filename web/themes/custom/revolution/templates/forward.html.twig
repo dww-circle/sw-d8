@@ -14,10 +14,12 @@
       </div>
     </div>
     <div class="body">
+      {% if header %}
+        <div class="message-header">{{ header }}</div>
+      {% endif %}
       {% if message %}
         <div class="message">{{ message }}</div>
       {% endif %}
-      <div class="story-url"><a href="{{ entity_url }}">{{ entity_url }}</a></div>
       <div class="content page-node-type-story">{{ content }}</div>
       {% if link %}
         <div class="link">{{ link }}</div>
