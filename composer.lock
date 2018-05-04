@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "7357fade6b825b6a4f416fd2735716d4",
+    "content-hash": "21e40904432006575a9a822d394a8a1a",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2729,7 +2729,13 @@
                     }
                 },
                 "patches_applied": {
-                    "[#2968459-2] Add tokens for links to the entity being forwarded": "https://www.drupal.org/files/issues/2018-05-01/2968459-2.forward-link-tokens.patch"
+                    "[#2968459-2] Add tokens for links to the entity being forwarded": "https://www.drupal.org/files/issues/2018-05-01/2968459-2.forward-link-tokens.patch",
+                    "[#2968659-2] The 'link' variable in forward.twig.html should be absolute": "https://www.drupal.org/files/issues/2018-05-01/2968659-2.forward-entity-link-absolute.patch",
+                    "[#2969317-2] Convert forward to use short array syntax": "https://www.drupal.org/files/issues/2018-05-03/2969317-2.forward-short-array.patch",
+                    "[#2969337-6] Settings form UI improvement for dependent config options": "https://www.drupal.org/files/issues/2018-05-03/2969337-6.patch",
+                    "[#2969352-4] Add option to allow plain text emails": "https://www.drupal.org/files/issues/2018-05-03/2969352-3.allow-plain-text.patch",
+                    "[#2969594-2] Simplify entity rendering code in ForwardForm::submitForm()": "https://www.drupal.org/files/issues/2018-05-04/2969594-2.simplify-entity-rendering.patch",
+                    "[#2969418-2] Allow a separate filter format for plain text vs. HTML emails": "https://www.drupal.org/files/issues/2018-05-03/2969418-2.filter_format_plain_text.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
