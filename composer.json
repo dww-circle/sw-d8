@@ -125,6 +125,7 @@
         "[#2969317-2] Convert forward to use short array syntax" : "https://www.drupal.org/files/issues/2018-05-03/2969317-2.forward-short-array.patch",
         "[#2969337-6] Settings form UI improvement for dependent config options" : "https://www.drupal.org/files/issues/2018-05-03/2969337-6.patch",
         "[#2969352-4] Add option to allow plain text emails" : "https://www.drupal.org/files/issues/2018-05-03/2969352-3.allow-plain-text.patch",
+        "[#2969352-10] Follow-up fix for plain text emails" : "https://www.drupal.org/files/issues/2018-05-04/2969352-10.plain-text-needs-helper-class.patch",
         "[#2969594-2] Simplify entity rendering code in ForwardForm::submitForm()" : "https://www.drupal.org/files/issues/2018-05-04/2969594-2.simplify-entity-rendering.patch",
         "[#2969418-2] Allow a separate filter format for plain text vs. HTML emails" : "https://www.drupal.org/files/issues/2018-05-03/2969418-2.filter_format_plain_text.patch"
       },
