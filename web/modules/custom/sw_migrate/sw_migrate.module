@@ -288,6 +288,19 @@ function sw_migrate_migrate_upgrade_d6_node_story_prepare_row(Row $row, MigrateS
     $sw3_story_type_tid = SW_STORY_TYPE_CUSTOM_TID;
   }
   $row->setSourceProperty('sw3_story_type_tid', $sw3_story_type_tid);
+
+  // Handle normal and wide image fields, if possible.
+  $sw3_main_image_id = sw_migrate_find_first_dme_img($values['field_body'][0]['value']);
+  if (!empty($sw3_main_image_id)) {
+    $row->setSourceProperty('sw3_main_image_id', $sw3_main_image_id);
+    $sw3_wide_image_id = $source->getDatabase()
+      ->query('SELECT nid FROM {content_type_image} WHERE field_original_image_nid_value = :nid AND field_image_crop_type_value = 6',
+              [':nid' => $sw3_main_image_id])
+      ->fetchCol();
+    if (!empty($sw3_wide_image_id)) {
+      $row->setSourceProperty('sw3_wide_image_id', $sw3_wide_image_id);
+    }
+  }
 }
 
 /**
