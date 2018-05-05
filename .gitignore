@@ -110,4 +110,4 @@ config-local
 config.local.json
 .ht.router.php
 sprite.css
-styles.css.map
+*.css.map
