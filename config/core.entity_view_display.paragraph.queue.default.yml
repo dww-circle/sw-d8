@@ -25,21 +25,21 @@ content:
     region: content
   field_num:
     weight: 2
-    label: hidden
+    label: inline
     settings: {  }
     third_party_settings: {  }
     type: list_key
     region: content
   field_results:
     weight: 3
-    label: hidden
+    label: inline
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_subqueue:
     weight: 4
-    label: hidden
+    label: inline
     settings: {  }
     third_party_settings: {  }
     type: entity_reference_entity_id

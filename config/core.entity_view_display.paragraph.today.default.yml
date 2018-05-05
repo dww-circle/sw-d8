@@ -39,21 +39,22 @@ content:
     region: content
   field_ad_visibility:
     weight: 9
-    label: hidden
+    label: inline
     settings: {  }
     third_party_settings: {  }
     type: list_key
     region: content
   field_articles:
     weight: 2
-    label: hidden
-    settings: {  }
+    label: above
+    settings:
+      link: true
     third_party_settings: {  }
-    type: entity_reference_entity_id
+    type: entity_reference_label
     region: content
   field_date:
     weight: 1
-    label: hidden
+    label: inline
     settings:
       format_type: medium
       timezone_override: ''
@@ -70,7 +71,7 @@ content:
     region: content
   field_layout:
     weight: 6
-    label: hidden
+    label: inline
     settings: {  }
     third_party_settings: {  }
     type: list_key
