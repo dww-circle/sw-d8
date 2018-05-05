@@ -2,13 +2,13 @@ langcode: en
 forward_entity_node: true
 forward_view_full: true
 forward_view_teaser: false
-forward_interface_type: form
+forward_interface_type: link
 forward_interface_title: 'Email this [forward:entity-type]'
 forward_interface_weight: 0
 forward_link_inline: 1
-forward_link_title: 'Email this [forward:entity-type]'
+forward_link_title: 'Email [forward:entity-type]'
 forward_link_icon: ''
-forward_link_style: 2
+forward_link_style: 0
 forward_link_noindex: true
 forward_link_nofollow: true
 forward_form_instructions: ''

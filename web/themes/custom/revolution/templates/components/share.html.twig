@@ -4,6 +4,7 @@
 {% set base_url = url('<front>')  %}
 {% set absolute_url =  base_url['#markup'] ~ url %}
 {% set summary =  content.field_body_introduction.0['#text']|striptags %}
+{% set forward_page = base_url['#markup'] ~ 'forward/node/' ~ node.id %}
 
 {# see https://github.com/bradvin/social-share-urls for example links#}
 {% set services = [
@@ -17,7 +18,7 @@
     'link': 'https://www.facebook.com/sharer.php?s=100&p[url]=' ~ absolute_url ~ '&p[title]=' ~ title ~ '&p[summary]=' ~ summary,
     'text': 'Share on Facebook'
   },
-  { 'service': 'email', 'link': '/email', 'text': 'Email this story'},
+  { 'service': 'email', 'link': forward_page, 'text': 'Email this story'},
   { 'service': 'reply', 'link': '/reply;', 'text': 'Reply'},
   { 'service': 'more', 'link': '#', 'text': 'Click for more options'}
 ] %}
