@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "e209508b55eb623d368a175b609501bd",
+    "content-hash": "5134f9bbfa66437395e594f376feb98b",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2731,6 +2731,7 @@
                 "patches_applied": {
                     "[#2968459-2] Add tokens for links to the entity being forwarded": "https://www.drupal.org/files/issues/2018-05-01/2968459-2.forward-link-tokens.patch",
                     "[#2968659-2] The 'link' variable in forward.twig.html should be absolute": "https://www.drupal.org/files/issues/2018-05-01/2968659-2.forward-entity-link-absolute.patch",
+                    "[#2969005-2] Migrate source plugins need to define a 'source_module' in their annotation": "https://www.drupal.org/files/issues/2018-05-02/2969005-2.forward-migrate-source-module.patch",
                     "[#2969317-2] Convert forward to use short array syntax": "https://www.drupal.org/files/issues/2018-05-03/2969317-2.forward-short-array.patch",
                     "[#2969337-6] Settings form UI improvement for dependent config options": "https://www.drupal.org/files/issues/2018-05-03/2969337-6.patch",
                     "[#2969352-4] Add option to allow plain text emails": "https://www.drupal.org/files/issues/2018-05-03/2969352-3.allow-plain-text.patch",
