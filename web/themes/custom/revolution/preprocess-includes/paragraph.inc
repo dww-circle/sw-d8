@@ -42,8 +42,14 @@ function revolution_preprocess_paragraph__queue(&$variables) {
  * Implements hook_preprocess_paragraph__TYPE().
  */
 function revolution_preprocess_paragraph__movement_news(&$variables) {
-  $block_manager = \Drupal::service('plugin.manager.block');
+  $excluded_stories = $variables['paragraph']->get('field_excluded_stories')->getValue();
   $config = [];
+  if (!empty($excluded_stories)) {
+    foreach ($excluded_stories as $excluded_story) {
+      $config['excluded_stories'][] = $excluded_story['target_id'];
+    }
+  }
+  $block_manager = \Drupal::service('plugin.manager.block');
   $plugin_block = $block_manager->createInstance('sw_movement_news_block', $config);
   $nids = $plugin_block->getMovementNewsStories();
   if (!empty($nids)) {

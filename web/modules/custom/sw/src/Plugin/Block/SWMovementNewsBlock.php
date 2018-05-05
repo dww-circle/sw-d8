@@ -22,6 +22,43 @@ class SWMovementNewsBlock extends SWRecentArticlesBase {
   /**
    * {@inheritdoc}
    */
+  public function defaultConfiguration() {
+    return [
+      'excluded_stories' => [],
+    ];
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function blockForm($form, FormStateInterface $form_state) {
+    $form = parent::blockForm($form, $form_state);
+    $config = $this->getConfiguration();
+    $form['excluded_stories'] = [
+      '#type' => 'details',
+      '#title' => $this->t('Excluded stories'),
+    ];
+    for ($i=0; $i<5; $i++) {
+      $form['excluded_stories'][$i] = [
+        '#type' => 'number',
+        '#default_value' => $config['excluded_stories'][$i],
+        '#min' => 1,
+      ];
+    }
+    return $form;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function blockSubmit($form, FormStateInterface $form_state) {
+    parent::blockSubmit($form, $form_state);
+    $this->configuration['excluded_stories'] = $form_state->getValue('excluded_stories');
+  }
+
+  /**
+   * {@inheritdoc}
+   */
   public function build() {
     return $this->swGetStoryListArray($this->getMovementNewsStories());
   }
@@ -41,6 +78,11 @@ class SWMovementNewsBlock extends SWRecentArticlesBase {
     // For this block, we want to exclude all the articles that were published "today".
     $all_articles = $this->findRecentArticles();
     $exclude_nids = array_keys(array_shift($all_articles));
+
+    $config = $this->getConfiguration();
+    if (!empty($config['excluded_stories'])) {
+      $exclude_nids = array_merge($exclude_nids, $config['excluded_stories']);
+    }
 
     $tids = [SW_SECTION_LABOR_TID, SW_SECTION_ACTIVIST_NEWS_TID];
     $query = sw_story_taxonomy_query($tids, $exclude_nids, 1, -2);

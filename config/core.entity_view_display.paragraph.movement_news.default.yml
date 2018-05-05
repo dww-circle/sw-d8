@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.movement_news.field_display_title
+    - field.field.paragraph.movement_news.field_excluded_stories
     - paragraphs.paragraphs_type.movement_news
 id: paragraph.movement_news.default
 targetEntityType: paragraph
@@ -18,4 +19,5 @@ content:
     third_party_settings: {  }
     type: string
     region: content
-hidden: {  }
+hidden:
+  field_excluded_stories: true
