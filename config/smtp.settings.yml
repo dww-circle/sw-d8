@@ -1,15 +1,15 @@
-smtp_on: false
-smtp_host: ''
+smtp_on: true
+smtp_host: smtp.gmail.com
 smtp_hostbackup: ''
-smtp_port: '25'
-smtp_protocol: standard
-smtp_username: ''
+smtp_port: '587'
+smtp_protocol: tls
+smtp_username: noreply.socialistworker@gmail.com
 smtp_password: ''
-smtp_from: ''
-smtp_fromname: ''
-smtp_client_hostname: ''
+smtp_from: noreply@socialistworker.org
+smtp_fromname: 'No Reply - SocialistWorker.org'
+smtp_client_hostname: socialistworker.org
 smtp_client_helo: ''
-smtp_allowhtml: ''
+smtp_allowhtml: '1'
 smtp_test_address: ''
 smtp_debugging: false
 prev_mail_system: php_mail
