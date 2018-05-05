@@ -5,6 +5,7 @@ dependencies:
   config:
     - views.view.media_entity_browser
   module:
+    - entity_browser_entity_form
     - views
 _core:
   default_config_hash: UoGZLPH_DEy28wDjCYqiBKYsKoHlf6l6deygJjqdgPc
@@ -31,13 +32,13 @@ widgets:
     weight: 1
     label: Gallery
     id: view
-  69766683-1b6b-47cd-b308-9230c1134a51:
+  b367f096-1702-49f4-a84a-c5d69827fd4c:
     settings:
-      upload_location: 'public://'
-      multiple: true
-      submit_text: 'Select Media'
-      extensions: 'jpg jpeg gif png txt doc xls pdf ppt pps odt ods odp'
-    uuid: 69766683-1b6b-47cd-b308-9230c1134a51
-    weight: 2
-    label: Upload
-    id: upload
+      entity_type: media
+      bundle: image
+      form_mode: default
+      submit_text: 'Save Image'
+    uuid: b367f096-1702-49f4-a84a-c5d69827fd4c
+    weight: 3
+    label: 'Upload Image'
+    id: entity_form
