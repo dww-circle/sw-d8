@@ -1,0 +1,15 @@
+uuid: 04b34160-e51d-4cc3-ae9b-3189b3191bfa
+langcode: en
+status: true
+dependencies: {  }
+name: 550x300
+label: 'SW 550x300'
+effects:
+  91ddb4df-942b-4cad-993a-133d0208f36e:
+    uuid: 91ddb4df-942b-4cad-993a-133d0208f36e
+    id: image_scale
+    weight: 1
+    data:
+      width: 550
+      height: 300
+      upscale: false
