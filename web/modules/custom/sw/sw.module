@@ -1080,3 +1080,26 @@ function sw_story_taxonomy_query(array $tids, $exclude_nids = [], $limit = 0, $w
 
   return $query;
 }
+
+/**
+ * Implements hook_form_FORM_ID_alter() for 'contact_message_readers_views_form'.
+ *
+ * Add a custom submit callback to see if the user is responding to a specific
+ * story, and if so, redirect them back to the article page.
+ */
+function sw_form_contact_message_readers_views_form_alter(&$form, FormStateInterface $form_state) {
+  $form['actions']['submit']['#submit'][] = 'sw_respond_page_submit';
+}
+
+/**
+ * Form submit callback to redirect after sending an email response to a story.
+ */
+function sw_respond_page_submit(array $form, FormStateInterface $form_state) {
+  $reply_story = $form_state->getValue('field_reply_story');
+  if (!empty($reply_story[0]['target_id'])) {
+    $node = Node::load($reply_story[0]['target_id']);
+    if (!empty($node)) {
+      $form_state->setRedirectUrl($node->toUrl());
+    }
+  }
+}
