@@ -1,0 +1,19 @@
+uuid: dd8a21cf-8e4c-4ba4-9572-e6cba95c576a
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.readers_views
+    - field.storage.contact_message.field_contact_location
+id: contact_message.readers_views.field_contact_location
+field_name: field_contact_location
+entity_type: contact_message
+bundle: readers_views
+label: 'Your city/state/country'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

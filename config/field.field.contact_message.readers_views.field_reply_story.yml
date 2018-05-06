@@ -1,0 +1,29 @@
+uuid: 7c8743f4-5f7b-4806-a579-13f1406cf54d
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.readers_views
+    - field.storage.contact_message.field_reply_story
+    - node.type.story
+id: contact_message.readers_views.field_reply_story
+field_name: field_reply_story
+entity_type: contact_message
+bundle: readers_views
+label: Story
+description: 'If your message is in response to a specific story at SocialistWorker.org, type the headline here.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      story: story
+    sort:
+      field: nid
+      direction: DESC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
