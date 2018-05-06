@@ -1,20 +1,20 @@
-uuid: c20bb3e5-30f4-436a-b1c2-d59022d10536
+uuid: a225ae18-03b6-4fca-985b-e7eec60d4d18
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.media.field_book_link
+    - field.storage.media.field_image_url
     - media.type.book
   module:
     - link
-id: media.book.field_book_link
-field_name: field_book_link
+id: media.book.field_image_url
+field_name: field_image_url
 entity_type: media
 bundle: book
-label: 'Book Link'
+label: 'Image link'
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

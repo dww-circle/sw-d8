@@ -39,3 +39,10 @@ function revolution_preprocess_media__image(&$variables) {
     $variables['image_url'] = $image_url[0]['uri'];
   }
 }
+
+function revolution_preprocess_media__book(&$variables) {
+  $image_url = $variables['media']->get('field_image_url')->getValue();
+  if (!empty($image_url[0]['uri'])) {
+    $variables['image_url'] = $image_url[0]['uri'];
+  }
+}

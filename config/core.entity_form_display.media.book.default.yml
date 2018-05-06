@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.media.book.field_book_caption
-    - field.field.media.book.field_book_link
+    - field.field.media.book.field_image_url
     - field.field.media.book.field_media_image
     - image.style.thumbnail
     - media.type.book
@@ -25,10 +25,10 @@ content:
     third_party_settings: {  }
     type: text_textarea
     region: content
-  field_book_link:
+  field_image_url:
     weight: 26
     settings:
-      placeholder_url: 'https://www.haymarketbooks.org/'
+      placeholder_url: 'http://example.com'
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default

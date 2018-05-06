@@ -4,13 +4,12 @@ status: true
 dependencies:
   config:
     - field.field.media.book.field_book_caption
-    - field.field.media.book.field_book_link
+    - field.field.media.book.field_image_url
     - field.field.media.book.field_media_image
     - image.style.210x210
     - media.type.book
   module:
     - image
-    - link
     - text
 id: media.book.default
 targetEntityType: media
@@ -23,18 +22,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: text_default
-    region: content
-  field_book_link:
-    weight: 3
-    label: above
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-    type: link
     region: content
   field_media_image:
     weight: 0
@@ -55,5 +42,6 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
+  field_image_url: true
   thumbnail: true
   uid: true
