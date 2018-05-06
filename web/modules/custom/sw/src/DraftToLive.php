@@ -3,8 +3,6 @@
 namespace Drupal\sw;
 
 use Drupal\Core\Entity\EntityStorageInterface;
-use Drupal\Core\Path\AliasStorage;
-use Drupal\Core\Path\AliasStorageInterface;
 use Drupal\Core\State\StateInterface;
 use Drupal\Core\Url;
 use Drupal\node\Entity\Node;
@@ -20,6 +18,8 @@ use Psr\Log\LoggerInterface;
  * Class that contains all the logic for the magic draft-to-live operation.
  */
 class DraftToLive {
+
+  use EntityPathAliasTrait;
 
   /**
    * The target draft front page to push live.
@@ -59,13 +59,6 @@ class DraftToLive {
   protected $referencedEntities;
 
   /**
-   * The alias storage service object.
-   *
-   * @var \Drupal\Core\Path\AliasStorage
-   */
-  protected $aliasStorage;
-
-  /**
    * A logger instance.
    *
    * @var \Psr\Log\LoggerInterface
@@ -84,7 +77,6 @@ class DraftToLive {
     $this->targetDraft = $target_draft;
     $this->requestUID = $request_uid;
     // @todo Maybe this should all be dependency injection fun.
-    $this->aliasStorage = \Drupal::service('path.alias_storage');
     $this->logger = \Drupal::logger('sw_front');
     $this->referencedEntities = [];
   }
@@ -99,25 +91,6 @@ class DraftToLive {
     $this->initializeFrontPages();
     $this->archiveCurrentFrontPage($verbose);
     $this->cloneDraftToLive($verbose);
-  }
-
-  /**
-   * Load a node object with a given URL path alias.
-   *
-   * @param string $path_alias
-   *   The URL path alias to search for.
-   *
-   * @return \Drupal\node\Entity\Node
-   *   The fully loaded node object with the given alias, or NULL if not found.
-   */
-  protected function loadNodeFromAlias($path_alias) {
-    $alias = $this->aliasStorage->load(['alias' => $path_alias]);
-    if (!empty($alias)) {
-      $matches = [];
-      if (preg_match('@/node/(\d+)@', $alias['source'], $matches)) {
-        return Node::load($matches[1]);
-      }
-    }
   }
 
   protected function initializeFrontPages() {
