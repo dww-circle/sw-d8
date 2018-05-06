@@ -34,9 +34,11 @@ class SWController extends ControllerBase {
       ]);
     // Set this here so the value is already present when we call getForm().
     $message->set('field_reply_story', $node->id());
+    $message->set('subject', $this->t('Response: @label', ['@label' => $node->label()]));
     $form = $this->entityFormBuilder()->getForm($message);
-    // Now that we've got the right story loaded, hide the field.
+    // Now that we've got the right story loaded, hide the story and subject fields.
     $form['field_reply_story']['#access'] = FALSE;
+    $form['subject']['#access'] = FALSE;
     $placeholders = [
       ':story_url' => $node->toUrl()->toString(),
       '%story_label' => $node->label(),
