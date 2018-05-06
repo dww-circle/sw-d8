@@ -4,7 +4,9 @@ namespace Drupal\sw\Controller;
 
 use Drupal\Core\Controller\ControllerBase;
 use Drupal\Core\Url;
+use Drupal\forward\ForwardFormBuilder;
 use Drupal\sw\EntityPathAliasTrait;
+use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 /**
@@ -13,6 +15,51 @@ use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 class SWController extends ControllerBase {
 
   use EntityPathAliasTrait;
+
+  /**
+   * The forward form builder service.
+   *
+   * @var \Drupal\forward\Form\ForwardFormBuilder
+   */
+  protected $forwardFormBuilder;
+
+  /**
+   * Constructs a ForwardController object.
+   *
+   * @param \Drupal\forward\Form\ForwardFormBuilder $form_builder
+   *   The forward form builder service.
+   */
+  public function __construct(ForwardFormBuilder $forward_form_builder) {
+    $this->forwardFormBuilder = $forward_form_builder;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public static function create(ContainerInterface $container) {
+    return new static(
+      $container->get('forward.form_builder')
+    );
+  }
+
+  /**
+   * Returns the forward form for a given story.
+   *
+   * @return array
+   *   Render array for email-this-story form.
+   */
+  public function emailStoryPage($year, $month, $day, $title_alias) {
+    $path_alias = "/$year/$month/$day/$title_alias";
+    $node = $this->loadNodeFromAlias($path_alias);
+    if (empty($node)) {
+      // If we're on a broken link and can't load a story at that alias, bail.
+      throw new NotFoundHttpException();
+    }
+    // Force the "link" interface so the Forward form page doesn't build inside a fieldset.
+    $settings = $this->config('forward.settings')->get();
+    $settings['forward_interface_type'] = 'link';
+    return $this->forwardFormBuilder->buildForwardEntityForm($node, $settings);
+  }
 
   /**
    * Returns Readers' Views contact form as a custom page.

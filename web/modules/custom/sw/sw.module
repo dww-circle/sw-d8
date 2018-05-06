@@ -244,6 +244,7 @@ function sw_preprocess_node_story(&$variables) {
 
   if ($variables['view_mode'] == 'full') {
     $path = $variables['node']->get('path')->getValue();
+    $variables['email_url'] = Url::fromRoute('<front>', [], ['absolute' => TRUE])->toString() . 'email' . $path[0]['alias'];
     $variables['respond_url'] = Url::fromRoute('<front>', [], ['absolute' => TRUE])->toString() . 'respond' . $path[0]['alias'];
   }
 

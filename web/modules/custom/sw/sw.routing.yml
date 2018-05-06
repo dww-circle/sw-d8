@@ -1,3 +1,10 @@
+sw.email:
+  path: '/email/{year}/{month}/{day}/{title_alias}'
+  defaults:
+    _controller: '\Drupal\sw\Controller\SWController::emailStoryPage'
+    _title: 'E-mail'
+  requirements:
+    _permission: 'access content'
 sw.respond:
   path: '/respond/{year}/{month}/{day}/{title_alias}'
   defaults:
