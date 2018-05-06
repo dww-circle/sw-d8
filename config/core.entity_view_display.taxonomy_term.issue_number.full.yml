@@ -1,8 +1,9 @@
-uuid: 0afabd46-c533-42d9-a4d5-9cb72efaad46
+uuid: fdf0c41d-830c-4bd2-95e5-1a0cc74ef410
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.taxonomy_term.full
     - field.field.taxonomy_term.issue_number.field_issue_cover_image
     - field.field.taxonomy_term.issue_number.field_issue_date
     - field.field.taxonomy_term.issue_number.field_issue_top_stories
@@ -11,20 +12,20 @@ dependencies:
   module:
     - image
     - text
-id: taxonomy_term.issue_number.default
+id: taxonomy_term.issue_number.full
 targetEntityType: taxonomy_term
 bundle: issue_number
-mode: default
+mode: full
 content:
   description:
     label: hidden
     type: text_default
-    weight: 1
+    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
   field_issue_cover_image:
-    weight: 0
+    weight: 1
     label: hidden
     settings:
       image_style: medium
@@ -32,8 +33,16 @@ content:
     third_party_settings: {  }
     type: image
     region: content
+  field_issue_date:
+    type: string
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
   field_issue_top_stories:
-    weight: 2
+    weight: 3
     label: hidden
     settings:
       view_mode: teaser_image_medium
@@ -41,5 +50,4 @@ content:
     third_party_settings: {  }
     type: entity_reference_entity_view
     region: content
-hidden:
-  field_issue_date: true
+hidden: {  }

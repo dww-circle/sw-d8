@@ -1,0 +1,14 @@
+{% extends 'page.html.twig' %}
+
+{% block main %}
+  {% if issue_list_prefix %}
+    <div class="story-label">{{ issue_list_prefix }}</div>
+  {% endif %}
+  <h1 class="page-title page-title-full">{{ page_title|raw }}</h1>
+
+  <div class="flexible--container">
+    {{ page.content }}
+    {{ page.sidebar }}
+    {{ page.content_bottom }}
+  </div>
+{% endblock main %}

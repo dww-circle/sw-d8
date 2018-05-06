@@ -25,6 +25,10 @@ function revolution_theme_suggestions_page_alter(array &$suggestions, array $var
   }
   elseif (!empty($view_id)) {
     switch ($view_id) {
+      case 'sw_issue_stories':
+        $suggestions[] = 'page__issue_stories';
+        break;
+
       case 'sw_topic_stories':
         $suggestions[] = 'page__topic_stories';
         break;

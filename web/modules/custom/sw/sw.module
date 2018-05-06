@@ -973,6 +973,48 @@ function sw_get_issue_term(ViewExecutable $view = NULL) {
 }
 
 /**
+ * Implements hook_preprocess_HOOK() for 'html' template.
+ *
+ * Sets the HTML <title> for issue listing pages if we know the publication date.
+ */
+function sw_preprocess_html(&$variables) {
+  $view_id = \Drupal::routeMatch()->getParameter('view_id');
+  if (!empty($view_id) && $view_id == 'sw_issue_stories') {
+    $issue_term = sw_get_issue_term();
+    if (!empty($issue_term)) {
+      $issue_date = $issue_term->get('field_issue_date')->value;
+      if (!empty($issue_date)) {
+        $title_args = [
+          '@num' => $issue_term->label(),
+          '@date' => $issue_date,
+        ];
+        $variables['head_title']['title'] = t('Issue @num: @date', $title_args);
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for the 'page' template.
+ *
+ * Sets a page template variable for the "story-label" for issue # story lists.
+ */
+function sw_preprocess_page(&$variables) {
+  $view_id = \Drupal::routeMatch()->getParameter('view_id');
+  if (!empty($view_id) && $view_id == 'sw_issue_stories') {
+    $issue_term = sw_get_issue_term();
+    if (!empty($issue_term)) {
+      $issue_date = $issue_term->get('field_issue_date')->value;
+      // If we have an issue date, that'll become the main page title.
+      // Use the issue number as the prefix in "story label" style.
+      if (!empty($issue_date)) {
+        $variables['issue_list_prefix'] = t('Issue @num', ['@num' => $issue_term->label()]);
+      }
+    }
+  }
+}
+
+/**
  * Implements hook_views_pre_render().
  *
  * Alters the issue story list view to hide stories that are already listed as
@@ -991,6 +1033,11 @@ function sw_views_pre_render(ViewExecutable $view) {
     // the full list for the entity_reference display.
     if ($view->getDisplay()->getPluginId() == 'page') {
       $issue_term = sw_get_issue_term($view);
+      // Clobber the page title with the issue date.
+      $issue_date = $issue_term->get('field_issue_date')->value;
+      if (!empty($issue_date)) {
+        $view->setTitle($issue_date);
+      }
       // If field_issue_top_stories is defined, remove them from the view list.
       $top_stories = $issue_term->get('field_issue_top_stories')->getValue();
       if (!empty($top_stories)) {
