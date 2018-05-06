@@ -3,11 +3,64 @@
 namespace Drupal\sw\Controller;
 
 use Drupal\Core\Controller\ControllerBase;
+use Drupal\Core\Url;
+use Drupal\sw\EntityPathAliasTrait;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 /**
  * Provides route responses for the SW module.
  */
 class SWController extends ControllerBase {
+
+  use EntityPathAliasTrait;
+
+  /**
+   * Returns Readers' Views contact form as a custom page.
+   *
+   * @return array
+   *   Render array for the customized readers' views form for a given story.
+   */
+  public function respondPage($year, $month, $day, $title_alias) {
+    $path_alias = "/$year/$month/$day/$title_alias";
+    $node = $this->loadNodeFromAlias($path_alias);
+    if (empty($node)) {
+      // If we're on a broken link and can't load a story at that alias, bail.
+      throw new NotFoundHttpException();
+    }
+    $message = $this->entityManager()
+      ->getStorage('contact_message')
+      ->create([
+        'contact_form' => 'readers_views',
+      ]);
+    // Set this here so the value is already present when we call getForm().
+    $message->set('field_reply_story', $node->id());
+    $form = $this->entityFormBuilder()->getForm($message);
+    // Now that we've got the right story loaded, hide the field.
+    $form['field_reply_story']['#access'] = FALSE;
+    $placeholders = [
+      ':story_url' => $node->toUrl()->toString(),
+      '%story_label' => $node->label(),
+    ];
+    $form['story_link'] = [
+      '#markup' => t('Please send us your thoughts on <a href=":story_url">%story_label</a>.', $placeholders),
+      '#weight' => -101,
+      '#prefix' => '<p>',
+      '#suffix' => '</p>',
+    ];
+    $form['section_link'] = [
+      '#markup' => t('We will publish a selection of comments in the <a href=":readers_views_url">Readers’ Views</a> section of SocialistWorker.org.',
+                     [':readers_views_url' => Url::fromUserInput('/section/readers’-views')->toString()]),
+      '#weight' => -100,
+      '#prefix' => '<p>',
+      '#suffix' => '</p>',
+    ];
+    // We can't set a custom submit handler here, since the entity form world
+    // will clobber the values via EntityForm::actions() and friends when
+    // building the form during the submit phase. We need to do it via
+    // hook_form_alter() for it to survive Entity API.
+    // @see sw_form_contact_message_readers_views_form_alter().
+    return $form;
+  }
 
   /**
    * Returns the e-mail alerts signup form page.

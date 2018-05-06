@@ -1,3 +1,10 @@
+sw.respond:
+  path: '/respond/{year}/{month}/{day}/{title_alias}'
+  defaults:
+    _controller: '\Drupal\sw\Controller\SWController::respondPage'
+    _title: 'Agree? Disagree?'
+  requirements:
+    _permission: 'access content'
 sw.subscribe_email:
   path: '/subscribe/email'
   defaults:
