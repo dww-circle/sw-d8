@@ -1,19 +1,28 @@
 // Sidebar layout and reordering elements for mobile happens here.
 .region-sidebar {
+  @include breakpoint($tablet) {
+    padding-left: 50px;
+  }
+
   @include breakpoint($desktop) {
-    padding-left: 30px;
+    padding-left: 70px;
   }
 }
 
 .layout-sidebar {
+  // @see _mixins for direction from page-left and page-right.
 
   .flexible--container {
     display: flex;
     flex-direction: column;
 
-    @include breakpoint($desktop) {
+    @include breakpoint($tablet) {
       display: grid;
-      grid-template-columns: calc(100% - 350px) 350px;
+      grid-template-columns: auto 240px;
+    }
+
+    @include breakpoint($desktop) {
+      grid-template-columns: auto 320px;
     }
   }
 

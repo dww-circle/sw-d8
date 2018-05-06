@@ -191,7 +191,7 @@
 
 @mixin open-transition {
   opacity: 0;
-  transition: opacity .2 ease-out;
+  transition: opacity .2s ease-out;
   visibility: hidden;
 
   &.open {
@@ -220,18 +220,28 @@
 }
 
 @mixin page-left {
+  @include breakpoint($tablet) {
+    float: left;
+    max-width: 630px;
+    width: calc(100% - 290px);
+  }
+
   @include breakpoint($desktop) {
     float: left;
     max-width: 630px;
-    width: calc(66% - 50px);
+    width: calc(100% - 390px);
   }
 }
 
 @mixin page-right {
+  @include breakpoint($tablet) {
+    float: right;
+    width: 240px;
+  }
+
   @include breakpoint($desktop) {
     float: right;
-    max-width: 320px;
-    width: 34%;
+    width: 320px;
   }
 }
 
@@ -280,6 +290,7 @@
   color: red;
   font-size: 24px;
   line-height: 32px;
+  padding-right: 57px;
   position: relative;
   text-transform: uppercase;
 
