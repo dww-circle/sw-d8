@@ -18,11 +18,11 @@
 
     @include breakpoint($tablet) {
       display: grid;
-      grid-template-columns: auto 240px;
+      grid-template-columns: auto 290px;
     }
 
     @include breakpoint($desktop) {
-      grid-template-columns: auto 320px;
+      grid-template-columns: auto 390px;
     }
   }
 
@@ -35,6 +35,8 @@
   }
 
   .region-sidebar {
+    margin: 0 auto;
+    max-width: 500px;
     order: 3;
 
     @include breakpoint($desktop) {

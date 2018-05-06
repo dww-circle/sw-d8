@@ -536,10 +536,4 @@ article.embedded-entity .media--view-mode-embed-wide {
 .series .all-link {
   text-align: center; }
 
-.user-login-form input {
-  max-width: 100%; }
-  @media (min-width: 736px) {
-    .user-login-form input {
-      width: 50%; } }
-
 /*# sourceMappingURL=email.css.map */

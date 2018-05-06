@@ -2,8 +2,8 @@
   background: black;
   border-top: 1px solid #747474;
   display: none;
-  font-size: 12px;
   font-family: $ff-din-regular;
+  font-size: 12px;
   margin-bottom: 52px;
   text-transform: uppercase;
   width: 100%;
@@ -38,7 +38,11 @@
     > a {
       @include link-colors(white, $c-red, $c-red);
       display: block;
-      padding: 2px 40px 2px;
+      padding: 2px 20px 2px;
+
+      @include breakpoint($desktop-large) {
+        padding: 2px 40px 2px;
+      }
     }
 
     // hover/active state
