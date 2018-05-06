@@ -8,5 +8,5 @@ recipients:
   - views@socialistworker.org
 reply: ''
 weight: -2
-message: null
-redirect: null
+message: 'Thank you for responding. Your message has been sent.'
+redirect: ''
