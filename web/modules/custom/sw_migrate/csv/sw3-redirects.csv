@@ -9,8 +9,12 @@ department/Opinion/Editorials,internal:/section/editorials
 department/History-and-Traditions,internal:/section/history-and-traditions
 department/Labor,internal:/section/labor
 department/Activist-News,internal:/section/activist-news
-department/Readers%27-Views,internal:/section/readers'-views
-department/Readers'-Views,internal:/section/readers'-views
+department/Readers%27-Views,internal:/section/readers’-views
+department/Readers'-Views,internal:/section/readers’-views
+/section/readersviews,internal:/section/readers’-views
+/section/readers-views,internal:/section/readers’-views
+/section/readers'-views,internal:/section/readers’-views
+/section/readers%27-views,internal:/section/readers’-views
 department/Books-and-Entertainment,internal:/topic/284
 department/Obrero-Socialista,internal:/section/obrero-socialista
 department/Opinion/Anthony-Arnove,internal:/author/anthony-arnove

@@ -1,6 +1,6 @@
 menu_name,parent_link_path,expanded,link_path,link_title,weight
 main,,1,/topic,Topics,-1
-main,/topic,0,/topic/187,Teachers' struggles,0
+main,/topic,0,/topic/187,Teachers’ struggles,0
 main,/topic,0,/topic/28403,Trump administration,1
 main,/topic,0,/topic/119,Fighting the right,2
 main,/topic,0,/topic/130,Racism and anti-racism,3
@@ -19,7 +19,7 @@ main,/section,0,/section/editorials,Editorials,0
 main,/section,0,/section/labor,Labor,1
 main,/section,0,/section/activist-news,Activist News,2
 main,/section,0,/section/history-and-traditions,History and Traditions,3
-main,/section,0,/section/readers'-views,Readers' Views,4
+main,/section,0,/section/readers’-views,Readers’ Views,4
 main,/section,0,/section/obrero-socialista,Obrero Socialista,5
 main,,1,/get-involved,Get Involved,3
 main,/get-involved,0,/subscribe/email,E-mail alerts,0
