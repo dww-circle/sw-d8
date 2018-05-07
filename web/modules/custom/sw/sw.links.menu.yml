@@ -1,5 +1,5 @@
 sw.admin.content.front_page:
-  title: SW Front page
+  title: 'SW front page administration'
   description: 'Manage the front page.'
   route_name: sw.admin.content.front_page
   parent: system.admin_content
