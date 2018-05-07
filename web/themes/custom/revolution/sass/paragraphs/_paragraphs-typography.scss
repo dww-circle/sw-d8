@@ -81,13 +81,15 @@ h4 {
     text-transform: none;
   }
 
-  // Weeekend left no pic
-  .field--name-field-nested-left .node--view-mode-teaser & {
+  // Left no pic
+  .story-group--column_left .story--teaser &,
+  .field--name-field-nested-left .story--teaser & {
     font-size: 22px;
     text-transform: none;
   }
 
-  // Weeekend right
+  // Right
+  .story-group--column_right .story--teaser &,
   .field--name-field-nested-right & {
     font-size: 18px;
     text-transform: none;
@@ -105,6 +107,8 @@ h4 {
 
 // Story Label.
 .story-label {
+  .story-group--column_right &,
+  .story-group--column_left &,
   .field--name-field-sub &,
   .paragraph--type--nested & {
     font-size: 13px;
@@ -129,7 +133,8 @@ h4 {
   }
 
   // Weekend right
-  .field--name-field-nested-right {
+  .story-group--column_right &,
+  .field--name-field-nested-right & {
     font-size: 13px;
     line-height: 15px;
   }
