@@ -7,6 +7,11 @@
     font-size: 20px;
     line-height: 24px;
     margin-bottom: 10px;
+    padding-top: 70px;
+
+    @include breakpoint($desktop) {
+      padding-top: 0;
+    }
   }
 
   // Captions.
@@ -25,31 +30,57 @@
 
   // "Grid" Layout
   .view-sw-what-were-reading {
+    margin-bottom: 25px;
 
     @include breakpoint($desktop) {
       float: left;
+      max-width: 320px;
+      width: 220px;
+    }
+
+    @include breakpoint($desktop-large) {
       width: 320px;
     }
   }
 
   .field--name-field-book {
+    margin-bottom: 25px;
 
     @include breakpoint($desktop) {
       float: right;
+      margin-right: 20px;
+      min-width: 220px;
       width: calc(100% - 540px);
     }
 
+    @include breakpoint($desktop-large) {
+      margin-right: 0;
+    }
+
     .media--type-book {
-      margin: 0 auto;
-      width: 220px;
+
+      @include breakpoint($desktop) {
+        margin: 0 auto;
+        width: 220px;
+      }
     }
   }
 
   .issue {
+    margin-bottom: 25px;
 
     @include breakpoint($desktop) {
       float: right;
       width: 220px;
+    }
+
+    .field--name-field-issue-cover-image {
+      float: left;
+      margin-right: 20px;
+
+      @include breakpoint($desktop) {
+        float: none;
+      }
     }
   }
 
@@ -59,9 +90,15 @@
     background: #f1f2f2;
     border: 1px solid #b8babc;
     display: flex;
+    float: left;
     height: 290px;
     justify-content: center;
+    margin-right: 20px;
     width: 220px;
+
+    @include breakpoint($desktop) {
+      float: none;
+    }
   }
 
   // Hide title on issue
