@@ -217,6 +217,9 @@ main {
     .story-label {
       font-size: 16px; } }
 
+.contextual {
+  z-index: 400; }
+
 .view-sw-recent .views-row {
   margin-bottom: 25px; }
 

@@ -75,7 +75,7 @@
     'node--type-' ~ node.bundle|clean_class,
     not node.isPublished() ? 'node--unpublished',
     view_mode ? 'story--' ~ view_mode|clean_class,
-  'nid-' ~ node.id
+    'nid-' ~ node.id
 ]
 %}
 
@@ -90,11 +90,11 @@
     <div class="content">
       <div class="story-label">{{ story_label }}</div>
 
-      {{ title_prefix }}
       <h4{{ title_attributes }}>
+        {{ title_prefix }}
         {{ label }}
+        {{ title_suffix }}
       </h4>
-      {{ title_suffix }}
 
       <div{{ content_attributes.addClass('node__content') }}>
         {{ content|without('field_main_image', 'field_wide_image') }}

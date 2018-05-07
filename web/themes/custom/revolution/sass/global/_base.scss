@@ -230,6 +230,11 @@ main {
   }
 }
 
+// Make contextual links accessible.
+.contextual {
+  z-index: $z-galaxy;
+}
+
 // This applies to the Recent page. May want to refactor/be less specific/move.
 .view-sw-recent .views-row {
   margin-bottom: 25px;
