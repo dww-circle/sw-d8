@@ -306,7 +306,7 @@ function sw_preprocess_node_story(&$variables) {
         if (!empty($arg_0)) {
           switch (strtolower($arg_0)) {
             case 'editorials':
-            case "readers'-views":
+            case 'readers’-views':
             case 'obrero-socialista':
               // @todo It'd be better not to compute these in the first place...
               unset($variables['story_label']);
