@@ -978,7 +978,10 @@ function sw_get_issue_term(ViewExecutable $view = NULL) {
  * Sets the HTML <title> for issue listing pages if we know the publication date.
  */
 function sw_preprocess_html(&$variables) {
-  $view_id = \Drupal::routeMatch()->getParameter('view_id');
+  $renderer = \Drupal::service('renderer');
+  $path_matcher = \Drupal::service('path.matcher');
+  $route_match = \Drupal::routeMatch();
+  $view_id = $route_match->getParameter('view_id');
   if (!empty($view_id) && $view_id == 'sw_issue_stories') {
     $issue_term = sw_get_issue_term();
     if (!empty($issue_term)) {
@@ -991,6 +994,114 @@ function sw_preprocess_html(&$variables) {
         $variables['head_title']['title'] = t('Issue @num: @date', $title_args);
       }
     }
+  }
+  // todo
+  // $site_name = variable_get('site_name', t('SocialistWorker.org'));
+  $site_name = t('SocialistWorker.org');
+  // Always define og:site_name via the site_name variable.
+  $meta_tags = [
+    ['property' => 'og:site_name', 'content' => $site_name]
+  ];
+  if ($path_matcher->isFrontPage()) {
+    // @todo
+    // variable_get('sw_meta_description',
+    $meta_description = t('Daily news and opinion site based in the U.S., with reports from struggles around the world and left-wing analysis of political events.');
+    $meta_tags += [
+      ['property' => 'og:title', 'name' => 'title', 'content' => $site_name],
+      ['property' => 'og:description', 'name' => 'description', 'content' => $meta_description],
+      ['property' => 'og:url', 'content' => Url::fromRoute('<front>', [], ['absolute' => TRUE])->toString()],
+      ['name' => 'google-site-verification', 'content' => 'mN5MrkxGGmnBKwcDL0mSz7us2M2d4xwpfzHnUsQJVjU'],
+    ];
+  }
+  $node = $route_match->getParameter('node');
+  if (!empty($node) && $node->bundle() == 'story') {
+    $clean_title = strip_tags($node->label());
+    $meta_tags += [
+      ['property' => 'og:title', 'name' => 'title', 'content' => $clean_title],
+      ['property' => 'og:url','content' => $node->toUrl('canonical', ['absolute' => TRUE])->toString()],
+      ['property' => 'og:updated_time', 'content' => $node->get('changed')->value],
+      ['property' => 'og:type', 'content' => 'article'],
+      ['property' => 'article:publisher', 'content' => 'https://www.facebook.com/socialistworker'],
+      ['property' => 'twitter:card', 'content' => 'summary_large_image'],
+      ['property' => 'twitter:site', 'content' => '@SocialistViews'],
+      ['property' => 'twitter:creator', 'content' => '@SocialistViews'],
+      ['name' => 'twitter:title', 'content' => $clean_title],
+    ];
+    $sections = $node->get('field_section')->referencedEntities();
+    if (!empty($sections)) {
+      $meta_tags[] = [
+        'property' => 'article:section',
+        'content' => $sections[0]->label(),
+      ];
+    }
+    $teaser = $node->get('field_teaser')->getValue();
+    if (!empty($teaser)) {
+      $build = [
+        '#type' => 'processed_text',
+        '#text' => $teaser[0]['value'],
+        '#format' => $teaser[0]['format'],
+      ];
+      $teaser_content = $renderer->renderPlain($build);
+      $meta_tags[] = [
+        'name' => 'description',
+        'property' => 'og:description',
+        'content' => $teaser_content,
+      ];
+      $meta_tags[] = [
+        'name' => 'twitter:description',
+        'content' => $teaser_content,
+      ];
+    }
+    // Find an image to prefer for social media sharing.
+    // If we have field_wide_image, use that.
+    $wide_image = $node->get('field_wide_image')->getValue();
+    if (!empty($wide_image[0]['target_id'])) {
+      $share_media = $node->get('field_wide_image')->referencedEntities();
+    }
+    // Otherwise, fall back to field_main_image (if possible).
+    else {
+      $main_image = $node->get('field_main_image')->getValue();
+      if (!empty($main_image[0]['target_id'])) {
+        $share_media = $node->get('field_main_image')->referencedEntities();
+      }
+    }
+    // If we found something, use it.
+    if (!empty($share_media)) {
+      $share_image = $share_media[0]->get('field_media_image')->referencedEntities();
+      $share_url = $share_image[0]->url();
+      $share_image_info = $share_media[0]->get('field_media_image')->getValue();
+      $meta_tags[] = [
+        'property' => 'og:image',
+        'content' => $share_url,
+      ];
+      $meta_tags[] = [
+        'property' => 'og:image:type',
+        'content' => $share_image[0]->getMimeType(),
+      ];
+      $meta_tags[] = [
+        'property' => 'og:image:width',
+        'content' => $share_image_info[0]['width'],
+      ];
+      $meta_tags[] = [
+        'property' => 'og:image:height',
+        'content' => $share_image_info[0]['height'],
+      ];
+      $meta_tags[] = [
+        'name' => 'twitter:image',
+        'content' => $share_url,
+      ];
+    }
+  }
+  // Finally, set all the meta tags we found for this page.
+  foreach ($meta_tags as $meta_tag) {
+    $id = !empty($meta_tag['name']) ? $meta_tag['name'] : $meta_tag['property'];
+    $variables['page']['#attached']['html_head'][] = [
+      [
+        '#tag' => 'meta',
+        '#attributes' => $meta_tag,
+      ],
+      $id,
+    ];
   }
 }
 
