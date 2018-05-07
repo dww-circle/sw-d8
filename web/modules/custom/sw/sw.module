@@ -1003,6 +1003,7 @@ function sw_preprocess_html(&$variables) {
     ['property' => 'og:site_name', 'content' => $site_name]
   ];
   if ($path_matcher->isFrontPage()) {
+    $variables['head_title']['title'] = t('Daily news and opinion from the left');
     // @todo
     // variable_get('sw_meta_description',
     $meta_description = t('Daily news and opinion site based in the U.S., with reports from struggles around the world and left-wing analysis of political events.');
