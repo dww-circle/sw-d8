@@ -8,5 +8,5 @@ recipients:
   - reports@socialistworker.org
 reply: ''
 weight: -5
-message: null
+message: 'Thank you for the report. Your message has been sent.'
 redirect: null
