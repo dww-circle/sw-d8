@@ -14,7 +14,6 @@
     @include breakpoint($desktop) {
       flex-grow: 1;
       min-width: 170px;
-      width: 400px; // Arbritrary number that allows flex-grow to work.
     }
 
     &:first-child {

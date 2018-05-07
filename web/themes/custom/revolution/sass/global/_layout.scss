@@ -29,7 +29,7 @@
   .region-content {
     order: 1;
 
-    @include breakpoint($desktop) {
+    @include breakpoint($tablet) {
       order: 0;
     }
   }
@@ -39,7 +39,7 @@
     max-width: 500px;
     order: 3;
 
-    @include breakpoint($desktop) {
+    @include breakpoint($tablet) {
       order: 0;
     }
   }
@@ -47,7 +47,7 @@
   .region-content-bottom {
     order: 2;
 
-    @include breakpoint($desktop) {
+    @include breakpoint($tablet) {
       grid-column-start: 1;
       grid-column-end: 3;
       order: 0;
