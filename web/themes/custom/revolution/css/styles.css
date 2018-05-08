@@ -1363,6 +1363,11 @@ select {
   .menu-item--active-trail .pager a {
     color: #1A272E; }
 
+/**
+ * Styles shared for all social links, both share links in stories
+ * (see _share_links.scss), and follow links in the site-wide footer
+ * (see _follow_links.scss).
+ */
 .social-links {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1390,6 +1395,9 @@ select {
     text-indent: 0;
     width: 40px; }
 
+/**
+ * Styles specific to the social share links.
+ */
 .more-links {
   opacity: 0;
   transition: opacity .2s ease-out;
@@ -1476,6 +1484,9 @@ select {
       display: inline-block;
       margin: 0 10px; } }
 
+/**
+ * Styles specific to the follow links in the site footer.
+ */
 .footer-wrapper .follow-label {
   font-size: 16px;
   text-transform: uppercase; }

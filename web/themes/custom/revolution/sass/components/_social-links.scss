@@ -1,3 +1,8 @@
+/**
+ * Styles shared for all social links, both share links in stories
+ * (see _share_links.scss), and follow links in the site-wide footer
+ * (see _follow_links.scss).
+ */
 .social-links {
   display: flex;
   justify-content: space-between;
@@ -31,126 +36,5 @@
     height: 40px;
     text-indent: 0;
     width: 40px;
-  }
-}
-
-.more-links {
-  @include open-transition;
-  background: rgba( 255, 255, 255, .9);
-  border: 1px solid $c-grb2;
-  font-family: $ff-din-medium;
-  font-size: 12px;
-  line-height: 16px;
-  list-style: none;
-  padding: 10px 15px 10px;
-  position: absolute;
-  right: 0;
-  text-transform: uppercase;
-  top: 33px;
-  z-index: 1;
-
-  @include breakpoint($desktop) {
-    bottom: 20px;
-    right: -141px;
-    top: auto;
-    width: 130px;
-  }
-
-  .story-social-bottom & {
-    @include breakpoint($desktop) {
-      bottom: 70px;
-      right: calc(50% - 65px);
-    }
-  }
-
-  li {
-    height: auto;
-    margin: 0 0 10px;
-    text-align: left;
-    width: auto;
-
-    .story-social-bottom & {
-      display: block;
-      margin: 0 0 10px;
-    }
-  }
-
-  a {
-    @include link-colors($c-black, $c-red);
-
-    &:hover {
-      text-decoration: none;
-    }
-  }
-
-  .more-links-close {
-    background: $c-gr80;
-    color: white;
-    margin: 0 0 10px;
-    padding: 2px 0 3px;
-    text-align: center;
-
-    &:hover {
-      background: $c-red;
-      cursor: pointer;
-    }
-  }
-}
-
-.story-social-left {
-
-  @include breakpoint($desktop) {
-    position: absolute;
-    left: -80px;
-  }
-
-  .social-links {
-    @include breakpoint($desktop) {
-      display: block;
-      padding: 0;
-      margin: 5px 0 0 0;
-    }
-  }
-
-  li {
-    @include breakpoint($desktop) {
-      display: block;
-    }
-  }
-}
-
-.story-social-bottom {
-  text-align: center;
-
-  .social-links {
-    @include breakpoint($desktop) {
-      display: inline-block;
-    }
-  }
-
-  li {
-    @include breakpoint($desktop) {
-      display: inline-block;
-      margin: 0 10px;
-    }
-  }
-}
-
-.footer-wrapper {
-  // See _footer.scss for global footer styles.
-
-  .follow-label {
-    font-size: 16px;
-    text-transform: uppercase;
-  }
-
-  .social-links {
-    display: block;
-    text-align: center;
-
-    li {
-      display: inline-block;
-      margin: 0 10px;
-    }
   }
 }

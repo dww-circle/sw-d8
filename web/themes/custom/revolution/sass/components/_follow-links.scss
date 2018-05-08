@@ -1,0 +1,21 @@
+/**
+ * Styles specific to the follow links in the site footer.
+ */
+.footer-wrapper {
+  // See _footer.scss for global footer styles.
+
+  .follow-label {
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+
+  .social-links {
+    display: block;
+    text-align: center;
+
+    li {
+      display: inline-block;
+      margin: 0 10px;
+    }
+  }
+}
