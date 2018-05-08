@@ -130,7 +130,9 @@
         "[#2969352-4] Add option to allow plain text emails" : "https://www.drupal.org/files/issues/2018-05-03/2969352-3.allow-plain-text.patch",
         "[#2969352-10] Follow-up fix for plain text emails" : "https://www.drupal.org/files/issues/2018-05-04/2969352-10.plain-text-needs-helper-class.patch",
         "[#2969594-2] Simplify entity rendering code in ForwardForm::submitForm()" : "https://www.drupal.org/files/issues/2018-05-04/2969594-2.simplify-entity-rendering.patch",
-        "[#2969418-2] Allow a separate filter format for plain text vs. HTML emails" : "https://www.drupal.org/files/issues/2018-05-03/2969418-2.filter_format_plain_text.patch"
+        "[#2969418-2] Allow a separate filter format for plain text vs. HTML emails" : "https://www.drupal.org/files/issues/2018-05-03/2969418-2.filter_format_plain_text.patch",
+        "[#2971226-3] Add a setting for an email footer textarea" : "https://www.drupal.org/files/issues/2018-05-07/2971226-3.email-footer-setting.patch",
+        "[#2971228-3] Provide #recipient as a variable for the forward twig template" : "https://www.drupal.org/files/issues/2018-05-07/2971228-3.forward-recipient-template-variable.patch"
       },
       "drupal/migrate_upgrade": {
         "[#2935225-2] Fix to d6_term_node_revision handling (companion to core issue 2934799)" : "https://www.drupal.org/files/issues/2935225-2-migrate_upgrade-fix_to_d6_term_node_revision_handling.patch"
