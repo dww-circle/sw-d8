@@ -93,6 +93,6 @@ forward_paragraph_reading: false
 forward_paragraph_today: false
 forward_paragraph_triptych: false
 forward_paragraph_weekend: false
-forward_form_allow_plain_text: true
+forward_form_allow_plain_text: false
 forward_filter_format_html: ''
 forward_filter_format_plain_text: forward_plain_text
