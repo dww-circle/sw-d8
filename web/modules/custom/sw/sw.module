@@ -1285,4 +1285,6 @@ function sw_preprocess_forward(&$variables) {
     '#form_type' => 'block',
     '#email_value' => $variables['recipient'],
   ];
+  // Fix the link to remove the 'Read more about' text.
+  $variables['link'] = $variables['entity']->toLink(NULL, 'canonical', ['absolute' => TRUE]);
 }

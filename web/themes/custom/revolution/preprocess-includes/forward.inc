@@ -3,7 +3,6 @@
 use \Drupal\Core\Url;
 
 function revolution_preprocess_forward(&$variables) {
-  $entity = $variables['entity'];
   if (empty($variables['message']['#markup'])) {
     unset($variables['message']);
   }

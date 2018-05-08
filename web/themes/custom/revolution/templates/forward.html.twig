@@ -21,13 +21,16 @@
         <div class="message">{{ message }}</div>
       {% endif %}
       <div class="content page-node-type-story">{{ content }}</div>
-      {% if link %}
-        <div class="link">{{ link }}</div>
-      {% endif %}
       {% if email_subscribe_form %}
         <div class="email-subscribe-form">
           <h2>{{ 'E-mail alerts'|t }}</h2>
           {{ email_subscribe_form }}
+        </div>
+      {% endif %}
+      {% if link %}
+        <div class="original-article">
+          <h2>{{ 'Original article'|t }}</h2>
+          <div class="link">{{ link }}</div>
         </div>
       {% endif %}
       {% if footer %}
