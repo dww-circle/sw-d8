@@ -3,9 +3,9 @@ smtp_host: mail.gandi.net
 smtp_hostbackup: ''
 smtp_port: '587'
 smtp_protocol: tls
-smtp_username: website@socialistworker.org
+smtp_username: no-reply@socialistworker.org
 smtp_password: ''
-smtp_from: website@socialistworker.org
+smtp_from: no-reply@socialistworker.org
 smtp_fromname: SocialistWorker.org
 smtp_client_hostname: socialistworker.org
 smtp_client_helo: ''
