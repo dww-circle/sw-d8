@@ -496,6 +496,14 @@ h4 {
     font-size: 12px;
     line-height: 16px; }
 
+h2 {
+  font-family: 'FF DIN Pro Bold', sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin: 40px 0 5px 0; }
+
 .page-node-type-story .embedded-entity ~ * {
   position: static; }
 
