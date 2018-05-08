@@ -281,13 +281,3 @@ h4 {
 .contextual {
   z-index: $z-galaxy;
 }
-
-// This applies to the Recent page. May want to refactor/be less specific/move.
-.view-sw-recent .views-row {
-  margin-bottom: 25px;
-}
-
-// This applies to all views, since we never want to see the feed icons.
-.view .feed-icons {
-  display: none;
-}

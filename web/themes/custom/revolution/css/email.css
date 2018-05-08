@@ -254,12 +254,6 @@ h4 {
 .contextual {
   z-index: 400; }
 
-.view-sw-recent .views-row {
-  margin-bottom: 25px; }
-
-.view .feed-icons {
-  display: none; }
-
 .header {
   background: black;
   color: white;
