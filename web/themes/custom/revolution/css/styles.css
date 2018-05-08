@@ -217,6 +217,40 @@ main {
     .story-label {
       font-size: 16px; } }
 
+h4 {
+  font-family: 'FF DIN Pro Bold', sans-serif;
+  font-weight: normal;
+  color: black;
+  font-size: 30px;
+  line-height: 1;
+  margin-bottom: .5em; }
+
+.field--name-field-teaser {
+  color: #666666;
+  font-family: "Helvetica", sans-serif;
+  font-size: 14px;
+  line-height: 18px; }
+  @media (min-width: 961px) {
+    .field--name-field-teaser {
+      font-size: 15px; } }
+
+.story-link {
+  display: block;
+  margin-bottom: 50px; }
+  .story-link:hover, .story-link:visited:hover {
+    opacity: .8;
+    text-decoration: none; }
+    .story-link:hover .field--name-field-kicker,
+    .story-link:hover h4,
+    .story-link:hover .field--name-field-teaser, .story-link:visited:hover .field--name-field-kicker,
+    .story-link:visited:hover h4,
+    .story-link:visited:hover .field--name-field-teaser {
+      color: #72726c; }
+  .story-link:visited .field--name-field-kicker,
+  .story-link:visited h4,
+  .story-link:visited .field--name-field-teaser {
+    color: #725c5f; }
+
 .contextual {
   z-index: 400; }
 
@@ -1726,59 +1760,44 @@ select {
     .field--name-field-date {
       font-size: 16px; } }
 
-.story-link {
-  display: block;
-  margin-bottom: 50px; }
-  .story-link:hover, .story-link:visited:hover {
-    opacity: .8;
-    text-decoration: none; }
-    .story-link:hover .field--name-field-kicker,
-    .story-link:hover h4,
-    .story-link:hover .field--name-field-teaser, .story-link:visited:hover .field--name-field-kicker,
-    .story-link:visited:hover h4,
-    .story-link:visited:hover .field--name-field-teaser {
-      color: #72726c; }
-  .story-link:visited .field--name-field-kicker,
-  .story-link:visited h4,
-  .story-link:visited .field--name-field-teaser {
-    color: #725c5f; }
-  .field--name-field-nested-right .story-link {
-    margin-bottom: 30px; }
-  .story--teaser-conditional-image .story-link {
-    margin-bottom: 25px; }
+.field--name-field-nested-right .story-link {
+  margin-bottom: 30px; }
 
-h4 {
-  font-family: 'FF DIN Pro Bold', sans-serif;
-  font-weight: normal;
-  color: black;
+.story--teaser-conditional-image .story-link {
+  margin-bottom: 25px; }
+
+.node--view-mode-teaser-image-large h4 {
+  font-size: 42px;
+  text-transform: uppercase; }
+
+.story--teaser-image-large h4 {
+  font-size: 50px;
+  text-transform: uppercase; }
+
+.field--name-field-sub h4 {
+  font-size: 22px;
+  margin-bottom: 16px;
+  text-transform: none; }
+
+.field--name-field-nested-left .story--teaser-image-medium h4 {
   font-size: 30px;
-  line-height: 1;
-  margin-bottom: .5em; }
-  .node--view-mode-teaser-image-large h4 {
-    font-size: 42px;
-    text-transform: uppercase; }
-  .story--teaser-image-large h4 {
-    font-size: 50px;
-    text-transform: uppercase; }
-  .field--name-field-sub h4 {
-    font-size: 22px;
-    margin-bottom: 16px;
-    text-transform: none; }
-  .field--name-field-nested-left .story--teaser-image-medium h4 {
-    font-size: 30px;
-    text-transform: none; }
-  .story-group--column_left .story--teaser h4,
-  .field--name-field-nested-left .story--teaser h4 {
-    font-size: 22px;
-    text-transform: none; }
-  .story-group--column_right .story--teaser h4,
-  .field--name-field-nested-right h4 {
-    font-size: 18px;
-    text-transform: none; }
-  .teaser-conditional-width-image h4 {
-    font-size: 28px; }
-  .teaser-conditional-no-image h4 {
-    font-size: 24px; }
+  text-transform: none; }
+
+.story-group--column_left .story--teaser h4,
+.field--name-field-nested-left .story--teaser h4 {
+  font-size: 22px;
+  text-transform: none; }
+
+.story-group--column_right .story--teaser h4,
+.field--name-field-nested-right h4 {
+  font-size: 18px;
+  text-transform: none; }
+
+.teaser-conditional-width-image h4 {
+  font-size: 28px; }
+
+.teaser-conditional-no-image h4 {
+  font-size: 24px; }
 
 .story-group--column_right .story-label,
 .story-group--column_left .story-label,
@@ -1790,20 +1809,13 @@ h4 {
 .story--teaser-conditional-image .story-label {
   font-size: 12px; }
 
-.field--name-field-teaser {
-  color: #666666;
-  font-family: "Helvetica", sans-serif;
-  font-size: 14px;
-  line-height: 18px; }
-  @media (min-width: 961px) {
-    .field--name-field-teaser {
-      font-size: 15px; } }
-  .story-group--column_right .field--name-field-teaser,
-  .field--name-field-nested-right .field--name-field-teaser {
-    font-size: 13px;
-    line-height: 15px; }
-  .story--teaser-conditional-image .field--name-field-teaser {
-    font-size: 13.5px; }
+.story-group--column_right .field--name-field-teaser,
+.field--name-field-nested-right .field--name-field-teaser {
+  font-size: 13px;
+  line-height: 15px; }
+
+.story--teaser-conditional-image .field--name-field-teaser {
+  font-size: 13.5px; }
 
 .column-left .paragraph--type--nested .field--name-field-display-title {
   font-family: 'FF DIN Pro Bold', sans-serif;

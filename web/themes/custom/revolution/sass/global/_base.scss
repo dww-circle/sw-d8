@@ -230,6 +230,53 @@ main {
   }
 }
 
+// Node Title.
+h4 {
+  @include ff-din-bold;
+  color: black;
+  font-size: 30px;
+  line-height: 1;
+  margin-bottom: .5em;
+}
+
+// Teaser Body Style.
+.field--name-field-teaser {
+  color: #666666;
+  font-family: "Helvetica", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+
+  @include breakpoint($desktop) {
+    font-size: 15px;
+  }
+}
+
+// Story Link.
+.story-link {
+  display: block;
+  margin-bottom: 50px;
+
+  &:hover,
+  &:visited:hover {
+    opacity: .8;
+    text-decoration: none;
+
+    .field--name-field-kicker,
+    h4,
+    .field--name-field-teaser {
+      color: #72726c;
+    }
+  }
+
+  &:visited {
+    .field--name-field-kicker,
+    h4,
+    .field--name-field-teaser {
+      color: #725c5f;
+    }
+  }
+}
+
 // Make contextual links accessible.
 .contextual {
   z-index: $z-galaxy;
