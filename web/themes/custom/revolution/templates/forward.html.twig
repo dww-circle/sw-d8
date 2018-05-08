@@ -24,6 +24,12 @@
       {% if link %}
         <div class="link">{{ link }}</div>
       {% endif %}
+      {% if email_subscribe_form %}
+        <div class="email-subscribe-form">
+          <h2>{{ 'E-mail alerts'|t }}</h2>
+          {{ email_subscribe_form }}
+        </div>
+      {% endif %}
     </div>
   </body>
 </html>
