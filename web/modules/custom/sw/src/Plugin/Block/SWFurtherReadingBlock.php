@@ -172,6 +172,20 @@ class SWFurtherReadingBlock extends BlockBase {
    * {@inheritdoc}
    */
   public function build() {
+    $node = \Drupal::routeMatch()->getParameter('node');
+    return $this->buildFromNode($node);
+  }
+
+  /**
+   * Build the block for a specific story.
+   *
+   * @param \Drupal\node\Entity\NodeInterface $node
+   *   The node entity to build a further reading block for.
+   *
+   * @return array
+   *   The render array for the Further reading block of a given story.
+   */
+  public function buildFromNode(NodeInterface $node) {
     // This block must be cached separately for every page/route. Define this
     // render array here so that if we bail early, the render system knows to
     // only cache the empty response for the specific route that generated it.
@@ -181,7 +195,9 @@ class SWFurtherReadingBlock extends BlockBase {
       ],
     ];
 
-    $node = \Drupal::routeMatch()->getParameter('node');
+    if (empty($node)) {
+      return $block;
+    }
     if (! $node instanceof \Drupal\node\NodeInterface) {
       return $block;
     }
