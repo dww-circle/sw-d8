@@ -669,7 +669,10 @@ function sw_block_view_alter(array &$build, BlockPluginInterface $block) {
 function sw_theme() {
   return [
     'sw_mailerlite_subscribe_form' => [
-      'variables' => ['form_type' => NULL],
+      'variables' => [
+        'form_type' => NULL,
+        'email_value' => NULL,
+      ],
     ],
   ];
 }
