@@ -32,3 +32,12 @@
   padding: 10px;
   border: 1px solid #ddd;
 }
+
+.further-reading {
+  ul {
+    @include ul-unstyled;
+  }
+  .story-link {
+    @include teaser-tiny;
+  }
+}

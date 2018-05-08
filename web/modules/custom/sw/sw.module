@@ -278,6 +278,13 @@ function sw_preprocess_node_story(&$variables) {
     }
   }
 
+  // Additional pre-process and custom markup only used when forwarding an article.
+  if ($variables['view_mode'] == 'forward') {
+    $block_manager = \Drupal::service('plugin.manager.block');
+    $plugin_block = $block_manager->createInstance('sw_further_reading_block', []);
+    $variables['sw_further_reading_block'] = $plugin_block->buildFromNode($variables['node']);
+  }
+
   if ($variables['view_mode'] == 'teaser_conditional_image') {
     // Hide main_image based on story_weight.
     $weight = $variables['node']->get('field_story_weight')->getValue();
