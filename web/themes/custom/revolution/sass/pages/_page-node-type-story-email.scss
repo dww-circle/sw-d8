@@ -49,3 +49,29 @@ h2 {
   text-transform: uppercase;
   margin: 40px 0 5px 0;
 }
+
+.footer-wrapper .site-footer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 30px;
+  @include breakpoint($tablet) {
+    padding: 0 60px;
+  }
+  @include breakpoint($desktop) {
+    padding: 0 120px;
+  }
+}
+
+/**
+ * We rely on this for the follow links, but it's not included in our
+ * theme and we inherit from classy. Include it here so we're sure
+ * it's delivered with the email CSS.
+ */
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  word-wrap: normal;
+}

@@ -1287,4 +1287,9 @@ function sw_preprocess_forward(&$variables) {
   ];
   // Fix the link to remove the 'Read more about' text.
   $variables['link'] = $variables['entity']->toLink(NULL, 'canonical', ['absolute' => TRUE]);
+
+  // Add the site footer text as a template variable.
+  $block_manager = \Drupal::service('plugin.manager.block');
+  $plugin_block = $block_manager->createInstance('simple_block:footer_social', []);
+  $variables['site_footer'] = $plugin_block->build();
 }

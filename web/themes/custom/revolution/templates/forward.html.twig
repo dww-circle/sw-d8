@@ -34,9 +34,19 @@
           <div class="link">{{ link }}</div>
         </div>
       {% endif %}
-      {% if footer %}
-        <div class="footer">{{ footer }}</div>
-      {% endif %}
     </div>
+    {% if footer %}
+      <div class="footer">{{ footer }}</div>
+    {% endif %}
+    {% if site_footer %}
+      <div class="svgsprite">
+        {% include directory ~ '/images/svgsprites/symbol/svg/sprite.symbol.svg' %}
+      </div>
+      <div class="footer-wrapper">
+        <div class="follow-label">{{ 'Follow Us'|t }}</div>
+        {% include  directory ~ '/templates/components/follow.html.twig' %}
+        <div class="site-footer block">{{ site_footer }}</div>
+      </div>
+    {% endif %}
   </body>
 </html>

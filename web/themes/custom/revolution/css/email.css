@@ -332,6 +332,37 @@ h4 {
     .header-menu-expandable-mobile {
       display: none; } }
 
+.footer-wrapper {
+  background: black;
+  color: white;
+  font-family: "FF DIN Pro Regular", sans-serif;
+  font-size: 10px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  text-align: center; }
+  .footer-wrapper .block {
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 100%; }
+    @media (min-width: 541px) {
+      .footer-wrapper .block {
+        padding: 0 15px; } }
+    @media (min-width: 736px) {
+      .footer-wrapper .block {
+        padding: 0 60px; } }
+    @media (min-width: 961px) {
+      .footer-wrapper .block {
+        padding: 0 120px; } }
+  .footer-wrapper p {
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 16px; }
+  .footer-wrapper p:first-of-type {
+    color: #EA3223; }
+
 .page-node-type-story .node--type-story {
   font-family: "PT Serif", "Georgia", "Times New Roman", "Times", serif;
   font-size: 18px;
@@ -504,6 +535,30 @@ h2 {
   text-transform: uppercase;
   margin: 40px 0 5px 0; }
 
+.footer-wrapper .site-footer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 30px; }
+  @media (min-width: 736px) {
+    .footer-wrapper .site-footer {
+      padding: 0 60px; } }
+  @media (min-width: 961px) {
+    .footer-wrapper .site-footer {
+      padding: 0 120px; } }
+
+/**
+ * We rely on this for the follow links, but it's not included in our
+ * theme and we inherit from classy. Include it here so we're sure
+ * it's delivered with the email CSS.
+ */
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  word-wrap: normal; }
+
 .page-node-type-story .embedded-entity ~ * {
   position: static; }
 
@@ -604,5 +659,51 @@ article.embedded-entity .media--view-mode-embed-wide {
 
 .series .all-link {
   text-align: center; }
+
+/**
+ * Styles shared for all social links, both share links in stories
+ * (see _share_links.scss), and follow links in the site-wide footer
+ * (see _follow_links.scss).
+ */
+.social-links {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+  padding-left: 0; }
+  .social-links li {
+    height: 40px;
+    margin-bottom: 20px;
+    margin-left: 0;
+    width: 40px; }
+  .social-links .hover {
+    opacity: 0; }
+  .social-links a:hover {
+    color: #ff0000; }
+    .social-links a:hover .hover {
+      opacity: 1; }
+    .social-links a:hover .default {
+      opacity: 0; }
+  .social-links svg {
+    height: 40px;
+    text-indent: 0;
+    width: 40px; }
+
+/**
+ * Styles specific to the follow links in the site footer.
+ */
+.footer-wrapper .follow-label {
+  font-size: 16px;
+  text-transform: uppercase; }
+
+.footer-wrapper .social-links {
+  display: block;
+  text-align: center; }
+  .footer-wrapper .social-links li {
+    display: inline-block;
+    margin: 0 10px; }
 
 /*# sourceMappingURL=email.css.map */
