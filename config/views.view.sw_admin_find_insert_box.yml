@@ -9,7 +9,7 @@ dependencies:
     - taxonomy.vocabulary.insert_type
     - taxonomy.vocabulary.topic
     - user.role.administrator
-    - user.role.sw_staff
+    - user.role.story_editor
   module:
     - node
     - taxonomy
@@ -34,7 +34,7 @@ display:
         type: role
         options:
           role:
-            sw_staff: sw_staff
+            story_editor: story_editor
             administrator: administrator
       cache:
         type: tag
@@ -535,7 +535,7 @@ display:
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
-              sw_staff: '0'
+              story_editor: '0'
               administrator: '0'
             placeholder: ''
             autocomplete_filter: 0
@@ -584,7 +584,7 @@ display:
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
-              sw_staff: '0'
+              story_editor: '0'
               administrator: '0'
             reduce: false
           is_grouped: false
@@ -630,7 +630,7 @@ display:
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
-              sw_staff: '0'
+              story_editor: '0'
               administrator: '0'
             reduce: false
           is_grouped: false

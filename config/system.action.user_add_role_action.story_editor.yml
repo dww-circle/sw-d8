@@ -3,12 +3,12 @@ langcode: en
 status: true
 dependencies:
   config:
-    - user.role.sw_staff
+    - user.role.story_editor
   module:
     - user
-id: user_add_role_action.sw_staff
-label: 'Add the SW Staff role to the selected users'
+id: user_add_role_action.story_editor
+label: 'Add the Story Editor role to the selected users'
 type: user
 plugin: user_add_role_action
 configuration:
-  rid: sw_staff
+  rid: story_editor

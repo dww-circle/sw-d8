@@ -2,8 +2,8 @@ uuid: 6a6ef32c-8a22-457a-8799-53083e471b50
 langcode: en
 status: true
 dependencies: {  }
-id: sw_staff
-label: 'SW Staff'
+id: story_editor
+label: 'Story editor'
 weight: -8
 is_admin: null
 permissions:

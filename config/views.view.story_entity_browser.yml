@@ -447,7 +447,7 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-              sw_staff: sw_staff
+              story_editor: story_editor
               administrator: administrator
               anonymous: '0'
             placeholder: 'Enter NID'
@@ -532,7 +532,7 @@ display:
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
-              sw_staff: '0'
+              story_editor: '0'
               administrator: '0'
             placeholder: ''
             autocomplete_filter: 1

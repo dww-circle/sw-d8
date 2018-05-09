@@ -833,7 +833,7 @@ display:
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
-              sw_staff: '0'
+              story_editor: '0'
               administrator: '0'
             placeholder: ''
             min_placeholder: ''
@@ -877,7 +877,7 @@ display:
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
-              sw_staff: '0'
+              story_editor: '0'
               administrator: '0'
             placeholder: ''
             autocomplete_filter: 0
@@ -929,7 +929,7 @@ display:
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
-              sw_staff: '0'
+              story_editor: '0'
               administrator: '0'
             placeholder: ''
             min_placeholder: ''
@@ -975,7 +975,7 @@ display:
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
-              sw_staff: '0'
+              story_editor: '0'
               administrator: '0'
             placeholder: ''
             min_placeholder: ''
@@ -1019,7 +1019,7 @@ display:
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
-              sw_staff: '0'
+              story_editor: '0'
               administrator: '0'
             reduce: false
           is_grouped: false
@@ -1065,7 +1065,7 @@ display:
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
-              sw_staff: '0'
+              story_editor: '0'
               administrator: '0'
             reduce: false
           is_grouped: false
@@ -1111,7 +1111,7 @@ display:
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
-              sw_staff: '0'
+              story_editor: '0'
               administrator: '0'
             reduce: false
           is_grouped: false
@@ -1160,7 +1160,7 @@ display:
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
-              sw_staff: '0'
+              story_editor: '0'
               administrator: '0'
             placeholder: ''
             min_placeholder: ''
