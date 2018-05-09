@@ -9,6 +9,7 @@ use Drupal\Core\Render\Element;
 use Drupal\Core\Routing;
 use Drupal\Core\Url;
 
+use Drupal\file\FileInterface;
 use Drupal\media\Entity\Media;
 use Drupal\node\Entity\Node;
 use Drupal\node\NodeInterface;
@@ -1295,4 +1296,69 @@ function sw_preprocess_forward(&$variables) {
   $block_manager = \Drupal::service('plugin.manager.block');
   $plugin_block = $block_manager->createInstance('simple_block:footer_social', []);
   $variables['site_footer'] = $plugin_block->build();
+}
+
+/**
+ * Implements hook_ENTITY-TYPE_presave() for 'file' entities.
+ *
+ * Enforces server-friendly filenames on anything uploaded to SW.org.
+ *
+ * @see sw_clean_filename()
+ */
+function sw_file_presave(EntityInterface $file) {
+  $orig_uri = $file->getFileUri();
+  $orig_filename = $file->getFilename();
+  $path_info = pathinfo($orig_uri);
+  $clean_filename = sw_clean_filename($orig_filename);
+  $new_uri = $path_info['dirname'] . '/' . $clean_filename;
+  if ($new_uri != $orig_uri) {
+    if ($uri = file_unmanaged_move($orig_uri, $new_uri, FILE_EXISTS_RENAME)) {
+      $new_filename = basename($uri);
+      drupal_set_message(t('Renamed file from %orig to %new for safe storage on the server.',
+                           ['%orig' => $orig_filename, '%new' => $new_filename]));
+      $file->setFileUri($uri);
+      $file->setFilename($new_filename);
+    }
+    else {
+      // @todo: Now what?
+    }
+  }
+}
+
+/**
+ * Clean and sanitize a filename for use on SW.org.
+ *
+ * This code is shared with the migration, and when new files are uploaded.
+ *
+ * @param string $filename
+ *   The original (potentially absurd) filename from the SW team.
+ *
+ * @return string
+ *   A sanitized, transliterated and lowercase filename.
+ *
+ * @see sw_file_presave()
+ * @see \Drupal\sw_migrate\Plugin\migrate\process\SWFileUri::transform()
+ */
+function sw_clean_filename($filename) {
+  // Transliterate to bring some initial sanity.
+  $name = \Drupal::service('transliteration')->transliterate($filename, 'en', '_');
+
+  // Convert anything not a letter, number, '.', '-' or '_' to an underscore.
+  $name = preg_replace('/[^\w\.\-]+/', '_', $name);
+
+  // Consolidate repeated punctuation:
+  // If we see '.' anywhere in a chain of punctuation, keep it:
+  $name = preg_replace('/[_\-\.]*\.[_\-\.]*/', '.', $name);
+  // Otherwise, consolidate 2 or more '_' and/or '-' into a single '_'.
+  $name = preg_replace('/[_\-]{2,}/', '_', $name);
+
+  // Strip leading punctuation.
+  $name = ltrim($name, '._-');
+
+  // We want all lowercase, but before we do, convert CamelCase to use _ delimiters.
+  // @see https://stackoverflow.com/questions/40514051/using-preg-replace-to-convert-camelcase-to-snake-case
+  // Modified to ignore numbers and just put _ when we move from lower to upper.
+  $name = strtolower(preg_replace('/(?<=[a-z])(?=[A-Z])/', '_', $name));
+
+  return $name;
 }

@@ -32,25 +32,8 @@ class SWFileUri extends ProcessPluginBase {
     $uri = preg_replace('/^' . preg_quote($file_directory_path, '/') . '/', '', $filepath);
     $path_info = pathinfo($uri);
 
-    // Transliterate to bring some initial sanity.
-    $name = \Drupal::service('transliteration')->transliterate($path_info['basename'], 'en', '_');
-
-    // Convert anything not a letter, number, '.', '-' or '_' to an underscore.
-    $name = preg_replace('/[^\w\.\-]+/', '_', $name);
-
-    // Consolidate repeated punctuation:
-    // If we see '.' anywhere in a chain of punctuation, keep it:
-    $name = preg_replace('/[_\-\.]*\.[_\-\.]*/', '.', $name);
-    // Otherwise, consolidate 2 or more '_' and/or '-' into a single '_'.
-    $name = preg_replace('/[_\-]{2,}/', '_', $name);
-
-    // Strip leading punctuation.
-    $name = ltrim($name, '._-');
-
-    // We want all lowercase, but before we do, convert CamelCase to use _ delimiters.
-    // @see https://stackoverflow.com/questions/40514051/using-preg-replace-to-convert-camelcase-to-snake-case
-    // Modified to ignore numbers and just put _ when we move from lower to upper.
-    $name = strtolower(preg_replace('/(?<=[a-z])(?=[A-Z])/', '_', $name));
+    // Sanitize the filename.
+    $name = sw_clean_filename($path_info['basename']);
 
     // Finally, build the uri with subdirectories based on the given timestamps.
     // Most files are from the image field which uses an 'images' subdir.
