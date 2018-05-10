@@ -313,17 +313,17 @@ display:
         - 'config:core.entity_view_display.node.blog_critical_reading.teaser'
         - 'config:core.entity_view_display.node.external_article.default'
         - 'config:core.entity_view_display.node.external_article.teaser'
-        - 'config:core.entity_view_display.node.insert_box.default'
         - 'config:core.entity_view_display.node.page.default'
         - 'config:core.entity_view_display.node.page.teaser'
-        - 'config:core.entity_view_display.node.person.default'
         - 'config:core.entity_view_display.node.person.teaser'
-        - 'config:core.entity_view_display.node.slices.default'
         - 'config:core.entity_view_display.node.slices.teaser'
         - 'config:core.entity_view_display.node.static_page.default'
         - 'config:core.entity_view_display.node.static_page.teaser'
-        - 'config:core.entity_view_display.node.story.default'
         - 'config:core.entity_view_display.node.story.forward'
+        - 'config:core.entity_view_display.node.insert_box.default'
+        - 'config:core.entity_view_display.node.person.default'
+        - 'config:core.entity_view_display.node.slices.default'
+        - 'config:core.entity_view_display.node.story.default'
         - 'config:core.entity_view_display.node.story.teaser'
         - 'config:core.entity_view_display.node.story.teaser_conditional_image'
         - 'config:core.entity_view_display.node.story.teaser_image_large'
@@ -334,7 +334,7 @@ display:
     display_title: Feed
     position: 2
     display_options:
-      sitename_title: true
+      sitename_title: false
       path: recent/rss.xml
       displays:
         page_1: page_1
@@ -347,9 +347,8 @@ display:
       style:
         type: rss
         options:
-          description: ''
           grouping: {  }
-          uses_fields: false
+          description: 'Daily news and opinion from the left'
       row:
         type: rss_fields
         options:
@@ -729,6 +728,9 @@ display:
           plugin_id: field
       defaults:
         fields: false
+        title: false
+        sitename_title: false
+      title: SocialistWorker.org
     cache_metadata:
       contexts:
         - 'languages:language_content'
