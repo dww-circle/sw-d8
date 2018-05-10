@@ -249,7 +249,7 @@ function sw_preprocess_node_story(&$variables) {
     $variables['respond_url'] = Url::fromRoute('<front>', [], ['absolute' => TRUE])->toString() . 'respond' . $path[0]['alias'];
   }
 
-  if ($variables['view_mode'] == 'full' || $variables['view_mode'] == 'forward') {
+  if (in_array($variables['view_mode'], ['full', 'forward', 'rss'])) {
     if (!empty($variables['node']->sw_authors)) {
       $placeholders['%author'] = sw_get_entity_label_multiple($variables['node']->sw_authors, 'sw_author_label');
     }
