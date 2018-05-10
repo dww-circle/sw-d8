@@ -21,6 +21,9 @@ use Drupal\views\ViewExecutable;
 use Drupal\sw\DraftToLive;
 use Drupal\sw\Plugin\Block\SWTodaysStoriesBlock;
 
+// @todo: Create on SW 2.0 and finalize the nid.
+const SW_ORG_AUTHOR_NID = 39262;
+
 const SW_SECTION_EDITORIALS_TID = 11;
 const SW_SECTION_READERS_VIEWS_TID = 9;
 const SW_SECTION_OBRERO_SOCIALISTA_TID = 17255;
@@ -1148,30 +1151,64 @@ function sw_preprocess_page(&$variables) {
  * @see sw_get_issue_term()
  */
 function sw_views_pre_render(ViewExecutable $view) {
-  if ($view->id() == 'sw_issue_stories') {
-    // We only want to filter these stories out of the page display. We need
-    // the full list for the entity_reference display.
-    if ($view->getDisplay()->getPluginId() == 'page') {
-      $issue_term = sw_get_issue_term($view);
-      // Clobber the page title with the issue date.
-      $issue_date = $issue_term->get('field_issue_date')->value;
-      if (!empty($issue_date)) {
-        $view->setTitle($issue_date);
+  switch ($view->id()) {
+    case 'sw_issue_stories':
+      return sw_views_pre_render_sw_issue_stories($view);
+
+    case 'sw_recent':
+      return sw_views_pre_render_sw_recent($view);
+  }
+}
+
+/**
+ * Implements hook_views_pre_render() for the issue story list.
+ */
+function sw_views_pre_render_sw_issue_stories(ViewExecutable $view) {
+  // We only want to filter these stories out of the page display. We need
+  // the full list for the entity_reference display.
+  if ($view->getDisplay()->getPluginId() == 'page') {
+    $issue_term = sw_get_issue_term($view);
+    // Clobber the page title with the issue date.
+    $issue_date = $issue_term->get('field_issue_date')->value;
+    if (!empty($issue_date)) {
+      $view->setTitle($issue_date);
+    }
+    // If field_issue_top_stories is defined, remove them from the view list.
+    $top_stories = $issue_term->get('field_issue_top_stories')->getValue();
+    if (!empty($top_stories)) {
+      $top_story_nids = [];
+      foreach ($top_stories as $top_story) {
+        if (!empty($top_story['target_id'])) {
+          $top_story_nids[$top_story['target_id']] = TRUE;
+        }
       }
-      // If field_issue_top_stories is defined, remove them from the view list.
-      $top_stories = $issue_term->get('field_issue_top_stories')->getValue();
-      if (!empty($top_stories)) {
-        $top_story_nids = [];
-        foreach ($top_stories as $top_story) {
-          if (!empty($top_story['target_id'])) {
-            $top_story_nids[$top_story['target_id']] = TRUE;
-          }
+      foreach ($view->result as $index => $result) {
+        if (!empty($top_story_nids[$result->nid])) {
+          unset($view->result[$index]);
         }
-        foreach ($view->result as $index => $result) {
-          if (!empty($top_story_nids[$result->nid])) {
-            unset($view->result[$index]);
-          }
-        }
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_views_pre_render() for the recent feed.
+ *
+ * For editorials, swap out the author with a generic 'SocialistWorker.org' so
+ * that the RSS feed doesn't leak the original authors (which are hidden on
+ * story pages via custom story labels). Since the feed is directly setting
+ * <dc:creator> via fields, not the 'rss' view mode, we can't fix this via
+ * preprocess(). We need toalter the entity being used for the view results.
+ */
+function sw_views_pre_render_sw_recent(ViewExecutable $view) {
+  if ($view->getDisplay()->getPluginId() == 'feed') {
+    foreach ($view->result as $index => $result) {
+      $section = $result->_entity->get('field_section')->getValue();
+      if (!empty($section) && $section[0]['target_id'] == SW_SECTION_EDITORIALS_TID) {
+        $result->_entity->set('field_authors', ['target_id' => SW_ORG_AUTHOR_NID]);
+      }
+      if (!empty($top_story_nids[$result->nid])) {
+        unset($view->result[$index]);
       }
     }
   }
