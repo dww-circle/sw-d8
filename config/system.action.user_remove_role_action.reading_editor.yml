@@ -1,0 +1,14 @@
+uuid: fe46e979-2893-454d-aba5-b31cba1e26eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.reading_editor
+  module:
+    - user
+id: user_remove_role_action.reading_editor
+label: 'Remove the What We’re Reading editor role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: reading_editor

@@ -1,0 +1,14 @@
+uuid: b91cd66a-bb1f-4c31-b40a-550fe21c88e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.reading_editor
+  module:
+    - user
+id: user_add_role_action.reading_editor
+label: 'Add the What We’re Reading editor role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: reading_editor

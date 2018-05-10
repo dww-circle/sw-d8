@@ -1,0 +1,14 @@
+uuid: 4f8d9f63-2712-4cb1-8997-d58369795b5d
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.front_page_editor
+  module:
+    - user
+id: user_remove_role_action.front_page_editor
+label: 'Remove the Front page editor role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: front_page_editor

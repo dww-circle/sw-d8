@@ -1,0 +1,31 @@
+uuid: 0214e96e-b9f0-41a1-b1c8-621c98ee6c8d
+langcode: en
+status: true
+dependencies: {  }
+id: reading_editor
+label: 'What We''re Reading editor'
+weight: -8
+is_admin: null
+permissions:
+  - 'access contextual links'
+  - 'access media overview'
+  - 'access media_entity_browser entity browser pages'
+  - 'access toolbar'
+  - 'create book media'
+  - 'create external_article content'
+  - 'create media'
+  - 'create url aliases'
+  - 'delete any book media'
+  - 'delete any external_article content'
+  - 'edit any book media'
+  - 'edit any external_article content'
+  - 'manipulate entityqueues'
+  - 'override email address'
+  - 'override flood control'
+  - 'revert external_article revisions'
+  - 'update what_were_reading entityqueue'
+  - 'use text format filtered_html'
+  - 'use text format restricted_html'
+  - 'view external_article revisions'
+  - 'view own unpublished content'
+  - 'view the administration theme'
