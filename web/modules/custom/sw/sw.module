@@ -1399,3 +1399,26 @@ function sw_clean_filename($filename) {
 
   return $name;
 }
+
+/**
+ * Implements template_preprocess_image_formatter().
+ *
+ * Automatically sets image alt attributes to the default caption from their image node (if possible).
+ */
+function sw_preprocess_image_formatter(&$variables) {
+  $parent_entity = $variables['item']->getEntity();
+  $bundle = $parent_entity->bundle();
+  if ($bundle == 'image') {
+    $default_caption = $parent_entity->get('field_default_caption')->getValue();
+    if (!empty($default_caption[0]['value'])) {
+      $variables['image']['#alt'] = trim(strip_tags(check_markup($default_caption[0]['value'], $default_caption[0]['format'])));
+    }
+  }
+  elseif ($bundle == 'book') {
+    $variables['image']['#alt'] = t('Cover image: @title', ['@title' => $parent_entity->label()]);
+  }
+  if (empty($variables['image']['#alt'])) {
+    $variables['image']['#alt'] = t('Image from SocialistWorker.org');
+  }
+  unset($variables['image']['#title']);
+}
