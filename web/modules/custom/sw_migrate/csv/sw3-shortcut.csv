@@ -1,0 +1,21 @@
+shortcut_set,weight,link_title,link_path
+front-page-editor,-10,Add content,node/add
+front-page-editor,-9,All content,admin/content
+front-page-editor,-8,Find image,admin/content/image
+front-page-editor,-7,Find story,admin/content/story
+front-page-editor,-6,Reading queue,admin/structure/entityqueue/what_were_reading/what_were_reading
+front-page-editor,-5,Archives queue,admin/structure/entityqueue/from_the_archives/from_the_archives
+front-page-editor,-4,Story queues,admin/structure/entityqueue/story_queues/list
+front-page-editor,-3,Draft: Daily,draft/daily
+front-page-editor,-2,Draft: Weekend,draft/weekend
+front-page-editor,-1,Front page administration,admin/content/front-page
+reading-editor,-10,Add external article,node/add/external_article
+reading-editor,-9,Add book,media/add/book
+reading-editor,-8,Reading queue,admin/structure/entityqueue/what_were_reading/what_were_reading
+reading-editor,-7,All content,admin/content
+story-editor,-10,Add content,node/add
+story-editor,-9,Add story,node/add/story
+story-editor,-8,Add media,media/add
+story-editor,-7,All content,admin/content
+story-editor,-6,Find story,admin/content/story
+story-editor,-5,Find image,admin/content/image

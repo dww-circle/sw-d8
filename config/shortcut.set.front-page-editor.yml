@@ -1,0 +1,6 @@
+uuid: 0f807983-2831-4815-b975-5f1a8cb4605a
+langcode: en
+status: true
+dependencies: {  }
+id: front-page-editor
+label: 'Front page editor'

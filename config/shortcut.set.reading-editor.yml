@@ -1,0 +1,6 @@
+uuid: 1234f111-f9b7-4155-966e-d2fa25f7b7d1
+langcode: en
+status: true
+dependencies: {  }
+id: reading-editor
+label: 'What We’re Reading editor'

@@ -1,0 +1,24 @@
+id: csv_shortcut_set
+label: CSV Shortcut sets
+migration_tags:
+  - CSV
+  - Configuration
+migration_group: sw_d6
+
+destination:
+  plugin: entity:shortcut_set
+
+source:
+  plugin: sw_migrate_csv
+  path: csv
+  csv_path: sw3-shortcut-set.csv
+  header_row_count: 1
+  keys:
+    - id
+
+process:
+  id: id
+  label: label
+
+migration_dependencies:
+  required: { }

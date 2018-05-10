@@ -1,0 +1,34 @@
+id: csv_shortcut
+label: CSV Shortcut links
+migration_tags:
+  - CSV
+  - Content
+migration_group: sw_d6
+
+destination:
+  plugin: entity:shortcut
+
+source:
+  plugin: sw_migrate_csv
+  path: csv
+  csv_path: sw3-shortcut.csv
+  header_row_count: 1
+  keys:
+    - shortcut_set
+    - link_path
+  constants:
+    uri_scheme: 'internal:/'
+
+process:
+  shortcut_set: shortcut_set
+  title: link_title
+  weight: weight
+  link:
+    plugin: concat
+    source:
+      - 'constants/uri_scheme'
+      - link_path
+
+migration_dependencies:
+  required:
+    - csv_shortcut_set

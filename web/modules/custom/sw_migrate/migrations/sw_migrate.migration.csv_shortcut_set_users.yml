@@ -1,0 +1,26 @@
+id: csv_shortcut_set_users
+label: CSV Shortcut set user mapping
+migration_tags:
+  - CSV
+  - Configuration
+migration_group: sw_d6
+
+destination:
+  plugin: shortcut_set_users
+
+source:
+  plugin: sw_migrate_csv
+  path: csv
+  csv_path: sw3-shortcut-set-users.csv
+  header_row_count: 1
+  keys:
+    - uid
+
+process:
+  uid: uid
+  set_name: set_name
+
+migration_dependencies:
+  required:
+    - csv_shortcut_set
+    - upgrade_d6_user

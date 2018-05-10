@@ -1,0 +1,6 @@
+uuid: d52cd99e-45b4-4f6b-9bc3-f40d3322c980
+langcode: en
+status: true
+dependencies: {  }
+id: story-editor
+label: 'Story editor'
