@@ -53,7 +53,6 @@ module:
   rdf: 0
   redirect: 0
   responsive_image: 0
-  search: 0
   search_api: 0
   search_api_db: 0
   search_kint: 0
