@@ -27,6 +27,7 @@
     "drupal/entity_embed": "^1.0",
     "drupal/entity_reference_number_widget": "^1.0",
     "drupal/entityqueue": "^1.0@alpha",
+    "drupal/facets": "^1.0",
     "drupal/field_group": "^3.0",
     "drupal/forward": "^2.1",
     "drupal/inline_entity_form": "^1.0@beta",
