@@ -1652,8 +1652,8 @@ select {
   .story--teaser-image-medium,
   .teaser-conditional-with-image {
     grid-gap: 40px;
-    -ms-grid-columns: 190px auto;
-        grid-template-columns: 190px auto; } }
+    -ms-grid-columns: 290px auto;
+        grid-template-columns: 290px auto; } }
 
 .border-none .story--teaser-image-medium .content {
   border-bottom: 0; }
