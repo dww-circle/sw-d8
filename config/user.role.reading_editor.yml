@@ -8,6 +8,7 @@ weight: -8
 is_admin: null
 permissions:
   - 'access contextual links'
+  - 'access files overview'
   - 'access media overview'
   - 'access media_entity_browser entity browser pages'
   - 'access toolbar'
@@ -26,6 +27,7 @@ permissions:
   - 'update what_were_reading entityqueue'
   - 'use text format filtered_html'
   - 'use text format restricted_html'
+  - 'view all media revisions'
   - 'view external_article revisions'
   - 'view own unpublished content'
   - 'view the administration theme'
