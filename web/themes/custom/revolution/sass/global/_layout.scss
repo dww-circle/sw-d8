@@ -1,14 +1,4 @@
 // Sidebar layout and reordering elements for mobile happens here.
-.region-sidebar {
-  @include breakpoint($tablet) {
-    padding-left: 50px;
-  }
-
-  @include breakpoint($desktop) {
-    padding-left: 70px;
-  }
-}
-
 .layout-sidebar {
   // @see _mixins for direction from page-left and page-right.
 
@@ -18,10 +8,16 @@
 
     @include breakpoint($tablet) {
       display: grid;
-      grid-template-columns: auto 290px;
+      grid-column-gap: 40px;
+      grid-template-columns: 1fr 1fr;
     }
 
     @include breakpoint($desktop) {
+      grid-template-columns: auto 290px;
+      grid-column-gap: 0;
+    }
+
+    @include breakpoint($desktop-large) {
       grid-template-columns: auto 390px;
     }
   }
@@ -30,24 +26,35 @@
     order: 1;
 
     @include breakpoint($tablet) {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+
+    @include breakpoint($desktop) {
+      grid-column-start: 1;
+      grid-column-end: 1;
       order: 0;
     }
   }
 
   .region-sidebar {
-    margin: 0 auto;
     max-width: 500px;
     order: 3;
 
-    @include breakpoint($tablet) {
+    @include breakpoint($desktop) {
       order: 0;
+      padding-left: 50px;
+    }
+
+    @include breakpoint($desktop-large) {
+      padding-left: 70px;
     }
   }
 
   .region-content-bottom {
     order: 2;
 
-    @include breakpoint($tablet) {
+    @include breakpoint($desktop) {
       grid-column-start: 1;
       grid-column-end: 3;
       order: 0;

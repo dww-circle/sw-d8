@@ -11,6 +11,8 @@
   }
 
   img {
-    margin: 0 auto;
+    @include breakpoint($desktop) {
+      margin: 0 auto;
+    }
   }
 }

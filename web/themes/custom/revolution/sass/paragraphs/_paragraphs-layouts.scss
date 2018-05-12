@@ -31,7 +31,7 @@
 .teaser-conditional-with-image {
   margin-bottom: 35px;
 
-  @include breakpoint($desktop) {
+  @include breakpoint($desktop-large) {
     display: grid;
     margin-bottom: 50px;
   }
@@ -41,22 +41,21 @@
     margin-bottom: 15px;
     max-width: 100%;
 
-    @include breakpoint($desktop) {
+    @include breakpoint($desktop-large) {
       margin-bottom: 0;
     }
   }
 
   .content {
-    @include breakpoint($desktop) {
+    @include breakpoint($desktop-large) {
       border-bottom: 1px solid $c-gr7d;
     }
   }
 
   .node__content {
     @include clearfix-before;
-    margin-bottom: 25px;
 
-    @include breakpoint($desktop) {
+    @include breakpoint($desktop-large) {
       margin-bottom: 40px;
     }
   }
@@ -88,7 +87,7 @@
     grid-template-columns: 150px auto;
   }
 
-  @include breakpoint($desktop) {
+  @include breakpoint($desktop-large) {
     grid-gap: 40px;
     grid-template-columns: 290px auto;
   }
