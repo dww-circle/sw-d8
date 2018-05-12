@@ -1,0 +1,408 @@
+uuid: 4275e0e6-fb3e-4f85-ac83-853f4abf19b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_story_weight
+    - field.storage.node.field_authors
+    - field.storage.node.field_interviewees
+    - field.storage.node.field_contributors
+    - field.storage.node.field_issue_number
+    - field.storage.node.field_keywords
+    - field.storage.node.field_topic
+    - field.storage.node.field_secondary_topic
+    - field.storage.node.field_series
+    - field.storage.node.field_section
+    - field.storage.node.field_teaser
+    - field.storage.node.field_city
+    - field.storage.node.field_state
+    - field.storage.node.field_country
+    - search_api.server.local_db
+  module:
+    - node
+    - taxonomy
+    - search_api
+id: sw_text
+name: 'SW Text'
+description: 'Index of all searchable text on SW.org (stories, static pages, external articles, legacy blogs, etc).'
+read_only: false
+field_settings:
+  rendered_item_full:
+    label: 'Rendered full HTML output'
+    property_path: rendered_item
+    type: text
+    configuration:
+      roles:
+        anonymous: anonymous
+      view_mode:
+        'entity:node':
+          blog_couldnt_make_it_up: default
+          blog_critical_reading: default
+          external_article: default
+          page: default
+          story: default
+  aggregated_authors:
+    label: 'Aggregated authors'
+    property_path: aggregated_field
+    type: text
+    boost: !!float 2
+    configuration:
+      type: union
+      fields:
+        - 'entity:node/field_authors'
+        - 'entity:node/field_interviewees'
+  content_type:
+    label: 'Content type'
+    datasource_id: 'entity:node'
+    property_path: type
+    type: string
+  story_weight:
+    label: 'Story weight'
+    datasource_id: 'entity:node'
+    property_path: field_story_weight
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_story_weight
+  created:
+    label: 'Authored on'
+    datasource_id: 'entity:node'
+    property_path: created
+    type: date
+  authors_name:
+    label: 'Authors » Content » Title'
+    datasource_id: 'entity:node'
+    property_path: 'field_authors:entity:title'
+    type: text
+    boost: !!float 2
+    dependencies:
+      config:
+        - field.storage.node.field_authors
+      module:
+        - node
+  interviewees_name:
+    label: 'Interviewees » Content » Title'
+    datasource_id: 'entity:node'
+    property_path: 'field_interviewees:entity:title'
+    type: text
+    boost: !!float 2
+    dependencies:
+      config:
+        - field.storage.node.field_interviewees
+      module:
+        - node
+  contributors_name:
+    label: 'Contributors » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_contributors:entity:name'
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_contributors
+      module:
+        - taxonomy
+  issue_number_int:
+    label: 'Issue number » Taxonomy term » Name (integer)'
+    datasource_id: 'entity:node'
+    property_path: 'field_issue_number:entity:name'
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_issue_number
+      module:
+        - taxonomy
+  issue_number_txt:
+    label: 'Issue number » Taxonomy term » Name (text search)'
+    datasource_id: 'entity:node'
+    property_path: 'field_issue_number:entity:name'
+    type: text
+    boost: !!float 8
+    dependencies:
+      config:
+        - field.storage.node.field_issue_number
+      module:
+        - taxonomy
+  keyword:
+    label: 'Keywords » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_keywords:entity:name'
+    type: text
+    boost: !!float 2
+    dependencies:
+      config:
+        - field.storage.node.field_keywords
+      module:
+        - taxonomy
+  main_topic:
+    label: 'Main topic'
+    datasource_id: 'entity:node'
+    property_path: field_topic
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_topic
+  main_topic_name:
+    label: 'Main topic » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_topic:entity:name'
+    type: text
+    boost: !!float 3
+    dependencies:
+      config:
+        - field.storage.node.field_topic
+      module:
+        - taxonomy
+  secondary_topic:
+    label: 'Secondary topic'
+    datasource_id: 'entity:node'
+    property_path: field_secondary_topic
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_secondary_topic
+  secondary_topic_name:
+    label: 'Secondary topic » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_secondary_topic:entity:name'
+    type: text
+    boost: !!float 3
+    dependencies:
+      config:
+        - field.storage.node.field_secondary_topic
+      module:
+        - taxonomy
+  series_name:
+    label: 'Series » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_series:entity:name'
+    type: text
+    boost: !!float 2
+    dependencies:
+      config:
+        - field.storage.node.field_series
+      module:
+        - taxonomy
+  section_name:
+    label: 'Section » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_section:entity:name'
+    type: text
+    boost: !!float 2
+    dependencies:
+      config:
+        - field.storage.node.field_section
+      module:
+        - taxonomy
+  teaser:
+    label: 'Teaser » Processed text'
+    datasource_id: 'entity:node'
+    property_path: 'field_teaser:processed'
+    type: text
+    boost: !!float 2
+    dependencies:
+      config:
+        - field.storage.node.field_teaser
+  city_name:
+    label: 'City » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_city:entity:name'
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_city
+      module:
+        - taxonomy
+  state_name:
+    label: 'State » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_state:entity:name'
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_state
+      module:
+        - taxonomy
+  country_name:
+    label: 'Country » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_country:entity:name'
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_country
+      module:
+        - taxonomy
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: text
+    boost: !!float 5
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: false
+      selected:
+        - blog_couldnt_make_it_up
+        - blog_critical_reading
+        - external_article
+        - page
+        - story
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  hierarchy:
+    fields:
+      main_topic: taxonomy_term-parent
+      secondary_topic: taxonomy_term-parent
+    weights:
+      preprocess_index: -50
+  add_url: {  }
+  aggregated_field: {  }
+  entity_status: {  }
+  highlight:
+    highlight: always
+    highlight_partial: true
+    excerpt: true
+    excerpt_length: 256
+    exclude_fields: {  }
+    prefix: '<strong>'
+    suffix: '</strong>'
+    weights:
+      postprocess_query: 0
+  html_filter:
+    all_fields: true
+    fields:
+      - rendered_item_full
+      - aggregated_authors
+      - content_type
+      - authors_name
+      - interviewees_name
+      - contributors_name
+      - issue_number_txt
+      - keyword
+      - main_topic_name
+      - secondary_topic_name
+      - series_name
+      - section_name
+      - teaser
+      - city_name
+      - state_name
+      - country_name
+      - title
+    title: false
+    alt: true
+    tags:
+      h1: 5
+      h2: 3
+      h3: 2
+      strong: 2
+      b: 2
+    weights:
+      preprocess_index: -47
+      preprocess_query: -47
+  ignorecase:
+    all_fields: true
+    fields:
+      - rendered_item_full
+      - aggregated_authors
+      - content_type
+      - authors_name
+      - interviewees_name
+      - contributors_name
+      - issue_number_txt
+      - keyword
+      - main_topic_name
+      - secondary_topic_name
+      - series_name
+      - section_name
+      - teaser
+      - city_name
+      - state_name
+      - country_name
+      - title
+    weights:
+      preprocess_index: -48
+      preprocess_query: -48
+  rendered_item: {  }
+  stemmer:
+    all_fields: true
+    fields:
+      - rendered_item_full
+      - aggregated_authors
+      - authors_name
+      - interviewees_name
+      - contributors_name
+      - issue_number_txt
+      - keyword
+      - main_topic_name
+      - secondary_topic_name
+      - series_name
+      - section_name
+      - teaser
+      - city_name
+      - state_name
+      - country_name
+      - title
+    exceptions:
+      texan: texa
+      mexican: mexic
+    weights:
+      preprocess_index: -42
+      preprocess_query: -43
+  tokenizer:
+    all_fields: true
+    fields:
+      - rendered_item_full
+      - aggregated_authors
+      - authors_name
+      - interviewees_name
+      - contributors_name
+      - issue_number_txt
+      - keyword
+      - main_topic_name
+      - secondary_topic_name
+      - series_name
+      - section_name
+      - teaser
+      - city_name
+      - state_name
+      - country_name
+      - title
+    spaces: ''
+    overlap_cjk: 1
+    minimum_word_size: '3'
+    weights:
+      preprocess_index: -45
+      preprocess_query: -45
+  transliteration:
+    all_fields: true
+    fields:
+      - rendered_item_full
+      - aggregated_authors
+      - content_type
+      - authors_name
+      - interviewees_name
+      - contributors_name
+      - issue_number_txt
+      - keyword
+      - main_topic_name
+      - secondary_topic_name
+      - series_name
+      - section_name
+      - teaser
+      - city_name
+      - state_name
+      - country_name
+      - title
+    weights:
+      preprocess_index: -49
+      preprocess_query: -49
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  index_directly: false
+  cron_limit: 50
+server: local_db
