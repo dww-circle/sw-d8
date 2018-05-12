@@ -871,6 +871,17 @@ h4 {
 .view .feed-icons {
   display: none; }
 
+.view-sw-search .story-link,
+.view-sw-search .teaser-conditional-with-image {
+  margin-bottom: 0; }
+
+.view-sw-search .views-row {
+  margin-bottom: 50px; }
+
+.view-sw-search .views-field-search-api-excerpt {
+  font-size: 14px;
+  line-height: 18px; }
+
 .view-sw-series-stories .field--name-description {
   font-family: "FF DIN Pro Regular", sans-serif; }
   .view-sw-series-stories .field--name-description b, .view-sw-series-stories .field--name-description strong {
