@@ -39,9 +39,8 @@ process:
     fallback_to_site_default: true
   init: init
   roles:
-    plugin: migration_lookup
-    migration: upgrade_d6_user_role
-    source: roles
+    plugin: sw_user_roles
+    source: name
 destination:
   plugin: 'entity:user'
   md5_passwords: true
