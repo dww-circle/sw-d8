@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "9c26fce0393885a2d04a8e183407c29a",
+    "content-hash": "adc7416477140ff0cf3f04996c057e2b",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3387,6 +3387,9 @@
                     "services": {
                         "drush.services.yml": "^9"
                     }
+                },
+                "patches_applied": {
+                    "[#2820410-20] Allow rendering an entity viewmode when using fields in views": "https://www.drupal.org/files/issues/2018-03-12/search_api-views_rendered_item_field-2820410-20-D8.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
