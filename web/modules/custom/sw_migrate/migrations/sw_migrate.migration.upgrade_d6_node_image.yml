@@ -79,8 +79,8 @@ process:
         plugin: static_map
         bypass: true
         source: value
+        default_value: 0
         map:
-          0: 0
           6: 1
       delta: delta
   field_original_image: 
