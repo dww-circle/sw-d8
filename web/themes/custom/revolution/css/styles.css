@@ -1703,7 +1703,7 @@ select {
     .reading__content .view-sw-what-were-reading {
       float: left;
       max-width: 320px;
-      width: 220px; } }
+      width: 260px; } }
   @media (min-width: 1270px) {
     .reading__content .view-sw-what-were-reading {
       width: 320px; } }
@@ -1715,7 +1715,7 @@ select {
       float: right;
       margin-right: 20px;
       min-width: 220px;
-      width: calc(100% - 540px); } }
+      width: calc(100% - 260px); } }
   @media (min-width: 1270px) {
     .reading__content .field--name-field-book {
       margin-right: 0; } }
@@ -1723,6 +1723,15 @@ select {
     .reading__content .field--name-field-book .media--type-book {
       margin: 0 auto;
       width: 220px; } }
+
+@media (min-width: 961px) {
+  .reading__content .reading__content-right {
+    float: right;
+    width: calc(100% - 260px); } }
+
+@media (min-width: 1270px) {
+  .reading__content .reading__content-right {
+    width: calc(100% - 320px); } }
 
 .reading__content .issue {
   margin-bottom: 25px; }

@@ -49,9 +49,11 @@
   <h3 class="slice-title">{{ content.field_display_title }}</h3>
   <div class="reading__content clearfix">
     {{ what_were_reading_view }}
-    <div class="issue">
-      {{ content|without('field_display_title', 'field_book') }}
+    <div class="reading__content-right clearfix">
+      <div class="issue">
+        {{ content|without('field_display_title', 'field_book') }}
+      </div>
+      {{ content.field_book }}
     </div>
-    {{ content.field_book }}
   </div>
 </div>

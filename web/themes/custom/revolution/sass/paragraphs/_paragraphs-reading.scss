@@ -35,7 +35,7 @@
     @include breakpoint($desktop) {
       float: left;
       max-width: 320px;
-      width: 220px;
+      width: 260px;
     }
 
     @include breakpoint($desktop-large) {
@@ -50,7 +50,7 @@
       float: right;
       margin-right: 20px;
       min-width: 220px;
-      width: calc(100% - 540px);
+      width: calc(100% - 260px);
     }
 
     @include breakpoint($desktop-large) {
@@ -63,6 +63,17 @@
         margin: 0 auto;
         width: 220px;
       }
+    }
+  }
+  // Issue and Book
+  .reading__content-right {
+    @include breakpoint($desktop) {
+      float: right;
+      width: calc(100% - 260px);
+    }
+
+    @include breakpoint($desktop-large) {
+      width: calc(100% - 320px);
     }
   }
 
