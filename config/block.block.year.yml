@@ -1,0 +1,28 @@
+uuid: 7b394e15-654a-43e9-b329-def2e6d0212b
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.year
+  module:
+    - facets
+    - system
+  theme:
+    - revolution
+id: year
+theme: revolution
+region: sidebar
+weight: -8
+provider: null
+plugin: 'facet_block:year'
+settings:
+  id: 'facet_block:year'
+  label: Year
+  provider: facets
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: '/search*'
+    negate: false
+    context_mapping: {  }
