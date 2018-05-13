@@ -1658,22 +1658,12 @@ select {
       .story--teaser-image-medium img,
       .teaser-conditional-with-image img {
         margin-bottom: 0; } }
-  @media (min-width: 1270px) {
-    .story--teaser-image-large .content,
-    .story--teaser-image-medium .content,
-    .teaser-conditional-with-image .content {
-      border-bottom: 1px solid #7d7d7d; } }
   .story--teaser-image-large .node__content:before,
   .story--teaser-image-medium .node__content:before,
   .teaser-conditional-with-image .node__content:before {
     clear: both;
     content: " ";
     display: table; }
-  @media (min-width: 1270px) {
-    .story--teaser-image-large .node__content,
-    .story--teaser-image-medium .node__content,
-    .teaser-conditional-with-image .node__content {
-      margin-bottom: 40px; } }
 
 @media (min-width: 961px) {
   .story--teaser-image-large {
@@ -1709,9 +1699,6 @@ select {
     grid-gap: 40px;
     -ms-grid-columns: 290px auto;
         grid-template-columns: 290px auto; } }
-
-.border-none .story--teaser-image-medium .content {
-  border-bottom: 0; }
 
 .reading__content .field--name-name,
 .reading__content .field--name-field-issue-header {

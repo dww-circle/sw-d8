@@ -46,18 +46,8 @@
     }
   }
 
-  .content {
-    @include breakpoint($desktop-large) {
-      border-bottom: 1px solid $c-gr7d;
-    }
-  }
-
   .node__content {
     @include clearfix-before;
-
-    @include breakpoint($desktop-large) {
-      margin-bottom: 40px;
-    }
   }
 }
 
@@ -91,9 +81,4 @@
     grid-gap: 40px;
     grid-template-columns: 290px auto;
   }
-}
-
-// Selectively removing border.
-.border-none .story--teaser-image-medium .content {
-  border-bottom: 0;
 }
