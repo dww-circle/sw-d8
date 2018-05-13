@@ -1235,6 +1235,9 @@ h4 {
 .block-sw-mailerlite-subscribe-block {
   border-bottom: 1px solid #666;
   padding-bottom: 30px; }
+  .block-sw-mailerlite-subscribe-block .subscribe-form {
+    font-size: 14px;
+    line-height: 20px; }
 
 .page-node-type-story .embedded-entity ~ * {
   position: static; }
