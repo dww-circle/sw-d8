@@ -20,6 +20,10 @@ settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      - issue_number
-    auto_create: true
+      issue_number: issue_number
+    sort:
+      field: name
+      direction: desc
+    auto_create: false
+    auto_create_bundle: ''
 field_type: entity_reference
