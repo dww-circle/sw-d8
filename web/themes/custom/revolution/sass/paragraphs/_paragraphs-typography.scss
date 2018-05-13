@@ -29,13 +29,8 @@
 
 // Node Title.
 h4 {
-  .node--view-mode-teaser-image-large & {
-    font-size: 42px;
-    text-transform: uppercase;
-  }
-
   .story--teaser-image-large & {
-    font-size: 50px;
+    font-size: 42px;
     text-transform: uppercase;
   }
 
@@ -48,7 +43,7 @@ h4 {
 
   // Weeekend left with pic
   .field--name-field-nested-left .story--teaser-image-medium & {
-    font-size: 30px;
+    font-size: 26px;
     text-transform: none;
   }
 
@@ -67,10 +62,6 @@ h4 {
   }
 
   // Story List
-  .teaser-conditional-width-image & {
-    font-size: 28px;
-  }
-
   .teaser-conditional-no-image & {
     font-size: 24px;
   }

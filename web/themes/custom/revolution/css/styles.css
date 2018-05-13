@@ -1828,12 +1828,8 @@ select {
 .story--teaser-conditional-image .story-link {
   margin-bottom: 25px; }
 
-.node--view-mode-teaser-image-large h4 {
-  font-size: 42px;
-  text-transform: uppercase; }
-
 .story--teaser-image-large h4 {
-  font-size: 50px;
+  font-size: 42px;
   text-transform: uppercase; }
 
 .field--name-field-sub h4 {
@@ -1842,7 +1838,7 @@ select {
   text-transform: none; }
 
 .field--name-field-nested-left .story--teaser-image-medium h4 {
-  font-size: 30px;
+  font-size: 26px;
   text-transform: none; }
 
 .story-group--column_left .story--teaser h4,
@@ -1854,9 +1850,6 @@ select {
 .field--name-field-nested-right h4 {
   font-size: 18px;
   text-transform: none; }
-
-.teaser-conditional-width-image h4 {
-  font-size: 28px; }
 
 .teaser-conditional-no-image h4 {
   font-size: 24px; }
