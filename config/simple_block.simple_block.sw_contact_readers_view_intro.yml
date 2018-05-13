@@ -1,0 +1,11 @@
+uuid: 9093fd4f-2cc8-4a80-baa4-e18b0d51aaea
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.filtered_html
+id: sw_contact_readers_view_intro
+title: 'SW: contact/readers-views intro'
+content:
+  value: 'Please send us your thoughts.  We will publish a selection of comments in the <a href="/section/readers’-views">Readers’ Views</a> section of SocialistWorker.org.'
+  format: filtered_html
