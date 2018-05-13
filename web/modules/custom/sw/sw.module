@@ -288,6 +288,27 @@ function sw_preprocess_node_story(&$variables) {
       $variables['sw_further_reading_block'] = $plugin_block->buildFromNode($variables['node']);
       break;
 
+    case 'teaser_image_large':
+      $wide = $variables['node']->get('field_wide_image')->getValue();
+      if (empty($wide)) {
+        $mains = $variables['node']->get('field_main_image')->referencedEntities();
+        $main = reset($mains);
+        $main_fid = $main->get('field_media_image')->first()->getValue()['target_id'];
+        if (!empty($main_fid)) {
+          $image = \Drupal::entityTypeManager()->getStorage('file')->load($main_fid);
+          // @todo: find this dynamically or make this configurable?
+          $style_name = '550x300';
+          $style = \Drupal::entityTypeManager()->getStorage('image_style')->load($style_name);
+          $variables['content']['field_wide_image'][0] = [
+            '#theme' => 'image',
+            '#style_name' => $style_name,
+            '#uri' => $style->buildUrl($image->getFileUri()),
+          ];
+          $variables['attributes']['class'][] = 'large-fallback';
+        }
+      }
+      break;
+
     case 'teaser_conditional_image':
       sw_preprocess_node_story_teaser_conditional_image($variables);
       break;
