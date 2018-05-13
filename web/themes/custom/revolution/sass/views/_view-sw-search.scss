@@ -7,7 +7,8 @@
     margin-bottom: 50px;
   }
 
-  .node__content {
+  .node__content,
+  .views-field-search-api-excerpt {
     color: $c-hover;
     font-size: 13.5px;
     line-height: 18px;
@@ -15,6 +16,10 @@
 
   .highlighted-results {
     margin: 10px 0;
+  }
+
+  .views-field-search-api-excerpt,
+  .highlighted-results {
     strong {
       color: $c-black;
     }

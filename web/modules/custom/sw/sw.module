@@ -1262,29 +1262,22 @@ function sw_views_pre_render_sw_recent(ViewExecutable $view) {
 /**
  * Implements hook_views_pre_render() for the search page.
  *
- * Stuffs the highlighted search result excerpts back into the nodes.
+ * Stuffs the highlighted search result excerpts back into story teasers.
+ * Since teasers get complicated on other node types, leave it as a separate
+ * view field so we don't run into issues with summary trim limits, etc.
  */
 function sw_views_pre_render_sw_search(ViewExecutable $view) {
+  $view->element['#cache']['contexts'][] = 'route';
   foreach ($view->result as $index => $result) {
     if (!empty($result->search_api_excerpt) && !empty($result->_object)) {
-      // Figure out what field is going to be rendered in the teaser based on
-      // the available entity properties.
       $properties = $result->_object->getProperties();
-      foreach (['field_teaser', 'field_blog_comment', 'body'] as $field_name) {
-        if (!empty($properties[$field_name])) {
-          $teaser = $result->_object->get($field_name)->getValue();
-          if (!empty($teaser)) {
-            // Since we're messing with teaser render arrays, only cache results per page.
-            $view->element['#cache']['contexts'][] = 'route';
-            $key = $field_name == 'field_body' ? 'summary' : 'value';
-            $teaser[0][$key] .= '<p class="highlighted-results">' . $result->search_api_excerpt . '<p>';
-            $view->result[$index]->_object->set($field_name, $teaser);
-            // @todo: This means that the search exceprts count towards the trim
-            // limit on blog posts etc. Sometimes they get chopped when the
-            // comment is verbose. It'd be much better to inject this into a
-            // pseudo "field" that a dedicated view mode could handle.
-            break;
-          }
+      if (!empty($properties['field_teaser'])) {
+        $teaser = $result->_object->get('field_teaser')->getValue();
+        if (!empty($teaser)) {
+          // Since we're messing with teaser render arrays, only cache results per page.
+          $teaser[0]['value'] .= '<p class="highlighted-results">' . $result->search_api_excerpt . '<p>';
+          $view->result[$index]->_object->set('field_teaser', $teaser);
+          unset($view->result[$index]->search_api_excerpt);
         }
       }
     }
