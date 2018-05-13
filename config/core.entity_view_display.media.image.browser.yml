@@ -1,0 +1,65 @@
+uuid: af57e6c5-e38f-4419-9b7d-ac94d0bfe7e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.browser
+    - field.field.media.image.field_city
+    - field.field.media.image.field_country
+    - field.field.media.image.field_credit
+    - field.field.media.image.field_default_caption
+    - field.field.media.image.field_image_crop_type
+    - field.field.media.image.field_image_gallery
+    - field.field.media.image.field_image_provider
+    - field.field.media.image.field_image_rights
+    - field.field.media.image.field_image_url
+    - field.field.media.image.field_media_image
+    - field.field.media.image.field_original_image
+    - field.field.media.image.field_original_url
+    - field.field.media.image.field_server_folder
+    - field.field.media.image.field_state
+    - image.style.210x210
+    - media.type.image
+  module:
+    - image
+_core:
+  default_config_hash: jOwnt_yq6AKAfqU6f0xKnxEkFQ2eTPJWxrk3WMLbL68
+id: media.image.browser
+targetEntityType: media
+bundle: image
+mode: browser
+content:
+  field_media_image:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: 210x210
+      image_link: ''
+    third_party_settings: {  }
+  name:
+    type: string
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_city: true
+  field_country: true
+  field_credit: true
+  field_default_caption: true
+  field_image_crop_type: true
+  field_image_gallery: true
+  field_image_provider: true
+  field_image_rights: true
+  field_image_url: true
+  field_original_image: true
+  field_original_url: true
+  field_server_folder: true
+  field_state: true
+  thumbnail: true
+  uid: true
