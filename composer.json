@@ -109,6 +109,9 @@
   },
   "extra": {
     "patches": {
+      "drupal/admin_toolbar": {
+        "[#2972553-3] Add static cache to speed up admin_toolbar_links_access_filter_user_has_admin_role()" : "https://www.drupal.org/files/issues/2018-05-13/2972553-3.admin_toolbar_optimization.patch"
+      },
       "drupal/auto_entitylabel": {
         "[#2120055-22] Trim auto-generated labels" : "https://www.drupal.org/files/issues/2018-04-04/2120055-22.auto_entitylabel-8.x-2.x.trim-no-config.patch",
         "[#2905230-6] Alter inline_entity_form table to display auto-computed entity labels" : "https://www.drupal.org/files/issues/Title_displayed_as_AutoEntityLabel_after_saving_via_Inline_Entity_Form-2905230-6.patch"
