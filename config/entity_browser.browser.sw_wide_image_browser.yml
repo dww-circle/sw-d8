@@ -1,0 +1,42 @@
+uuid: f76bad05-1e4c-4ebb-a48b-6b249b6a7be8
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.media_entity_browser
+  module:
+    - entity_browser_entity_form
+    - views
+name: sw_wide_image_browser
+label: 'Wide images'
+display: modal
+display_configuration:
+  width: ''
+  height: ''
+  link_text: 'Select wide image'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  f4fa43c1-31ee-4b09-bfd7-46e890ba3acd:
+    settings:
+      view: media_entity_browser
+      view_display: wide_image_browser
+      submit_text: 'Select wide image'
+      auto_select: false
+    uuid: f4fa43c1-31ee-4b09-bfd7-46e890ba3acd
+    weight: 1
+    label: 'Browse wide images'
+    id: view
+  c6c32722-771d-4bf1-b67b-87f899f9f45e:
+    settings:
+      entity_type: media
+      bundle: image
+      form_mode: default
+      submit_text: 'Save image'
+    uuid: c6c32722-771d-4bf1-b67b-87f899f9f45e
+    weight: 2
+    label: 'Upload image'
+    id: entity_form

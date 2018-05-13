@@ -1,0 +1,52 @@
+uuid: d4ad22f4-5971-4d02-8aa3-65923bd29b43
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.sw_media_entity_browser
+  module:
+    - entity_browser_entity_form
+    - views
+name: sw_media_browser
+label: 'SW Media Browser'
+display: modal
+display_configuration:
+  width: ''
+  height: ''
+  link_text: 'Select media'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  9f5379f4-32f9-4b98-b4d0-5c9b8b010243:
+    settings:
+      view: sw_media_entity_browser
+      view_display: all_media_browser
+      submit_text: 'Select media'
+      auto_select: false
+    uuid: 9f5379f4-32f9-4b98-b4d0-5c9b8b010243
+    weight: 1
+    label: 'Browse media'
+    id: view
+  f81770a4-da37-4288-8dfc-a1bca7e90b7b:
+    settings:
+      entity_type: media
+      bundle: image
+      form_mode: default
+      submit_text: 'Save image'
+    uuid: f81770a4-da37-4288-8dfc-a1bca7e90b7b
+    weight: 2
+    label: 'Upload image'
+    id: entity_form
+  9e7e4888-7bb0-4f32-affa-a9b128682b5e:
+    settings:
+      entity_type: media
+      bundle: book
+      form_mode: default
+      submit_text: 'Save book'
+    uuid: 9e7e4888-7bb0-4f32-affa-a9b128682b5e
+    weight: 3
+    label: 'Upload book'
+    id: entity_form

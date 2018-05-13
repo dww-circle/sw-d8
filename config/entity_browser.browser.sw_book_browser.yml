@@ -1,0 +1,42 @@
+uuid: 8720d368-f095-40f0-acff-23a9e6871b4d
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.media_entity_browser
+  module:
+    - entity_browser_entity_form
+    - views
+name: sw_book_browser
+label: Books
+display: modal
+display_configuration:
+  width: ''
+  height: ''
+  link_text: 'Select book'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  36291f42-b779-4b05-ad77-06393973e8b0:
+    settings:
+      view: media_entity_browser
+      view_display: book_browser
+      submit_text: 'Select book'
+      auto_select: false
+    uuid: 36291f42-b779-4b05-ad77-06393973e8b0
+    weight: 1
+    label: 'Browse books'
+    id: view
+  8f91b392-6e5a-434e-9a9d-315da6f07152:
+    settings:
+      entity_type: media
+      bundle: book
+      form_mode: default
+      submit_text: 'Save book'
+    uuid: 8f91b392-6e5a-434e-9a9d-315da6f07152
+    weight: 2
+    label: 'Upload book'
+    id: entity_form
