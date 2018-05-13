@@ -883,14 +883,15 @@ h4 {
 .view-sw-search .views-row {
   margin-bottom: 50px; }
 
-.view-sw-search .views-field-search-api-excerpt,
 .view-sw-search .node__content {
   color: #72726c;
   font-size: 13.5px;
   line-height: 18px; }
 
-.view-sw-search .views-field-search-api-excerpt strong {
-  color: #1a272e; }
+.view-sw-search .highlighted-results {
+  margin: 10px 0; }
+  .view-sw-search .highlighted-results strong {
+    color: #1a272e; }
 
 .view-sw-search h2 {
   margin-bottom: 0; }
