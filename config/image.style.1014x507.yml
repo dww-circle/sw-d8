@@ -1,0 +1,15 @@
+uuid: 642c6d55-34e1-417e-b22b-14c8ffb05c61
+langcode: en
+status: true
+dependencies: {  }
+name: 1014x507
+label: 'SW 1014×507'
+effects:
+  9ae94c82-c4c7-4757-a86a-c77fdd6b2228:
+    uuid: 9ae94c82-c4c7-4757-a86a-c77fdd6b2228
+    id: image_scale
+    weight: 1
+    data:
+      width: 1014
+      height: 507
+      upscale: false

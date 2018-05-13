@@ -40,6 +40,7 @@
     height: auto;
     margin-bottom: 15px;
     max-width: 100%;
+    width: 100%;
 
     @include breakpoint($desktop-large) {
       margin-bottom: 0;
@@ -67,14 +68,13 @@
 .story--teaser-image-medium,
 .teaser-conditional-with-image {
   @include breakpoint(500px) {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: 200px auto;
     margin-bottom: 50px;
   }
 
-  @include breakpoint($tablet) {
-    grid-template-columns: 150px auto;
+  @include breakpoint($desktop) {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 200px auto;
   }
 
   @include breakpoint($desktop-large) {
