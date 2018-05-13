@@ -1198,6 +1198,10 @@ function sw_views_pre_render(ViewExecutable $view) {
 
     case 'sw_recent':
       return sw_views_pre_render_sw_recent($view);
+
+    case 'sw_search':
+      return sw_views_pre_render_sw_search($view);
+
   }
 }
 
@@ -1250,6 +1254,38 @@ function sw_views_pre_render_sw_recent(ViewExecutable $view) {
       }
       if (!empty($top_story_nids[$result->nid])) {
         unset($view->result[$index]);
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_views_pre_render() for the search page.
+ *
+ * Stuffs the highlighted search result excerpts back into the nodes.
+ */
+function sw_views_pre_render_sw_search(ViewExecutable $view) {
+  foreach ($view->result as $index => $result) {
+    if (!empty($result->search_api_excerpt) && !empty($result->_object)) {
+      // Figure out what field is going to be rendered in the teaser based on
+      // the available entity properties.
+      $properties = $result->_object->getProperties();
+      foreach (['field_teaser', 'field_blog_comment', 'body'] as $field_name) {
+        if (!empty($properties[$field_name])) {
+          $teaser = $result->_object->get($field_name)->getValue();
+          if (!empty($teaser)) {
+            // Since we're messing with teaser render arrays, only cache results per page.
+            $view->element['#cache']['contexts'][] = 'route';
+            $key = $field_name == 'field_body' ? 'summary' : 'value';
+            $teaser[0][$key] .= '<p class="highlighted-results">' . $result->search_api_excerpt . '<p>';
+            $view->result[$index]->_object->set($field_name, $teaser);
+            // @todo: This means that the search exceprts count towards the trim
+            // limit on blog posts etc. Sometimes they get chopped when the
+            // comment is verbose. It'd be much better to inject this into a
+            // pseudo "field" that a dedicated view mode could handle.
+            break;
+          }
+        }
       }
     }
   }
