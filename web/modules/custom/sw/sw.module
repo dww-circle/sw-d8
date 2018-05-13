@@ -224,15 +224,13 @@ function sw_preprocess_node(&$variables) {
  *
  * Inject the correct story_label based on the complex logic.
  *
- * On full view mode, also rewrites introduction and body_introduction to
- * replace %author and %interviewee.
+ * On full view mode, RSS, and while forwarding, also rewrites introduction and
+ * body_introduction to replace %author and %interviewee.
  *
  * Handles the display-friendly version of field_contributors (sorts
  * alphabetically based on last name, adds appropriate delimiters and puts it
  * all on a single line.).
  *
- * For the teaser-conditional-image view mode, hides images on stories that
- * don't have weight -8 or lighter.
  */
 function sw_preprocess_node_story(&$variables) {
   // For any view mode, we're going to need to load the authors (and
@@ -245,12 +243,6 @@ function sw_preprocess_node_story(&$variables) {
   }
 
   $variables['story_label'] = sw_get_story_label($variables['node'], $variables['view_mode']);
-
-  if ($variables['view_mode'] == 'full') {
-    $path = $variables['node']->get('path')->getValue();
-    $variables['email_url'] = Url::fromRoute('<front>', [], ['absolute' => TRUE])->toString() . 'email' . $path[0]['alias'];
-    $variables['respond_url'] = Url::fromRoute('<front>', [], ['absolute' => TRUE])->toString() . 'respond' . $path[0]['alias'];
-  }
 
   if (in_array($variables['view_mode'], ['full', 'forward', 'rss'])) {
     if (!empty($variables['node']->sw_authors)) {
@@ -282,79 +274,100 @@ function sw_preprocess_node_story(&$variables) {
     }
   }
 
-  // Additional pre-process and custom markup only used when forwarding an article.
-  if ($variables['view_mode'] == 'forward') {
-    $block_manager = \Drupal::service('plugin.manager.block');
-    $plugin_block = $block_manager->createInstance('sw_further_reading_block', []);
-    $variables['sw_further_reading_block'] = $plugin_block->buildFromNode($variables['node']);
+  // Now, anything view_mode-specific.
+  switch ($variables['view_mode']) {
+    case 'full':
+      $path = $variables['node']->get('path')->getValue();
+      $variables['email_url'] = Url::fromRoute('<front>', [], ['absolute' => TRUE])->toString() . 'email' . $path[0]['alias'];
+      $variables['respond_url'] = Url::fromRoute('<front>', [], ['absolute' => TRUE])->toString() . 'respond' . $path[0]['alias'];
+      break;
+
+    case 'forward':
+      $block_manager = \Drupal::service('plugin.manager.block');
+      $plugin_block = $block_manager->createInstance('sw_further_reading_block', []);
+      $variables['sw_further_reading_block'] = $plugin_block->buildFromNode($variables['node']);
+      break;
+
+    case 'teaser_conditional_image':
+      sw_preprocess_node_story_teaser_conditional_image($variables);
+      break;
+
+  }
+}
+
+/**
+ * Preprocess function for viewing story nodes via teaser-conditional-image.
+ *
+ * Hides images on stories that don't have weight -8 or lighter.  Handles
+ * complex logic to conditionally hide the story label in various story lists.
+ *
+ * @param array $variables
+ *   Reference to an array of template variables.
+ */
+function sw_preprocess_node_story_teaser_conditional_image(&$variables) {
+  // Hide main_image based on story_weight.
+  $weight = $variables['node']->get('field_story_weight')->getValue();
+  $main_image = $variables['node']->get('field_main_image')->getValue();
+  // -7 and heavier is "greater than" in the math world. This logic seems
+  // backwards, but it's right given the inverted meaning of weights.
+  // However, even for important stories (-8 and "above"), don't set the
+  // "...-with-image" class if there's no value for field_main_image.
+  if ($weight[0]['value'] > -8 || empty($main_image)) {
+    unset($variables['content']['field_main_image']);
+    $variables['attributes']['class'][] = 'teaser-conditional-no-image';
+  }
+  else {
+    $variables['attributes']['class'][] = 'teaser-conditional-with-image';
   }
 
-  if ($variables['view_mode'] == 'teaser_conditional_image') {
-    // Hide main_image based on story_weight.
-    $weight = $variables['node']->get('field_story_weight')->getValue();
-    $main_image = $variables['node']->get('field_main_image')->getValue();
-    // -7 and heavier is "greater than" in the math world. This logic seems
-    // backwards, but it's right given the inverted meaning of weights.
-    // However, even for important stories (-8 and "above"), don't set the
-    // "...-with-image" class if there's no value for field_main_image.
-    if ($weight[0]['value'] > -8 || empty($main_image)) {
-      unset($variables['content']['field_main_image']);
-      $variables['attributes']['class'][] = 'teaser-conditional-no-image';
+  // See if we're on a story list where the story labels don't make sense.
+  // Since the story label is conditional on the page we're viewing, the
+  // resulting render array can only be cached per route/page.
+  $variables['#cache']['contexts'][] = 'route';
+  $route_parameters = \Drupal::routeMatch()->getParameters();
+  if ($route_parameters) {
+    $view_id = $route_parameters->get('view_id');
+    if (!empty($view_id) && $view_id == 'sw_section_stories') {
+      $arg_0 = $route_parameters->get('arg_0');
+      if (!empty($arg_0)) {
+        switch (strtolower($arg_0)) {
+          case 'editorials':
+          case 'readers’-views':
+          case 'obrero-socialista':
+            // @todo It'd be better not to compute these in the first place...
+            unset($variables['story_label']);
+            break;
+        }
+      }
+    }
+    elseif (!empty($view_id) && $view_id == 'sw_recent') {
+      unset($variables['date']);
+    }
+    elseif (!empty($view_id) && $view_id == 'sw_series_stories') {
+      // Sort of ugly. It's not easy to get the currently active View object
+      // to inquire directly about the taxonomy argument it's using. Call a
+      // helper method to find the term given a URL argument.
+      $arg_0 = $route_parameters->get('arg_0');
+      $term = sw_get_term_from_path('series', $arg_0);
+      if (!empty($term)) {
+        // Since this render array is dependent upon fields on the taxonomy
+        // term, add it to the #cache tags.
+        $variables['#cache']['tags'][] = 'taxonomy_term:' . $term->id();
+        // If the term doesn't want story labels, hide them.
+        if (empty($term->get('field_show_story_labels')->value)) {
+          unset($variables['story_label']);
+        }
+      }
     }
     else {
-      $variables['attributes']['class'][] = 'teaser-conditional-with-image';
-    }
-
-    // See if we're on a story list where the story labels don't make sense.
-    // Since the story label is conditional on the page we're viewing, the
-    // resulting render array can only be cached per route/page.
-    $variables['#cache']['contexts'][] = 'route';
-    $route_parameters = \Drupal::routeMatch()->getParameters();
-    if ($route_parameters) {
-      $view_id = $route_parameters->get('view_id');
-      if (!empty($view_id) && $view_id == 'sw_section_stories') {
-        $arg_0 = $route_parameters->get('arg_0');
-        if (!empty($arg_0)) {
-          switch (strtolower($arg_0)) {
-            case 'editorials':
-            case 'readers’-views':
-            case 'obrero-socialista':
-              // @todo It'd be better not to compute these in the first place...
-              unset($variables['story_label']);
-              break;
-          }
-        }
-      }
-      elseif (!empty($view_id) && $view_id == 'sw_recent') {
-        unset($variables['date']);
-      }
-      elseif (!empty($view_id) && $view_id == 'sw_series_stories') {
-        // Sort of ugly. It's not easy to get the currently active View object
-        // to inquire directly about the taxonomy argument it's using. Call a
-        // helper method to find the term given a URL argument.
-        $arg_0 = $route_parameters->get('arg_0');
-        $term = sw_get_term_from_path('series', $arg_0);
-        if (!empty($term)) {
-          // Since this render array is dependent upon fields on the taxonomy
-          // term, add it to the #cache tags.
-          $variables['#cache']['tags'][] = 'taxonomy_term:' . $term->id();
-          // If the term doesn't want story labels, hide them.
-          if (empty($term->get('field_show_story_labels')->value)) {
-            unset($variables['story_label']);
-          }
-        }
-      }
-      else {
-        $node = $route_parameters->get('node');
-        if (!empty($node) && $node->getType() == 'person') {
-          if ($variables['story_label'] == $node->getTitle()) {
-            unset($variables['story_label']);
-          }
+      $node = $route_parameters->get('node');
+      if (!empty($node) && $node->getType() == 'person') {
+        if ($variables['story_label'] == $node->getTitle()) {
+          unset($variables['story_label']);
         }
       }
     }
   }
-
 }
 
 /**
