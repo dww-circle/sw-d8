@@ -1,13 +1,40 @@
 .view-sw-search {
   .story-link,
   .teaser-conditional-with-image {
-    margin-bottom: 0;
+    margin-bottom: 10px;
   }
   .views-row {
     margin-bottom: 50px;
   }
-  .views-field-search-api-excerpt {
-    font-size: 14px;
+
+  .views-field-search-api-excerpt,
+  .node__content {
+    color: $c-hover;
+    font-size: 13.5px;
     line-height: 18px;
+  }
+
+  .views-field-search-api-excerpt {
+    strong {
+      color: $c-black;
+    }
+  }
+
+  h2 {
+    margin-bottom: 0;
+
+    a {
+      @include link-colors($c-black, $c-hover, $c-visited);
+      @include ff-din-bold;
+      font-size: 24px;
+    }
+  }
+
+  .node__links {
+    margin-bottom: 10px;
+
+    .inline li:first-child {
+      padding-left: 0;
+    }
   }
 }

@@ -1,0 +1,23 @@
+uuid: 0d9de6df-6141-4dc0-9e77-498a11445840
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.sw_search
+  module:
+    - views
+  theme:
+    - revolution
+id: exposedformsw_searchpage_1
+theme: revolution
+region: main_menu
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:sw_search-page_1'
+settings:
+  id: 'views_exposed_filter_block:sw_search-page_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+visibility: {  }

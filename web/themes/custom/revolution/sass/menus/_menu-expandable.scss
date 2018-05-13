@@ -98,11 +98,12 @@
   }
 }
 
-// 95
-.region-expanded-menu .block-search {
+// Search.
+.region-expanded-menu .block-views-exposed-filter-blocksw-search-page-1 {
   width: 100%;
 
-  h2 {
+  label {
+    font-family: $ff-din-regular;
     font-size: 16px;
     margin-bottom: 0;
     text-transform: uppercase;
@@ -112,7 +113,11 @@
     position: relative;
   }
 
-  .form-search {
+  .form-type-textfield {
+    margin-right: 0;
+  }
+
+  .form-text {
     color: black;
     font-size: 18px;
     height: 40px;
@@ -125,7 +130,7 @@
     font-size: 30px;
     position: absolute;
     right: 5px;
-    top: 7px;
+    top: 43px;
   }
 
   .button {

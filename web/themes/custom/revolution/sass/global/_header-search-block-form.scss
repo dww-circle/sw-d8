@@ -1,7 +1,7 @@
-.region-main-menu .search-block-form {
+.region-main-menu .block-views-exposed-filter-blocksw-search-page-1 {
   text-align: right;
 
-  .form-search {
+  .form-type-textfield {
     display: none;
   }
 
@@ -10,6 +10,10 @@
     font-size: 18px;
     padding-right: 7px;
     padding-top: 3px;
+  }
+
+  .form-actions {
+    display: inline;
   }
 
   .button {
