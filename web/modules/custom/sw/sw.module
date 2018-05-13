@@ -123,8 +123,15 @@ function sw_form_node_form_alter(&$form, FormStateInterface $form_state, $form_i
  *
  * Improves the UI by only conditionally showing relevant fields based on the
  * values of other fields via #states, and hiding fields we don't want to see.
+ *
+ * Unassigns the 'created' field from the 'author' group so it can be placed.
+ *
+ * @see http://tasks.socialistworker.org/node/1096
  */
 function sw_story_node_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  if (isset($form['created'])) {
+    unset($form['created']['#group']);
+  }
   $form['field_kicker']['#states'] = [
     'visible' => [
       ':input[name="field_kicker[0][value]"]' => ['filled' => TRUE],
