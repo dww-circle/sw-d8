@@ -1,0 +1,26 @@
+uuid: bd382884-3928-499e-a7b2-aadf8d9c3fd2
+langcode: en
+status: true
+dependencies:
+  module:
+    - sw
+    - system
+  theme:
+    - revolution
+id: sw_search_block_header
+theme: revolution
+region: main_menu
+weight: 0
+provider: null
+plugin: sw_search_block
+settings:
+  id: sw_search_block
+  label: 'SW search block'
+  provider: sw
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '/search*'
+    negate: true
+    context_mapping: {  }

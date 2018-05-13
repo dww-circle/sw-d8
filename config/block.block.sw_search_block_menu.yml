@@ -1,0 +1,20 @@
+uuid: 10706e11-9c10-4b81-9290-dda149111c33
+langcode: en
+status: true
+dependencies:
+  module:
+    - sw
+  theme:
+    - revolution
+id: sw_search_block_menu
+theme: revolution
+region: expanded_menu
+weight: -9
+provider: null
+plugin: sw_search_block
+settings:
+  id: sw_search_block
+  label: 'SW search block'
+  provider: sw
+  label_display: '0'
+visibility: {  }
