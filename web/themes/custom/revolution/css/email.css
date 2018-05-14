@@ -432,6 +432,16 @@ h4 {
     color: #808080;
     font-style: italic;
     font-weight: bold; }
+  .page-node-type-story .field--name-field-body h2 {
+    font-family: 'FF DIN Pro Bold', sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px; }
+  .page-node-type-story .field--name-field-body h3 {
+    font-family: 'FF DIN Pro Bold', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px; }
 
 .page-node-type-story .contributors {
   font-style: italic; }

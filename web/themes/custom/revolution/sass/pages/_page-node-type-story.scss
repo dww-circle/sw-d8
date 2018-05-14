@@ -89,6 +89,18 @@
       font-style: italic;
       font-weight: bold;
     }
+
+    h2 {
+      @include ff-din-bold;
+      font-size: 20px;
+      line-height: 25px;
+    }
+
+    h3 {
+      @include ff-din-bold;
+      font-size: 18px;
+      line-height: 22px;
+    }
   }
 
   .contributors {
