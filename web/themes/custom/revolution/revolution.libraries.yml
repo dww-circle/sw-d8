@@ -2,6 +2,7 @@ global:
   css:
     theme:
       css/styles.css: {}
+      css/print.css: { media: print }
       //fonts.googleapis.com/css?family=Source+Code+Pro:400|PT+Serif:400,700: { type: external }
   js:
     js/global.min.js: {}
