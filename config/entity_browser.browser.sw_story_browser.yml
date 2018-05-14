@@ -1,0 +1,31 @@
+uuid: 6d3c8f18-d998-41b7-a3f8-f4b71aa2139b
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.sw_story_entity_browser
+  module:
+    - views
+name: sw_story_browser
+label: Stories
+display: modal
+display_configuration:
+  width: ''
+  height: ''
+  link_text: 'Select stories'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: single
+widget_selector_configuration: {  }
+widgets:
+  77cf1d25-c8d9-4034-9846-b44d948dd2ef:
+    settings:
+      view: sw_story_entity_browser
+      view_display: story_browser
+      submit_text: 'Select stories'
+      auto_select: false
+    uuid: 77cf1d25-c8d9-4034-9846-b44d948dd2ef
+    weight: 1
+    label: 'Browse stories'
+    id: view

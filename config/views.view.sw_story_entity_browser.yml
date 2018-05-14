@@ -10,8 +10,8 @@ dependencies:
     - node
     - user
     - views_autocomplete_filters
-id: story_entity_browser
-label: 'Story Entity Browser'
+id: sw_story_entity_browser
+label: 'SW: Story entity browser'
 module: views
 description: ''
 tag: ''
