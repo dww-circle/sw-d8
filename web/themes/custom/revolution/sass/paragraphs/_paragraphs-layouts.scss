@@ -63,6 +63,12 @@
     grid-gap: 60px;
     grid-template-columns: 550px auto;
   }
+
+  &.large-fallback {
+    @include breakpoint($desktop) {
+      grid-template-columns: 366px auto;
+    }
+  }
 }
 
 .story--teaser-image-medium,

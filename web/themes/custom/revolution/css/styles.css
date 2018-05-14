@@ -1709,6 +1709,11 @@ select {
     -ms-grid-columns: 550px auto;
         grid-template-columns: 550px auto; } }
 
+@media (min-width: 961px) {
+  .story--teaser-image-large.large-fallback {
+    -ms-grid-columns: 366px auto;
+        grid-template-columns: 366px auto; } }
+
 @media (min-width: 500px) {
   .story--teaser-image-medium,
   .teaser-conditional-with-image {

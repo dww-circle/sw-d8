@@ -304,7 +304,7 @@ function sw_preprocess_node_story(&$variables) {
         if (!empty($main_fid)) {
           $image = \Drupal::entityTypeManager()->getStorage('file')->load($main_fid);
           // @todo: find this dynamically or make this configurable?
-          $style_name = '550x300';
+          $style_name = '825x624';
           $style = \Drupal::entityTypeManager()->getStorage('image_style')->load($style_name);
           $variables['content']['field_wide_image'][0] = [
             '#theme' => 'image',
