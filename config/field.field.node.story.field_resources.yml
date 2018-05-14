@@ -1,0 +1,37 @@
+uuid: d4e07a17-ffd7-4ed0-b0c4-59f2a4b7a189
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_resources
+    - media.type.audio
+    - media.type.book
+    - media.type.file
+    - media.type.image
+    - media.type.video
+    - node.type.story
+id: node.story.field_resources
+field_name: field_resources
+entity_type: node
+bundle: story
+label: Resources
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      audio: audio
+      book: book
+      file: file
+      image: image
+      video: video
+    sort:
+      field: mid
+      direction: DESC
+    auto_create: false
+    auto_create_bundle: audio
+field_type: entity_reference

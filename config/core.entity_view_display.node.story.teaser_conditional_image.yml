@@ -27,7 +27,6 @@ dependencies:
     - field.field.node.story.field_teaser
     - field.field.node.story.field_topic
     - field.field.node.story.field_wide_image
-    - field.field.node.story.upload
     - image.style.825x624
     - node.type.story
   module:
@@ -78,4 +77,3 @@ hidden:
   field_topic: true
   field_wide_image: true
   links: true
-  upload: true

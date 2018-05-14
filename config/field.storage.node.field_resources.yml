@@ -1,20 +1,17 @@
-uuid: 2e44cd0e-fe4a-44c9-ae12-4b8899d2a2b4
+uuid: 1b59d79c-6ae4-42ee-a90b-e32dfc4e77e1
 langcode: en
 status: true
 dependencies:
   module:
-    - file
+    - media
     - node
-id: node.upload
-field_name: upload
+id: node.field_resources
+field_name: field_resources
 entity_type: node
-type: file
+type: entity_reference
 settings:
-  display_field: true
-  target_type: file
-  display_default: false
-  uri_scheme: public
-module: file
+  target_type: media
+module: core
 locked: false
 cardinality: -1
 translatable: true

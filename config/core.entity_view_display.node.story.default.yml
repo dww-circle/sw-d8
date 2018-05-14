@@ -16,6 +16,7 @@ dependencies:
     - field.field.node.story.field_kicker
     - field.field.node.story.field_main_image
     - field.field.node.story.field_related_articles
+    - field.field.node.story.field_resources
     - field.field.node.story.field_secondary_topic
     - field.field.node.story.field_section
     - field.field.node.story.field_series
@@ -26,10 +27,8 @@ dependencies:
     - field.field.node.story.field_teaser
     - field.field.node.story.field_topic
     - field.field.node.story.field_wide_image
-    - field.field.node.story.upload
     - node.type.story
   module:
-    - file
     - text
     - user
 id: node.story.default
@@ -66,18 +65,19 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     region: content
+  field_resources:
+    type: entity_reference_entity_view
+    weight: 4
+    label: above
+    settings:
+      view_mode: embed_wide
+      link: false
+    third_party_settings: {  }
+    region: content
   links:
     weight: 5
     region: content
     settings: {  }
-    third_party_settings: {  }
-  upload:
-    type: file_default
-    weight: 4
-    region: content
-    label: hidden
-    settings:
-      use_description_as_link_text: true
     third_party_settings: {  }
 hidden:
   field_authors: true

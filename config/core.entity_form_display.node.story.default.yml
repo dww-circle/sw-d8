@@ -18,6 +18,7 @@ dependencies:
     - field.field.node.story.field_kicker
     - field.field.node.story.field_main_image
     - field.field.node.story.field_related_articles
+    - field.field.node.story.field_resources
     - field.field.node.story.field_secondary_topic
     - field.field.node.story.field_section
     - field.field.node.story.field_series
@@ -28,12 +29,10 @@ dependencies:
     - field.field.node.story.field_teaser
     - field.field.node.story.field_topic
     - field.field.node.story.field_wide_image
-    - field.field.node.story.upload
     - node.type.story
   module:
     - entity_browser
     - field_group
-    - file
     - inline_entity_form
     - path
     - text
@@ -283,6 +282,20 @@ content:
     third_party_settings: {  }
     type: entity_browser_entity_reference
     region: content
+  field_resources:
+    weight: 26
+    settings:
+      entity_browser: media_entity_browser
+      field_widget_display: rendered_entity
+      field_widget_edit: true
+      field_widget_remove: true
+      selection_mode: selection_append
+      field_widget_display_settings:
+        view_mode: browser
+      open: false
+    third_party_settings: {  }
+    type: entity_browser_entity_reference
+    region: content
   field_secondary_topic:
     weight: 8
     settings: {  }
@@ -380,13 +393,6 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  upload:
-    settings:
-      progress_indicator: throbber
-    type: file_generic
-    weight: 12
-    third_party_settings: {  }
-    region: content
   url_redirects:
     weight: 15
     region: content
