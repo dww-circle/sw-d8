@@ -1,15 +1,29 @@
-.region-main-menu .block-views-exposed-filter-blocksw-search-page-1 {
+.region-main-menu .block-sw-search-block {
   text-align: right;
 
   .form-type-textfield {
-    display: none;
+    margin: 0;
+
+    label {
+      display: none;
+    }
+
+    input {
+      line-height: 18px;
+      margin-bottom: 0;
+      padding-right: 76px;
+      vertical-align: middle;
+    }
   }
 
   svg {
-    color: white;
+    color: #B3B5B8;
     font-size: 18px;
     padding-right: 7px;
     padding-top: 3px;
+    position: absolute;
+    right: 0;
+    top: 6px;
   }
 
   .form-actions {
@@ -19,11 +33,19 @@
   .button {
     -moz-appearance: none;
     -webkit-appearance: none;
-    background: transparent;
-    border: none;
+    background: $c-black;
+    border: 0;
     color: white;
-    font-size: 16px;
-    padding: 8px 0 6px;
+    font-size: 12px;
+    margin: 0 3px 0 0;
+    padding: 3px 20px 4px 7px;
+    position: absolute;
+    right: 0;
     text-transform: uppercase;
+    top: 7px;
+
+    &:hover {
+      background: $c-red;
+    }
   }
 }

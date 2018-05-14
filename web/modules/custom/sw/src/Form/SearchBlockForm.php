@@ -20,7 +20,7 @@ class SearchBlockForm extends FormBase {
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
     $form['text'] = [
-      '#title' => $this->t('Text'),
+      '#title' => $this->t('Search'),
       '#type' => 'textfield',
       '#size' => '10',
       '#maxlength' => '128',

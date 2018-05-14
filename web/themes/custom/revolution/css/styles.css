@@ -427,26 +427,42 @@ h4 {
     .header-menu-expandable-mobile {
       display: none; } }
 
-.region-main-menu .block-views-exposed-filter-blocksw-search-page-1 {
+.region-main-menu .block-sw-search-block {
   text-align: right; }
-  .region-main-menu .block-views-exposed-filter-blocksw-search-page-1 .form-type-textfield {
-    display: none; }
-  .region-main-menu .block-views-exposed-filter-blocksw-search-page-1 svg {
-    color: white;
+  .region-main-menu .block-sw-search-block .form-type-textfield {
+    margin: 0; }
+    .region-main-menu .block-sw-search-block .form-type-textfield label {
+      display: none; }
+    .region-main-menu .block-sw-search-block .form-type-textfield input {
+      line-height: 18px;
+      margin-bottom: 0;
+      padding-right: 76px;
+      vertical-align: middle; }
+  .region-main-menu .block-sw-search-block svg {
+    color: #B3B5B8;
     font-size: 18px;
     padding-right: 7px;
-    padding-top: 3px; }
-  .region-main-menu .block-views-exposed-filter-blocksw-search-page-1 .form-actions {
+    padding-top: 3px;
+    position: absolute;
+    right: 0;
+    top: 6px; }
+  .region-main-menu .block-sw-search-block .form-actions {
     display: inline; }
-  .region-main-menu .block-views-exposed-filter-blocksw-search-page-1 .button {
+  .region-main-menu .block-sw-search-block .button {
     -moz-appearance: none;
     -webkit-appearance: none;
-    background: transparent;
-    border: none;
+    background: #1a272e;
+    border: 0;
     color: white;
-    font-size: 16px;
-    padding: 8px 0 6px;
-    text-transform: uppercase; }
+    font-size: 12px;
+    margin: 0 3px 0 0;
+    padding: 3px 20px 4px 7px;
+    position: absolute;
+    right: 0;
+    text-transform: uppercase;
+    top: 7px; }
+    .region-main-menu .block-sw-search-block .button:hover {
+      background: #f00; }
 
 .menu-trigger {
   font-size: 30px;
@@ -518,30 +534,32 @@ h4 {
     color: white;
     text-transform: uppercase; }
 
-.region-expanded-menu .block-views-exposed-filter-blocksw-search-page-1 {
+.region-expanded-menu .sw-search-block-form {
   width: 100%; }
-  .region-expanded-menu .block-views-exposed-filter-blocksw-search-page-1 label {
+  .region-expanded-menu .sw-search-block-form label {
     font-family: "FF DIN Pro Regular", sans-serif;
-    font-size: 16px;
+    font-weight: normal;
     margin-bottom: 0;
     text-transform: uppercase; }
-  .region-expanded-menu .block-views-exposed-filter-blocksw-search-page-1 form {
+  .region-expanded-menu .sw-search-block-form form {
     position: relative; }
-  .region-expanded-menu .block-views-exposed-filter-blocksw-search-page-1 .form-type-textfield {
+  .region-expanded-menu .sw-search-block-form .form-type-textfield {
     margin-right: 0; }
-  .region-expanded-menu .block-views-exposed-filter-blocksw-search-page-1 .form-text {
+  .region-expanded-menu .sw-search-block-form .form-text {
     color: black;
     font-size: 18px;
     height: 40px;
     margin-bottom: 20px;
     width: 100%; }
-  .region-expanded-menu .block-views-exposed-filter-blocksw-search-page-1 svg {
+  .region-expanded-menu .sw-search-block-form svg {
     color: #B3B5B8;
     font-size: 30px;
     position: absolute;
     right: 5px;
-    top: 43px; }
-  .region-expanded-menu .block-views-exposed-filter-blocksw-search-page-1 .button {
+    top: 25px; }
+    .region-expanded-menu .sw-search-block-form svg:hover {
+      color: #f00; }
+  .region-expanded-menu .sw-search-block-form .button {
     -moz-appearance: none;
     -webkit-appearance: none;
     background: transparent;

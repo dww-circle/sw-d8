@@ -99,12 +99,12 @@
 }
 
 // Search.
-.region-expanded-menu .block-views-exposed-filter-blocksw-search-page-1 {
+.region-expanded-menu .sw-search-block-form {
   width: 100%;
 
   label {
     font-family: $ff-din-regular;
-    font-size: 16px;
+    font-weight: normal;
     margin-bottom: 0;
     text-transform: uppercase;
   }
@@ -130,7 +130,11 @@
     font-size: 30px;
     position: absolute;
     right: 5px;
-    top: 43px;
+    top: 25px;
+
+    &:hover {
+      color: $c-red;
+    }
   }
 
   .button {
