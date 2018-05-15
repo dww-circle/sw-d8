@@ -1499,7 +1499,7 @@ function sw_preprocess_image_formatter(&$variables) {
 function sw_preprocess_views_view(&$variables) {
   $entity_browser_views = [
     'sw_media_entity_browser',
-    'sw_story_entity_browser',
+    'sw_content_entity_browser',
   ];
   if (in_array($variables['view']->id(), $entity_browser_views)) {
     $variables['view_array']['#attached']['library'][] = 'sw/entity-browser';
