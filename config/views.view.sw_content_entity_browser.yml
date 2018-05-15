@@ -1007,23 +1007,23 @@ display:
           hierarchy: true
           error_message: true
           plugin_id: taxonomy_index_tid
-        tid:
-          id: tid
-          table: taxonomy_index
-          field: tid
+        term_node_tid_depth:
+          id: term_node_tid_depth
+          table: node_field_data
+          field: term_node_tid_depth
           relationship: none
           group_type: group
-          admin_label: Topic
+          admin_label: ''
           operator: or
           value: {  }
           group: 1
           exposed: true
           expose:
-            operator_id: tid_op
+            operator_id: term_node_tid_depth_op
             label: Topic
             description: ''
             use_operator: false
-            operator: tid_op
+            operator: term_node_tid_depth_op
             identifier: topic
             required: false
             remember: false
@@ -1031,7 +1031,9 @@ display:
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
+              reading_editor: '0'
               story_editor: '0'
+              front_page_editor: '0'
               administrator: '0'
             reduce: false
           is_grouped: false
@@ -1052,7 +1054,9 @@ display:
           vid: topic
           hierarchy: true
           error_message: true
-          plugin_id: taxonomy_index_tid
+          depth: 4
+          entity_type: node
+          plugin_id: taxonomy_index_tid_depth
         field_authors_target_id:
           id: field_authors_target_id
           table: node__field_authors
@@ -1103,6 +1107,10 @@ display:
         css_class: false
       css_class: entity-browser-view
       display_extenders: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
     cache_metadata:
       max-age: -1
       contexts:
