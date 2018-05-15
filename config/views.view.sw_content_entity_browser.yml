@@ -17,8 +17,8 @@ dependencies:
     - taxonomy
     - user
     - views_autocomplete_filters
-id: sw_story_entity_browser
-label: 'SW: Story entity browser'
+id: sw_content_entity_browser
+label: 'SW: Content entity browser'
 module: views
 description: ''
 tag: ''
