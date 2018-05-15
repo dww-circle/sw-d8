@@ -50,3 +50,13 @@ widgets:
     weight: 3
     label: 'Upload book'
     id: entity_form
+  8f09d78e-7a5b-4b44-a552-f7b68def9131:
+    settings:
+      entity_type: media
+      bundle: file
+      form_mode: default
+      submit_text: 'Save file'
+    uuid: 8f09d78e-7a5b-4b44-a552-f7b68def9131
+    weight: 4
+    label: 'Upload file'
+    id: entity_form
