@@ -130,16 +130,29 @@ third_party_settings:
     group_publication_information:
       children:
         - created
-        - field_issue_number
       parent_name: ''
       weight: 4
       format_type: details
       format_settings:
+        label: 'Publication date'
+        open: true
         id: ''
         classes: ''
-        open: true
         required_fields: false
-      label: 'Publication information'
+      label: 'Publication date'
+      region: content
+    group_print_edition:
+      children:
+        - field_issue_number
+      parent_name: ''
+      weight: 17
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: false
+      label: 'Print edition'
       region: content
 id: node.story.default
 targetEntityType: node
@@ -270,7 +283,7 @@ content:
     type: entity_browser_entity_reference
     region: content
   field_related_articles:
-    weight: 17
+    weight: 15
     settings:
       entity_browser: sw_story_browser
       field_widget_display: label
@@ -283,7 +296,7 @@ content:
     type: entity_browser_entity_reference
     region: content
   field_resources:
-    weight: 26
+    weight: 16
     settings:
       entity_browser: sw_media_browser
       field_widget_display: rendered_entity
@@ -374,7 +387,7 @@ content:
     region: content
   path:
     type: path
-    weight: 13
+    weight: 12
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -382,7 +395,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 14
+    weight: 13
     region: content
     third_party_settings: {  }
   title:
@@ -394,7 +407,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
   url_redirects:
-    weight: 15
+    weight: 14
     region: content
     settings: {  }
     third_party_settings: {  }
