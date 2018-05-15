@@ -8,3 +8,13 @@ recent-articles:
   dependencies:
     - core/jquery
     - core/drupal
+entity-browser:
+  version: VERSION
+  css:
+    component:
+      css/sw.entity-browser.css: {}
+  js:
+    js/sw.entity-browser.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
