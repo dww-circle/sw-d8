@@ -1,0 +1,37 @@
+uuid: 44fc8edb-32ef-423f-b79a-c9116602eae4
+langcode: en
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.sw_media_browser
+    - entityqueue.entity_queue.sidebar_media
+  module:
+    - entity_browser
+id: entity_subqueue.sidebar_media.default
+targetEntityType: entity_subqueue
+bundle: sidebar_media
+mode: default
+content:
+  items:
+    type: entity_browser_entity_reference
+    weight: 5
+    settings:
+      entity_browser: sw_media_browser
+      field_widget_display: rendered_entity
+      field_widget_edit: true
+      field_widget_remove: true
+      open: true
+      selection_mode: selection_append
+      field_widget_display_settings:
+        view_mode: browser
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -10
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

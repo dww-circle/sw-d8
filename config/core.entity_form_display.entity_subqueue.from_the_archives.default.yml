@@ -1,0 +1,36 @@
+uuid: 90779445-0f19-4c21-b422-f09d0ae95d2d
+langcode: en
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.sw_story_browser
+    - entityqueue.entity_queue.from_the_archives
+  module:
+    - entity_browser
+id: entity_subqueue.from_the_archives.default
+targetEntityType: entity_subqueue
+bundle: from_the_archives
+mode: default
+content:
+  items:
+    type: entity_browser_entity_reference
+    weight: 5
+    settings:
+      entity_browser: sw_story_browser
+      field_widget_display: label
+      field_widget_remove: true
+      open: true
+      selection_mode: selection_append
+      field_widget_edit: false
+      field_widget_display_settings: {  }
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -10
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }
