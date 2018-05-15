@@ -95,3 +95,12 @@
   border-color: #75140b;
 }
 
+.field--widget-entity-browser-entity-reference .entity-type--node .item-container {
+  display: block;
+}
+
+.field--widget-entity-browser-entity-reference .entity-type--node .item-container > input {
+  display: inline-block;
+  margin: 0 0 0 10px;
+}
+
