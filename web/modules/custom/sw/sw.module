@@ -115,6 +115,10 @@ function sw_form_node_form_alter(&$form, FormStateInterface $form_state, $form_i
       sw_insert_box_node_form_alter($form, $form_state, $form_id);
       break;
 
+    case 'slices':
+      sw_slices_node_form_alter($form, $form_state, $form_id);
+      break;
+
   }
 }
 
@@ -186,6 +190,35 @@ function sw_insert_box_node_form_alter(&$form, FormStateInterface $form_state, $
     ],
   ];
   $form['field_insert_body']['#pre_render'][] = 'sw_hide_format_guidelines_form_pre_render';
+}
+
+/**
+ * Helper for hook_form_FORM_ID_alter() for slices nodes.
+ *
+ * Adds a 'Save and continue' submit option.
+ */
+function sw_slices_node_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  $form['actions']['continue'] = [
+    '#type' => 'submit',
+    '#value' => t('Save and continue'),
+    '#button_type' => 'primary',
+    '#submit' => [
+      '::submitForm',  // Submit the entity form.
+      '::save',        // Save it.
+      'sw_slices_node_form_continue_submit',  // Redirect back to edit form.
+    ],
+  ];
+  // Make the main 'Save' button 'secondary'.
+  $form['actions']['submit']['#button_type'] = 'secondary';
+}
+
+/**
+ * Submit callback for 'Save and continue' button on slices node forms.
+ */
+function sw_slices_node_form_continue_submit(array &$form, FormStateInterface $form_state) {
+  // The entity form will already print a message, so all we have to do is redirect.
+  $node = $form_state->getFormObject()->getEntity();
+  $form_state->setRedirect('entity.node.edit_form', ['node' => $node->id()], []);
 }
 
 /**
