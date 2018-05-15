@@ -125,6 +125,9 @@
         "[#2959316-11] Views argument validators that modify argument values aren't reflected in token replacement" : "https://www.drupal.org/files/issues/2018-04-10/2959316-11.patch",
         "[#2959415-2] When a view uses the HTTPStatusCode handler to set a 404 or 403, throw the appropriate exception" : "https://www.drupal.org/files/issues/2018-04-07/2959415-2.httpstatuscode_throw_exception.patch"
       },
+      "drupal/entity_browser": {
+        "[#2972964-3] Add a CSS class to the widget for the target entity type" : "https://www.drupal.org/files/issues/2018-05-15/2972964-3.entity-browser-widget-media-type-class.patch"
+      },
       "drupal/forward": {
         "[#2968459-2] Add tokens for links to the entity being forwarded" : "https://www.drupal.org/files/issues/2018-05-01/2968459-2.forward-link-tokens.patch",
         "[#2968659-2] The 'link' variable in forward.twig.html should be absolute" : "https://www.drupal.org/files/issues/2018-05-01/2968659-2.forward-entity-link-absolute.patch",

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "5876aefb5f76d13404a954cb270077f3",
+    "content-hash": "0254e4db0e4cc442cd9d23f6cc4a20e0",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2357,6 +2357,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "[#2972964-3] Add a CSS class to the widget for the target entity type": "https://www.drupal.org/files/issues/2018-05-15/2972964-3.entity-browser-widget-media-type-class.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
