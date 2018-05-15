@@ -1145,8 +1145,9 @@ function sw_preprocess_html(&$variables) {
       ];
     }
   }
-  // Always define og:site_name via the site_name variable.
+  // Global properties, regardless of page:
   $meta_tags[] = ['property' => 'og:site_name', 'content' => $site_name];
+  $meta_tags[] = ['property' => 'fb:app_id', 'content' => '2060345944288694'];
 
   // Finally, set all the meta tags we found for this page.
   foreach ($meta_tags as $meta_tag) {
