@@ -1,0 +1,42 @@
+uuid: 9c1e7d40-10c9-4541-81a4-4df6f15db502
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.sw_content_entity_browser
+  module:
+    - entity_browser_entity_form
+    - views
+name: sw_external_article_browser
+label: 'External articles'
+display: modal
+display_configuration:
+  width: ''
+  height: ''
+  link_text: 'Select external articles'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: single
+widget_selector_configuration: {  }
+widgets:
+  7189b9d3-7155-496f-aa07-0fb4207bd023:
+    settings:
+      view: sw_content_entity_browser
+      view_display: external_article_browser
+      submit_text: 'Select external articles'
+      auto_select: false
+    uuid: 7189b9d3-7155-496f-aa07-0fb4207bd023
+    weight: 1
+    label: 'Browse external articles'
+    id: view
+  d3c9da28-2724-4943-9269-ec1b05cc8343:
+    settings:
+      entity_type: node
+      bundle: external_article
+      form_mode: simple
+      submit_text: 'Save external article'
+    uuid: d3c9da28-2724-4943-9269-ec1b05cc8343
+    weight: 2
+    label: 'Create external article'
+    id: entity_form
