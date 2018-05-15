@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - entity_browser.browser.media_entity_browser
+    - entity_browser.browser.sw_media_browser
     - field.field.paragraph.triptych.field_ads
     - paragraphs.paragraphs_type.triptych
   module:
@@ -16,7 +16,7 @@ content:
   field_ads:
     weight: 0
     settings:
-      entity_browser: media_entity_browser
+      entity_browser: sw_media_browser
       field_widget_display: rendered_entity
       field_widget_remove: true
       open: true

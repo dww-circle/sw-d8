@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - views.view.media_entity_browser
+    - views.view.sw_media_entity_browser
   module:
     - entity_browser_entity_form
     - views
@@ -22,7 +22,7 @@ widget_selector_configuration: {  }
 widgets:
   36291f42-b779-4b05-ad77-06393973e8b0:
     settings:
-      view: media_entity_browser
+      view: sw_media_entity_browser
       view_display: book_browser
       submit_text: 'Select book'
       auto_select: false

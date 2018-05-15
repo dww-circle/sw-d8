@@ -285,7 +285,7 @@ content:
   field_resources:
     weight: 26
     settings:
-      entity_browser: media_entity_browser
+      entity_browser: sw_media_browser
       field_widget_display: rendered_entity
       field_widget_edit: true
       field_widget_remove: true

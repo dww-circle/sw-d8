@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - views.view.media_entity_browser
+    - views.view.sw_media_entity_browser
   module:
     - entity_browser_entity_form
     - views
@@ -22,7 +22,7 @@ widget_selector_configuration: {  }
 widgets:
   2a624cfd-5452-44ef-b66a-00f448227cf7:
     settings:
-      view: media_entity_browser
+      view: sw_media_entity_browser
       view_display: image_browser
       submit_text: 'Select image'
       auto_select: false

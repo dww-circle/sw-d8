@@ -8,7 +8,7 @@ dependencies:
     - entity_browser_entity_form
     - views
 name: sw_media_browser
-label: 'SW Media Browser'
+label: 'All media'
 display: modal
 display_configuration:
   width: ''
