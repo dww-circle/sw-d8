@@ -68,6 +68,7 @@ hidden:
   field_kicker: true
   field_main_image: true
   field_related_articles: true
+  field_resources: true
   field_secondary_topic: true
   field_section: true
   field_series: true
