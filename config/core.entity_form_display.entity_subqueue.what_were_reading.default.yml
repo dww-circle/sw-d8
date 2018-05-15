@@ -1,0 +1,36 @@
+uuid: 5f98c6ee-175b-48db-8356-aafdae865bc0
+langcode: en
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.sw_external_article_browser
+    - entityqueue.entity_queue.what_were_reading
+  module:
+    - entity_browser
+id: entity_subqueue.what_were_reading.default
+targetEntityType: entity_subqueue
+bundle: what_were_reading
+mode: default
+content:
+  items:
+    type: entity_browser_entity_reference
+    weight: 5
+    settings:
+      entity_browser: sw_external_article_browser
+      field_widget_display: label
+      field_widget_edit: true
+      field_widget_remove: true
+      open: true
+      selection_mode: selection_append
+      field_widget_display_settings: {  }
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -10
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }
