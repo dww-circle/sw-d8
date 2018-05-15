@@ -3,9 +3,12 @@ langcode: en
 status: true
 dependencies:
   config:
+    - entity_browser.browser.sw_story_browser
     - field.field.paragraph.nested.field_articles
     - field.field.paragraph.nested.field_display_title
     - paragraphs.paragraphs_type.nested
+  module:
+    - entity_browser
 id: paragraph.nested.default
 targetEntityType: paragraph
 bundle: nested
@@ -14,11 +17,15 @@ content:
   field_articles:
     weight: 1
     settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+      entity_browser: sw_story_browser
+      field_widget_display: label
+      field_widget_edit: true
+      field_widget_remove: true
+      selection_mode: selection_append
+      open: false
+      field_widget_display_settings: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: entity_browser_entity_reference
     region: content
   field_display_title:
     weight: 0

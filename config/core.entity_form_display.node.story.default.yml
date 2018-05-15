@@ -142,19 +142,6 @@ third_party_settings:
         required_fields: false
       label: 'Publication information'
       region: content
-    group_related_articles:
-      children:
-        - field_related_articles
-      parent_name: ''
-      weight: 16
-      format_type: details
-      format_settings:
-        id: ''
-        classes: ''
-        open: false
-        required_fields: false
-      label: 'Related articles'
-      region: content
 id: node.story.default
 targetEntityType: node
 bundle: story
@@ -286,11 +273,15 @@ content:
   field_related_articles:
     weight: 17
     settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+      entity_browser: sw_story_browser
+      field_widget_display: label
+      field_widget_remove: true
+      selection_mode: selection_append
+      field_widget_edit: false
+      open: false
+      field_widget_display_settings: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: entity_browser_entity_reference
     region: content
   field_secondary_topic:
     weight: 8
