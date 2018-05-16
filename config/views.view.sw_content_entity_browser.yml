@@ -1064,11 +1064,8 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          operator: '='
-          value:
-            min: ''
-            max: ''
-            value: ''
+          operator: or
+          value: {  }
           group: 1
           exposed: true
           expose:
@@ -1084,8 +1081,11 @@ display:
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
+              reading_editor: '0'
               story_editor: '0'
+              front_page_editor: '0'
               administrator: '0'
+            reduce: 0
             placeholder: ''
             min_placeholder: ''
             max_placeholder: ''
@@ -1101,6 +1101,13 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
+          reduce_duplicates: 0
+          type: auto-complete
+          sort: {  }
+          value_selection_type: '0'
+          target_bundles:
+            person: person
+          handler_view: 'sw_issue_stories:entity_reference_1'
           plugin_id: numeric
       defaults:
         fields: false
