@@ -23,4 +23,3 @@ process:
 migration_dependencies:
   required:
     - csv_shortcut_set
-    - upgrade_d6_user
