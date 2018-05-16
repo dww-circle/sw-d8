@@ -161,10 +161,11 @@ function _revolution_group_chooser($i, $count, $has_right_column) {
  * Implements hook_preprocess_paragraph__TYPE().
  */
 function revolution_preprocess_paragraph__reading(&$variables) {
-
   // Make "What We're Reading" queue/view available in template.
   $view = Views::getView('sw_what_were_reading');
-  $view->setDisplay('default');
+  // Use the block of items currently featured in the queue, not the full
+  // reverse chron listing of all external articles.
+  $view->setDisplay('block_queue');
   $render_array = $view->render();
-  $variables['what_were_reading_view'] =  \Drupal::service('renderer')->render($render_array);
+  $variables['what_were_reading_queue'] =  \Drupal::service('renderer')->render($render_array);
 }

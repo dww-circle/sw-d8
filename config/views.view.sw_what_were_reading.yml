@@ -67,54 +67,7 @@ display:
         options:
           relationship: none
           view_mode: default
-      fields:
-        title:
-          id: title
-          table: node_field_data
-          field: title
-          entity_type: node
-          entity_field: title
-          label: ''
-          alter:
-            alter_text: false
-            make_link: false
-            absolute: false
-            trim: false
-            word_boundary: false
-            ellipsis: false
-            strip_tags: false
-            html: false
-          hide_empty: false
-          empty_zero: false
-          settings:
-            link_to_entity: true
-          plugin_id: field
-          relationship: none
-          group_type: group
-          admin_label: ''
-          exclude: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_alter_empty: true
-          click_sort_column: value
-          type: string
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
+      fields: {  }
       filters:
         status:
           value: '1'
@@ -137,6 +90,69 @@ display:
           entity_field: type
           plugin_id: bundle
       sorts:
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: DESC
+          exposed: false
+          expose:
+            label: ''
+          granularity: second
+          entity_type: node
+          entity_field: created
+          plugin_id: date
+      header: {  }
+      footer: {  }
+      empty: {  }
+      relationships: {  }
+      arguments: {  }
+      display_extenders: {  }
+      use_more: true
+      use_more_always: true
+      use_more_text: 'See all'
+      title: 'What We’re Reading'
+      link_url: ''
+      link_display: page
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  block_queue:
+    display_plugin: block
+    id: block_queue
+    display_title: 'Block: Queue'
+    position: 2
+    display_options:
+      display_extenders: {  }
+      defaults:
+        pager: true
+        relationships: false
+        sorts: false
+      enabled: true
+      display_description: ''
+      block_category: 'SW (views)'
+      block_description: 'What We’re Reading queue'
+      relationships:
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: 'Content queue'
+          required: true
+          limit_queue: what_were_reading
+          entity_type: node
+          plugin_id: entity_queue
+      sorts:
         entityqueue_relationship:
           id: entityqueue_relationship
           table: node_field_data
@@ -150,26 +166,6 @@ display:
             label: ''
           entity_type: node
           plugin_id: entity_queue_position
-      header: {  }
-      footer: {  }
-      empty: {  }
-      relationships:
-        entityqueue_relationship:
-          id: entityqueue_relationship
-          table: node_field_data
-          field: entityqueue_relationship
-          relationship: none
-          group_type: group
-          admin_label: 'Content queue'
-          required: true
-          limit_queue: what_were_reading
-          entity_type: node
-          plugin_id: entity_queue
-      arguments: {  }
-      display_extenders: {  }
-      use_more: true
-      use_more_always: true
-      use_more_text: 'See All'
     cache_metadata:
       max-age: -1
       contexts:
@@ -181,42 +177,21 @@ display:
         - 'config:entityqueue.entity_queue.what_were_reading'
         - entity_field_info
         - views_data
-  block_1:
-    display_plugin: block
-    id: block_1
-    display_title: Block
-    position: 2
-    display_options:
-      display_extenders: {  }
-      defaults:
-        pager: true
-      enabled: false
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-        - 'user.node_grants:view'
-        - user.permissions
-      tags:
-        - 'config:entityqueue.entity_queue.what_were_reading'
-        - entity_field_info
-        - views_data
-  page_1:
+  page:
     display_plugin: page
-    id: page_1
+    id: page
     display_title: Page
     position: 1
     display_options:
       display_extenders: {  }
-      path: what-were-reading
-      use_more: true
+      path: reading
+      use_more: false
       defaults:
         use_more: false
         use_more_always: false
         use_more_text: false
         pager: false
-        title: false
+        title: true
       use_more_always: false
       use_more_text: 'See All'
       pager:
@@ -237,7 +212,6 @@ display:
             items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
-      title: 'What We’re Reading'
     cache_metadata:
       max-age: -1
       contexts:
@@ -246,7 +220,4 @@ display:
         - url.query_args
         - 'user.node_grants:view'
         - user.permissions
-      tags:
-        - 'config:entityqueue.entity_queue.what_were_reading'
-        - entity_field_info
-        - views_data
+      tags: {  }
