@@ -1,0 +1,35 @@
+id: csv_external_articles
+label: CSV external articles
+migration_tags:
+  - CSV
+  - Content
+migration_group: sw_d6
+
+source:
+  plugin: sw_migrate_csv
+  path: csv
+  csv_path: sw3-external-articles.csv
+  header_row_count: 1
+  delimiter: '|'
+  keys:
+    - title
+
+destination:
+  plugin: 'entity:node'
+  default_bundle: external_article
+
+process:
+  title: title
+  field_external_article_url/0/uri: url
+  field_publication/0/value: source
+  field_publication_date/0/value: date
+  field_story_label/0/value: story_label
+  langcode:
+    plugin: default_value
+    default_value: und
+  status:
+    plugin: default_value
+    default_value: 1
+  uid:
+    plugin: default_value
+    default_value: 1
