@@ -3,10 +3,10 @@ langcode: en
 status: true
 dependencies: {  }
 id: reports
-label: Reports
+label: 'Submit an SW article'
 recipients:
   - reports@socialistworker.org
 reply: ''
 weight: -5
 message: 'Thank you for the report. Your message has been sent.'
-redirect: null
+redirect: ''

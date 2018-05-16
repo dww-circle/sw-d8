@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: readers_views
-label: 'Readers’ Views'
+label: 'Submit a Readers’ View'
 recipients:
   - views@socialistworker.org
 reply: ''

@@ -1,0 +1,28 @@
+uuid: ba9558f9-5aa7-404a-b638-a39ab749a73a
+langcode: en
+status: true
+dependencies:
+  config:
+    - simple_block.simple_block.sw_contact_reports_intro
+  module:
+    - simple_block
+    - system
+  theme:
+    - revolution
+id: sw_contact_reports_intro
+theme: revolution
+region: content
+weight: -7
+provider: null
+plugin: 'simple_block:sw_contact_reports_intro'
+settings:
+  id: 'simple_block:sw_contact_reports_intro'
+  label: 'SW: contact/reports intro'
+  provider: simple_block
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: /contact/reports
+    negate: false
+    context_mapping: {  }

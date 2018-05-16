@@ -9,14 +9,14 @@ sw.respond:
   path: '/respond/{year}/{month}/{day}/{title_alias}'
   defaults:
     _controller: '\Drupal\sw\Controller\SWController::respondPage'
-    _title: 'Agree? Disagree?'
+    _title: 'Submit a Readers’ View'
   requirements:
     _permission: 'access content'
 sw.subscribe_email:
   path: '/subscribe/email'
   defaults:
     _controller: '\Drupal\sw\Controller\SWController::subscribeEmailPage'
-    _title: 'E-mail alerts'
+    _title: 'Subscribe to e-mail alerts'
   requirements:
     _permission: 'access content'
 sw.topic:

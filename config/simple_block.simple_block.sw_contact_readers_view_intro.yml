@@ -7,5 +7,5 @@ dependencies:
 id: sw_contact_readers_view_intro
 title: 'SW: contact/readers-views intro'
 content:
-  value: 'Please send us your thoughts.  We will publish a selection of comments in the <a href="/section/readers’-views">Readers’ Views</a> section of SocialistWorker.org.'
+  value: 'Do you have an opinion or disagreement about what you’ve read? Please contribute to <a href="/section/readers’-views">Readers’ Views</a> by filling out the form below. Try to limit your submission to 1,000 words.'
   format: filtered_html

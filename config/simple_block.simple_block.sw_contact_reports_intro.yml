@@ -1,0 +1,11 @@
+uuid: 7760d73e-b8f7-4c66-8a3f-1c8e09037db0
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.filtered_html
+id: sw_contact_reports_intro
+title: 'SW: contact/reports intro'
+content:
+  value: "Is there a political event or protest that you’d like to write about for SW.org? Would you like to send us a comment? Please send your article in the form below.\r\n"
+  format: filtered_html
