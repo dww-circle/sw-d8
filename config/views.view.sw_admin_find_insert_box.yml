@@ -113,19 +113,19 @@ display:
               align: ''
               separator: ''
               empty_column: false
-              responsive: ''
+              responsive: priority-medium
             field_topic:
               sortable: false
               default_sort_order: asc
               align: ''
               separator: ''
               empty_column: false
-              responsive: ''
+              responsive: priority-low
             operations:
               align: ''
               separator: ''
               empty_column: false
-              responsive: ''
+              responsive: priority-medium
           default: nid
           empty_table: true
       row:

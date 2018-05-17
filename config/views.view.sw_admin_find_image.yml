@@ -95,9 +95,6 @@ display:
             name: name
             operations: operations
             field_image_gallery: field_image_gallery
-            field_server_folder: field_server_folder
-            field_image_rights: field_image_rights
-            field_image_provider: field_image_provider
             field_original_image: field_original_image
             mid_1: field_original_image
             nothing: nothing
@@ -122,36 +119,19 @@ display:
               align: ''
               separator: ''
               empty_column: false
-              responsive: priority-medium
+              responsive: ''
             operations:
               align: ''
               separator: ''
               empty_column: false
-              responsive: priority-low
+              responsive: priority-medium
             field_image_gallery:
               sortable: false
               default_sort_order: asc
               align: ''
               separator: ''
               empty_column: false
-              responsive: ''
-            field_server_folder:
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            field_image_rights:
-              sortable: false
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            field_image_provider:
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
+              responsive: priority-medium
             field_original_image:
               sortable: false
               default_sort_order: asc
