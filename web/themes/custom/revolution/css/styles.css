@@ -1699,6 +1699,8 @@ select {
 
 @media (min-width: 961px) {
   .story--teaser-image-large {
+    display: -ms-grid;
+    display: grid;
     grid-gap: 30px;
     -ms-grid-columns: 400px auto;
         grid-template-columns: 400px auto; } }

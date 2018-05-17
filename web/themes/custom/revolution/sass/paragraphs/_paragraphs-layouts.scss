@@ -55,6 +55,7 @@
 .story--teaser-image-large {
 
   @include breakpoint($desktop) {
+    display: grid;
     grid-gap: 30px;
     grid-template-columns: 400px auto;
   }
