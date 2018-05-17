@@ -30,7 +30,6 @@
 
     a {
       @include link-colors($c-black, $c-hover, $c-visited);
-      @include ff-din-bold;
       font-size: 24px;
     }
   }

@@ -286,8 +286,8 @@
 
 @mixin title-fancy-red {
   @include ff-din-bold;
-  border-top: 1px solid red;
-  color: red;
+  border-top: 1px solid $c-red;
+  color: $c-red;
   font-size: 24px;
   line-height: 32px;
   padding-right: 57px;
@@ -295,7 +295,7 @@
   text-transform: uppercase;
 
   &:after {
-    background: red;
+    background: $c-red;
     content: '';
     height: 26px;
     position: absolute;

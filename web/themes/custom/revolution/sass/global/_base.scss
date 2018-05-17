@@ -12,9 +12,7 @@
 }
 
 body {
-  font-family: $ff-helv;
-  font-size: 18px;
-  line-height: 30px;
+  @include body-style;
   margin: 0;
 }
 
@@ -29,30 +27,21 @@ h1  {
 }
 
 h2 {
-  font-size: 26px;
-  line-height: 40px;
-  font-weight: bold;
-  @include breakpoint($tablet) {
-    font-size: 32px;
-    line-height: 48px;
-  }
+  font-size: 20px;
+  line-height: 25px;
 }
 
 h3 {
-  font-size: 24px;
-  line-height: 40px;
-  @include breakpoint($tablet) {
-    font-size: 36px;
-    line-height: 50px;
-  }
-  .view & {
-    @include title-fancy-red;
-  }
+  font-size: 18px;
+  line-height: 22px;
 }
 
+// Node Title.
 h4 {
-  font-size: 21px;
-  line-height: 28px;
+  color: black;
+  font-size: 30px;
+  line-height: 1;
+  margin-bottom: .5em;
 }
 
 h5 {
@@ -66,7 +55,11 @@ h2,
 h3,
 h4,
 h5,
-h6,
+h6 {
+  @include ff-din-bold;
+  margin-top: 0;
+}
+
 p {
   margin-top: 0;
 }
@@ -149,6 +142,12 @@ span.bullet {
   padding: 2px 2px 3px 4px;
 }
 
+// Fineprint
+.fineprint {
+  font-size: 13px;
+  line-height: 16px;
+}
+
 // Hide that SVG.
 .svgsprite {
   display: none;
@@ -162,6 +161,10 @@ span.bullet {
       margin-bottom: .5em;
     }
   }
+}
+
+body ul {
+  @include ul-unstyled;
 }
 
 // Global Content Styles
@@ -193,7 +196,6 @@ main {
 }
 
 .page-title {
-  @include ff-din-bold;
   text-transform: uppercase;
   font-size: 36px;
   line-height: 40px;
@@ -230,14 +232,6 @@ main {
   }
 }
 
-// Node Title.
-h4 {
-  @include ff-din-bold;
-  color: black;
-  font-size: 30px;
-  line-height: 1;
-  margin-bottom: .5em;
-}
 
 // Teaser Body Style.
 .field--name-field-teaser {

@@ -6,10 +6,13 @@
     position: absolute; }
 
 body {
-  font-family: Helvetica, sans-serif;
+  font-family: "PT Serif", "Georgia", "Times New Roman", "Times", serif;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 22px;
   margin: 0; }
+  @media (min-width: 961px) {
+    body {
+      line-height: 27px; } }
 
 h1 {
   font-size: 30px;
@@ -20,43 +23,18 @@ h1 {
       line-height: 55px; } }
 
 h2 {
-  font-size: 26px;
-  line-height: 40px;
-  font-weight: bold; }
-  @media (min-width: 736px) {
-    h2 {
-      font-size: 32px;
-      line-height: 48px; } }
+  font-size: 20px;
+  line-height: 25px; }
 
 h3 {
-  font-size: 24px;
-  line-height: 40px; }
-  @media (min-width: 736px) {
-    h3 {
-      font-size: 36px;
-      line-height: 50px; } }
-  .view h3 {
-    font-family: 'FF DIN Pro Bold', sans-serif;
-    font-weight: normal;
-    border-top: 1px solid red;
-    color: red;
-    font-size: 24px;
-    line-height: 32px;
-    padding-right: 57px;
-    position: relative;
-    text-transform: uppercase; }
-    .view h3:after {
-      background: red;
-      content: '';
-      height: 26px;
-      position: absolute;
-      right: 0;
-      top: 0;
-      width: 52px; }
+  font-size: 18px;
+  line-height: 22px; }
 
 h4 {
-  font-size: 21px;
-  line-height: 28px; }
+  color: black;
+  font-size: 30px;
+  line-height: 1;
+  margin-bottom: .5em; }
 
 h5 {
   font-size: 14px;
@@ -68,7 +46,11 @@ h2,
 h3,
 h4,
 h5,
-h6,
+h6 {
+  font-family: 'FF DIN Pro Bold', sans-serif;
+  font-weight: normal;
+  margin-top: 0; }
+
 p {
   margin-top: 0; }
 
@@ -142,12 +124,26 @@ span.bullet {
   text-transform: uppercase;
   padding: 2px 2px 3px 4px; }
 
+.fineprint {
+  font-size: 13px;
+  line-height: 16px; }
+
 .svgsprite {
   display: none; }
 
 .item-list ul li,
 .item-list ol li {
   margin-bottom: .5em; }
+
+body ul {
+  list-style: none;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-top: 0;
+  padding-left: 0; }
+  body ul li {
+    list-style: none;
+    margin-left: 0; }
 
 .submitted {
   color: grey;
@@ -187,8 +183,6 @@ main {
       padding: 0 120px; } }
 
 .page-title {
-  font-family: 'FF DIN Pro Bold', sans-serif;
-  font-weight: normal;
   text-transform: uppercase;
   font-size: 36px;
   line-height: 40px;
@@ -216,14 +210,6 @@ main {
   @media (min-width: 961px) {
     .story-label {
       font-size: 16px; } }
-
-h4 {
-  font-family: 'FF DIN Pro Bold', sans-serif;
-  font-weight: normal;
-  color: black;
-  font-size: 30px;
-  line-height: 1;
-  margin-bottom: .5em; }
 
 .field--name-field-teaser {
   color: #666666;
@@ -357,14 +343,6 @@ h4 {
   .footer-wrapper p:first-of-type {
     color: #ea3223; }
 
-.page-node-type-story .node--type-story {
-  font-family: "PT Serif", "Georgia", "Times New Roman", "Times", serif;
-  font-size: 18px;
-  line-height: 22px; }
-  @media (min-width: 961px) {
-    .page-node-type-story .node--type-story {
-      line-height: 27px; } }
-
 .page-node-type-story .story-label {
   margin-bottom: 6px; }
   .page-node-type-story .story-label a {
@@ -432,16 +410,6 @@ h4 {
     color: #808080;
     font-style: italic;
     font-weight: bold; }
-  .page-node-type-story .field--name-field-body h2 {
-    font-family: 'FF DIN Pro Bold', sans-serif;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 25px; }
-  .page-node-type-story .field--name-field-body h3 {
-    font-family: 'FF DIN Pro Bold', sans-serif;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 22px; }
 
 .page-node-type-story .contributors {
   font-style: italic; }
@@ -507,16 +475,6 @@ h4 {
   padding: 10px;
   border: 1px solid #ddd; }
 
-.further-reading ul {
-  list-style: none;
-  margin-bottom: 0;
-  margin-left: 0;
-  margin-top: 0;
-  padding-left: 0; }
-  .further-reading ul li {
-    list-style: none;
-    margin-left: 0; }
-
 .further-reading .story-link {
   margin-bottom: 25px; }
   .further-reading .story-link .story-label {
@@ -532,8 +490,6 @@ h4 {
     line-height: 16px; }
 
 h2 {
-  font-family: 'FF DIN Pro Bold', sans-serif;
-  font-weight: normal;
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
@@ -628,8 +584,6 @@ article.embedded-entity .media--view-mode-embed-wide {
   .node--type-insert-box .story-label {
     margin-bottom: 0; }
   .node--type-insert-box h2 {
-    font-family: 'FF DIN Pro Bold', sans-serif;
-    font-weight: normal;
     font-size: 28px;
     line-height: 36px;
     text-transform: uppercase;
@@ -638,15 +592,6 @@ article.embedded-entity .media--view-mode-embed-wide {
   .node--type-insert-box object {
     height: auto;
     max-width: 100%; }
-  .node--type-insert-box .story-list ul {
-    list-style: none;
-    margin-bottom: 0;
-    margin-left: 0;
-    margin-top: 0;
-    padding-left: 0; }
-    .node--type-insert-box .story-list ul li {
-      list-style: none;
-      margin-left: 0; }
   .node--type-insert-box .story-link {
     margin-bottom: 25px; }
     .node--type-insert-box .story-link .story-label {

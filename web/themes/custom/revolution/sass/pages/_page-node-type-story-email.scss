@@ -34,16 +34,12 @@
 }
 
 .further-reading {
-  ul {
-    @include ul-unstyled;
-  }
   .story-link {
     @include teaser-tiny;
   }
 }
 
 h2 {
-  @include ff-din-bold;
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;

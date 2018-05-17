@@ -1,9 +1,5 @@
 .page-node-type-story {
 
-  .node--type-story {
-    @include body-style;
-  }
-
   .story-label {
     margin-bottom: 6px;
     a {
@@ -88,18 +84,6 @@
       color: #808080;
       font-style: italic;
       font-weight: bold;
-    }
-
-    h2 {
-      @include ff-din-bold;
-      font-size: 20px;
-      line-height: 25px;
-    }
-
-    h3 {
-      @include ff-din-bold;
-      font-size: 18px;
-      line-height: 22px;
     }
   }
 

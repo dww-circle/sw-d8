@@ -21,7 +21,6 @@
   }
 
   h2 {
-    @include ff-din-bold;
     font-size: 28px;
     line-height: 36px;
     text-transform: uppercase;
@@ -32,10 +31,6 @@
   object {
     height: auto;
     max-width: 100%;
-  }
-
-  .story-list ul {
-    @include ul-unstyled;
   }
 
   .story-link {
