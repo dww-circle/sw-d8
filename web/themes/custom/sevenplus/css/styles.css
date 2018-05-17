@@ -81,6 +81,25 @@
   float: none;
 }
 
+.views-exposed-form fieldset .form-item {
+  float: none;
+}
+
+.views-exposed-form .form-item-nid-op select,
+.views-exposed-form .form-item-weight-op select {
+  max-width: 100px;
+}
+
+.views-exposed-form .form-item-section select,
+.views-exposed-form .form-item-date-op select {
+  max-width: 125px;
+}
+
+.views-exposed-form .form-item-topic select,
+.views-exposed-form .form-item-title-op select {
+  max-width: 175px;
+}
+
 .sw-admin-front-page-delay-confirm .button--primary {
   color: #000;
   text-shadow: none;

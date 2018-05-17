@@ -78,6 +78,34 @@ function sw_form_views_bulk_operations_configure_action_alter(&$form, FormStateI
  * Implements hook_form_FORM_ID_alter() for 'views_exposed_form'.
  */
 function sw_form_views_exposed_form_alter(&$form, FormStateInterface $form_state) {
+  $wrapped_field_sizes = [
+    'nid' => 10,
+    'title' => 20,
+    'weight' => 4,
+    'date' => 12,
+  ];
+  $sub_field_keys = ['value', 'min', 'max'];
+  foreach ($wrapped_field_sizes as $field => $size) {
+    $wrapper = $field . '_wrapper';
+    foreach ($sub_field_keys as $sub_key) {
+      if (!empty($form[$wrapper][$field][$sub_key])) {
+        $form[$wrapper][$field][$sub_key]['#size'] = $size;
+      }
+    }
+    if (!empty($form[$wrapper][$field])) {
+      $form[$wrapper][$field]['#size'] = $size;
+    }
+  }
+  $field_sizes = [
+    'authors' => 15,
+    'title' => 20,
+  ];
+  foreach ($field_sizes as $field => $size) {
+    if (!empty($form[$field])) {
+      $form[$field]['#size'] = $size;
+    }
+  }
+
   $view = $form_state->getStorage('view');
   switch ($view['view']->id()) {
     case 'media':
