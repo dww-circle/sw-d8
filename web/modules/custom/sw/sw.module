@@ -772,6 +772,24 @@ function sw_get_media_caption($entity_id) {
 }
 
 /**
+ * Implements hook_preprocess_HOOK() for media entities.
+ */
+function sw_preprocess_media(&$variables) {
+  switch ($variables['media']->bundle()) {
+    case 'image':
+      if ($variables['view_mode'] == 'browser') {
+        $variables['content']['mid'] = [
+          // @todo Should this be a <label>?
+          '#markup' => '<strong>' . t('Media ID:') . '</strong> ' . $variables['media']->id(),
+          '#weight' => 50,
+        ];
+      }
+      break;
+
+  }
+}
+
+/**
  * Implements hook_ENTITY_TYPE_embed_alter().
  *
  * Preserves 'data-entity-id' while embedding entities so our custom caption
