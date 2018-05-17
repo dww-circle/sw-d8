@@ -34,8 +34,9 @@
 }
 
 .entity-browser-view .entity-browser-row-table.checked {
-  border: 1px solid #37802f;
-  border-top: 2px solid #37802f;
+  border-style: solid;
+  border-width: 2px 4px 2px 3px;
+  border-color: #37802f;
   background-color: #ddffdd;
 }
 
