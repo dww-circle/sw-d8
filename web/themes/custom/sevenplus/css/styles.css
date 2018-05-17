@@ -128,3 +128,7 @@
   margin: 0 0 0 10px;
 }
 
+/* Force Modals to be on top of Admin Toolbar. */
+.ui-dialog[style] {
+  z-index: 1260 !important;
+}
