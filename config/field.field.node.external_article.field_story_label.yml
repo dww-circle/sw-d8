@@ -9,8 +9,8 @@ id: node.external_article.field_story_label
 field_name: field_story_label
 entity_type: node
 bundle: external_article
-label: 'Story label'
-description: 'Text above headline.'
+label: 'Author / story label'
+description: 'Text above the headline.'
 required: false
 translatable: true
 default_value: {  }
