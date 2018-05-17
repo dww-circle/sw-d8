@@ -75,6 +75,33 @@ function sw_form_views_bulk_operations_configure_action_alter(&$form, FormStateI
 }
 
 /**
+ * Implements hook_form_FORM_ID_alter() for 'views_exposed_form'.
+ */
+function sw_form_views_exposed_form_alter(&$form, FormStateInterface $form_state) {
+  $view = $form_state->getStorage('view');
+  switch ($view['view']->id()) {
+    case 'media':
+    case 'sw_media_entity_browser':
+      $media_specific_fields = [
+        'book' => ['book_caption'],
+        'image' => ['image_crop', 'image_gallery', 'image_rights'],
+      ];
+      foreach ($media_specific_fields as $type_name => $type_elements) {
+        foreach ($type_elements as $type_element) {
+          if (!empty($form['type']) && !empty($form[$type_element])) {
+            $form[$type_element]['#states'] = [
+              'visible' => [
+                ':input[name="type"]' => ['value' => $type_name],
+              ],
+            ];
+          }
+        }
+      }
+      break;
+  }
+}
+
+/**
  * Implements hook_form_FORM_ID_alter() for 'media_image_add_form'.
  */
 function sw_form_media_image_add_form_alter(&$form, FormStateInterface $form_state, $form_id) {

@@ -345,41 +345,38 @@ display:
           group_type: group
           admin_label: ''
           operator: '='
-          value: '0'
+          value: All
           group: 1
           exposed: true
           expose:
             operator_id: ''
-            label: 'True'
-            description: null
+            label: Published
+            description: ''
             use_operator: false
             operator: status_op
             identifier: status
-            required: true
+            required: false
             remember: false
             multiple: false
             remember_roles:
               authenticated: authenticated
-          is_grouped: true
+              anonymous: '0'
+              reading_editor: '0'
+              story_editor: '0'
+              front_page_editor: '0'
+              administrator: '0'
+          is_grouped: false
           group_info:
-            label: 'Publishing status'
+            label: ''
             description: ''
-            identifier: status
+            identifier: ''
             optional: true
             widget: select
             multiple: false
             remember: false
             default_group: All
             default_group_multiple: {  }
-            group_items:
-              1:
-                title: Published
-                operator: '='
-                value: '1'
-              2:
-                title: Unpublished
-                operator: '='
-                value: '0'
+            group_items: {  }
           entity_type: media
           entity_field: status
           plugin_id: boolean
@@ -400,7 +397,7 @@ display:
             description: ''
             use_operator: false
             operator: bundle_op
-            identifier: bundle
+            identifier: type
             required: false
             remember: false
             multiple: false
@@ -440,7 +437,7 @@ display:
           exposed: true
           expose:
             operator_id: name_op
-            label: 'Media name'
+            label: Name
             description: ''
             use_operator: false
             operator: name_op
@@ -451,6 +448,18 @@ display:
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
+              reading_editor: '0'
+              story_editor: '0'
+              front_page_editor: '0'
+              administrator: '0'
+            placeholder: ''
+            autocomplete_filter: 0
+            autocomplete_min_chars: '0'
+            autocomplete_items: '10'
+            autocomplete_field: name
+            autocomplete_raw_suggestion: 1
+            autocomplete_raw_dropdown: 1
+            autocomplete_dependent: 0
           is_grouped: false
           group_info:
             label: ''
@@ -466,6 +475,194 @@ display:
           entity_type: media
           entity_field: name
           plugin_id: string
+        field_book_caption_value:
+          id: field_book_caption_value
+          table: media__field_book_caption
+          field: field_book_caption_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_book_caption_value_op
+            label: 'Caption or authors'
+            description: ''
+            use_operator: false
+            operator: field_book_caption_value_op
+            identifier: book_caption
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              reading_editor: '0'
+              story_editor: '0'
+              front_page_editor: '0'
+              administrator: '0'
+            placeholder: ''
+            autocomplete_filter: 0
+            autocomplete_min_chars: '0'
+            autocomplete_items: '10'
+            autocomplete_field: ''
+            autocomplete_raw_suggestion: 1
+            autocomplete_raw_dropdown: 1
+            autocomplete_dependent: 0
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: views_autocomplete_filters_string
+        field_image_crop_type_value:
+          id: field_image_crop_type_value
+          table: media__field_image_crop_type
+          field: field_image_crop_type_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_image_crop_type_value_op
+            label: 'Crop type'
+            description: ''
+            use_operator: false
+            operator: field_image_crop_type_value_op
+            identifier: image_crop
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              reading_editor: '0'
+              story_editor: '0'
+              front_page_editor: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          plugin_id: list_field
+        field_image_gallery_target_id:
+          id: field_image_gallery_target_id
+          table: media__field_image_gallery
+          field: field_image_gallery_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_image_gallery_target_id_op
+            label: Gallery
+            description: ''
+            use_operator: false
+            operator: field_image_gallery_target_id_op
+            identifier: image_gallery
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              reading_editor: '0'
+              story_editor: '0'
+              front_page_editor: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: image_gallery
+          hierarchy: true
+          error_message: true
+          plugin_id: taxonomy_index_tid
+        field_image_rights_target_id:
+          id: field_image_rights_target_id
+          table: media__field_image_rights
+          field: field_image_rights_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_image_rights_target_id_op
+            label: Rights
+            description: ''
+            use_operator: false
+            operator: field_image_rights_target_id_op
+            identifier: image_rights
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              reading_editor: '0'
+              story_editor: '0'
+              front_page_editor: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: image_rights
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
       sorts:
         mid:
           id: mid
@@ -515,6 +712,7 @@ display:
         - url.query_args
         - 'url.query_args:sort_by'
         - 'url.query_args:sort_order'
+        - user
         - user.permissions
       tags: {  }
   all_media_browser:
@@ -534,6 +732,7 @@ display:
         - url.query_args
         - 'url.query_args:sort_by'
         - 'url.query_args:sort_order'
+        - user
         - user.permissions
       tags: {  }
   book_browser:
@@ -906,7 +1105,7 @@ display:
             description: ''
             use_operator: false
             operator: field_book_caption_value_op
-            identifier: caption
+            identifier: book_caption
             required: false
             remember: false
             multiple: false
@@ -1123,7 +1322,7 @@ display:
             description: ''
             use_operator: false
             operator: field_image_crop_type_value_op
-            identifier: crop_type
+            identifier: image_crop
             required: false
             remember: false
             multiple: false
@@ -1166,7 +1365,7 @@ display:
             description: ''
             use_operator: false
             operator: field_image_gallery_target_id_op
-            identifier: gallery
+            identifier: image_gallery
             required: false
             remember: false
             multiple: false
@@ -1214,7 +1413,7 @@ display:
             description: ''
             use_operator: false
             operator: field_image_rights_target_id_op
-            identifier: rights
+            identifier: image_rights
             required: false
             remember: false
             multiple: false
@@ -1608,7 +1807,7 @@ display:
             description: ''
             use_operator: false
             operator: field_image_crop_type_value_op
-            identifier: crop_type
+            identifier: image_crop
             required: false
             remember: false
             multiple: false
@@ -1651,7 +1850,7 @@ display:
             description: ''
             use_operator: false
             operator: field_image_gallery_target_id_op
-            identifier: gallery
+            identifier: image_gallery
             required: false
             remember: false
             multiple: false
@@ -1699,7 +1898,7 @@ display:
             description: ''
             use_operator: false
             operator: field_image_rights_target_id_op
-            identifier: rights
+            identifier: image_rights
             required: false
             remember: false
             multiple: false
