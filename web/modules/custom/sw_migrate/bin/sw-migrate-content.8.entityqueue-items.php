@@ -22,9 +22,7 @@ $fields = [
 $insert = \Drupal::database()->insert('entity_subqueue__items')->fields($fields);
 foreach ($csv_input as $row) {
   if (substr($row, 0, 1) === '#') continue;
-  list($queue, $position, $target_id) = explode(',', $row);
-  // D6 uses 'position' counting from 1, D8 uses $delta counting from 0;
-  $delta = $position - 1;
+  list($queue, $delta, $target_id) = explode(',', $row);
   $queue_id = !empty($queue_name) ? $queue_name : $queue;
   $insert->values([$queue_id, 0, $queue, $queue, 'en', $delta, $target_id]);
 }
