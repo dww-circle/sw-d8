@@ -278,7 +278,7 @@ content:
       selection_mode: selection_append
       field_widget_display_settings:
         view_mode: browser
-      open: false
+      open: true
     third_party_settings: {  }
     type: entity_browser_entity_reference
     region: content
