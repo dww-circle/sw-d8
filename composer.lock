@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "e912cbd33b4e32e195a12883fa7a0cec",
+    "content-hash": "9be2156a6d8feb7b5f4e91b91b3d282f",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3975,17 +3975,17 @@
         },
         {
             "name": "drupal/views_bulk_operations",
-            "version": "2.2.0",
+            "version": "2.3.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/views_bulk_operations",
-                "reference": "8.x-2.2"
+                "reference": "8.x-2.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/views_bulk_operations-8.x-2.2.zip",
-                "reference": "8.x-2.2",
-                "shasum": "d8ea49e37dc6920ecad76ea494161a16b775f782"
+                "url": "https://ftp.drupal.org/files/projects/views_bulk_operations-8.x-2.3.zip",
+                "reference": "8.x-2.3",
+                "shasum": "96bcda2b8436492c3747452b9b1d75adab5fd751"
             },
             "require": {
                 "drupal/core": "^8.4"
@@ -3996,8 +3996,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.2",
-                    "datestamp": "1522748285",
+                    "version": "8.x-2.3",
+                    "datestamp": "1525091284",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4007,9 +4007,6 @@
                     "services": {
                         "drush.services.yml": "^9"
                     }
-                },
-                "patches_applied": {
-                    "[#2960448-8] Add a cancel button on the action configuration form": "https://www.drupal.org/files/issues/2018-04-15/2960448-8.vbo-cancel-buttons.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
