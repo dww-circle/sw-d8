@@ -6,7 +6,6 @@ global:
       //fonts.googleapis.com/css?family=Source+Code+Pro:400|PT+Serif:400,700: { type: external }
   js:
     js/global.min.js: {}
-    js/myfonts.com.js: {}
     //use.fontawesome.com/releases/v5.0.6/js/all.js: { type: external, attributes: { defer: true } }
 
   dependencies:
