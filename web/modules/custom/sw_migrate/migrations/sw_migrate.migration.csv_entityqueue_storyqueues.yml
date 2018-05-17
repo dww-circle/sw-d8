@@ -1,0 +1,29 @@
+id: csv_entityqueue_storyqueues
+label: CSV EntityQueue story queues
+migration_tags:
+  - CSV
+  - Content
+migration_group: sw_d6
+
+destination:
+  plugin: entity:entity_subqueue
+  default_bundle: story_queues
+  no_stub: true
+
+source:
+  plugin: sw_migrate_csv
+  path: csv
+  csv_path: sw3-entityqueue-storyqueues.csv
+  header_row_count: 1
+  keys:
+    - id
+
+process:
+  name: id
+  title: title
+  uid:
+    plugin: default_value
+    default_value: 7
+
+migration_dependencies:
+  required: { }
