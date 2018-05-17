@@ -22,7 +22,7 @@ dependencies:
 id: sw_content_entity_browser
 label: 'SW: Content entity browser'
 module: views
-description: ''
+description: 'Entity browser views for SW content types (stories, external articles, etc).'
 tag: ''
 base_table: node_field_data
 base_field: nid

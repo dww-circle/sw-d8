@@ -21,7 +21,7 @@ dependencies:
 id: sw_media_entity_browser
 label: 'SW: Media entity browser'
 module: views
-description: ''
+description: 'Entity browser views for SW media types (image, book, file, etc).'
 tag: ''
 base_table: media_field_data
 base_field: mid
