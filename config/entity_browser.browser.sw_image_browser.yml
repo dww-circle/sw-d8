@@ -27,8 +27,8 @@ widgets:
       submit_text: 'Select image'
       auto_select: false
     uuid: 2a624cfd-5452-44ef-b66a-00f448227cf7
-    weight: 1
-    label: 'Browse images'
+    weight: -10
+    label: 'Browse images (grid)'
     id: view
   306e9355-83cc-4633-bded-cea7dfd7f175:
     settings:
@@ -37,6 +37,16 @@ widgets:
       form_mode: default
       submit_text: 'Save image'
     uuid: 306e9355-83cc-4633-bded-cea7dfd7f175
-    weight: 2
+    weight: -8
     label: 'Upload image'
     id: entity_form
+  a15b3290-4389-47b8-a283-7220a9fa665b:
+    settings:
+      view: sw_media_entity_browser
+      view_display: image_table_browser
+      submit_text: 'Select image'
+      auto_select: false
+    uuid: a15b3290-4389-47b8-a283-7220a9fa665b
+    weight: -9
+    label: 'Browse images (table)'
+    id: view

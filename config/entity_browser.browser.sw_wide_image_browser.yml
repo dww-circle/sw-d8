@@ -27,8 +27,8 @@ widgets:
       submit_text: 'Select wide image'
       auto_select: false
     uuid: f4fa43c1-31ee-4b09-bfd7-46e890ba3acd
-    weight: 1
-    label: 'Browse wide images'
+    weight: -10
+    label: 'Browse wide images (grid)'
     id: view
   c6c32722-771d-4bf1-b67b-87f899f9f45e:
     settings:
@@ -37,6 +37,16 @@ widgets:
       form_mode: default
       submit_text: 'Save image'
     uuid: c6c32722-771d-4bf1-b67b-87f899f9f45e
-    weight: 2
+    weight: -8
     label: 'Upload image'
     id: entity_form
+  145ee9c4-aa2a-4976-a5a1-255fb025880b:
+    settings:
+      view: sw_media_entity_browser
+      view_display: wide_image_table_browser
+      submit_text: 'Select wide image'
+      auto_select: false
+    uuid: 145ee9c4-aa2a-4976-a5a1-255fb025880b
+    weight: -9
+    label: 'Browse wide images (table)'
+    id: view
