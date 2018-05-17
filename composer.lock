@@ -1229,17 +1229,17 @@
         },
         {
             "name": "drupal/bueditor",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/bueditor",
-                "reference": "8.x-1.0"
+                "reference": "8.x-1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/bueditor-8.x-1.0.zip",
-                "reference": "8.x-1.0",
-                "shasum": "a6266c058e57bd04106837f3ec632b42033442fe"
+                "url": "https://ftp.drupal.org/files/projects/bueditor-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "9e628aa4ebc2684556cd733f09fba2b83e71d3e6"
             },
             "require": {
                 "drupal/core": "*"
@@ -1250,8 +1250,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0",
-                    "datestamp": "1494778385",
+                    "version": "8.x-1.1",
+                    "datestamp": "1526559185",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
