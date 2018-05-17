@@ -114,7 +114,7 @@ function _revolution_story_groups_render(array $nodes, $num_med_img, $has_right_
   $i = 0;
   foreach ($nodes as $node) {
     $view_mode = _revolution_view_mode_image_chooser($i, $num_med_img);
-    $group_id = _revolution_group_chooser($i, $node_count, $has_right_column);
+    $group_id = _revolution_group_chooser($i, $node_count, $num_med_img, $has_right_column);
     if (empty($groups[$group_id]['items'])) {
       $groups[$group_id]['items'] = [];
     }
@@ -135,22 +135,27 @@ function _revolution_story_groups_render(array $nodes, $num_med_img, $has_right_
  *   Index of which story we're considering.
  * @param integer $count
  *   Total number of stories in this slice.
+ * @param integer $num_med_img
+ *   The number of medium-sized images to include in the left column.
  * @param boolean $has_right_column
  *   Does this slice support a right column for stories at all?
  *
  * @return string
  *   Group identifier for where this story should go.
  */
-function _revolution_group_chooser($i, $count, $has_right_column) {
+function _revolution_group_chooser($i, $count, $num_med_img, $has_right_column) {
   if ($i == 0) {
     return 'lead';
   }
   if ($has_right_column) {
-    // Compute the size of the left column. Remove 1 for the lead story. Then
-    // take half of the remaining stories, rounding down, since the comps favor
-    // an image in the left side and those take more space.
-    $left_size = floor(($count - 1) / 2);
-    if ($i > $left_size) {
+    // Compute the size of the left column. We remove 1 for the lead story. Then
+    // add the # of medium images, since each of those should count for two
+    // layout slots.
+    $num_slots = $count - 1 + $num_med_img;
+    // Round up the left size, since the layouts tend to look better that way.
+    $left_size = floor(($num_slots + 1) / 2);
+    // Add the # of medium images so they double-count towards filling the left.
+    if ($i > $num_med_img && ($i + $num_med_img) > $left_size) {
       return 'column_right';
     }
   }
