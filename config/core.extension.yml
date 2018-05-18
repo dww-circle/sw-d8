@@ -43,6 +43,7 @@ module:
   kint: 0
   link: 0
   media: 0
+  media_entity_soundcloud: 0
   menu_ui: 0
   node: 0
   options: 0
