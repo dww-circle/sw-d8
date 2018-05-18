@@ -36,7 +36,7 @@
   // Level One  Links
   nav > ul > li {
     > a {
-      @include link-colors(white, $c-red, $c-red);
+      @include link-colors(white, $c-red-light, $c-red-light);
       display: block;
       padding: 2px 20px 2px;
 
@@ -49,7 +49,7 @@
     &.menu-item--active-trail > a,
     > a.is-active,
     > a:hover {
-      color: $c-red;
+      color: $c-red-light;
       text-decoration: none;
     }
   }
@@ -107,7 +107,7 @@
   ul > .menu-item--expanded {
 
     li > a:after {
-      color: $c-link;
+      color: $c-red;
       transform: rotate(270deg);
       right: 14px;
       top: 10px;

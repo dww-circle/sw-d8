@@ -1,5 +1,5 @@
 @mixin a-text {
-  @include link-colors($c-link);
+  @include link-colors($c-red);
   text-decoration: none;
 
   &:hover {
@@ -98,7 +98,7 @@
     text-transform: none;
 
     &:hover {
-      color: red;
+      color: $c-red;
       text-decoration: none;
     }
   }

@@ -5,7 +5,7 @@
   width: 30px;
 
   svg {
-    color: red;
+    color: $c-red-light;
   }
 }
 
@@ -81,13 +81,10 @@
       list-style: none;
 
       a {
-
+        @include link-colors($c-red-light);
         padding: 5px 0;
-
       }
-
     }
-
   }
 
   nav > ul > li > a {

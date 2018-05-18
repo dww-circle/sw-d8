@@ -63,7 +63,7 @@
   .field--name-field-body {
     margin-bottom: 50px;
 
-    > p:first-child {
+    > p:first-of-type {
 
       &:before {
         background: $c-red;

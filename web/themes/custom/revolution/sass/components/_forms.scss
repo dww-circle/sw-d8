@@ -1,7 +1,7 @@
 button,
 input[type=submit] {
   @include ff-din-bold;
-  background: red;
+  background: $c-red;
   border: 0;
   color: white;
   padding: 6px 16px;
@@ -45,10 +45,6 @@ select {
   line-height: 1;
   padding: 10px;
   width: 100%;
-
-  &:focus {
-
-  }
 }
 
 .form-type-select{
