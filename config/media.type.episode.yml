@@ -1,0 +1,20 @@
+uuid: 6fadcf80-a9d9-4726-a5fd-c0913a7ca7f8
+langcode: en
+status: true
+dependencies:
+  module:
+    - media_entity_soundcloud
+id: episode
+label: 'Podcast Episode'
+description: 'A single podcast episode.'
+source: soundcloud
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_soundcloud
+field_map:
+  track_id: field_media_soundcloud
+  playlist_id: field_media_soundcloud
+  source_id: field_media_soundcloud
+  html: field_media_soundcloud
+  thumbnail_uri: field_media_soundcloud

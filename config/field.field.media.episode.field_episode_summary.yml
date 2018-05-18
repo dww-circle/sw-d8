@@ -1,0 +1,22 @@
+uuid: f756635c-e123-4798-be5e-1ef48cfeb649
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_episode_summary
+    - media.type.episode
+  module:
+    - text
+id: media.episode.field_episode_summary
+field_name: field_episode_summary
+entity_type: media
+bundle: episode
+label: 'Episode Summary'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

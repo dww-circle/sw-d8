@@ -1,0 +1,65 @@
+uuid: 4d20a62d-20e6-41a4-8f26-a376be32e77a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.episode.field_episode_description
+    - field.field.media.episode.field_episode_summary
+    - field.field.media.episode.field_media_soundcloud
+    - field.field.media.episode.field_podcast_name
+    - media.type.episode
+  module:
+    - media_entity_soundcloud
+    - options
+    - text
+id: media.episode.default
+targetEntityType: media
+bundle: episode
+mode: default
+content:
+  created:
+    label: hidden
+    type: timestamp
+    weight: 0
+    region: content
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+  field_episode_description:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_episode_summary:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_media_soundcloud:
+    weight: 1
+    label: hidden
+    settings:
+      type: visual
+      width: 100%
+      height: '450'
+      options: {  }
+    third_party_settings: {  }
+    type: soundcloud_embed
+    region: content
+  field_podcast_name:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+hidden:
+  name: true
+  thumbnail: true
+  uid: true

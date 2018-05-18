@@ -1,0 +1,21 @@
+uuid: 6813f2d2-ce17-42e8-89c8-73f1590cb209
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_podcast_name
+    - media.type.episode
+  module:
+    - options
+id: media.episode.field_podcast_name
+field_name: field_podcast_name
+entity_type: media
+bundle: episode
+label: 'Podcast Name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,19 @@
+uuid: a6158058-eed4-4169-8a01-25de31b93174
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - text
+id: media.field_episode_summary
+field_name: field_episode_summary
+entity_type: media
+type: text_with_summary
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
