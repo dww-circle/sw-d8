@@ -1,0 +1,5 @@
+type: module
+name: SW Podcast
+description: Podcast imports.
+package: SW
+core: 8.x

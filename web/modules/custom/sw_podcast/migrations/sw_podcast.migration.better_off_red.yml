@@ -1,0 +1,66 @@
+id: sw_podcast
+label: 'SW Podcast'
+status: true
+
+source:
+  plugin: url
+  data_fetcher_plugin: http
+  urls: 'http://feeds.soundcloud.com/users/soundcloud:users:406448034/sounds.rss'
+  data_parser_plugin: simple_xml
+
+  item_selector: /rss/channel/item
+  fields:
+    -
+      name: guid
+      label: GUID
+      selector: guid
+    -
+      name: title
+      label: Title
+      selector: title
+    -
+      name: pub_date
+      label: 'Publication date'
+      selector: pubDate
+    -
+      name: link
+      label: 'Origin link'
+      selector: link
+    -
+      name: summary
+      label: Summary
+      selector: 'itunes:summary'
+    -
+      name: image
+      label: Image
+      selector: 'itunes:image[''href'']'
+
+    -
+      name: description
+      label: Description
+      selector: 'description'
+
+  ids:
+    guid:
+      type: string
+
+destination:
+  plugin: 'entity:media'
+  default_bundle: episode
+
+process:
+  name: title
+  field_media_soundcloud: link
+  field_episode_summary: summary
+  field_episode_description: description
+  field_podcast_name:
+    plugin: default_value
+    default_value: 'bor'
+  created:
+    plugin: format_date
+    from_format: 'D, d M Y H:i:s O'
+    to_format: 'U'
+    source: pub_date
+  status:
+    plugin: default_value
+    default_value: 1
