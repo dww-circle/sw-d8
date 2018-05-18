@@ -286,6 +286,9 @@ main {
 .contextual {
   z-index: 400; }
 
+.tabs {
+  font-family: Helvetica, sans-serif; }
+
 .layout-sidebar .flexible--container {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1009,11 +1012,13 @@ main {
   font-size: 14px; }
   .view-sw-what-were-reading .node__content .field--name-field-publication {
     float: left;
+    font-family: Helvetica, sans-serif;
     font-style: italic; }
   .view-sw-what-were-reading .node__content .field--name-field-publication-date {
     float: right; }
 
 .view-sw-what-were-reading .more-link {
+  font-family: Helvetica, sans-serif;
   font-size: 13px;
   text-align: left; }
 
@@ -1762,6 +1767,7 @@ select {
 .reading__content .field--name-field-book-caption,
 .reading__content .field--name-field-issue-caption {
   color: #666;
+  font-family: Helvetica, sans-serif;
   font-size: 14px;
   line-height: 18px; }
 

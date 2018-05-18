@@ -240,6 +240,9 @@ main {
 .contextual {
   z-index: 400; }
 
+.tabs {
+  font-family: Helvetica, sans-serif; }
+
 .header {
   background: black;
   color: white;
