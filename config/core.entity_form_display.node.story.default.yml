@@ -94,9 +94,10 @@ third_party_settings:
       weight: 9
       format_type: details
       format_settings:
+        label: Location
+        open: true
         id: ''
         classes: ''
-        open: false
         required_fields: false
       label: Location
       region: content
