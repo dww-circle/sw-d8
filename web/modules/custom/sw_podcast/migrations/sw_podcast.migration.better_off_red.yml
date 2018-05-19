@@ -35,11 +35,6 @@ source:
       label: Image
       selector: 'itunes:image[''href'']'
 
-    -
-      name: description
-      label: Description
-      selector: 'description'
-
   ids:
     guid:
       type: string
@@ -52,10 +47,15 @@ process:
   name: title
   field_media_soundcloud: link
   field_episode_summary: summary
-  field_episode_description: description
   field_podcast_name:
     plugin: default_value
     default_value: 'bor'
+  field_podcast_itunes_link/uri:
+      plugin: default_value
+      default_value: 'https://itunes.apple.com/us/podcast/better-off-red/id1361742079?mt=2'
+  field_podcast_itunes_link/title:
+    plugin: default_value
+    default_value: 'Subscribe to Better Off Red on iTunes'
   created:
     plugin: format_date
     from_format: 'D, d M Y H:i:s O'
