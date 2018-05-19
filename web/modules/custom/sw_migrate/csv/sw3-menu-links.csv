@@ -27,7 +27,8 @@ main,/about,0,/node/5,Follow SW on social media,2
 main,/about,0,/subscribe/mail,Subscribe to print SW,3
 main,/about,0,/contact/readers_views,Submit a Readers’ View,4
 main,/about,0,/contact/reports,Submit an SW article,5
-main,/about,0,/donate,Make a donation,6
+main,/about,0,/contact,Contact SW,6
+main,/about,0,/donate,Make a donation,7
 main,/about,0,/about,Who we are,0
 main,,1,/get-involved,Get Involved,4
 main,/get-involved,0,/where-we-stand,Where We Stand,0
