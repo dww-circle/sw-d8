@@ -24,10 +24,6 @@
     }
   }
 
-  .field--name-field-introduction {
-    font-style: italic;
-  }
-
   .node__content {
     .sw-subject,
     .sw-author {
@@ -41,6 +37,7 @@
     }
   }
 
+  .field--name-field-introduction,
   .field--name-field-body-introduction {
     font-family: $ff-din-regular;
     font-size: 16px;
@@ -57,7 +54,7 @@
 
   .field--name-created {
     border-bottom: 1px solid #808080;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
   }
 
   .field--name-field-body {

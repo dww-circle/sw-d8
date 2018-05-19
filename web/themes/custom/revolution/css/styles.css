@@ -792,9 +792,6 @@ main {
       font-size: 56px;
       letter-spacing: -1px; } }
 
-.page-node-type-story .field--name-field-introduction {
-  font-style: italic; }
-
 .page-node-type-story .node__content .sw-subject,
 .page-node-type-story .node__content .sw-author {
   font-weight: bold; }
@@ -805,12 +802,17 @@ main {
   .page-node-type-story .node__content .sw-author a:hover {
     color: #c80000; }
 
+.page-node-type-story .field--name-field-introduction,
 .page-node-type-story .field--name-field-body-introduction {
   font-family: "FF DIN Pro Regular", sans-serif;
   font-size: 16px;
   line-height: 22px;
   border-bottom: 1px solid #808080;
   margin-bottom: 15px; }
+  .page-node-type-story .field--name-field-introduction b,
+  .page-node-type-story .field--name-field-introduction strong,
+  .page-node-type-story .field--name-field-introduction .sw-subject,
+  .page-node-type-story .field--name-field-introduction .sw-author,
   .page-node-type-story .field--name-field-body-introduction b,
   .page-node-type-story .field--name-field-body-introduction strong,
   .page-node-type-story .field--name-field-body-introduction .sw-subject,
@@ -820,7 +822,7 @@ main {
 
 .page-node-type-story .field--name-created {
   border-bottom: 1px solid #808080;
-  margin-bottom: 24px; }
+  margin-bottom: 20px; }
 
 .page-node-type-story .field--name-field-body {
   margin-bottom: 50px; }
@@ -1292,7 +1294,7 @@ main {
     font-size: 14px;
     line-height: 20px; }
 
-.page-node-type-story .embedded-entity ~ * {
+.embedded-entity ~ * {
   position: static; }
 
 article.embedded-entity .media--view-mode-embed,
@@ -1670,7 +1672,7 @@ select {
       width: calc(100% - 390px); } }
 
 .column-right {
-  margin-bottom: 20px; }
+  margin-bottom: 50px; }
   @media (min-width: 736px) {
     .column-right {
       float: right;
@@ -1760,6 +1762,10 @@ select {
   line-height: 24px;
   margin-bottom: 10px;
   padding-top: 70px; }
+  @media (min-width: 541px) {
+    .reading__content .field--name-name,
+    .reading__content .field--name-field-issue-header {
+      padding-top: 0; } }
   @media (min-width: 961px) {
     .reading__content .field--name-name,
     .reading__content .field--name-field-issue-header {
@@ -1771,6 +1777,14 @@ select {
   font-family: Helvetica, sans-serif;
   font-size: 14px;
   line-height: 18px; }
+  @media (min-width: 541px) {
+    .reading__content .field--name-field-book-caption,
+    .reading__content .field--name-field-issue-caption {
+      width: 220px; } }
+  @media (min-width: 961px) {
+    .reading__content .field--name-field-book-caption,
+    .reading__content .field--name-field-issue-caption {
+      width: auto; } }
 
 .reading__content .field--name-field-media-image,
 .reading__content .field--name-field-issue-cover-image img {
@@ -1787,22 +1801,6 @@ select {
     .reading__content .view-sw-what-were-reading {
       width: 320px; } }
 
-.reading__content .field--name-field-book {
-  margin-bottom: 25px; }
-  @media (min-width: 961px) {
-    .reading__content .field--name-field-book {
-      float: right;
-      margin-right: 20px;
-      min-width: 220px;
-      width: calc(100% - 260px); } }
-  @media (min-width: 1270px) {
-    .reading__content .field--name-field-book {
-      margin-right: 0; } }
-  @media (min-width: 961px) {
-    .reading__content .field--name-field-book .media--type-book {
-      margin: 0 auto;
-      width: 220px; } }
-
 @media (min-width: 961px) {
   .reading__content .reading__content-right {
     float: right;
@@ -1812,18 +1810,50 @@ select {
   .reading__content .reading__content-right {
     width: calc(100% - 320px); } }
 
+.reading__content .field--name-field-book {
+  margin-bottom: 25px; }
+  @media (min-width: 541px) {
+    .reading__content .field--name-field-book {
+      float: left;
+      margin: 0 auto;
+      min-width: 220px;
+      width: calc(50% - 20px); } }
+  @media (min-width: 961px) {
+    .reading__content .field--name-field-book {
+      float: right;
+      margin: 0 20px 0 0;
+      width: calc(100% - 260px); } }
+  @media (min-width: 1270px) {
+    .reading__content .field--name-field-book {
+      margin-right: 0; } }
+  @media (min-width: 541px) {
+    .reading__content .field--name-field-book .media--type-book {
+      width: 220px; } }
+  @media (min-width: 961px) {
+    .reading__content .field--name-field-book .media--type-book {
+      margin: 0 auto; } }
+
 .reading__content .issue {
   margin-bottom: 25px; }
-  @media (min-width: 961px) {
+  @media (min-width: 541px) {
     .reading__content .issue {
       float: right;
+      margin: 0 auto;
+      width: calc(50% - 20px); } }
+  @media (min-width: 961px) {
+    .reading__content .issue {
+      margin: 0;
       width: 220px; } }
   .reading__content .issue .field--name-field-issue-cover-image {
     float: left;
     margin-right: 20px; }
+    @media (min-width: 541px) {
+      .reading__content .issue .field--name-field-issue-cover-image {
+        float: none;
+        margin-right: 0; } }
     @media (min-width: 961px) {
       .reading__content .issue .field--name-field-issue-cover-image {
-        float: none; } }
+        margin-right: 20px; } }
 
 .reading__content .field--name-field-media-image {
   -webkit-align-items: center;

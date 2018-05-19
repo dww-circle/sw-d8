@@ -1,8 +1,5 @@
 .embedded-entity ~ * {
-
-  .page-node-type-story & {
-    position: static;
-  }
+  position: static;
 }
 
 article.embedded-entity .media--view-mode-embed, // embed without caption

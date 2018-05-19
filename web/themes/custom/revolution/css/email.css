@@ -366,9 +366,6 @@ main {
       font-size: 56px;
       letter-spacing: -1px; } }
 
-.page-node-type-story .field--name-field-introduction {
-  font-style: italic; }
-
 .page-node-type-story .node__content .sw-subject,
 .page-node-type-story .node__content .sw-author {
   font-weight: bold; }
@@ -379,12 +376,17 @@ main {
   .page-node-type-story .node__content .sw-author a:hover {
     color: #c80000; }
 
+.page-node-type-story .field--name-field-introduction,
 .page-node-type-story .field--name-field-body-introduction {
   font-family: "FF DIN Pro Regular", sans-serif;
   font-size: 16px;
   line-height: 22px;
   border-bottom: 1px solid #808080;
   margin-bottom: 15px; }
+  .page-node-type-story .field--name-field-introduction b,
+  .page-node-type-story .field--name-field-introduction strong,
+  .page-node-type-story .field--name-field-introduction .sw-subject,
+  .page-node-type-story .field--name-field-introduction .sw-author,
   .page-node-type-story .field--name-field-body-introduction b,
   .page-node-type-story .field--name-field-body-introduction strong,
   .page-node-type-story .field--name-field-body-introduction .sw-subject,
@@ -394,7 +396,7 @@ main {
 
 .page-node-type-story .field--name-created {
   border-bottom: 1px solid #808080;
-  margin-bottom: 24px; }
+  margin-bottom: 20px; }
 
 .page-node-type-story .field--name-field-body {
   margin-bottom: 50px; }
@@ -523,7 +525,7 @@ h2 {
   width: 1px;
   word-wrap: normal; }
 
-.page-node-type-story .embedded-entity ~ * {
+.embedded-entity ~ * {
   position: static; }
 
 article.embedded-entity .media--view-mode-embed,
