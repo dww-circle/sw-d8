@@ -280,6 +280,7 @@ content:
       field_widget_display_settings:
         view_mode: browser
       open: true
+      field_widget_replace: false
     third_party_settings: {  }
     type: entity_browser_entity_reference
     region: content
@@ -293,6 +294,7 @@ content:
       field_widget_edit: false
       open: false
       field_widget_display_settings: {  }
+      field_widget_replace: false
     third_party_settings: {  }
     type: entity_browser_entity_reference
     region: content
@@ -307,6 +309,7 @@ content:
       field_widget_display_settings:
         view_mode: browser
       open: false
+      field_widget_replace: false
     third_party_settings: {  }
     type: entity_browser_entity_reference
     region: content
@@ -383,6 +386,7 @@ content:
       field_widget_display_settings:
         view_mode: browser
       open: false
+      field_widget_replace: false
     third_party_settings: {  }
     type: entity_browser_entity_reference
     region: content
