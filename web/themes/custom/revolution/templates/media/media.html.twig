@@ -22,7 +22,9 @@
 %}
 <article{{ attributes.addClass(classes) }}>
   {{ title_suffix.contextual_links }}
-  {% if content %}
-    {{ content }}
-  {% endif %}
+  {% block content %}
+    {% if content %}
+      {{ content }}
+    {% endif %}
+  {% endblock %}
 </article>

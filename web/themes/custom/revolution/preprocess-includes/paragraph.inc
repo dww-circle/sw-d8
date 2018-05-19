@@ -174,3 +174,15 @@ function revolution_preprocess_paragraph__reading(&$variables) {
   $render_array = $view->render();
   $variables['what_were_reading_queue'] =  \Drupal::service('renderer')->render($render_array);
 }
+
+/*
+ * Implements hook_preprocess_paragraph__TYPE().
+ */
+function revolution_preprocess_paragraph__podcast(&$variables) {
+
+  // Make "Podcast" view available in template.
+  $view = Views::getView('sw_podcasts');
+  $view->setDisplay('embed_1');
+  $render_array = $view->render();
+  $variables['podcast'] =  \Drupal::service('renderer')->render($render_array);
+}
