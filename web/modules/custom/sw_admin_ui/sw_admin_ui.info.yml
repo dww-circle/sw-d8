@@ -1,0 +1,8 @@
+name: 'SW Administrative UI'
+type: module
+description: 'Tweaks the to the Administrative Interface'
+core: 8.x
+package: 'Custom'
+
+dependencies:
+  - admin_toolbar

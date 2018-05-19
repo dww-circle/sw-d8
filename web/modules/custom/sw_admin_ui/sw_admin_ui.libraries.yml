@@ -1,0 +1,3 @@
+killToolbarAutoSidebar:
+  js:
+    js/killToolbarAutoSidebar.js: {}

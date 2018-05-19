@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * @file
+ * Contains sw_admin_ui.module.
+ */
+
+/**
+ * Implements hook_toolbar_alter().
+ */
+function sw_admin_ui_toolbar_alter(&$items) {
+  $items['administration']['#attached']['library'][] = 'sw_admin_ui/killToolbarAutoSidebar';
+}
