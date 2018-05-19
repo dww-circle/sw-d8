@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: contact_sw
-label: 'Contact SocialistWorker.org'
+label: 'Contact SW'
 recipients:
   - info@socialistworker.org
 reply: ''
