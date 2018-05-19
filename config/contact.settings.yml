@@ -1,4 +1,4 @@
-default_form: web_department
+default_form: contact_sw
 flood:
   limit: 3
   interval: 3600

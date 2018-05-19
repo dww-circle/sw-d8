@@ -1,0 +1,12 @@
+uuid: 5afeb256-5fab-4ccd-8d4d-7ad8b37ecb92
+langcode: en
+status: true
+dependencies: {  }
+id: contact_sw
+label: 'Contact SocialistWorker.org'
+recipients:
+  - info@socialistworker.org
+reply: ''
+weight: -5
+message: 'Thank you, your message has been sent.'
+redirect: ''
