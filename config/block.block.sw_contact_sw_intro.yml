@@ -1,0 +1,28 @@
+uuid: 12ade5bf-1f13-40fc-8c77-e2f4b3597150
+langcode: en
+status: true
+dependencies:
+  config:
+    - simple_block.simple_block.sw_contact_sw_intro
+  module:
+    - simple_block
+    - system
+  theme:
+    - revolution
+id: sw_contact_sw_intro
+theme: revolution
+region: content
+weight: -9
+provider: null
+plugin: 'simple_block:sw_contact_sw_intro'
+settings:
+  id: 'simple_block:sw_contact_sw_intro'
+  label: 'SW: contact SW.org intro'
+  provider: simple_block
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: /contact
+    negate: false
+    context_mapping: {  }

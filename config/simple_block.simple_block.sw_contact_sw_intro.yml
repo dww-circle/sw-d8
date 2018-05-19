@@ -1,0 +1,11 @@
+uuid: 242e30e8-aa9f-48d0-9413-379e6cb3bff9
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.filtered_html
+id: sw_contact_sw_intro
+title: 'SW: contact SW.org intro)'
+content:
+  value: 'Send a message to SW or ask a question by filling out the form below.'
+  format: filtered_html
