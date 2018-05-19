@@ -3,7 +3,13 @@
     attach: function (context, settings) {
       
       $(".menu-trigger, .menu-expanded-close", context).click(function() {
-        $(".region-expanded-menu").fadeToggle();
+      
+        var headerHeight = $(".header").outerHeight();
+        var expandedMenu = $(".region-expanded-menu");
+  
+        expandedMenu.fadeToggle();
+        expandedMenu.css('top', headerHeight);
+        
       });
       
     }
