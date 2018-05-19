@@ -364,7 +364,7 @@ function sw_preprocess_node_story(&$variables) {
   // %interviewee) in the introduction. So, we load all these target entities
   // once, and stash them into the $node object for re-use.
   foreach (['authors', 'interviewees'] as $field_id) {
-    sw_load_referenced_entities($variables['node'], $field_id, ['Drupal\node\Entity\Node', 'loadMultiple']);
+    sw_load_referenced_entities($variables['node'], $field_id);
   }
 
   $variables['story_label'] = sw_get_story_label($variables['node'], $variables['view_mode']);
@@ -383,7 +383,7 @@ function sw_preprocess_node_story(&$variables) {
         }
       }
     }
-    sw_load_referenced_entities($variables['node'], 'contributors', ['Drupal\taxonomy\Entity\Term', 'loadMultiple']);
+    sw_load_referenced_entities($variables['node'], 'contributors');
     if (!empty($variables['node']->sw_contributors)) {
       uasort($variables['node']->sw_contributors, 'sw_contributor_sort');
       $variables['content']['contributors'] = [
@@ -573,20 +573,10 @@ function sw_preprocess_node_insert_box(&$variables) {
  *   entities to load.
  * @param string $field_id
  *   Identifier for the entity_reference field to use (without the 'field_' prefix).
- * @param callable $load_multiple_function
- *   A callable static method that will load multiple entities given an array of IDs.
- *   For example, "['Drupal\taxonomy\Entity\Term', 'loadMultiple']" to load terms or
- *   "['Drupal\node\Entity\Node', 'loadMultiple']" to load nodes.
- *
- * @see \Drupal\Core\Entity\Entity::loadMultiple()
  */
-function sw_load_referenced_entities(EntityInterface $entity, $field_id, $load_multiple_function) {
-  $targets = $entity->get('field_' . $field_id)->getValue();
-  if (!empty($targets)) {
-    foreach ($targets as $target) {
-      $target_ids[] = $target['target_id'];
-    }
-    $entity->{'sw_' . $field_id} = $load_multiple_function($target_ids);
+function sw_load_referenced_entities(EntityInterface $entity, $field_id) {
+  if (!isset($entity->{'sw_' . $field_id})) {
+    $entity->{'sw_' . $field_id} = $entity->get('field_' . $field_id)->referencedEntities();
   }
 }
 
@@ -1031,9 +1021,9 @@ function sw_get_story_render_array(array $story, $show_story_label = FALSE) {
   if ($show_story_label) {
     // @todo: If we denormalize the story_label into a separate field, we
     // don't need to incur the cost of all the full entity loads here.
-    $node = \Drupal\node\Entity\Node::load($story['nid']);
+    $node = Node::load($story['nid']);
     foreach (['authors', 'interviewees'] as $field_id) {
-      sw_load_referenced_entities($node, $field_id, ['Drupal\node\Entity\Node', 'loadMultiple']);
+      sw_load_referenced_entities($node, $field_id);
     }
     $build['story_label'] = [
       '#markup' => sw_get_story_label($node, 'teaser'),
