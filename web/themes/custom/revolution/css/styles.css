@@ -270,14 +270,14 @@ main {
   display: block;
   margin-bottom: 50px; }
   .story-link:hover, .story-link:visited:hover {
-    opacity: .8;
     text-decoration: none; }
+    .story-link:hover h4, .story-link:visited:hover h4 {
+      color: #c80000; }
     .story-link:hover .field--name-field-kicker,
-    .story-link:hover h4,
     .story-link:hover .field--name-field-teaser, .story-link:visited:hover .field--name-field-kicker,
-    .story-link:visited:hover h4,
     .story-link:visited:hover .field--name-field-teaser {
-      color: #72726c; }
+      color: #72726c;
+      opacity: .8; }
   .story-link:visited .field--name-field-kicker,
   .story-link:visited h4,
   .story-link:visited .field--name-field-teaser {

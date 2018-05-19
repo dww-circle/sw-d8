@@ -252,13 +252,16 @@ main {
 
   &:hover,
   &:visited:hover {
-    opacity: .8;
     text-decoration: none;
 
+    h4 {
+      color: $c-red;
+    }
+
     .field--name-field-kicker,
-    h4,
     .field--name-field-teaser {
       color: $c-hover;
+      opacity: .8;
     }
   }
 
