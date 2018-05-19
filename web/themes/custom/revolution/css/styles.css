@@ -677,7 +677,7 @@ main {
   .region-main-menu .menu-item--expanded {
     position: relative; }
     .region-main-menu .menu-item--expanded ul {
-      border-color: #DDDDDD;
+      background: rgba(245, 245, 245, 0.95);
       display: none;
       left: 31px;
       padding: 16px 0;
@@ -693,7 +693,7 @@ main {
       display: block;
       margin: 0; }
     .region-main-menu .menu-item--expanded li a {
-      background: rgba(255, 255, 255, 0.95);
+      background: rgba(245, 245, 245, 0.95);
       display: block;
       font-size: 16px;
       margin: 0;
@@ -719,8 +719,8 @@ main {
     .region-main-menu .menu-item--expanded ul:before {
       border-left: 10px solid transparent;
       border-right: 10px solid transparent;
-      border-bottom: 10px solid rgba(255, 255, 255, 0.95);
-      color: rgba(255, 255, 255, 0.95);
+      border-bottom: 10px solid rgba(245, 245, 245, 0.95);
+      color: rgba(245, 245, 245, 0.95);
       content: '.';
       height: 0;
       position: absolute;

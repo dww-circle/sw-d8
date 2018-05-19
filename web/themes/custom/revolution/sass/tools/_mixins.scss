@@ -65,7 +65,7 @@
   position: relative;
 
   ul {
-    border-color: #DDDDDD;
+    background: $c-gr-dropdowns;
     display: none;
     left: 31px;
     padding: 16px 0;
@@ -91,7 +91,7 @@
 
   li a {
     @include link-colors($c-black, $c-red, $c-red);
-    background: rgba( 255, 255, 255, .95);
+    background: $c-gr-dropdowns;
     display: block;
     font-size: 16px;
     margin: 0;

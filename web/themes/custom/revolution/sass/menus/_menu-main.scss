@@ -62,8 +62,8 @@
     ul:before {
       border-left: 10px solid transparent;
       border-right: 10px solid transparent;
-      border-bottom: 10px solid rgba(255, 255, 255, 0.95);
-      color:  rgba(255, 255, 255, 0.95);
+      border-bottom: 10px solid $c-gr-dropdowns;
+      color:  $c-gr-dropdowns;
       content: '.';
       height: 0;
       position: absolute;
