@@ -23,6 +23,7 @@ class SWUserRoles extends ProcessPluginBase {
       case 'root':
       case 'maass':
       case 'colson':
+      case 'schulte':
       case 'yanowitz':
         return [
           'reading_editor',
@@ -38,7 +39,6 @@ class SWUserRoles extends ProcessPluginBase {
       case 'khury':
       case 'phil':
       case 'ruder':
-      case 'schulte':
         return [
           'reading_editor',
           'story_editor',
