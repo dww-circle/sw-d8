@@ -30,6 +30,7 @@
     "drupal/facets": "^1.0",
     "drupal/field_group": "^3.0",
     "drupal/forward": "^2.1",
+    "drupal/google_analytics": "^2.2",
     "drupal/inline_entity_form": "^1.0@beta",
     "drupal/media_entity_browser": "^2.0",
     "drupal/media_entity_soundcloud": "2.x-dev",
