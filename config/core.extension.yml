@@ -46,6 +46,9 @@ module:
   media: 0
   media_entity_soundcloud: 0
   menu_ui: 0
+  migrate: 0
+  migrate_plus: 0
+  migrate_tools: 0
   node: 0
   options: 0
   page_cache: 0
@@ -62,6 +65,7 @@ module:
   smtp: 0
   static_page: 0
   sw_admin_ui: 0
+  sw_podcast: 0
   system: 0
   taxonomy: 0
   text: 0
