@@ -43,6 +43,31 @@ const SW_STORY_TYPE_ROUNDTABLE_TID = 2922;
 const SW_TOPIC_NONE_TID = 412;
 
 /**
+ * Implements hook_form_alter().
+ *
+ * Since there's no dedicated hook for it, we have to use the global form alter
+ * check to see if we're dealing with an entity_browser form.
+ */
+function sw_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  if (substr($form_id, 0, 15) == 'entity_browser_') {
+    sw_entity_browser_form_alter($form, $form_state, $form_id);
+  }
+}
+
+/**
+ * Form alter helper for all entity_browser forms.
+ *
+ * Moves the form actions to the tops of the browser view pages, so ideally you
+ * don't have to scroll.
+ */
+function sw_entity_browser_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  // Only move the submit button to the top of browser views, not entity forms, etc.
+  if (!empty($form['widget']['view'])) {
+    $form['widget']['actions']['#weight'] = -10;
+  }
+}
+
+/**
  * Implements hook_form_FORM_ID_alter() for 'taxonomy_overview_terms'.
  *
  * Inject a 'TID' column into the term overview page.
