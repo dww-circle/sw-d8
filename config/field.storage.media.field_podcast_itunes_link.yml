@@ -1,16 +1,16 @@
-uuid: e23ba12a-ad3c-4d46-baab-7ae6f3ff7d95
+uuid: 4ef117cf-a857-4ff2-a7f8-87c2e93f8773
 langcode: en
 status: true
 dependencies:
   module:
+    - link
     - media
-    - text
-id: media.field_episode_description
-field_name: field_episode_description
+id: media.field_podcast_itunes_link
+field_name: field_podcast_itunes_link
 entity_type: media
-type: text_long
+type: link
 settings: {  }
-module: text
+module: link
 locked: false
 cardinality: 1
 translatable: true

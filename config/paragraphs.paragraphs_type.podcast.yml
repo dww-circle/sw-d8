@@ -1,0 +1,9 @@
+uuid: 45f91341-1ecd-461f-b397-dff9402b6407
+langcode: en
+status: true
+dependencies: {  }
+id: podcast
+label: Podcast
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

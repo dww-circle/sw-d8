@@ -1,0 +1,23 @@
+uuid: df0f720d-d8eb-4a76-ba78-70d33e0b3e16
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - media
+id: media_podcast_episode
+label: 'Media: Podcast Episode'
+type: 'canonical_entities:media'
+pattern: 'better-off-red/[media:name]'
+selection_criteria:
+  ff255d3f-b90c-49bb-9498-6e8cb014da04:
+    id: 'entity_bundle:media'
+    bundles:
+      episode: episode
+    negate: false
+    context_mapping:
+      media: media
+    uuid: ff255d3f-b90c-49bb-9498-6e8cb014da04
+selection_logic: and
+weight: -5
+relationships: {  }
