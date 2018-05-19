@@ -226,7 +226,7 @@ display:
               blog_critical_reading: teaser
               external_article: default
               page: teaser
-              story: teaser_conditional_image
+              story: teaser
           plugin_id: search_api_rendered_item
         search_api_excerpt:
           id: search_api_excerpt
