@@ -579,8 +579,19 @@ main {
         .menu-item--active-trail .region-expanded-menu ul li a {
           color: #ea3223; }
   .region-expanded-menu nav > ul > li > a {
-    color: white;
     text-transform: uppercase; }
+    .region-expanded-menu nav > ul > li > a:link {
+      color: white; }
+    .region-expanded-menu nav > ul > li > a:visited, .region-expanded-menu nav > ul > li > a:link:visited {
+      color: white; }
+    .region-expanded-menu nav > ul > li > a:focus {
+      color: white; }
+    .region-expanded-menu nav > ul > li > a.active:hover,
+    .menu-item--active-trail .region-expanded-menu nav > ul > li > a:hover, .region-expanded-menu nav > ul > li > a.visited:hover, .region-expanded-menu nav > ul > li > a:hover {
+      color: white; }
+    .region-expanded-menu nav > ul > li > a.active, .region-expanded-menu nav > ul > li > a.is-active, .region-expanded-menu nav > ul > li > a:active,
+    .menu-item--active-trail .region-expanded-menu nav > ul > li > a {
+      color: white; }
 
 .region-expanded-menu .sw-search-block-form {
   width: 100%; }
