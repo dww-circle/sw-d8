@@ -16,14 +16,15 @@ source:
   csv_path: sw3-entityqueue-storyqueues.csv
   header_row_count: 1
   keys:
-    - id
+    - queue_id
 
 process:
-  name: id
-  title: title
+  name: queue_id
+  title: queue_title
   uid:
     plugin: default_value
     default_value: 7
+  field_topic/0/target_id: topic_id
 
 migration_dependencies:
   required: { }
