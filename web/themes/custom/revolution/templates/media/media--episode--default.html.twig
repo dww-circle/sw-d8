@@ -12,14 +12,14 @@
 
   {% block wrapper_start %}
   <a class="story-link" href="/better-off-red">
-    <div class="story--teaser-image-large">
+    <div class="story--teaser-image-large large-fallback">
       {% endblock %}
 
       <div>
         {{ content.field_media_soundcloud }}
       </div>
       <div>
-        <div class="story-label">Better Off Red Podcast</div>
+        <div class="story-label">{{ elements.created }}</div>
         <h4>{{ content.name }}</h4>
         <div class="field--name-field-teaser">
           {{ content.field_episode_summary }}
