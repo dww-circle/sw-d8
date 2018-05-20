@@ -332,6 +332,7 @@ function sw_migrate_migrate_upgrade_d6_node_insert_box_prepare_row(Row $row, Mig
  * Handles section, topic and story type terms
  */
 function sw_migrate_migrate_upgrade_d6_node_image_prepare_row(Row $row, MigrateSourceInterface $source, MigrationInterface $migration) {
+  $media_bundle = 'image';
   $values = $row->getSource();
   $node_terms = $source->getDatabase()
       ->query('SELECT td.tid, td.vid, td.name FROM {term_node} tn INNER JOIN {term_data} td ON td.tid = tn.tid WHERE tn.vid = :vid',
@@ -352,6 +353,10 @@ function sw_migrate_migrate_upgrade_d6_node_image_prepare_row(Row $row, MigrateS
     if (!empty($node_vocabs[$vid])) {
       $term = array_shift($node_vocabs[$vid]);
       $row->setSourceProperty($sw3_id, $term['tid']);
+      // Notice book cover images and divert those to 'book' media entities.
+      if ($term['vid'] == 14 && $term['tid'] == 999 && (stripos($values['title'], 'cover') !== FALSE)) {
+        $media_bundle = 'book';
+      }
     }
   }
   // These are potentially multi-valued, and need array support.
@@ -366,6 +371,18 @@ function sw_migrate_migrate_upgrade_d6_node_image_prepare_row(Row $row, MigrateS
   foreach ($multi_value_vocab_map as $vid => $sw3_id) {
     if (!empty($node_vocabs[$vid])) {
       $row->setSourceProperty($sw3_id, $node_vocabs[$vid]);
+    }
+  }
+  if (stripos($values['title'], 'book cover') !== FALSE) {
+    $media_bundle = 'book';
+  }
+  $row->setSourceProperty('sw3_media_bundle', $media_bundle);
+  if ($media_bundle == 'book') {
+    // Use the default caption as the book title. Split off author info to book_caption.
+    $caption_parts = explode(' | ', $values['field_default_caption'][0]['value']);
+    $row->setSourceProperty('title', $caption_parts[0]);
+    if (!empty($caption_parts[1])) {
+      $row->setSourceProperty('field_book_caption', ['value' => $caption_parts[1], 'format' => 'filtered_html']);
     }
   }
 }

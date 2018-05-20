@@ -18,12 +18,12 @@ source:
 
 destination:
   plugin: 'entity:media'
-  default_bundle: image
 
 process:
   # It's media, not node, so the target is 'mid' not 'nid'
   mid: nid
   vid: vid
+  bundle: sw3_media_bundle
   langcode:
     plugin: default_value
     source: language
@@ -64,6 +64,8 @@ process:
       format:
         plugin: default_value
         default_value: 'filtered_html'
+  # Only happens for book media.
+  field_book_caption: field_book_caption
   field_original_url:
     plugin: sub_process
     source: field_original_url
@@ -82,7 +84,7 @@ process:
         map:
           6: 1
       delta: delta
-  field_original_image: 
+  field_original_image:
     plugin: sub_process
     source: field_original_image_nid
     process:
