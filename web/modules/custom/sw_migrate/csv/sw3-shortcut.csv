@@ -10,9 +10,10 @@ front-page-editor,-3,Draft: Daily,draft/daily
 front-page-editor,-2,Draft: Weekend,draft/weekend
 front-page-editor,-1,Front page administration,admin/content/front-page
 reading-editor,-10,Add external article,node/add/external_article
-reading-editor,-9,Add book,media/add/book
-reading-editor,-8,Reading queue,admin/structure/entityqueue/what_were_reading/what_were_reading
-reading-editor,-7,All content,admin/content
+reading-editor,-9,Reading queue,admin/structure/entityqueue/what_were_reading/what_were_reading
+reading-editor,-8,Add book,media/add/book
+reading-editor,-7,Find book,admin/content/book
+reading-editor,-6,All content,admin/content
 story-editor,-10,Add content,node/add
 story-editor,-9,Add story,node/add/story
 story-editor,-8,Add media,media/add

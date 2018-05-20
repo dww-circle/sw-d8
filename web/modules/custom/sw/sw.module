@@ -107,6 +107,7 @@ function sw_form_views_exposed_form_alter(&$form, FormStateInterface $form_state
     'nid' => 10,
     'title' => 20,
     'name' => 20,
+    'book_caption' => 20,
     'first_name' => 20,
     'last_name' => 20,
     'full_name' => 20,
