@@ -1,0 +1,29 @@
+uuid: 521f5bbb-d982-4bfa-b309-ce0f4021360d
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.story_queues
+    - field.storage.entity_subqueue.field_topic
+    - taxonomy.vocabulary.topic
+id: entity_subqueue.story_queues.field_topic
+field_name: field_topic
+entity_type: entity_subqueue
+bundle: story_queues
+label: Topic
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      topic: topic
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

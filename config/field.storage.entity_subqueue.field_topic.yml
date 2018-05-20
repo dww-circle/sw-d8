@@ -1,0 +1,20 @@
+uuid: b16c68ef-f3f2-49dc-9123-b7cb021f1a53
+langcode: en
+status: true
+dependencies:
+  module:
+    - entityqueue
+    - taxonomy
+id: entity_subqueue.field_topic
+field_name: field_topic
+entity_type: entity_subqueue
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -4,11 +4,20 @@ status: true
 dependencies:
   config:
     - entityqueue.entity_queue.story_queues
+    - field.field.entity_subqueue.story_queues.field_topic
 id: entity_subqueue.story_queues.default
 targetEntityType: entity_subqueue
 bundle: story_queues
 mode: default
 content:
+  field_topic:
+    weight: 1
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
   items:
     label: hidden
     type: entity_reference_entity_view
