@@ -19,14 +19,12 @@ destination:
 
 process:
   nid: nid
+  status: status
   title: title
   path: path
   langcode:
     plugin: default_value
     default_value: und
-  status:
-    plugin: default_value
-    default_value: 1
   uid:
     plugin: default_value
     default_value: 1

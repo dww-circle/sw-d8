@@ -1,4 +1,5 @@
-nid,title,path
-47,Live front page,/live
-82,Draft: Daily,/draft/daily
-83,Draft: Weekend,/draft/weekend
+nid,status,title,path
+47,1,Live front page,/live
+82,0,Draft: Daily,/draft/daily
+83,0,Draft: Weekend,/draft/weekend
+86,0,Draft: Test,/draft/test
