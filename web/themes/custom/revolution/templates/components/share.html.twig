@@ -3,7 +3,7 @@
 {% set title = node.label %}
 {% set base_url = url('<front>')  %}
 {% set absolute_url =  base_url['#markup']|trim('/') ~ url %}
-{% set summary =  content.field_body_introduction.0['#text']|striptags %}
+{% set summary =  content.field_teaser.0['#text']|striptags %}
 
 {# see https://github.com/bradvin/social-share-urls for example links#}
 {% set services = [
@@ -37,6 +37,11 @@
     'service': 'instapaper',
     'link': 'http://www.instapaper.com/edit?url=' ~ absolute_url ~ '&title=' ~ title ~ '&description=' ~ summary,
     'text': 'Instapaper'
+  },
+  {
+    'service': 'flipboard',
+    'link': 'https://share.flipboard.com/bookmarklet/popout?v=2&title=' ~ title ~ '&url=' ~ absolute_url,
+    'text': 'Flipboard'
   },
   { 'service': 'print', 'link': 'javascript:window.print();', 'text': 'Print'}
 ] %}
