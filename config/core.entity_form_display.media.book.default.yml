@@ -6,6 +6,7 @@ dependencies:
     - field.field.media.book.field_book_caption
     - field.field.media.book.field_image_url
     - field.field.media.book.field_media_image
+    - field.field.media.book.field_original_url
     - image.style.thumbnail
     - media.type.book
   module:
@@ -28,7 +29,7 @@ content:
   field_image_url:
     weight: 26
     settings:
-      placeholder_url: 'http://example.com'
+      placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
@@ -40,6 +41,14 @@ content:
       progress_indicator: throbber
     third_party_settings: {  }
     type: image_image
+    region: content
+  field_original_url:
+    weight: 27
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
     region: content
   name:
     type: string_textfield

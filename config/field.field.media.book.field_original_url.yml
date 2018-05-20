@@ -1,0 +1,23 @@
+uuid: 3041f3de-4f3b-4b96-903b-60ecbee8715d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_original_url
+    - media.type.book
+  module:
+    - link
+id: media.book.field_original_url
+field_name: field_original_url
+entity_type: media
+bundle: book
+label: 'Original url'
+description: 'If we found this image on the Web, where can we get the original high-res version?'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link
