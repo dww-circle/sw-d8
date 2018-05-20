@@ -65,6 +65,11 @@ process:
   field_series_insert_list_length: series_insert_list_length
   # Issue-only fields.
   field_issue_date: issue_date
+  field_issue_cover_image:
+    plugin: sw_issue_cover_file
+    source:
+    - name
+    - issue_cover_fid
 
 destination:
   plugin: 'entity:taxonomy_term'

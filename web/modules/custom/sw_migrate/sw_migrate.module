@@ -150,6 +150,12 @@ function _sw_migrate_d6_taxonomy_term_prepare_row_issue(Row $row, MigrateSourceI
   if (!empty($issue_date)) {
     $row->setSourceProperty('issue_date', $issue_date);
   }
+  $cover_image_fid = $source->getDatabase()
+    ->query('SELECT cover_image_fid FROM {sw_issue_cover_image} WHERE issue_num = :number', [':number' => $values['name']])
+    ->fetchField();
+  if (!empty($cover_image_fid)) {
+    $row->setSourceProperty('issue_cover_fid', $cover_image_fid);
+  }
 }
 
 /**
