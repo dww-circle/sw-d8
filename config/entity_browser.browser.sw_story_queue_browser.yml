@@ -1,0 +1,31 @@
+uuid: 7670e94c-78e7-43bc-b98b-d585bbabcd22
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.sw_entityqueue_browser
+  module:
+    - views
+name: sw_story_queue_browser
+label: 'Story queue'
+display: modal
+display_configuration:
+  width: ''
+  height: ''
+  link_text: 'Select story queue'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  32a6059b-4476-4f49-8466-24420971389c:
+    settings:
+      view: sw_entityqueue_browser
+      view_display: story_queue_browser
+      submit_text: 'Select story queue'
+      auto_select: false
+    uuid: 32a6059b-4476-4f49-8466-24420971389c
+    weight: 1
+    label: 'Story queues'
+    id: view
