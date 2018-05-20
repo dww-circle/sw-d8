@@ -77,7 +77,6 @@ process:
     process:
       value:
         plugin: static_map
-        bypass: true
         source: value
         default_value: 0
         map:
