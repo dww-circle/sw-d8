@@ -59,7 +59,7 @@
   <div class="more-links-close">close | x</div>
   {% for linkdata in more_services %}
     <li class="{{ linkdata.service }}">
-      <a href="{{ linkdata.link }}" title="{{ linkdata.text }}" target="_blank">
+      <a href="{{ linkdata.link }}" title="{{ linkdata.text }}" rel="noopener" target="_blank">
         {{ linkdata.text }}
       </a>
     </li>

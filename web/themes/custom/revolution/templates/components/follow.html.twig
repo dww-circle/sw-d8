@@ -8,7 +8,7 @@
 <ul class="social-links share">
   {% for linkdata in services %}
     <li class="{{ linkdata.service }}">
-      <a href="{{ linkdata.link }}" title="{{ linkdata.text }}" target="_blank">
+      <a href="{{ linkdata.link }}" title="{{ linkdata.text }}" rel="noopener" target="_blank">
         <svg>
           <use class="default" xlink:href="#{{ linkdata.service }}-red"></use>
           <use class="hover" xlink:href="#{{ linkdata.service }}"></use>
