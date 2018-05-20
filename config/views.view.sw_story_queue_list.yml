@@ -393,7 +393,18 @@ display:
           entity_field: title
           plugin_id: standard
       title: 'Story queues'
-      header: {  }
+      header:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content: '<ul class="action-links"><li><a href="[site:url]admin/structure/entityqueue/story_queues/add" class="button button-action button--primary button--small">Add story queue</a></li></ul>'
+          plugin_id: text_custom
       footer: {  }
       empty: {  }
       relationships: {  }
