@@ -1,6 +1,6 @@
 .page * {
   box-sizing: border-box;
-  transition: all .2s ease-in-out;
+  transition: all .2s ease-out;
   position: relative; }
   .page * .contextual {
     position: absolute; }
@@ -224,19 +224,22 @@ main {
 .story-link {
   display: block;
   margin-bottom: 50px; }
-  .story-link:hover, .story-link:visited:hover {
+  .story-link:hover {
     text-decoration: none; }
-    .story-link:hover h4, .story-link:visited:hover h4 {
+    .story-link:hover h4 {
       color: #c80000; }
     .story-link:hover .field--name-field-kicker,
-    .story-link:hover .field--name-field-teaser, .story-link:visited:hover .field--name-field-kicker,
-    .story-link:visited:hover .field--name-field-teaser {
+    .story-link:hover .field--name-field-teaser {
       color: #72726c;
       opacity: .8; }
+    .story-link:hover img {
+      opacity: .9; }
   .story-link:visited .field--name-field-kicker,
   .story-link:visited h4,
   .story-link:visited .field--name-field-teaser {
-    color: #725c5f; }
+    color: #7b6467; }
+  body .story-link:visited:hover h4 {
+    color: #504c4c; }
 
 .contextual {
   z-index: 400; }

@@ -3,7 +3,7 @@
 
 .page * {
   box-sizing: border-box;
-  transition: all .2s ease-in-out;
+  transition: all .2s ease-out;
   position: relative;
 
   .contextual {
@@ -251,8 +251,7 @@ main {
   display: block;
   margin-bottom: 50px;
 
-  &:hover,
-  &:visited:hover {
+  &:hover {
     text-decoration: none;
 
     h4 {
@@ -264,6 +263,10 @@ main {
       color: $c-hover;
       opacity: .8;
     }
+
+    img {
+      opacity: .9;
+    }
   }
 
   &:visited {
@@ -271,6 +274,12 @@ main {
     h4,
     .field--name-field-teaser {
       color: $c-visited;
+    }
+
+    body &:hover {
+      h4 {
+        color: $c-visited-hover;
+      }
     }
   }
 }
