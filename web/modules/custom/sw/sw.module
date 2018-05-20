@@ -756,7 +756,7 @@ function sw_get_entity_label_multiple(array $entities, $label_callback) {
  */
 function sw_get_media_caption($entity_id) {
   $entity = Drupal\media\Entity\Media::load($entity_id);
-  if (!empty($entity)) {
+  if (!empty($entity) && $entity->bundle() == 'image') {
     $caption = '';
     $default_caption = $entity->get('field_default_caption')->value;
     $credits = $entity->get('field_credit')->referencedEntities();
@@ -786,6 +786,15 @@ function sw_get_media_caption($entity_id) {
     }
     if (!empty($credits) || !empty($provider)) {
       $caption .= ')';
+    }
+    return $caption;
+  }
+  elseif (!empty($entity) && $entity->bundle() == 'book') {
+    // Start with the book title.
+    $caption = $entity->label();
+    $book_caption = $entity->get('field_book_caption')->value;
+    if (!empty($book_caption)) {
+      $caption .= ' | ' . $book_caption;
     }
     return $caption;
   }
