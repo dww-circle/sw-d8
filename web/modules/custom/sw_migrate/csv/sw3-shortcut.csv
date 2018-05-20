@@ -1,6 +1,6 @@
 shortcut_set,weight,link_title,link_path
 front-page-editor,-10,Add content,node/add
-front-page-editor,-9,All content,admin/content
+front-page-editor,-9,Add media,media/add
 front-page-editor,-8,Find image,admin/content/image
 front-page-editor,-7,Find story,admin/content/story
 front-page-editor,-6,Reading queue,admin/structure/entityqueue/what_were_reading/what_were_reading
