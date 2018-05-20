@@ -123,6 +123,40 @@
   }
 }
 
+@mixin ie-grid {
+  @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+    /* IE10+ specific styles go here */
+
+    display: block !important;
+    -ms-grid-columns: none !important;
+
+    > *  {
+      display: inline-block !important;
+      padding: 5px;
+      vertical-align: top !important;
+    }
+  }
+}
+
+@mixin ie-grid-2 {
+  @include ie-grid;
+  @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+
+    > *  {
+      width: 49%;
+    }
+  }
+}
+
+@mixin ie-grid-3 {
+  @include ie-grid;
+  @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+    > *  {
+      width: 33%;
+    }
+  }
+}
+
 /// Link mixin
 /// @param {color} $normal - normal color
 /// @param {color} $hover  - hover

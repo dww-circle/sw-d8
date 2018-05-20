@@ -3,6 +3,7 @@
   margin-bottom: 60px;
 
   @include breakpoint($tablet) {
+    @include ie-grid-3;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 0 50px;
@@ -17,6 +18,8 @@
     @include title-fancy-red;
     grid-column-start: 1;
     grid-column-end: 3;
+    width: 100%; //to make IE11 happy.
+
     @include breakpoint($desktop) {
       grid-column-end: 4;
     }

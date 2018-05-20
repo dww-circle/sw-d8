@@ -32,6 +32,7 @@
   margin-bottom: 35px;
 
   @include breakpoint($desktop-large) {
+    @include ie-grid-2;
     display: grid;
     margin-bottom: 50px;
   }
