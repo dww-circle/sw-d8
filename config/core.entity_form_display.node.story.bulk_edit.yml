@@ -192,6 +192,7 @@ hidden:
   field_introduction: true
   field_kicker: true
   field_main_image: true
+  field_resources: true
   field_teaser: true
   field_wide_image: true
   path: true
