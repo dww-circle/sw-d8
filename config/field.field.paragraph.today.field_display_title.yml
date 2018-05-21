@@ -15,7 +15,7 @@ required: true
 translatable: true
 default_value:
   -
-    value: 'Today''s Stories'
+    value: 'New today'
 default_value_callback: ''
 settings: {  }
 field_type: string
