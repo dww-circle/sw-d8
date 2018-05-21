@@ -1340,27 +1340,13 @@ main {
 .embedded-entity ~ * {
   position: static; }
 
-article.embedded-entity .media--view-mode-embed,
+article.embedded-entity .media {
+  border-bottom: 10px solid #c80000;
+  margin: 0 auto 20px auto; }
+
 .caption-article {
   border-bottom: 10px solid #c80000;
-  margin: 0 auto;
-  max-width: 290px; }
-  @media (min-width: 541px) {
-    article.embedded-entity .media--view-mode-embed,
-    .caption-article {
-      float: left;
-      margin: 4px 20px 20px 0; } }
-  @media (min-width: 961px) {
-    article.embedded-entity .media--view-mode-embed,
-    .caption-article {
-      margin-bottom: 20px;
-      margin-left: -88px;
-      margin-right: 40px; } }
-  article.embedded-entity .media--view-mode-embed img,
-  .caption-article img {
-    height: auto;
-    width: 100%; }
-  article.embedded-entity .media--view-mode-embed figcaption,
+  margin: 0 auto 20px auto; }
   .caption-article figcaption {
     font-family: "FF DIN Pro Regular", sans-serif;
     font-size: 13px;
@@ -1368,12 +1354,34 @@ article.embedded-entity .media--view-mode-embed,
     padding-bottom: 16px;
     padding-top: 4px; }
 
-article.embedded-entity .media--view-mode-embed-wide {
-  border-bottom: 10px solid #c80000; }
-  article.embedded-entity .media--view-mode-embed-wide img {
-    height: auto;
-    margin: 0 auto;
-    width: 100%; }
+article.embedded-entity img,
+.caption-article.embedded-entity img {
+  height: auto;
+  width: 100%; }
+
+article.embedded-entity .media--view-mode-embed,
+.caption-article.embed {
+  max-width: 290px; }
+  @media (min-width: 541px) {
+    article.embedded-entity .media--view-mode-embed,
+    .caption-article.embed {
+      float: left;
+      margin: 4px 20px 20px 0; } }
+  @media (min-width: 961px) {
+    article.embedded-entity .media--view-mode-embed,
+    .caption-article.embed {
+      margin-bottom: 20px;
+      margin-left: -88px;
+      margin-right: 40px; } }
+
+article.embedded-entity .media--view-mode-embed-narrow,
+.caption-article.embed-narrow {
+  max-width: 210px; }
+  @media (min-width: 541px) {
+    article.embedded-entity .media--view-mode-embed-narrow,
+    .caption-article.embed-narrow {
+      float: left;
+      margin: 0 20px 20px 0; } }
 
 .caption-article.embed-wide {
   float: none;

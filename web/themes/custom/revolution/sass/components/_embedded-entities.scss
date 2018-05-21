@@ -2,10 +2,33 @@
   position: static;
 }
 
-article.embedded-entity .media--view-mode-embed, // embed without caption
-.caption-article { // embed with caption
+article.embedded-entity .media { // embed without caption
   border-bottom: 10px solid $c-red;
-  margin: 0 auto;
+  margin: 0 auto 20px auto;
+}
+
+.caption-article { // Any embed with a caption
+  border-bottom: 10px solid $c-red;
+  margin: 0 auto 20px auto;
+  figcaption {
+    font-family: $ff-din-regular;
+    font-size: 13px;
+    line-height: 17px;
+    padding-bottom: 16px;
+    padding-top: 4px;
+  }
+}
+
+article.embedded-entity, // Any embed without caption
+.caption-article.embedded-entity { // Any embed with a caption
+  img {
+    height: auto;
+    width: 100%;
+  }
+}
+
+article.embedded-entity .media--view-mode-embed, // embed without caption
+.caption-article.embed { // embed narrow with caption
   max-width: 290px;
 
   @include breakpoint($handheld) {
@@ -18,30 +41,17 @@ article.embedded-entity .media--view-mode-embed, // embed without caption
     margin-left: -88px;
     margin-right: 40px;
   }
-
-  img {
-    height: auto;
-    width: 100%;
-  }
-
-  figcaption {
-    font-family: $ff-din-regular;
-    font-size: 13px;
-    line-height: 17px;
-    padding-bottom: 16px;
-    padding-top: 4px;
-  }
 }
 
-article.embedded-entity .media--view-mode-embed-wide {
-  border-bottom: 10px solid $c-red;
+article.embedded-entity .media--view-mode-embed-narrow, // embed narrow without caption
+.caption-article.embed-narrow { // embed narrow with caption
+  max-width: 210px;
 
-  img {
-    height: auto;
-    margin: 0 auto;
-    width: 100%;
+  @include breakpoint($handheld) {
+    float: left;
+    margin: 0 20px 20px 0;
   }
-}
+}  
 
 .caption-article.embed-wide {
   float: none;
