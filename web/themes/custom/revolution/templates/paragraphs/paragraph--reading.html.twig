@@ -51,7 +51,9 @@
     {{ what_were_reading_queue }}
     <div class="reading__content-right clearfix">
       <div class="issue">
+        <a href="{{ issue_link }}">
         {{ content|without('field_display_title', 'field_book') }}
+        </a>
       </div>
       {{ content.field_book }}
     </div>

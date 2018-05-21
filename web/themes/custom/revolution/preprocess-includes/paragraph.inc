@@ -3,6 +3,7 @@
  * Implements hook_preprocess_HOOK().
  */
 
+use Drupal\Core\Url;
 use Drupal\node\Entity\Node;
 use Drupal\views\Views;
 
@@ -173,6 +174,10 @@ function revolution_preprocess_paragraph__reading(&$variables) {
   $view->setDisplay('block_queue');
   $render_array = $view->render();
   $variables['what_were_reading_queue'] =  \Drupal::service('renderer')->render($render_array);
+
+  $issues = $variables['paragraph']->get('field_issue')->referencedEntities();
+  $current_issue = reset($issues);
+  $variables['issue_link'] = Url::fromUri('internal:/issue/' . $current_issue->label(), ['absolute' => TRUE])->toString();
 }
 
 /*
