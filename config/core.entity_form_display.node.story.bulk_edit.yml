@@ -32,6 +32,97 @@ dependencies:
   module:
     - entity_browser_entity_form
     - inline_entity_form
+third_party_settings:
+  field_group:
+    group_author_information:
+      children:
+        - field_authors
+        - field_contributors
+      parent_name: ''
+      weight: 2
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: true
+        required_fields: false
+      label: 'Author information'
+      region: content
+    group_story_type:
+      children:
+        - field_section
+        - field_series
+        - field_story_type
+        - field_story_label
+        - field_interviewees
+      parent_name: ''
+      weight: 3
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: true
+        required_fields: false
+      label: 'Story type'
+      region: content
+    group_categories:
+      children:
+        - field_topic
+        - field_secondary_topic
+        - field_keywords
+      parent_name: ''
+      weight: 4
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: true
+        required_fields: true
+      label: Categories
+      region: content
+    group_location:
+      children:
+        - field_city
+        - field_state
+        - field_country
+      parent_name: ''
+      weight: 6
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: false
+      label: Location
+      region: content
+    group_images:
+      children:
+        - field_main_image
+        - field_wide_image
+      parent_name: ''
+      weight: 5
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: true
+        required_fields: false
+      label: Images
+      region: content
+    group_publication_information:
+      children:
+        - created
+        - field_issue_number
+      parent_name: ''
+      weight: 1
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: true
+        required_fields: false
+      label: 'Publication information'
+      region: content
 id: node.story.bulk_edit
 targetEntityType: node
 bundle: story
