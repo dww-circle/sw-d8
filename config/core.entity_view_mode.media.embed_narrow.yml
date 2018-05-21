@@ -1,0 +1,10 @@
+uuid: 3e94d09f-b0a6-4a2f-aa2f-ffb8621b3140
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.embed_narrow
+label: 'Embed (narrow)'
+targetEntityType: media
+cache: true
