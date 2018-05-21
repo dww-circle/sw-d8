@@ -102,6 +102,9 @@
   {% endif %}
 
   <div{{ content_attributes.addClass('node__content') }}>
+    {% if node.id == 5 %}
+      {% include  directory ~ '/templates/components/follow.html.twig' %}
+    {% endif %}
     {{ content }}
   </div>
 

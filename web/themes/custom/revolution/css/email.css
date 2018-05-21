@@ -124,11 +124,6 @@ span.bullet {
   text-transform: uppercase;
   padding: 2px 2px 3px 4px; }
 
-.fineprint {
-  display: block;
-  font-size: 13px;
-  line-height: 16px; }
-
 .svgsprite {
   display: none; }
 
@@ -155,9 +150,6 @@ body ul {
   display: block;
   font-family: "FF DIN Pro Regular", sans-serif;
   font-size: 14px; }
-
-.field--name-field-teaser p {
-  margin: 0; }
 
 .clearfix:after {
   clear: both;
@@ -212,14 +204,19 @@ main {
     .story-label {
       font-size: 16px; } }
 
+.helvetica,
 .field--name-field-teaser {
   color: #666666;
   font-family: "Helvetica", sans-serif;
   font-size: 14px;
   line-height: 18px; }
   @media (min-width: 961px) {
+    .helvetica,
     .field--name-field-teaser {
       font-size: 15px; } }
+  .helvetica p,
+  .field--name-field-teaser p {
+    margin: 0; }
 
 .story-link {
   display: block;
@@ -240,6 +237,29 @@ main {
     color: #7b6467; }
   body .story-link:visited:hover h4 {
     color: #504c4c; }
+
+.fineprint {
+  display: block;
+  font-size: 13px;
+  line-height: 16px; }
+
+.vocabulary-issue-number .content,
+.align-image-left {
+  margin-bottom: 30px; }
+  .vocabulary-issue-number .content:after,
+  .align-image-left:after {
+    clear: both;
+    content: " ";
+    display: table; }
+  .vocabulary-issue-number .content h3,
+  .align-image-left h3 {
+    margin-bottom: 0; }
+  .vocabulary-issue-number .content img,
+  .align-image-left img {
+    float: left;
+    height: auto;
+    margin-right: 10px;
+    max-width: 220px; }
 
 .contextual {
   z-index: 400; }

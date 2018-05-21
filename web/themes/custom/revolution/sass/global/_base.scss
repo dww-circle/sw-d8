@@ -142,13 +142,6 @@ span.bullet {
   padding: 2px 2px 3px 4px;
 }
 
-// Fineprint
-.fineprint {
-  display: block;
-  font-size: 13px;
-  line-height: 16px;
-}
-
 // Hide that SVG.
 .svgsprite {
   display: none;
@@ -181,10 +174,6 @@ body ul {
   display: block;
   font-family: $ff-din-regular;
   font-size: 14px;
-}
-
-.field--name-field-teaser p {
-  margin: 0;
 }
 
 .clearfix {
@@ -235,6 +224,7 @@ main {
 
 
 // Teaser Body Style.
+.helvetica,
 .field--name-field-teaser {
   color: #666666;
   font-family: "Helvetica", sans-serif;
@@ -243,6 +233,10 @@ main {
 
   @include breakpoint($desktop) {
     font-size: 15px;
+  }
+
+  p {
+    margin: 0;
   }
 }
 
@@ -281,6 +275,31 @@ main {
         color: $c-visited-hover;
       }
     }
+  }
+}
+
+// Fineprint
+.fineprint {
+  display: block;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+// Float image in container.
+.vocabulary-issue-number .content,
+.align-image-left { // Apply to parent.
+  @include clearfix;
+  margin-bottom: 30px;
+
+  h3 {
+    margin-bottom: 0;
+  }
+
+  img {
+    float: left;
+    height: auto;
+    margin-right: 10px;
+    max-width: 220px;
   }
 }
 
