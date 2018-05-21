@@ -1180,6 +1180,20 @@ main {
   line-height: 18px;
   border-bottom: 1px solid #bbb;
   margin-bottom: 20px; }
+  .block-sw-recent-articles-block .recent-articles-dates a {
+    text-decoration: none; }
+    .block-sw-recent-articles-block .recent-articles-dates a:link {
+      color: #1a272e; }
+    .block-sw-recent-articles-block .recent-articles-dates a:visited, .block-sw-recent-articles-block .recent-articles-dates a:link:visited {
+      color: #1a272e; }
+    .block-sw-recent-articles-block .recent-articles-dates a:focus {
+      color: #1a272e; }
+    .block-sw-recent-articles-block .recent-articles-dates a.is-active:hover, .block-sw-recent-articles-block .recent-articles-dates a.active:hover,
+    .block-sw-recent-articles-block .recent-articles-dates a .menu-item--active-trail a:hover, .block-sw-recent-articles-block .recent-articles-dates a.visited:hover, .block-sw-recent-articles-block .recent-articles-dates a:hover {
+      color: #c80000; }
+    .block-sw-recent-articles-block .recent-articles-dates a.active, .block-sw-recent-articles-block .recent-articles-dates a.is-active, .block-sw-recent-articles-block .recent-articles-dates a:active,
+    .menu-item--active-trail .block-sw-recent-articles-block .recent-articles-dates a {
+      color: #c80000; }
   .block-sw-recent-articles-block .recent-articles-dates ul {
     margin: 0;
     padding: 0;

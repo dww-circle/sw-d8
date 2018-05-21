@@ -23,6 +23,10 @@
     border-bottom: $border;
     margin-bottom: 20px;
 
+    a {
+      @include link-colors($c-black, $c-red, $c-red);
+      text-decoration: none;
+    }
     ul {
       margin: 0;
       padding: 0;
