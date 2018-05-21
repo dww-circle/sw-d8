@@ -37,6 +37,10 @@
     @include teaser-tiny;
   }
 
+  ul {
+    @include ul-unstyled;
+  }
+
 }
 
 .series .all-link {

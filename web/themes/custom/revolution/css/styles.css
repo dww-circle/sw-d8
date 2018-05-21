@@ -1072,7 +1072,7 @@ main {
   text-align: left; }
 
 .region-content-bottom {
-  border-top: 1px solid;
+  border-top: 1px solid #bbb;
   padding-top: 44px; }
   @media (min-width: 961px) {
     .region-content-bottom {
@@ -1322,7 +1322,7 @@ main {
   margin-bottom: 20px; }
 
 .block-sw-mailerlite-subscribe-block {
-  border-bottom: 1px solid #666;
+  border-bottom: 1px solid #bbb;
   padding-bottom: 30px; }
   .block-sw-mailerlite-subscribe-block .subscribe-form {
     font-family: Helvetica, sans-serif;
@@ -1463,6 +1463,15 @@ select {
     .node--type-insert-box .story-link .field--name-field-teaser {
       font-size: 12px;
       line-height: 16px; }
+  .node--type-insert-box ul {
+    list-style: none;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-top: 0;
+    padding-left: 0; }
+    .node--type-insert-box ul li {
+      list-style: none;
+      margin-left: 0; }
 
 .series .all-link {
   text-align: center; }
