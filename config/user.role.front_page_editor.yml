@@ -7,6 +7,7 @@ label: 'Front page editor'
 weight: -6
 is_admin: null
 permissions:
+  - 'access sw_story_queue_browser entity browser pages'
   - 'administer SW'
   - 'administer menu'
   - 'administer taxonomy'
@@ -46,6 +47,7 @@ permissions:
   - 'edit terms in story_type'
   - 'edit terms in topic'
   - 'link to any page'
+  - 'manipulate entityqueues'
   - 'revert page revisions'
   - 'revert slices revisions'
   - 'update from_the_archives entityqueue'

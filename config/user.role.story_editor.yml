@@ -66,7 +66,6 @@ permissions:
   - 'edit terms in keywords'
   - 'edit terms in server_folder'
   - 'edit terms in state'
-  - 'manipulate entityqueues'
   - 'override email address'
   - 'override flood control'
   - 'revert insert_box revisions'
