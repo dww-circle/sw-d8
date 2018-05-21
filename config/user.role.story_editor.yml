@@ -26,6 +26,7 @@ permissions:
   - 'access toolbar'
   - 'access user profiles'
   - 'change own username'
+  - 'clone media entity'
   - 'create audio media'
   - 'create book media'
   - 'create file media'
