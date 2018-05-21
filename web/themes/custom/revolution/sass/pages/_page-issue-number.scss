@@ -1,0 +1,15 @@
+.vocabulary-issue-number {
+  .field--name-field-issue-cover-image img {
+     margin: 0 auto 20px;
+  }
+  @include breakpoint($handheld) {
+    .field--name-field-issue-cover-image img {
+      float: left;
+      margin: 0 20px 0 0;
+    }
+  }
+  .field--name-field-issue-top-stories {
+    margin: 40px 0 0 0;
+    clear: both;
+  }
+}
