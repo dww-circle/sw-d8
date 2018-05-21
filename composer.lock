@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "288617c15facd32d4076e9cdb5355ebf",
+    "content-hash": "f56e3581bb55a7ed38028049f1af83b2",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1226,6 +1226,62 @@
                 "issues": "https://www.drupal.org/project/issues/auto_entitylabel"
             },
             "time": "2018-04-23 19:49:32"
+        },
+        {
+            "name": "drupal/auto_entityqueue",
+            "version": "1.0.0-alpha1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/auto_entityqueue",
+                "reference": "8.x-1.0-alpha1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/auto_entityqueue-8.x-1.0-alpha1.zip",
+                "reference": "8.x-1.0-alpha1",
+                "shasum": "f806934b19ac5b39c4ec57e7ca3b5e811a98b78a"
+            },
+            "require": {
+                "drupal/core": "~8.0",
+                "drupal/entityqueue": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha1",
+                    "datestamp": "1494606184",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "arshadcn",
+                    "homepage": "https://www.drupal.org/user/571032"
+                },
+                {
+                    "name": "mlanth",
+                    "homepage": "https://www.drupal.org/user/2843651"
+                },
+                {
+                    "name": "paboden",
+                    "homepage": "https://www.drupal.org/user/329794"
+                }
+            ],
+            "description": "Automatically adds entities to entityqueues.",
+            "homepage": "https://www.drupal.org/project/auto_entityqueue",
+            "support": {
+                "source": "http://cgit.drupalcode.org/auto_entityqueue"
+            }
         },
         {
             "name": "drupal/bueditor",
