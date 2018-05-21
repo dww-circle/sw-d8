@@ -7,7 +7,6 @@ dependencies:
     - field.field.media.book.field_image_url
     - field.field.media.book.field_media_image
     - field.field.media.book.field_original_url
-    - image.style.210x210
     - media.type.book
   module:
     - image
@@ -28,7 +27,7 @@ content:
     weight: 0
     label: hidden
     settings:
-      image_style: 210x210
+      image_style: ''
       image_link: ''
     third_party_settings: {  }
     type: image
