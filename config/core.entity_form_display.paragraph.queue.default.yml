@@ -3,11 +3,14 @@ langcode: en
 status: true
 dependencies:
   config:
+    - entity_browser.browser.sw_story_queue_browser
     - field.field.paragraph.queue.field_display_title
     - field.field.paragraph.queue.field_num
     - field.field.paragraph.queue.field_results
     - field.field.paragraph.queue.field_subqueue
     - paragraphs.paragraphs_type.queue
+  module:
+    - entity_browser
 id: paragraph.queue.default
 targetEntityType: paragraph
 bundle: queue
@@ -35,9 +38,17 @@ content:
     region: content
   field_subqueue:
     weight: 4
-    settings: {  }
+    settings:
+      entity_browser: sw_story_queue_browser
+      field_widget_display: label
+      field_widget_edit: true
+      field_widget_remove: true
+      open: true
+      selection_mode: selection_append
+      field_widget_replace: false
+      field_widget_display_settings: {  }
     third_party_settings: {  }
-    type: options_select
+    type: entity_browser_entity_reference
     region: content
 hidden:
   created: true
