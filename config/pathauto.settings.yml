@@ -32,6 +32,10 @@ punctuation:
   greater_than: 0
   slash: 0
   back_slash: 0
+  fancy-quote-open-single: 0
+  fancy-quote-close-single: 0
+  fancy-quotes-open-double: 0
+  fancy-quotes-close-double: 0
 verbose: false
 separator: '-'
 max_length: 255

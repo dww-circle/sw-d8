@@ -1643,3 +1643,13 @@ function sw_preprocess_views_view(&$variables) {
     $variables['view_array']['#attached']['library'][] = 'sw/entity-browser';
   }
 }
+
+/**
+ * Implements hook_pathauto_punctuation_chars_alter().
+ */
+function sw_pathauto_punctuation_chars_alter(array &$punctuation) {
+  $punctuation['fancy-quote-open-single'] = ['value' => '‘', 'name' => t('Fancy quote - open single')];
+  $punctuation['fancy-quote-close-single'] = ['value' => '’', 'name' => t('Fancy quote - close single')];
+  $punctuation['fancy-quotes-open-double'] = ['value' => '“', 'name' => t('Fancy quotes - open double')];
+  $punctuation['fancy-quotes-close-double'] = ['value' => '”', 'name' => t('Fancy quotes - close double')];
+}
