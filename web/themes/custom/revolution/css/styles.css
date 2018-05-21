@@ -827,6 +827,9 @@ main {
   margin: 40px 0 0 0;
   clear: both; }
 
+.vocabulary-issue-number .content {
+  margin: 0 0 40px 0; }
+
 .page-node-type-story .story-label {
   margin-bottom: 6px; }
   .page-node-type-story .story-label a {
