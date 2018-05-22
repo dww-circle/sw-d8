@@ -156,12 +156,17 @@
     }
   }
 
-  // Hide title on issue
-  // @todo keep from rendering.
-  .field--name-field-issue {
-
-    h2 {
-      display: none;
+  .issue {
+    a {
+      .field--name-field-issue-header {
+        color: $c-black;
+      }
+    }
+    a:hover {
+      text-decoration: none;
+      .field--name-field-issue-header {
+        color: $c-red;
+      }
     }
   }
 }

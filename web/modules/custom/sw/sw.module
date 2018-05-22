@@ -325,6 +325,11 @@ function sw_preprocess_taxonomy_term(&$variables) {
 
     }
   }
+  // Also render issue # terms for the front page (What We're Reading) as a
+  // "full page" view so we don't add a broken link to the title as an h2.
+  if ($variables['view_mode'] == 'front') {
+    $variables['page'] = TRUE;
+  }
 }
 
 /**

@@ -1989,8 +1989,13 @@ select {
     max-height: 80%;
     max-width: 80%; }
 
-.reading__content .field--name-field-issue h2 {
-  display: none; }
+.reading__content .issue a .field--name-field-issue-header {
+  color: #1a272e; }
+
+.reading__content .issue a:hover {
+  text-decoration: none; }
+  .reading__content .issue a:hover .field--name-field-issue-header {
+    color: #c80000; }
 
 .slice-title {
   font-family: 'FF DIN Pro Bold', sans-serif;
