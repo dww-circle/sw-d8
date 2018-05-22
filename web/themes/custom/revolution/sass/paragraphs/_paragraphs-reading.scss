@@ -7,15 +7,6 @@
     font-size: 20px;
     line-height: 24px;
     margin-bottom: 10px;
-    padding-top: 70px;
-
-    @include breakpoint($handheld) {
-      padding-top: 0;
-    }
-
-    @include breakpoint($desktop) {
-      padding-top: 0;
-    }
   }
 
   // Captions.
@@ -33,12 +24,6 @@
     @include breakpoint($desktop) {
       width: auto;
     }
-  }
-
-  // Space between "image" and headline.
-  .field--name-field-media-image,
-  .field--name-field-issue-cover-image img {
-    margin-bottom: 16px;
   }
 
   // "Grid" Layout
@@ -118,45 +103,12 @@
       margin-bottom: 0;
     }
 
-    .field--name-field-issue-cover-image {
-      float: left;
-      margin-right: 20px;
-
+    .field--name-field-issue-cover-image img {
+      margin: 0 auto 16px auto;
       @include breakpoint($handheld) {
-        float: none;
-        margin-right: 0;
-      }
-
-      @include breakpoint($desktop) {
-        margin-right: 20px;
+        margin: 0 0 16px 0;
       }
     }
-  }
-
-  // Book mat.
-  .field--name-field-media-image {
-    align-items: center;
-    background: #f1f2f2;
-    border: 1px solid #b8babc;
-    display: flex;
-    float: left;
-    height: 290px;
-    justify-content: center;
-    margin-right: 20px;
-    width: 220px;
-
-    @include breakpoint($desktop) {
-      float: none;
-    }
-
-    img {
-      height: auto;
-      max-height: 80%;
-      max-width: 80%;
-    }
-  }
-
-  .issue {
     a {
       .field--name-field-issue-header {
         color: $c-black;
@@ -167,6 +119,27 @@
       .field--name-field-issue-header {
         color: $c-red;
       }
+    }
+  }
+
+  // Book mat.
+  .field--name-field-media-image {
+    align-items: center;
+    background: #f1f2f2;
+    border: 1px solid #b8babc;
+    display: flex;
+    height: 290px;
+    justify-content: center;
+    margin-right: 20px;
+    width: 220px;
+    margin: 0 auto 16px;
+    @include breakpoint($handheld) {
+      margin: 0 0 16px 0;
+    }
+    img {
+      height: auto;
+      max-height: 80%;
+      max-width: 80%;
     }
   }
 }
