@@ -1969,6 +1969,10 @@ select {
   @media (min-width: 961px) {
     .reading__content .field--name-field-media-image {
       float: none; } }
+  .reading__content .field--name-field-media-image img {
+    height: auto;
+    max-height: 80%;
+    max-width: 80%; }
 
 .reading__content .field--name-field-issue h2 {
   display: none; }

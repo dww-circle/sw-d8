@@ -144,6 +144,12 @@
     @include breakpoint($desktop) {
       float: none;
     }
+
+    img {
+      height: auto;
+      max-height: 80%;
+      max-width: 80%;
+    }
   }
 
   // Hide title on issue
