@@ -26,11 +26,19 @@ function revolution_preprocess_field(&$variables) {
  * Implements hook_preprocess_FIELD__ENTITY__TYPE__FIELD().
  */
 function revolution_preprocess_field__paragraph__nested__field_articles(&$variables) {
-
   // Show image on the first story on the left.
+  // @todo This is dangerous and Wrong(tm). It'd be better to be getting a fresh
+  // render array here with the right view mode in the first place.  Short of
+  // that, if we're going to dynamically mess with #view_mode, we also have to
+  // update the cache keys, or Drupal will cache a render array for the wrong
+  // view mode (teaser-only where we expect an image, or image where we expect
+  // teaser-only).
   if ($variables['element']['#object']->get('parent_field_name')->value == 'field_nested_left') {
     $variables['items'][0]['content']['#view_mode'] = 'teaser_image_medium';
-
+    // @todo We should probably be more careful, but we know that the 4th item
+    // (index 3) in the keys array is the view mode, so we can save the expense
+    // of finding 'teaser' and replacing it by directly targetting the right item.
+    $variables['items'][0]['content']['#cache']['keys'][3] = 'teaser_image_medium';
     if (!isset($variables['items'][1])) {
       $variables['items'][0]['attributes']->setAttribute('class', 'border-none');
     }
