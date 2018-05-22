@@ -219,7 +219,7 @@ display:
         type: normal
         title: 'Better Off Red Podcast'
         menu_name: main
-        weight: -44
+        weight: 6
         parent: 'views_view:views.sw_section_list.page_1'
     cache_metadata:
       max-age: -1
