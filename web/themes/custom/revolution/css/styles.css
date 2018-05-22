@@ -815,21 +815,6 @@ main {
       font-size: 10px;
       padding: 0 5px; }
 
-.vocabulary-issue-number .field--name-field-issue-cover-image img {
-  margin: 0 auto 20px; }
-
-@media (min-width: 541px) {
-  .vocabulary-issue-number .field--name-field-issue-cover-image img {
-    float: left;
-    margin: 0 20px 0 0; } }
-
-.vocabulary-issue-number .field--name-field-issue-top-stories {
-  margin: 40px 0 0 0;
-  clear: both; }
-
-.vocabulary-issue-number .content {
-  margin: 0 0 40px 0; }
-
 .page-node-type-story .story-label {
   margin-bottom: 6px; }
   .page-node-type-story .story-label a {
@@ -992,6 +977,21 @@ main {
 
 .view .feed-icons {
   display: none; }
+
+.view-sw-issue-stories .field--name-field-issue-cover-image img {
+  margin: 0 auto 20px; }
+
+@media (min-width: 541px) {
+  .view-sw-issue-stories .field--name-field-issue-cover-image img {
+    float: right;
+    margin: 0 0 0 20px; } }
+
+.view-sw-issue-stories .field--name-field-issue-top-stories {
+  margin: 40px 0 0 0;
+  clear: both; }
+
+.view-sw-issue-stories .content {
+  margin: 0 0 40px 0; }
 
 .view-sw-search .story-link,
 .view-sw-search .teaser-conditional-with-image {

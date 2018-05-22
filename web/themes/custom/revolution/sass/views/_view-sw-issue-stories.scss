@@ -1,11 +1,11 @@
-.vocabulary-issue-number {
+.view-sw-issue-stories {
   .field--name-field-issue-cover-image img {
      margin: 0 auto 20px;
   }
   @include breakpoint($handheld) {
     .field--name-field-issue-cover-image img {
-      float: left;
-      margin: 0 20px 0 0;
+      float: right;
+      margin: 0 0 0 20px;
     }
   }
   .field--name-field-issue-top-stories {
