@@ -1939,6 +1939,8 @@ select {
     .reading__content .issue {
       margin: 0;
       width: 220px; } }
+  .reading__content .issue .content {
+    margin-bottom: 0; }
   .reading__content .issue .field--name-field-issue-cover-image {
     float: left;
     margin-right: 20px; }
