@@ -1408,6 +1408,11 @@ article.embedded-entity .media--view-mode-embed-narrow,
     .caption-article.embed-wide {
       margin: 0 auto; } }
 
+.embedded-entity.full {
+  margin-bottom: 40px; }
+  .embedded-entity.full .media {
+    border: 0; }
+
 button,
 input[type=submit] {
   font-family: 'FF DIN Pro Bold', sans-serif;
@@ -1669,9 +1674,6 @@ select {
       display: inline-block;
       margin: 0 10px; } }
 
-/**
- * Styles specific to the follow links in the site footer.
- */
 .footer-wrapper .follow-label {
   font-size: 16px;
   text-transform: uppercase; }
@@ -1682,6 +1684,17 @@ select {
   .footer-wrapper .social-links li {
     display: inline-block;
     margin: 0 10px; }
+
+.node__content .follow {
+  margin-bottom: 50px;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .node__content .follow li {
+    margin: 0 10px; }
+    @media (min-width: 961px) {
+      .node__content .follow li {
+        margin: 0 30px; } }
 
 .field--name-field-ad img,
 .field--name-field-ads img,

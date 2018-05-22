@@ -5,7 +5,7 @@
   { 'service': 'rss', 'link': url('view.sw_recent.feed_1'), 'text': 'RSS Feed'},
 ] %}
 
-<ul class="social-links share">
+<ul class="social-links follow">
   {% for linkdata in services %}
     <li class="{{ linkdata.service }}">
       <a href="{{ linkdata.link }}" title="{{ linkdata.text }}" rel="noopener" target="_blank">

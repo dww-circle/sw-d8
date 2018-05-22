@@ -598,6 +598,11 @@ article.embedded-entity .media--view-mode-embed-narrow,
     .caption-article.embed-wide {
       margin: 0 auto; } }
 
+.embedded-entity.full {
+  margin-bottom: 40px; }
+  .embedded-entity.full .media {
+    border: 0; }
+
 .node--type-insert-box {
   border-top: 4px solid #1a272e;
   padding-top: 13px;
@@ -683,9 +688,6 @@ article.embedded-entity .media--view-mode-embed-narrow,
     text-indent: 0;
     width: 40px; }
 
-/**
- * Styles specific to the follow links in the site footer.
- */
 .footer-wrapper .follow-label {
   font-size: 16px;
   text-transform: uppercase; }
@@ -696,6 +698,17 @@ article.embedded-entity .media--view-mode-embed-narrow,
   .footer-wrapper .social-links li {
     display: inline-block;
     margin: 0 10px; }
+
+.node__content .follow {
+  margin-bottom: 50px;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .node__content .follow li {
+    margin: 0 10px; }
+    @media (min-width: 961px) {
+      .node__content .follow li {
+        margin: 0 30px; } }
 
 button,
 input[type=submit] {

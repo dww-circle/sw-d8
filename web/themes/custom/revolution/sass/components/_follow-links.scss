@@ -1,6 +1,4 @@
-/**
- * Styles specific to the follow links in the site footer.
- */
+// Styles specific to the follow links in the site footer.
 .footer-wrapper {
   // See _footer.scss for global footer styles.
 
@@ -16,6 +14,20 @@
     li {
       display: inline-block;
       margin: 0 10px;
+    }
+  }
+}
+
+// Follow links on at top of content. Used on node/5 only as of 3/21/18.
+.node__content .follow {
+  margin-bottom: 50px;
+  justify-content: center;
+
+  li {
+    margin: 0 10px;
+
+    @include breakpoint($desktop) {
+      margin: 0 30px;
     }
   }
 }

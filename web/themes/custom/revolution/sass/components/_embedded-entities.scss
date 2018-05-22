@@ -62,3 +62,12 @@ article.embedded-entity .media--view-mode-embed-narrow, // embed narrow without 
     margin: 0 auto;
   }
 }
+
+//Used on node/5 only as of 3/21/18.
+.embedded-entity.full {
+  margin-bottom: 40px;
+
+  .media {
+    border: 0;
+  }
+}
