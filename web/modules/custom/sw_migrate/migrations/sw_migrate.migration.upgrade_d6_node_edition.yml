@@ -38,6 +38,9 @@ process:
   sticky:
     plugin: default_value
     default_value: 0
+  field_archive_date:
+    plugin: sw_edition_date
+    source: title
   body/format:
     plugin: default_value
     default_value: 'full_html'
