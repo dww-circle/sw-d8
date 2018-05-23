@@ -1,0 +1,57 @@
+uuid: 8c610418-a97d-4504-97bb-c9bced564c9a
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d6_node_edition
+class: Drupal\migrate\Plugin\Migration
+migration_tags:
+  - 'Drupal 6'
+  - Content
+migration_group: sw_d6
+label: 'Nodes (edition)'
+
+source:
+  plugin: d6_node
+  node_type: edition
+
+destination:
+  plugin: 'entity:node'
+  default_bundle: static_page
+
+process:
+  nid: nid
+  vid: vid
+  langcode:
+    plugin: default_value
+    source: language
+    default_value: und
+  title: title
+  uid: node_uid
+  status: status
+  created: created
+  changed: changed
+# Ignore the D6 value, we never want static pages 'promoted to the front page'.
+  promote:
+    plugin: default_value
+    default_value: 0
+# Ignore the D6 value, we never want static pages 'sticky at the top of lists'.
+  sticky:
+    plugin: default_value
+    default_value: 0
+  body/format:
+    plugin: default_value
+    default_value: 'full_html'
+  revision_uid: revision_uid
+  revision_log: log
+  revision_timestamp: timestamp
+
+migration_dependencies:
+  required:
+    - upgrade_d6_user
+    - upgrade_d6_node_type
+    - upgrade_d6_node_settings
+    - upgrade_d6_filter_format
+  optional:
+    - upgrade_d6_field_instance_widget_settings
+    - upgrade_d6_field_formatter_settings
+    - upgrade_d6_upload_field_instance
