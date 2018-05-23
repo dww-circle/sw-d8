@@ -263,10 +263,12 @@ processor_settings:
   entity_status: {  }
   highlight:
     highlight: always
-    highlight_partial: true
+    highlight_partial: false
     excerpt: true
     excerpt_length: 256
-    exclude_fields: {  }
+    exclude_fields:
+      - issue_number_txt
+      - keyword
     prefix: '<strong>'
     suffix: '</strong>'
     weights:
@@ -326,31 +328,6 @@ processor_settings:
       preprocess_index: -48
       preprocess_query: -48
   rendered_item: {  }
-  stemmer:
-    all_fields: true
-    fields:
-      - rendered_item_full
-      - aggregated_authors
-      - authors_name
-      - interviewees_name
-      - contributors_name
-      - issue_number_txt
-      - keyword
-      - main_topic_name
-      - secondary_topic_name
-      - series_name
-      - section_name
-      - teaser
-      - city_name
-      - state_name
-      - country_name
-      - title
-    exceptions:
-      texan: texa
-      mexican: mexic
-    weights:
-      preprocess_index: -42
-      preprocess_query: -43
   tokenizer:
     all_fields: true
     fields:
