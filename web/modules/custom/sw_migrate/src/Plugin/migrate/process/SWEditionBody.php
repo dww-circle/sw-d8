@@ -42,8 +42,16 @@ class SWEditionBody extends ProcessPluginBase {
     }
     return [
       'value' => str_replace(
-        'https://socialistworker.org/sites/default/files',
-        '/sites/default/files/archive',
+        [
+          'https://socialistworker.org/sites/default/files/css',
+          'https://socialistworker.org/sites/default/files/js',
+          'https://socialistworker.org/sites/default/files/imagecache',
+        ],
+        [
+          '/sites/default/files/archive/css',
+          '/sites/default/files/archive/js',
+          '/sites/default/files/imagecache',
+        ],
         $request->getBody()->getContents()
       ),
       'format' => 'full_html',
