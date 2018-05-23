@@ -23,6 +23,11 @@ $config_directories = array(
   CONFIG_SYNC_DIRECTORY => dirname(DRUPAL_ROOT) . '/config',
 );
 
+// Only enable Google Analytics on the live instance.
+if ($_ENV['PANTHEON_ENVIRONMENT'] == 'live') {
+  $config['google_analytics.settings']['account'] = 'UA-3149553-1';
+}
+
 /**
  * If there is a local settings file, then include it
  */
