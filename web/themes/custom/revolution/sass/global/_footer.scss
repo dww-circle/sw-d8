@@ -24,4 +24,7 @@
   p:first-of-type {
     color: $c-red-light;
   }
+  a {
+    @include link-colors($c-red-light);
+  }
 }

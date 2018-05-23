@@ -7,5 +7,5 @@ dependencies:
 id: footer_social
 title: 'Footer Text'
 content:
-  value: "<p>Published by the International Socialist Organization.</p>\r\n\r\n<p>Material on this Web site is licensed by SocialistWorker.org, under a Creative Commons (by-nc-nd 3.0) license, except for articles that are republished with permission. Readers are welcome to share and use material belonging to this site for non-commercial purposes, as long as they are attributed to the author and SocialistWorker.org.</p>\r\n"
+  value: "<p>Published by the <a href=\"https://www.internationalsocialist.org\">International Socialist Organization</a>.</p>\r\n\r\n<p>Material on this Web site is licensed by SocialistWorker.org, under a Creative Commons (by-nc-nd 3.0) license, except for articles that are republished with permission. Readers are welcome to share and use material belonging to this site for non-commercial purposes, as long as they are attributed to the author and SocialistWorker.org.</p>\r\n"
   format: full_html

@@ -421,6 +421,18 @@ main {
     line-height: 16px; }
   .footer-wrapper p:first-of-type {
     color: #ea3223; }
+  .footer-wrapper a:link {
+    color: #ea3223; }
+  .footer-wrapper a:visited, .footer-wrapper a:link:visited {
+    color: #ea3223; }
+  .footer-wrapper a:focus {
+    color: #ea3223; }
+  .footer-wrapper a.active:hover,
+  .menu-item--active-trail .footer-wrapper a:hover, .footer-wrapper a.visited:hover, .footer-wrapper a:hover {
+    color: #ea3223; }
+  .footer-wrapper a.active, .footer-wrapper a.is-active, .footer-wrapper a:active,
+  .menu-item--active-trail .footer-wrapper a {
+    color: #ea3223; }
 
 .header {
   background: black;
@@ -474,6 +486,20 @@ main {
       display: inline-block;
       text-align: right;
       width: 275px; } }
+  .header-sublogo a:link {
+    color: white; }
+  .header-sublogo a:visited, .header-sublogo a:link:visited {
+    color: white; }
+  .header-sublogo a:focus {
+    color: white; }
+  .header-sublogo a.is-active:hover, .header-sublogo a.active:hover,
+  .header-sublogo a .menu-item--active-trail a:hover, .header-sublogo a.visited:hover, .header-sublogo a:hover {
+    color: #c80000; }
+  .header-sublogo a.active, .header-sublogo a.is-active, .header-sublogo a:active,
+  .menu-item--active-trail .header-sublogo a {
+    color: white; }
+  .header-sublogo a:hover {
+    text-decoration: none; }
 
 .sublogo-mod {
   color: #757575; }

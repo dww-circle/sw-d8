@@ -54,6 +54,12 @@
     text-align: right;
     width: 275px;
   }
+  a {
+    @include link-colors(white, $c-red);
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }
 
 .sublogo-mod {
