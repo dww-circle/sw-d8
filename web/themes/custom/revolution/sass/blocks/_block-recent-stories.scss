@@ -44,3 +44,9 @@
     @include teaser-tiny;
   }
 }
+
+// Hide contextual link so grid doesn't break for users without permissions.
+// @todo Better solution is to make sure the div either retains the 'contextual' class or doesn't render at all.
+[data-contextual-id="block:block=sw_recent_stories:langcode=en"] {
+  display: none;
+}
