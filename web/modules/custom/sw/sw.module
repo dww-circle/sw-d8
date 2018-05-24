@@ -1439,8 +1439,22 @@ function sw_views_pre_render_sw_search(ViewExecutable $view) {
   // Since we're messing with teaser render arrays, only cache results per page.
   $view->element['#cache']['contexts'][] = 'route';
   foreach ($view->result as $index => $result) {
+    $teaser = [];
     $node = $result->_object->getValue();
-    if (!empty($result->search_api_excerpt) && !empty($node)) {
+    if ($node->bundle() == 'story') {
+      $created = '<p class="field--name-created">' . format_date($node->getCreatedTime(), 'custom', 'F j, Y') . '</p>';
+      $teaser = $node->get('field_teaser')->getValue();
+      if (!empty($teaser[0]['value'])) {
+        $teaser[0]['value'] .= $created;
+      }
+      else {
+        $teaser[0] = [
+          'value' => $created,
+          'format' => 'filtered_html',
+        ];
+      }
+    }
+    if (!empty($result->search_api_excerpt) && !empty($teaser)) {
       $excerpt = $result->search_api_excerpt;
       // If the excerpt contains our custom person tokens, replace them now.
       if (strstr($excerpt, '%author') !== FALSE || strstr($excerpt, '%interviewee') !== FALSE) {
@@ -1450,22 +1464,15 @@ function sw_views_pre_render_sw_search(ViewExecutable $view) {
       }
       $excerpt = '<p class="highlighted-results">' . $excerpt . '<p>';
       unset($view->result[$index]->search_api_excerpt);
-      $properties = $result->_object->getProperties();
-      if (!empty($properties['field_teaser'])) {
-        $teaser = $result->_object->get('field_teaser')->getValue();
-        if (!empty($teaser)) {
-          $teaser[0]['value'] .= $excerpt;
-        }
-        else {
-          $teaser[0] = [
-            'value' => $excerpt,
-            'format' => 'filtered_html',
-          ];
-        }
+      if (!empty($teaser)) {
+        $teaser[0]['value'] .= $excerpt;
       }
-    }
-    if ($node->bundle() == 'story') {
-      $teaser[0]['value'] .= '<span class="field--name-created">' . format_date($node->getCreatedTime(), 'custom', 'F j, Y') . '</span>';
+      else {
+        $teaser[0] = [
+          'value' => $excerpt,
+          'format' => 'filtered_html',
+        ];
+      }
     }
     if (!empty($teaser)) {
       $view->result[$index]->_object->set('field_teaser', $teaser);
