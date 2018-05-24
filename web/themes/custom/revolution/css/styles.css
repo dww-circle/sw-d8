@@ -1447,6 +1447,10 @@ article.embedded-entity .media--view-mode-embed-narrow,
   .embedded-entity.full .media {
     border: 0; }
 
+.facets-widget-checkbox label {
+  display: inline;
+  margin-left: 10px; }
+
 button,
 input[type=submit] {
   font-family: 'FF DIN Pro Bold', sans-serif;
