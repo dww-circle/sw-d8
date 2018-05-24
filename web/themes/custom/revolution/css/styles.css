@@ -945,9 +945,6 @@ main {
       font-size: 12px;
       line-height: 16px; }
 
-.page-node-type-story .forward-page {
-  display: none; }
-
 .page-node-type-blog-critical-reading .node--type-blog-critical-reading {
   font-family: "PT Serif", "Georgia", "Times New Roman", "Times", serif;
   font-size: 18px;

@@ -1,6 +1,6 @@
 langcode: en
 forward_entity_node: true
-forward_view_full: true
+forward_view_full: false
 forward_view_teaser: false
 forward_interface_type: link
 forward_interface_title: 'Email this [forward:entity-type]'
@@ -30,8 +30,6 @@ forward_flood_control_error: 'You can''t send more than @number messages per hou
 _core:
   default_config_hash: LjNmrZEGeLdWqwJcnscz5MMdBFPuS_pFjmJx0AoTFAQ
 forward_email_from_address: no-reply@socialistworker.org
-forward_node_external_article: true
-forward_node_story: true
 forward_form_allow_plain_text: false
 forward_filter_format_html: ''
 forward_filter_format_plain_text: forward_plain_text

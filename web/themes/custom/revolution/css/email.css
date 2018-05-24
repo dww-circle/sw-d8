@@ -494,9 +494,6 @@ main {
       font-size: 12px;
       line-height: 16px; }
 
-.page-node-type-story .forward-page {
-  display: none; }
-
 .body {
   max-width: 800px;
   padding: 10px; }
