@@ -45,10 +45,12 @@
     @include breakpoint($desktop) {
       order: 0;
       padding-left: 50px;
+      margin-right: -50px;
     }
 
     @include breakpoint($desktop-large) {
       padding-left: 70px;
+      margin-right: 0;
     }
   }
 

@@ -373,10 +373,12 @@ main {
       -webkit-order: 0;
           -ms-flex-order: 0;
               order: 0;
-      padding-left: 50px; } }
+      padding-left: 50px;
+      margin-right: -50px; } }
   @media (min-width: 1270px) {
     .layout-sidebar .region-sidebar {
-      padding-left: 70px; } }
+      padding-left: 70px;
+      margin-right: 0; } }
 
 .layout-sidebar .region-content-bottom {
   -webkit-order: 2;
