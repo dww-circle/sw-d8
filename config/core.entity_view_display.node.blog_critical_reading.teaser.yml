@@ -24,15 +24,11 @@ content:
     region: content
     label: hidden
     settings:
-      trim_length: 600
-    third_party_settings: {  }
-  links:
-    weight: 1
-    region: content
-    settings: {  }
+      trim_length: 400
     third_party_settings: {  }
 hidden:
   body: true
   field_article_headline: true
   field_article_source: true
   field_article_url: true
+  links: true
