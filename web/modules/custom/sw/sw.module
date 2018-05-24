@@ -369,24 +369,14 @@ function sw_preprocess_node_story(&$variables) {
   // For full view, we'll also need them to rewrite '%author' (and perhaps
   // %interviewee) in the introduction. So, we load all these target entities
   // once, and stash them into the $node object for re-use.
-  foreach (['authors', 'interviewees'] as $field_id) {
-    sw_load_referenced_entities($variables['node'], $field_id);
-  }
+  sw_load_story_people($variables['node']);
 
   $variables['story_label'] = sw_get_story_label($variables['node'], $variables['view_mode']);
 
   if (in_array($variables['view_mode'], ['full', 'forward', 'rss'])) {
-    if (!empty($variables['node']->sw_authors)) {
-      $placeholders['%author'] = sw_get_entity_label_multiple($variables['node']->sw_authors, 'sw_author_label');
-    }
-    if (!empty($variables['node']->sw_interviewees)) {
-      $placeholders['%interviewee'] = sw_get_entity_label_multiple($variables['node']->sw_interviewees, 'sw_subject_label');
-    }
-    if (!empty($placeholders)) {
-      foreach (['field_introduction', 'field_body_introduction'] as $intro_field) {
-        if (!empty($variables['content'][$intro_field][0]['#text'])) {
-          $variables['content'][$intro_field][0]['#text'] = strtr($variables['content'][$intro_field][0]['#text'], $placeholders);
-        }
+    foreach (['field_introduction', 'field_body_introduction'] as $intro_field) {
+      if (!empty($variables['content'][$intro_field][0]['#text'])) {
+        $variables['content'][$intro_field][0]['#text'] = sw_replace_people_tokens($variables['node'], $variables['content'][$intro_field][0]['#text']);
       }
     }
     sw_load_referenced_entities($variables['node'], 'contributors');
@@ -584,6 +574,40 @@ function sw_load_referenced_entities(EntityInterface $entity, $field_id) {
   if (!isset($entity->{'sw_' . $field_id})) {
     $entity->{'sw_' . $field_id} = $entity->get('field_' . $field_id)->referencedEntities();
   }
+}
+
+function sw_load_story_people(NodeInterface &$story) {
+  foreach (['authors', 'interviewees'] as $field_id) {
+    sw_load_referenced_entities($story, $field_id);
+  }
+}
+
+/**
+ * Replaces %author and %interviewee tokens with the names (as links).
+ *
+ * @param \Drupal\node\NodeInterface $story
+ *   The story for the right people to use for the token values.
+ *
+ * @param string $text
+ *   The text to do the token replacement in.
+ *
+ * @return string
+ *   The new text, properly formatted with tokens replaced.
+ */
+function sw_replace_people_tokens(NodeInterface &$story, $text) {
+  if (strstr($text, '%author') !== FALSE || strstr($text, '%interviewee') !== FALSE) {
+    sw_load_story_people($story);
+    if (!empty($story->sw_authors)) {
+      $token_values['%author'] = sw_get_entity_label_multiple($story->sw_authors, 'sw_author_label');
+    }
+    if (!empty($story->sw_interviewees)) {
+      $token_values['%interviewee'] = sw_get_entity_label_multiple($story->sw_interviewees, 'sw_subject_label');
+    }
+    if (!empty($token_values)) {
+      return strtr($text, $token_values);
+    }
+  }
+  return $text;
 }
 
 function sw_contributor_sort($a, $b) {
