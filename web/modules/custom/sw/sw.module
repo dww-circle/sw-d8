@@ -1229,7 +1229,7 @@ function sw_preprocess_html(&$variables) {
       ];
     }
     $teaser = $node->get('field_teaser')->getValue();
-    if (!empty($teaser)) {
+    if (!empty($teaser[0]['value'])) {
       $build = [
         '#type' => 'processed_text',
         '#text' => $teaser[0]['value'],
