@@ -18,8 +18,12 @@ use Drupal\taxonomy\TermInterface;
 use Drupal\user\Entity\User;
 use Drupal\views\ViewExecutable;
 
+use Drupal\search_api\Query\QueryInterface;
+
 use Drupal\sw\DraftToLive;
 use Drupal\sw\Plugin\Block\SWTodaysStoriesBlock;
+
+use Solarium\QueryType\Select\Query\Query;
 
 // @todo: Create on SW 2.0 and finalize the nid.
 const SW_ORG_AUTHOR_NID = 39262;
@@ -1711,4 +1715,32 @@ function sw_pathauto_punctuation_chars_alter(array &$punctuation) {
   $punctuation['fancy-quote-close-single'] = ['value' => '’', 'name' => t('Fancy quote - close single')];
   $punctuation['fancy-quotes-open-double'] = ['value' => '“', 'name' => t('Fancy quotes - open double')];
   $punctuation['fancy-quotes-close-double'] = ['value' => '”', 'name' => t('Fancy quotes - close double')];
+}
+
+/**
+ * Implements hook_search_api_solr_query_alter().
+ *
+ * Boost more recent content in search results.
+ *
+ * This sends a 'boost' function that uses date math to demote older stuff
+ * using an exponential age function.
+ *
+ * Details about the diff between bf and 'boost' function in
+ * https://nolanlawson.com/2012/06/02/comparing-boost-methods-in-solr/
+ *
+ * Explanation of the function:
+ * https://www.metaltoad.com/blog/date-boosting-solr-drupal-search-results
+ *
+ * OLD howto:
+ * https://www.drupal.org/node/2194055
+ *
+ * Works in D8 & Current Solr:
+ * https://www.drupal.org/node/2823538
+ */
+function sw_search_api_solr_query_alter(\Solarium\QueryType\Select\Query\Query $solarium_query, \Drupal\search_api\Query\QueryInterface $query) {
+  // 'boost' is a solr keyword.
+  $solarium_query->addParam(
+    'boost',
+    'recip(abs(ms(NOW/HOUR,ds_created)),3.16e-11,1,.1)'
+  );
 }
