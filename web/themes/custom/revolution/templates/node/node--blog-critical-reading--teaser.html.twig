@@ -1,0 +1,30 @@
+{%
+  set classes = [
+    'node--type-' ~ node.bundle|clean_class,
+    not node.isPublished() ? 'node--unpublished',
+    view_mode ? 'critical-reading--' ~ view_mode|clean_class,
+    'nid-' ~ node.id
+]
+%}
+
+<a href="{{ url }}" rel="bookmark" class="story-link" title="{{ node.label }}">
+
+  <article{{ attributes.addClass(classes) }}>
+
+    <div class="content">
+      <div class="story-label">{{ story_label }}</div>
+
+      <h4{{ title_attributes }}>
+        {{ title_prefix }}
+        {{ label }}
+        {{ title_suffix }}
+      </h4>
+
+      <div{{ content_attributes.addClass('node__content') }}>
+        {{ content }}
+        {{ date }}
+      </div>
+    </div>
+
+  </article>
+</a>

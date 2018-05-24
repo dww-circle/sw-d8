@@ -1027,6 +1027,15 @@ main {
 .view-sw-search .field--name-field-teaser p.field--name-created {
   margin-top: 5px; }
 
+.view-sw-search .field--name-field-blog-comment {
+  color: #666666;
+  font-family: "Helvetica", sans-serif;
+  font-size: 14px;
+  line-height: 18px; }
+  @media (min-width: 961px) {
+    .view-sw-search .field--name-field-blog-comment {
+      font-size: 15px; } }
+
 .view-sw-search .node__content,
 .view-sw-search .views-field-search-api-excerpt {
   color: #72726c;
@@ -1056,11 +1065,6 @@ main {
     .view-sw-search h2 a.active, .view-sw-search h2 a.is-active, .view-sw-search h2 a:active,
     .menu-item--active-trail .view-sw-search h2 a {
       color: #7b6467; }
-
-.view-sw-search .node__links {
-  margin-bottom: 10px; }
-  .view-sw-search .node__links .inline li:first-child {
-    padding-left: 0; }
 
 .view-sw-series-stories .field--name-description {
   font-family: "FF DIN Pro Regular", sans-serif; }

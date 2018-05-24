@@ -351,6 +351,11 @@ function sw_preprocess_node(&$variables) {
     case 'insert_box':
       sw_preprocess_node_insert_box($variables);
       break;
+
+    case 'blog_critical_reading':
+      sw_preprocess_node_critical_reading($variables);
+      break;
+
   }
 }
 
@@ -559,6 +564,18 @@ function sw_preprocess_node_insert_box(&$variables) {
 
   }
   $variables['label'] = $insert_title;
+}
+
+/**
+ * Preprocess function for blog_critical_reading nodes.
+ */
+function sw_preprocess_node_critical_reading(&$variables) {
+  $variables['story_label'] = t('From the critical reading blog');
+  if ($variables['view_mode'] == 'teaser') {
+    if (!empty($variables['content']['field_blog_comment'][0]['#text'])) {
+      $variables['content']['field_blog_comment'][0]['#text'] = strip_tags($variables['content']['field_blog_comment'][0]['#text'], '<p><em><strong><i><b>');
+    }
+  }
 }
 
 /**
@@ -1444,21 +1461,16 @@ function sw_views_pre_render_sw_search(ViewExecutable $view) {
   $view->element['#cache']['contexts'][] = 'route';
   foreach ($view->result as $index => $result) {
     $teaser = [];
+    $teaser_field = '';
     $node = $result->_object->getValue();
-    if ($node->bundle() == 'story') {
-      $created = '<p class="field--name-created">' . format_date($node->getCreatedTime(), 'custom', 'F j, Y') . '</p>';
-      $teaser = $node->get('field_teaser')->getValue();
-      if (!empty($teaser[0]['value'])) {
-        $teaser[0]['value'] .= $created;
-      }
-      else {
-        $teaser[0] = [
-          'value' => $created,
-          'format' => 'filtered_html',
-        ];
+    $properties = $result->_object->getProperties();
+    foreach (['field_teaser', 'field_blog_comment'] as $field_name) {
+      if (!empty($properties[$field_name])) {
+        $teaser_field = $field_name;
+        continue;
       }
     }
-    if (!empty($result->search_api_excerpt) && !empty($teaser)) {
+    if (!empty($result->search_api_excerpt) && !empty($node)) {
       $excerpt = $result->search_api_excerpt;
       // If the excerpt contains our custom person tokens, replace them now.
       if (strstr($excerpt, '%author') !== FALSE || strstr($excerpt, '%interviewee') !== FALSE) {
@@ -1468,6 +1480,8 @@ function sw_views_pre_render_sw_search(ViewExecutable $view) {
       }
       $excerpt = '<p class="highlighted-results">' . $excerpt . '<p>';
       unset($view->result[$index]->search_api_excerpt);
+
+      $teaser = $node->get($teaser_field)->getValue();
       if (!empty($teaser)) {
         $teaser[0]['value'] .= $excerpt;
       }
@@ -1478,8 +1492,20 @@ function sw_views_pre_render_sw_search(ViewExecutable $view) {
         ];
       }
     }
+    if ($node->bundle() == 'story') {
+      $created = '<p class="field--name-created">' . format_date($node->getCreatedTime(), 'custom', 'F j, Y') . '</p>';
+      if (!empty($teaser[0]['value'])) {
+        $teaser[0]['value'] .= $created;
+      }
+      else {
+        $teaser[0] = [
+          'value' => $created,
+          'format' => 'filtered_html',
+        ];
+      }
+    }
     if (!empty($teaser)) {
-      $view->result[$index]->_object->set('field_teaser', $teaser);
+      $view->result[$index]->_object->set($teaser_field, $teaser);
     }
   }
 }

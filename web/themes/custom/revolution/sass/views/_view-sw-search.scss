@@ -10,6 +10,16 @@
     margin-top: 5px;
   }
 
+  .field--name-field-blog-comment {
+    color: #666666;
+    font-family: "Helvetica", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    @include breakpoint($desktop) {
+      font-size: 15px;
+    }
+  }
+
   .node__content,
   .views-field-search-api-excerpt {
     color: $c-hover;
@@ -37,11 +47,4 @@
     }
   }
 
-  .node__links {
-    margin-bottom: 10px;
-
-    .inline li:first-child {
-      padding-left: 0;
-    }
-  }
 }
