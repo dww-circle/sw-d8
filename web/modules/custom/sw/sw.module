@@ -339,10 +339,15 @@ function sw_preprocess_taxonomy_term(&$variables) {
 /**
  * Implements hook_preprocess_HOOK() for nodes.
  *
- * For now, we're only processing stories, but that'll change. Instead of
- * stuffing everything into a giant function, call bundle-specific functions.
+ * Handles a few global things, then calls out to bundle-specific functions.
  */
 function sw_preprocess_node(&$variables) {
+  // Search result excerpts are different on every search query, so we have to
+  // vary these render arrays by the route and full URL (including query args).
+  if ($variables['view_mode'] == 'search_result') {
+    $variables['#cache']['contexts'][] = 'route';
+    $variables['#cache']['contexts'][] = 'url';
+  }
   switch ($variables['node']->getType()) {
     case 'story':
       sw_preprocess_node_story($variables);
@@ -571,7 +576,7 @@ function sw_preprocess_node_insert_box(&$variables) {
  */
 function sw_preprocess_node_critical_reading(&$variables) {
   $variables['story_label'] = t('From the critical reading blog');
-  if ($variables['view_mode'] == 'teaser') {
+  if ($variables['view_mode'] == 'search_result') {
     if (!empty($variables['content']['field_blog_comment'][0]['#text'])) {
       $variables['content']['field_blog_comment'][0]['#text'] = strip_tags($variables['content']['field_blog_comment'][0]['#text'], '<p><em><strong><i><b>');
     }
@@ -1457,8 +1462,9 @@ function sw_views_pre_render_sw_recent(ViewExecutable $view) {
  * view field so we don't run into issues with summary trim limits, etc.
  */
 function sw_views_pre_render_sw_search(ViewExecutable $view) {
-  // Since we're messing with teaser render arrays, only cache results per page.
+  // Since we're messing with teaser render arrays, only cache results per page (with query args).
   $view->element['#cache']['contexts'][] = 'route';
+  $view->element['#cache']['contexts'][] = 'url';
   foreach ($view->result as $index => $result) {
     $teaser = [];
     $teaser_field = '';
@@ -1470,6 +1476,9 @@ function sw_views_pre_render_sw_search(ViewExecutable $view) {
         continue;
       }
     }
+    if (!empty($teaser_field)) {
+      $teaser = $node->get($teaser_field)->getValue();
+    }
     if (!empty($result->search_api_excerpt) && !empty($node)) {
       $excerpt = $result->search_api_excerpt;
       // If the excerpt contains our custom person tokens, replace them now.
@@ -1480,8 +1489,6 @@ function sw_views_pre_render_sw_search(ViewExecutable $view) {
       }
       $excerpt = '<p class="highlighted-results">' . $excerpt . '<p>';
       unset($view->result[$index]->search_api_excerpt);
-
-      $teaser = $node->get($teaser_field)->getValue();
       if (!empty($teaser)) {
         $teaser[0]['value'] .= $excerpt;
       }
@@ -1491,21 +1498,11 @@ function sw_views_pre_render_sw_search(ViewExecutable $view) {
           'format' => 'filtered_html',
         ];
       }
-    }
-    if ($node->bundle() == 'story') {
-      $created = '<p class="field--name-created">' . format_date($node->getCreatedTime(), 'custom', 'F j, Y') . '</p>';
-      if (!empty($teaser[0]['value'])) {
-        $teaser[0]['value'] .= $created;
+      if (!empty($teaser_field) && !empty($teaser)) {
+        // Since we set ['#cache']['contexts'][] = 'url' in sw_preprocess_node()
+        // for all search_result render arrays, we're okay doing this here.
+        $view->result[$index]->_object->set($teaser_field, $teaser);
       }
-      else {
-        $teaser[0] = [
-          'value' => $created,
-          'format' => 'filtered_html',
-        ];
-      }
-    }
-    if (!empty($teaser)) {
-      $view->result[$index]->_object->set($teaser_field, $teaser);
     }
   }
 }

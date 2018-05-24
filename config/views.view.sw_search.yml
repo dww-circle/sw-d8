@@ -222,11 +222,11 @@ display:
           hide_alter_empty: true
           view_modes:
             'entity:node':
-              blog_couldnt_make_it_up: default
-              blog_critical_reading: teaser
+              blog_couldnt_make_it_up: search_result
+              blog_critical_reading: search_result
               external_article: default
-              page: teaser
-              story: teaser
+              page: search_result
+              story: search_result
           plugin_id: search_api_rendered_item
         search_api_excerpt:
           id: search_api_excerpt

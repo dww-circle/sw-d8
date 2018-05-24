@@ -1,0 +1,26 @@
+uuid: eccde73f-c187-4e00-826e-a4c9d86fafa9
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_result
+    - field.field.node.blog_couldnt_make_it_up.body
+    - node.type.blog_couldnt_make_it_up
+  module:
+    - text
+    - user
+id: node.blog_couldnt_make_it_up.search_result
+targetEntityType: node
+bundle: blog_couldnt_make_it_up
+mode: search_result
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 0
+    settings:
+      trim_length: 300
+    third_party_settings: {  }
+    region: content
+hidden:
+  links: true

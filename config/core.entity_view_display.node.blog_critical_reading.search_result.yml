@@ -1,9 +1,9 @@
-uuid: e5ca34d7-5bb6-43cd-a485-9607fd9f29f5
+uuid: 79e4f9f1-2837-40ac-a1af-a1dc113035ab
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.search_result
     - field.field.node.blog_critical_reading.body
     - field.field.node.blog_critical_reading.field_article_headline
     - field.field.node.blog_critical_reading.field_article_source
@@ -13,22 +13,29 @@ dependencies:
   module:
     - text
     - user
-id: node.blog_critical_reading.teaser
+id: node.blog_critical_reading.search_result
 targetEntityType: node
 bundle: blog_critical_reading
-mode: teaser
+mode: search_result
 content:
+  field_article_source:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
   field_blog_comment:
     type: text_trimmed
     weight: 0
     region: content
     label: hidden
     settings:
-      trim_length: 400
+      trim_length: 250
     third_party_settings: {  }
 hidden:
   body: true
   field_article_headline: true
-  field_article_source: true
   field_article_url: true
   links: true
