@@ -1018,12 +1018,14 @@ main {
 .view-sw-issue-stories .content {
   margin: 0 0 40px 0; }
 
-.view-sw-search .story-link,
-.view-sw-search .teaser-conditional-with-image {
+.view-sw-search .story-link {
   margin-bottom: 10px; }
 
 .view-sw-search .views-row {
   margin-bottom: 50px; }
+
+.view-sw-search .field--name-field-teaser p.field--name-created {
+  margin-top: 5px; }
 
 .view-sw-search .node__content,
 .view-sw-search .views-field-search-api-excerpt {

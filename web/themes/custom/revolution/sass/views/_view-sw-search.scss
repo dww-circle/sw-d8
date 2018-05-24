@@ -1,10 +1,13 @@
 .view-sw-search {
-  .story-link,
-  .teaser-conditional-with-image {
+  .story-link {
     margin-bottom: 10px;
   }
   .views-row {
     margin-bottom: 50px;
+  }
+
+  .field--name-field-teaser p.field--name-created {
+    margin-top: 5px;
   }
 
   .node__content,
