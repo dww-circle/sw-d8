@@ -1439,13 +1439,13 @@ function sw_views_pre_render_sw_search(ViewExecutable $view) {
   // Since we're messing with teaser render arrays, only cache results per page.
   $view->element['#cache']['contexts'][] = 'route';
   foreach ($view->result as $index => $result) {
-    if (!empty($result->search_api_excerpt) && !empty($result->_object)) {
+    $node = $result->_object->getValue();
+    if (!empty($result->search_api_excerpt) && !empty($node)) {
       $excerpt = $result->search_api_excerpt;
       // If the excerpt contains our custom person tokens, replace them now.
       if (strstr($excerpt, '%author') !== FALSE || strstr($excerpt, '%interviewee') !== FALSE) {
-        $story = $result->_object->getValue();
-        if (!empty($story)) {
-          $excerpt = sw_replace_people_tokens($story, $excerpt, FALSE);
+        if ($node->bundle() == 'story') {
+          $excerpt = sw_replace_people_tokens($node, $excerpt, FALSE);
         }
       }
       $excerpt = '<p class="highlighted-results">' . $excerpt . '<p>';
@@ -1462,8 +1462,13 @@ function sw_views_pre_render_sw_search(ViewExecutable $view) {
             'format' => 'filtered_html',
           ];
         }
-        $view->result[$index]->_object->set('field_teaser', $teaser);
       }
+    }
+    if ($node->bundle() == 'story') {
+      $teaser[0]['value'] .= '<span class="field--name-created">' . format_date($node->getCreatedTime(), 'custom', 'F j, Y') . '</span>';
+    }
+    if (!empty($teaser)) {
+      $view->result[$index]->_object->set('field_teaser', $teaser);
     }
   }
 }
