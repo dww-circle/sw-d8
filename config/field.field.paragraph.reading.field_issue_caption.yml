@@ -17,7 +17,7 @@ required: false
 translatable: false
 default_value:
   -
-    value: 'Read the articles in this month''s<br>print edition of <i>Socialist Worker</i>.'
+    value: 'Read the articles in this month’s print edition of <cite>Socialist Worker</cite>.'
     format: filtered_html
 default_value_callback: ''
 settings: {  }
