@@ -30,9 +30,5 @@ content:
     third_party_settings: {  }
     type: basic_string
     region: content
-  links:
-    weight: 2
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-hidden: {  }
+hidden:
+  links: true
