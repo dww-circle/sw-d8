@@ -24,7 +24,7 @@ dependencies:
     - search_api
 id: sw_text
 name: 'SW Text'
-description: 'Index of all searchable text on SW.org (stories, static pages, external articles, legacy blogs, etc).'
+description: 'Index of all searchable text on SW.org (stories, static pages, legacy blogs, etc).'
 read_only: false
 field_settings:
   rendered_item_full:
@@ -38,7 +38,6 @@ field_settings:
         'entity:node':
           blog_couldnt_make_it_up: default
           blog_critical_reading: default
-          external_article: default
           page: default
           story: default
   content_type:
@@ -235,7 +234,6 @@ datasource_settings:
       selected:
         - blog_couldnt_make_it_up
         - blog_critical_reading
-        - external_article
         - page
         - story
     languages:
