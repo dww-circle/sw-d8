@@ -591,17 +591,20 @@ function sw_load_story_people(NodeInterface &$story) {
  * @param string $text
  *   The text to do the token replacement in.
  *
+ * @param boolean $use_markup
+ *   If true, the token replacements will be links to the author pages.
+ *
  * @return string
  *   The new text, properly formatted with tokens replaced.
  */
-function sw_replace_people_tokens(NodeInterface &$story, $text) {
+function sw_replace_people_tokens(NodeInterface &$story, $text, $use_markup = TRUE) {
   if (strstr($text, '%author') !== FALSE || strstr($text, '%interviewee') !== FALSE) {
     sw_load_story_people($story);
     if (!empty($story->sw_authors)) {
-      $token_values['%author'] = sw_get_entity_label_multiple($story->sw_authors, 'sw_author_label');
+      $token_values['%author'] = sw_get_entity_label_multiple($story->sw_authors, $use_markup ? 'sw_author_label' : 'sw_plain_label');
     }
     if (!empty($story->sw_interviewees)) {
-      $token_values['%interviewee'] = sw_get_entity_label_multiple($story->sw_interviewees, 'sw_subject_label');
+      $token_values['%interviewee'] = sw_get_entity_label_multiple($story->sw_interviewees, $use_markup ? 'sw_subject_label' : 'sw_plain_label');
     }
     if (!empty($token_values)) {
       return strtr($text, $token_values);
@@ -1437,17 +1440,25 @@ function sw_views_pre_render_sw_search(ViewExecutable $view) {
   $view->element['#cache']['contexts'][] = 'route';
   foreach ($view->result as $index => $result) {
     if (!empty($result->search_api_excerpt) && !empty($result->_object)) {
-      $clean_excerpt = '<p class="highlighted-results">' . $result->search_api_excerpt . '<p>';
+      $excerpt = $result->search_api_excerpt;
+      // If the excerpt contains our custom person tokens, replace them now.
+      if (strstr($excerpt, '%author') !== FALSE || strstr($excerpt, '%interviewee') !== FALSE) {
+        $story = $result->_object->getValue();
+        if (!empty($story)) {
+          $excerpt = sw_replace_people_tokens($story, $excerpt, FALSE);
+        }
+      }
+      $excerpt = '<p class="highlighted-results">' . $excerpt . '<p>';
       unset($view->result[$index]->search_api_excerpt);
       $properties = $result->_object->getProperties();
       if (!empty($properties['field_teaser'])) {
         $teaser = $result->_object->get('field_teaser')->getValue();
         if (!empty($teaser)) {
-          $teaser[0]['value'] .= $clean_excerpt;
+          $teaser[0]['value'] .= $excerpt;
         }
         else {
           $teaser[0] = [
-            'value' => $clean_excerpt,
+            'value' => $excerpt,
             'format' => 'filtered_html',
           ];
         }
