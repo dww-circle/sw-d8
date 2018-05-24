@@ -41,16 +41,6 @@ field_settings:
           external_article: default
           page: default
           story: default
-  aggregated_authors:
-    label: 'Aggregated authors'
-    property_path: aggregated_field
-    type: text
-    boost: !!float 2
-    configuration:
-      type: union
-      fields:
-        - 'entity:node/field_authors'
-        - 'entity:node/field_interviewees'
   content_type:
     label: 'Content type'
     datasource_id: 'entity:node'
@@ -277,7 +267,6 @@ processor_settings:
     all_fields: true
     fields:
       - rendered_item_full
-      - aggregated_authors
       - content_type
       - authors_name
       - interviewees_name
@@ -308,7 +297,6 @@ processor_settings:
     all_fields: true
     fields:
       - rendered_item_full
-      - aggregated_authors
       - content_type
       - authors_name
       - interviewees_name
@@ -332,7 +320,6 @@ processor_settings:
     all_fields: true
     fields:
       - rendered_item_full
-      - aggregated_authors
       - authors_name
       - interviewees_name
       - contributors_name
@@ -357,7 +344,6 @@ processor_settings:
     all_fields: true
     fields:
       - rendered_item_full
-      - aggregated_authors
       - content_type
       - authors_name
       - interviewees_name
