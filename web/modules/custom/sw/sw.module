@@ -1409,18 +1409,25 @@ function sw_views_pre_render_sw_recent(ViewExecutable $view) {
  * view field so we don't run into issues with summary trim limits, etc.
  */
 function sw_views_pre_render_sw_search(ViewExecutable $view) {
+  // Since we're messing with teaser render arrays, only cache results per page.
   $view->element['#cache']['contexts'][] = 'route';
   foreach ($view->result as $index => $result) {
     if (!empty($result->search_api_excerpt) && !empty($result->_object)) {
+      $clean_excerpt = '<p class="highlighted-results">' . $result->search_api_excerpt . '<p>';
+      unset($view->result[$index]->search_api_excerpt);
       $properties = $result->_object->getProperties();
       if (!empty($properties['field_teaser'])) {
         $teaser = $result->_object->get('field_teaser')->getValue();
         if (!empty($teaser)) {
-          // Since we're messing with teaser render arrays, only cache results per page.
-          $teaser[0]['value'] .= '<p class="highlighted-results">' . $result->search_api_excerpt . '<p>';
-          $view->result[$index]->_object->set('field_teaser', $teaser);
-          unset($view->result[$index]->search_api_excerpt);
+          $teaser[0]['value'] .= $clean_excerpt;
         }
+        else {
+          $teaser[0] = [
+            'value' => $clean_excerpt,
+            'format' => 'filtered_html',
+          ];
+        }
+        $view->result[$index]->_object->set('field_teaser', $teaser);
       }
     }
   }
