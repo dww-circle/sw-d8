@@ -255,8 +255,14 @@ processor_settings:
     excerpt: true
     excerpt_length: 256
     exclude_fields:
+      - authors_name
+      - interviewees_name
+      - contributors_name
       - issue_number_txt
       - keyword
+      - main_topic_name
+      - secondary_topic_name
+      - title
     prefix: '<strong>'
     suffix: '</strong>'
     weights:
