@@ -32,7 +32,7 @@ content:
     region: content
     label: hidden
     settings:
-      trim_length: 250
+      trim_length: 120
     third_party_settings: {  }
 hidden:
   body: true
