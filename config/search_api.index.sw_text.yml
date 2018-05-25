@@ -17,7 +17,7 @@ dependencies:
     - field.storage.node.field_city
     - field.storage.node.field_state
     - field.storage.node.field_country
-    - search_api.server.local_db
+    - search_api.server.pantheon_solr
   module:
     - node
     - taxonomy
@@ -242,21 +242,18 @@ datasource_settings:
       default: true
       selected: {  }
 processor_settings:
+  rendered_item: {  }
   hierarchy:
     fields:
       main_topic: taxonomy_term-parent
       secondary_topic: taxonomy_term-parent
     weights:
       preprocess_index: -50
-  add_url: {  }
-  aggregated_field: {  }
-  entity_status: {  }
-  highlight:
-    highlight: always
-    highlight_partial: true
-    excerpt: true
-    excerpt_length: 256
-    exclude_fields:
+  ignorecase:
+    all_fields: true
+    fields:
+      - rendered_item_full
+      - content_type
       - authors_name
       - interviewees_name
       - contributors_name
@@ -264,11 +261,16 @@ processor_settings:
       - keyword
       - main_topic_name
       - secondary_topic_name
+      - series_name
+      - section_name
+      - teaser
+      - city_name
+      - state_name
+      - country_name
       - title
-    prefix: '<strong>'
-    suffix: '</strong>'
     weights:
-      postprocess_query: 0
+      preprocess_index: -48
+      preprocess_query: -48
   html_filter:
     all_fields: true
     fields:
@@ -299,53 +301,6 @@ processor_settings:
     weights:
       preprocess_index: -47
       preprocess_query: -47
-  ignorecase:
-    all_fields: true
-    fields:
-      - rendered_item_full
-      - content_type
-      - authors_name
-      - interviewees_name
-      - contributors_name
-      - issue_number_txt
-      - keyword
-      - main_topic_name
-      - secondary_topic_name
-      - series_name
-      - section_name
-      - teaser
-      - city_name
-      - state_name
-      - country_name
-      - title
-    weights:
-      preprocess_index: -48
-      preprocess_query: -48
-  rendered_item: {  }
-  tokenizer:
-    all_fields: true
-    fields:
-      - rendered_item_full
-      - authors_name
-      - interviewees_name
-      - contributors_name
-      - issue_number_txt
-      - keyword
-      - main_topic_name
-      - secondary_topic_name
-      - series_name
-      - section_name
-      - teaser
-      - city_name
-      - state_name
-      - country_name
-      - title
-    spaces: ''
-    overlap_cjk: 1
-    minimum_word_size: '3'
-    weights:
-      preprocess_index: -45
-      preprocess_query: -45
   transliteration:
     all_fields: true
     fields:
@@ -380,10 +335,55 @@ processor_settings:
           story: !!float 1
     weights:
       preprocess_index: 0
+  aggregated_field: {  }
+  tokenizer:
+    all_fields: true
+    fields:
+      - rendered_item_full
+      - authors_name
+      - interviewees_name
+      - contributors_name
+      - issue_number_txt
+      - keyword
+      - main_topic_name
+      - secondary_topic_name
+      - series_name
+      - section_name
+      - teaser
+      - city_name
+      - state_name
+      - country_name
+      - title
+    spaces: ''
+    overlap_cjk: 1
+    minimum_word_size: '3'
+    weights:
+      preprocess_index: -45
+      preprocess_query: -45
+  entity_status: {  }
+  add_url: {  }
+  highlight:
+    highlight: always
+    highlight_partial: true
+    excerpt: true
+    excerpt_length: 256
+    exclude_fields:
+      - authors_name
+      - interviewees_name
+      - contributors_name
+      - issue_number_txt
+      - keyword
+      - main_topic_name
+      - secondary_topic_name
+      - title
+    prefix: '<strong>'
+    suffix: '</strong>'
+    weights:
+      postprocess_query: 0
 tracker_settings:
   default:
     indexing_order: fifo
 options:
   index_directly: false
   cron_limit: 50
-server: local_db
+server: pantheon_solr
