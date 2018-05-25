@@ -1027,12 +1027,14 @@ main {
 .view-sw-search .field--name-field-teaser p.field--name-created {
   margin-top: 5px; }
 
+.view-sw-search .highlighted-results,
 .view-sw-search .field--name-field-blog-comment {
   color: #666666;
   font-family: "Helvetica", sans-serif;
   font-size: 14px;
   line-height: 18px; }
   @media (min-width: 961px) {
+    .view-sw-search .highlighted-results,
     .view-sw-search .field--name-field-blog-comment {
       font-size: 15px; } }
 
