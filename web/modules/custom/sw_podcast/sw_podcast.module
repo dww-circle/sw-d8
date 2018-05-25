@@ -1,0 +1,16 @@
+<?php
+
+use Drupal\migrate\MigrateExecutable;
+use Drupal\migrate\MigrateMessage;
+
+/**
+ * Implements hook_cron().
+ *
+ * check for new podcast episodes every hour.
+ */
+function sw_podcast_cron() {
+  $migration_id = 'sw_podcast_bor';
+  $migration = \Drupal::service('plugin.manager.migration')->createInstance($migration_id);
+  $executable = new MigrateExecutable($migration, new MigrateMessage());
+  $executable->import();
+}
