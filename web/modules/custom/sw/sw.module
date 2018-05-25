@@ -1375,6 +1375,19 @@ function sw_preprocess_page(&$variables) {
       }
     }
   }
+  $node = \Drupal::routeMatch()->getParameter('node');
+  if ($node) {
+    switch ($node->bundle()) {
+      case 'blog_critical_reading':
+        $variables['story_label'] = t('From the Critical Reading blog');
+        break;
+
+      case 'blog_couldnt_make_it_up':
+        $variables['story_label'] = t('From the Couldn’t Make It Up blog');
+        break;
+
+    }
+  }
 }
 
 /**
