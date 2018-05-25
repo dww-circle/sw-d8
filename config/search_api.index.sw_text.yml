@@ -39,6 +39,7 @@ field_settings:
           blog_couldnt_make_it_up: default
           blog_critical_reading: default
           page: default
+          person: ''
           story: default
   content_type:
     label: 'Content type'
@@ -235,6 +236,7 @@ datasource_settings:
         - blog_couldnt_make_it_up
         - blog_critical_reading
         - page
+        - person
         - story
     languages:
       default: true
@@ -366,6 +368,18 @@ processor_settings:
     weights:
       preprocess_index: -49
       preprocess_query: -49
+  type_boost:
+    boosts:
+      'entity:node':
+        datasource_boost: !!float 1
+        bundle_boosts:
+          blog_couldnt_make_it_up: 0.8
+          blog_critical_reading: 0.8
+          page: !!float 1
+          person: !!float 21
+          story: !!float 1
+    weights:
+      preprocess_index: 0
 tracker_settings:
   default:
     indexing_order: fifo

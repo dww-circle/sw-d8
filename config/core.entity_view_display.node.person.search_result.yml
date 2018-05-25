@@ -1,0 +1,31 @@
+uuid: 98a3a824-2edb-4770-b3bc-4b4dc39d5b95
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_result
+    - field.field.node.person.field_affiliation
+    - field.field.node.person.field_biography
+    - field.field.node.person.field_first_name
+    - field.field.node.person.field_last_name
+    - node.type.person
+  module:
+    - user
+id: node.person.search_result
+targetEntityType: node
+bundle: person
+mode: search_result
+content:
+  field_affiliation:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  field_biography: true
+  field_first_name: true
+  field_last_name: true
+  links: true

@@ -1493,6 +1493,16 @@ function sw_preprocess_node_search_result(&$variables) {
       $variables['content'][$field_name][0]['#text'] = strip_tags($variables['content'][$field_name][0]['#text'], '<p><em><i><cite><br>');
     }
   }
+  if ($variables['node']->getType() == 'person') {
+    $variables['content']['summary'] = [
+      '#prefix' => '<p class="field--name-field-teaser">',
+      '#markup' => t('Find all articles by and about this author.'),
+      '#suffix' => '</p>',
+    ];
+    $variables['story_label'] = t('Author page');
+    unset($variables['date']);
+
+  }
 }
 
 /**

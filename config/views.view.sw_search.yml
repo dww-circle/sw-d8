@@ -124,8 +124,8 @@ display:
             'entity:node':
               blog_couldnt_make_it_up: search_result
               blog_critical_reading: search_result
-              external_article: default
               page: search_result
+              person: search_result
               story: search_result
           plugin_id: search_api_rendered_item
         search_api_excerpt:
