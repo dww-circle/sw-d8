@@ -20,7 +20,7 @@
       <div{{ content_attributes.addClass('node__content') }}>
         {{ content }}
         {% if search_excerpt %}
-          {{ search_excerpt }}
+          {{ search_excerpt|raw }}
         {% endif %}
         {{ date }}
       </div>
