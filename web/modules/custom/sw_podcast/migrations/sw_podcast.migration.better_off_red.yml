@@ -63,4 +63,4 @@ process:
     source: pub_date
   status:
     plugin: default_value
-    default_value: 1
+    default_value: 0
