@@ -107,6 +107,13 @@ function sw_form_views_bulk_operations_configure_action_alter(&$form, FormStateI
  * Implements hook_form_FORM_ID_alter() for 'views_exposed_form'.
  */
 function sw_form_views_exposed_form_alter(&$form, FormStateInterface $form_state) {
+  if (!empty($form['text'])) {
+    $form['text']['#pre_render'] = [
+      'sw_search_text_pre_render',
+      // Oddly, we have to set this ourselves for the default value to appear.
+      ['\Drupal\Core\Render\Element\Textfield', 'preRenderTextfield'],
+    ];
+  }
   $wrapped_field_sizes = [
     'nid' => 10,
     'title' => 20,
@@ -162,6 +169,14 @@ function sw_form_views_exposed_form_alter(&$form, FormStateInterface $form_state
       }
       break;
   }
+}
+
+/**
+ * #pre_render callback to visually hide the label on the search text form element.
+ */
+function sw_search_text_pre_render(array $element) {
+  $element['#title_display'] = 'visually-hidden';
+  return $element;
 }
 
 /**
