@@ -10,7 +10,7 @@ third_party_settings:
     parent: ''
 name: 'External Article'
 type: external_article
-description: 'Articles for the "What We''re Reading" queue and slice.'
+description: 'Articles for the "What We’re Reading" queue and slice.'
 help: ''
 new_revision: false
 preview_mode: 1

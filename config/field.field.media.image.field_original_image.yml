@@ -10,7 +10,7 @@ field_name: field_original_image
 entity_type: media
 bundle: image
 label: 'Original image'
-description: 'If this is a crop of another image, what''s the image ID of the original?'
+description: 'If this is a crop of another image, what’s the image ID of the original?'
 required: false
 translatable: false
 default_value: {  }

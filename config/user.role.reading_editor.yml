@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: reading_editor
-label: 'What We''re Reading editor'
+label: 'What We’re Reading editor'
 weight: -8
 is_admin: null
 permissions:

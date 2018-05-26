@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: today
-label: 'Today''s Stories'
+label: 'Today’s Stories'
 icon_uuid: null
-description: 'Slice to make Today''s Stories Section'
+description: 'Slice to make Today’s Stories section.'
 behavior_plugins: {  }

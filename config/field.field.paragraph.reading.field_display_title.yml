@@ -15,7 +15,7 @@ required: false
 translatable: true
 default_value:
   -
-    value: 'What We''re Reading'
+    value: 'What We’re Reading'
 default_value_callback: ''
 settings: {  }
 field_type: string

@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: reading
-label: 'What We''re Reading'
+label: 'What We’re Reading'
 icon_uuid: null
 description: 'External articles, books and current issue. '
 behavior_plugins: {  }

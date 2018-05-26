@@ -5,7 +5,7 @@ dependencies:
   module:
     - node
 id: what_were_reading
-label: 'What We''re Reading'
+label: 'What We’re Reading'
 handler: simple
 handler_configuration: {  }
 entity_settings:
