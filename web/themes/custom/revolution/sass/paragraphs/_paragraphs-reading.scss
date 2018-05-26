@@ -7,15 +7,6 @@
     font-size: 20px;
     line-height: 24px;
     margin-bottom: 10px;
-    padding-top: 70px;
-
-    @include breakpoint($handheld) {
-      padding-top: 0;
-    }
-
-    @include breakpoint($desktop) {
-      padding-top: 0;
-    }
   }
 
   // Captions.
@@ -48,7 +39,7 @@
     @include breakpoint($desktop) {
       float: left;
       max-width: 320px;
-      width: 260px;
+      width: 250px;
     }
 
     @include breakpoint($desktop-large) {
@@ -68,6 +59,7 @@
     }
   }
 
+  // Book container.
   .field--name-field-book {
     margin-bottom: 25px;
 
@@ -80,7 +72,7 @@
 
     @include breakpoint($desktop) {
       float: right;
-      margin: 0 20px 0 0;
+      margin: 0 20px 25px 0;
       width: calc(100% - 260px);
     }
 
@@ -100,6 +92,7 @@
     }
   }
 
+  // Issue Container.
   .issue {
     margin-bottom: 25px;
 
@@ -117,19 +110,23 @@
     .content {
       margin-bottom: 0;
     }
+  }
 
-    .field--name-field-issue-cover-image {
+  // Issue mat.
+  .field--name-field-issue-cover-image {
+    margin-right: 20px;
+
+    @include breakpoint(450px) {
       float: left;
+    }
+
+    @include breakpoint($handheld) {
+      float: none;
+      margin-right: 0;
+    }
+
+    @include breakpoint($desktop) {
       margin-right: 20px;
-
-      @include breakpoint($handheld) {
-        float: none;
-        margin-right: 0;
-      }
-
-      @include breakpoint($desktop) {
-        margin-right: 20px;
-      }
     }
   }
 
@@ -139,34 +136,32 @@
     background: #f1f2f2;
     border: 1px solid #b8babc;
     display: flex;
-    float: left;
     height: 290px;
     justify-content: center;
     margin-right: 20px;
     width: 220px;
 
+    @include breakpoint(450px) {
+      float: left;
+    }
+
+    @include breakpoint($handheld) {
+      float: none;
+      margin-right: 0;
+    }
+
     @include breakpoint($desktop) {
       float: none;
+    }
+
+    &:hover {
+      opacity: .9;
     }
 
     img {
       height: auto;
       max-height: 80%;
       max-width: 80%;
-    }
-  }
-
-  .issue {
-    a {
-      .field--name-field-issue-header {
-        color: $c-black;
-      }
-    }
-    a:hover {
-      text-decoration: none;
-      .field--name-field-issue-header {
-        color: $c-red;
-      }
     }
   }
 }
