@@ -47,6 +47,16 @@ h4 {
     text-transform: none;
   }
 
+  // Paragraph Left. Fixes breaking layout at intermediate widths.
+  .paragraph-stories .story-group--column_left & {
+    @include breakpoint($desktop) {
+      font-size: 24px;
+    }
+    @include breakpoint($desktop-large) {
+      font-size: 30px;
+    }
+  }
+
   // Left no pic
   .story-group--column_left .story--teaser &,
   .field--name-field-nested-left .story--teaser & {

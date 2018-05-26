@@ -261,8 +261,10 @@
   }
 
   @include breakpoint($desktop) {
-    float: left;
-    max-width: 630px;
+    width: calc(100% - 280px);
+  }
+
+  @include breakpoint($desktop-large) {
     width: calc(100% - 390px);
   }
 }
@@ -273,8 +275,7 @@
     width: 240px;
   }
 
-  @include breakpoint($desktop) {
-    float: right;
+  @include breakpoint($desktop-large) {
     width: 320px;
   }
 }

@@ -79,6 +79,12 @@
     margin-bottom: 50px;
   }
 
+  @include breakpoint($desktop) {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 200px auto;
+  }
+
   @include breakpoint($desktop-large) {
     display: grid;
     grid-gap: 40px;

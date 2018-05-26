@@ -1773,8 +1773,11 @@ select {
 @media (min-width: 961px) {
   .paragraph--type--queue .story-group--column_left,
   .paragraph--type--movement-news .story-group--column_left {
-    float: left;
-    max-width: 630px;
+    width: calc(100% - 280px); } }
+
+@media (min-width: 1270px) {
+  .paragraph--type--queue .story-group--column_left,
+  .paragraph--type--movement-news .story-group--column_left {
     width: calc(100% - 390px); } }
 
 @media (min-width: 736px) {
@@ -1783,10 +1786,9 @@ select {
     float: right;
     width: 240px; } }
 
-@media (min-width: 961px) {
+@media (min-width: 1270px) {
   .paragraph--type--queue .story-group--column_right,
   .paragraph--type--movement-news .story-group--column_right {
-    float: right;
     width: 320px; } }
 
 .column-left {
@@ -1798,8 +1800,9 @@ select {
       width: calc(100% - 290px); } }
   @media (min-width: 961px) {
     .column-left {
-      float: left;
-      max-width: 630px;
+      width: calc(100% - 280px); } }
+  @media (min-width: 1270px) {
+    .column-left {
       width: calc(100% - 390px); } }
 
 .column-right {
@@ -1808,9 +1811,8 @@ select {
     .column-right {
       float: right;
       width: 240px; } }
-  @media (min-width: 961px) {
+  @media (min-width: 1270px) {
     .column-right {
-      float: right;
       width: 320px; } }
 
 /*
@@ -1887,6 +1889,15 @@ select {
   .story--teaser-image-medium,
   .teaser-conditional-with-image {
     margin-bottom: 50px; } }
+
+@media (min-width: 961px) {
+  .story--teaser-image-medium,
+  .teaser-conditional-with-image {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 20px;
+    -ms-grid-columns: 200px auto;
+        grid-template-columns: 200px auto; } }
 
 @media (min-width: 1270px) {
   .story--teaser-image-medium,
@@ -2071,6 +2082,14 @@ select {
 .field--name-field-nested-left .story--teaser-image-medium h4 {
   font-size: 26px;
   text-transform: none; }
+
+@media (min-width: 961px) {
+  .paragraph-stories .story-group--column_left h4 {
+    font-size: 24px; } }
+
+@media (min-width: 1270px) {
+  .paragraph-stories .story-group--column_left h4 {
+    font-size: 30px; } }
 
 .story-group--column_left .story--teaser h4,
 .field--name-field-nested-left .story--teaser h4 {
