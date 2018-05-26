@@ -1901,7 +1901,16 @@ select {
   font-family: "FF DIN Pro Medium", sans-serif;
   font-size: 20px;
   line-height: 24px;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  padding-top: 70px; }
+  @media (min-width: 541px) {
+    .reading__content .field--name-name,
+    .reading__content .field--name-field-issue-header {
+      padding-top: 0; } }
+  @media (min-width: 961px) {
+    .reading__content .field--name-name,
+    .reading__content .field--name-field-issue-header {
+      padding-top: 0; } }
 
 .reading__content .field--name-field-book-caption,
 .reading__content .field--name-field-issue-caption {
@@ -1917,6 +1926,10 @@ select {
     .reading__content .field--name-field-book-caption,
     .reading__content .field--name-field-issue-caption {
       width: auto; } }
+
+.reading__content .field--name-field-media-image,
+.reading__content .field--name-field-issue-cover-image img {
+  margin-bottom: 16px; }
 
 .reading__content .view-sw-what-were-reading {
   margin-bottom: 25px; }
@@ -1974,17 +1987,16 @@ select {
       width: 220px; } }
   .reading__content .issue .content {
     margin-bottom: 0; }
-  .reading__content .issue .field--name-field-issue-cover-image img {
-    margin: 0 auto 16px auto; }
+  .reading__content .issue .field--name-field-issue-cover-image {
+    float: left;
+    margin-right: 20px; }
     @media (min-width: 541px) {
-      .reading__content .issue .field--name-field-issue-cover-image img {
-        margin: 0 0 16px 0; } }
-  .reading__content .issue a .field--name-field-issue-header {
-    color: #1a272e; }
-  .reading__content .issue a:hover {
-    text-decoration: none; }
-    .reading__content .issue a:hover .field--name-field-issue-header {
-      color: #c80000; }
+      .reading__content .issue .field--name-field-issue-cover-image {
+        float: none;
+        margin-right: 0; } }
+    @media (min-width: 961px) {
+      .reading__content .issue .field--name-field-issue-cover-image {
+        margin-right: 20px; } }
 
 .reading__content .field--name-field-media-image {
   -webkit-align-items: center;
@@ -1995,20 +2007,28 @@ select {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  float: left;
   height: 290px;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   margin-right: 20px;
-  width: 220px;
-  margin: 0 auto 16px; }
-  @media (min-width: 541px) {
+  width: 220px; }
+  @media (min-width: 961px) {
     .reading__content .field--name-field-media-image {
-      margin: 0 0 16px 0; } }
+      float: none; } }
   .reading__content .field--name-field-media-image img {
     height: auto;
     max-height: 80%;
     max-width: 80%; }
+
+.reading__content .issue a .field--name-field-issue-header {
+  color: #1a272e; }
+
+.reading__content .issue a:hover {
+  text-decoration: none; }
+  .reading__content .issue a:hover .field--name-field-issue-header {
+    color: #c80000; }
 
 .slice-title {
   font-family: 'FF DIN Pro Bold', sans-serif;
