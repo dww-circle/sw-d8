@@ -4507,6 +4507,9 @@
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
                     }
+                },
+                "patches_applied": {
+                    "[#2745695-10] Rebuild always includes all link types": "https://www.drupal.org/files/issues/2018-05-25/2745695-10.xmlsitemap-rebuild-all-entities.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",

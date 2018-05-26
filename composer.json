@@ -154,6 +154,9 @@
       },
       "drupal/search_api": {
         "[#2820410-20] Allow rendering an entity viewmode when using fields in views" : "https://www.drupal.org/files/issues/2018-03-12/search_api-views_rendered_item_field-2820410-20-D8.patch"
+      },
+      "drupal/xmlsitemap": {
+        "[#2745695-10] Rebuild always includes all link types" : "https://www.drupal.org/files/issues/2018-05-25/2745695-10.xmlsitemap-rebuild-all-entities.patch"
       }
     },
     "installer-paths": {
