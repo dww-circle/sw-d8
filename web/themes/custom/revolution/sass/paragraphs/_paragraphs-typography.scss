@@ -30,8 +30,12 @@
 // Node Title.
 h4 {
   .story--teaser-image-large & {
-    font-size: 42px;
+    font-size: 36px;
     text-transform: uppercase;
+
+    @include breakpoint($desktop-large) {
+      font-size: 42px;
+    }
   }
 
   // Weeekend sub

@@ -2084,8 +2084,11 @@ select {
   margin-bottom: 25px; }
 
 .story--teaser-image-large h4 {
-  font-size: 42px;
+  font-size: 36px;
   text-transform: uppercase; }
+  @media (min-width: 1270px) {
+    .story--teaser-image-large h4 {
+      font-size: 42px; } }
 
 .field--name-field-sub h4 {
   font-size: 22px;
