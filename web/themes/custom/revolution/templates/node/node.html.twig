@@ -103,6 +103,8 @@
 
   <div{{ content_attributes.addClass('node__content') }}>
     {% if node.id == 5 %}
+      {{ "Click on the buttons to follow SocialistWorker.org on social media."|t }}
+      <br></br>
       {% include  directory ~ '/templates/components/follow.html.twig' %}
     {% endif %}
     {{ content }}

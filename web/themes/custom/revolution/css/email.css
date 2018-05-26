@@ -244,18 +244,31 @@ main {
   line-height: 16px; }
 
 .align-image-left {
-  margin-bottom: 30px; }
+  margin-bottom: 50px; }
   .align-image-left:after {
     clear: both;
     content: " ";
     display: table; }
-  .align-image-left h3 {
-    margin-bottom: 0; }
-  .align-image-left img {
+  .align-image-left h3,
+  .align-image-left .helvetica {
+    float: right;
+    margin-bottom: 4px;
+    width: 49%; }
+    @media (min-width: 541px) {
+      .align-image-left h3,
+      .align-image-left .helvetica {
+        width: calc(100% - 260px); } }
+  .align-image-left article.embedded-entity img {
     float: left;
     height: auto;
-    margin-right: 10px;
-    max-width: 220px; }
+    margin-bottom: 70px;
+    width: 49%; }
+    @media (min-width: 541px) {
+      .align-image-left article.embedded-entity img {
+        margin-bottom: 0;
+        margin-right: 10px;
+        max-width: 220px;
+        width: 100%; } }
 
 .contextual {
   z-index: 400; }
