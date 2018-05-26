@@ -29,6 +29,15 @@ if ($_ENV['PANTHEON_ENVIRONMENT'] == 'live') {
 }
 
 /**
+ * Define trusted host patters for SW.org.
+ */
+$settings['trusted_host_patterns'] = [
+  '^.+sw-d8\.pantheonsite\.io',
+  '^socialistworker\.org',
+  '^.+\.socialistworker\.org',
+];
+
+/**
  * If there is a local settings file, then include it
  */
 $local_settings = __DIR__ . "/settings.local.php";
