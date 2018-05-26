@@ -1,6 +1,6 @@
-minimum_lifetime: 0
+minimum_lifetime: 86400
 xsl: 1
-prefetch_aliases: 1
+prefetch_aliases: 0
 chunk_size: auto
 batch_limit: 100
 path: xmlsitemap
