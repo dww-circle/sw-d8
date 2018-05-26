@@ -56,6 +56,7 @@
     "drupal/views_bulk_operations": "^2.2",
     "drupal/views_contextual_filters_or": "^1.0",
     "drupal/views_taxonomy_term_name_into_id": "^1.0",
+    "drupal/xmlsitemap": "1.x-dev",
     "drush/drush": "^8",
     "rvtraveller/qs-composer-installer": "^1.1",
     "webflo/drupal-core-strict": "^8.5"
