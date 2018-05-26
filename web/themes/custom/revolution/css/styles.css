@@ -1887,18 +1887,11 @@ select {
   .teaser-conditional-with-image {
     margin-bottom: 50px; } }
 
-@media (min-width: 961px) {
+@media (min-width: 1270px) {
   .story--teaser-image-medium,
   .teaser-conditional-with-image {
     display: -ms-grid;
     display: grid;
-    grid-gap: 20px;
-    -ms-grid-columns: 200px auto;
-        grid-template-columns: 200px auto; } }
-
-@media (min-width: 1270px) {
-  .story--teaser-image-medium,
-  .teaser-conditional-with-image {
     grid-gap: 40px;
     -ms-grid-columns: 290px auto;
         grid-template-columns: 290px auto; } }
