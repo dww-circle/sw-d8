@@ -780,7 +780,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          operator: '>='
+          operator: '='
           value:
             min: ''
             max: ''
@@ -800,7 +800,9 @@ display:
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
+              reading_editor: '0'
               story_editor: '0'
+              front_page_editor: '0'
               administrator: '0'
             placeholder: ''
             min_placeholder: ''
@@ -1191,7 +1193,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          operator: '>='
+          operator: '='
           value:
             min: ''
             max: ''
@@ -1211,7 +1213,9 @@ display:
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
+              reading_editor: '0'
               story_editor: '0'
+              front_page_editor: '0'
               administrator: '0'
             placeholder: ''
             min_placeholder: ''
