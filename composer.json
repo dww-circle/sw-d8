@@ -153,11 +153,6 @@
       },
       "drupal/search_api": {
         "[#2820410-20] Allow rendering an entity viewmode when using fields in views" : "https://www.drupal.org/files/issues/2018-03-12/search_api-views_rendered_item_field-2820410-20-D8.patch"
-      },
-      "drupal/static_page": {
-        "[#2966642-2] Configure which field to use for static page content" : "https://www.drupal.org/files/issues/2018-04-26/2966642-2.static_page_select_field.patch",
-        "[#2966644-2] Missing page title for settings page" : "https://www.drupal.org/files/issues/2018-04-26/2966644-2.static_page_settings_page_title.patch",
-        "[#2966660-2] Support viewing node revisions of static page nodes" : "https://www.drupal.org/files/issues/2018-04-26/2966660-2.static_page_view_node_revisions.patch"
       }
     },
     "installer-paths": {
