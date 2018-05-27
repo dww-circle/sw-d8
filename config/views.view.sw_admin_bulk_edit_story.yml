@@ -12,6 +12,7 @@ dependencies:
     - taxonomy.vocabulary.section
     - taxonomy.vocabulary.topic
     - user.role.administrator
+    - user.role.front_page_editor
   module:
     - node
     - taxonomy
@@ -37,6 +38,7 @@ display:
         type: role
         options:
           role:
+            front_page_editor: front_page_editor
             administrator: administrator
       cache:
         type: tag
@@ -1140,11 +1142,8 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          operator: '='
-          value:
-            min: ''
-            max: ''
-            value: ''
+          operator: or
+          value: {  }
           group: 1
           exposed: true
           expose:
@@ -1160,8 +1159,11 @@ display:
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
+              reading_editor: '0'
               story_editor: '0'
+              front_page_editor: '0'
               administrator: '0'
+            reduce: 0
             placeholder: ''
             min_placeholder: ''
             max_placeholder: ''
@@ -1177,6 +1179,13 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
+          reduce_duplicates: 0
+          type: auto-complete
+          sort: {  }
+          value_selection_type: 0
+          target_bundles:
+            person: person
+          handler_view: 0
           plugin_id: numeric
       sorts:
         created:
