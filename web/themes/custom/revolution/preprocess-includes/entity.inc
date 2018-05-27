@@ -1,8 +1,10 @@
 <?php
+
+use Drupal\Core\Url;
+
 /*
  * Implements hook_preprocess_HOOK().
  */
-
 function revolution_preprocess_eck_entity(&$vars) {
 
   $entity = $vars['entity']['#entity'];
@@ -36,7 +38,7 @@ function revolution_preprocess_media(&$variables) {
 function revolution_preprocess_media__image(&$variables) {
   $image_url = $variables['media']->get('field_image_url')->getValue();
   if (!empty($image_url[0]['uri'])) {
-    $variables['image_url'] = $image_url[0]['uri'];
+    $variables['image_url'] = Url::fromUri($image_url[0]['uri'])->toString();
   }
 }
 
