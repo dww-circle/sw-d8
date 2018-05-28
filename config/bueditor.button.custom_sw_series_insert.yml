@@ -8,6 +8,6 @@ tooltip: 'Series insert box'
 text: '&#x24C8;'
 cname: ''
 shortcut: ''
-code: "<sw-series></sw-series>\r\n"
+code: "<sw-series></sw-series>\r\n\r\n"
 template: ''
 libraries: {  }

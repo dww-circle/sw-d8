@@ -8,6 +8,6 @@ tooltip: 'Bullet span'
 text: '&#x25A0;'
 cname: ''
 shortcut: ''
-code: '<span class="bullet"></span>'
+code: '<span class="bullet"></span> '
 template: ''
 libraries: {  }
