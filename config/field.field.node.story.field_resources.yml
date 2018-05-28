@@ -14,7 +14,7 @@ id: node.story.field_resources
 field_name: field_resources
 entity_type: node
 bundle: story
-label: Resources
+label: 'Resources related to this article'
 description: ''
 required: false
 translatable: false
