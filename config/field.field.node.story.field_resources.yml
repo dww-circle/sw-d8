@@ -6,6 +6,7 @@ dependencies:
     - field.storage.node.field_resources
     - media.type.audio
     - media.type.book
+    - media.type.episode
     - media.type.file
     - media.type.image
     - media.type.video
@@ -28,6 +29,7 @@ settings:
       book: book
       file: file
       image: image
+      episode: episode
       video: video
     sort:
       field: mid
