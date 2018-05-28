@@ -958,6 +958,9 @@ main {
       font-size: 12px;
       line-height: 16px; }
 
+.page-node-type-story .field--name-field-resources {
+  margin-bottom: 50px; }
+
 .page-node-type-blog-critical-reading .node--type-blog-critical-reading {
   font-family: "PT Serif", "Georgia", "Times New Roman", "Times", serif;
   font-size: 18px;

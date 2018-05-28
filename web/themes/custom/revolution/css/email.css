@@ -507,6 +507,9 @@ main {
       font-size: 12px;
       line-height: 16px; }
 
+.page-node-type-story .field--name-field-resources {
+  margin-bottom: 50px; }
+
 .body {
   max-width: 800px;
   padding: 10px; }
