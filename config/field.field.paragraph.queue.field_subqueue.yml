@@ -11,7 +11,7 @@ field_name: field_subqueue
 entity_type: paragraph
 bundle: queue
 label: Queue
-description: 'Choose from the Story Queue <a href="/admin/structure/entityqueue/story_queues/list">list</a> '
+description: ''
 required: true
 translatable: false
 default_value: {  }
