@@ -264,6 +264,11 @@ function sw_story_node_form_alter(&$form, FormStateInterface $form_state, $form_
   foreach (['field_teaser', 'field_body', 'field_introduction', 'field_body_introduction'] as $field) {
     $form[$field]['#pre_render'][] = 'sw_hide_format_guidelines_form_pre_render';
   }
+
+  // If field_body_introduction has a value, expand the containing fieldset by default.
+  if (!empty($form['field_body_introduction']['widget'][0]['#default_value'])) {
+    $form['#fieldgroups']['group_body_introduction']->format_settings['open'] = TRUE;
+  }
 }
 
 /**
