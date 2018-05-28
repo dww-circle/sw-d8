@@ -172,6 +172,14 @@ function revolution_preprocess_paragraph__reading(&$variables) {
   // Use the block of items currently featured in the queue, not the full
   // reverse chron listing of all external articles.
   $view->setDisplay('block_queue');
+  // Use the # of external articles as defined in the slice.
+  $ext_count_field = $variables['paragraph']->get('field_external_article_count');
+  if (!empty($ext_count_field)) {
+    $ext_count = $ext_count_field->value;
+    if (!empty($ext_count)) {
+      $view->setItemsPerPage($ext_count);
+    }
+  }
   $render_array = $view->render();
   $variables['what_were_reading_queue'] =  \Drupal::service('renderer')->render($render_array);
 

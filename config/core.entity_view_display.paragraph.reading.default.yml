@@ -5,11 +5,13 @@ dependencies:
   config:
     - field.field.paragraph.reading.field_book
     - field.field.paragraph.reading.field_display_title
+    - field.field.paragraph.reading.field_external_article_count
     - field.field.paragraph.reading.field_issue
     - field.field.paragraph.reading.field_issue_caption
     - field.field.paragraph.reading.field_issue_header
     - paragraphs.paragraphs_type.reading
   module:
+    - options
     - text
 id: paragraph.reading.default
 targetEntityType: paragraph
@@ -18,7 +20,7 @@ mode: default
 content:
   field_book:
     type: entity_reference_entity_view
-    weight: 1
+    weight: 2
     label: hidden
     settings:
       view_mode: default
@@ -33,8 +35,15 @@ content:
     third_party_settings: {  }
     type: string
     region: content
+  field_external_article_count:
+    type: list_default
+    weight: 1
+    region: content
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
   field_issue:
-    weight: 2
+    weight: 3
     label: hidden
     settings:
       view_mode: front
@@ -43,14 +52,14 @@ content:
     type: entity_reference_entity_view
     region: content
   field_issue_caption:
-    weight: 4
+    weight: 5
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_issue_header:
-    weight: 3
+    weight: 4
     label: hidden
     settings:
       link_to_entity: false

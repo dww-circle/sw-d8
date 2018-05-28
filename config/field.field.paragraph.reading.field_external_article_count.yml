@@ -1,0 +1,23 @@
+uuid: ed37e5d2-0873-43d5-9695-e268faa935b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_external_article_count
+    - paragraphs.paragraphs_type.reading
+  module:
+    - options
+id: paragraph.reading.field_external_article_count
+field_name: field_external_article_count
+entity_type: paragraph
+bundle: reading
+label: 'External article count'
+description: 'Number of external articles to display in the slice.'
+required: true
+translatable: false
+default_value:
+  -
+    value: 4
+default_value_callback: ''
+settings: {  }
+field_type: list_integer
