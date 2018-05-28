@@ -25,9 +25,6 @@ settings:
     - h2
     - h3
     - '-'
-    - ul
-    - ol
-    - '-'
     - undo
     - redo
   cname: ''
