@@ -509,6 +509,11 @@ main {
 
 .page-node-type-story .field--name-field-resources {
   margin-bottom: 50px; }
+  .page-node-type-story .field--name-field-resources .field__label {
+    font-family: 'FF DIN Pro Bold', sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px; }
 
 .body {
   max-width: 800px;

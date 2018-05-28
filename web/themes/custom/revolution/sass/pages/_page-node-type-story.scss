@@ -110,6 +110,11 @@
 
   .field--name-field-resources {
     margin-bottom: 50px;
+    .field__label {
+      @include ff-din-bold;
+      font-size: 20px;
+      line-height: 25px;
+    }
   }
 
 }
