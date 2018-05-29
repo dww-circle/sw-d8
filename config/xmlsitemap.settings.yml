@@ -1,8 +1,8 @@
 minimum_lifetime: 86400
 xsl: 1
 prefetch_aliases: 0
-chunk_size: auto
-batch_limit: 100
+chunk_size: '2500'
+batch_limit: 50
 path: xmlsitemap
 frontpage_priority: !!float 1
 frontpage_changefreq: 86400
