@@ -111,18 +111,6 @@
   margin-right: 4px;
 }
 
-.media-info--Video {
-  background: transparent url("../images/video.svg") no-repeat;
-}
-
-.media-info--Image {
-  background: transparent url("../images/image.svg") no-repeat;
-}
-
-.media-info--Twitter {
-  background: transparent url("../images/twitter.svg") no-repeat;
-}
-
 input[type="submit"][name="filter"] {
   margin-left: 10px;
   margin-top: 30px;
