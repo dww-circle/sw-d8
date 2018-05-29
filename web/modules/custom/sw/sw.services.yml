@@ -1,5 +1,7 @@
 services:
   sw.subscriber:
     class: Drupal\sw\EventSubscriber\SWSubscriber
+    arguments:
+      - '@current_user'
     tags:
       - { name: event_subscriber }

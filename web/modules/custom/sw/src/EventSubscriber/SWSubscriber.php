@@ -2,8 +2,11 @@
 
 namespace Drupal\sw\EventSubscriber;
 
+use Drupal\Core\Session\AccountProxy;
+
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpFoundation\RedirectResponse;
+use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
 use Symfony\Component\HttpKernel\Event\GetResponseEvent;
 use Symfony\Component\HttpKernel\KernelEvents;
 
@@ -13,6 +16,20 @@ use Symfony\Component\HttpKernel\KernelEvents;
  * @package Drupal\sw\EventSubscriber
  */
 class SWSubscriber implements EventSubscriberInterface {
+
+  /**
+   * The current user.
+   *
+   * @var Drupal\Core\Session\AccountProxy
+   */
+  protected $currentUser;
+
+  /**
+   * Constructor.
+   */
+  public function __construct(AccountProxy $current_user) {
+    $this->currentUser = $current_user;
+  }
 
   /**
    * Registers the methods in this class that should be listeners.
@@ -29,6 +46,7 @@ class SWSubscriber implements EventSubscriberInterface {
     // possible) take precendence over this catch-all). So, we use the same
     // priority, but set sw.module to weight 1. That lets the order for
     // listeners to this event be redirect, sw and finally core.
+    $events[KernelEvents::REQUEST][] = ['onRequestCheckEntityAccess', 28];
     $events[KernelEvents::REQUEST][] = ['onRequestRedirectSHTML', 33];
     return $events;
   }
@@ -45,6 +63,49 @@ class SWSubscriber implements EventSubscriberInterface {
     if (preg_match('#(.+)\.shtml$#', $response->getRequestUri(), $matches)) {
       $response = new RedirectResponse($matches[1] . '.php', 301);
       $event->setResponse($response);
+    }
+  }
+
+  /**
+   * Checks for access to entity canonical route pages.
+   *
+   * @param \Symfony\Component\HttpKernel\Event\GetResponseEvent $event
+   *   The Event to process.
+   */
+  public function onRequestCheckEntityAccess(GetResponseEvent $event) {
+    $request = $event->getRequest();
+    // Don't process events with HTTP exceptions.
+    if ($request->get('exception') != NULL) {
+      return;
+    }
+    if ($route = $request->get('_route')) {
+      // Only continue if the request route is the an entity canonical.
+      $allow = TRUE;
+      $matches = [];
+      if (preg_match('/^entity\.(.+)\.canonical$/', $route, $matches)) {
+        $entity = $event->getRequest()->get($matches[1]);
+        $bundle = $entity->bundle();
+        switch ($entity->getEntityTypeId()) {
+          case 'node':
+            if ($bundle == 'insert_box') {
+              $allow = FALSE;
+            }
+            break;
+
+          case 'media':
+            if ($bundle != 'episode') {
+              $allow = FALSE;
+            }
+            break;
+
+          case 'taxonomy_term':
+            $allow = FALSE;
+            break;
+        }
+        if (!$allow && empty($this->currentUser->id())) {
+          throw new AccessDeniedHttpException();
+        }
+      }
     }
   }
 
