@@ -16,16 +16,22 @@
   transition: .2s;
 }
 
-@media screen and (min-width:37.5em) { /* 600px */
+@media screen and (min-width:500px) {
   .entity-browser-view .entity-browser-grid {
     width: 50%;
     float: left;
   }
 }
 
-@media screen and (min-width:62.5em) { /* 1000px */
+@media screen and (min-width:800px) {
   .entity-browser-view .entity-browser-grid {
     width: 33.333%;
+  }
+}
+
+@media screen and (min-width:1100px) {
+  .entity-browser-view .entity-browser-grid {
+    width: 25%
   }
 }
 
