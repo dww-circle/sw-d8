@@ -47,7 +47,7 @@ class SWSubscriber implements EventSubscriberInterface {
     // priority, but set sw.module to weight 1. That lets the order for
     // listeners to this event be redirect, sw and finally core.
     $events[KernelEvents::REQUEST][] = ['onRequestCheckEntityAccess', 28];
-    $events[KernelEvents::REQUEST][] = ['onRequestRedirectSHTML', 33];
+    $events[KernelEvents::REQUEST][] = ['onRequestEarlyRedirect', 33];
     return $events;
   }
 
@@ -57,11 +57,20 @@ class SWSubscriber implements EventSubscriberInterface {
    * @param \Symfony\Component\HttpKernel\Event\GetResponseEvent $event
    *   The Event to process.
    */
-  public function onRequestRedirectSHTML(GetResponseEvent $event) {
-    $response = $event->getRequest();
+  public function onRequestEarlyRedirect(GetResponseEvent $event) {
+    global $base_path;
+    $request_uri = $event->getRequest()->getRequestUri();
     $matches = [];
-    if (preg_match('#(.+)\.shtml$#', $response->getRequestUri(), $matches)) {
+    // If it's *.shtml, redirect to the corresponding .php (for Pantheon).
+    if (preg_match('#(.+)\.shtml$#', $request_uri, $matches)) {
       $response = new RedirectResponse($matches[1] . '.php', 301);
+    }
+    // If the URL is only the base_path and an integer, this must be from
+    // socwrk.org and we should redirect to the corresponding node.
+    elseif (preg_match('#^' . $base_path . '(\d+)$#', $request_uri, $matches)) {
+      $response = new RedirectResponse($base_path . 'node/' . $matches[1], 301);
+    }
+    if (isset($response)) {
       $event->setResponse($response);
     }
   }
