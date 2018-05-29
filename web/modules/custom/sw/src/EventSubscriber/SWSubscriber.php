@@ -52,7 +52,7 @@ class SWSubscriber implements EventSubscriberInterface {
   }
 
   /**
-   * Manipulates the request object.
+   * Handles all of SW's custom redirect logic.
    *
    * @param \Symfony\Component\HttpKernel\Event\GetResponseEvent $event
    *   The Event to process.
@@ -70,8 +70,13 @@ class SWSubscriber implements EventSubscriberInterface {
     elseif (preg_match('#^' . $base_path . '(\d+)$#', $request_uri, $matches)) {
       $response = new RedirectResponse($base_path . 'node/' . $matches[1], 301);
     }
+    // Redirect respond/blog/* to the /contact/readers_views form.
     elseif (preg_match('#respond/blog/(critical-reading|couldnt-make-it-up)#', $request_uri, $matches)) {
       $response = new RedirectResponse($base_path . 'contact/readers_views', 301);
+    }
+    // Redirect */feed to /recent/rss.xml.
+    elseif (preg_match('#^.*/feed$#', $request_uri, $matches)) {
+      $response = new RedirectResponse($base_path . 'recent/rss.xml', 301);
     }
     if (isset($response)) {
       $event->setResponse($response);
