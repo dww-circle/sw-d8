@@ -1324,28 +1324,30 @@ function sw_preprocess_html(&$variables) {
     // If we found something, use it.
     if (!empty($share_media)) {
       $share_image = $share_media[0]->get('field_media_image')->referencedEntities();
-      $share_url = $share_image[0]->url();
-      $share_image_info = $share_media[0]->get('field_media_image')->getValue();
-      $meta_tags[] = [
-        'property' => 'og:image',
-        'content' => $share_url,
-      ];
-      $meta_tags[] = [
-        'property' => 'og:image:type',
-        'content' => $share_image[0]->getMimeType(),
-      ];
-      $meta_tags[] = [
-        'property' => 'og:image:width',
-        'content' => $share_image_info[0]['width'],
-      ];
-      $meta_tags[] = [
-        'property' => 'og:image:height',
-        'content' => $share_image_info[0]['height'],
-      ];
-      $meta_tags[] = [
-        'name' => 'twitter:image',
-        'content' => $share_url,
-      ];
+      if (!empty($share_image[0])) {
+        $share_url = $share_image[0]->url();
+        $share_image_info = $share_media[0]->get('field_media_image')->getValue();
+        $meta_tags[] = [
+          'property' => 'og:image',
+          'content' => $share_url,
+        ];
+        $meta_tags[] = [
+          'property' => 'og:image:type',
+          'content' => $share_image[0]->getMimeType(),
+        ];
+        $meta_tags[] = [
+          'property' => 'og:image:width',
+          'content' => $share_image_info[0]['width'],
+        ];
+        $meta_tags[] = [
+          'property' => 'og:image:height',
+          'content' => $share_image_info[0]['height'],
+        ];
+        $meta_tags[] = [
+          'name' => 'twitter:image',
+          'content' => $share_url,
+        ];
+      }
     }
   }
   // Global properties, regardless of page:
