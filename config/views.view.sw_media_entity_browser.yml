@@ -62,7 +62,7 @@ display:
       pager:
         type: mini
         options:
-          items_per_page: 9
+          items_per_page: 12
           offset: 0
           id: 0
           total_pages: null
@@ -72,7 +72,7 @@ display:
           expose:
             items_per_page: true
             items_per_page_label: 'Items per page'
-            items_per_page_options: '6, 9, 30, 90'
+            items_per_page_options: '12, 24, 48'
             items_per_page_options_all: false
             items_per_page_options_all_label: '- All -'
             offset: false
