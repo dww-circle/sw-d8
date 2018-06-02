@@ -3,7 +3,7 @@
  * Attaches behaviors for the 'Recent articles' block.
  */
 
-(function ($, Drupal) {
+(function ($, Drupal, drupalSettings) {
   Drupal.behaviors.swRecentArticles = {
     attach: function attach(context) {
 
@@ -29,12 +29,16 @@
         activeTab.removeClass('js-hide');
       }
 
-      // When we first attach this behavior, find the first link.
-      var firstDate = dateLabels.find("li").first().find("a");
+      // When we first attach this behavior, find the initially active link.
+      var dateOffset = 0;
+      if (drupalSettings.sw_recent_articles_block) {
+        dateOffset = drupalSettings.sw_recent_articles_block.date_offset;
+      }
+      var activeDate = dateLabels.find("li").eq(dateOffset).find("a");
       // Set it active.
-      firstDate.addClass("active");
+      activeDate.addClass("active");
       // And reveal the tab containing its articles.
-      showTab(firstDate.attr('id'));
+      showTab(activeDate.attr('id'));
 
       // Bind click() functions to all the date label links.
       dateLabels.find("li a").click(function() {
@@ -51,4 +55,4 @@
 
     }
   }
-})(jQuery, Drupal);
+})(jQuery, Drupal, drupalSettings);

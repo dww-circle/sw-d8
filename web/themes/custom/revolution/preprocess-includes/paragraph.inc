@@ -88,6 +88,8 @@ function revolution_preprocess_paragraph__today(&$variables) {
   $config = [];
   $plugin_block = $block_manager->createInstance('sw_recent_articles_block', $config);
   $variables['sw_recent_articles_block_body'] = $plugin_block->build();
+  // Tell the block to set the 2nd tab active initially.
+  $variables['sw_recent_articles_block_body']['#attached']['drupalSettings']['sw_recent_articles_block']['date_offset'] = 1;
 }
 
 /**

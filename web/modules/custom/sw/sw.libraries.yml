@@ -8,6 +8,7 @@ recent-articles:
   dependencies:
     - core/jquery
     - core/drupal
+    - core/drupalSettings
 entity-browser:
   version: VERSION
   css:
