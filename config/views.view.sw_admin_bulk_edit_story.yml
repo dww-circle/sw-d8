@@ -9,7 +9,10 @@ dependencies:
     - field.storage.node.field_story_weight
     - field.storage.node.field_topic
     - node.type.story
+    - taxonomy.vocabulary.city
+    - taxonomy.vocabulary.country
     - taxonomy.vocabulary.section
+    - taxonomy.vocabulary.state
     - taxonomy.vocabulary.topic
     - user.role.administrator
     - user.role.front_page_editor
@@ -1133,6 +1136,150 @@ display:
           limit: true
           vid: topic
           hierarchy: true
+          error_message: true
+          plugin_id: taxonomy_index_tid
+        tid:
+          id: tid
+          table: taxonomy_index
+          field: tid
+          relationship: none
+          group_type: group
+          admin_label: 'Content: Country term'
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: tid_op
+            label: Country
+            description: ''
+            use_operator: false
+            operator: tid_op
+            identifier: country
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              reading_editor: '0'
+              story_editor: '0'
+              front_page_editor: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: textfield
+          limit: true
+          vid: country
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+        tid_1:
+          id: tid_1
+          table: taxonomy_index
+          field: tid
+          relationship: none
+          group_type: group
+          admin_label: 'Content: State term'
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: tid_1_op
+            label: State
+            description: ''
+            use_operator: false
+            operator: tid_1_op
+            identifier: state
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              reading_editor: '0'
+              story_editor: '0'
+              front_page_editor: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: textfield
+          limit: true
+          vid: state
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+        tid_2:
+          id: tid_2
+          table: taxonomy_index
+          field: tid
+          relationship: none
+          group_type: group
+          admin_label: 'Content: City term'
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: tid_2_op
+            label: City
+            description: ''
+            use_operator: false
+            operator: tid_2_op
+            identifier: city
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              reading_editor: '0'
+              story_editor: '0'
+              front_page_editor: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: textfield
+          limit: true
+          vid: city
+          hierarchy: false
           error_message: true
           plugin_id: taxonomy_index_tid
         field_authors_target_id:

@@ -140,6 +140,9 @@ function sw_form_views_exposed_form_alter(&$form, FormStateInterface $form_state
   }
   $field_sizes = [
     'authors' => 15,
+    'city' => 15,
+    'country' => 15,
+    'state' => 15,
     'title' => 20,
   ];
   foreach ($field_sizes as $field => $size) {
