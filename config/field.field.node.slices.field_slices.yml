@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_slices
     - node.type.slices
+    - paragraphs.paragraphs_type.direct_list
     - paragraphs.paragraphs_type.full
     - paragraphs.paragraphs_type.movement_news
     - paragraphs.paragraphs_type.podcast
@@ -36,6 +37,7 @@ settings:
       full: full
       movement_news: movement_news
       reading: reading
+      direct_list: direct_list
       podcast: podcast
       triptych: triptych
     target_bundles_drag_drop:
@@ -58,6 +60,9 @@ settings:
         enabled: true
         weight: 10
       reading:
+        enabled: true
+        weight: 11
+      direct_list:
         enabled: true
         weight: 11
       podcast:

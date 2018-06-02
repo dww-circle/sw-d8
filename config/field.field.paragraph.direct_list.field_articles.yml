@@ -1,0 +1,29 @@
+uuid: 56e9630a-c09c-42df-9de7-9787670a5bb2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_articles
+    - node.type.story
+    - paragraphs.paragraphs_type.direct_list
+id: paragraph.direct_list.field_articles
+field_name: field_articles
+entity_type: paragraph
+bundle: direct_list
+label: Articles
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      story: story
+    sort:
+      field: nid
+      direction: DESC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

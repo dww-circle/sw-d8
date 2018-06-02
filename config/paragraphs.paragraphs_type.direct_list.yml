@@ -1,0 +1,9 @@
+uuid: e30794a3-b1f1-4cc6-83ec-ecfb36d051f2
+langcode: en
+status: true
+dependencies: {  }
+id: direct_list
+label: 'Direct list'
+icon_uuid: null
+description: 'Slice where you directly define a list of stories (like the <em>Today</em> slice) but that looks like a <em>Queued list</em> slice.'
+behavior_plugins: {  }

@@ -42,6 +42,18 @@ function revolution_preprocess_paragraph__queue(&$variables) {
 /**
  * Implements hook_preprocess_paragraph__TYPE().
  */
+function revolution_preprocess_paragraph__direct_list(&$variables) {
+  // Get field values.
+  $num_med_img = $variables['paragraph']->field_layout->value;
+  $articles = $variables['paragraph']->get('field_articles')->referencedEntities();
+  if (!empty($articles)) {
+    $variables['groups'] = _revolution_story_groups_render($articles, $num_med_img, TRUE);
+  }
+}
+
+/**
+ * Implements hook_preprocess_paragraph__TYPE().
+ */
 function revolution_preprocess_paragraph__movement_news(&$variables) {
   $excluded_stories = $variables['paragraph']->get('field_excluded_stories')->getValue();
   $config = [];

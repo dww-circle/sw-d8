@@ -1,0 +1,48 @@
+uuid: b17c5735-eca1-4e6c-8f4d-0625babb0f47
+langcode: en
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.sw_story_browser
+    - field.field.paragraph.direct_list.field_articles
+    - field.field.paragraph.direct_list.field_display_title
+    - field.field.paragraph.direct_list.field_layout
+    - paragraphs.paragraphs_type.direct_list
+  module:
+    - entity_browser
+id: paragraph.direct_list.default
+targetEntityType: paragraph
+bundle: direct_list
+mode: default
+content:
+  field_articles:
+    weight: 1
+    settings:
+      entity_browser: sw_story_browser
+      field_widget_display: label
+      field_widget_edit: true
+      field_widget_remove: true
+      open: true
+      selection_mode: selection_append
+      field_widget_display_settings: {  }
+    third_party_settings: {  }
+    type: entity_browser_entity_reference
+    region: content
+  field_display_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_layout:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

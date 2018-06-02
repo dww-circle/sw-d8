@@ -1,0 +1,40 @@
+uuid: 4c27af1e-b999-4c64-9d17-4e4e4aea5a60
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.direct_list.field_articles
+    - field.field.paragraph.direct_list.field_display_title
+    - field.field.paragraph.direct_list.field_layout
+    - paragraphs.paragraphs_type.direct_list
+  module:
+    - options
+id: paragraph.direct_list.default
+targetEntityType: paragraph
+bundle: direct_list
+mode: default
+content:
+  field_articles:
+    weight: 1
+    label: visually_hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_display_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_layout:
+    type: list_key
+    weight: 2
+    region: content
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

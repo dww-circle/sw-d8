@@ -1,0 +1,23 @@
+uuid: 2479f171-f68c-46a8-be80-5c69ce6d499a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_layout
+    - paragraphs.paragraphs_type.direct_list
+  module:
+    - options
+id: paragraph.direct_list.field_layout
+field_name: field_layout
+entity_type: paragraph
+bundle: direct_list
+label: 'Number of Medium Sized Images'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings: {  }
+field_type: list_integer
