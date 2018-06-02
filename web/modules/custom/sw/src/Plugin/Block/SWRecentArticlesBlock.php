@@ -79,7 +79,7 @@ class SWRecentArticlesBlock extends SWRecentArticlesBase {
     ];
   }
 
-  /** 
+  /**
    * Build the appropriate tab label for a given publication date.
    *
    * @param integer $pub_date
