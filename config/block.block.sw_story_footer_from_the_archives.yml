@@ -18,8 +18,8 @@ settings:
   label: 'From the archives'
   provider: sw
   label_display: visible
-  story_list_length: 5
-  number_active_stories: 20
+  story_list_length: '5'
+  number_active_stories: '0'
 visibility:
   node_type:
     id: node_type

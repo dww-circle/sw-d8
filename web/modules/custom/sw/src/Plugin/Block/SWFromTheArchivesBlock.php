@@ -25,7 +25,7 @@ class SWFromTheArchivesBlock extends BlockBase {
   public function defaultConfiguration() {
     return [
       'story_list_length' => 5,
-      'number_active_stories' => 20,
+      'number_active_stories' => 0,
     ];
   }
 
@@ -47,7 +47,8 @@ class SWFromTheArchivesBlock extends BlockBase {
       '#type' => 'number',
       '#title' => $this->t('Number of stories at the top of the queue to pull from'),
       '#default_value' => isset($config['number_active_stories']) ? $config['number_active_stories'] : 20,
-      '#min' => 1,
+      '#description' => $this->t('If set to 0, all stories in the queue are considered active.'),
+      '#min' => 0,
     ];
 
     return $form;
@@ -93,7 +94,8 @@ class SWFromTheArchivesBlock extends BlockBase {
 
     // Restrict ourselves to the top N stories in the queue.
     $config = $this->getConfiguration();
-    $active_stories = array_slice($queue_list, 0, $config['number_active_stories']);
+    // If there's a limit on the # of active stories, enforce it.
+    $active_stories = !empty($config['number_active_stories']) ? array_slice($queue_list, 0, $config['number_active_stories']) : $queue_list;
 
     // Save the nid and delta of these "active" stories.
     // Preserving the deltas lets us easily sort later.
