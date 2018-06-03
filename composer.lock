@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "1c1cf3a97acc2e85d928b59b2ae71cf5",
+    "content-hash": "59b079f8d9aa8e29903d3901d3522f00",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -4433,6 +4433,53 @@
             "homepage": "https://www.drupal.org/project/views_contextual_filters_or",
             "support": {
                 "source": "http://cgit.drupalcode.org/views_contextual_filters_or"
+            }
+        },
+        {
+            "name": "drupal/views_googlenews",
+            "version": "1.0.0-alpha1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/views_googlenews",
+                "reference": "8.x-1.0-alpha1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/views_googlenews-8.x-1.0-alpha1.zip",
+                "reference": "8.x-1.0-alpha1",
+                "shasum": "c56e8149cf28dc58292db33c8080c0d32ee3a24e"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha1",
+                    "datestamp": "1503515343",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Berdir",
+                    "homepage": "https://www.drupal.org/user/214652"
+                }
+            ],
+            "description": "Views Googlenews",
+            "homepage": "https://www.drupal.org/project/views_googlenews",
+            "support": {
+                "source": "http://cgit.drupalcode.org/views_googlenews"
             }
         },
         {
