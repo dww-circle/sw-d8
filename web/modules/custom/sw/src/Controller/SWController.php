@@ -125,19 +125,42 @@ class SWController extends ControllerBase {
   }
 
   /**
-   * Builds the /topic landing page.
+   * Builds the /section landing page.
    *
-   * Loads any children menu items under /topic and renders them all as a simple
-   * list, ordered by menu item weights.
+   * @return array
+   *   Render array for the /section landing page.
+   */
+  public function sectionPage() {
+    return $this->menuLandingPage('main', 'sw.section');
+  }
+
+  /**
+   * Builds the /topic landing page.
    *
    * @return array
    *   Render array for the /topic landing page.
    */
   public function topicPage() {
+    return $this->menuLandingPage('main', 'sw.topic');
+  }
+
+  /**
+   * Builds the a landing page for a parent menu item.
+   *
+   * Loads any children menu items under the given menu link and renders them
+   * all as a simple list, ordered by menu item weights.
+   *
+   * @param string $menu_name
+   *   The machine name of the menu to harvest menu links from.
+   * @param string $menu_item_route
+   *   The route name of the parent menu item to find children items of.
+   * @return array
+   *   Render array for the requested landing page.
+   */
+  protected function menuLandingPage($menu_name, $menu_item_route) {
     $build = [];
-    $menu_name = 'main';
     $menu_link_service = \Drupal::getContainer()->get('plugin.manager.menu.link');
-    $menu_links = $menu_link_service->loadLinksByRoute('sw.topic', [], $menu_name);
+    $menu_links = $menu_link_service->loadLinksByRoute($menu_item_route, [], $menu_name);
     if (!empty($menu_links)) {
       $root_menu_item = reset($menu_links);
       $menu_parameters = new \Drupal\Core\Menu\MenuTreeParameters();

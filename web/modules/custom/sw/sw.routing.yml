@@ -19,6 +19,13 @@ sw.subscribe_email:
     _title: 'Subscribe to e-mail alerts'
   requirements:
     _permission: 'access content'
+sw.section:
+  path: '/section'
+  defaults:
+    _controller: '\Drupal\sw\Controller\SWController::sectionPage'
+    _title: 'Sections'
+  requirements:
+    _permission: 'access content'
 sw.topic:
   path: '/topic'
   defaults:
