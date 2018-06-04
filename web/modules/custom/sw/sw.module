@@ -243,6 +243,9 @@ function sw_form_node_form_alter(&$form, FormStateInterface $form_state, $form_i
 function sw_story_node_form_alter(&$form, FormStateInterface $form_state, $form_id) {
   if (isset($form['created'])) {
     unset($form['created']['#group']);
+    // Give anyone who can edit a node access to the 'created' field, even if
+    // they don't have the uber 'administer nodes' permission.
+    $form['created']['#access'] = TRUE;
   }
   $form['field_kicker']['#states'] = [
     'visible' => [
