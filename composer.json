@@ -24,6 +24,7 @@
     "drupal/console": "^1.0.0-rc8",
     "drupal/core": "^8.5",
     "drupal/ctools": "^3.0",
+    "drupal/diff": "^1.0",
     "drupal/entity_browser": "^1.4",
     "drupal/entity_clone": "^1.0@alpha",
     "drupal/entity_embed": "^1.0",
