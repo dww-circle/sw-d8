@@ -91,6 +91,7 @@ class DraftToLive {
     $this->initializeFrontPages();
     $this->archiveCurrentFrontPage($verbose);
     $this->cloneDraftToLive($verbose);
+    drupal_flush_all_caches();
   }
 
   protected function initializeFrontPages() {
