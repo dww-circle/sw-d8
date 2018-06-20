@@ -218,9 +218,12 @@ display:
       menu:
         type: normal
         title: 'Better Off Red Podcast'
+        description: ''
+        expanded: false
+        parent: 'menu_link_content:ed9c3a6a-20c3-4e99-b2fc-ca0ba1a190f4'
+        weight: -44
+        context: '0'
         menu_name: main
-        weight: 6
-        parent: 'views_view:views.sw_section_list.page_1'
     cache_metadata:
       max-age: -1
       contexts:
