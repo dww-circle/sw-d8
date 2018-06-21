@@ -95,8 +95,10 @@ class StoryWordExporter {
       $view_builder = \Drupal::entityTypeManager()->getViewBuilder('node');
       foreach ($embedded_nodes as $nid) {
         $node = Node::load($nid);
-        $node_output = $view_builder->view($node, 'full');
-        $output .= $insert_break . $renderer->render($node_output);
+        if (!empty($node)) {
+          $node_output = $view_builder->view($node, 'full');
+          $output .= $insert_break . $renderer->render($node_output);
+        }
       }
     }
 
