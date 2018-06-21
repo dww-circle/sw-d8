@@ -37,7 +37,7 @@ class StoryWordExporter {
    */
   public function build() {
     $section_break = "\n<p>- - - - - - - - - - - - - - - - -</p>\n";
-    $allowed_tags = '<div><p><br><em><i><cite><b><strong><hr><blockquote><h1><h2><h3><ul><ol><li>';
+    $allowed_tags = '<div><p><br><em><i><cite><b><strong><hr><h1><h2><h3><ul><ol><li>';
 
     // @todo This should probably be an injected dependency.
     $renderer = \Drupal::service('renderer');
@@ -70,6 +70,13 @@ class StoryWordExporter {
     if (preg_match_all('@<drupal-entity data-entity-type="node" data-entity-id="(\d+)"@', $value[0]['value'], $matches)) {
       $embedded_nodes = $matches[1];
     }
+    // Instead of having blockquote rendered as such, we want to have the tags
+    // appear in the output.
+    $replacements = [
+      '<blockquote>' => '[[BLOCKQUOTE]]',
+      '</blockquote>' => '[[ENDQUOTE]]',
+    ];
+    $value[0]['value'] = strtr($value[0]['value'], $replacements);
     // Strip all tags other than whitespace and italic/bold formatting before we
     // call check_markup(). This way, all the embed-related tags will already be
     // gone before we try to actually embed anything.
@@ -101,10 +108,6 @@ class StoryWordExporter {
         }
       }
     }
-
-    // Instead of having blockquote rendered as such, we want to have the tags
-    // appear in the output.
-    $output = preg_replace(['@<blockquote>@', '@</blockquote>@'], ['[[BLOCKQUOTE]]', '[[ENDQUOTE]]'], $output);
 
     // Strip all remaining tags, other than italics/bold and whitespace formatting.
     $output = strip_tags($output, $allowed_tags);
