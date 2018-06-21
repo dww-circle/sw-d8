@@ -454,19 +454,21 @@ function sw_preprocess_node_story(&$variables) {
       $wide = $variables['node']->get('field_wide_image')->getValue();
       if (empty($wide)) {
         $mains = $variables['node']->get('field_main_image')->referencedEntities();
-        $main = reset($mains);
-        $main_fid = $main->get('field_media_image')->first()->getValue()['target_id'];
-        if (!empty($main_fid)) {
-          $image = \Drupal::entityTypeManager()->getStorage('file')->load($main_fid);
-          // @todo: find this dynamically or make this configurable?
-          $style_name = '825x624';
-          $style = \Drupal::entityTypeManager()->getStorage('image_style')->load($style_name);
-          $variables['content']['field_wide_image'][0] = [
-            '#theme' => 'image',
-            '#style_name' => $style_name,
-            '#uri' => $style->buildUrl($image->getFileUri()),
-          ];
-          $variables['attributes']['class'][] = 'large-fallback';
+        if (!empty($mains)) {
+          $main = reset($mains);
+          $main_fid = $main->get('field_media_image')->first()->getValue()['target_id'];
+          if (!empty($main_fid)) {
+            $image = \Drupal::entityTypeManager()->getStorage('file')->load($main_fid);
+            // @todo: find this dynamically or make this configurable?
+            $style_name = '825x624';
+            $style = \Drupal::entityTypeManager()->getStorage('image_style')->load($style_name);
+            $variables['content']['field_wide_image'][0] = [
+              '#theme' => 'image',
+              '#style_name' => $style_name,
+              '#uri' => $style->buildUrl($image->getFileUri()),
+            ];
+            $variables['attributes']['class'][] = 'large-fallback';
+          }
         }
       }
       break;
