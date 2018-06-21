@@ -2,10 +2,13 @@
 
 namespace Drupal\sw\Controller;
 
+use Drupal\Core\Access\AccessResult;
 use Drupal\Core\Controller\ControllerBase;
 use Drupal\Core\Url;
+use Drupal\node\NodeInterface;
 use Drupal\forward\ForwardFormBuilder;
 use Drupal\sw\EntityPathAliasTrait;
+use Drupal\sw\StoryWordExporter;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
@@ -180,6 +183,38 @@ class SWController extends ControllerBase {
       }
     }
     return $build;
+  }
+
+  /**
+   * Controller callback for the word-export tab.
+   *
+   * @param \Drupal\node\NodeInterface $node
+   *   The fully loaded node entity to generate a word export tab for.
+   * @return array
+   *   The render array for the word export tab.
+   *
+   * @see \Drupal\sw\StoryWordExporter
+   */
+  public function wordExportPage(NodeInterface $node) {
+    if ($node->bundle() != 'story') {
+      return [];
+    }
+    $word_exporter = new StoryWordExporter($node);
+    return $word_exporter->build();
+  }
+
+  /**
+   * Access callback to ensure we're dealing with a story node.
+   *
+   * @return \Drupal\Core\Access\AccessResult
+   */
+  public function isStoryNode() {
+    $bundle = '';
+    $node = \Drupal::routeMatch()->getParameter('node');
+    if ($node instanceof \Drupal\node\NodeInterface) {
+      $bundle = $node->bundle();
+    }
+    return AccessResult::allowedIf($bundle == 'story');
   }
 
 }

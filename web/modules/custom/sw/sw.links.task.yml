@@ -1,0 +1,4 @@
+sw.node.word_export:
+  route_name: sw.node.word_export
+  base_route: entity.node.canonical
+  title: Word export

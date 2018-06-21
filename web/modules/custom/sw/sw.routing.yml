@@ -33,6 +33,14 @@ sw.topic:
     _title: 'Topics'
   requirements:
     _permission: 'access content'
+sw.node.word_export:
+  path: '/node/{node}/word-export'
+  defaults:
+    _controller: '\Drupal\sw\Controller\SWController::wordExportPage'
+  requirements:
+    _entity_access: 'node.update'
+    _custom_access: '\Drupal\sw\Controller\SWController::isStoryNode'
+    node: \d+
 sw.admin.content.front_page:
   path: '/admin/content/front-page'
   defaults:
