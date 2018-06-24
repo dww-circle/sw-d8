@@ -27,12 +27,4 @@ content:
       view_mode: teaser
       link: false
     third_party_settings: {  }
-  title:
-    label: hidden
-    type: string
-    weight: -10
-    region: content
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
 hidden: {  }
