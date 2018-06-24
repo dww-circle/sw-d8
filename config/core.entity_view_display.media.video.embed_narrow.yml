@@ -17,10 +17,10 @@ content:
     weight: 0
     label: hidden
     settings:
+      responsive: true
       width: 210
       height: 118
       autoplay: false
-      responsive: false
     third_party_settings: {  }
     type: video_embed_field_video
     region: content
