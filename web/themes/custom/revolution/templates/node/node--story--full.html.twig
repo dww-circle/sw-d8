@@ -79,6 +79,10 @@
   ]
 %}
 
+{% if view_mode == 'full' %}
+  {% set content_wrapper = 'node__content-full'%}
+{% endif %}
+
 <article{{ attributes.addClass(classes) }}>
 
   <div class="content">
@@ -90,7 +94,7 @@
       </h1>
     {{ title_suffix }}
 
-    <div{{ content_attributes.addClass('node__content') }}>
+    <div{{ content_attributes.addClass('node__content').addClass(content_wrapper) }}>
       {{ date }}
       {{ content.field_introduction }}
       <div class="story-social-left">
@@ -113,9 +117,9 @@
           {% endif %}
         </div>
       {% endif %}
-      <div class="story-social-bottom">
-        {% include  directory ~ '/templates/components/share.html.twig' %}
-      </div>
+    </div>
+    <div class="story-social-bottom">
+      {% include  directory ~ '/templates/components/share.html.twig' %}
     </div>
   </div>
 

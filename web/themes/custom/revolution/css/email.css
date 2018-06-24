@@ -175,6 +175,9 @@ main {
     main {
       padding: 0 120px; } }
 
+.node__content-full {
+  margin-bottom: 50px; }
+
 .page-title {
   text-transform: uppercase;
   font-size: 36px;
@@ -456,24 +459,23 @@ main {
   border-bottom: 1px solid #808080;
   margin-bottom: 20px; }
 
-.page-node-type-story .field--name-field-body {
-  margin-bottom: 50px; }
-  .page-node-type-story .field--name-field-body > p:first-of-type:before {
-    background: #c80000;
-    color: #c80000;
-    content: ' ';
-    display: block;
-    float: left;
-    height: 40px;
-    left: 0;
-    margin-bottom: 0;
-    margin-right: 10px;
-    margin-top: 7px;
-    width: 40px; }
-  .page-node-type-story .field--name-field-body .question {
-    color: #808080;
-    font-style: italic;
-    font-weight: bold; }
+.page-node-type-story .field--name-field-body > p:first-of-type:before {
+  background: #c80000;
+  color: #c80000;
+  content: ' ';
+  display: block;
+  float: left;
+  height: 40px;
+  left: 0;
+  margin-bottom: 0;
+  margin-right: 10px;
+  margin-top: 7px;
+  width: 40px; }
+
+.page-node-type-story .field--name-field-body .question {
+  color: #808080;
+  font-style: italic;
+  font-weight: bold; }
 
 .page-node-type-story .contributors {
   font-style: italic; }

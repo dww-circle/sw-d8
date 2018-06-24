@@ -185,6 +185,10 @@ main {
   @include page-container;
 }
 
+.node__content-full {
+  margin-bottom: 50px;
+}
+
 .page-title {
   text-transform: uppercase;
   font-size: 36px;

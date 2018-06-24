@@ -80,6 +80,11 @@
     view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
   ]
 %}
+
+{% if view_mode == 'full' and node.bundle != 'slices' %}
+  {% set content_wrapper = 'node__content-full'%}
+{% endif %}
+
 {{ attach_library('classy/node') }}
 <article{{ attributes.addClass(classes) }}>
 
@@ -101,7 +106,7 @@
     </footer>
   {% endif %}
 
-  <div{{ content_attributes.addClass('node__content') }}>
+  <div{{ content_attributes.addClass('node__content').addClass(content_wrapper) }}>
     {% if node.id == 5 %}
       {{ "Click on the buttons to follow SocialistWorker.org on social media."|t }}
       <br></br>
