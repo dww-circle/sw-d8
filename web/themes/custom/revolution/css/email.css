@@ -261,6 +261,8 @@ main {
       .align-image-left h3,
       .align-image-left .helvetica {
         width: calc(100% - 260px); } }
+  .align-image-left article.embedded-entity .media {
+    border: 0; }
   .align-image-left article.embedded-entity img {
     float: left;
     height: auto;

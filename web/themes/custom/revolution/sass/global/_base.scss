@@ -305,17 +305,23 @@ main {
     }
   }
 
-  article.embedded-entity img {
-    float: left;
-    height: auto;
-    margin-bottom: 70px;
-    width: 49%;
+  article.embedded-entity {
+    .media {
+      border: 0;
+    }
 
-    @include breakpoint($handheld) {
-      margin-bottom: 0;
-      margin-right: 10px;
-      max-width: 220px;
-      width: 100%;
+    img {
+      float: left;
+      height: auto;
+      margin-bottom: 70px;
+      width: 49%;
+
+      @include breakpoint($handheld) {
+        margin-bottom: 0;
+        margin-right: 10px;
+        max-width: 220px;
+        width: 100%;
+      }
     }
   }
 }
