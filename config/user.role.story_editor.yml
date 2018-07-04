@@ -25,6 +25,7 @@ permissions:
   - 'access taxonomy overview'
   - 'access toolbar'
   - 'access user profiles'
+  - 'bypass node access'
   - 'change own username'
   - 'clone media entity'
   - 'create audio media'
