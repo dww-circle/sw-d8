@@ -71,10 +71,12 @@ class StoryWordExporter {
       $embedded_nodes = $matches[1];
     }
     // Instead of having blockquote rendered as such, we want to have the tags
-    // appear in the output.
+    // appear in the output. Also, convert the red bullet spans back into plain
+    // text (double hyphen).
     $replacements = [
       '<blockquote>' => '[[BLOCKQUOTE]]',
       '</blockquote>' => '[[ENDQUOTE]]',
+      '<span class="bullet"></span>' => '--',
     ];
     $value[0]['value'] = strtr($value[0]['value'], $replacements);
     // Strip all tags other than whitespace and italic/bold formatting before we
