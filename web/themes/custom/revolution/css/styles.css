@@ -1772,7 +1772,8 @@ select {
 .field--name-field-ad {
   margin-bottom: 60px; }
 
-.field--name-field-ad-left {
+.field--name-field-ad-left,
+.field--name-field-ad-right .field__item {
   margin-bottom: 30px; }
 
 .field--name-field-ads {

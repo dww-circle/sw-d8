@@ -31,16 +31,6 @@ content:
     third_party_settings: {  }
     type: entity_reference_entity_view
     region: content
-  field_ad_visibility_bool:
-    weight: 8
-    label: hidden
-    settings:
-      format: custom
-      format_custom_true: hide
-      format_custom_false: ''
-    third_party_settings: {  }
-    type: boolean
-    region: content
   field_date:
     weight: 1
     label: hidden
@@ -101,4 +91,5 @@ content:
     third_party_settings: {  }
     type: entity_reference_entity_view
     region: content
-hidden: {  }
+hidden:
+  field_ad_visibility_bool: true

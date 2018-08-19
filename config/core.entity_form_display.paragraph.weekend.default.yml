@@ -24,7 +24,7 @@ bundle: weekend
 mode: default
 content:
   field_ad_right:
-    weight: 8
+    weight: 7
     settings:
       entity_browser: sw_media_browser
       field_widget_display: rendered_entity
@@ -37,21 +37,14 @@ content:
     third_party_settings: {  }
     type: entity_browser_entity_reference
     region: content
-  field_ad_visibility_bool:
-    weight: 0
-    settings:
-      display_label: true
-    third_party_settings: {  }
-    type: boolean_checkbox
-    region: content
   field_date:
-    weight: 2
+    weight: 1
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
     region: content
   field_display_title:
-    weight: 1
+    weight: 0
     settings:
       size: 60
       placeholder: ''
@@ -59,13 +52,13 @@ content:
     type: string_textfield
     region: content
   field_layout:
-    weight: 4
+    weight: 3
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_lead:
-    weight: 3
+    weight: 2
     settings:
       entity_browser: sw_story_browser
       field_widget_display: label
@@ -79,7 +72,7 @@ content:
     region: content
   field_nested_left:
     type: entity_reference_paragraphs
-    weight: 6
+    weight: 5
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -91,7 +84,7 @@ content:
     region: content
   field_nested_right:
     type: entity_reference_paragraphs
-    weight: 7
+    weight: 6
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -102,7 +95,7 @@ content:
     third_party_settings: {  }
     region: content
   field_sub:
-    weight: 5
+    weight: 4
     settings:
       entity_browser: sw_story_browser
       field_widget_display: label
@@ -116,5 +109,6 @@ content:
     region: content
 hidden:
   created: true
+  field_ad_visibility_bool: true
   status: true
   uid: true
