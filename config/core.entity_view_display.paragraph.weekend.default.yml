@@ -7,6 +7,7 @@ dependencies:
     - field.field.paragraph.weekend.field_ad_visibility_bool
     - field.field.paragraph.weekend.field_date
     - field.field.paragraph.weekend.field_display_title
+    - field.field.paragraph.weekend.field_layout
     - field.field.paragraph.weekend.field_lead
     - field.field.paragraph.weekend.field_nested_left
     - field.field.paragraph.weekend.field_nested_right
@@ -15,13 +16,14 @@ dependencies:
   module:
     - datetime
     - entity_reference_revisions
+    - options
 id: paragraph.weekend.default
 targetEntityType: paragraph
 bundle: weekend
 mode: default
 content:
   field_ad_right:
-    weight: 6
+    weight: 7
     label: hidden
     settings:
       view_mode: embed
@@ -30,7 +32,7 @@ content:
     type: entity_reference_entity_view
     region: content
   field_ad_visibility_bool:
-    weight: 7
+    weight: 8
     label: hidden
     settings:
       format: custom
@@ -56,8 +58,15 @@ content:
     third_party_settings: {  }
     type: string
     region: content
-  field_lead:
+  field_layout:
     weight: 2
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_lead:
+    weight: 3
     label: hidden
     settings:
       view_mode: teaser_image_large
@@ -67,7 +76,7 @@ content:
     region: content
   field_nested_left:
     type: entity_reference_revisions_entity_view
-    weight: 4
+    weight: 5
     label: hidden
     settings:
       view_mode: default
@@ -76,7 +85,7 @@ content:
     region: content
   field_nested_right:
     type: entity_reference_revisions_entity_view
-    weight: 5
+    weight: 6
     label: hidden
     settings:
       view_mode: default
@@ -84,7 +93,7 @@ content:
     third_party_settings: {  }
     region: content
   field_sub:
-    weight: 3
+    weight: 4
     label: hidden
     settings:
       view_mode: teaser

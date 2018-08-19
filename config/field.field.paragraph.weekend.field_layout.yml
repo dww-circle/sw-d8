@@ -1,0 +1,21 @@
+uuid: 89eca5bc-d894-4498-9974-c288a64887d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_layout
+    - paragraphs.paragraphs_type.weekend
+  module:
+    - options
+id: paragraph.weekend.field_layout
+field_name: field_layout
+entity_type: paragraph
+bundle: weekend
+label: 'Number of Medium Sized Images on Substories'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

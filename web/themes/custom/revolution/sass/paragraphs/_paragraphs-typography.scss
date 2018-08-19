@@ -39,7 +39,7 @@ h4 {
   }
 
   // Weeekend sub
-  .field--name-field-sub & {
+  .sub-stories & {
     font-size: 22px;
     margin-bottom: 16px;
     text-transform: none;
@@ -85,7 +85,7 @@ h4 {
 .story-label {
   .story-group--column_right &,
   .story-group--column_left &,
-  .field--name-field-sub &,
+  .sub-stories &,
   .paragraph--type--nested & {
     font-size: 13px;
     margin-bottom: 3px;

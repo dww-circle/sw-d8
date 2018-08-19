@@ -92,6 +92,27 @@ function revolution_preprocess_paragraph__today(&$variables) {
   $variables['sw_recent_articles_block_body']['#attached']['drupalSettings']['sw_recent_articles_block']['date_offset'] = 1;
 }
 
+/*
+ * Implements hook_preprocess_paragraph__TYPE().
+ */
+function revolution_preprocess_paragraph__weekend(&$variables) {
+  $num_med_img = $variables['paragraph']->field_layout->value;
+  $sub_stories = $variables['paragraph']->get('field_sub')
+    ->referencedEntities();
+
+  if (!empty($sub_stories)) {
+    $view_builder = \Drupal::entityTypeManager()->getViewBuilder('node');
+    $i=0;
+
+    foreach ($sub_stories as $node) {
+      $view_mode = $i < $num_med_img ? 'teaser_image_medium' : 'teaser';
+      $stories[] = $view_builder->view($node, $view_mode);
+      $i++;
+    }
+    $variables['sub_stories'] = $stories;
+  }
+}
+
 /**
  * Custom function to decide which view mode should be displayed.
  */

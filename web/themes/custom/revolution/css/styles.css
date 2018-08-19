@@ -2107,7 +2107,7 @@ select {
     .story--teaser-image-large h4 {
       font-size: 42px; } }
 
-.field--name-field-sub h4 {
+.sub-stories h4 {
   font-size: 22px;
   margin-bottom: 16px;
   text-transform: none; }
@@ -2139,7 +2139,7 @@ select {
 
 .story-group--column_right .story-label,
 .story-group--column_left .story-label,
-.field--name-field-sub .story-label,
+.sub-stories .story-label,
 .paragraph--type--nested .story-label {
   font-size: 13px;
   margin-bottom: 3px; }

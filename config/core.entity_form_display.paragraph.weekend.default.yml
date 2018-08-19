@@ -8,6 +8,7 @@ dependencies:
     - field.field.paragraph.weekend.field_ad_visibility_bool
     - field.field.paragraph.weekend.field_date
     - field.field.paragraph.weekend.field_display_title
+    - field.field.paragraph.weekend.field_layout
     - field.field.paragraph.weekend.field_lead
     - field.field.paragraph.weekend.field_nested_left
     - field.field.paragraph.weekend.field_nested_right
@@ -23,7 +24,7 @@ bundle: weekend
 mode: default
 content:
   field_ad_right:
-    weight: 7
+    weight: 8
     settings:
       entity_browser: sw_media_browser
       field_widget_display: rendered_entity
@@ -57,6 +58,12 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  field_layout:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
   field_lead:
     weight: 3
     settings:
@@ -72,7 +79,7 @@ content:
     region: content
   field_nested_left:
     type: entity_reference_paragraphs
-    weight: 5
+    weight: 6
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -84,7 +91,7 @@ content:
     region: content
   field_nested_right:
     type: entity_reference_paragraphs
-    weight: 6
+    weight: 7
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -95,7 +102,7 @@ content:
     third_party_settings: {  }
     region: content
   field_sub:
-    weight: 4
+    weight: 5
     settings:
       entity_browser: sw_story_browser
       field_widget_display: label
