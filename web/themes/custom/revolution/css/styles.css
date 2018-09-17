@@ -2108,14 +2108,9 @@ select {
     .story--teaser-image-large h4 {
       font-size: 42px; } }
 
-.sub-stories h4 {
-  font-size: 22px;
-  margin-bottom: 16px;
-  text-transform: none; }
-
-.field--name-field-nested-left .story--teaser-image-medium h4 {
-  font-size: 26px;
-  text-transform: none; }
+.field--name-field-nested-left .story--teaser-image-medium h4,
+.sub-stories .story--teaser-image-medium h4 {
+  font-size: 26px; }
 
 @media (min-width: 961px) {
   .paragraph-stories .story-group--column_left h4 {
@@ -2126,9 +2121,9 @@ select {
     font-size: 30px; } }
 
 .story-group--column_left .story--teaser h4,
-.field--name-field-nested-left .story--teaser h4 {
-  font-size: 22px;
-  text-transform: none; }
+.field--name-field-nested-left .story--teaser h4,
+.sub-stories .story--teaser h4 {
+  font-size: 22px; }
 
 .story-group--column_right .story--teaser h4,
 .field--name-field-nested-right h4 {
