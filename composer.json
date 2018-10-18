@@ -117,9 +117,6 @@
   },
   "extra": {
     "patches": {
-      "drupal/admin_toolbar": {
-        "[#2972553-3] Add static cache to speed up admin_toolbar_links_access_filter_user_has_admin_role()" : "https://www.drupal.org/files/issues/2018-05-13/2972553-3.admin_toolbar_optimization.patch"
-      },
       "drupal/auto_entitylabel": {
         "[#2120055-22] Trim auto-generated labels" : "https://www.drupal.org/files/issues/2018-04-04/2120055-22.auto_entitylabel-8.x-2.x.trim-no-config.patch",
         "[#2905230-6] Alter inline_entity_form table to display auto-computed entity labels" : "https://www.drupal.org/files/issues/Title_displayed_as_AutoEntityLabel_after_saving_via_Inline_Entity_Form-2905230-6.patch"
@@ -131,7 +128,6 @@
         "[#2625136-63] Label visibility for exposed numeric and date filter when using single and multi value filter" : "https://www.drupal.org/files/issues/2625136-63.patch",
         "[#2645954-26] Views output field as a custom link options all ignored if path is routed" : "https://www.drupal.org/files/issues/2018-03-27/2645954-26.views-output-field-as-link-for-routed-paths.patch",
         "[#2673980-36] RSS view with fields give wrong URL from path field" : "https://www.drupal.org/files/issues/2018-04-20/2673980-36.patch",
-        "[#2934799-2] d6_term_node_revision migration ignores a lot of items that it shouldn't" : "https://www.drupal.org/files/issues/2934799-2-drupal-d6_term_node_revision_uses_wrong_migration_mapping.patch",
         "[#2959415-2] When a view uses the HTTPStatusCode handler to set a 404 or 403, throw the appropriate exception" : "https://www.drupal.org/files/issues/2018-04-07/2959415-2.httpstatuscode_throw_exception.patch"
       },
       "drupal/entity_browser": {
@@ -151,14 +147,8 @@
         "[#2971228-3] Provide #recipient as a variable for the forward twig template" : "https://www.drupal.org/files/issues/2018-05-07/2971228-3.forward-recipient-template-variable.patch",
         "[#2972096-2] Fix config export to only show entities where forward is enabled": "https://www.drupal.org/files/issues/2018-05-10/2972096-2.forward-clean-settings.patch"
       },
-      "drupal/migrate_upgrade": {
-        "[#2935225-2] Fix to d6_term_node_revision handling (companion to core issue 2934799)" : "https://www.drupal.org/files/issues/2935225-2-migrate_upgrade-fix_to_d6_term_node_revision_handling.patch"
-      },
       "drupal/search_api": {
         "[#2820410-20] Allow rendering an entity viewmode when using fields in views" : "https://www.drupal.org/files/issues/2018-03-12/search_api-views_rendered_item_field-2820410-20-D8.patch"
-      },
-      "drupal/xmlsitemap": {
-        "[#2745695-10] Rebuild always includes all link types" : "https://www.drupal.org/files/issues/2018-05-25/2745695-10.xmlsitemap-rebuild-all-entities.patch"
       }
     },
     "installer-paths": {
