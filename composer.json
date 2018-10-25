@@ -128,7 +128,8 @@
         "[#2625136-63] Label visibility for exposed numeric and date filter when using single and multi value filter" : "https://www.drupal.org/files/issues/2625136-63.patch",
         "[#2645954-26] Views output field as a custom link options all ignored if path is routed" : "https://www.drupal.org/files/issues/2018-03-27/2645954-26.views-output-field-as-link-for-routed-paths.patch",
         "[#2673980-36] RSS view with fields give wrong URL from path field" : "https://www.drupal.org/files/issues/2018-04-20/2673980-36.patch",
-        "[#2959415-2] When a view uses the HTTPStatusCode handler to set a 404 or 403, throw the appropriate exception" : "https://www.drupal.org/files/issues/2018-04-07/2959415-2.httpstatuscode_throw_exception.patch"
+        "[#2959415-2] When a view uses the HTTPStatusCode handler to set a 404 or 403, throw the appropriate exception" : "https://www.drupal.org/files/issues/2018-04-07/2959415-2.httpstatuscode_throw_exception.patch",
+        "[#3009114-3] Regression: Editing a media entity now always redirects you to a media overview list" : "https://www.drupal.org/files/issues/2018-10-25/3009114-3.patch"
       },
       "drupal/entity_browser": {
         "[#2972964-3] Add a CSS class to the widget for the target entity type" : "https://www.drupal.org/files/issues/2018-05-15/2972964-3.entity-browser-widget-media-type-class.patch"
