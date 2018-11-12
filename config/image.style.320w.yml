@@ -1,0 +1,15 @@
+uuid: 9cbf2760-7f68-4d33-a652-e60dbc7285be
+langcode: en
+status: true
+dependencies: {  }
+name: 320w
+label: 'SW 320'
+effects:
+  7534f26b-0229-457a-97d5-f86b9172462c:
+    uuid: 7534f26b-0229-457a-97d5-f86b9172462c
+    id: image_scale
+    weight: 1
+    data:
+      width: 320
+      height: null
+      upscale: false

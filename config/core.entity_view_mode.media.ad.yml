@@ -1,0 +1,10 @@
+uuid: 07c807e1-9ae8-4e3e-896b-008c7d4913ff
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.ad
+label: Ad
+targetEntityType: media
+cache: true

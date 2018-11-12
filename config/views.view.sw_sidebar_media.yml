@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.media.embed
+    - core.entity_view_mode.media.ad
     - entityqueue.entity_queue.sidebar_media
     - media.type.image
     - media.type.video
@@ -63,7 +63,7 @@ display:
         type: 'entity:media'
         options:
           relationship: none
-          view_mode: embed
+          view_mode: ad
       fields:
         name:
           id: name
