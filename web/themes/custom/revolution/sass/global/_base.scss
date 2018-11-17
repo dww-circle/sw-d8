@@ -89,6 +89,11 @@ img {
       margin: 0 auto;
     }
   }
+
+  .media--view-mode-ad & {
+    height: auto;
+    max-width: 100%;
+  }
 }
 
 hr {

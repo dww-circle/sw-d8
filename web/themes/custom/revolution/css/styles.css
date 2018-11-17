@@ -129,6 +129,9 @@ img {
     img.align-center,
     .align-center img {
       margin: 0 auto; } }
+  .media--view-mode-ad img {
+    height: auto;
+    max-width: 100%; }
 
 hr {
   border: none;
