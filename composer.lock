@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "554ee1bf45e08ba0123ff6aba15a0766",
+    "content-hash": "dfd7205a7bb2c602805d8db151ef7cd2",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2091,16 +2091,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.6.6",
+            "version": "8.6.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "6736973f399a3a9ac8ecd41f3a159e1153f7ee39"
+                "reference": "e0a09bda1da7552204464894811a59387608c9f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/6736973f399a3a9ac8ecd41f3a159e1153f7ee39",
-                "reference": "6736973f399a3a9ac8ecd41f3a159e1153f7ee39",
+                "url": "https://api.github.com/repos/drupal/core/zipball/e0a09bda1da7552204464894811a59387608c9f9",
+                "reference": "e0a09bda1da7552204464894811a59387608c9f9",
                 "shasum": ""
             },
             "require": {
@@ -2310,6 +2310,7 @@
                     "[#2559961-29] ManyToOneHelper ignores group configuration for some cases and forces INNER joins": "https://www.drupal.org/files/issues/manytoonehelper_ignores-2559961-29-8.3.x.patch",
                     "[#2625136-63] Label visibility for exposed numeric and date filter when using single and multi value filter": "https://www.drupal.org/files/issues/2625136-63.patch",
                     "[#2645954-26] Views output field as a custom link options all ignored if path is routed": "https://www.drupal.org/files/issues/2018-03-27/2645954-26.views-output-field-as-link-for-routed-paths.patch",
+                    "[#2673980-81] RSS view with fields give wrong URL from path field": "https://www.drupal.org/files/issues/2018-11-22/rss_view_with_fields-2673980-81.patch",
                     "[#2959415-2] When a view uses the HTTPStatusCode handler to set a 404 or 403, throw the appropriate exception": "https://www.drupal.org/files/issues/2018-04-07/2959415-2.httpstatuscode_throw_exception.patch",
                     "[#3009114-3] Regression: Editing a media entity now always redirects you to a media overview list": "https://www.drupal.org/files/issues/2018-10-25/3009114-3.patch"
                 }
@@ -2335,7 +2336,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2019-01-15T17:41:52+00:00"
+            "time": "2019-01-16T23:30:03+00:00"
         },
         {
             "name": "drupal/ctools",
@@ -7769,16 +7770,16 @@
         },
         {
             "name": "webflo/drupal-core-strict",
-            "version": "8.6.6",
+            "version": "8.6.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webflo/drupal-core-strict.git",
-                "reference": "8b185652e851aa9ef18ed12ee962068a55238cf3"
+                "reference": "161c4e59e25caae08ff1f58b6fdbe4c4fdadf198"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webflo/drupal-core-strict/zipball/8b185652e851aa9ef18ed12ee962068a55238cf3",
-                "reference": "8b185652e851aa9ef18ed12ee962068a55238cf3",
+                "url": "https://api.github.com/repos/webflo/drupal-core-strict/zipball/161c4e59e25caae08ff1f58b6fdbe4c4fdadf198",
+                "reference": "161c4e59e25caae08ff1f58b6fdbe4c4fdadf198",
                 "shasum": ""
             },
             "require": {
@@ -7870,7 +7871,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Locked core dependencies",
-            "time": "2019-01-16T18:30:43+00:00"
+            "time": "2019-01-17T00:00:45+00:00"
         },
         {
             "name": "webflo/drupal-finder",
