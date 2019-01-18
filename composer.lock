@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "dfd7205a7bb2c602805d8db151ef7cd2",
+    "content-hash": "46247a4254b56a15927c66f7f07d6af6",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3759,6 +3759,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "[#2958635-20] Restore link to add a redirect on node edit forms": "https://www.drupal.org/files/issues/2019-01-10/2958635-21.redirect-add-link-on-node-form.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",

@@ -148,6 +148,9 @@
         "[#2971228-3] Provide #recipient as a variable for the forward twig template" : "https://www.drupal.org/files/issues/2018-05-07/2971228-3.forward-recipient-template-variable.patch",
         "[#2972096-2] Fix config export to only show entities where forward is enabled": "https://www.drupal.org/files/issues/2018-05-10/2972096-2.forward-clean-settings.patch"
       },
+      "drupal/redirect": {
+        "[#2958635-20] Restore link to add a redirect on node edit forms" : "https://www.drupal.org/files/issues/2019-01-10/2958635-21.redirect-add-link-on-node-form.patch"
+      },
       "drupal/search_api": {
         "[#2820410-20] Allow rendering an entity viewmode when using fields in views" : "https://www.drupal.org/files/issues/2018-03-12/search_api-views_rendered_item_field-2820410-20-D8.patch"
       }
