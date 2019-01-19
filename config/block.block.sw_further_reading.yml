@@ -19,9 +19,9 @@ settings:
   label: 'Further reading'
   provider: sw
   label_display: visible
-  story_query_weight_limit: 0
-  story_query_date_limit: 0
-  related_articles_date_limit: 90
+  story_query_weight_limit: '0'
+  story_query_date_limit: '0'
+  related_articles_date_limit: '999999'
 visibility:
   'entity_bundle:node':
     id: 'entity_bundle:node'
