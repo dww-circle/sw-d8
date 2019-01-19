@@ -12,6 +12,7 @@ permissions:
   - 'administer media'
   - 'administer menu'
   - 'administer nodes'
+  - 'administer redirects'
   - 'administer taxonomy'
   - 'bypass node access'
   - 'create story_queues entityqueue'
