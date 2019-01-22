@@ -1046,6 +1046,15 @@ main {
 .view-sw-issue-stories .content {
   margin: 0 0 40px 0; }
 
+.view-sw-issue-stories .story--teaser h4 {
+  font-size: 24px; }
+
+.view-sw-issue-stories .story-label {
+  font-size: 12px; }
+
+.view-sw-issue-stories .field--name-field-teaser {
+  font-size: 13.5px; }
+
 .view-sw-search .story-link {
   margin-bottom: 10px; }
 
