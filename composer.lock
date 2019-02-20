@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "46247a4254b56a15927c66f7f07d6af6",
+    "content-hash": "b3395f0a13aa593c9b78ef1025ab01b7",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3078,17 +3078,17 @@
         },
         {
             "name": "drupal/forward",
-            "version": "2.1.0",
+            "version": "2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/forward",
-                "reference": "8.x-2.1"
+                "reference": "8.x-2.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/forward-8.x-2.1.zip",
-                "reference": "8.x-2.1",
-                "shasum": "9024b80a1a5c544c6180a066700e22598b59366f"
+                "url": "https://ftp.drupal.org/files/projects/forward-8.x-2.2.zip",
+                "reference": "8.x-2.2",
+                "shasum": "e74bae3851dccbb9c9394d2f3c7dde2ade441d6a"
             },
             "require": {
                 "drupal/core": "*",
@@ -3100,26 +3100,18 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.1",
-                    "datestamp": "1521051184",
+                    "version": "8.x-2.2",
+                    "datestamp": "1548780480",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
                 },
                 "patches_applied": {
-                    "[#2968459-2] Add tokens for links to the entity being forwarded": "https://www.drupal.org/files/issues/2018-05-01/2968459-2.forward-link-tokens.patch",
-                    "[#2968659-2] The 'link' variable in forward.twig.html should be absolute": "https://www.drupal.org/files/issues/2018-05-01/2968659-2.forward-entity-link-absolute.patch",
-                    "[#2969005-2] Migrate source plugins need to define a 'source_module' in their annotation": "https://www.drupal.org/files/issues/2018-05-02/2969005-2.forward-migrate-source-module.patch",
-                    "[#2969317-2] Convert forward to use short array syntax": "https://www.drupal.org/files/issues/2018-05-03/2969317-2.forward-short-array.patch",
                     "[#2969337-6] Settings form UI improvement for dependent config options": "https://www.drupal.org/files/issues/2018-05-03/2969337-6.patch",
-                    "[#2969352-4] Add option to allow plain text emails": "https://www.drupal.org/files/issues/2018-05-03/2969352-3.allow-plain-text.patch",
                     "[#2969352-10] Follow-up fix for plain text emails": "https://www.drupal.org/files/issues/2018-05-04/2969352-10.plain-text-needs-helper-class.patch",
                     "[#2969594-2] Simplify entity rendering code in ForwardForm::submitForm()": "https://www.drupal.org/files/issues/2018-05-04/2969594-2.simplify-entity-rendering.patch",
-                    "[#2969418-2] Allow a separate filter format for plain text vs. HTML emails": "https://www.drupal.org/files/issues/2018-05-03/2969418-2.filter_format_plain_text.patch",
-                    "[#2971226-3] Add a setting for an email footer textarea": "https://www.drupal.org/files/issues/2018-05-07/2971226-3.email-footer-setting.patch",
-                    "[#2971228-3] Provide #recipient as a variable for the forward twig template": "https://www.drupal.org/files/issues/2018-05-07/2971228-3.forward-recipient-template-variable.patch",
-                    "[#2972096-2] Fix config export to only show entities where forward is enabled": "https://www.drupal.org/files/issues/2018-05-10/2972096-2.forward-clean-settings.patch"
+                    "[#2971228-3] Provide #recipient as a variable for the forward twig template": "https://www.drupal.org/files/issues/2018-05-07/2971228-3.forward-recipient-template-variable.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -6050,16 +6042,16 @@
         },
         {
             "name": "stecman/symfony-console-completion",
-            "version": "0.8.0",
+            "version": "0.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stecman/symfony-console-completion.git",
-                "reference": "cd738867503477e91dbe84173dfabd431c883431"
+                "reference": "bd07a24190541de2828c1d6469a8ddce599d3c5a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stecman/symfony-console-completion/zipball/cd738867503477e91dbe84173dfabd431c883431",
-                "reference": "cd738867503477e91dbe84173dfabd431c883431",
+                "url": "https://api.github.com/repos/stecman/symfony-console-completion/zipball/bd07a24190541de2828c1d6469a8ddce599d3c5a",
+                "reference": "bd07a24190541de2828c1d6469a8ddce599d3c5a",
                 "shasum": ""
             },
             "require": {
@@ -6091,7 +6083,7 @@
                 }
             ],
             "description": "Automatic BASH completion for Symfony Console Component based applications.",
-            "time": "2018-02-10T04:28:01+00:00"
+            "time": "2019-01-19T21:25:25+00:00"
         },
         {
             "name": "symfony-cmf/routing",

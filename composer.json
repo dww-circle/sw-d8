@@ -135,18 +135,10 @@
         "[#2972964-3] Add a CSS class to the widget for the target entity type" : "https://www.drupal.org/files/issues/2018-05-15/2972964-3.entity-browser-widget-media-type-class.patch"
       },
       "drupal/forward": {
-        "[#2968459-2] Add tokens for links to the entity being forwarded" : "https://www.drupal.org/files/issues/2018-05-01/2968459-2.forward-link-tokens.patch",
-        "[#2968659-2] The 'link' variable in forward.twig.html should be absolute" : "https://www.drupal.org/files/issues/2018-05-01/2968659-2.forward-entity-link-absolute.patch",
-        "[#2969005-2] Migrate source plugins need to define a 'source_module' in their annotation" : "https://www.drupal.org/files/issues/2018-05-02/2969005-2.forward-migrate-source-module.patch",
-        "[#2969317-2] Convert forward to use short array syntax" : "https://www.drupal.org/files/issues/2018-05-03/2969317-2.forward-short-array.patch",
         "[#2969337-6] Settings form UI improvement for dependent config options" : "https://www.drupal.org/files/issues/2018-05-03/2969337-6.patch",
-        "[#2969352-4] Add option to allow plain text emails" : "https://www.drupal.org/files/issues/2018-05-03/2969352-3.allow-plain-text.patch",
         "[#2969352-10] Follow-up fix for plain text emails" : "https://www.drupal.org/files/issues/2018-05-04/2969352-10.plain-text-needs-helper-class.patch",
         "[#2969594-2] Simplify entity rendering code in ForwardForm::submitForm()" : "https://www.drupal.org/files/issues/2018-05-04/2969594-2.simplify-entity-rendering.patch",
-        "[#2969418-2] Allow a separate filter format for plain text vs. HTML emails" : "https://www.drupal.org/files/issues/2018-05-03/2969418-2.filter_format_plain_text.patch",
-        "[#2971226-3] Add a setting for an email footer textarea" : "https://www.drupal.org/files/issues/2018-05-07/2971226-3.email-footer-setting.patch",
-        "[#2971228-3] Provide #recipient as a variable for the forward twig template" : "https://www.drupal.org/files/issues/2018-05-07/2971228-3.forward-recipient-template-variable.patch",
-        "[#2972096-2] Fix config export to only show entities where forward is enabled": "https://www.drupal.org/files/issues/2018-05-10/2972096-2.forward-clean-settings.patch"
+        "[#2971228-3] Provide #recipient as a variable for the forward twig template" : "https://www.drupal.org/files/issues/2018-05-07/2971228-3.forward-recipient-template-variable.patch"
       },
       "drupal/redirect": {
         "[#2958635-20] Restore link to add a redirect on node edit forms" : "https://www.drupal.org/files/issues/2019-01-10/2958635-21.redirect-add-link-on-node-form.patch"
