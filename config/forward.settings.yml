@@ -33,3 +33,5 @@ forward_email_from_address: no-reply@socialistworker.org
 forward_form_allow_plain_text: false
 forward_filter_format_html: ''
 forward_filter_format_plain_text: forward_plain_text
+forward_max_recipients: 1
+forward_max_recipients_error: 'You can''t send email to more than @number recipient(s) at a time.'
