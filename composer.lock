@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "b3395f0a13aa593c9b78ef1025ab01b7",
+    "content-hash": "78d9e532952a8ad60528229c79b0343c",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3118,7 +3118,8 @@
                     "[#2969337-6] Settings form UI improvement for dependent config options": "https://www.drupal.org/files/issues/2018-05-03/2969337-6.patch",
                     "[#2969352-10] Follow-up fix for plain text emails": "https://www.drupal.org/files/issues/2018-05-04/2969352-10.plain-text-needs-helper-class.patch",
                     "[#2969594-2] Simplify entity rendering code in ForwardForm::submitForm()": "https://www.drupal.org/files/issues/2018-05-04/2969594-2.simplify-entity-rendering.patch",
-                    "[#2971228-3] Provide #recipient as a variable for the forward twig template": "https://www.drupal.org/files/issues/2018-05-07/2971228-3.forward-recipient-template-variable.patch"
+                    "[#2971228-6] Provide #recipient as a variable for the forward twig template": "https://www.drupal.org/files/issues/2019-02-20/2971228-6.forward-recipient-template-variable.patch",
+                    "[#2972096-12] Fix config export to only show entities where forward is enabled": "https://www.drupal.org/files/issues/2019-02-20/2972096-11.forward-clean-config-8x-2x-backport.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
