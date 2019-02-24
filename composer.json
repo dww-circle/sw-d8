@@ -17,7 +17,7 @@
     "drupal/auto_entitylabel": "2.x-dev",
     "drupal/auto_entityqueue": "^1.0",
     "drupal/bueditor": "^1.0",
-    "drupal/captcha": "^1.0",
+    "drupal/captcha": "1.x-dev",
     "drupal/chosen": "^2.4",
     "drupal/config_direct_save": "^1.0",
     "drupal/config_installer": "^1.0",
