@@ -16,7 +16,7 @@ forward_form_display_page: true
 forward_form_display_subject: false
 forward_form_display_body: false
 forward_form_confirmation: 'This article has been forwarded. Thanks for spreading the word about [site:name].'
-forward_personal_message: 1
+forward_personal_message: 0
 forward_personal_message_filter: false
 forward_personal_message_tags: 'p,br,em,strong,cite,code,ul,ol,li,dl,dt,dd'
 forward_email_logo: ''
