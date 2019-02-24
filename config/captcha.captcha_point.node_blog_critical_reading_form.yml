@@ -1,0 +1,7 @@
+uuid: dcaa2ebd-0d09-4820-9ba1-a4d592604680
+langcode: en
+status: false
+dependencies: {  }
+formId: node_blog_critical_reading_form
+captchaType: default
+label: null

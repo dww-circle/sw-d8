@@ -1,0 +1,7 @@
+uuid: 7f5fa8c0-ed95-442b-8e51-78b1ba409006
+langcode: en
+status: true
+dependencies: {  }
+formId: forward_form
+captchaType: default
+label: forward_form

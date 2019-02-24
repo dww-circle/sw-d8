@@ -1,0 +1,7 @@
+uuid: d9fb7228-0e02-4e38-b697-c80b5f5c540b
+langcode: en
+status: false
+dependencies: {  }
+formId: node_insert_box_form
+captchaType: default
+label: null
