@@ -42,6 +42,7 @@
     "drupal/paragraphs": "^1.2",
     "drupal/pathauto": "^1.0",
     "drupal/pathologic": "^1.0",
+    "drupal/recaptcha": "^2.3",
     "drupal/redirect": "^1.1",
     "drupal/search_api": "^1.8",
     "drupal/search_api_pantheon": "~1.0",
