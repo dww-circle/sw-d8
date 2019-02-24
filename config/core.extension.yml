@@ -58,6 +58,7 @@ module:
   path: 0
   pathologic: 0
   rdf: 0
+  recaptcha: 0
   redirect: 0
   responsive_image: 0
   search_api: 0
