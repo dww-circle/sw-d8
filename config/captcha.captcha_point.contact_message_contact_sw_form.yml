@@ -1,0 +1,7 @@
+uuid: 094e5ca3-a242-4988-ad3a-6b295a3f801b
+langcode: en
+status: true
+dependencies: {  }
+formId: contact_message_contact_sw_form
+captchaType: default
+label: contact_message_contact_sw_form

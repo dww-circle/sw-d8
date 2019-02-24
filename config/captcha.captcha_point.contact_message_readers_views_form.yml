@@ -1,0 +1,7 @@
+uuid: c545cce8-3743-4574-b316-724c3c77e5d1
+langcode: en
+status: true
+dependencies: {  }
+formId: contact_message_readers_views_form
+captchaType: default
+label: contact_message_readers_views_form
