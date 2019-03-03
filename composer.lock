@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "3f3385572c3015cd39b1a3f7095d0182",
+    "content-hash": "96a780b4231d3b5a685c4a61cc6e9a15",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2768,6 +2768,9 @@
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
                     }
+                },
+                "patches_applied": {
+                    "[#3035700-2] Undefined index: is_circular": "https://www.drupal.org/files/issues/2019-02-25/3035700-undefined-index-is-circular-2.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",

@@ -137,6 +137,9 @@
       "drupal/entity_browser": {
         "[#2972964-3] Add a CSS class to the widget for the target entity type" : "https://www.drupal.org/files/issues/2018-05-15/2972964-3.entity-browser-widget-media-type-class.patch"
       },
+      "drupal/entity_clone": {
+        "[#3035700-2] Undefined index: is_circular" : "https://www.drupal.org/files/issues/2019-02-25/3035700-undefined-index-is-circular-2.patch"
+      },
       "drupal/forward": {
         "[#2969337-6] Settings form UI improvement for dependent config options" : "https://www.drupal.org/files/issues/2018-05-03/2969337-6.patch",
         "[#2969352-10] Follow-up fix for plain text emails" : "https://www.drupal.org/files/issues/2018-05-04/2969352-10.plain-text-needs-helper-class.patch",
