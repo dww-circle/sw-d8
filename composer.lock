@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "142929ebabb95161a0e21d27d3dfca87",
+    "content-hash": "3f3385572c3015cd39b1a3f7095d0182",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2374,7 +2374,8 @@
                     "[#2645954-26] Views output field as a custom link options all ignored if path is routed": "https://www.drupal.org/files/issues/2018-03-27/2645954-26.views-output-field-as-link-for-routed-paths.patch",
                     "[#2673980-81] RSS view with fields give wrong URL from path field": "https://www.drupal.org/files/issues/2018-11-22/rss_view_with_fields-2673980-81.patch",
                     "[#2959415-2] When a view uses the HTTPStatusCode handler to set a 404 or 403, throw the appropriate exception": "https://www.drupal.org/files/issues/2018-04-07/2959415-2.httpstatuscode_throw_exception.patch",
-                    "[#3009114-3] Regression: Editing a media entity now always redirects you to a media overview list": "https://www.drupal.org/files/issues/2018-10-25/3009114-3.patch"
+                    "[#3009114-3] Regression: Editing a media entity now always redirects you to a media overview list": "https://www.drupal.org/files/issues/2018-10-25/3009114-3.patch",
+                    "[#3016038-5] Unrecognized entity operation passed to Menu Link Content throws exceptions": "https://www.drupal.org/files/issues/2019-02-21/3016038-5.patch"
                 }
             },
             "autoload": {
