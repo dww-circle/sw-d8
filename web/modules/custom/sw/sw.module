@@ -1278,7 +1278,7 @@ function sw_preprocess_html(&$variables) {
       ['name' => 'google-site-verification', 'content' => 'mN5MrkxGGmnBKwcDL0mSz7us2M2d4xwpfzHnUsQJVjU'],
     ];
   }
-  elseif (!empty($node) && $node->bundle() == 'story') {
+  elseif (!empty($node) && $node instanceof NodeInterface && $node->bundle() == 'story') {
     $clean_title = strip_tags($node->label());
     $meta_tags = [
       ['property' => 'og:title', 'name' => 'title', 'content' => $clean_title],
@@ -1391,7 +1391,7 @@ function sw_preprocess_page(&$variables) {
     }
   }
   $node = \Drupal::routeMatch()->getParameter('node');
-  if ($node) {
+  if ($node && $node instanceof NodeInterface) {
     switch ($node->bundle()) {
       case 'blog_critical_reading':
         $variables['story_label'] = t('From the Critical Reading blog');
