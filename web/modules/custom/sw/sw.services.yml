@@ -1,4 +1,8 @@
 services:
+  sw.route_subscriber:
+    class: Drupal\sw\Routing\RouteSubscriber
+    tags:
+      - { name: event_subscriber }
   sw.subscriber:
     class: Drupal\sw\EventSubscriber\SWSubscriber
     arguments:
