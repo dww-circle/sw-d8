@@ -1806,3 +1806,15 @@ function sw_search_api_solr_query_alter(\Solarium\QueryType\Select\Query\Query $
     'recip(abs(ms(NOW/HOUR,ds_created)),3.16e-11,1,.1)'
   );
 }
+
+/**
+ * Implements hook_views_data_alter().
+ *
+ * Convert uid argument plugin for nids and vids to use the one from
+ * user.module, so that the {{ argument.uid }} replacement for the title
+ * override is a username, not a number.
+ */
+function sw_views_data_alter(&$data) {
+  $data['node_field_data']['uid']['argument']['id'] = 'user_uid';
+  $data['node_field_revision']['uid']['argument']['id'] = 'user_uid';
+}
