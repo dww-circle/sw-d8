@@ -1,7 +1,11 @@
 uuid: 4275e0e6-fb3e-4f85-ac83-853f4abf19b6
 langcode: en
-status: true
+status: false
 dependencies:
+  module:
+    - node
+    - taxonomy
+    - search_api
   config:
     - field.storage.node.field_story_weight
     - field.storage.node.field_authors
@@ -17,48 +21,11 @@ dependencies:
     - field.storage.node.field_city
     - field.storage.node.field_state
     - field.storage.node.field_country
-    - search_api.server.pantheon_solr
-  module:
-    - node
-    - taxonomy
-    - search_api
 id: sw_text
 name: 'SW Text'
 description: 'Index of all searchable text on SW.org (stories, static pages, legacy blogs, etc).'
 read_only: false
 field_settings:
-  rendered_item_full:
-    label: 'Rendered full HTML output'
-    property_path: rendered_item
-    type: text
-    configuration:
-      roles:
-        anonymous: anonymous
-      view_mode:
-        'entity:node':
-          blog_couldnt_make_it_up: default
-          blog_critical_reading: default
-          page: default
-          person: ''
-          story: default
-  content_type:
-    label: 'Content type'
-    datasource_id: 'entity:node'
-    property_path: type
-    type: string
-  story_weight:
-    label: 'Story weight'
-    datasource_id: 'entity:node'
-    property_path: field_story_weight
-    type: integer
-    dependencies:
-      config:
-        - field.storage.node.field_story_weight
-  created:
-    label: 'Authored on'
-    datasource_id: 'entity:node'
-    property_path: created
-    type: date
   authors_name:
     label: 'Authors » Content » Title'
     datasource_id: 'entity:node'
@@ -68,6 +35,56 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_authors
+      module:
+        - node
+        - node
+  city_name:
+    label: 'City » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_city:entity:name'
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_city
+      module:
+        - taxonomy
+        - taxonomy
+  content_type:
+    label: 'Content type'
+    datasource_id: 'entity:node'
+    property_path: type
+    type: string
+    dependencies:
+      module:
+        - node
+  contributors_name:
+    label: 'Contributors » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_contributors:entity:name'
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_contributors
+      module:
+        - taxonomy
+        - taxonomy
+  country_name:
+    label: 'Country » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_country:entity:name'
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_country
+      module:
+        - taxonomy
+        - taxonomy
+  created:
+    label: 'Authored on'
+    datasource_id: 'entity:node'
+    property_path: created
+    type: date
+    dependencies:
       module:
         - node
   interviewees_name:
@@ -81,16 +98,7 @@ field_settings:
         - field.storage.node.field_interviewees
       module:
         - node
-  contributors_name:
-    label: 'Contributors » Taxonomy term » Name'
-    datasource_id: 'entity:node'
-    property_path: 'field_contributors:entity:name'
-    type: text
-    dependencies:
-      config:
-        - field.storage.node.field_contributors
-      module:
-        - taxonomy
+        - node
   issue_number_int:
     label: 'Issue number » Taxonomy term » Name (integer)'
     datasource_id: 'entity:node'
@@ -100,6 +108,7 @@ field_settings:
       config:
         - field.storage.node.field_issue_number
       module:
+        - taxonomy
         - taxonomy
   issue_number_txt:
     label: 'Issue number » Taxonomy term » Name (text search)'
@@ -112,6 +121,7 @@ field_settings:
         - field.storage.node.field_issue_number
       module:
         - taxonomy
+        - taxonomy
   keyword:
     label: 'Keywords » Taxonomy term » Name'
     datasource_id: 'entity:node'
@@ -122,6 +132,7 @@ field_settings:
       config:
         - field.storage.node.field_keywords
       module:
+        - taxonomy
         - taxonomy
   main_topic:
     label: 'Main topic'
@@ -142,6 +153,21 @@ field_settings:
         - field.storage.node.field_topic
       module:
         - taxonomy
+        - taxonomy
+  rendered_item_full:
+    label: 'Rendered full HTML output'
+    property_path: rendered_item
+    type: text
+    configuration:
+      roles:
+        anonymous: anonymous
+      view_mode:
+        'entity:node':
+          blog_couldnt_make_it_up: default
+          blog_critical_reading: default
+          page: default
+          person: ''
+          story: default
   secondary_topic:
     label: 'Secondary topic'
     datasource_id: 'entity:node'
@@ -161,16 +187,6 @@ field_settings:
         - field.storage.node.field_secondary_topic
       module:
         - taxonomy
-  series_name:
-    label: 'Series » Taxonomy term » Name'
-    datasource_id: 'entity:node'
-    property_path: 'field_series:entity:name'
-    type: text
-    boost: !!float 2
-    dependencies:
-      config:
-        - field.storage.node.field_series
-      module:
         - taxonomy
   section_name:
     label: 'Section » Taxonomy term » Name'
@@ -183,24 +199,18 @@ field_settings:
         - field.storage.node.field_section
       module:
         - taxonomy
-  teaser:
-    label: 'Teaser » Processed text'
+        - taxonomy
+  series_name:
+    label: 'Series » Taxonomy term » Name'
     datasource_id: 'entity:node'
-    property_path: 'field_teaser:processed'
+    property_path: 'field_series:entity:name'
     type: text
     boost: !!float 2
     dependencies:
       config:
-        - field.storage.node.field_teaser
-  city_name:
-    label: 'City » Taxonomy term » Name'
-    datasource_id: 'entity:node'
-    property_path: 'field_city:entity:name'
-    type: text
-    dependencies:
-      config:
-        - field.storage.node.field_city
+        - field.storage.node.field_series
       module:
+        - taxonomy
         - taxonomy
   state_name:
     label: 'State » Taxonomy term » Name'
@@ -212,22 +222,33 @@ field_settings:
         - field.storage.node.field_state
       module:
         - taxonomy
-  country_name:
-    label: 'Country » Taxonomy term » Name'
+        - taxonomy
+  story_weight:
+    label: 'Story weight'
     datasource_id: 'entity:node'
-    property_path: 'field_country:entity:name'
-    type: text
+    property_path: field_story_weight
+    type: integer
     dependencies:
       config:
-        - field.storage.node.field_country
-      module:
-        - taxonomy
+        - field.storage.node.field_story_weight
+  teaser:
+    label: 'Teaser » Processed text'
+    datasource_id: 'entity:node'
+    property_path: 'field_teaser:processed'
+    type: text
+    boost: !!float 2
+    dependencies:
+      config:
+        - field.storage.node.field_teaser
   title:
     label: Title
     datasource_id: 'entity:node'
     property_path: title
     type: text
     boost: !!float 5
+    dependencies:
+      module:
+        - node
 datasource_settings:
   'entity:node':
     bundles:
@@ -242,83 +263,128 @@ datasource_settings:
       default: true
       selected: {  }
 processor_settings:
-  rendered_item: {  }
+  add_url: {  }
+  aggregated_field: {  }
+  entity_status: {  }
   hierarchy:
     fields:
       main_topic: taxonomy_term-parent
       secondary_topic: taxonomy_term-parent
     weights:
       preprocess_index: -50
-  ignorecase:
-    all_fields: true
-    fields:
-      - rendered_item_full
-      - content_type
+  highlight:
+    highlight: always
+    highlight_partial: true
+    excerpt: true
+    excerpt_length: 256
+    exclude_fields:
       - authors_name
-      - interviewees_name
       - contributors_name
+      - interviewees_name
       - issue_number_txt
       - keyword
       - main_topic_name
       - secondary_topic_name
-      - series_name
-      - section_name
-      - teaser
-      - city_name
-      - state_name
-      - country_name
       - title
+    prefix: '<strong>'
+    suffix: '</strong>'
     weights:
-      preprocess_index: -48
-      preprocess_query: -48
+      postprocess_query: 0
   html_filter:
     all_fields: true
     fields:
-      - rendered_item_full
-      - content_type
       - authors_name
-      - interviewees_name
+      - city_name
+      - content_type
       - contributors_name
+      - country_name
+      - interviewees_name
       - issue_number_txt
       - keyword
       - main_topic_name
+      - rendered_item_full
       - secondary_topic_name
-      - series_name
       - section_name
-      - teaser
-      - city_name
+      - series_name
       - state_name
-      - country_name
+      - teaser
       - title
     title: false
     alt: true
     tags:
+      b: 2
       h1: 5
       h2: 3
       h3: 2
       strong: 2
-      b: 2
     weights:
       preprocess_index: -47
       preprocess_query: -47
-  transliteration:
+  ignorecase:
     all_fields: true
     fields:
-      - rendered_item_full
-      - content_type
       - authors_name
-      - interviewees_name
+      - city_name
+      - content_type
       - contributors_name
+      - country_name
+      - interviewees_name
       - issue_number_txt
       - keyword
       - main_topic_name
+      - rendered_item_full
       - secondary_topic_name
-      - series_name
       - section_name
-      - teaser
-      - city_name
+      - series_name
       - state_name
+      - teaser
+      - title
+    weights:
+      preprocess_index: -48
+      preprocess_query: -48
+  rendered_item: {  }
+  tokenizer:
+    all_fields: true
+    fields:
+      - authors_name
+      - city_name
+      - contributors_name
       - country_name
+      - interviewees_name
+      - issue_number_txt
+      - keyword
+      - main_topic_name
+      - rendered_item_full
+      - secondary_topic_name
+      - section_name
+      - series_name
+      - state_name
+      - teaser
+      - title
+    spaces: ''
+    overlap_cjk: 1
+    minimum_word_size: '3'
+    weights:
+      preprocess_index: -45
+      preprocess_query: -45
+  transliteration:
+    all_fields: true
+    fields:
+      - authors_name
+      - city_name
+      - content_type
+      - contributors_name
+      - country_name
+      - interviewees_name
+      - issue_number_txt
+      - keyword
+      - main_topic_name
+      - rendered_item_full
+      - secondary_topic_name
+      - section_name
+      - series_name
+      - state_name
+      - teaser
       - title
     weights:
       preprocess_index: -49
@@ -335,55 +401,10 @@ processor_settings:
           story: !!float 1
     weights:
       preprocess_index: 0
-  aggregated_field: {  }
-  tokenizer:
-    all_fields: true
-    fields:
-      - rendered_item_full
-      - authors_name
-      - interviewees_name
-      - contributors_name
-      - issue_number_txt
-      - keyword
-      - main_topic_name
-      - secondary_topic_name
-      - series_name
-      - section_name
-      - teaser
-      - city_name
-      - state_name
-      - country_name
-      - title
-    spaces: ''
-    overlap_cjk: 1
-    minimum_word_size: '3'
-    weights:
-      preprocess_index: -45
-      preprocess_query: -45
-  entity_status: {  }
-  add_url: {  }
-  highlight:
-    highlight: always
-    highlight_partial: true
-    excerpt: true
-    excerpt_length: 256
-    exclude_fields:
-      - authors_name
-      - interviewees_name
-      - contributors_name
-      - issue_number_txt
-      - keyword
-      - main_topic_name
-      - secondary_topic_name
-      - title
-    prefix: '<strong>'
-    suffix: '</strong>'
-    weights:
-      postprocess_query: 0
 tracker_settings:
   default:
     indexing_order: fifo
 options:
   index_directly: false
   cron_limit: 50
-server: pantheon_solr
+server: null
