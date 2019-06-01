@@ -543,18 +543,18 @@ main {
     .header-menu-expandable-mobile {
       display: none; } }
 
-.region-main-menu .block-sw-search-block {
+.region-main-menu .search-block-form {
   text-align: right; }
-  .region-main-menu .block-sw-search-block .form-type-textfield {
+  .region-main-menu .search-block-form .form-type-search {
     margin: 0; }
-    .region-main-menu .block-sw-search-block .form-type-textfield label {
+    .region-main-menu .search-block-form .form-type-search label {
       display: none; }
-    .region-main-menu .block-sw-search-block .form-type-textfield input {
+    .region-main-menu .search-block-form .form-type-search input {
       line-height: 18px;
       margin-bottom: 0;
       padding-right: 76px;
       vertical-align: middle; }
-  .region-main-menu .block-sw-search-block svg {
+  .region-main-menu .search-block-form svg {
     color: #B3B5B8;
     font-size: 18px;
     padding-right: 7px;
@@ -562,9 +562,12 @@ main {
     position: absolute;
     right: 0;
     top: 6px; }
-  .region-main-menu .block-sw-search-block .form-actions {
-    display: inline; }
-  .region-main-menu .block-sw-search-block .button {
+  .region-main-menu .search-block-form .form-actions {
+    display: inline;
+    position: absolute;
+    right: 0;
+    top: 1px; }
+  .region-main-menu .search-block-form .button {
     -moz-appearance: none;
     -webkit-appearance: none;
     background: #1a272e;
@@ -573,11 +576,8 @@ main {
     font-size: 12px;
     margin: 0 3px 0 0;
     padding: 3px 20px 4px 7px;
-    position: absolute;
-    right: 0;
-    text-transform: uppercase;
-    top: 7px; }
-    .region-main-menu .block-sw-search-block .button:hover {
+    text-transform: uppercase; }
+    .region-main-menu .search-block-form .button:hover {
       background: #c80000; }
 
 .menu-trigger {
@@ -673,44 +673,46 @@ main {
     .menu-item--active-trail .region-expanded-menu nav > ul > li > a {
       color: white; }
 
-.region-expanded-menu .sw-search-block-form {
+.region-expanded-menu .search-block-form {
   width: 100%; }
-  .region-expanded-menu .sw-search-block-form label {
+  .region-expanded-menu .search-block-form h2 {
     font-family: "FF DIN Pro Regular", sans-serif;
+    font-size: 16px;
     font-weight: normal;
     margin-bottom: 0;
     text-transform: uppercase; }
-  .region-expanded-menu .sw-search-block-form form {
+  .region-expanded-menu .search-block-form form {
     position: relative; }
-  .region-expanded-menu .sw-search-block-form .form-type-textfield {
+  .region-expanded-menu .search-block-form .form-type-textfield {
     margin-right: 0; }
-  .region-expanded-menu .sw-search-block-form .form-text {
+  .region-expanded-menu .search-block-form .form-search {
     color: black;
     font-size: 18px;
     height: 40px;
     margin-bottom: 20px;
     width: 100%; }
-  .region-expanded-menu .sw-search-block-form svg {
+  .region-expanded-menu .search-block-form svg {
     color: #B3B5B8;
     font-size: 30px;
     position: absolute;
     right: 5px;
     top: 25px; }
-    .region-expanded-menu .sw-search-block-form svg:hover {
+    .region-expanded-menu .search-block-form svg:hover {
       color: #c80000; }
-  .region-expanded-menu .sw-search-block-form .button {
+  .region-expanded-menu .search-block-form .form-actions {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    z-index: 400; }
+  .region-expanded-menu .search-block-form .button {
     -moz-appearance: none;
     -webkit-appearance: none;
     background: transparent;
     border: none;
     color: transparent;
     font-size: 0px;
-    position: absolute;
     height: 40px;
-    right: 5px;
-    top: 0;
-    width: 40px;
-    z-index: 400; }
+    width: 40px; }
 
 .region-main-menu {
   background: black;

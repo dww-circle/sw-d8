@@ -95,11 +95,12 @@
 }
 
 // Search.
-.region-expanded-menu .sw-search-block-form {
+.region-expanded-menu .search-block-form {
   width: 100%;
 
-  label {
+  h2 {
     font-family: $ff-din-regular;
+    font-size: 16px;
     font-weight: normal;
     margin-bottom: 0;
     text-transform: uppercase;
@@ -113,7 +114,7 @@
     margin-right: 0;
   }
 
-  .form-text {
+  .form-search {
     color: black;
     font-size: 18px;
     height: 40px;
@@ -133,6 +134,13 @@
     }
   }
 
+  .form-actions {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    z-index: 400;
+  }
+
   .button {
     -moz-appearance: none;
     -webkit-appearance: none;
@@ -140,11 +148,7 @@
     border: none;
     color: transparent;
     font-size: 0px;
-    position: absolute;
     height: 40px;
-    right: 5px;
-    top: 0;
     width: 40px;
-    z-index: 400;
   }
 }

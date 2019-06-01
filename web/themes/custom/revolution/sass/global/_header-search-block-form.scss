@@ -1,7 +1,7 @@
-.region-main-menu .block-sw-search-block {
+.region-main-menu .search-block-form {
   text-align: right;
 
-  .form-type-textfield {
+  .form-type-search {
     margin: 0;
 
     label {
@@ -28,6 +28,9 @@
 
   .form-actions {
     display: inline;
+    position: absolute;
+    right: 0;
+    top: 1px;
   }
 
   .button {
@@ -39,10 +42,7 @@
     font-size: 12px;
     margin: 0 3px 0 0;
     padding: 3px 20px 4px 7px;
-    position: absolute;
-    right: 0;
     text-transform: uppercase;
-    top: 7px;
 
     &:hover {
       background: $c-red;
