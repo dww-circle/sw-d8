@@ -9,7 +9,7 @@ dependencies:
 id: sw_search_block_menu
 theme: revolution
 region: expanded_menu
-weight: -9
+weight: -8
 provider: null
 plugin: sw_search_block
 settings:

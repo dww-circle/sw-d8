@@ -1,0 +1,20 @@
+uuid: 270d1b18-134a-435e-b931-d54369469817
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - revolution
+id: searchform_2
+theme: revolution
+region: main_menu
+weight: 0
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  provider: search
+  label_display: '0'
+visibility: {  }
