@@ -561,7 +561,8 @@ main {
     padding-top: 3px;
     position: absolute;
     right: 0;
-    top: 6px; }
+    top: 4px;
+    z-index: 400; }
   .region-main-menu .search-block-form .form-actions {
     display: inline;
     position: absolute;
@@ -696,7 +697,7 @@ main {
     font-size: 30px;
     position: absolute;
     right: 5px;
-    top: 25px; }
+    top: 9px; }
     .region-expanded-menu .search-block-form svg:hover {
       color: #c80000; }
   .region-expanded-menu .search-block-form .form-actions {
