@@ -202,6 +202,7 @@ content:
       match_operator: CONTAINS
       size: 40
       placeholder: ''
+      match_limit: 10
     third_party_settings: {  }
     region: content
   field_contributors:
@@ -211,6 +212,7 @@ content:
       match_operator: CONTAINS
       size: 90
       placeholder: ''
+      match_limit: 10
     third_party_settings: {  }
     region: content
   field_country:
@@ -220,6 +222,7 @@ content:
       match_operator: CONTAINS
       size: 40
       placeholder: ''
+      match_limit: 10
     third_party_settings: {  }
     region: content
   field_interviewees:
@@ -250,6 +253,7 @@ content:
       match_operator: CONTAINS
       size: 9
       placeholder: ''
+      match_limit: 10
     third_party_settings: {  }
     region: content
   field_keywords:
@@ -259,6 +263,7 @@ content:
       match_operator: CONTAINS
       size: 90
       placeholder: ''
+      match_limit: 10
     third_party_settings: {  }
     region: content
   field_kicker:
@@ -338,6 +343,7 @@ content:
       match_operator: CONTAINS
       size: 40
       placeholder: ''
+      match_limit: 10
     third_party_settings: {  }
     region: content
   field_story_label:

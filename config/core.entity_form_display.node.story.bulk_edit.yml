@@ -18,6 +18,7 @@ dependencies:
     - field.field.node.story.field_kicker
     - field.field.node.story.field_main_image
     - field.field.node.story.field_related_articles
+    - field.field.node.story.field_resources
     - field.field.node.story.field_secondary_topic
     - field.field.node.story.field_section
     - field.field.node.story.field_series
@@ -31,6 +32,7 @@ dependencies:
     - node.type.story
   module:
     - entity_browser_entity_form
+    - field_group
     - inline_entity_form
 third_party_settings:
   field_group:
@@ -154,6 +156,7 @@ content:
       match_operator: CONTAINS
       size: 40
       placeholder: ''
+      match_limit: 10
     third_party_settings: {  }
     region: content
   field_contributors:
@@ -163,6 +166,7 @@ content:
       match_operator: CONTAINS
       size: 90
       placeholder: ''
+      match_limit: 10
     third_party_settings: {  }
     region: content
   field_country:
@@ -172,6 +176,7 @@ content:
       match_operator: CONTAINS
       size: 40
       placeholder: ''
+      match_limit: 10
     third_party_settings: {  }
     region: content
   field_interviewees:
@@ -196,6 +201,7 @@ content:
       match_operator: CONTAINS
       size: 9
       placeholder: ''
+      match_limit: 10
     third_party_settings: {  }
     region: content
   field_keywords:
@@ -205,6 +211,7 @@ content:
       match_operator: CONTAINS
       size: 90
       placeholder: ''
+      match_limit: 10
     third_party_settings: {  }
     region: content
   field_related_articles:
@@ -215,6 +222,7 @@ content:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
+      match_limit: 10
     third_party_settings: {  }
   field_secondary_topic:
     weight: 1
@@ -241,6 +249,7 @@ content:
       match_operator: CONTAINS
       size: 40
       placeholder: ''
+      match_limit: 10
     third_party_settings: {  }
     region: content
   field_story_label:
