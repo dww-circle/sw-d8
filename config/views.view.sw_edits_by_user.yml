@@ -12,7 +12,6 @@ description: 'Tracker page for all revisions created by a given user.'
 tag: ''
 base_table: node_field_revision
 base_field: vid
-core: 8.x
 display:
   default:
     display_plugin: default
@@ -503,6 +502,8 @@ display:
           id: status
           expose:
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
           group: 1
       sorts:
         changed:

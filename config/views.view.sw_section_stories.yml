@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.rss
     - core.entity_view_mode.node.teaser_conditional_image
     - node.type.story
     - taxonomy.vocabulary.section
@@ -11,7 +10,6 @@ dependencies:
     - node
     - taxonomy
     - user
-    - views_taxonomy_term_name_into_id
 _core:
   default_config_hash: GNfx9kN8-0_KgQ-xf3fjdXCCzZwXCI8T0IPFW8SIe7g
 id: sw_section_stories
@@ -21,7 +19,6 @@ description: 'Published stories per section, ordered by date (and weight).'
 tag: default
 base_table: node_field_data
 base_field: nid
-core: 8.x
 display:
   default:
     display_options:
@@ -47,6 +44,8 @@ display:
         status:
           expose:
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
           field: status
           group: 1
           id: status
@@ -80,6 +79,8 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''

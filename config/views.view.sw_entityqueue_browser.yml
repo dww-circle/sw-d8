@@ -20,7 +20,6 @@ description: 'Entity browser for selecting entity queues.'
 tag: ''
 base_table: entity_subqueue
 base_field: name
-core: 8.x
 display:
   default:
     display_plugin: default
@@ -307,6 +306,9 @@ display:
           entity_field: queue
           plugin_id: bundle
           group: 1
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
         title:
           id: title
           table: entity_subqueue
@@ -343,6 +345,8 @@ display:
             autocomplete_raw_suggestion: 1
             autocomplete_raw_dropdown: 1
             autocomplete_dependent: 0
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -387,6 +391,8 @@ display:
               front_page_editor: '0'
               administrator: '0'
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
