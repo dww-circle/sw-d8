@@ -5,5 +5,4 @@ dependencies: {  }
 name: 'Image provider'
 vid: image_provider
 description: ''
-hierarchy: 0
 weight: -2

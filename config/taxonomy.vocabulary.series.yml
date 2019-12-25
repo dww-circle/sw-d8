@@ -5,5 +5,4 @@ dependencies: {  }
 name: Series
 vid: series
 description: ''
-hierarchy: 1
 weight: 7

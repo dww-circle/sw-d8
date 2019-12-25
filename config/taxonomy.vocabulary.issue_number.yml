@@ -5,5 +5,4 @@ dependencies: {  }
 name: 'Issue number'
 vid: issue_number
 description: ''
-hierarchy: 0
 weight: 0

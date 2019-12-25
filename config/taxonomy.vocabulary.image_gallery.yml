@@ -5,5 +5,4 @@ dependencies: {  }
 name: 'Image gallery'
 vid: image_gallery
 description: ''
-hierarchy: 1
 weight: 0

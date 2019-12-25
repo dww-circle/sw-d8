@@ -5,5 +5,4 @@ dependencies: {  }
 name: Keywords
 vid: keywords
 description: ''
-hierarchy: 1
 weight: -2

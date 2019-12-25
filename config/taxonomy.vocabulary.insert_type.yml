@@ -5,5 +5,4 @@ dependencies: {  }
 name: 'Insert type'
 vid: insert_type
 description: 'Categorizes the different kinds of insert boxes used on stories, for example "What else to read", "Columnist bio", etc.'
-hierarchy: 1
 weight: 0

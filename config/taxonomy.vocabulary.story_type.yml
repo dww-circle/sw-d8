@@ -5,5 +5,4 @@ dependencies: {  }
 name: 'Story type'
 vid: story_type
 description: ''
-hierarchy: 0
 weight: 3

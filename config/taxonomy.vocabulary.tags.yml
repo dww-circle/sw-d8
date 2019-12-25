@@ -5,5 +5,4 @@ dependencies: {  }
 name: 'Tags (Deprecated)'
 vid: tags
 description: 'Deprecated. Do not use. '
-hierarchy: 0
 weight: 0

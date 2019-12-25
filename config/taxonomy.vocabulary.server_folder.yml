@@ -5,5 +5,4 @@ dependencies: {  }
 name: 'Server folder'
 vid: server_folder
 description: ''
-hierarchy: 0
 weight: 8

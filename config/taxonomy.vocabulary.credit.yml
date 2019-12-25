@@ -5,5 +5,4 @@ dependencies: {  }
 name: Credit
 vid: credit
 description: ''
-hierarchy: 0
 weight: -3

@@ -5,5 +5,4 @@ dependencies: {  }
 name: 'Image rights'
 vid: image_rights
 description: ''
-hierarchy: 0
 weight: -1
