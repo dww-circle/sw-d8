@@ -45,8 +45,6 @@
     "drupal/pathologic": "^1.0",
     "drupal/recaptcha": "^2.3",
     "drupal/redirect": "^1.1",
-    "drupal/search_api": "^1.8",
-    "drupal/search_api_pantheon": "~1.0",
     "drupal/simple_block": "^1.0@beta",
     "drupal/smtp": "^1.0",
     "drupal/static_page": "^1.0",
@@ -146,9 +144,6 @@
       },
       "drupal/redirect": {
         "[#2958635-20] Restore link to add a redirect on node edit forms" : "https://www.drupal.org/files/issues/2019-01-10/2958635-21.redirect-add-link-on-node-form.patch"
-      },
-      "drupal/search_api": {
-        "[#2820410-20] Allow rendering an entity viewmode when using fields in views" : "https://www.drupal.org/files/issues/2018-03-12/search_api-views_rendered_item_field-2820410-20-D8.patch"
       }
     },
     "installer-paths": {
