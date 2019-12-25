@@ -131,19 +131,6 @@
         "[#2959415-2] When a view uses the HTTPStatusCode handler to set a 404 or 403, throw the appropriate exception" : "https://www.drupal.org/files/issues/2018-04-07/2959415-2.httpstatuscode_throw_exception.patch",
         "[#3009114-3] Regression: Editing a media entity now always redirects you to a media overview list" : "https://www.drupal.org/files/issues/2018-10-25/3009114-3.patch",
         "[#3016038-5] Unrecognized entity operation passed to Menu Link Content throws exceptions" : "https://www.drupal.org/files/issues/2019-02-21/3016038-5.patch"
-      },
-      "drupal/entity_browser": {
-        "[#2972964-3] Add a CSS class to the widget for the target entity type" : "https://www.drupal.org/files/issues/2018-05-15/2972964-3.entity-browser-widget-media-type-class.patch"
-      },
-      "drupal/forward": {
-        "[#2969337-6] Settings form UI improvement for dependent config options" : "https://www.drupal.org/files/issues/2018-05-03/2969337-6.patch",
-        "[#2969352-10] Follow-up fix for plain text emails" : "https://www.drupal.org/files/issues/2018-05-04/2969352-10.plain-text-needs-helper-class.patch",
-        "[#2969594-2] Simplify entity rendering code in ForwardForm::submitForm()" : "https://www.drupal.org/files/issues/2018-05-04/2969594-2.simplify-entity-rendering.patch",
-        "[#2971228-6] Provide #recipient as a variable for the forward twig template" : "https://www.drupal.org/files/issues/2019-02-20/2971228-6.forward-recipient-template-variable.patch",
-        "[#2972096-12] Fix config export to only show entities where forward is enabled" : "https://www.drupal.org/files/issues/2019-02-20/2972096-11.forward-clean-config-8x-2x-backport.patch"
-      },
-      "drupal/redirect": {
-        "[#2958635-20] Restore link to add a redirect on node edit forms" : "https://www.drupal.org/files/issues/2019-01-10/2958635-21.redirect-add-link-on-node-form.patch"
       }
     },
     "installer-paths": {
