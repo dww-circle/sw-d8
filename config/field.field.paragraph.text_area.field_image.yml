@@ -1,0 +1,28 @@
+uuid: 8d85eb43-19f4-4d2f-b941-bb2a22a431c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image
+    - media.type.image
+    - paragraphs.paragraphs_type.text_area
+id: paragraph.text_area.field_image
+field_name: field_image
+entity_type: paragraph
+bundle: text_area
+label: Image
+description: 'Featured image for this slice.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

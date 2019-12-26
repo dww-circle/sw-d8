@@ -1,0 +1,52 @@
+uuid: deb567b9-6579-49fb-a2e2-e364410a75c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.sw_wide_image_browser
+    - field.field.paragraph.text_area.field_display_title
+    - field.field.paragraph.text_area.field_image
+    - field.field.paragraph.text_area.field_text_area
+    - paragraphs.paragraphs_type.text_area
+  module:
+    - entity_browser
+    - text
+id: paragraph.text_area.default
+targetEntityType: paragraph
+bundle: text_area
+mode: default
+content:
+  field_display_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_image:
+    weight: 1
+    settings:
+      entity_browser: sw_wide_image_browser
+      field_widget_display: rendered_entity
+      field_widget_display_settings:
+        view_mode: browser
+      field_widget_edit: true
+      field_widget_remove: true
+      open: true
+      selection_mode: selection_append
+      field_widget_replace: false
+    third_party_settings: {  }
+    type: entity_browser_entity_reference
+    region: content
+  field_text_area:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  created: true
+  status: true

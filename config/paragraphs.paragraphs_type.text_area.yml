@@ -1,0 +1,9 @@
+uuid: 5645ea6b-951f-4d7e-bd65-e52990af874c
+langcode: en
+status: true
+dependencies: {  }
+id: text_area
+label: 'Text area'
+icon_uuid: null
+description: 'Simple slice with a header, text area, and image reference.'
+behavior_plugins: {  }
