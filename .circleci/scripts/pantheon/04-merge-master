@@ -13,6 +13,9 @@ fi
 # Merge the multidev for the PR into the dev environment
 terminus -n build:env:merge "$TERMINUS_SITE.$TERMINUS_ENV" --yes
 
+# Rebuild caches before trying to run updatedb to help avoid trouble.
+terminus -n drush "$TERMINUS_SITE.$TERMINUS_ENV" cr
+
 # Run updatedb on the dev environment
 terminus -n drush $TERMINUS_SITE.dev -- updatedb --yes
 
