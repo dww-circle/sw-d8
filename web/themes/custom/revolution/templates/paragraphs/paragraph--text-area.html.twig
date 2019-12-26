@@ -1,0 +1,11 @@
+<div class="paragraph-stories paragraph--type--{{ paragraph.bundle|clean_class }} clearfix">
+  <h3 class="slice-title">{{ content.field_display_title }}</h3>
+  <article class="story--teaser-image-large">
+    <div class="field field--name-field-wide-image field--type-entity-reference field--label-hidden field__item">
+      {{ content.field_image }}
+    </div>
+    <div class="content">
+      {{ content|without('field_display_title', 'field_image') }}
+    </div>
+  </article>
+</div>
