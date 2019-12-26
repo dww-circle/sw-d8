@@ -1762,3 +1762,54 @@ function sw_views_data_alter(&$data) {
   $data['node_field_data']['uid']['argument']['id'] = 'user_uid';
   $data['node_field_revision']['uid']['argument']['id'] = 'user_uid';
 }
+
+/**
+ * Picks a given number of random articles from the 'From the archives' queue.
+ *
+ * @param integer $num_results
+ *   Number of articles to load.
+ * @param integer $num_active
+ *   Number of articles in the queue to consider active for this, 0 for all.
+ *
+ * @return integer[]
+ *   Array of random article node IDs to use.
+ */
+function sw_pick_from_the_archives_queue($num_results, $num_active = 0) {
+  // Load the entityqueue this is based on.
+  $entityqueue = \Drupal::entityManager()->getStorage('entity_subqueue')->load('from_the_archives');
+  if (empty($entityqueue)) {
+    return [];
+  }
+
+  // Get the full list of items in the queue.
+  $queue_list = $entityqueue->get('items')->getValue();
+
+  // Bail now if the queue is empty.
+  if (empty($queue_list)) {
+    return [];
+  }
+
+  // If there's a limit on the number of active stories, enforce it.
+  $active_stories = !empty($num_active) ? array_slice($queue_list, 0, $num_active) : $queue_list;
+
+  // Save the nid and delta of these "active" stories.
+  // Preserving the deltas lets us easily sort later.
+  foreach ($active_stories as $delta => $value) {
+    $nids[] = $value['target_id'];
+    $deltas[$value['target_id']] = $delta;
+  }
+
+  // Randomize the nids.
+  shuffle($nids);
+
+  // Harvest the top N stories from the random list to display.
+  $list_nids = array_slice($nids, 0, $num_results);
+
+  // Sort the random stories by the original entityqueue ordering.
+  foreach ($list_nids as $nid) {
+    $ordered_list[$deltas[$nid]] = $nid;
+  }
+  ksort($ordered_list);
+
+  return $ordered_list;
+}

@@ -78,45 +78,14 @@ class SWFromTheArchivesBlock extends BlockBase {
       ],
     ];
 
-    // Load the entityqueue this is based on.
-    $entityqueue = \Drupal::entityManager()->getStorage('entity_subqueue')->load('from_the_archives');
-    if (empty($entityqueue)) {
-      return $block;
-    }
-
-    // Get the full list of items in the queue.
-    $queue_list = $entityqueue->get('items')->getValue();
-
-    // Bail now if the queue is empty.
-    if (empty($queue_list)) {
-      return $block;
-    }
-
-    // Restrict ourselves to the top N stories in the queue.
     $config = $this->getConfiguration();
-    // If there's a limit on the # of active stories, enforce it.
-    $active_stories = !empty($config['number_active_stories']) ? array_slice($queue_list, 0, $config['number_active_stories']) : $queue_list;
-
-    // Save the nid and delta of these "active" stories.
-    // Preserving the deltas lets us easily sort later.
-    foreach ($active_stories as $delta => $value) {
-      $nids[] = $value['target_id'];
-      $deltas[$value['target_id']] = $delta;
-    }
-
-    // Randomize the nids.
-    shuffle($nids);
-
-    // Harvest the top 5 stories from the random list to display in the block.
-    $block_nids = array_slice($nids, 0, $config['story_list_length']);
-
-    // Sort the random stories by the original entityqueue ordering.
-    foreach ($block_nids as $nid) {
-      $ordered_list[$deltas[$nid]] = $nid;
-    }
-    ksort($ordered_list);
+    // Call the procedural helper to do the heavy lifting.
+    $stories = sw_pick_from_the_archives_queue(
+      $config['story_list_length'],
+      $config['number_active_stories']
+    );
 
     // Load and render these stories as teasers.
-    return $this->swGetStoryListArray($ordered_list) + $block;
+    return $this->swGetStoryListArray($stories) + $block;
   }
 }
