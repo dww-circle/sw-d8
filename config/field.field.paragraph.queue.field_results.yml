@@ -12,7 +12,7 @@ field_name: field_results
 entity_type: paragraph
 bundle: queue
 label: 'Number of Articles to Display'
-description: 'Total number of Articles to Display in this slice.'
+description: 'Total number of Articles to display in this slice.'
 required: true
 translatable: false
 default_value:
