@@ -1,0 +1,37 @@
+uuid: b32b53e9-bf67-4bcc-984b-90573b422ba4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.from_the_archives.field_display_title
+    - field.field.paragraph.from_the_archives.field_num
+    - field.field.paragraph.from_the_archives.field_results
+    - paragraphs.paragraphs_type.from_the_archives
+id: paragraph.from_the_archives.default
+targetEntityType: paragraph
+bundle: from_the_archives
+mode: default
+content:
+  field_display_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_num:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_results:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true

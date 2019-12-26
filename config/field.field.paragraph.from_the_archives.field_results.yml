@@ -1,0 +1,23 @@
+uuid: ec979ffb-1fc2-47e5-a36b-0622eb48289d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_results
+    - paragraphs.paragraphs_type.from_the_archives
+  module:
+    - options
+id: paragraph.from_the_archives.field_results
+field_name: field_results
+entity_type: paragraph
+bundle: from_the_archives
+label: 'Number of Articles to Display'
+description: 'Total number of Articles to Display in this slice.'
+required: true
+translatable: true
+default_value:
+  -
+    value: 5
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

@@ -1,0 +1,19 @@
+uuid: 238322f8-2c8b-4389-941e-dbf36783bd93
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_display_title
+    - paragraphs.paragraphs_type.from_the_archives
+id: paragraph.from_the_archives.field_display_title
+field_name: field_display_title
+entity_type: paragraph
+bundle: from_the_archives
+label: 'Display title'
+description: 'Title as shown to end users.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

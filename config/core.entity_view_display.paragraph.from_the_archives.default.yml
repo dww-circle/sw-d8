@@ -1,0 +1,39 @@
+uuid: aba8c4ba-ed00-44d6-8e32-04ce2c3959d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.from_the_archives.field_display_title
+    - field.field.paragraph.from_the_archives.field_num
+    - field.field.paragraph.from_the_archives.field_results
+    - paragraphs.paragraphs_type.from_the_archives
+  module:
+    - options
+id: paragraph.from_the_archives.default
+targetEntityType: paragraph
+bundle: from_the_archives
+mode: default
+content:
+  field_display_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_num:
+    weight: 2
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_results:
+    weight: 1
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+hidden: {  }

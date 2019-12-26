@@ -1,0 +1,23 @@
+uuid: 0cd678f0-7491-47c2-8299-883352e1b91f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_num
+    - paragraphs.paragraphs_type.from_the_archives
+  module:
+    - options
+id: paragraph.from_the_archives.field_num
+field_name: field_num
+entity_type: paragraph
+bundle: from_the_archives
+label: 'Number of Medium Sized Images'
+description: 'Choose the number of buffer images in the slice.'
+required: true
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings: {  }
+field_type: list_integer
