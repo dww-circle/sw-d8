@@ -12,6 +12,7 @@ dependencies:
     - paragraphs.paragraphs_type.podcast
     - paragraphs.paragraphs_type.queue
     - paragraphs.paragraphs_type.reading
+    - paragraphs.paragraphs_type.text_area
     - paragraphs.paragraphs_type.today
     - paragraphs.paragraphs_type.triptych
     - paragraphs.paragraphs_type.weekend
@@ -42,6 +43,7 @@ settings:
       from_the_archives: from_the_archives
       podcast: podcast
       triptych: triptych
+      text_area: text_area
     target_bundles_drag_drop:
       queue:
         enabled: true
@@ -76,4 +78,7 @@ settings:
       triptych:
         enabled: true
         weight: 13
+      text_area:
+        enabled: true
+        weight: 21
 field_type: entity_reference_revisions
