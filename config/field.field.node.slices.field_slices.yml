@@ -6,6 +6,7 @@ dependencies:
     - field.storage.node.field_slices
     - node.type.slices
     - paragraphs.paragraphs_type.direct_list
+    - paragraphs.paragraphs_type.from_the_archives
     - paragraphs.paragraphs_type.full
     - paragraphs.paragraphs_type.movement_news
     - paragraphs.paragraphs_type.podcast
@@ -36,8 +37,9 @@ settings:
       weekend: weekend
       full: full
       movement_news: movement_news
-      reading: reading
       direct_list: direct_list
+      reading: reading
+      from_the_archives: from_the_archives
       podcast: podcast
       triptych: triptych
     target_bundles_drag_drop:
@@ -59,12 +61,15 @@ settings:
       movement_news:
         enabled: true
         weight: 10
-      reading:
-        enabled: true
-        weight: 11
       direct_list:
         enabled: true
         weight: 11
+      reading:
+        enabled: true
+        weight: 11
+      from_the_archives:
+        enabled: true
+        weight: 13
       podcast:
         enabled: true
         weight: 13
