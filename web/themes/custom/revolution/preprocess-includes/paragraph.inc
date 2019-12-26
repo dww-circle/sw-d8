@@ -42,6 +42,23 @@ function revolution_preprocess_paragraph__queue(&$variables) {
 /**
  * Implements hook_preprocess_paragraph__TYPE().
  */
+function revolution_preprocess_paragraph__from_the_archives(&$variables) {
+  // Get field values.
+  $num_med_img = $variables['paragraph']->field_num->value;
+  $num_results = $variables['paragraph']->field_results->value;
+
+  $nids = sw_pick_from_the_archives_queue($num_results);
+  if (!empty($nids)) {
+    $nodes = Node::loadMultiple($nids);
+  }
+  if (!empty($nodes)) {
+    $variables['groups'] = _revolution_story_groups_render($nodes, $num_med_img, TRUE);
+  }
+}
+
+/**
+ * Implements hook_preprocess_paragraph__TYPE().
+ */
 function revolution_preprocess_paragraph__direct_list(&$variables) {
   // Get field values.
   $num_med_img = $variables['paragraph']->field_layout->value;
