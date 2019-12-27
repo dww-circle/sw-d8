@@ -1548,6 +1548,19 @@ function sw_cron() {
       user_login_finalize($user);
     }
   }
+
+  // Since we're no longer calling draft-to-live very often, flush all caches
+  // once per day to ensure that all the "From the Archives" blocks (on stories
+  // and front page) refreshes the random selections.
+  $request_time = \Drupal::time()->getCurrentTime();
+  $state_service = \Drupal::state();
+  $next_daily_cron = $state_service->get('sw.cache_cron_daily', 0);
+  if ($next_daily_cron < $request_time) {
+    $tomorrow = strtotime('tomorrow 0:59:00');
+    $state_service->set('sw.cache_cron_daily', $tomorrow);
+    drupal_flush_all_caches();
+  }
+
 }
 
 /**
