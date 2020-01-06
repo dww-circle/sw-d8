@@ -63,6 +63,7 @@ module:
   redirect: 0
   responsive_image: 0
   search: 0
+  search_exclude: 0
   shortcut: 0
   simple_block: 0
   smtp: 0
