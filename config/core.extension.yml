@@ -68,7 +68,6 @@ module:
   smtp: 0
   static_page: 0
   sw_admin_ui: 0
-  sw_podcast: 0
   system: 0
   taxonomy: 0
   text: 0
