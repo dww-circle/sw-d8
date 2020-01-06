@@ -5,7 +5,7 @@ dependencies: {  }
 id: contact_sw
 label: 'Contact SW'
 recipients:
-  - info@socialistworker.org
+  - webdept@socialistworker.org
 reply: ''
 weight: -5
 message: 'Thank you, your message has been sent.'
