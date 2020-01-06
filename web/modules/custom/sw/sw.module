@@ -1265,10 +1265,10 @@ function sw_preprocess_html(&$variables) {
     }
   }
   elseif ($path_matcher->isFrontPage()) {
-    $variables['head_title']['title'] = t('Daily news and opinion from the left');
+    $variables['head_title']['title'] = t('SW Archive');
     // @todo
     // variable_get('sw_meta_description',
-    $meta_description = t('Daily news and opinion site based in the U.S., with reports from struggles around the world and left-wing analysis of political events.');
+    $meta_description = t('Archived articles and features from a left-wing news and opinion website published by the International Socialist Organization (U.S.).');
     $meta_tags = [
       ['property' => 'og:title', 'name' => 'title', 'content' => $site_name],
       ['property' => 'og:description', 'name' => 'description', 'content' => $meta_description],
