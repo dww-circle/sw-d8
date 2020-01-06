@@ -1,0 +1,17 @@
+uuid: d03701ef-1e71-40fa-936a-79166360575e
+langcode: en
+status: true
+dependencies:
+  module:
+    - search_exclude
+id: content
+label: Content
+path: content
+weight: 0
+plugin: search_exclude_node_search
+configuration:
+  rankings: {  }
+  excluded_bundles:
+    insert_box: insert_box
+    person: person
+    static_page: static_page
