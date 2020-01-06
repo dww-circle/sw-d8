@@ -5,7 +5,7 @@ dependencies:
   config:
     - filter.format.filtered_html
 id: sw_contact_sw_intro
-title: 'SW: contact SW.org intro)'
+title: 'SW: contact SW.org intro'
 content:
-  value: 'Send a message to SW or ask a question by filling out the form below.'
+  value: 'Contact the administrators of the SocialistWorker.org archive with a message or a question by filling out the form below.'
   format: filtered_html
