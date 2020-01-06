@@ -170,7 +170,7 @@ display:
               rendered_strip: false
           row_class: ''
           default_row_class: true
-      title: 'Recent articles'
+      title: 'All articles'
       header: {  }
       footer: {  }
       relationships: {  }
@@ -343,7 +343,7 @@ display:
     position: 2
     display_options:
       sitename_title: false
-      path: recent/rss.xml
+      path: all-articles/rss.xml
       displays:
         page_1: page_1
         default: ''
@@ -1175,11 +1175,11 @@ display:
         - 'config:field.storage.node.field_keywords'
   page_1:
     display_options:
-      path: recent
+      path: all-articles
       display_extenders: {  }
       menu:
         type: normal
-        title: Recent
+        title: 'All articles'
         description: ''
         expanded: false
         parent: ''
