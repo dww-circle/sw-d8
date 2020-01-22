@@ -14,3 +14,13 @@ function sw_update_8000() {
       ->query("DELETE FROM {media__field_image_url} WHERE field_image_url_uri LIKE :keyword", [":keyword" => $keyword]);
   }
 }
+
+/**
+ * Truncate search tables so we can rebuild a clean index.
+ */
+function sw_update_8001() {
+  foreach (['search_dataset', 'search_total', 'search_index'] as $table) {
+    \Drupal::database()
+      ->query("TRUNCATE TABLE {$table}");
+  }
+}
