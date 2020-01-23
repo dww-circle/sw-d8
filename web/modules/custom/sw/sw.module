@@ -264,9 +264,9 @@ function sw_story_node_form_alter(&$form, FormStateInterface $form_state, $form_
     ],
   ];
 
-  // Set #pre_render to hide filter format guidelines on all text areas.
+  // Set #after_build to hide filter format guidelines on all text areas.
   foreach (['field_teaser', 'field_body', 'field_introduction', 'field_body_introduction'] as $field) {
-    $form[$field]['#pre_render'][] = 'sw_hide_format_guidelines_form_pre_render';
+    $form[$field]['#after_build'][] = 'sw_hide_format_guidelines_form_after_build';
   }
 
   // If field_body_introduction has a value, expand the containing fieldset by default.
@@ -276,9 +276,9 @@ function sw_story_node_form_alter(&$form, FormStateInterface $form_state, $form_
 }
 
 /**
- * #pre_render callback to hide all the text area filter format guidelines.
+ * #after_build callback to hide all the text area filter format guidelines.
  */
-function sw_hide_format_guidelines_form_pre_render(array $element) {
+function sw_hide_format_guidelines_form_after_build(array $element) {
   if (!empty($element['widget'][0]['format']['guidelines'])) {
     $element['widget'][0]['format']['guidelines']['#access'] = FALSE;
   }
@@ -303,7 +303,7 @@ function sw_insert_box_node_form_alter(&$form, FormStateInterface $form_state, $
       ],
     ],
   ];
-  $form['field_insert_body']['#pre_render'][] = 'sw_hide_format_guidelines_form_pre_render';
+  $form['field_insert_body']['#after_build'][] = 'sw_hide_format_guidelines_form_after_build';
 }
 
 /**
