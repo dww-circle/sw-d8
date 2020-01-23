@@ -130,6 +130,9 @@
         "[#2959415-2] When a view uses the HTTPStatusCode handler to set a 404 or 403, throw the appropriate exception" : "https://www.drupal.org/files/issues/2018-04-07/2959415-2.httpstatuscode_throw_exception.patch",
         "[#3009114-4] Regression: Editing a media entity now always redirects you to a media overview list" : "https://www.drupal.org/files/issues/2018-10-25/3009114-4.patch",
         "[#3016038-5] Unrecognized entity operation passed to Menu Link Content throws exceptions" : "https://www.drupal.org/files/issues/2019-02-21/3016038-5.patch"
+      },
+      "drupal/search_exclude": {
+        "[#3108145-3] search_exclude indexing doesn't update totals with 8.8.x core, no search results" : "https://www.drupal.org/files/issues/2020-01-22/3108145-3.patch"
       }
     },
     "installer-paths": {

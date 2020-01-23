@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a964056e5521284630705b2f57032fe5",
+    "content-hash": "5394e933267871cc4c9bb182e07d10f1",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -4289,6 +4289,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "[#3108145-3] search_exclude indexing doesn't update totals with 8.8.x core, no search results": "https://www.drupal.org/files/issues/2020-01-22/3108145-3.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
