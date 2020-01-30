@@ -4,3 +4,9 @@ sw.admin.content.front_page:
   route_name: sw.admin.content.front_page
   parent: system.admin_content
   weight: 0
+sw.admin.content.from_the_archives:
+  title: 'SW From The Archives bulk add'
+  description: 'Bulk add stories to the From The Archives queue.'
+  route_name: sw.admin.content.from_the_archives
+  parent: system.admin_content
+  weight: 1

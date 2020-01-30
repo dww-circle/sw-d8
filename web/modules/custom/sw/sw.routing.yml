@@ -62,3 +62,10 @@ sw.admin.content.front_page.now:
     _form: '\Drupal\sw\Form\AdminFrontPageNowConfirmForm'
   requirements:
     _permission: 'administer SW'
+sw.admin.content.from_the_archives:
+  path: '/admin/content/from-the-archives'
+  defaults:
+    _title: 'From The Archives bulk add'
+    _form: '\Drupal\sw\Form\FromTheArchivesForm'
+  requirements:
+    _permission: 'administer SW'
