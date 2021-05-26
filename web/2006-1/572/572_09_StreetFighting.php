@@ -27,8 +27,8 @@ A whirlwind tour of the 1960s
 <?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="4">Author and activist Tariq Ali's radical memoirs</font><br>
-<font face="Times New Roman, Times, serif" size="5"><b>A whirlwind tour of the 1960s</b></font><p>
-<font face="Times New Roman, Times, serif" size="2"><b>Review by Sarah Macaraeg</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | January 20, 2006 | Page 9</font><p>
+<font face="Times New Roman, Times, serif" size="5"><b>A whirlwind tour of the 1960s</b></font>
+<p><font face="Arial, Helvetica, sans-serif" size="2">January 20, 2006 | Page 9</font><p>
 
 <font face="Arial, Helvetica, sans-serif" size="2">Tariq Ali, <b><i>Street Fighting Years: An Autobiography of the Sixties. </b></i>Verso, 2005, 400 pages, $17.</font><p>
 

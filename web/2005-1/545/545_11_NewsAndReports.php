@@ -43,7 +43,7 @@ The demonstration highlighted the success of anti-recruitment activities on camp
 The U.S. Navy plans to take over a wing of the school in the fall for a Naval academy. Members of Save Senn joined students to pass out flyers with an "opt-out" form so students could get their names off the list supplied to the military by public schools complying with the No Child Left Behind Act.<p>
 The next day, more than 20 people gathered to protest Armed Forces Day at Navy Pier, Illinois' largest tourist attraction. On hand were recruiters using flight simulators, toys, chin-up competitions, free T-shirts and basketball contests to lure young people into giving them their phone numbers.<p>
 Despite being harassed by police and recruiters alike, protesters stood their ground and passed out counter-recruitment literature addressing everything from sexual harassment in the military to how few GIs actually receive money for college.<p>
-<i>Susan Dwyer, Sarah Macaraeg, Tamar Szmuilowicz contributed to this report</i>.<p>
+<i>Susan Dwyer, Tamar Szmuilowicz contributed to this report</i>.<p>
 
 <font face="Arial, Helvetica, sans-serif" size="2"><a href="#Top">Back to the top</a></font><br>
 <br>
@@ -74,7 +74,7 @@ Activists blamed the Philippine military and President Gloria Macapagal Arroyo f
 Many at the event were deeply troubled by the possible passage of CAFTA because of their close relations with families and friends in Central America struggling to maintain their livelihoods. Speakers included people from Mexico, Guatemala, El Salvador and the Dominican Republic--as well as from the U.S. Despite several nasty remarks such as "Learn how to speak English" directed at the crowd, the show of solidarity was inspiring.<p>
 Like the North American Free Trade Agreement, implemented in 1994, CAFTA will likely wipe out large numbers of jobs as well as further squeeze peasants desperately trying to make a living by selling crops produced on their small plots of land.<p>
 There have been protests in Guatemala, Honduras and El Salvador with upwards of 80,000 people, yet the governments of both Guatemala and El Salvador, beholden to the elite of those countries, have passed the agreement. Say no to CAFTA and yes to small farmers, jobs and equality!<p>
- 
+
 <?php include "../../legacy-includes/BottomNavLinks.htmlf" ?>
 
 <td width="12"></td>

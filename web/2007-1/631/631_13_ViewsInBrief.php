@@ -56,7 +56,7 @@ As the interview later goes on to discuss, the hip-hop community is not a homoge
 Not that the problem is hip-hop. At the end of the day, the problem is the sexism that exists in practically every corner of American society, making it perfectly socially acceptable for derogatory lyrics to play across airwaves daily.<p>
 But the sexist lyrics and the artists (educated and not) who use them shouldn't get a pass either in my book. "Bitches" and "whores" aren't empty words, and women do not get to make an "unreality" out of sexism--out of less pay, less control of their own bodies, objectification and the brunt of the family burden.<p>
 From constant derogatory remarks to anti-abortion laws, sexism is alive and kicking--and harming women. It needs to be called what it is and challenged--in hip-hop, in many other arenas of music and culture, and most importantly, on the ground in American politics.<br>
-<b>Sarah Macaraeg</b>, Chicago<p>
+<p>
 <font face="Arial, Helvetica, sans-serif" size="2"><a href="#Top">Back to the top</a></font><br>
 <br>
 <p><a name="Ban"></a><font face="Times New Roman, Times, serif" size="4"><b>Abortion ban an attack on women</b></font><p>

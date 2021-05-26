@@ -28,7 +28,7 @@ A hell below
 
 <font face="Times New Roman, Times, serif" size="4">The children who work the Bolivian silver mines</font><br>
 <font face="Times New Roman, Times, serif" size="5"><b>A hell below</b></font><p>
-<font face="Times New Roman, Times, serif" size="2"><b>Review by Sarah Macaraeg</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | March 17, 2006 | Page 9</font><p>
+<font face="Arial, Helvetica, sans-serif" size="2">March 17, 2006 | Page 9</font><p>
 
 <font face="Arial, Helvetica, sans-serif" size="2"><b><i>The Devil's Miner, </b></i>a documentary by Kief Davidson and Richard Ladkani.</font><p>
 

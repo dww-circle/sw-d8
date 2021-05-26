@@ -27,7 +27,7 @@ Radical art of the Black Panther Party
 <?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>Radical art of the Black Panther Party</b></font><p>
-<font face="Times New Roman, Times, serif" size="2"><b>Review by Sarah Macaraeg</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | May 11, 2007 | Page 11</font><p>
+<font face="Arial, Helvetica, sans-serif" size="2">May 11, 2007 | Page 11</font><p>
 
 <font face="Arial, Helvetica, sans-serif" size="2"><b><i><a href="http://www.amazon.com/gp/redirect.html?ie=UTF8&amp;location=http%3A%2F%2Fwww.amazon.com%2FBlack-Panther-Revolutionary-Emory-Douglas%2Fdp%2F0847829413%3Fie%3DUTF8%26s%3Dbooks%26qid%3D1178680686%26sr%3D8-1&amp;tag=socialistwork-20&amp;linkCode=ur2&amp;camp=1789&amp;creative=9325" target="_blank">Black Panther: The Revolutionary Art of Emory Douglas</a>, </b></i>edited by Sam Durant. Rizzoli, 2007, 208 pages, $35.</font><p>
 

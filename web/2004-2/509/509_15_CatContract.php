@@ -28,7 +28,7 @@ UAW rejects Cat's "final" offer
 
 <P><font face="Times New Roman, Times, serif" size="4">Rank and file says "no" to concessions in second contract vote</font><BR>
 <font face="Times New Roman, Times, serif" size="5"><b>UAW rejects Cat's "final" offer</b></font></P>
-<P><font face="Times New Roman, Times, serif" size="2"><b>By Sarah Macaraeg and Bob Quellos</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | August 20, 2004 | Page 15</font></P>
+<P><font face="Times New Roman, Times, serif" size="2"><b>By Bob Quellos</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | August 20, 2004 | Page 15</font></P>
 
 <P><font face="Times New Roman, Times, serif" size="3">PEORIA, Ill.--Some 9,200 United Auto Workers (UAW) members at four different Caterpillar factories in central Illinois voted "no" August 15 on the latest contract offer from the heavy equipment manufacturing giant. The rejection--by an overwhelming margin for the second time in four months--was no surprise, since the latest offer continues management's trend of demanding more concessions. </P>
 <P>Caterpillar's latest offer aims to introduce a two-tier pay scale and increases in health insurance co-pays, deductibles and premiums. This offer is nothing but an insult from a company bent on stealing every dime possible from workers while it sits on top of $20 billion in revenue from last year--and the company expects sales to increase by 25 percent this year. </P>

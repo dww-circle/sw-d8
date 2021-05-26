@@ -67,7 +67,7 @@ In Seattle, an estimated 5,000 people demonstrated in the wind and rain. For the
 Another 3,000 rallied in Boston, and 300 protesters blocked streets at the rally's end in defiance of police orders. Smaller cities also saw spirited protests. In Hartford, Conn., more than 1,000 people turned out for a rally.<p>
 The need for more antiwar activism was the theme of many rallies around the U.S. "This rally isn't going to stop the war," historian Howard Zinn told the New York rally. "It's not enough. We need a national movement big enough to threaten the government. During Vietnam, the government got scared that they couldn't carry out war because of resistance. During civil rights movement in South, they got worried about the riots." <p>
 "The U.S. has been occupying Iraq for two years," Zinn continued. "It has brought nothing but death and destruction. You can't bring liberation and democracy with napalm. War is terrorism. During Vietnam, soldiers refused to fight, students resisted--the military couldn't get people into ROTC. This is how the war was ended."<p>
-<i>Noah Centenero, Vicky Jambor, Kate Johnson, Peter LoRe, Kolya Ludwig, Sarah Macaraeg, Keith Rosenthal, Alex Schulz and Tamar Szmuilowicz contributed to this report.</i> <p>
+<i>Noah Centenero, Vicky Jambor, Kate Johnson, Peter LoRe, Kolya Ludwig, Keith Rosenthal, Alex Schulz and Tamar Szmuilowicz contributed to this report.</i> <p>
 
 <font face="Times New Roman, Times, serif" size="4"><b>Protests around the globe</b></font><p>
 

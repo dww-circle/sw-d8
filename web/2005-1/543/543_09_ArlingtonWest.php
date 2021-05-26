@@ -27,7 +27,7 @@
 <?php include "../../legacy-includes/BodyInsert.htmlf" ?>
 
 <font face="Times New Roman, Times, serif" size="5"><b>"I feel like I fought for nothing"</b></font><p>
-<font face="Times New Roman, Times, serif" size="2"><b>Review by Sarah Macaraeg</b></font><font face="Arial, Helvetica, sans-serif" size="2"> | May 13, 2005 | Page 9</font><p>
+<font face="Arial, Helvetica, sans-serif" size="2">May 13, 2005 | Page 9</font><p>
 
 <font face="Arial, Helvetica, sans-serif" size="2"><b><i>Arlington West,</b></i> a documentary by Peter Dudar and Sally Marr, Laughing Tears Productions, <a href="http://www.arlingtonwestfilm.org" target="_blank">www.arlingtonwestfilm.org</a>.</font><p>
 
