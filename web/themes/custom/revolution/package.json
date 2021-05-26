@@ -20,7 +20,7 @@
     "gulp-uglify": "^1.5.1",
     "gulp-util": "^3.0.8",
     "imagemin-pngcrush": "~4.1.0",
-    "lodash": "^4.17.13",
+    "lodash": "^4.17.21",
     "node-sass": "^3.4.1",
     "susy": "2.2.12"
   }
