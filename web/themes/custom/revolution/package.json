@@ -21,7 +21,7 @@
     "gulp-util": "^3.0.8",
     "imagemin-pngcrush": "~4.1.0",
     "lodash": "^4.17.13",
-    "node-sass": "^3.4.1",
+    "node-sass": "^4.13.1",
     "susy": "2.2.12"
   }
 }
